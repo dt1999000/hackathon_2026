@@ -30,6 +30,14 @@ class Settings(BaseSettings):
     SENTRY_DSN: HttpUrl | None = None
     DATABASE_URL: PostgresDsn
 
+    # Ollama runs as a separate, shared server (another project's compose
+    # stack), not a service in this project's own compose files. Reachable
+    # here as "ollama" because the backend container is attached to that
+    # stack's Docker network (see compose.yml); on a host where the two
+    # stacks don't share a network, use the host-published port instead.
+    LLM_LOCAL_BASE_URL: str = "http://ollama:11434"
+    LLM_LOCAL_MODEL: str = "qwen2.5:0.5b"
+
     @field_validator("DATABASE_URL", mode="before")
     @classmethod
     def _use_psycopg_driver(cls, value: str | PostgresDsn) -> str:
