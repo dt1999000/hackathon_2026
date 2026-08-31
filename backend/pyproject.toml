@@ -18,6 +18,9 @@ dependencies = [
     "sentry-sdk[fastapi]>=2.66.1,<3.0.0",
     "pyjwt<3.0.0,>=2.13.0",
     "pwdlib[argon2,bcrypt]>=0.3.0",
+    "langchain-core>=1.6.1",
+    "firecrawl-py>=4.40.0",
+    "langgraph>=1.2.11",
 ]
 
 [dependency-groups]
@@ -36,6 +39,10 @@ build-backend = "hatchling.build"
 [tool.mypy]
 strict = true
 exclude = ["venv", ".venv", "alembic"]
+
+[[tool.mypy.overrides]]
+module = "firecrawl.*"
+ignore_missing_imports = true
 
 [tool.ruff]
 target-version = "py314"
