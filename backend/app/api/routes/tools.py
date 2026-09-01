@@ -3,6 +3,7 @@ from typing import Any
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
+from app.services.embeddings import EmbeddingClient
 from app.services.llm import LocalLLMClient
 from app.tools.rag.chunking.base import BaseChunker
 from app.tools.rag.chunking.default import DefaultChunker
@@ -15,7 +16,7 @@ from app.tools.rag.loader.github import GithubLoader
 from app.tools.rag.loader.json import JSONLoader
 from app.tools.rag.loader.youtube_channel import YoutubeChannelLoader
 from app.tools.rag.loader.youtube_video import YoutubeVideoLoader
-from app.tools.rag.retrieval import retrieve_top_chunks
+from app.tools.rag.retrieval import retrieve_top_chunks, retrieve_top_chunks_embedding
 
 router = APIRouter(tags=["tools"], prefix="/tools")
 
@@ -80,6 +81,8 @@ class GenerateRequest(BaseModel):
     chunker: str = "default"
     top_k: int = 3
     use_retrieval: bool = True
+    retrieval_method: str = "embedding"  # "embedding" or "lexical"
+    embedding_model: str | None = None  # override to compare models, e.g. "nomic-embed-text"
 
 
 @router.post("/rag/load")
@@ -147,7 +150,13 @@ def generate(request: GenerateRequest) -> dict[str, Any]:
 
     context_used: list[str] = []
     if request.use_retrieval:
-        context_used = retrieve_top_chunks(request.query, chunks, top_k=request.top_k)
+        if request.retrieval_method == "lexical":
+            context_used = retrieve_top_chunks(request.query, chunks, top_k=request.top_k)
+        else:
+            embedding_client = EmbeddingClient(model=request.embedding_model)
+            context_used = retrieve_top_chunks_embedding(
+                request.query, chunks, top_k=request.top_k, embedding_client=embedding_client
+            )
         context_block = "\n\n".join(context_used)
         prompt = (
             f"Use the following context to answer the question.\n\n"

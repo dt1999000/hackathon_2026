@@ -9,7 +9,15 @@ from app.tools.rag.loader.base import BaseLoader, LoaderResult, SourceContent
 
 
 class GithubLoader(BaseLoader):
-    """Loader for GitHub repository content."""
+    """Loads content from a public (or token-accessible) GitHub repository.
+
+    `source_content.source` must be a full repo URL, e.g.
+    "https://github.com/<owner>/<repo>". Pass `metadata={"gh_token": ...,
+    "content_types": [...]}` via kwargs to authenticate and choose which
+    sections to include; content_types options are "repo" (description/
+    stars/forks), "code" (README + top-level file listing), "pr" (open
+    pull requests), "issue" (open issues) — defaults to ["code", "repo"].
+    """
 
     def load(self, source_content: SourceContent, **kwargs: Any) -> LoaderResult:
         """Load content from a GitHub repository.

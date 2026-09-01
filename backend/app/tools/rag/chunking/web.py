@@ -2,6 +2,10 @@ from app.tools.rag.chunking.base import BaseChunker
 
 
 class WebsiteChunker(BaseChunker):
+    """Chunker for scraped/crawled webpage content (e.g. Firecrawl markdown
+    output), splitting on section/paragraph/sentence boundaries.
+    """
+
     def __init__(self, chunk_size: int = 2500, chunk_overlap: int = 250, separators: list[str] | None = None, keep_separator: bool = True):
         if separators is None:
             separators = [

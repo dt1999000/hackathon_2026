@@ -8,6 +8,13 @@ from app.tools.rag.loader.base import BaseLoader, LoaderResult, SourceContent
 
 
 class CSVLoader(BaseLoader):
+    """Loads a CSV document from a local file path or an http(s) URL.
+
+    `source_content.source` is the path or URL. Renders rows as
+    "Row N: col: value | col: value" text, using the header row for
+    column names, ready for chunking.
+    """
+
     def load(self, source_content: SourceContent, **kwargs: Any) -> LoaderResult:
         source_ref = source_content.source_ref
 

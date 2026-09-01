@@ -11,7 +11,13 @@ from app.tools.rag.loader.base import BaseLoader, LoaderResult, SourceContent
 
 
 class YoutubeVideoLoader(BaseLoader):
-    """Loader for YouTube videos."""
+    """Loads a single YouTube video's transcript, prefixed with title/author
+    when available.
+
+    `source_content.source` must be a video URL (watch/embed/youtu.be
+    form). Prefers an English transcript (manual, then auto-generated,
+    then whatever's available); raises ValueError if none exists.
+    """
 
     def load(self, source_content: SourceContent, **kwargs: Any) -> LoaderResult:
         """Load and extract transcript from a YouTube video.

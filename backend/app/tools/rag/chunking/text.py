@@ -2,6 +2,10 @@ from app.tools.rag.chunking.base import BaseChunker
 
 
 class TextChunker(BaseChunker):
+    """Chunker for plain prose text (e.g. .txt files), splitting on
+    paragraph/sentence/word boundaries in that order of preference.
+    """
+
     def __init__(self, chunk_size: int = 1500, chunk_overlap: int = 150, separators: list[str] | None = None, keep_separator: bool = True):
         if separators is None:
             separators = [
@@ -20,6 +24,11 @@ class TextChunker(BaseChunker):
 
 
 class DocxChunker(BaseChunker):
+    """Chunker for text extracted from Word documents; same separator
+    strategy as TextChunker but larger default chunk size for
+    typically longer-form documents.
+    """
+
     def __init__(self, chunk_size: int = 2500, chunk_overlap: int = 250, separators: list[str] | None = None, keep_separator: bool = True):
         if separators is None:
             separators = [
@@ -38,6 +47,10 @@ class DocxChunker(BaseChunker):
 
 
 class MdxChunker(BaseChunker):
+    """Chunker for Markdown/MDX, preferring to split on header boundaries
+    (H2/H3/H4) before falling back to paragraph/sentence/word splits.
+    """
+
     def __init__(self, chunk_size: int = 3000, chunk_overlap: int = 300, separators: list[str] | None = None, keep_separator: bool = True):
         if separators is None:
             separators = [

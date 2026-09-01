@@ -5,16 +5,24 @@ Usage:
     uv run python scripts/rag_generation_demo.py <source> <query> \
         [--loader json|csv|github|youtube_video|youtube_channel] \
         [--chunker default|text|docx|mdx|web|csv|json|xml] \
+        [--retrieval lexical|embedding] \
+        [--embedding-model MODEL] \
         [--top-k N]
 
 Example:
     uv run python scripts/rag_generation_demo.py \
         https://github.com/firecrawl/firecrawl "What does this repo do?" \
         --loader github
+
+    # Compare a BERT-family embedding model against the qwen3 default:
+    uv run python scripts/rag_generation_demo.py \
+        scripts/mock_data/company.json "Who is the CEO?" \
+        --loader json --chunker json --embedding-model nomic-embed-text
 """
 
 import argparse
 
+from app.services.embeddings import EmbeddingClient
 from app.services.llm import LocalLLMClient
 from app.tools.rag.chunking.base import BaseChunker
 from app.tools.rag.chunking.default import DefaultChunker
@@ -27,7 +35,7 @@ from app.tools.rag.loader.github import GithubLoader
 from app.tools.rag.loader.json import JSONLoader
 from app.tools.rag.loader.youtube_channel import YoutubeChannelLoader
 from app.tools.rag.loader.youtube_video import YoutubeVideoLoader
-from app.tools.rag.retrieval import retrieve_top_chunks
+from app.tools.rag.retrieval import retrieve_top_chunks, retrieve_top_chunks_embedding
 
 LOADERS: dict[str, type[BaseLoader]] = {
     "json": JSONLoader,
@@ -60,6 +68,8 @@ def main() -> None:
     parser.add_argument("query", help="Question to ask the model")
     parser.add_argument("--loader", choices=sorted(LOADERS), default="github")
     parser.add_argument("--chunker", choices=sorted(CHUNKERS), default="default")
+    parser.add_argument("--retrieval", choices=["embedding", "lexical"], default="embedding")
+    parser.add_argument("--embedding-model", default=None, help="e.g. nomic-embed-text to compare vs. the default")
     parser.add_argument("--top-k", type=int, default=3)
     args = parser.parse_args()
 
@@ -72,7 +82,14 @@ def main() -> None:
     chunks = chunker.chunk(result.content)
     print(f"Loaded {len(result.content)} chars, split into {len(chunks)} chunks.\n")
 
-    context_chunks = retrieve_top_chunks(args.query, chunks, top_k=args.top_k)
+    if args.retrieval == "lexical":
+        context_chunks = retrieve_top_chunks(args.query, chunks, top_k=args.top_k)
+    else:
+        embedding_client = EmbeddingClient(model=args.embedding_model)
+        print(f"Embedding with model: {embedding_client.model}")
+        context_chunks = retrieve_top_chunks_embedding(
+            args.query, chunks, top_k=args.top_k, embedding_client=embedding_client
+        )
     print(f"Top {len(context_chunks)} retrieved chunk(s):")
     for i, chunk in enumerate(context_chunks, 1):
         preview = chunk[:150].replace("\n", " ")

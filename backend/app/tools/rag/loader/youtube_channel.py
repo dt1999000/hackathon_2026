@@ -8,7 +8,13 @@ from app.tools.rag.loader.base import BaseLoader, LoaderResult, SourceContent
 
 
 class YoutubeChannelLoader(BaseLoader):
-    """Loader for YouTube channels."""
+    """Loads a summary of a YouTube channel's recent videos.
+
+    `source_content.source` must be a channel URL (/channel/, /c/, /@, or
+    /user/ form). Lists up to `max_videos` (kwarg, default 10) videos with
+    title/description/transcript preview per video, falling back to just
+    the video URL when transcript extraction fails for that video.
+    """
 
     def load(self, source_content: SourceContent, **kwargs: Any) -> LoaderResult:
         """Load and extract content from a YouTube channel.

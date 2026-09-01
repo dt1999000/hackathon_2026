@@ -147,6 +147,13 @@ class RecursiveCharacterTextSplitter:
         return docs
 
 class BaseChunker:
+    """Base class for RAG chunkers: splits a loaded document's text into
+    overlapping chunks sized for embedding/retrieval, via
+    RecursiveCharacterTextSplitter. Subclasses just supply
+    format-appropriate defaults (chunk size and separator preference order)
+    — call `.chunk(text)` to get the list of chunks.
+    """
+
     def __init__(self, chunk_size: int = 1000, chunk_overlap: int = 200, separators: list[str] | None = None, keep_separator: bool = True):
         """
         Initialize the Chunker

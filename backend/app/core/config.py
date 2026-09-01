@@ -37,6 +37,7 @@ class Settings(BaseSettings):
     # stacks don't share a network, use the host-published port instead.
     LLM_LOCAL_BASE_URL: str = "http://ollama:11434"
     LLM_LOCAL_MODEL: str = "qwen2.5:0.5b"
+    LLM_EMBEDDING_MODEL: str = "qwen3-embedding:0.6b"
 
     @field_validator("DATABASE_URL", mode="before")
     @classmethod

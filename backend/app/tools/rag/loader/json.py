@@ -7,6 +7,13 @@ from app.tools.rag.loader.base import BaseLoader, LoaderResult, SourceContent
 
 
 class JSONLoader(BaseLoader):
+    """Loads a JSON document from a local file path or an http(s) URL.
+
+    `source_content.source` is the path or URL. Flattens the JSON into a
+    readable "key: value" (dict) or line-per-item (list) text form for
+    chunking; falls back to the raw content on parse errors.
+    """
+
     def load(self, source_content: SourceContent, **kwargs: Any) -> LoaderResult:
         source_ref = source_content.source_ref
         content = source_content.source
