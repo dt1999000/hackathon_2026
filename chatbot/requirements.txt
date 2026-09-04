@@ -7,3 +7,5 @@ langchain-anthropic
 python-dotenv
 pydantic
 duckduckgo-search
+streamlit
+streamlit-mic-recorder
