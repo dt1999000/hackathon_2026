@@ -35,6 +35,44 @@ export type Body_login_login_access_token = {
 };
 
 /**
+ * ChatMessage
+ */
+export type ChatMessage = {
+    /**
+     * Role
+     */
+    role: string;
+    /**
+     * Content
+     */
+    content: string;
+};
+
+/**
+ * ChatRequest
+ */
+export type ChatRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<ChatMessage>;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local';
+};
+
+/**
+ * ChatResponse
+ */
+export type ChatResponse = {
+    /**
+     * Content
+     */
+    content: string;
+};
+
+/**
  * HTTPValidationError
  */
 export type HTTPValidationError = {
@@ -156,6 +194,42 @@ export type PrivateUserCreate = {
      * Is Verified
      */
     is_verified?: boolean;
+};
+
+/**
+ * ResearchRequest
+ */
+export type ResearchRequest = {
+    /**
+     * Query
+     */
+    query: string;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local';
+};
+
+/**
+ * ResearchResponse
+ */
+export type ResearchResponse = {
+    /**
+     * Topic
+     */
+    topic: string;
+    /**
+     * Summary
+     */
+    summary: string;
+    /**
+     * Sources
+     */
+    sources: Array<string>;
+    /**
+     * Tools Used
+     */
+    tools_used: Array<string>;
 };
 
 /**
@@ -920,6 +994,56 @@ export type itemsUpdateItemResponses = {
 };
 
 export type itemsUpdateItemResponse = itemsUpdateItemResponses[keyof itemsUpdateItemResponses];
+
+export type chatSendMessageData = {
+    body: ChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/chat/message';
+};
+
+export type chatSendMessageErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type chatSendMessageError = chatSendMessageErrors[keyof chatSendMessageErrors];
+
+export type chatSendMessageResponses = {
+    /**
+     * Successful Response
+     */
+    200: ChatResponse;
+};
+
+export type chatSendMessageResponse = chatSendMessageResponses[keyof chatSendMessageResponses];
+
+export type chatResearchData = {
+    body: ResearchRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/chat/research';
+};
+
+export type chatResearchErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type chatResearchError = chatResearchErrors[keyof chatResearchErrors];
+
+export type chatResearchResponses = {
+    /**
+     * Successful Response
+     */
+    200: ResearchResponse;
+};
+
+export type chatResearchResponse = chatResearchResponses[keyof chatResearchResponses];
 
 export type privateCreateUserData = {
     body: PrivateUserCreate;
