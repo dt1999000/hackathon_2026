@@ -1,3 +1,5 @@
+name: hackathon_2026
+
 services:
 
   proxy:
@@ -63,8 +65,15 @@ services:
       EMAILS_FROM_EMAIL: ${EMAILS_FROM_EMAIL}
       DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:?Variable not set}@db:5432/app
       SENTRY_DSN: ${SENTRY_DSN:-}
+      LLM_LOCAL_BASE_URL: ${LLM_LOCAL_BASE_URL:-http://host.docker.internal:11434}
       FIRECRAWL_API_KEY: ${FIRECRAWL_API_KEY:-}
       LLM_LOCAL_MODEL: ${LLM_LOCAL_MODEL:-qwen3:4b}
+
+    extra_hosts:
+      # This project no longer shares a Docker network with the separate
+      # Ollama server (see the "name:" pin above), so reach it via the
+      # host's published port instead of a container hostname.
+      - "host.docker.internal:host-gateway"
 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/utils/health-check/"]
