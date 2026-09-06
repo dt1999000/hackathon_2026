@@ -30,12 +30,12 @@ class Settings(BaseSettings):
     SENTRY_DSN: HttpUrl | None = None
     DATABASE_URL: PostgresDsn
 
-    # Chat/research agent LLM providers. Ollama is a separate, shared server
-    # on this machine (not a service in this project's compose files); it's
+    # Chat LLM providers. Ollama is a separate, shared server on this
+    # machine (not a service in this project's compose files); it's
     # reachable as "ollama" when the backend container shares that server's
     # Docker network, otherwise override via the host-published port.
     LLM_LOCAL_BASE_URL: str = "http://ollama:11434"
-    LLM_LOCAL_MODEL: str = "qwen2.5:0.5b"
+    LLM_LOCAL_MODEL: str = "qwen3:4b"
     LLM_CLAUDE_MODEL: str = "claude-sonnet-5"
     ANTHROPIC_WORKSPACE_ID: str | None = None
 
