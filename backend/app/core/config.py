@@ -30,14 +30,15 @@ class Settings(BaseSettings):
     SENTRY_DSN: HttpUrl | None = None
     DATABASE_URL: PostgresDsn
 
-    # Ollama runs as a separate, shared server (another project's compose
-    # stack), not a service in this project's own compose files. Reachable
-    # here as "ollama" because the backend container is attached to that
-    # stack's Docker network (see compose.yml); on a host where the two
-    # stacks don't share a network, use the host-published port instead.
+    # Chat/RAG LLM providers. Ollama is a separate, shared server on this
+    # machine (not a service in this project's compose files); it's
+    # reachable as "ollama" when the backend container shares that server's
+    # Docker network, otherwise override via the host-published port.
     LLM_LOCAL_BASE_URL: str = "http://ollama:11434"
-    LLM_LOCAL_MODEL: str = "qwen2.5:0.5b"
+    LLM_LOCAL_MODEL: str = "qwen3:4b"
     LLM_EMBEDDING_MODEL: str = "qwen3-embedding:0.6b"
+    LLM_CLAUDE_MODEL: str = "claude-sonnet-5"
+    ANTHROPIC_WORKSPACE_ID: str | None = None
 
     @field_validator("DATABASE_URL", mode="before")
     @classmethod

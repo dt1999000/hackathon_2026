@@ -21,6 +21,9 @@ dependencies = [
     "pygithub>=2.10.0",
     "youtube-transcript-api>=1.2.4",
     "pytube>=15.0.0",
+    "langchain-core>=1.6.2",
+    "langchain-anthropic>=1.7.1",
+    "langchain-ollama>=1.1.0",
 ]
 
 [dependency-groups]

@@ -35,6 +35,44 @@ export type Body_login_login_access_token = {
 };
 
 /**
+ * ChatMessage
+ */
+export type ChatMessage = {
+    /**
+     * Role
+     */
+    role: string;
+    /**
+     * Content
+     */
+    content: string;
+};
+
+/**
+ * ChatRequest
+ */
+export type ChatRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<ChatMessage>;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local';
+};
+
+/**
+ * ChatResponse
+ */
+export type ChatResponse = {
+    /**
+     * Content
+     */
+    content: string;
+};
+
+/**
  * HTTPValidationError
  */
 export type HTTPValidationError = {
@@ -920,6 +958,31 @@ export type itemsUpdateItemResponses = {
 };
 
 export type itemsUpdateItemResponse = itemsUpdateItemResponses[keyof itemsUpdateItemResponses];
+
+export type chatSendMessageData = {
+    body: ChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/chat/message';
+};
+
+export type chatSendMessageErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type chatSendMessageError = chatSendMessageErrors[keyof chatSendMessageErrors];
+
+export type chatSendMessageResponses = {
+    /**
+     * Successful Response
+     */
+    200: ChatResponse;
+};
+
+export type chatSendMessageResponse = chatSendMessageResponses[keyof chatSendMessageResponses];
 
 export type privateCreateUserData = {
     body: PrivateUserCreate;
