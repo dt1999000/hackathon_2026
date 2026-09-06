@@ -64,6 +64,7 @@ services:
       DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:?Variable not set}@db:5432/app
       SENTRY_DSN: ${SENTRY_DSN:-}
       LLM_LOCAL_BASE_URL: ${LLM_LOCAL_BASE_URL:-http://ollama:11434}
+      FIRECRAWL_API_KEY: ${FIRECRAWL_API_KEY:-}
       LLM_LOCAL_MODEL: ${LLM_LOCAL_MODEL:-qwen3:4b}
 
     healthcheck:

@@ -1,10 +1,14 @@
-from typing import Any
+from typing import Any, cast
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from app.services.embeddings import EmbeddingClient
 from app.services.llm import LocalLLMClient
+from app.tools.firecrawl_extract import FirecrawlExtractTool
+from app.tools.firecrawl_scrape import FirecrawlScrapeWebsiteTool
+from app.tools.firecrawl_search import FirecrawlSearchTool
+from app.tools.firecrawl_website import FirecrawlCrawlWebsiteTool
 from app.tools.rag.chunking.base import BaseChunker
 from app.tools.rag.chunking.default import DefaultChunker
 from app.tools.rag.chunking.structured import CsvChunker, JsonChunker, XmlChunker
@@ -83,6 +87,24 @@ class GenerateRequest(BaseModel):
     use_retrieval: bool = True
     retrieval_method: str = "embedding"  # "embedding" or "lexical"
     embedding_model: str | None = None  # override to compare models, e.g. "nomic-embed-text"
+
+
+class CrawlWebsiteRequest(BaseModel):
+    url: str
+
+
+class ScrapeWebsiteRequest(BaseModel):
+    url: str
+
+
+class SearchRequest(BaseModel):
+    query: str
+
+
+class ExtractRequest(BaseModel):
+    url: str
+    json_schema: dict[str, Any]
+    prompt: str | None = None
 
 
 @router.post("/rag/load")
@@ -167,3 +189,42 @@ def generate(request: GenerateRequest) -> dict[str, Any]:
 
     answer = client.complete([{"role": "user", "content": prompt}])
     return {"answer": answer, "context_used": context_used}
+
+
+@router.post("/firecrawl/crawl")
+def crawl_website(request: CrawlWebsiteRequest) -> dict[str, Any]:
+    """
+    Dev-only endpoint to try out the Firecrawl crawl tool directly.
+    """
+    tool = FirecrawlCrawlWebsiteTool()
+    return cast(dict[str, Any], tool.invoke({"url": request.url}))
+
+
+@router.post("/firecrawl/scrape")
+def scrape_website(request: ScrapeWebsiteRequest) -> dict[str, Any]:
+    """
+    Dev-only endpoint to try out the Firecrawl scrape tool directly.
+    """
+    tool = FirecrawlScrapeWebsiteTool()
+    return cast(dict[str, Any], tool.invoke({"url": request.url}))
+
+
+@router.post("/firecrawl/search")
+def search(request: SearchRequest) -> dict[str, Any]:
+    """
+    Dev-only endpoint to try out the Firecrawl search tool directly.
+    """
+    tool = FirecrawlSearchTool()
+    return cast(dict[str, Any], tool.invoke({"query": request.query}))
+
+
+@router.post("/firecrawl/extract")
+def extract(request: ExtractRequest) -> dict[str, Any]:
+    """
+    Dev-only endpoint to try out the Firecrawl structured-extraction tool directly.
+    """
+    tool = FirecrawlExtractTool()
+    return cast(
+        dict[str, Any],
+        tool.invoke({"url": request.url, "json_schema": request.json_schema, "prompt": request.prompt}),
+    )
