@@ -197,42 +197,6 @@ export type PrivateUserCreate = {
 };
 
 /**
- * ResearchRequest
- */
-export type ResearchRequest = {
-    /**
-     * Query
-     */
-    query: string;
-    /**
-     * Provider
-     */
-    provider?: 'claude' | 'local';
-};
-
-/**
- * ResearchResponse
- */
-export type ResearchResponse = {
-    /**
-     * Topic
-     */
-    topic: string;
-    /**
-     * Summary
-     */
-    summary: string;
-    /**
-     * Sources
-     */
-    sources: Array<string>;
-    /**
-     * Tools Used
-     */
-    tools_used: Array<string>;
-};
-
-/**
  * Token
  */
 export type Token = {
@@ -1019,31 +983,6 @@ export type chatSendMessageResponses = {
 };
 
 export type chatSendMessageResponse = chatSendMessageResponses[keyof chatSendMessageResponses];
-
-export type chatResearchData = {
-    body: ResearchRequest;
-    path?: never;
-    query?: never;
-    url: '/api/v1/chat/research';
-};
-
-export type chatResearchErrors = {
-    /**
-     * Validation Error
-     */
-    422: HTTPValidationError;
-};
-
-export type chatResearchError = chatResearchErrors[keyof chatResearchErrors];
-
-export type chatResearchResponses = {
-    /**
-     * Successful Response
-     */
-    200: ResearchResponse;
-};
-
-export type chatResearchResponse = chatResearchResponses[keyof chatResearchResponses];
 
 export type privateCreateUserData = {
     body: PrivateUserCreate;
