@@ -1,5 +1,5 @@
 import uuid
-from datetime import UTC, datetime
+from datetime import UTC, date, datetime
 
 from pydantic import EmailStr
 from sqlalchemy import DateTime
@@ -131,3 +131,112 @@ class TokenPayload(SQLModel):
 class NewPassword(SQLModel):
     token: str
     new_password: str = Field(min_length=8, max_length=128)
+
+
+# --- SEC EDGAR ingestion (structured facts) ---
+
+
+# Shared properties
+class CompanyBase(SQLModel):
+    cik: str = Field(unique=True, index=True, max_length=10)
+    name: str = Field(max_length=255)
+    ticker: str | None = Field(default=None, max_length=16)
+    sic_code: str | None = Field(default=None, max_length=8)
+
+
+# Database model, database table inferred from class name
+class Company(CompanyBase, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+    filings: list[Filing] = Relationship(back_populates="company", cascade_delete=True)
+
+
+# Properties to return via API, id is always required
+class CompanyPublic(CompanyBase):
+    id: uuid.UUID
+    created_at: datetime | None = None
+
+
+class CompaniesPublic(SQLModel):
+    data: list[CompanyPublic]
+    count: int
+
+
+# Shared properties
+class FilingBase(SQLModel):
+    accession_number: str = Field(unique=True, index=True, max_length=32)
+    form_type: str = Field(max_length=16)
+    filing_date: date
+    period_of_report: date | None = None
+
+
+# Database model, database table inferred from class name
+class Filing(FilingBase, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    company_id: uuid.UUID = Field(
+        foreign_key="company.id", nullable=False, ondelete="CASCADE", index=True
+    )
+    # Prior filing of the same form_type for this company, so consecutive
+    # filings can be diffed without re-searching for the comparison target.
+    previous_filing_id: uuid.UUID | None = Field(
+        default=None, foreign_key="filing.id", nullable=True
+    )
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+    company: Company | None = Relationship(back_populates="filings")
+    facts: list[FinancialFact] = Relationship(back_populates="filing", cascade_delete=True)
+
+
+# Properties to return via API, id is always required
+class FilingPublic(FilingBase):
+    id: uuid.UUID
+    company_id: uuid.UUID
+    previous_filing_id: uuid.UUID | None = None
+    created_at: datetime | None = None
+
+
+class FilingsPublic(SQLModel):
+    data: list[FilingPublic]
+    count: int
+
+
+# Shared properties
+class FinancialFactBase(SQLModel):
+    taxonomy: str = Field(max_length=32)
+    concept: str = Field(max_length=255, index=True)
+    unit: str = Field(max_length=32)
+    value: float
+    fiscal_year: int | None = None
+    fiscal_period: str | None = Field(default=None, max_length=8)
+    period_start: date | None = None
+    period_end: date | None = None
+
+
+# Database model, database table inferred from class name
+class FinancialFact(FinancialFactBase, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    filing_id: uuid.UUID = Field(
+        foreign_key="filing.id", nullable=False, ondelete="CASCADE", index=True
+    )
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+    filing: Filing | None = Relationship(back_populates="facts")
+
+
+# Properties to return via API, id is always required
+class FinancialFactPublic(FinancialFactBase):
+    id: uuid.UUID
+    filing_id: uuid.UUID
+    created_at: datetime | None = None
+
+
+class FinancialFactsPublic(SQLModel):
+    data: list[FinancialFactPublic]
+    count: int
