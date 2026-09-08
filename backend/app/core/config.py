@@ -41,6 +41,10 @@ class Settings(BaseSettings):
     LLM_CLAUDE_MODEL: str = "claude-sonnet-5"
     ANTHROPIC_WORKSPACE_ID: str | None = None
 
+    # SEC requires a descriptive User-Agent identifying the requester on
+    # every data.sec.gov request (https://www.sec.gov/os/webmaster-faq#developers).
+    SEC_EDGAR_USER_AGENT: str = "hackathon_2026 dt1999000@gmail.com"
+
     @field_validator("DATABASE_URL", mode="before")
     @classmethod
     def _use_psycopg_driver(cls, value: str | PostgresDsn) -> str:
