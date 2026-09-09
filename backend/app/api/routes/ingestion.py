@@ -15,6 +15,7 @@ from app.models import (
 )
 from app.services.edgar import EdgarClient
 from app.services.ingestion import FilingIngestionService
+from app.services.signals import FilingSignals, get_filing_signals
 
 router = APIRouter(prefix="/ingestion", tags=["ingestion"], dependencies=[Depends(get_current_user)])
 
@@ -50,3 +51,17 @@ def list_facts(filing_id: uuid.UUID, session: SessionDep) -> FinancialFactsPubli
     """List structured financial facts ingested for a single filing."""
     facts = session.exec(select(FinancialFact).where(FinancialFact.filing_id == filing_id)).all()
     return FinancialFactsPublic(data=list(facts), count=len(facts))
+
+
+@router.get("/filings/{filing_id}/signals", response_model=FilingSignals)
+def get_signals(filing_id: uuid.UUID, session: SessionDep) -> FilingSignals:
+    """
+    Debt/liquidity and capital-expenditure change signals for a filing,
+    derived from structured facts against the prior filing of the same
+    form_type (Filing.previous_filing_id). Empty/null fields mean the
+    filing has no previous_filing_id or the concept wasn't reported.
+    """
+    filing = session.get(Filing, filing_id)
+    if filing is None:
+        raise HTTPException(status_code=404, detail="Filing not found")
+    return get_filing_signals(session, filing)
