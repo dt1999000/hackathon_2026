@@ -19,6 +19,9 @@ import { Route as LayoutAdminRouteImport } from './routes/_layout/admin'
 import { Route as LayoutChatRouteImport } from './routes/_layout/chat'
 import { Route as LayoutItemsRouteImport } from './routes/_layout/items'
 import { Route as LayoutSettingsRouteImport } from './routes/_layout/settings'
+import { Route as LayoutWatchlistRouteImport } from './routes/_layout/watchlist'
+import { Route as LayoutCompaniesIndexRouteImport } from './routes/_layout/companies/index'
+import { Route as LayoutCompaniesCikRouteImport } from './routes/_layout/companies/$cik'
 
 const LayoutRoute = LayoutRouteImport.update({
   id: '/_layout',
@@ -69,6 +72,21 @@ const LayoutSettingsRoute = LayoutSettingsRouteImport.update({
   path: '/settings',
   getParentRoute: () => LayoutRoute,
 } as any)
+const LayoutWatchlistRoute = LayoutWatchlistRouteImport.update({
+  id: '/watchlist',
+  path: '/watchlist',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutCompaniesIndexRoute = LayoutCompaniesIndexRouteImport.update({
+  id: '/companies/',
+  path: '/companies/',
+  getParentRoute: () => LayoutRoute,
+} as any)
+const LayoutCompaniesCikRoute = LayoutCompaniesCikRouteImport.update({
+  id: '/companies/$cik',
+  path: '/companies/$cik',
+  getParentRoute: () => LayoutRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof LayoutIndexRoute
@@ -80,6 +98,9 @@ export interface FileRoutesByFullPath {
   '/chat': typeof LayoutChatRoute
   '/items': typeof LayoutItemsRoute
   '/settings': typeof LayoutSettingsRoute
+  '/watchlist': typeof LayoutWatchlistRoute
+  '/companies/$cik': typeof LayoutCompaniesCikRoute
+  '/companies/': typeof LayoutCompaniesIndexRoute
 }
 export interface FileRoutesByTo {
   '/login': typeof LoginRoute
@@ -90,7 +111,10 @@ export interface FileRoutesByTo {
   '/chat': typeof LayoutChatRoute
   '/items': typeof LayoutItemsRoute
   '/settings': typeof LayoutSettingsRoute
+  '/watchlist': typeof LayoutWatchlistRoute
   '/': typeof LayoutIndexRoute
+  '/companies/$cik': typeof LayoutCompaniesCikRoute
+  '/companies': typeof LayoutCompaniesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -103,7 +127,10 @@ export interface FileRoutesById {
   '/_layout/chat': typeof LayoutChatRoute
   '/_layout/items': typeof LayoutItemsRoute
   '/_layout/settings': typeof LayoutSettingsRoute
+  '/_layout/watchlist': typeof LayoutWatchlistRoute
   '/_layout/': typeof LayoutIndexRoute
+  '/_layout/companies/$cik': typeof LayoutCompaniesCikRoute
+  '/_layout/companies/': typeof LayoutCompaniesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -117,6 +144,9 @@ export interface FileRouteTypes {
     | '/chat'
     | '/items'
     | '/settings'
+    | '/watchlist'
+    | '/companies/$cik'
+    | '/companies/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/login'
@@ -127,7 +157,10 @@ export interface FileRouteTypes {
     | '/chat'
     | '/items'
     | '/settings'
+    | '/watchlist'
     | '/'
+    | '/companies/$cik'
+    | '/companies'
   id:
     | '__root__'
     | '/_layout'
@@ -139,7 +172,10 @@ export interface FileRouteTypes {
     | '/_layout/chat'
     | '/_layout/items'
     | '/_layout/settings'
+    | '/_layout/watchlist'
     | '/_layout/'
+    | '/_layout/companies/$cik'
+    | '/_layout/companies/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -222,6 +258,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutSettingsRouteImport
       parentRoute: typeof LayoutRoute
     }
+    '/_layout/watchlist': {
+      id: '/_layout/watchlist'
+      path: '/watchlist'
+      fullPath: '/watchlist'
+      preLoaderRoute: typeof LayoutWatchlistRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/companies/': {
+      id: '/_layout/companies/'
+      path: '/companies'
+      fullPath: '/companies/'
+      preLoaderRoute: typeof LayoutCompaniesIndexRouteImport
+      parentRoute: typeof LayoutRoute
+    }
+    '/_layout/companies/$cik': {
+      id: '/_layout/companies/$cik'
+      path: '/companies/$cik'
+      fullPath: '/companies/$cik'
+      preLoaderRoute: typeof LayoutCompaniesCikRouteImport
+      parentRoute: typeof LayoutRoute
+    }
   }
 }
 
@@ -230,7 +287,10 @@ interface LayoutRouteChildren {
   LayoutChatRoute: typeof LayoutChatRoute
   LayoutItemsRoute: typeof LayoutItemsRoute
   LayoutSettingsRoute: typeof LayoutSettingsRoute
+  LayoutWatchlistRoute: typeof LayoutWatchlistRoute
   LayoutIndexRoute: typeof LayoutIndexRoute
+  LayoutCompaniesCikRoute: typeof LayoutCompaniesCikRoute
+  LayoutCompaniesIndexRoute: typeof LayoutCompaniesIndexRoute
 }
 
 const LayoutRouteChildren: LayoutRouteChildren = {
@@ -238,7 +298,10 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutChatRoute: LayoutChatRoute,
   LayoutItemsRoute: LayoutItemsRoute,
   LayoutSettingsRoute: LayoutSettingsRoute,
+  LayoutWatchlistRoute: LayoutWatchlistRoute,
   LayoutIndexRoute: LayoutIndexRoute,
+  LayoutCompaniesCikRoute: LayoutCompaniesCikRoute,
+  LayoutCompaniesIndexRoute: LayoutCompaniesIndexRoute,
 }
 
 const LayoutRouteWithChildren =

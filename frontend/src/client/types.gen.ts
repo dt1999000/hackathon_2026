@@ -73,6 +73,343 @@ export type ChatResponse = {
 };
 
 /**
+ * ChunkRequest
+ */
+export type ChunkRequest = {
+    /**
+     * Text
+     */
+    text: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
+};
+
+/**
+ * CompaniesPublic
+ */
+export type CompaniesPublic = {
+    /**
+     * Data
+     */
+    data: Array<CompanyPublic>;
+    /**
+     * Count
+     */
+    count: number;
+};
+
+/**
+ * CompanyDirectoryEntry
+ */
+export type CompanyDirectoryEntry = {
+    /**
+     * Cik
+     */
+    cik: string;
+    /**
+     * Ticker
+     */
+    ticker: string;
+    /**
+     * Name
+     */
+    name: string;
+};
+
+/**
+ * CompanyPublic
+ */
+export type CompanyPublic = {
+    /**
+     * Cik
+     */
+    cik: string;
+    /**
+     * Name
+     */
+    name: string;
+    /**
+     * Ticker
+     */
+    ticker?: string | null;
+    /**
+     * Sic Code
+     */
+    sic_code?: string | null;
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Created At
+     */
+    created_at?: string | null;
+};
+
+/**
+ * CompanyTimeline
+ */
+export type CompanyTimeline = {
+    company: CompanyPublic;
+    /**
+     * Filings
+     */
+    filings: Array<FilingTimelineEntry>;
+};
+
+/**
+ * CompleteRequest
+ */
+export type CompleteRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<{
+        [key: string]: string;
+    }>;
+};
+
+/**
+ * CrawlWebsiteRequest
+ */
+export type CrawlWebsiteRequest = {
+    /**
+     * Url
+     */
+    url: string;
+};
+
+/**
+ * ExtractRequest
+ */
+export type ExtractRequest = {
+    /**
+     * Url
+     */
+    url: string;
+    /**
+     * Json Schema
+     */
+    json_schema: {
+        [key: string]: unknown;
+    };
+    /**
+     * Prompt
+     */
+    prompt?: string | null;
+};
+
+/**
+ * FilingPublic
+ */
+export type FilingPublic = {
+    /**
+     * Accession Number
+     */
+    accession_number: string;
+    /**
+     * Form Type
+     */
+    form_type: string;
+    /**
+     * Filing Date
+     */
+    filing_date: string;
+    /**
+     * Period Of Report
+     */
+    period_of_report?: string | null;
+    /**
+     * Primary Document
+     */
+    primary_document?: string | null;
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Company Id
+     */
+    company_id: string;
+    /**
+     * Previous Filing Id
+     */
+    previous_filing_id?: string | null;
+    /**
+     * Created At
+     */
+    created_at?: string | null;
+};
+
+/**
+ * FilingSignals
+ */
+export type FilingSignals = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Previous Filing Id
+     */
+    previous_filing_id: string | null;
+    /**
+     * Debt And Liquidity
+     */
+    debt_and_liquidity: Array<MetricChange>;
+    capex: MetricChange;
+};
+
+/**
+ * FilingTimelineEntry
+ */
+export type FilingTimelineEntry = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Accession Number
+     */
+    accession_number: string;
+    /**
+     * Form Type
+     */
+    form_type: string;
+    /**
+     * Filing Date
+     */
+    filing_date: string;
+    /**
+     * Period Of Report
+     */
+    period_of_report: string | null;
+    signals: FilingSignals | null;
+    /**
+     * Narrative Changes
+     */
+    narrative_changes: Array<NarrativeChangePublic>;
+};
+
+/**
+ * FilingsPublic
+ */
+export type FilingsPublic = {
+    /**
+     * Data
+     */
+    data: Array<FilingPublic>;
+    /**
+     * Count
+     */
+    count: number;
+};
+
+/**
+ * FinancialFactPublic
+ */
+export type FinancialFactPublic = {
+    /**
+     * Taxonomy
+     */
+    taxonomy: string;
+    /**
+     * Concept
+     */
+    concept: string;
+    /**
+     * Unit
+     */
+    unit: string;
+    /**
+     * Value
+     */
+    value: number;
+    /**
+     * Fiscal Year
+     */
+    fiscal_year?: number | null;
+    /**
+     * Fiscal Period
+     */
+    fiscal_period?: string | null;
+    /**
+     * Period Start
+     */
+    period_start?: string | null;
+    /**
+     * Period End
+     */
+    period_end?: string | null;
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Created At
+     */
+    created_at?: string | null;
+};
+
+/**
+ * FinancialFactsPublic
+ */
+export type FinancialFactsPublic = {
+    /**
+     * Data
+     */
+    data: Array<FinancialFactPublic>;
+    /**
+     * Count
+     */
+    count: number;
+};
+
+/**
+ * GenerateRequest
+ */
+export type GenerateRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+    /**
+     * Query
+     */
+    query: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
+    /**
+     * Top K
+     */
+    top_k?: number;
+    /**
+     * Use Retrieval
+     */
+    use_retrieval?: boolean;
+    /**
+     * Retrieval Method
+     */
+    retrieval_method?: string;
+    /**
+     * Embedding Model
+     */
+    embedding_model?: string | null;
+};
+
+/**
  * HTTPValidationError
  */
 export type HTTPValidationError = {
@@ -80,6 +417,24 @@ export type HTTPValidationError = {
      * Detail
      */
     detail?: Array<ValidationError>;
+};
+
+/**
+ * IngestRequest
+ */
+export type IngestRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
 };
 
 /**
@@ -151,6 +506,20 @@ export type ItemsPublic = {
 };
 
 /**
+ * LoadRequest
+ */
+export type LoadRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+};
+
+/**
  * Message
  */
 export type Message = {
@@ -158,6 +527,92 @@ export type Message = {
      * Message
      */
     message: string;
+};
+
+/**
+ * MetricChange
+ */
+export type MetricChange = {
+    /**
+     * Metric
+     */
+    metric: string;
+    /**
+     * Unit
+     */
+    unit: string;
+    /**
+     * Current Value
+     */
+    current_value: number | null;
+    /**
+     * Previous Value
+     */
+    previous_value: number | null;
+    /**
+     * Change
+     */
+    change: number | null;
+    /**
+     * Change Pct
+     */
+    change_pct: number | null;
+};
+
+/**
+ * NarrativeChangePublic
+ */
+export type NarrativeChangePublic = {
+    /**
+     * Section Type
+     */
+    section_type: string;
+    /**
+     * Change Type
+     */
+    change_type: string;
+    /**
+     * Summary
+     */
+    summary: string;
+    /**
+     * Similarity Score
+     */
+    similarity_score?: number | null;
+    /**
+     * New Excerpt
+     */
+    new_excerpt?: string | null;
+    /**
+     * Old Excerpt
+     */
+    old_excerpt?: string | null;
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Created At
+     */
+    created_at?: string | null;
+};
+
+/**
+ * NarrativeChangesPublic
+ */
+export type NarrativeChangesPublic = {
+    /**
+     * Data
+     */
+    data: Array<NarrativeChangePublic>;
+    /**
+     * Count
+     */
+    count: number;
 };
 
 /**
@@ -194,6 +649,26 @@ export type PrivateUserCreate = {
      * Is Verified
      */
     is_verified?: boolean;
+};
+
+/**
+ * ScrapeWebsiteRequest
+ */
+export type ScrapeWebsiteRequest = {
+    /**
+     * Url
+     */
+    url: string;
+};
+
+/**
+ * SearchRequest
+ */
+export type SearchRequest = {
+    /**
+     * Query
+     */
+    query: string;
 };
 
 /**
@@ -984,6 +1459,329 @@ export type chatSendMessageResponses = {
 
 export type chatSendMessageResponse = chatSendMessageResponses[keyof chatSendMessageResponses];
 
+export type ingestionSyncCompanyData = {
+    body?: never;
+    path: {
+        /**
+         * Cik
+         */
+        cik: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/companies/{cik}/sync';
+};
+
+export type ingestionSyncCompanyErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionSyncCompanyError = ingestionSyncCompanyErrors[keyof ingestionSyncCompanyErrors];
+
+export type ingestionSyncCompanyResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyPublic;
+};
+
+export type ingestionSyncCompanyResponse = ingestionSyncCompanyResponses[keyof ingestionSyncCompanyResponses];
+
+export type ingestionListFilingsData = {
+    body?: never;
+    path: {
+        /**
+         * Cik
+         */
+        cik: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/companies/{cik}/filings';
+};
+
+export type ingestionListFilingsErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionListFilingsError = ingestionListFilingsErrors[keyof ingestionListFilingsErrors];
+
+export type ingestionListFilingsResponses = {
+    /**
+     * Successful Response
+     */
+    200: FilingsPublic;
+};
+
+export type ingestionListFilingsResponse = ingestionListFilingsResponses[keyof ingestionListFilingsResponses];
+
+export type ingestionListFactsData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/filings/{filing_id}/facts';
+};
+
+export type ingestionListFactsErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionListFactsError = ingestionListFactsErrors[keyof ingestionListFactsErrors];
+
+export type ingestionListFactsResponses = {
+    /**
+     * Successful Response
+     */
+    200: FinancialFactsPublic;
+};
+
+export type ingestionListFactsResponse = ingestionListFactsResponses[keyof ingestionListFactsResponses];
+
+export type ingestionGetSignalsData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/filings/{filing_id}/signals';
+};
+
+export type ingestionGetSignalsErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionGetSignalsError = ingestionGetSignalsErrors[keyof ingestionGetSignalsErrors];
+
+export type ingestionGetSignalsResponses = {
+    /**
+     * Successful Response
+     */
+    200: FilingSignals;
+};
+
+export type ingestionGetSignalsResponse = ingestionGetSignalsResponses[keyof ingestionGetSignalsResponses];
+
+export type ingestionComputeNarrativeDiffData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query: {
+        /**
+         * Section Type
+         */
+        section_type: 'risk_factors' | 'legal_proceedings';
+    };
+    url: '/api/v1/ingestion/filings/{filing_id}/narrative-diff';
+};
+
+export type ingestionComputeNarrativeDiffErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionComputeNarrativeDiffError = ingestionComputeNarrativeDiffErrors[keyof ingestionComputeNarrativeDiffErrors];
+
+export type ingestionComputeNarrativeDiffResponses = {
+    /**
+     * Successful Response
+     */
+    200: NarrativeChangesPublic;
+};
+
+export type ingestionComputeNarrativeDiffResponse = ingestionComputeNarrativeDiffResponses[keyof ingestionComputeNarrativeDiffResponses];
+
+export type ingestionListNarrativeChangesData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/filings/{filing_id}/narrative-changes';
+};
+
+export type ingestionListNarrativeChangesErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionListNarrativeChangesError = ingestionListNarrativeChangesErrors[keyof ingestionListNarrativeChangesErrors];
+
+export type ingestionListNarrativeChangesResponses = {
+    /**
+     * Successful Response
+     */
+    200: NarrativeChangesPublic;
+};
+
+export type ingestionListNarrativeChangesResponse = ingestionListNarrativeChangesResponses[keyof ingestionListNarrativeChangesResponses];
+
+export type companiesSearchData = {
+    body?: never;
+    path?: never;
+    query: {
+        /**
+         * Q
+         */
+        q: string;
+    };
+    url: '/api/v1/companies/search';
+};
+
+export type companiesSearchErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companiesSearchError = companiesSearchErrors[keyof companiesSearchErrors];
+
+export type companiesSearchResponses = {
+    /**
+     * Response Companies-Search
+     *
+     * Successful Response
+     */
+    200: Array<CompanyDirectoryEntry>;
+};
+
+export type companiesSearchResponse = companiesSearchResponses[keyof companiesSearchResponses];
+
+export type companiesGetTimelineData = {
+    body?: never;
+    path: {
+        /**
+         * Cik
+         */
+        cik: string;
+    };
+    query?: never;
+    url: '/api/v1/companies/{cik}/timeline';
+};
+
+export type companiesGetTimelineErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companiesGetTimelineError = companiesGetTimelineErrors[keyof companiesGetTimelineErrors];
+
+export type companiesGetTimelineResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyTimeline;
+};
+
+export type companiesGetTimelineResponse = companiesGetTimelineResponses[keyof companiesGetTimelineResponses];
+
+export type watchlistListWatchlistData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/watchlist';
+};
+
+export type watchlistListWatchlistResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompaniesPublic;
+};
+
+export type watchlistListWatchlistResponse = watchlistListWatchlistResponses[keyof watchlistListWatchlistResponses];
+
+export type watchlistRemoveFromWatchlistData = {
+    body?: never;
+    path: {
+        /**
+         * Cik
+         */
+        cik: string;
+    };
+    query?: never;
+    url: '/api/v1/watchlist/{cik}';
+};
+
+export type watchlistRemoveFromWatchlistErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type watchlistRemoveFromWatchlistError = watchlistRemoveFromWatchlistErrors[keyof watchlistRemoveFromWatchlistErrors];
+
+export type watchlistRemoveFromWatchlistResponses = {
+    /**
+     * Successful Response
+     */
+    200: Message;
+};
+
+export type watchlistRemoveFromWatchlistResponse = watchlistRemoveFromWatchlistResponses[keyof watchlistRemoveFromWatchlistResponses];
+
+export type watchlistAddToWatchlistData = {
+    body?: never;
+    path: {
+        /**
+         * Cik
+         */
+        cik: string;
+    };
+    query?: never;
+    url: '/api/v1/watchlist/{cik}';
+};
+
+export type watchlistAddToWatchlistErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type watchlistAddToWatchlistError = watchlistAddToWatchlistErrors[keyof watchlistAddToWatchlistErrors];
+
+export type watchlistAddToWatchlistResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyPublic;
+};
+
+export type watchlistAddToWatchlistResponse = watchlistAddToWatchlistResponses[keyof watchlistAddToWatchlistResponses];
+
 export type privateCreateUserData = {
     body: PrivateUserCreate;
     path?: never;
@@ -1008,3 +1806,264 @@ export type privateCreateUserResponses = {
 };
 
 export type privateCreateUserResponse = privateCreateUserResponses[keyof privateCreateUserResponses];
+
+export type toolsLoadSourceData = {
+    body: LoadRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/load';
+};
+
+export type toolsLoadSourceErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsLoadSourceError = toolsLoadSourceErrors[keyof toolsLoadSourceErrors];
+
+export type toolsLoadSourceResponses = {
+    /**
+     * Response Tools-Load Source
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsLoadSourceResponse = toolsLoadSourceResponses[keyof toolsLoadSourceResponses];
+
+export type toolsChunkTextData = {
+    body: ChunkRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/chunk';
+};
+
+export type toolsChunkTextErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsChunkTextError = toolsChunkTextErrors[keyof toolsChunkTextErrors];
+
+export type toolsChunkTextResponses = {
+    /**
+     * Response Tools-Chunk Text
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsChunkTextResponse = toolsChunkTextResponses[keyof toolsChunkTextResponses];
+
+export type toolsIngestSourceData = {
+    body: IngestRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/ingest';
+};
+
+export type toolsIngestSourceErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsIngestSourceError = toolsIngestSourceErrors[keyof toolsIngestSourceErrors];
+
+export type toolsIngestSourceResponses = {
+    /**
+     * Response Tools-Ingest Source
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsIngestSourceResponse = toolsIngestSourceResponses[keyof toolsIngestSourceResponses];
+
+export type toolsCompleteData = {
+    body: CompleteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/llm/complete';
+};
+
+export type toolsCompleteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsCompleteError = toolsCompleteErrors[keyof toolsCompleteErrors];
+
+export type toolsCompleteResponses = {
+    /**
+     * Response Tools-Complete
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: string;
+    };
+};
+
+export type toolsCompleteResponse = toolsCompleteResponses[keyof toolsCompleteResponses];
+
+export type toolsGenerateData = {
+    body: GenerateRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/generate';
+};
+
+export type toolsGenerateErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsGenerateError = toolsGenerateErrors[keyof toolsGenerateErrors];
+
+export type toolsGenerateResponses = {
+    /**
+     * Response Tools-Generate
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsGenerateResponse = toolsGenerateResponses[keyof toolsGenerateResponses];
+
+export type toolsCrawlWebsiteData = {
+    body: CrawlWebsiteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/crawl';
+};
+
+export type toolsCrawlWebsiteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsCrawlWebsiteError = toolsCrawlWebsiteErrors[keyof toolsCrawlWebsiteErrors];
+
+export type toolsCrawlWebsiteResponses = {
+    /**
+     * Response Tools-Crawl Website
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsCrawlWebsiteResponse = toolsCrawlWebsiteResponses[keyof toolsCrawlWebsiteResponses];
+
+export type toolsScrapeWebsiteData = {
+    body: ScrapeWebsiteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/scrape';
+};
+
+export type toolsScrapeWebsiteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsScrapeWebsiteError = toolsScrapeWebsiteErrors[keyof toolsScrapeWebsiteErrors];
+
+export type toolsScrapeWebsiteResponses = {
+    /**
+     * Response Tools-Scrape Website
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsScrapeWebsiteResponse = toolsScrapeWebsiteResponses[keyof toolsScrapeWebsiteResponses];
+
+export type toolsSearchData = {
+    body: SearchRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/search';
+};
+
+export type toolsSearchErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsSearchError = toolsSearchErrors[keyof toolsSearchErrors];
+
+export type toolsSearchResponses = {
+    /**
+     * Response Tools-Search
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsSearchResponse = toolsSearchResponses[keyof toolsSearchResponses];
+
+export type toolsExtractData = {
+    body: ExtractRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/extract';
+};
+
+export type toolsExtractErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsExtractError = toolsExtractErrors[keyof toolsExtractErrors];
+
+export type toolsExtractResponses = {
+    /**
+     * Response Tools-Extract
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsExtractResponse = toolsExtractResponses[keyof toolsExtractResponses];

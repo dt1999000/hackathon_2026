@@ -2,7 +2,7 @@ import uuid
 from datetime import UTC, date, datetime
 
 from pydantic import EmailStr
-from sqlalchemy import DateTime
+from sqlalchemy import DateTime, UniqueConstraint
 from sqlmodel import Field, Relationship, SQLModel
 
 
@@ -278,3 +278,16 @@ class NarrativeChangePublic(NarrativeChangeBase):
 class NarrativeChangesPublic(SQLModel):
     data: list[NarrativeChangePublic]
     count: int
+
+
+# Database model, database table inferred from class name
+class Watchlist(SQLModel, table=True):
+    __table_args__ = (UniqueConstraint("user_id", "company_id", name="uq_watchlist_user_company"),)
+
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    user_id: uuid.UUID = Field(foreign_key="user.id", nullable=False, ondelete="CASCADE", index=True)
+    company_id: uuid.UUID = Field(foreign_key="company.id", nullable=False, ondelete="CASCADE", index=True)
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
