@@ -66,6 +66,7 @@ class FilingIngestionService:
                 recent["form"],
                 recent["filingDate"],
                 recent["reportDate"],
+                recent["primaryDocument"],
                 strict=True,
             )
         )
@@ -74,7 +75,7 @@ class FilingIngestionService:
         rows.reverse()
 
         last_filing_by_form: dict[str, Filing] = {}
-        for accession_number, form_type, filing_date_str, report_date_str in rows:
+        for accession_number, form_type, filing_date_str, report_date_str, primary_document in rows:
             if form_type not in _TRACKED_FORM_TYPES:
                 continue
             filing = self.session.exec(
@@ -89,7 +90,14 @@ class FilingIngestionService:
                     filing_date=date.fromisoformat(filing_date_str),
                     period_of_report=date.fromisoformat(report_date_str) if report_date_str else None,
                     previous_filing_id=previous.id if previous else None,
+                    primary_document=primary_document,
                 )
+                self.session.add(filing)
+                self.session.commit()
+                self.session.refresh(filing)
+            elif filing.primary_document is None and primary_document:
+                # Backfills a field added after this filing was first ingested.
+                filing.primary_document = primary_document
                 self.session.add(filing)
                 self.session.commit()
                 self.session.refresh(filing)

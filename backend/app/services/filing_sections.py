@@ -14,9 +14,17 @@ LEGAL_PROCEEDINGS_10K_START = [r"\bitem\s*3\b"]
 LEGAL_PROCEEDINGS_10K_END = [r"\bitem\s*4\b"]
 LEGAL_PROCEEDINGS_10Q_START = [r"\bitem\s*1\b(?!\s*[a-c])"]
 LEGAL_PROCEEDINGS_10Q_END = [r"\bitem\s*1a\b", r"\bitem\s*2\b"]
-# A 10-Q has two "Item 1"s — Part I's "Financial Statements" and Part II's
-# "Legal Proceedings" — sharing the same bare item number. Excluding
-# candidates immediately followed by the Part I title disambiguates them.
+# A 10-Q has two "Item 1"s — Part I's "Financial Statements" (always a huge
+# table, so it wins on raw span length against every filer's much shorter
+# Legal Proceedings — confirmed live: without this exclusion, all 5 test
+# filers grab Part I) and Part II's "Legal Proceedings". Excluding
+# candidates immediately followed by the Part I title is filer-specific
+# (works for 4/5 tested) but was kept over a "require content after the
+# document's PART II marker" alternative, which scored worse (3/5) — a
+# stray "Part II" cross-reference earlier in the document, or Part II's own
+# repeated Item 1A running headers on some filers, threw off which "PART
+# II" occurrence was the real one. Neither approach is filer-general;
+# Microsoft fails both, for two different reasons.
 _LEGAL_PROCEEDINGS_10Q_EXCLUDE_FOLLOWING = re.compile(r"financial statements", re.IGNORECASE)
 
 _MIN_HEADING_FONT_PT = 9.0
@@ -80,6 +88,11 @@ def extract_section(
     running unbounded to EOF). Among bounded candidates, the longest wins —
     a table-of-contents entry or a stray cross-reference is short by
     construction; the real section is not.
+
+    `exclude_following`, if given, discards a candidate whose immediately
+    following text matches it — used to rule out a same-numbered heading
+    from a different Part (e.g. a 10-Q's Part I "Item 1. Financial
+    Statements" when looking for Part II's "Item 1. Legal Proceedings").
     """
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style"]):

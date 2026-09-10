@@ -22,10 +22,13 @@ class EdgarClient:
         """Zero-pad a CIK to the 10-digit format SEC's API URLs expect."""
         return str(int(cik)).zfill(10)
 
-    def _get(self, url: str) -> dict[str, Any]:
+    def _throttle(self) -> None:
         elapsed = time.monotonic() - self._last_request_at
         if elapsed < _MIN_REQUEST_INTERVAL_SECONDS:
             time.sleep(_MIN_REQUEST_INTERVAL_SECONDS - elapsed)
+
+    def _get(self, url: str) -> dict[str, Any]:
+        self._throttle()
         response = httpx.get(url, headers={"User-Agent": self.user_agent}, timeout=30.0)
         self._last_request_at = time.monotonic()
         response.raise_for_status()
@@ -40,3 +43,14 @@ class EdgarClient:
         """All XBRL structured facts SEC has tagged for this company, by concept."""
         padded = self.normalize_cik(cik)
         return self._get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{padded}.json")
+
+    def get_filing_document(self, cik: str | int, accession_number: str, primary_document: str) -> str:
+        """Raw HTML of a filing's primary document, from SEC's Archives (not data.sec.gov)."""
+        cik_int = int(cik)
+        accession_no_dashes = accession_number.replace("-", "")
+        url = f"https://www.sec.gov/Archives/edgar/data/{cik_int}/{accession_no_dashes}/{primary_document}"
+        self._throttle()
+        response = httpx.get(url, headers={"User-Agent": self.user_agent}, timeout=60.0)
+        self._last_request_at = time.monotonic()
+        response.raise_for_status()
+        return response.text

@@ -12,9 +12,12 @@ from app.models import (
     FilingsPublic,
     FinancialFact,
     FinancialFactsPublic,
+    NarrativeChange,
+    NarrativeChangesPublic,
 )
 from app.services.edgar import EdgarClient
 from app.services.ingestion import FilingIngestionService
+from app.services.narrative_diff import SectionType, diff_narrative_section
 from app.services.signals import FilingSignals, get_filing_signals
 
 router = APIRouter(prefix="/ingestion", tags=["ingestion"], dependencies=[Depends(get_current_user)])
@@ -65,3 +68,31 @@ def get_signals(filing_id: uuid.UUID, session: SessionDep) -> FilingSignals:
     if filing is None:
         raise HTTPException(status_code=404, detail="Filing not found")
     return get_filing_signals(session, filing)
+
+
+@router.post("/filings/{filing_id}/narrative-diff", response_model=NarrativeChangesPublic)
+def compute_narrative_diff(filing_id: uuid.UUID, section_type: SectionType, session: SessionDep) -> NarrativeChangesPublic:
+    """
+    Diff a filing's Risk Factors or Legal Proceedings section against the
+    prior filing of the same form_type: fetches both documents, extracts
+    the section, chunks and embeds it, matches chunks bidirectionally, and
+    asks the LLM to characterize anything that isn't near-identical.
+    Persists and returns the changes found. Safe to re-run — re-running
+    adds a fresh set of rows for this call rather than deduplicating, since
+    unlike structured facts there's no natural per-change idempotency key.
+    """
+    filing = session.get(Filing, filing_id)
+    if filing is None:
+        raise HTTPException(status_code=404, detail="Filing not found")
+    try:
+        changes = diff_narrative_section(session, filing, section_type)
+    except httpx.HTTPStatusError as exc:
+        raise HTTPException(status_code=502, detail=f"SEC EDGAR request failed: {exc}") from exc
+    return NarrativeChangesPublic(data=list(changes), count=len(changes))
+
+
+@router.get("/filings/{filing_id}/narrative-changes", response_model=NarrativeChangesPublic)
+def list_narrative_changes(filing_id: uuid.UUID, session: SessionDep) -> NarrativeChangesPublic:
+    """List narrative changes already computed (via narrative-diff) for a filing."""
+    changes = session.exec(select(NarrativeChange).where(NarrativeChange.filing_id == filing_id)).all()
+    return NarrativeChangesPublic(data=list(changes), count=len(changes))

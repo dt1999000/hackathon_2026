@@ -171,6 +171,10 @@ class FilingBase(SQLModel):
     form_type: str = Field(max_length=16)
     filing_date: date
     period_of_report: date | None = None
+    # Filename of the primary document on SEC's Archives, e.g.
+    # "aapl-20260328.htm" — needed to re-fetch the raw filing document for
+    # narrative-section extraction without re-hitting submissions.json.
+    primary_document: str | None = Field(default=None, max_length=255)
 
 
 # Database model, database table inferred from class name
@@ -239,4 +243,38 @@ class FinancialFactPublic(FinancialFactBase):
 
 class FinancialFactsPublic(SQLModel):
     data: list[FinancialFactPublic]
+    count: int
+
+
+# Shared properties
+class NarrativeChangeBase(SQLModel):
+    section_type: str = Field(max_length=32)  # "risk_factors" | "legal_proceedings"
+    change_type: str = Field(max_length=16)  # "new" | "removed" | "modified"
+    summary: str
+    similarity_score: float | None = None
+    new_excerpt: str | None = None
+    old_excerpt: str | None = None
+
+
+# Database model, database table inferred from class name
+class NarrativeChange(NarrativeChangeBase, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    filing_id: uuid.UUID = Field(
+        foreign_key="filing.id", nullable=False, ondelete="CASCADE", index=True
+    )
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+
+
+# Properties to return via API, id is always required
+class NarrativeChangePublic(NarrativeChangeBase):
+    id: uuid.UUID
+    filing_id: uuid.UUID
+    created_at: datetime | None = None
+
+
+class NarrativeChangesPublic(SQLModel):
+    data: list[NarrativeChangePublic]
     count: int
