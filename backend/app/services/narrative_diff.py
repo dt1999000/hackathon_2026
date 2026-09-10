@@ -1,5 +1,6 @@
 import json
 import re
+from dataclasses import dataclass
 from typing import Literal
 
 from sqlmodel import Session
@@ -13,6 +14,7 @@ from app.tools.rag.chunking.default import DefaultChunker
 from app.tools.rag.retrieval import _cosine_similarity
 
 SectionType = Literal["risk_factors", "legal_proceedings"]
+ChangeType = Literal["new", "removed", "modified"]
 
 # Similarity is the cheap pre-filter that keeps this affordable: most
 # paragraphs in a Risk Factors section are identical quarter to quarter, so
@@ -25,6 +27,34 @@ _NO_MATCH_SIMILARITY = 0.55
 
 _SECTION_LABELS: dict[SectionType, str] = {"risk_factors": "Risk Factors", "legal_proceedings": "Legal Proceedings"}
 _EXCERPT_LENGTH = 1000
+
+# Larger chunks than a typical RAG setup: fewer, coarser chunks mean fewer
+# LLM calls, which matters more than usual here because the shared local
+# Ollama server processes one request at a time (confirmed via its -np 1
+# launch flag) — most of the wall-clock cost of this pipeline is queueing
+# behind our own prior calls, not per-call compute (measured ~2-4s of real
+# GPU work per call vs. 30-60s wall time). Cutting call count is the
+# highest-leverage lever available from application code.
+_CHUNK_SIZE = 2500
+_CHUNK_OVERLAP = 150
+
+# Batching multiple chunk-pairs into one LLM call divides the queue-wait
+# tax by roughly the batch size. Kept modest because the server's context
+# window is only 4096 tokens (confirmed via /api/ps) and qwen3:4b's
+# thinking-mode output can run long even for simple asks (a trivial
+# one-line test prompt still produced 150-300 reasoning tokens) — a batch
+# that's too large risks context overflow mid-generation.
+_BATCH_SIZE = 4
+_BATCH_ITEM_LENGTH = 800
+_BATCH_PAIR_ITEM_LENGTH = 600
+
+
+@dataclass
+class _PendingChange:
+    change_type: ChangeType
+    new_text: str | None
+    old_text: str | None
+    score: float
 
 
 def _extract_section(edgar: EdgarClient, cik: str, filing: Filing, section_type: SectionType) -> str | None:
@@ -47,63 +77,73 @@ def _best_match(embedding: list[float], candidates: list[str], candidate_embeddi
     return best_score, best_text
 
 
-def _ask_llm(llm: LocalLLMClient, prompt: str) -> str | None:
+def _ask_llm_batch(llm: LocalLLMClient, prompt: str, expected_count: int) -> list[str | None]:
     try:
         raw = llm.complete([{"role": "user", "content": prompt}])
     except Exception:  # noqa: BLE001 - a flaky local model must not break the whole diff
-        return None
-    match = re.search(r"\{.*\}", raw, re.DOTALL)
+        return [None] * expected_count
+    match = re.search(r"\[.*\]", raw, re.DOTALL)
     if not match:
-        return None
+        return [None] * expected_count
     try:
         parsed = json.loads(match.group(0))
     except json.JSONDecodeError:
-        return None
-    summary = parsed.get("summary")
-    return str(summary) if summary else None
+        return [None] * expected_count
+    if not isinstance(parsed, list):
+        return [None] * expected_count
+
+    summaries: list[str | None] = []
+    for i in range(expected_count):
+        item = parsed[i] if i < len(parsed) else None
+        summary = item.get("summary") if isinstance(item, dict) else None
+        summaries.append(str(summary) if summary else None)
+    return summaries
 
 
-def _characterize_new_or_removed(
-    llm: LocalLLMClient, text: str, change_type: Literal["new", "removed"], section_type: SectionType, score: float
-) -> NarrativeChange:
+def _describe_item(index: int, item: _PendingChange, label: str) -> str:
+    if item.change_type == "new":
+        assert item.new_text is not None
+        return f"{index}. [ADDED paragraph in the {label} section]\n{item.new_text[:_BATCH_ITEM_LENGTH]}"
+    if item.change_type == "removed":
+        assert item.old_text is not None
+        return f"{index}. [REMOVED paragraph from the {label} section]\n{item.old_text[:_BATCH_ITEM_LENGTH]}"
+    assert item.new_text is not None and item.old_text is not None
+    return (
+        f"{index}. [MODIFIED paragraph in the {label} section]\n"
+        f"Old version:\n{item.old_text[:_BATCH_PAIR_ITEM_LENGTH]}\n"
+        f"New version:\n{item.new_text[:_BATCH_PAIR_ITEM_LENGTH]}"
+    )
+
+
+def _characterize_batch(llm: LocalLLMClient, section_type: SectionType, batch: list[_PendingChange]) -> list[NarrativeChange]:
     label = _SECTION_LABELS[section_type]
-    verb = "added to" if change_type == "new" else "removed from"
+    items_text = "\n\n".join(_describe_item(i, item, label) for i, item in enumerate(batch, start=1))
     prompt = (
-        f"This paragraph was {verb} a company's {label} section in a newer SEC filing "
-        f"compared to the prior one.\n\nParagraph:\n{text[:2000]}\n\n"
-        'Respond with JSON only: {"summary": "<one sentence describing what this paragraph is about>"}'
+        f"Below are {len(batch)} numbered changes between two versions of a company's {label} section, "
+        f"from consecutive SEC filings. For ADDED/REMOVED paragraphs, describe in one sentence what the "
+        f"paragraph is about. For MODIFIED paragraphs, describe in one sentence what changed.\n\n"
+        f"{items_text}\n\n"
+        f'Respond with JSON only: an array of exactly {len(batch)} objects in order, each '
+        '{"summary": "<one sentence>"}. Example: [{"summary": "..."}, {"summary": "..."}]'
     )
-    summary = _ask_llm(llm, prompt) or text[:200].strip()
-    return NarrativeChange(
-        section_type=section_type,
-        change_type=change_type,
-        summary=summary,
-        similarity_score=score,
-        new_excerpt=text[:_EXCERPT_LENGTH] if change_type == "new" else None,
-        old_excerpt=text[:_EXCERPT_LENGTH] if change_type == "removed" else None,
-    )
+    summaries = _ask_llm_batch(llm, prompt, len(batch))
 
-
-def _characterize_modified(
-    llm: LocalLLMClient, new_text: str, old_text: str, section_type: SectionType, score: float
-) -> NarrativeChange | None:
-    label = _SECTION_LABELS[section_type]
-    prompt = (
-        f"Compare these two versions of a paragraph from a company's {label} section, from "
-        f"consecutive SEC filings.\n\nOld version:\n{old_text[:1500]}\n\nNew version:\n{new_text[:1500]}\n\n"
-        'Respond with JSON only: {"summary": "<one sentence describing what changed>"}'
-    )
-    summary = _ask_llm(llm, prompt)
-    if not summary:
-        return None
-    return NarrativeChange(
-        section_type=section_type,
-        change_type="modified",
-        summary=summary,
-        similarity_score=score,
-        new_excerpt=new_text[:_EXCERPT_LENGTH],
-        old_excerpt=old_text[:_EXCERPT_LENGTH],
-    )
+    changes: list[NarrativeChange] = []
+    for item, summary in zip(batch, summaries, strict=True):
+        if item.change_type == "modified" and not summary:
+            continue  # no fallback for modified — an unclear diff isn't worth a vague row
+        fallback = (item.new_text or item.old_text or "")[:200].strip()
+        changes.append(
+            NarrativeChange(
+                section_type=section_type,
+                change_type=item.change_type,
+                summary=summary or fallback,
+                similarity_score=item.score,
+                new_excerpt=item.new_text[:_EXCERPT_LENGTH] if item.new_text else None,
+                old_excerpt=item.old_text[:_EXCERPT_LENGTH] if item.old_text else None,
+            )
+        )
+    return changes
 
 
 def diff_narrative_section(
@@ -132,7 +172,7 @@ def diff_narrative_section(
     if not current_text or not previous_text:
         return []
 
-    chunker = DefaultChunker(chunk_size=1200, chunk_overlap=100)
+    chunker = DefaultChunker(chunk_size=_CHUNK_SIZE, chunk_overlap=_CHUNK_OVERLAP)
     current_chunks = chunker.chunk(current_text)
     previous_chunks = chunker.chunk(previous_text)
     if not current_chunks or not previous_chunks:
@@ -142,24 +182,26 @@ def diff_narrative_section(
     current_embeddings = embed.embed(current_chunks)
     previous_embeddings = embed.embed(previous_chunks)
 
-    llm = llm_client or LocalLLMClient()
-    changes: list[NarrativeChange] = []
+    pending: list[_PendingChange] = []
 
     for chunk, embedding in zip(current_chunks, current_embeddings, strict=True):
         score, matched_previous = _best_match(embedding, previous_chunks, previous_embeddings)
         if score >= _UNCHANGED_SIMILARITY:
             continue
         if score < _NO_MATCH_SIMILARITY:
-            changes.append(_characterize_new_or_removed(llm, chunk, "new", section_type, score))
+            pending.append(_PendingChange("new", new_text=chunk, old_text=None, score=score))
         else:
-            modified = _characterize_modified(llm, chunk, matched_previous, section_type, score)
-            if modified is not None:
-                changes.append(modified)
+            pending.append(_PendingChange("modified", new_text=chunk, old_text=matched_previous, score=score))
 
     for chunk, embedding in zip(previous_chunks, previous_embeddings, strict=True):
         score, _ = _best_match(embedding, current_chunks, current_embeddings)
         if score < _NO_MATCH_SIMILARITY:
-            changes.append(_characterize_new_or_removed(llm, chunk, "removed", section_type, score))
+            pending.append(_PendingChange("removed", new_text=None, old_text=chunk, score=score))
+
+    llm = llm_client or LocalLLMClient()
+    changes: list[NarrativeChange] = []
+    for i in range(0, len(pending), _BATCH_SIZE):
+        changes.extend(_characterize_batch(llm, section_type, pending[i : i + _BATCH_SIZE]))
 
     for change in changes:
         change.filing_id = filing.id
