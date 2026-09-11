@@ -45,6 +45,8 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     uv sync --frozen --no-install-workspace --package app
 
+COPY ./resources /app/resources
+
 COPY ./backend/scripts /app/backend/scripts
 
 COPY ./backend/pyproject.toml ./backend/alembic.ini /app/backend/

@@ -10,6 +10,7 @@ from app.services.edgar import EdgarClient
 from app.services.embeddings import EmbeddingClient
 from app.services.filing_sections import extract_legal_proceedings, extract_risk_factors
 from app.services.llm import LocalLLMClient
+from app.services.materiality import assess_materiality
 from app.tools.rag.chunking.default import DefaultChunker
 from app.tools.rag.retrieval import _cosine_similarity
 
@@ -55,6 +56,7 @@ class _PendingChange:
     new_text: str | None
     old_text: str | None
     score: float
+    embedding: list[float]
 
 
 def _extract_section(edgar: EdgarClient, cik: str, filing: Filing, section_type: SectionType) -> str | None:
@@ -189,19 +191,43 @@ def diff_narrative_section(
         if score >= _UNCHANGED_SIMILARITY:
             continue
         if score < _NO_MATCH_SIMILARITY:
-            pending.append(_PendingChange("new", new_text=chunk, old_text=None, score=score))
+            pending.append(_PendingChange("new", new_text=chunk, old_text=None, score=score, embedding=embedding))
         else:
-            pending.append(_PendingChange("modified", new_text=chunk, old_text=matched_previous, score=score))
+            pending.append(
+                _PendingChange("modified", new_text=chunk, old_text=matched_previous, score=score, embedding=embedding)
+            )
 
     for chunk, embedding in zip(previous_chunks, previous_embeddings, strict=True):
         score, _ = _best_match(embedding, current_chunks, current_embeddings)
         if score < _NO_MATCH_SIMILARITY:
-            pending.append(_PendingChange("removed", new_text=None, old_text=chunk, score=score))
+            pending.append(_PendingChange("removed", new_text=None, old_text=chunk, score=score, embedding=embedding))
 
+    # Materiality triage: decide which chunks are worth an LLM call BEFORE
+    # making one. Neither layer inside assess_materiality costs anything
+    # extra here — the chunk embedding already exists, and the reference
+    # embeddings it's compared against are computed once and cached.
     llm = llm_client or LocalLLMClient()
     changes: list[NarrativeChange] = []
-    for i in range(0, len(pending), _BATCH_SIZE):
-        changes.extend(_characterize_batch(llm, section_type, pending[i : i + _BATCH_SIZE]))
+    needs_llm: list[_PendingChange] = []
+    for item in pending:
+        text = item.new_text or item.old_text or ""
+        tier, _category = assess_materiality(text, item.embedding, embed)
+        if tier == "high":
+            needs_llm.append(item)
+        else:
+            changes.append(
+                NarrativeChange(
+                    section_type=section_type,
+                    change_type=item.change_type,
+                    summary=text[:200].strip(),
+                    similarity_score=item.score,
+                    new_excerpt=item.new_text[:_EXCERPT_LENGTH] if item.new_text else None,
+                    old_excerpt=item.old_text[:_EXCERPT_LENGTH] if item.old_text else None,
+                )
+            )
+
+    for i in range(0, len(needs_llm), _BATCH_SIZE):
+        changes.extend(_characterize_batch(llm, section_type, needs_llm[i : i + _BATCH_SIZE]))
 
     for change in changes:
         change.filing_id = filing.id
