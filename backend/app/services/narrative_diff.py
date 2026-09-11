@@ -3,7 +3,7 @@ import re
 from dataclasses import dataclass
 from typing import Literal
 
-from sqlmodel import Session
+from sqlmodel import Session, select
 
 from app.models import Company, Filing, NarrativeChange
 from app.services.edgar import EdgarClient
@@ -117,10 +117,10 @@ def _describe_item(index: int, item: _PendingChange, label: str) -> str:
     )
 
 
-def _characterize_batch(llm: LocalLLMClient, section_type: SectionType, batch: list[_PendingChange]) -> list[NarrativeChange]:
+def _build_prompt(section_type: SectionType, batch: list[_PendingChange]) -> str:
     label = _SECTION_LABELS[section_type]
     items_text = "\n\n".join(_describe_item(i, item, label) for i, item in enumerate(batch, start=1))
-    prompt = (
+    return (
         f"Below are {len(batch)} numbered changes between two versions of a company's {label} section, "
         f"from consecutive SEC filings. For ADDED/REMOVED paragraphs, describe in one sentence what the "
         f"paragraph is about. For MODIFIED paragraphs, describe in one sentence what changed.\n\n"
@@ -128,23 +128,49 @@ def _characterize_batch(llm: LocalLLMClient, section_type: SectionType, batch: l
         f'Respond with JSON only: an array of exactly {len(batch)} objects in order, each '
         '{"summary": "<one sentence>"}. Example: [{"summary": "..."}, {"summary": "..."}]'
     )
-    summaries = _ask_llm_batch(llm, prompt, len(batch))
+
+
+def _build_change(section_type: SectionType, item: _PendingChange, summary: str | None) -> NarrativeChange | None:
+    if item.change_type == "modified" and not summary:
+        return None  # no fallback for modified — an unclear diff isn't worth a vague row
+    fallback = (item.new_text or item.old_text or "")[:200].strip()
+    return NarrativeChange(
+        section_type=section_type,
+        change_type=item.change_type,
+        summary=summary or fallback,
+        similarity_score=item.score,
+        new_excerpt=item.new_text[:_EXCERPT_LENGTH] if item.new_text else None,
+        old_excerpt=item.old_text[:_EXCERPT_LENGTH] if item.old_text else None,
+    )
+
+
+def _characterize_batch(llm: LocalLLMClient, section_type: SectionType, batch: list[_PendingChange]) -> list[NarrativeChange]:
+    summaries = _ask_llm_batch(llm, _build_prompt(section_type, batch), len(batch))
 
     changes: list[NarrativeChange] = []
+    retry: list[_PendingChange] = []
     for item, summary in zip(batch, summaries, strict=True):
-        if item.change_type == "modified" and not summary:
-            continue  # no fallback for modified — an unclear diff isn't worth a vague row
-        fallback = (item.new_text or item.old_text or "")[:200].strip()
-        changes.append(
-            NarrativeChange(
-                section_type=section_type,
-                change_type=item.change_type,
-                summary=summary or fallback,
-                similarity_score=item.score,
-                new_excerpt=item.new_text[:_EXCERPT_LENGTH] if item.new_text else None,
-                old_excerpt=item.old_text[:_EXCERPT_LENGTH] if item.old_text else None,
-            )
-        )
+        if summary is None and len(batch) > 1:
+            # A missing entry in a multi-item batch response is a model
+            # alignment failure (found via live testing — a correctly
+            # flagged "high" item can still come back without a matching
+            # array position), not necessarily a sign the item itself is
+            # too unclear to summarize. Retry it alone — a single-item
+            # prompt has only one array position to get right — before
+            # falling back. Bounded cost: only fires on the batch gaps
+            # that actually occur, not on every item.
+            retry.append(item)
+            continue
+        change = _build_change(section_type, item, summary)
+        if change is not None:
+            changes.append(change)
+
+    for item in retry:
+        retry_summary = _ask_llm_batch(llm, _build_prompt(section_type, [item]), 1)[0]
+        change = _build_change(section_type, item, retry_summary)
+        if change is not None:
+            changes.append(change)
+
     return changes
 
 
@@ -228,6 +254,18 @@ def diff_narrative_section(
 
     for i in range(0, len(needs_llm), _BATCH_SIZE):
         changes.extend(_characterize_batch(llm, section_type, needs_llm[i : i + _BATCH_SIZE]))
+
+    # Re-running for the same (filing, section) replaces the previous
+    # analysis rather than piling up next to it — without this, repeated
+    # "Analyze" clicks in the UI silently accumulate an ever-growing,
+    # repetitive list of duplicate rows.
+    existing = session.exec(
+        select(NarrativeChange).where(
+            NarrativeChange.filing_id == filing.id, NarrativeChange.section_type == section_type
+        )
+    ).all()
+    for old_change in existing:
+        session.delete(old_change)
 
     for change in changes:
         change.filing_id = filing.id

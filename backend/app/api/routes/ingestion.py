@@ -78,8 +78,8 @@ def compute_narrative_diff(filing_id: uuid.UUID, section_type: SectionType, sess
     the section, chunks and embeds it, matches chunks bidirectionally, and
     asks the LLM to characterize anything that isn't near-identical.
     Persists and returns the changes found. Safe to re-run — re-running
-    adds a fresh set of rows for this call rather than deduplicating, since
-    unlike structured facts there's no natural per-change idempotency key.
+    replaces the previous analysis for this exact (filing, section) pair
+    rather than accumulating duplicate rows next to it.
     """
     filing = session.get(Filing, filing_id)
     if filing is None:
