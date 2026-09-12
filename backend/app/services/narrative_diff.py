@@ -240,17 +240,10 @@ def diff_narrative_section(
         tier, _category = assess_materiality(text, item.embedding, embed)
         if tier == "high":
             needs_llm.append(item)
-        else:
-            changes.append(
-                NarrativeChange(
-                    section_type=section_type,
-                    change_type=item.change_type,
-                    summary=text[:200].strip(),
-                    similarity_score=item.score,
-                    new_excerpt=item.new_text[:_EXCERPT_LENGTH] if item.new_text else None,
-                    old_excerpt=item.old_text[:_EXCERPT_LENGTH] if item.old_text else None,
-                )
-            )
+        # low-tier chunks (boilerplate reworded slightly quarter to quarter,
+        # e.g. an updated cross-reference date) aren't worth surfacing at
+        # all, not just worth skipping the LLM for — dropping them here
+        # keeps the persisted list to genuinely material changes only.
 
     for i in range(0, len(needs_llm), _BATCH_SIZE):
         changes.extend(_characterize_batch(llm, section_type, needs_llm[i : i + _BATCH_SIZE]))
