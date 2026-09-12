@@ -18,7 +18,14 @@ from app.models import (
 from app.services.edgar import EdgarClient
 from app.services.ingestion import FilingIngestionService
 from app.services.narrative_diff import SectionType, diff_narrative_section
-from app.services.signals import DilutionTrend, FilingSignals, get_dilution_trend, get_filing_signals
+from app.services.signals import (
+    DilutionTrend,
+    FilingSignals,
+    GrossMarginTrend,
+    get_dilution_trend,
+    get_filing_signals,
+    get_gross_margin_trend,
+)
 
 router = APIRouter(prefix="/ingestion", tags=["ingestion"], dependencies=[Depends(get_current_user)])
 
@@ -81,6 +88,19 @@ def get_dilution_trend_route(filing_id: uuid.UUID, session: SessionDep) -> Dilut
     if filing is None:
         raise HTTPException(status_code=404, detail="Filing not found")
     return get_dilution_trend(session, filing)
+
+
+@router.get("/filings/{filing_id}/gross-margin-trend", response_model=GrossMarginTrend)
+def get_gross_margin_trend_route(filing_id: uuid.UUID, session: SessionDep) -> GrossMarginTrend:
+    """
+    Revenue and gross-margin trend across up to 3 consecutive filings of the
+    same form_type, ending at this filing. Flags any period where margin
+    compressed while revenue still grew.
+    """
+    filing = session.get(Filing, filing_id)
+    if filing is None:
+        raise HTTPException(status_code=404, detail="Filing not found")
+    return get_gross_margin_trend(session, filing)
 
 
 @router.post("/filings/{filing_id}/narrative-diff", response_model=NarrativeChangesPublic)

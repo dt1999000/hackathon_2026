@@ -19,6 +19,9 @@ _OPERATING_CASH_FLOW_CONCEPTS = [
     "NetCashProvidedByUsedInOperatingActivities",
     "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
 ]
+_REVENUE_CONCEPTS = ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues", "SalesRevenueNet"]
+_COGS_CONCEPTS = ["CostOfGoodsAndServicesSold", "CostOfRevenue", "CostOfGoodsSold"]
+_GROSS_PROFIT_CONCEPTS = ["GrossProfit"]
 
 
 class MetricChange(BaseModel):
@@ -50,6 +53,22 @@ class DilutionPeriod(BaseModel):
 class DilutionTrend(BaseModel):
     filing_id: str
     periods: list[DilutionPeriod]
+
+
+class GrossMarginPeriod(BaseModel):
+    filing_id: str
+    period_end: date | None
+    revenue: float | None
+    revenue_change_pct: float | None
+    gross_profit: float | None
+    gross_margin_pct: float | None
+    gross_margin_change_pct_points: float | None  # percentage-point change, not a relative %
+    margin_compressed_while_revenue_grew: bool | None
+
+
+class GrossMarginTrend(BaseModel):
+    filing_id: str
+    periods: list[GrossMarginPeriod]
 
 
 def _get_instant_fact(session: Session, filing: Filing, concepts: list[str]) -> FinancialFact | None:
@@ -232,7 +251,7 @@ def get_filing_signals(session: Session, filing: Filing) -> FilingSignals:
     )
 
 
-def _dilution_window(session: Session, filing: Filing, lookback: int) -> list[Filing]:
+def _filing_window(session: Session, filing: Filing, lookback: int) -> list[Filing]:
     """Up to `lookback` filings ending at `filing`, oldest first, walked via
     previous_filing_id — a same-form_type chain, so for 10-Ks this is exact
     year-over-year and for 10-Qs it's exact quarter-over-quarter."""
@@ -251,7 +270,7 @@ def _dilution_window(session: Session, filing: Filing, lookback: int) -> list[Fi
 def get_dilution_trend(session: Session, filing: Filing, lookback: int = 3) -> DilutionTrend:
     """Share count and stock-based-compensation trend across up to `lookback`
     consecutive filings of the same form_type, ending at `filing`."""
-    window = _dilution_window(session, filing, lookback)
+    window = _filing_window(session, filing, lookback)
 
     periods: list[DilutionPeriod] = []
     previous_share_count: float | None = None
@@ -278,3 +297,75 @@ def get_dilution_trend(session: Session, filing: Filing, lookback: int = 3) -> D
         previous_share_count = share_count
 
     return DilutionTrend(filing_id=str(filing.id), periods=periods)
+
+
+def _get_gross_margin_period(session: Session, filing: Filing) -> tuple[float | None, float | None, float | None]:
+    """(revenue, gross_profit, revenue_daily_rate) for a filing's period.
+
+    Prefers the filer's own reported GrossProfit tag; falls back to revenue
+    minus cost-of-revenue for filers (e.g. SpaceX) that don't tag GrossProfit
+    directly. Revenue is also reported as a daily rate — like
+    _capex_daily_rate, EDGAR's revenue duration is cumulative since the start
+    of the fiscal year, so a Q3 10-Q's 9-month figure and the next Q1 10-Q's
+    3-month figure aren't directly comparable without normalizing for period
+    length first (raw comparison reads "shorter period" as "revenue fell").
+    gross_margin_pct itself doesn't need this: it's a ratio of two figures
+    over the same period, so period length cancels out.
+    """
+    revenue_fact = _get_duration_fact(session, filing, _REVENUE_CONCEPTS)
+    if revenue_fact is None:
+        return None, None, None
+    revenue = revenue_fact.value
+
+    gross_profit_fact = _get_duration_fact(session, filing, _GROSS_PROFIT_CONCEPTS)
+    if gross_profit_fact is not None:
+        gross_profit = gross_profit_fact.value
+    else:
+        cogs_fact = _get_duration_fact(session, filing, _COGS_CONCEPTS)
+        gross_profit = revenue - cogs_fact.value if cogs_fact is not None else None
+
+    if revenue_fact.period_start is None or revenue_fact.period_end is None:
+        return revenue, gross_profit, None
+    days = (revenue_fact.period_end - revenue_fact.period_start).days
+    revenue_daily_rate = revenue / days if days > 0 else None
+    return revenue, gross_profit, revenue_daily_rate
+
+
+def get_gross_margin_trend(session: Session, filing: Filing, lookback: int = 3) -> GrossMarginTrend:
+    """Revenue and gross-margin trend across up to `lookback` consecutive
+    filings of the same form_type, ending at `filing`. Flags any period where
+    the margin compressed (in percentage points) while revenue still grew —
+    a real warning sign distinct from a margin dip during a revenue decline."""
+    window = _filing_window(session, filing, lookback)
+
+    periods: list[GrossMarginPeriod] = []
+    previous_revenue_daily_rate: float | None = None
+    previous_margin_pct: float | None = None
+    for period_filing in window:
+        revenue, gross_profit, revenue_daily_rate = _get_gross_margin_period(session, period_filing)
+        margin_pct = (gross_profit / revenue * 100) if gross_profit is not None and revenue else None
+        margin_change = (margin_pct - previous_margin_pct) if margin_pct is not None and previous_margin_pct is not None else None
+        revenue_change_pct = _pct_change(revenue_daily_rate, previous_revenue_daily_rate)
+
+        margin_compressed_while_revenue_grew = (
+            margin_change < 0 and revenue_change_pct > 0
+            if margin_change is not None and revenue_change_pct is not None
+            else None
+        )
+
+        periods.append(
+            GrossMarginPeriod(
+                filing_id=str(period_filing.id),
+                period_end=period_filing.period_of_report,
+                revenue=revenue,
+                revenue_change_pct=revenue_change_pct,
+                gross_profit=gross_profit,
+                gross_margin_pct=margin_pct,
+                gross_margin_change_pct_points=margin_change,
+                margin_compressed_while_revenue_grew=margin_compressed_while_revenue_grew,
+            )
+        )
+        previous_revenue_daily_rate = revenue_daily_rate
+        previous_margin_pct = margin_pct
+
+    return GrossMarginTrend(filing_id=str(filing.id), periods=periods)
