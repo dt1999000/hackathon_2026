@@ -1,3 +1,5 @@
+from datetime import date
+
 from pydantic import BaseModel
 from sqlmodel import Session, col, select
 
@@ -11,6 +13,12 @@ _CASH_CONCEPTS = ["CashAndCashEquivalentsAtCarryingValue", "CashAndCashEquivalen
 _CURRENT_ASSETS_CONCEPTS = ["AssetsCurrent"]
 _CURRENT_LIABILITIES_CONCEPTS = ["LiabilitiesCurrent"]
 _CAPEX_CONCEPTS = ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsForCapitalImprovements"]
+_SHARE_COUNT_CONCEPTS = ["CommonStockSharesOutstanding"]
+_SBC_CONCEPTS = ["ShareBasedCompensation"]
+_OPERATING_CASH_FLOW_CONCEPTS = [
+    "NetCashProvidedByUsedInOperatingActivities",
+    "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+]
 
 
 class MetricChange(BaseModel):
@@ -27,6 +35,21 @@ class FilingSignals(BaseModel):
     previous_filing_id: str | None
     debt_and_liquidity: list[MetricChange]
     capex: MetricChange
+
+
+class DilutionPeriod(BaseModel):
+    filing_id: str
+    period_end: date | None
+    share_count: float | None
+    share_count_change_pct: float | None
+    sbc: float | None
+    operating_cash_flow: float | None
+    sbc_pct_of_operating_cash_flow: float | None
+
+
+class DilutionTrend(BaseModel):
+    filing_id: str
+    periods: list[DilutionPeriod]
 
 
 def _get_instant_fact(session: Session, filing: Filing, concepts: list[str]) -> FinancialFact | None:
@@ -207,3 +230,51 @@ def get_filing_signals(session: Session, filing: Filing) -> FilingSignals:
         debt_and_liquidity=get_debt_and_liquidity_change(session, filing),
         capex=get_capex_change(session, filing),
     )
+
+
+def _dilution_window(session: Session, filing: Filing, lookback: int) -> list[Filing]:
+    """Up to `lookback` filings ending at `filing`, oldest first, walked via
+    previous_filing_id — a same-form_type chain, so for 10-Ks this is exact
+    year-over-year and for 10-Qs it's exact quarter-over-quarter."""
+    window: list[Filing] = [filing]
+    current = filing
+    while len(window) < lookback and current.previous_filing_id is not None:
+        previous = session.get(Filing, current.previous_filing_id)
+        if previous is None:
+            break
+        window.append(previous)
+        current = previous
+    window.reverse()
+    return window
+
+
+def get_dilution_trend(session: Session, filing: Filing, lookback: int = 3) -> DilutionTrend:
+    """Share count and stock-based-compensation trend across up to `lookback`
+    consecutive filings of the same form_type, ending at `filing`."""
+    window = _dilution_window(session, filing, lookback)
+
+    periods: list[DilutionPeriod] = []
+    previous_share_count: float | None = None
+    for period_filing in window:
+        share_count_fact = _get_instant_fact(session, period_filing, _SHARE_COUNT_CONCEPTS)
+        sbc_fact = _get_duration_fact(session, period_filing, _SBC_CONCEPTS)
+        ocf_fact = _get_duration_fact(session, period_filing, _OPERATING_CASH_FLOW_CONCEPTS)
+
+        share_count = share_count_fact.value if share_count_fact is not None else None
+        sbc = sbc_fact.value if sbc_fact is not None else None
+        ocf = ocf_fact.value if ocf_fact is not None else None
+
+        periods.append(
+            DilutionPeriod(
+                filing_id=str(period_filing.id),
+                period_end=period_filing.period_of_report,
+                share_count=share_count,
+                share_count_change_pct=_pct_change(share_count, previous_share_count),
+                sbc=sbc,
+                operating_cash_flow=ocf,
+                sbc_pct_of_operating_cash_flow=(sbc / abs(ocf) * 100) if sbc is not None and ocf else None,
+            )
+        )
+        previous_share_count = share_count
+
+    return DilutionTrend(filing_id=str(filing.id), periods=periods)

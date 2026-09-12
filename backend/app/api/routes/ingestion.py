@@ -18,7 +18,7 @@ from app.models import (
 from app.services.edgar import EdgarClient
 from app.services.ingestion import FilingIngestionService
 from app.services.narrative_diff import SectionType, diff_narrative_section
-from app.services.signals import FilingSignals, get_filing_signals
+from app.services.signals import DilutionTrend, FilingSignals, get_dilution_trend, get_filing_signals
 
 router = APIRouter(prefix="/ingestion", tags=["ingestion"], dependencies=[Depends(get_current_user)])
 
@@ -68,6 +68,19 @@ def get_signals(filing_id: uuid.UUID, session: SessionDep) -> FilingSignals:
     if filing is None:
         raise HTTPException(status_code=404, detail="Filing not found")
     return get_filing_signals(session, filing)
+
+
+@router.get("/filings/{filing_id}/dilution-trend", response_model=DilutionTrend)
+def get_dilution_trend_route(filing_id: uuid.UUID, session: SessionDep) -> DilutionTrend:
+    """
+    Share count and stock-based-compensation trend across up to 3 consecutive
+    filings of the same form_type, ending at this filing (exact year-over-year
+    for 10-Ks, quarter-over-quarter for 10-Qs, via Filing.previous_filing_id).
+    """
+    filing = session.get(Filing, filing_id)
+    if filing is None:
+        raise HTTPException(status_code=404, detail="Filing not found")
+    return get_dilution_trend(session, filing)
 
 
 @router.post("/filings/{filing_id}/narrative-diff", response_model=NarrativeChangesPublic)
