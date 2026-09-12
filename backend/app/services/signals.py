@@ -22,6 +22,10 @@ _OPERATING_CASH_FLOW_CONCEPTS = [
 _REVENUE_CONCEPTS = ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues", "SalesRevenueNet"]
 _COGS_CONCEPTS = ["CostOfGoodsAndServicesSold", "CostOfRevenue", "CostOfGoodsSold"]
 _GROSS_PROFIT_CONCEPTS = ["GrossProfit"]
+_OPERATING_INCOME_CONCEPTS = ["OperatingIncomeLoss"]
+_TAX_EXPENSE_CONCEPTS = ["IncomeTaxExpenseBenefit"]
+_PRETAX_INCOME_CONCEPTS = ["IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest"]
+_STOCKHOLDERS_EQUITY_CONCEPTS = ["StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"]
 
 
 class MetricChange(BaseModel):
@@ -69,6 +73,19 @@ class GrossMarginPeriod(BaseModel):
 class GrossMarginTrend(BaseModel):
     filing_id: str
     periods: list[GrossMarginPeriod]
+
+
+class CapitalEfficiencyPeriod(BaseModel):
+    filing_id: str
+    period_end: date | None
+    roic_pct: float | None
+    effective_tax_rate: float | None
+    capex_pct_of_revenue: float | None
+
+
+class CapitalEfficiencyTrend(BaseModel):
+    filing_id: str
+    periods: list[CapitalEfficiencyPeriod]
 
 
 def _get_instant_fact(session: Session, filing: Filing, concepts: list[str]) -> FinancialFact | None:
@@ -369,3 +386,87 @@ def get_gross_margin_trend(session: Session, filing: Filing, lookback: int = 3) 
         previous_margin_pct = margin_pct
 
     return GrossMarginTrend(filing_id=str(filing.id), periods=periods)
+
+
+def _nopat_daily_rate(session: Session, filing: Filing) -> tuple[float | None, float | None]:
+    """(NOPAT daily rate, effective tax rate) for a filing's period.
+
+    NOPAT = OperatingIncomeLoss x (1 - effective tax rate), an approximation
+    of after-tax operating profit (the standard ROIC numerator) — it ignores
+    non-operating tax effects, which a more precise calculation would strip
+    out. Falls back to untaxed OperatingIncomeLoss when a tax rate can't be
+    derived (missing pretax-income concept, e.g. Carvana, or a pretax loss
+    where the ratio wouldn't mean anything). Normalized to a daily rate for
+    the same reason revenue is in _get_gross_margin_period: OperatingIncomeLoss
+    is cumulative fiscal-year-to-date, so periods of different length aren't
+    directly comparable without normalizing first.
+    """
+    op_income_fact = _get_duration_fact(session, filing, _OPERATING_INCOME_CONCEPTS)
+    if op_income_fact is None or op_income_fact.period_start is None or op_income_fact.period_end is None:
+        return None, None
+    days = (op_income_fact.period_end - op_income_fact.period_start).days
+    if days <= 0:
+        return None, None
+
+    tax_fact = _get_duration_fact(session, filing, _TAX_EXPENSE_CONCEPTS)
+    pretax_fact = _get_duration_fact(session, filing, _PRETAX_INCOME_CONCEPTS)
+    effective_tax_rate: float | None = None
+    if tax_fact is not None and pretax_fact is not None and pretax_fact.value > 0:
+        effective_tax_rate = tax_fact.value / pretax_fact.value
+
+    nopat = op_income_fact.value * (1 - effective_tax_rate) if effective_tax_rate is not None else op_income_fact.value
+    return nopat / days, effective_tax_rate
+
+
+def _invested_capital(session: Session, filing: Filing) -> float | None:
+    """Total debt + total equity - cash, a common ROIC denominator. One of
+    several valid invested-capital definitions — treat this as an
+    approximation, not a precise accounting figure."""
+    equity_fact = _get_instant_fact(session, filing, _STOCKHOLDERS_EQUITY_CONCEPTS)
+    if equity_fact is None:
+        return None
+    debt_fact = _get_instant_fact(session, filing, _DEBT_CONCEPTS)
+    debt_current_fact = _get_instant_fact(session, filing, _DEBT_CURRENT_CONCEPTS)
+    cash_fact = _get_instant_fact(session, filing, _CASH_CONCEPTS)
+
+    total_debt = (debt_fact.value if debt_fact is not None else 0.0) + (
+        debt_current_fact.value if debt_current_fact is not None else 0.0
+    )
+    total_cash = cash_fact.value if cash_fact is not None else 0.0
+    return total_debt + equity_fact.value - total_cash
+
+
+def get_capital_efficiency_trend(session: Session, filing: Filing, lookback: int = 3) -> CapitalEfficiencyTrend:
+    """ROIC and capex-as-%-of-revenue trend across up to `lookback`
+    consecutive filings of the same form_type, ending at `filing`."""
+    window = _filing_window(session, filing, lookback)
+
+    periods: list[CapitalEfficiencyPeriod] = []
+    for period_filing in window:
+        nopat_daily_rate, effective_tax_rate = _nopat_daily_rate(session, period_filing)
+        invested_capital = _invested_capital(session, period_filing)
+        roic_pct = (
+            nopat_daily_rate * 365 / invested_capital * 100
+            if nopat_daily_rate is not None and invested_capital
+            else None
+        )
+
+        capex_daily_rate = _capex_daily_rate(session, period_filing)
+        _, _, revenue_daily_rate = _get_gross_margin_period(session, period_filing)
+        capex_pct_of_revenue = (
+            capex_daily_rate / revenue_daily_rate * 100
+            if capex_daily_rate is not None and revenue_daily_rate
+            else None
+        )
+
+        periods.append(
+            CapitalEfficiencyPeriod(
+                filing_id=str(period_filing.id),
+                period_end=period_filing.period_of_report,
+                roic_pct=roic_pct,
+                effective_tax_rate=effective_tax_rate,
+                capex_pct_of_revenue=capex_pct_of_revenue,
+            )
+        )
+
+    return CapitalEfficiencyTrend(filing_id=str(filing.id), periods=periods)

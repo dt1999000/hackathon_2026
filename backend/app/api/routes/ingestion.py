@@ -19,9 +19,11 @@ from app.services.edgar import EdgarClient
 from app.services.ingestion import FilingIngestionService
 from app.services.narrative_diff import SectionType, diff_narrative_section
 from app.services.signals import (
+    CapitalEfficiencyTrend,
     DilutionTrend,
     FilingSignals,
     GrossMarginTrend,
+    get_capital_efficiency_trend,
     get_dilution_trend,
     get_filing_signals,
     get_gross_margin_trend,
@@ -101,6 +103,19 @@ def get_gross_margin_trend_route(filing_id: uuid.UUID, session: SessionDep) -> G
     if filing is None:
         raise HTTPException(status_code=404, detail="Filing not found")
     return get_gross_margin_trend(session, filing)
+
+
+@router.get("/filings/{filing_id}/capital-efficiency-trend", response_model=CapitalEfficiencyTrend)
+def get_capital_efficiency_trend_route(filing_id: uuid.UUID, session: SessionDep) -> CapitalEfficiencyTrend:
+    """
+    ROIC (an approximation — see signals.py for the formula caveats) and
+    capex-as-%-of-revenue trend across up to 3 consecutive filings of the
+    same form_type, ending at this filing.
+    """
+    filing = session.get(Filing, filing_id)
+    if filing is None:
+        raise HTTPException(status_code=404, detail="Filing not found")
+    return get_capital_efficiency_trend(session, filing)
 
 
 @router.post("/filings/{filing_id}/narrative-diff", response_model=NarrativeChangesPublic)
