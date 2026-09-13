@@ -1,6 +1,12 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { createFileRoute } from "@tanstack/react-router"
-import { ArrowDown, ArrowRight, ArrowUp, Sparkles } from "lucide-react"
+import {
+  AlertTriangle,
+  ArrowDown,
+  ArrowRight,
+  ArrowUp,
+  Sparkles,
+} from "lucide-react"
 
 import {
   CompaniesService,
@@ -8,6 +14,7 @@ import {
   IngestionService,
   type MetricChange,
   type NarrativeChangePublic,
+  type RiskFlag,
 } from "@/client"
 import { Badge } from "@/components/ui/badge"
 import { Card } from "@/components/ui/card"
@@ -57,6 +64,15 @@ function MetricPill({ metric }: { metric: MetricChange }) {
         {Math.abs(metric.change_pct).toFixed(1)}%
       </span>
     </span>
+  )
+}
+
+function RiskFlagRow({ flag }: { flag: RiskFlag }) {
+  return (
+    <div className="flex items-start gap-2 text-sm">
+      <AlertTriangle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-amber-600 dark:text-amber-400" />
+      <span>{flag.message}</span>
+    </div>
   )
 }
 
@@ -160,6 +176,15 @@ function TimelineNode({
             First tracked filing of this type — nothing to compare against yet.
           </p>
         )}
+
+        {filing.structured_risk_flags &&
+          filing.structured_risk_flags.flags.length > 0 && (
+            <div className="flex flex-col gap-1.5 rounded-md border border-amber-600/30 bg-amber-600/5 p-3 dark:border-amber-400/30 dark:bg-amber-400/5">
+              {filing.structured_risk_flags.flags.map((flag) => (
+                <RiskFlagRow key={flag.flag_type} flag={flag} />
+              ))}
+            </div>
+          )}
 
         {filing.signals?.debt_and_liquidity.some(
           (m) => m.current_value !== null,

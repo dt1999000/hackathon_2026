@@ -2,7 +2,7 @@
 
 import { type Client, type Options as Options2, type TDataShape, urlSearchParamsBodySerializer } from './client';
 import { client } from './client.gen';
-import type { chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companiesGetTimelineData, companiesGetTimelineErrors, companiesGetTimelineResponses, companiesSearchData, companiesSearchErrors, companiesSearchResponses, ingestionComputeNarrativeDiffData, ingestionComputeNarrativeDiffErrors, ingestionComputeNarrativeDiffResponses, ingestionGetSignalsData, ingestionGetSignalsErrors, ingestionGetSignalsResponses, ingestionListFactsData, ingestionListFactsErrors, ingestionListFactsResponses, ingestionListFilingsData, ingestionListFilingsErrors, ingestionListFilingsResponses, ingestionListNarrativeChangesData, ingestionListNarrativeChangesErrors, ingestionListNarrativeChangesResponses, ingestionSyncCompanyData, ingestionSyncCompanyErrors, ingestionSyncCompanyResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses, watchlistAddToWatchlistData, watchlistAddToWatchlistErrors, watchlistAddToWatchlistResponses, watchlistListWatchlistData, watchlistListWatchlistResponses, watchlistRemoveFromWatchlistData, watchlistRemoveFromWatchlistErrors, watchlistRemoveFromWatchlistResponses } from './types.gen';
+import type { chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companiesGetTimelineData, companiesGetTimelineErrors, companiesGetTimelineResponses, companiesSearchData, companiesSearchErrors, companiesSearchResponses, ingestionComputeNarrativeDiffData, ingestionComputeNarrativeDiffErrors, ingestionComputeNarrativeDiffResponses, ingestionGetCapitalEfficiencyTrendRouteData, ingestionGetCapitalEfficiencyTrendRouteErrors, ingestionGetCapitalEfficiencyTrendRouteResponses, ingestionGetDilutionTrendRouteData, ingestionGetDilutionTrendRouteErrors, ingestionGetDilutionTrendRouteResponses, ingestionGetGrossMarginTrendRouteData, ingestionGetGrossMarginTrendRouteErrors, ingestionGetGrossMarginTrendRouteResponses, ingestionGetSignalsData, ingestionGetSignalsErrors, ingestionGetSignalsResponses, ingestionGetStructuredRiskFlagsRouteData, ingestionGetStructuredRiskFlagsRouteErrors, ingestionGetStructuredRiskFlagsRouteResponses, ingestionListFactsData, ingestionListFactsErrors, ingestionListFactsResponses, ingestionListFilingsData, ingestionListFilingsErrors, ingestionListFilingsResponses, ingestionListNarrativeChangesData, ingestionListNarrativeChangesErrors, ingestionListNarrativeChangesResponses, ingestionSyncCompanyData, ingestionSyncCompanyErrors, ingestionSyncCompanyResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses, watchlistAddToWatchlistData, watchlistAddToWatchlistErrors, watchlistAddToWatchlistResponses, watchlistListWatchlistData, watchlistListWatchlistResponses, watchlistRemoveFromWatchlistData, watchlistRemoveFromWatchlistErrors, watchlistRemoveFromWatchlistResponses } from './types.gen';
 
 export type Options<TData extends TDataShape = TDataShape, ThrowOnError extends boolean = boolean, TResponse = unknown> = Options2<TData, ThrowOnError, TResponse> & {
     /**
@@ -446,6 +446,72 @@ export class IngestionService {
     }
     
     /**
+     * Get Dilution Trend Route
+     *
+     * Share count and stock-based-compensation trend across up to 3 consecutive
+     * filings of the same form_type, ending at this filing (exact year-over-year
+     * for 10-Ks, quarter-over-quarter for 10-Qs, via Filing.previous_filing_id).
+     */
+    public static getDilutionTrendRoute<ThrowOnError extends boolean = true>(options: Options<ingestionGetDilutionTrendRouteData, ThrowOnError>) {
+        return (options.client ?? client).get<ingestionGetDilutionTrendRouteResponses, ingestionGetDilutionTrendRouteErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/ingestion/filings/{filing_id}/dilution-trend',
+            ...options
+        });
+    }
+    
+    /**
+     * Get Gross Margin Trend Route
+     *
+     * Revenue and gross-margin trend across up to 3 consecutive filings of the
+     * same form_type, ending at this filing. Flags any period where margin
+     * compressed while revenue still grew.
+     */
+    public static getGrossMarginTrendRoute<ThrowOnError extends boolean = true>(options: Options<ingestionGetGrossMarginTrendRouteData, ThrowOnError>) {
+        return (options.client ?? client).get<ingestionGetGrossMarginTrendRouteResponses, ingestionGetGrossMarginTrendRouteErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/ingestion/filings/{filing_id}/gross-margin-trend',
+            ...options
+        });
+    }
+    
+    /**
+     * Get Capital Efficiency Trend Route
+     *
+     * ROIC (an approximation — see signals.py for the formula caveats) and
+     * capex-as-%-of-revenue trend across up to 3 consecutive filings of the
+     * same form_type, ending at this filing.
+     */
+    public static getCapitalEfficiencyTrendRoute<ThrowOnError extends boolean = true>(options: Options<ingestionGetCapitalEfficiencyTrendRouteData, ThrowOnError>) {
+        return (options.client ?? client).get<ingestionGetCapitalEfficiencyTrendRouteResponses, ingestionGetCapitalEfficiencyTrendRouteErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/ingestion/filings/{filing_id}/capital-efficiency-trend',
+            ...options
+        });
+    }
+    
+    /**
+     * Get Structured Risk Flags Route
+     *
+     * Named risk flags (dilution, high SBC burden, margin compression,
+     * declining ROIC, rising capital intensity) derived from the dilution,
+     * gross-margin, and capital-efficiency trends. Thresholds are documented
+     * judgment calls in signals.py, not universal pass/fail bars — absence of
+     * a flag isn't a clean bill of health.
+     */
+    public static getStructuredRiskFlagsRoute<ThrowOnError extends boolean = true>(options: Options<ingestionGetStructuredRiskFlagsRouteData, ThrowOnError>) {
+        return (options.client ?? client).get<ingestionGetStructuredRiskFlagsRouteResponses, ingestionGetStructuredRiskFlagsRouteErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/ingestion/filings/{filing_id}/structured-risk-flags',
+            ...options
+        });
+    }
+    
+    /**
      * Compute Narrative Diff
      *
      * Diff a filing's Risk Factors or Legal Proceedings section against the
@@ -453,8 +519,8 @@ export class IngestionService {
      * the section, chunks and embeds it, matches chunks bidirectionally, and
      * asks the LLM to characterize anything that isn't near-identical.
      * Persists and returns the changes found. Safe to re-run — re-running
-     * adds a fresh set of rows for this call rather than deduplicating, since
-     * unlike structured facts there's no natural per-change idempotency key.
+     * replaces the previous analysis for this exact (filing, section) pair
+     * rather than accumulating duplicate rows next to it.
      */
     public static computeNarrativeDiff<ThrowOnError extends boolean = true>(options: Options<ingestionComputeNarrativeDiffData, ThrowOnError>) {
         return (options.client ?? client).post<ingestionComputeNarrativeDiffResponses, ingestionComputeNarrativeDiffErrors, ThrowOnError>({

@@ -35,6 +35,50 @@ export type Body_login_login_access_token = {
 };
 
 /**
+ * CapitalEfficiencyPeriod
+ */
+export type CapitalEfficiencyPeriod = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Period End
+     */
+    period_end: string | null;
+    /**
+     * Invested Capital
+     */
+    invested_capital: number | null;
+    /**
+     * Roic Pct
+     */
+    roic_pct: number | null;
+    /**
+     * Effective Tax Rate
+     */
+    effective_tax_rate: number | null;
+    /**
+     * Capex Pct Of Revenue
+     */
+    capex_pct_of_revenue: number | null;
+};
+
+/**
+ * CapitalEfficiencyTrend
+ */
+export type CapitalEfficiencyTrend = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Periods
+     */
+    periods: Array<CapitalEfficiencyPeriod>;
+};
+
+/**
  * ChatMessage
  */
 export type ChatMessage = {
@@ -182,6 +226,54 @@ export type CrawlWebsiteRequest = {
 };
 
 /**
+ * DilutionPeriod
+ */
+export type DilutionPeriod = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Period End
+     */
+    period_end: string | null;
+    /**
+     * Share Count
+     */
+    share_count: number | null;
+    /**
+     * Share Count Change Pct
+     */
+    share_count_change_pct: number | null;
+    /**
+     * Sbc
+     */
+    sbc: number | null;
+    /**
+     * Operating Cash Flow
+     */
+    operating_cash_flow: number | null;
+    /**
+     * Sbc Pct Of Operating Cash Flow
+     */
+    sbc_pct_of_operating_cash_flow: number | null;
+};
+
+/**
+ * DilutionTrend
+ */
+export type DilutionTrend = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Periods
+     */
+    periods: Array<DilutionPeriod>;
+};
+
+/**
  * ExtractRequest
  */
 export type ExtractRequest = {
@@ -291,6 +383,7 @@ export type FilingTimelineEntry = {
      * Narrative Changes
      */
     narrative_changes: Array<NarrativeChangePublic>;
+    structured_risk_flags: StructuredRiskFlags | null;
 };
 
 /**
@@ -407,6 +500,58 @@ export type GenerateRequest = {
      * Embedding Model
      */
     embedding_model?: string | null;
+};
+
+/**
+ * GrossMarginPeriod
+ */
+export type GrossMarginPeriod = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Period End
+     */
+    period_end: string | null;
+    /**
+     * Revenue
+     */
+    revenue: number | null;
+    /**
+     * Revenue Change Pct
+     */
+    revenue_change_pct: number | null;
+    /**
+     * Gross Profit
+     */
+    gross_profit: number | null;
+    /**
+     * Gross Margin Pct
+     */
+    gross_margin_pct: number | null;
+    /**
+     * Gross Margin Change Pct Points
+     */
+    gross_margin_change_pct_points: number | null;
+    /**
+     * Margin Compressed While Revenue Grew
+     */
+    margin_compressed_while_revenue_grew: boolean | null;
+};
+
+/**
+ * GrossMarginTrend
+ */
+export type GrossMarginTrend = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Periods
+     */
+    periods: Array<GrossMarginPeriod>;
 };
 
 /**
@@ -652,6 +797,20 @@ export type PrivateUserCreate = {
 };
 
 /**
+ * RiskFlag
+ */
+export type RiskFlag = {
+    /**
+     * Flag Type
+     */
+    flag_type: string;
+    /**
+     * Message
+     */
+    message: string;
+};
+
+/**
  * ScrapeWebsiteRequest
  */
 export type ScrapeWebsiteRequest = {
@@ -669,6 +828,20 @@ export type SearchRequest = {
      * Query
      */
     query: string;
+};
+
+/**
+ * StructuredRiskFlags
+ */
+export type StructuredRiskFlags = {
+    /**
+     * Filing Id
+     */
+    filing_id: string;
+    /**
+     * Flags
+     */
+    flags: Array<RiskFlag>;
 };
 
 /**
@@ -1578,6 +1751,126 @@ export type ingestionGetSignalsResponses = {
 };
 
 export type ingestionGetSignalsResponse = ingestionGetSignalsResponses[keyof ingestionGetSignalsResponses];
+
+export type ingestionGetDilutionTrendRouteData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/filings/{filing_id}/dilution-trend';
+};
+
+export type ingestionGetDilutionTrendRouteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionGetDilutionTrendRouteError = ingestionGetDilutionTrendRouteErrors[keyof ingestionGetDilutionTrendRouteErrors];
+
+export type ingestionGetDilutionTrendRouteResponses = {
+    /**
+     * Successful Response
+     */
+    200: DilutionTrend;
+};
+
+export type ingestionGetDilutionTrendRouteResponse = ingestionGetDilutionTrendRouteResponses[keyof ingestionGetDilutionTrendRouteResponses];
+
+export type ingestionGetGrossMarginTrendRouteData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/filings/{filing_id}/gross-margin-trend';
+};
+
+export type ingestionGetGrossMarginTrendRouteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionGetGrossMarginTrendRouteError = ingestionGetGrossMarginTrendRouteErrors[keyof ingestionGetGrossMarginTrendRouteErrors];
+
+export type ingestionGetGrossMarginTrendRouteResponses = {
+    /**
+     * Successful Response
+     */
+    200: GrossMarginTrend;
+};
+
+export type ingestionGetGrossMarginTrendRouteResponse = ingestionGetGrossMarginTrendRouteResponses[keyof ingestionGetGrossMarginTrendRouteResponses];
+
+export type ingestionGetCapitalEfficiencyTrendRouteData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/filings/{filing_id}/capital-efficiency-trend';
+};
+
+export type ingestionGetCapitalEfficiencyTrendRouteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionGetCapitalEfficiencyTrendRouteError = ingestionGetCapitalEfficiencyTrendRouteErrors[keyof ingestionGetCapitalEfficiencyTrendRouteErrors];
+
+export type ingestionGetCapitalEfficiencyTrendRouteResponses = {
+    /**
+     * Successful Response
+     */
+    200: CapitalEfficiencyTrend;
+};
+
+export type ingestionGetCapitalEfficiencyTrendRouteResponse = ingestionGetCapitalEfficiencyTrendRouteResponses[keyof ingestionGetCapitalEfficiencyTrendRouteResponses];
+
+export type ingestionGetStructuredRiskFlagsRouteData = {
+    body?: never;
+    path: {
+        /**
+         * Filing Id
+         */
+        filing_id: string;
+    };
+    query?: never;
+    url: '/api/v1/ingestion/filings/{filing_id}/structured-risk-flags';
+};
+
+export type ingestionGetStructuredRiskFlagsRouteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type ingestionGetStructuredRiskFlagsRouteError = ingestionGetStructuredRiskFlagsRouteErrors[keyof ingestionGetStructuredRiskFlagsRouteErrors];
+
+export type ingestionGetStructuredRiskFlagsRouteResponses = {
+    /**
+     * Successful Response
+     */
+    200: StructuredRiskFlags;
+};
+
+export type ingestionGetStructuredRiskFlagsRouteResponse = ingestionGetStructuredRiskFlagsRouteResponses[keyof ingestionGetStructuredRiskFlagsRouteResponses];
 
 export type ingestionComputeNarrativeDiffData = {
     body?: never;

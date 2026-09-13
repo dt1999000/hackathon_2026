@@ -12,7 +12,7 @@ from app.models import (
     NarrativeChangePublic,
 )
 from app.services.edgar import EdgarClient
-from app.services.signals import FilingSignals, get_filing_signals
+from app.services.signals import FilingSignals, StructuredRiskFlags, get_filing_signals, get_structured_risk_flags
 
 
 class FilingTimelineEntry(BaseModel):
@@ -23,6 +23,11 @@ class FilingTimelineEntry(BaseModel):
     period_of_report: date | None
     signals: FilingSignals | None
     narrative_changes: list[NarrativeChangePublic]
+    # Only populated on the newest filing — the dilution/margin/capital-
+    # efficiency trends behind this look back across several filings, so
+    # computing it per historical entry would multiply DB queries for a
+    # view of the past you're less likely to check.
+    structured_risk_flags: StructuredRiskFlags | None
 
 
 class CompanyTimeline(BaseModel):
@@ -46,7 +51,7 @@ def get_company_timeline(session: Session, cik: str) -> CompanyTimeline | None:
     ).all()
 
     entries: list[FilingTimelineEntry] = []
-    for filing in filings:
+    for index, filing in enumerate(filings):
         signals = get_filing_signals(session, filing) if filing.previous_filing_id else None
         changes = session.exec(select(NarrativeChange).where(NarrativeChange.filing_id == filing.id)).all()
         entries.append(
@@ -58,6 +63,7 @@ def get_company_timeline(session: Session, cik: str) -> CompanyTimeline | None:
                 period_of_report=filing.period_of_report,
                 signals=signals,
                 narrative_changes=[NarrativeChangePublic.model_validate(c) for c in changes],
+                structured_risk_flags=get_structured_risk_flags(session, filing) if index == 0 else None,
             )
         )
 
