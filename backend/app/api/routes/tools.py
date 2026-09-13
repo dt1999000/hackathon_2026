@@ -5,10 +5,10 @@ from pydantic import BaseModel
 
 from app.services.embeddings import EmbeddingClient
 from app.services.llm import LocalLLMClient
-from app.tools.firecrawl_extract import FirecrawlExtractTool
-from app.tools.firecrawl_scrape import FirecrawlScrapeWebsiteTool
-from app.tools.firecrawl_search import FirecrawlSearchTool
-from app.tools.firecrawl_website import FirecrawlCrawlWebsiteTool
+from app.tools.firecrawl_search.firecrawl_extract import FirecrawlExtractTool
+from app.tools.firecrawl_search.firecrawl_scrape import FirecrawlScrapeWebsiteTool
+from app.tools.firecrawl_search.firecrawl_search import FirecrawlSearchTool
+from app.tools.firecrawl_search.firecrawl_website import FirecrawlCrawlWebsiteTool
 from app.tools.rag.chunking.base import BaseChunker
 from app.tools.rag.chunking.default import DefaultChunker
 from app.tools.rag.chunking.structured import CsvChunker, JsonChunker, XmlChunker
@@ -18,6 +18,7 @@ from app.tools.rag.loader.base import BaseLoader, SourceContent
 from app.tools.rag.loader.csv import CSVLoader
 from app.tools.rag.loader.github import GithubLoader
 from app.tools.rag.loader.json import JSONLoader
+from app.tools.rag.loader.pdf import PDFLoader
 from app.tools.rag.loader.youtube_channel import YoutubeChannelLoader
 from app.tools.rag.loader.youtube_video import YoutubeVideoLoader
 from app.tools.rag.retrieval import retrieve_top_chunks, retrieve_top_chunks_embedding
@@ -30,6 +31,7 @@ LOADERS: dict[str, type[BaseLoader]] = {
     "github": GithubLoader,
     "youtube_video": YoutubeVideoLoader,
     "youtube_channel": YoutubeChannelLoader,
+    "pdf": PDFLoader,
 }
 
 CHUNKERS: dict[str, type[BaseChunker]] = {
