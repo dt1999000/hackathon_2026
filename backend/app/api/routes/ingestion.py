@@ -23,10 +23,12 @@ from app.services.signals import (
     DilutionTrend,
     FilingSignals,
     GrossMarginTrend,
+    StructuredRiskFlags,
     get_capital_efficiency_trend,
     get_dilution_trend,
     get_filing_signals,
     get_gross_margin_trend,
+    get_structured_risk_flags,
 )
 
 router = APIRouter(prefix="/ingestion", tags=["ingestion"], dependencies=[Depends(get_current_user)])
@@ -116,6 +118,21 @@ def get_capital_efficiency_trend_route(filing_id: uuid.UUID, session: SessionDep
     if filing is None:
         raise HTTPException(status_code=404, detail="Filing not found")
     return get_capital_efficiency_trend(session, filing)
+
+
+@router.get("/filings/{filing_id}/structured-risk-flags", response_model=StructuredRiskFlags)
+def get_structured_risk_flags_route(filing_id: uuid.UUID, session: SessionDep) -> StructuredRiskFlags:
+    """
+    Named risk flags (dilution, high SBC burden, margin compression,
+    declining ROIC, rising capital intensity) derived from the dilution,
+    gross-margin, and capital-efficiency trends. Thresholds are documented
+    judgment calls in signals.py, not universal pass/fail bars — absence of
+    a flag isn't a clean bill of health.
+    """
+    filing = session.get(Filing, filing_id)
+    if filing is None:
+        raise HTTPException(status_code=404, detail="Filing not found")
+    return get_structured_risk_flags(session, filing)
 
 
 @router.post("/filings/{filing_id}/narrative-diff", response_model=NarrativeChangesPublic)

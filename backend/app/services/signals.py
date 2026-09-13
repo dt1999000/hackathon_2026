@@ -27,6 +27,16 @@ _TAX_EXPENSE_CONCEPTS = ["IncomeTaxExpenseBenefit"]
 _PRETAX_INCOME_CONCEPTS = ["IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest"]
 _STOCKHOLDERS_EQUITY_CONCEPTS = ["StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"]
 
+# Thresholds below are judgment calls, not universal truths — chosen to be
+# loose enough to skip routine noise but tight enough to catch a real signal.
+# A company below these bars isn't necessarily fine; one above them isn't
+# necessarily in trouble — they're a starting point for a human to look
+# closer, same spirit as the narrative-diff materiality filter.
+_DILUTION_THRESHOLD_PCT = 2.0  # share count growth, period over period
+_HIGH_SBC_THRESHOLD_PCT = 15.0  # SBC as % of operating cash flow
+_ROIC_DECLINE_THRESHOLD_PTS = 5.0  # ROIC drop, percentage points, period over period
+_CAPEX_INTENSITY_RISE_THRESHOLD_PTS = 2.0  # capex-as-%-of-revenue rise, percentage points
+
 
 class MetricChange(BaseModel):
     metric: str
@@ -78,6 +88,7 @@ class GrossMarginTrend(BaseModel):
 class CapitalEfficiencyPeriod(BaseModel):
     filing_id: str
     period_end: date | None
+    invested_capital: float | None
     roic_pct: float | None
     effective_tax_rate: float | None
     capex_pct_of_revenue: float | None
@@ -86,6 +97,16 @@ class CapitalEfficiencyPeriod(BaseModel):
 class CapitalEfficiencyTrend(BaseModel):
     filing_id: str
     periods: list[CapitalEfficiencyPeriod]
+
+
+class RiskFlag(BaseModel):
+    flag_type: str
+    message: str
+
+
+class StructuredRiskFlags(BaseModel):
+    filing_id: str
+    flags: list[RiskFlag]
 
 
 def _get_instant_fact(session: Session, filing: Filing, concepts: list[str]) -> FinancialFact | None:
@@ -445,9 +466,15 @@ def get_capital_efficiency_trend(session: Session, filing: Filing, lookback: int
     for period_filing in window:
         nopat_daily_rate, effective_tax_rate = _nopat_daily_rate(session, period_filing)
         invested_capital = _invested_capital(session, period_filing)
+        # A zero or negative invested-capital base (possible for a company
+        # with negative stockholders' equity) makes the ratio meaningless —
+        # it can flip sign regardless of whether NOPAT is positive or
+        # negative, producing a percentage that reads as a return but isn't
+        # one. Negative invested capital is itself a real signal, surfaced
+        # as its own risk flag rather than laundered through a fake ROIC%.
         roic_pct = (
             nopat_daily_rate * 365 / invested_capital * 100
-            if nopat_daily_rate is not None and invested_capital
+            if nopat_daily_rate is not None and invested_capital is not None and invested_capital > 0
             else None
         )
 
@@ -463,6 +490,7 @@ def get_capital_efficiency_trend(session: Session, filing: Filing, lookback: int
             CapitalEfficiencyPeriod(
                 filing_id=str(period_filing.id),
                 period_end=period_filing.period_of_report,
+                invested_capital=invested_capital,
                 roic_pct=roic_pct,
                 effective_tax_rate=effective_tax_rate,
                 capex_pct_of_revenue=capex_pct_of_revenue,
@@ -470,3 +498,76 @@ def get_capital_efficiency_trend(session: Session, filing: Filing, lookback: int
         )
 
     return CapitalEfficiencyTrend(filing_id=str(filing.id), periods=periods)
+
+
+def get_structured_risk_flags(session: Session, filing: Filing) -> StructuredRiskFlags:
+    """Derives a handful of named risk flags from the dilution, gross-margin,
+    and capital-efficiency trends — the latest period compared to the one
+    before it. Absence of a flag isn't a clean bill of health, just that
+    nothing crossed one of the thresholds documented above `filing`."""
+    flags: list[RiskFlag] = []
+
+    dilution = get_dilution_trend(session, filing)
+    if len(dilution.periods) >= 2:
+        latest = dilution.periods[-1]
+        if latest.share_count_change_pct is not None and latest.share_count_change_pct > _DILUTION_THRESHOLD_PCT:
+            flags.append(
+                RiskFlag(
+                    flag_type="dilution",
+                    message=f"Share count grew {latest.share_count_change_pct:.1f}% from the prior period — existing shareholders are being diluted.",
+                )
+            )
+    if dilution.periods:
+        latest = dilution.periods[-1]
+        if latest.sbc_pct_of_operating_cash_flow is not None and latest.sbc_pct_of_operating_cash_flow > _HIGH_SBC_THRESHOLD_PCT:
+            flags.append(
+                RiskFlag(
+                    flag_type="high_sbc_burden",
+                    message=f"Stock-based compensation was {latest.sbc_pct_of_operating_cash_flow:.1f}% of operating cash flow — a significant non-cash charge relative to actual cash generated.",
+                )
+            )
+
+    gross_margin = get_gross_margin_trend(session, filing)
+    if gross_margin.periods:
+        latest = gross_margin.periods[-1]
+        if latest.margin_compressed_while_revenue_grew:
+            flags.append(
+                RiskFlag(
+                    flag_type="margin_compression",
+                    message=f"Gross margin fell {abs(latest.gross_margin_change_pct_points):.1f} points even as revenue grew {latest.revenue_change_pct:.1f}% — costs are outpacing scale.",
+                )
+            )
+
+    capital_efficiency = get_capital_efficiency_trend(session, filing)
+    if capital_efficiency.periods:
+        latest = capital_efficiency.periods[-1]
+        if latest.invested_capital is not None and latest.invested_capital <= 0:
+            flags.append(
+                RiskFlag(
+                    flag_type="negative_invested_capital",
+                    message="Invested capital (debt + equity - cash) is zero or negative — liabilities and buybacks have outpaced the tangible capital base, which makes ROIC and similar return ratios unreliable here.",
+                )
+            )
+    if len(capital_efficiency.periods) >= 2:
+        latest = capital_efficiency.periods[-1]
+        previous = capital_efficiency.periods[-2]
+        if latest.roic_pct is not None and previous.roic_pct is not None:
+            roic_drop = previous.roic_pct - latest.roic_pct
+            if roic_drop > _ROIC_DECLINE_THRESHOLD_PTS:
+                flags.append(
+                    RiskFlag(
+                        flag_type="declining_roic",
+                        message=f"ROIC fell from {previous.roic_pct:.1f}% to {latest.roic_pct:.1f}% — returns on invested capital are deteriorating.",
+                    )
+                )
+        if latest.capex_pct_of_revenue is not None and previous.capex_pct_of_revenue is not None:
+            capex_rise = latest.capex_pct_of_revenue - previous.capex_pct_of_revenue
+            if capex_rise > _CAPEX_INTENSITY_RISE_THRESHOLD_PTS:
+                flags.append(
+                    RiskFlag(
+                        flag_type="rising_capital_intensity",
+                        message=f"CapEx rose to {latest.capex_pct_of_revenue:.1f}% of revenue from {previous.capex_pct_of_revenue:.1f}% — the business is requiring more capital to sustain growth.",
+                    )
+                )
+
+    return StructuredRiskFlags(filing_id=str(filing.id), flags=flags)
