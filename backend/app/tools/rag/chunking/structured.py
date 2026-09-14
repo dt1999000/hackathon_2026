@@ -2,14 +2,15 @@ from app.tools.rag.chunking.base import BaseChunker
 
 
 class CsvChunker(BaseChunker):
-    """Chunker for CSVLoader's "Row N: col: value | ..." text output,
-    splitting on row boundaries so each chunk stays row-aligned.
+    """Chunker for TabularLoader's "Row N: col: value | ..." text output
+    (from a CSV file or an Excel worksheet), splitting on row boundaries so
+    each chunk stays row-aligned.
     """
 
     def __init__(self, chunk_size: int = 1200, chunk_overlap: int = 100, separators: list[str] | None = None, keep_separator: bool = True):
         if separators is None:
             separators = [
-                "\nRow ",   # Row boundaries (from CSVLoader format)
+                "\nRow ",   # Row boundaries (from TabularLoader format)
                 "\n",       # Line breaks
                 " | ",      # Column separators
                 ", ",       # Comma separators

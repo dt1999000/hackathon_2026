@@ -15,10 +15,10 @@ from app.tools.rag.chunking.structured import CsvChunker, JsonChunker, XmlChunke
 from app.tools.rag.chunking.text import DocxChunker, MdxChunker, TextChunker
 from app.tools.rag.chunking.web import WebsiteChunker
 from app.tools.rag.loader.base import BaseLoader, SourceContent
-from app.tools.rag.loader.csv import CSVLoader
 from app.tools.rag.loader.github import GithubLoader
 from app.tools.rag.loader.json import JSONLoader
 from app.tools.rag.loader.pdf import PDFLoader
+from app.tools.rag.loader.tabular import TabularLoader
 from app.tools.rag.loader.youtube_channel import YoutubeChannelLoader
 from app.tools.rag.loader.youtube_video import YoutubeVideoLoader
 from app.tools.rag.retrieval import retrieve_top_chunks, retrieve_top_chunks_embedding
@@ -27,7 +27,7 @@ router = APIRouter(tags=["tools"], prefix="/tools")
 
 LOADERS: dict[str, type[BaseLoader]] = {
     "json": JSONLoader,
-    "csv": CSVLoader,
+    "tabular": TabularLoader,
     "github": GithubLoader,
     "youtube_video": YoutubeVideoLoader,
     "youtube_channel": YoutubeChannelLoader,
