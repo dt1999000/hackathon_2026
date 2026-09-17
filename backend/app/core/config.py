@@ -40,6 +40,10 @@ class Settings(BaseSettings):
     LLM_EMBEDDING_MODEL: str = "qwen3-embedding:0.6b"
     LLM_CLAUDE_MODEL: str = "claude-sonnet-5"
     ANTHROPIC_WORKSPACE_ID: str | None = None
+    # Google Gemini. GOOGLE_API_KEY itself isn't a Settings field — like
+    # ANTHROPIC_API_KEY, langchain-google-genai reads it directly from the
+    # process environment, so it only needs to be set in .env/compose.
+    LLM_GEMINI_MODEL: str = "gemini-2.5-flash"
 
     @field_validator("DATABASE_URL", mode="before")
     @classmethod

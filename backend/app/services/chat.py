@@ -1,6 +1,15 @@
+from typing import Literal
+
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 
 from app.services.chat_models import ChatProvider, get_chat_model
+
+OutputLanguage = Literal["en", "de"]
+
+_LANGUAGE_NAMES: dict[OutputLanguage, str] = {
+    "en": "English",
+    "de": "German (Deutsch)",
+}
 
 ARIA_SYSTEM_PROMPT = """
 You are Aria, a general-purpose AI assistant. You silently detect which of the
@@ -55,8 +64,17 @@ def _to_lc_message(role: str, content: str) -> BaseMessage:
     return HumanMessage(content=content)
 
 
-def chat_completion(messages: list[dict[str, str]], provider: ChatProvider) -> str:
-    history: list[BaseMessage] = [SystemMessage(content=ARIA_SYSTEM_PROMPT)]
+def chat_completion(
+    messages: list[dict[str, str]],
+    provider: ChatProvider,
+    language: OutputLanguage = "en",
+) -> str:
+    system_prompt = (
+        f"{ARIA_SYSTEM_PROMPT}\n\nRespond in {_LANGUAGE_NAMES[language]}, "
+        "regardless of the language the user writes in, unless the task is "
+        "TRANSLATION and the user asks for a different target language."
+    )
+    history: list[BaseMessage] = [SystemMessage(content=system_prompt)]
     history.extend(_to_lc_message(m["role"], m["content"]) for m in messages)
 
     llm = get_chat_model(provider)

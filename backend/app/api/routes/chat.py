@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from pydantic import BaseModel
 
 from app.api.deps import get_current_user
-from app.services.chat import chat_completion
+from app.services.chat import OutputLanguage, chat_completion
 from app.services.chat_models import ChatProvider
 
 router = APIRouter(
@@ -18,6 +18,7 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     messages: list[ChatMessage]
     provider: ChatProvider = "claude"
+    language: OutputLanguage = "en"
 
 
 class ChatResponse(BaseModel):
@@ -32,5 +33,6 @@ def send_message(request: ChatRequest) -> ChatResponse:
     content = chat_completion(
         messages=[m.model_dump() for m in request.messages],
         provider=request.provider,
+        language=request.language,
     )
     return ChatResponse(content=content)
