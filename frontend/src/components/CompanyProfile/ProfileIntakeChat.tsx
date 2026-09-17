@@ -16,7 +16,7 @@ import {
 import useCustomToast from "@/hooks/useCustomToast"
 import { handleError } from "@/utils"
 
-type Provider = "claude" | "local"
+type Provider = "claude" | "local" | "google"
 
 const GREETING =
   "Hi, I'm Aria. Let's build your company profile so we can later tell " +
@@ -44,6 +44,7 @@ function ProviderSelect({
       <SelectContent>
         <SelectItem value="claude">Claude</SelectItem>
         <SelectItem value="local">Local (Ollama)</SelectItem>
+        <SelectItem value="google">Google (Gemini)</SelectItem>
       </SelectContent>
     </Select>
   )
@@ -54,7 +55,7 @@ export function ProfileIntakeChat() {
   const queryClient = useQueryClient()
   const { showErrorToast } = useCustomToast()
 
-  const [provider, setProvider] = useState<Provider>("claude")
+  const [provider, setProvider] = useState<Provider>("google")
   const [input, setInput] = useState("")
   const [messages, setMessages] = useState<ChatMessage[]>([])
 
