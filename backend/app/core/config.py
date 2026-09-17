@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     # Google Gemini. GOOGLE_API_KEY itself isn't a Settings field — like
     # ANTHROPIC_API_KEY, langchain-google-genai reads it directly from the
     # process environment, so it only needs to be set in .env/compose.
-    LLM_GEMINI_MODEL: str = "gemini-2.5-flash"
+    LLM_GEMINI_MODEL: str = "gemini-3.6-flash"
 
     @field_validator("DATABASE_URL", mode="before")
     @classmethod

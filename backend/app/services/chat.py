@@ -1,4 +1,4 @@
-from typing import Literal
+from typing import Any, Literal
 
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 
@@ -64,6 +64,22 @@ def _to_lc_message(role: str, content: str) -> BaseMessage:
     return HumanMessage(content=content)
 
 
+def _extract_text(content: str | list[str | dict[str, Any]]) -> str:
+    # Some providers (e.g. Gemini via langchain-google-genai) return a list
+    # of content blocks instead of a plain string, even for a simple text
+    # reply. Concatenate just the text parts rather than str()-ing the
+    # whole structure, which would leak the raw block reprs to the user.
+    if isinstance(content, str):
+        return content
+    parts: list[str] = []
+    for block in content:
+        if isinstance(block, str):
+            parts.append(block)
+        elif isinstance(block, dict) and block.get("type") == "text":
+            parts.append(str(block.get("text", "")))
+    return "".join(parts)
+
+
 def chat_completion(
     messages: list[dict[str, str]],
     provider: ChatProvider,
@@ -86,4 +102,4 @@ def chat_completion(
 
     llm = get_chat_model(provider)
     response = llm.invoke(history)
-    return str(response.content)
+    return _extract_text(response.content)
