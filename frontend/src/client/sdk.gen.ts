@@ -2,7 +2,7 @@
 
 import { type Client, type Options as Options2, type TDataShape, urlSearchParamsBodySerializer } from './client';
 import { client } from './client.gen';
-import type { chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
+import type { chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companyProfileCreateCompanyProfileMeData, companyProfileCreateCompanyProfileMeErrors, companyProfileCreateCompanyProfileMeResponses, companyProfileReadCompanyProfileMeData, companyProfileReadCompanyProfileMeResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
 
 export type Options<TData extends TDataShape = TDataShape, ThrowOnError extends boolean = boolean, TResponse = unknown> = Options2<TData, ThrowOnError, TResponse> & {
     /**
@@ -384,6 +384,40 @@ export class ChatService {
     }
 }
 
+export class CompanyProfileService {
+    /**
+     * Read Company Profile Me
+     *
+     * Get the current user's company profile.
+     */
+    public static profileReadCompanyProfileMe<ThrowOnError extends boolean = true>(options?: Options<companyProfileReadCompanyProfileMeData, ThrowOnError>) {
+        return (options?.client ?? client).get<companyProfileReadCompanyProfileMeResponses, unknown, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/me',
+            ...options
+        });
+    }
+    
+    /**
+     * Create Company Profile Me
+     *
+     * Create the current user's company profile.
+     */
+    public static profileCreateCompanyProfileMe<ThrowOnError extends boolean = true>(options: Options<companyProfileCreateCompanyProfileMeData, ThrowOnError>) {
+        return (options.client ?? client).post<companyProfileCreateCompanyProfileMeResponses, companyProfileCreateCompanyProfileMeErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/me',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+}
+
 export class PrivateService {
     /**
      * Create User
@@ -394,6 +428,162 @@ export class PrivateService {
         return (options.client ?? client).post<privateCreateUserResponses, privateCreateUserErrors, ThrowOnError>({
             responseType: 'json',
             url: '/api/v1/private/users/',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+}
+
+export class ToolsService {
+    /**
+     * Load Source
+     *
+     * Dev-only endpoint to try out a RAG loader directly.
+     */
+    public static loadSource<ThrowOnError extends boolean = true>(options: Options<toolsLoadSourceData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsLoadSourceResponses, toolsLoadSourceErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/load',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Chunk Text
+     *
+     * Dev-only endpoint to try out a RAG chunker directly.
+     */
+    public static chunkText<ThrowOnError extends boolean = true>(options: Options<toolsChunkTextData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsChunkTextResponses, toolsChunkTextErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/chunk',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Ingest Source
+     *
+     * Dev-only endpoint: load a source and chunk its content in one call.
+     */
+    public static ingestSource<ThrowOnError extends boolean = true>(options: Options<toolsIngestSourceData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsIngestSourceResponses, toolsIngestSourceErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/ingest',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Complete
+     *
+     * Dev-only endpoint to try out the local LLM client directly.
+     */
+    public static complete<ThrowOnError extends boolean = true>(options: Options<toolsCompleteData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsCompleteResponses, toolsCompleteErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/llm/complete',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Generate
+     *
+     * Dev-only endpoint to compare generation with vs. without retrieved
+     * context from a RAG source.
+     */
+    public static generate<ThrowOnError extends boolean = true>(options: Options<toolsGenerateData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsGenerateResponses, toolsGenerateErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/generate',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Crawl Website
+     *
+     * Dev-only endpoint to try out the Firecrawl crawl tool directly.
+     */
+    public static crawlWebsite<ThrowOnError extends boolean = true>(options: Options<toolsCrawlWebsiteData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsCrawlWebsiteResponses, toolsCrawlWebsiteErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/crawl',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Scrape Website
+     *
+     * Dev-only endpoint to try out the Firecrawl scrape tool directly.
+     */
+    public static scrapeWebsite<ThrowOnError extends boolean = true>(options: Options<toolsScrapeWebsiteData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsScrapeWebsiteResponses, toolsScrapeWebsiteErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/scrape',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Search
+     *
+     * Dev-only endpoint to try out the Firecrawl search tool directly.
+     */
+    public static search<ThrowOnError extends boolean = true>(options: Options<toolsSearchData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsSearchResponses, toolsSearchErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/search',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Extract
+     *
+     * Dev-only endpoint to try out the Firecrawl structured-extraction tool directly.
+     */
+    public static extract<ThrowOnError extends boolean = true>(options: Options<toolsExtractData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsExtractResponses, toolsExtractErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/extract',
             ...options,
             headers: {
                 'Content-Type': 'application/json',

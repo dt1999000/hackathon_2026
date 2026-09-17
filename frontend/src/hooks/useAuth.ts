@@ -26,24 +26,27 @@ const useAuth = () => {
     enabled: isLoggedIn(),
   })
 
-  const signUpMutation = useMutation({
-    mutationFn: (data: UserRegister) =>
-      UsersService.registerUser({ body: data }),
-    onSuccess: () => {
-      navigate({ to: "/login" })
-    },
-    onError: handleError.bind(showErrorToast),
-    onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ["users"] })
-    },
-  })
-
   const login = async (data: AccessToken) => {
     const response = await LoginService.loginAccessToken({
       body: data,
     })
     localStorage.setItem("access_token", response.data.access_token)
   }
+
+  const signUpMutation = useMutation({
+    mutationFn: async (data: UserRegister) => {
+      await UsersService.registerUser({ body: data })
+      await login({ username: data.email, password: data.password })
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["currentUser"] })
+      navigate({ to: "/onboarding" })
+    },
+    onError: handleError.bind(showErrorToast),
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["users"] })
+    },
+  })
 
   const loginMutation = useMutation({
     mutationFn: login,
