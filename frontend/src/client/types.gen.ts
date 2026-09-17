@@ -59,7 +59,11 @@ export type ChatRequest = {
     /**
      * Provider
      */
-    provider?: 'claude' | 'local';
+    provider?: 'claude' | 'local' | 'google';
+    /**
+     * Language
+     */
+    language?: 'en' | 'de';
 };
 
 /**
@@ -371,7 +375,7 @@ export type GenerateRequest = {
     /**
      * Embedding Model
      */
-    embedding_model?: string | null;
+    embedding_model?: 'qwen3-embedding:0.6b' | 'nomic-embed-text' | 'bge-m3' | 'jina-embeddings-v3' | null;
 };
 
 /**
@@ -541,7 +545,7 @@ export type ProfileChatRequest = {
     /**
      * Provider
      */
-    provider?: 'claude' | 'local';
+    provider?: 'claude' | 'local' | 'google';
 };
 
 /**
