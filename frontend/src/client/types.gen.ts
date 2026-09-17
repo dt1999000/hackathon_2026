@@ -73,6 +73,308 @@ export type ChatResponse = {
 };
 
 /**
+ * ChunkRequest
+ */
+export type ChunkRequest = {
+    /**
+     * Text
+     */
+    text: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
+};
+
+/**
+ * CompanyProfileCreate
+ */
+export type CompanyProfileCreate = {
+    /**
+     * Company Name
+     */
+    company_name: string;
+    /**
+     * Base Location
+     */
+    base_location?: string | null;
+    /**
+     * Founded Year
+     */
+    founded_year?: number | null;
+    /**
+     * Employee Count
+     */
+    employee_count?: number | null;
+    /**
+     * Annual Revenue Eur
+     */
+    annual_revenue_eur?: number | null;
+    /**
+     * Max Radius Km
+     */
+    max_radius_km?: number | null;
+    /**
+     * Served Regions
+     */
+    served_regions?: Array<string>;
+    /**
+     * Excluded Regions
+     */
+    excluded_regions?: Array<string>;
+    /**
+     * Min Contract Value Eur
+     */
+    min_contract_value_eur?: number | null;
+    /**
+     * Max Contract Value Eur
+     */
+    max_contract_value_eur?: number | null;
+    /**
+     * Partner Threshold Eur
+     */
+    partner_threshold_eur?: number | null;
+    /**
+     * Capabilities
+     */
+    capabilities?: Array<string>;
+    /**
+     * Explicit Exclusions
+     */
+    explicit_exclusions?: Array<string>;
+    /**
+     * Certifications
+     */
+    certifications?: Array<string>;
+    /**
+     * Contractor Role
+     */
+    contractor_role?: string | null;
+    /**
+     * Max Self Perform Pct
+     */
+    max_self_perform_pct?: number | null;
+    /**
+     * Guarantee Limit Total Eur
+     */
+    guarantee_limit_total_eur?: number | null;
+    /**
+     * Guarantee Currently Committed Eur
+     */
+    guarantee_currently_committed_eur?: number | null;
+    /**
+     * Available From
+     */
+    available_from?: string | null;
+    /**
+     * Capacity Note
+     */
+    capacity_note?: string | null;
+    /**
+     * Reference Projects
+     */
+    reference_projects?: Array<string>;
+    /**
+     * Custom Hardliners
+     */
+    custom_hardliners?: Array<string>;
+    /**
+     * Self Description
+     */
+    self_description?: string | null;
+};
+
+/**
+ * CompanyProfilePublic
+ */
+export type CompanyProfilePublic = {
+    /**
+     * Company Name
+     */
+    company_name: string;
+    /**
+     * Base Location
+     */
+    base_location?: string | null;
+    /**
+     * Founded Year
+     */
+    founded_year?: number | null;
+    /**
+     * Employee Count
+     */
+    employee_count?: number | null;
+    /**
+     * Annual Revenue Eur
+     */
+    annual_revenue_eur?: number | null;
+    /**
+     * Max Radius Km
+     */
+    max_radius_km?: number | null;
+    /**
+     * Served Regions
+     */
+    served_regions?: Array<string>;
+    /**
+     * Excluded Regions
+     */
+    excluded_regions?: Array<string>;
+    /**
+     * Min Contract Value Eur
+     */
+    min_contract_value_eur?: number | null;
+    /**
+     * Max Contract Value Eur
+     */
+    max_contract_value_eur?: number | null;
+    /**
+     * Partner Threshold Eur
+     */
+    partner_threshold_eur?: number | null;
+    /**
+     * Capabilities
+     */
+    capabilities?: Array<string>;
+    /**
+     * Explicit Exclusions
+     */
+    explicit_exclusions?: Array<string>;
+    /**
+     * Certifications
+     */
+    certifications?: Array<string>;
+    /**
+     * Contractor Role
+     */
+    contractor_role?: string | null;
+    /**
+     * Max Self Perform Pct
+     */
+    max_self_perform_pct?: number | null;
+    /**
+     * Guarantee Limit Total Eur
+     */
+    guarantee_limit_total_eur?: number | null;
+    /**
+     * Guarantee Currently Committed Eur
+     */
+    guarantee_currently_committed_eur?: number | null;
+    /**
+     * Available From
+     */
+    available_from?: string | null;
+    /**
+     * Capacity Note
+     */
+    capacity_note?: string | null;
+    /**
+     * Reference Projects
+     */
+    reference_projects?: Array<string>;
+    /**
+     * Custom Hardliners
+     */
+    custom_hardliners?: Array<string>;
+    /**
+     * Self Description
+     */
+    self_description?: string | null;
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Owner Id
+     */
+    owner_id: string;
+    /**
+     * Created At
+     */
+    created_at?: string | null;
+};
+
+/**
+ * CompleteRequest
+ */
+export type CompleteRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<{
+        [key: string]: string;
+    }>;
+};
+
+/**
+ * CrawlWebsiteRequest
+ */
+export type CrawlWebsiteRequest = {
+    /**
+     * Url
+     */
+    url: string;
+};
+
+/**
+ * ExtractRequest
+ */
+export type ExtractRequest = {
+    /**
+     * Url
+     */
+    url: string;
+    /**
+     * Json Schema
+     */
+    json_schema: {
+        [key: string]: unknown;
+    };
+    /**
+     * Prompt
+     */
+    prompt?: string | null;
+};
+
+/**
+ * GenerateRequest
+ */
+export type GenerateRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+    /**
+     * Query
+     */
+    query: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
+    /**
+     * Top K
+     */
+    top_k?: number;
+    /**
+     * Use Retrieval
+     */
+    use_retrieval?: boolean;
+    /**
+     * Retrieval Method
+     */
+    retrieval_method?: string;
+    /**
+     * Embedding Model
+     */
+    embedding_model?: string | null;
+};
+
+/**
  * HTTPValidationError
  */
 export type HTTPValidationError = {
@@ -80,6 +382,24 @@ export type HTTPValidationError = {
      * Detail
      */
     detail?: Array<ValidationError>;
+};
+
+/**
+ * IngestRequest
+ */
+export type IngestRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
 };
 
 /**
@@ -151,6 +471,20 @@ export type ItemsPublic = {
 };
 
 /**
+ * LoadRequest
+ */
+export type LoadRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+};
+
+/**
  * Message
  */
 export type Message = {
@@ -194,6 +528,50 @@ export type PrivateUserCreate = {
      * Is Verified
      */
     is_verified?: boolean;
+};
+
+/**
+ * ProfileChatRequest
+ */
+export type ProfileChatRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<ChatMessage>;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local';
+};
+
+/**
+ * ProfileChatResponse
+ */
+export type ProfileChatResponse = {
+    /**
+     * Content
+     */
+    content: string;
+};
+
+/**
+ * ScrapeWebsiteRequest
+ */
+export type ScrapeWebsiteRequest = {
+    /**
+     * Url
+     */
+    url: string;
+};
+
+/**
+ * SearchRequest
+ */
+export type SearchRequest = {
+    /**
+     * Query
+     */
+    query: string;
 };
 
 /**
@@ -984,6 +1362,97 @@ export type chatSendMessageResponses = {
 
 export type chatSendMessageResponse = chatSendMessageResponses[keyof chatSendMessageResponses];
 
+export type companyProfileReadCompanyProfileMeData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/me';
+};
+
+export type companyProfileReadCompanyProfileMeResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyProfilePublic;
+};
+
+export type companyProfileReadCompanyProfileMeResponse = companyProfileReadCompanyProfileMeResponses[keyof companyProfileReadCompanyProfileMeResponses];
+
+export type companyProfileCreateCompanyProfileMeData = {
+    body: CompanyProfileCreate;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/me';
+};
+
+export type companyProfileCreateCompanyProfileMeErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileCreateCompanyProfileMeError = companyProfileCreateCompanyProfileMeErrors[keyof companyProfileCreateCompanyProfileMeErrors];
+
+export type companyProfileCreateCompanyProfileMeResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyProfilePublic;
+};
+
+export type companyProfileCreateCompanyProfileMeResponse = companyProfileCreateCompanyProfileMeResponses[keyof companyProfileCreateCompanyProfileMeResponses];
+
+export type companyProfileSendProfileChatMessageData = {
+    body: ProfileChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/chat/message';
+};
+
+export type companyProfileSendProfileChatMessageErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileSendProfileChatMessageError = companyProfileSendProfileChatMessageErrors[keyof companyProfileSendProfileChatMessageErrors];
+
+export type companyProfileSendProfileChatMessageResponses = {
+    /**
+     * Successful Response
+     */
+    200: ProfileChatResponse;
+};
+
+export type companyProfileSendProfileChatMessageResponse = companyProfileSendProfileChatMessageResponses[keyof companyProfileSendProfileChatMessageResponses];
+
+export type companyProfileFinalizeCompanyProfileChatData = {
+    body: ProfileChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/chat/finalize';
+};
+
+export type companyProfileFinalizeCompanyProfileChatErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileFinalizeCompanyProfileChatError = companyProfileFinalizeCompanyProfileChatErrors[keyof companyProfileFinalizeCompanyProfileChatErrors];
+
+export type companyProfileFinalizeCompanyProfileChatResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyProfilePublic;
+};
+
+export type companyProfileFinalizeCompanyProfileChatResponse = companyProfileFinalizeCompanyProfileChatResponses[keyof companyProfileFinalizeCompanyProfileChatResponses];
+
 export type privateCreateUserData = {
     body: PrivateUserCreate;
     path?: never;
@@ -1008,3 +1477,264 @@ export type privateCreateUserResponses = {
 };
 
 export type privateCreateUserResponse = privateCreateUserResponses[keyof privateCreateUserResponses];
+
+export type toolsLoadSourceData = {
+    body: LoadRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/load';
+};
+
+export type toolsLoadSourceErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsLoadSourceError = toolsLoadSourceErrors[keyof toolsLoadSourceErrors];
+
+export type toolsLoadSourceResponses = {
+    /**
+     * Response Tools-Load Source
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsLoadSourceResponse = toolsLoadSourceResponses[keyof toolsLoadSourceResponses];
+
+export type toolsChunkTextData = {
+    body: ChunkRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/chunk';
+};
+
+export type toolsChunkTextErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsChunkTextError = toolsChunkTextErrors[keyof toolsChunkTextErrors];
+
+export type toolsChunkTextResponses = {
+    /**
+     * Response Tools-Chunk Text
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsChunkTextResponse = toolsChunkTextResponses[keyof toolsChunkTextResponses];
+
+export type toolsIngestSourceData = {
+    body: IngestRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/ingest';
+};
+
+export type toolsIngestSourceErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsIngestSourceError = toolsIngestSourceErrors[keyof toolsIngestSourceErrors];
+
+export type toolsIngestSourceResponses = {
+    /**
+     * Response Tools-Ingest Source
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsIngestSourceResponse = toolsIngestSourceResponses[keyof toolsIngestSourceResponses];
+
+export type toolsCompleteData = {
+    body: CompleteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/llm/complete';
+};
+
+export type toolsCompleteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsCompleteError = toolsCompleteErrors[keyof toolsCompleteErrors];
+
+export type toolsCompleteResponses = {
+    /**
+     * Response Tools-Complete
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: string;
+    };
+};
+
+export type toolsCompleteResponse = toolsCompleteResponses[keyof toolsCompleteResponses];
+
+export type toolsGenerateData = {
+    body: GenerateRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/generate';
+};
+
+export type toolsGenerateErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsGenerateError = toolsGenerateErrors[keyof toolsGenerateErrors];
+
+export type toolsGenerateResponses = {
+    /**
+     * Response Tools-Generate
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsGenerateResponse = toolsGenerateResponses[keyof toolsGenerateResponses];
+
+export type toolsCrawlWebsiteData = {
+    body: CrawlWebsiteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/crawl';
+};
+
+export type toolsCrawlWebsiteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsCrawlWebsiteError = toolsCrawlWebsiteErrors[keyof toolsCrawlWebsiteErrors];
+
+export type toolsCrawlWebsiteResponses = {
+    /**
+     * Response Tools-Crawl Website
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsCrawlWebsiteResponse = toolsCrawlWebsiteResponses[keyof toolsCrawlWebsiteResponses];
+
+export type toolsScrapeWebsiteData = {
+    body: ScrapeWebsiteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/scrape';
+};
+
+export type toolsScrapeWebsiteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsScrapeWebsiteError = toolsScrapeWebsiteErrors[keyof toolsScrapeWebsiteErrors];
+
+export type toolsScrapeWebsiteResponses = {
+    /**
+     * Response Tools-Scrape Website
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsScrapeWebsiteResponse = toolsScrapeWebsiteResponses[keyof toolsScrapeWebsiteResponses];
+
+export type toolsSearchData = {
+    body: SearchRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/search';
+};
+
+export type toolsSearchErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsSearchError = toolsSearchErrors[keyof toolsSearchErrors];
+
+export type toolsSearchResponses = {
+    /**
+     * Response Tools-Search
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsSearchResponse = toolsSearchResponses[keyof toolsSearchResponses];
+
+export type toolsExtractData = {
+    body: ExtractRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/extract';
+};
+
+export type toolsExtractErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsExtractError = toolsExtractErrors[keyof toolsExtractErrors];
+
+export type toolsExtractResponses = {
+    /**
+     * Response Tools-Extract
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsExtractResponse = toolsExtractResponses[keyof toolsExtractResponses];

@@ -67,13 +67,20 @@ def _to_lc_message(role: str, content: str) -> BaseMessage:
 def chat_completion(
     messages: list[dict[str, str]],
     provider: ChatProvider,
+    system_prompt: str | None = None,
     language: OutputLanguage = "en",
 ) -> str:
-    system_prompt = (
-        f"{ARIA_SYSTEM_PROMPT}\n\nRespond in {_LANGUAGE_NAMES[language]}, "
-        "regardless of the language the user writes in, unless the task is "
-        "TRANSLATION and the user asks for a different target language."
-    )
+    # A caller-supplied system_prompt (e.g. the company-profile intake
+    # persona) is used as-is — the language wrapper below is specific to
+    # Aria's own task list (it references "the task is TRANSLATION",
+    # which only means something in ARIA_SYSTEM_PROMPT) and would be
+    # nonsensical bolted onto an unrelated persona.
+    if system_prompt is None:
+        system_prompt = (
+            f"{ARIA_SYSTEM_PROMPT}\n\nRespond in {_LANGUAGE_NAMES[language]}, "
+            "regardless of the language the user writes in, unless the task is "
+            "TRANSLATION and the user asks for a different target language."
+        )
     history: list[BaseMessage] = [SystemMessage(content=system_prompt)]
     history.extend(_to_lc_message(m["role"], m["content"]) for m in messages)
 

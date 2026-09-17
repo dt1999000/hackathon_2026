@@ -1,8 +1,11 @@
 import uuid
-from datetime import UTC, datetime
+from datetime import UTC, date, datetime
+from typing import Optional
 
+from pgvector.sqlalchemy import Vector
 from pydantic import EmailStr
-from sqlalchemy import DateTime
+from sqlalchemy import Column, DateTime, String, Text
+from sqlalchemy.dialects.postgresql import ARRAY
 from sqlmodel import Field, Relationship, SQLModel
 
 
@@ -57,6 +60,9 @@ class User(UserBase, table=True):
         sa_type=DateTime(timezone=True),  # type: ignore
     )
     items: list[Item] = Relationship(back_populates="owner", cascade_delete=True)
+    company_profile: Optional["CompanyProfile"] = Relationship(
+        back_populates="owner", cascade_delete=True
+    )
 
 
 # Properties to return via API, id is always required
@@ -110,6 +116,117 @@ class ItemPublic(ItemBase):
 class ItemsPublic(SQLModel):
     data: list[ItemPublic]
     count: int
+
+
+# The string-list fields below are declared as plain `list[str]` (Pydantic-only)
+# on the shared Base/Create classes, and re-declared with an explicit Postgres
+# ARRAY column only on the table model (CompanyProfile) — same split as
+# `created_at`/`sa_type` on User/Item, which also only appears on the table
+# class rather than the shared Base.
+
+
+# Shared properties
+class CompanyProfileBase(SQLModel):
+    company_name: str = Field(min_length=1, max_length=255)
+    base_location: str | None = Field(default=None, max_length=255)
+    founded_year: int | None = None
+    employee_count: int | None = None
+    annual_revenue_eur: float | None = None
+
+    max_radius_km: int | None = None
+    served_regions: list[str] = Field(default_factory=list)
+    excluded_regions: list[str] = Field(default_factory=list)
+
+    min_contract_value_eur: float | None = None
+    max_contract_value_eur: float | None = None
+    partner_threshold_eur: float | None = None
+
+    capabilities: list[str] = Field(default_factory=list)
+    explicit_exclusions: list[str] = Field(default_factory=list)
+    certifications: list[str] = Field(default_factory=list)
+
+    contractor_role: str | None = Field(default=None, max_length=32)
+    max_self_perform_pct: int | None = None
+
+    guarantee_limit_total_eur: float | None = None
+    guarantee_currently_committed_eur: float | None = None
+
+    available_from: date | None = None
+    capacity_note: str | None = Field(default=None, max_length=1000)
+
+    reference_projects: list[str] = Field(default_factory=list)
+    custom_hardliners: list[str] = Field(default_factory=list)
+
+    # Free-text, never required — a place for the kind of vague, informal
+    # self-description companies give in their own words (see Appendix A's
+    # "In their words" quotes). Purely illustrative color for the embedded
+    # text; nothing downstream requires it to be filled in.
+    self_description: str | None = Field(default=None, max_length=2000)
+
+
+# Properties to receive via API on creation
+class CompanyProfileCreate(CompanyProfileBase):
+    pass
+
+
+# Database model, database table inferred from class name
+class CompanyProfile(CompanyProfileBase, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+    owner_id: uuid.UUID = Field(
+        foreign_key="user.id", nullable=False, unique=True, ondelete="CASCADE"
+    )
+    owner: User | None = Relationship(back_populates="company_profile")
+    embedding: Optional["CompanyProfileEmbedding"] = Relationship(
+        back_populates="company_profile", cascade_delete=True
+    )
+
+    # Postgres array columns — see the string-list note above CompanyProfileBase.
+    served_regions: list[str] = Field(sa_column=Column(ARRAY(String)))
+    excluded_regions: list[str] = Field(sa_column=Column(ARRAY(String)))
+    capabilities: list[str] = Field(sa_column=Column(ARRAY(String)))
+    explicit_exclusions: list[str] = Field(sa_column=Column(ARRAY(String)))
+    certifications: list[str] = Field(sa_column=Column(ARRAY(String)))
+    reference_projects: list[str] = Field(sa_column=Column(ARRAY(String)))
+    custom_hardliners: list[str] = Field(sa_column=Column(ARRAY(String)))
+
+
+# Properties to return via API, id is always required
+class CompanyProfilePublic(CompanyProfileBase):
+    id: uuid.UUID
+    owner_id: uuid.UUID
+    created_at: datetime | None = None
+
+
+# A rendered-text embedding of a CompanyProfile, kept in sync 1:1 with it.
+# Ingestion only — nothing in this codebase queries this table yet. The
+# `vector` column intentionally has no fixed dimension: pgvector only
+# requires one for building an ANN index, and there's no retrieval path
+# here to index for.
+class CompanyProfileEmbedding(SQLModel, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    company_profile_id: uuid.UUID = Field(
+        foreign_key="companyprofile.id",
+        nullable=False,
+        unique=True,
+        ondelete="CASCADE",
+    )
+    source_text: str = Field(sa_column=Column(Text, nullable=False))
+    embedding: list[float] = Field(sa_column=Column(Vector(), nullable=False))
+    embedding_model: str = Field(max_length=255)
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+    updated_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+
+    company_profile: CompanyProfile | None = Relationship(back_populates="embedding")
 
 
 # Generic message
