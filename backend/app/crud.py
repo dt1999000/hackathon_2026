@@ -7,11 +7,13 @@ from app.core.security import get_password_hash, verify_password
 from app.models import (
     CompanyProfile,
     CompanyProfileCreate,
+    CompanyProfileEmbedding,
     Item,
     ItemCreate,
     User,
     UserCreate,
     UserUpdate,
+    get_datetime_utc,
 )
 
 
@@ -84,3 +86,57 @@ def create_company_profile(
     session.commit()
     session.refresh(db_profile)
     return db_profile
+
+
+def upsert_company_profile(
+    *, session: Session, owner_id: uuid.UUID, profile_in: CompanyProfileCreate
+) -> CompanyProfile:
+    existing = session.exec(
+        select(CompanyProfile).where(CompanyProfile.owner_id == owner_id)
+    ).first()
+    if existing:
+        existing.sqlmodel_update(profile_in.model_dump())
+        session.add(existing)
+        session.commit()
+        session.refresh(existing)
+        return existing
+    return create_company_profile(session=session, profile_in=profile_in, owner_id=owner_id)
+
+
+def upsert_company_profile_embedding(
+    *,
+    session: Session,
+    company_profile_id: uuid.UUID,
+    source_text: str,
+    embedding: list[float],
+    embedding_model: str,
+) -> CompanyProfileEmbedding:
+    existing = session.exec(
+        select(CompanyProfileEmbedding).where(
+            CompanyProfileEmbedding.company_profile_id == company_profile_id
+        )
+    ).first()
+    if existing:
+        existing.sqlmodel_update(
+            {
+                "source_text": source_text,
+                "embedding": embedding,
+                "embedding_model": embedding_model,
+                "updated_at": get_datetime_utc(),
+            }
+        )
+        session.add(existing)
+        session.commit()
+        session.refresh(existing)
+        return existing
+
+    db_embedding = CompanyProfileEmbedding(
+        company_profile_id=company_profile_id,
+        source_text=source_text,
+        embedding=embedding,
+        embedding_model=embedding_model,
+    )
+    session.add(db_embedding)
+    session.commit()
+    session.refresh(db_embedding)
+    return db_embedding

@@ -55,8 +55,12 @@ def _to_lc_message(role: str, content: str) -> BaseMessage:
     return HumanMessage(content=content)
 
 
-def chat_completion(messages: list[dict[str, str]], provider: ChatProvider) -> str:
-    history: list[BaseMessage] = [SystemMessage(content=ARIA_SYSTEM_PROMPT)]
+def chat_completion(
+    messages: list[dict[str, str]],
+    provider: ChatProvider,
+    system_prompt: str = ARIA_SYSTEM_PROMPT,
+) -> str:
+    history: list[BaseMessage] = [SystemMessage(content=system_prompt)]
     history.extend(_to_lc_message(m["role"], m["content"]) for m in messages)
 
     llm = get_chat_model(provider)

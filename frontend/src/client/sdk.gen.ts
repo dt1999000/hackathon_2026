@@ -2,7 +2,7 @@
 
 import { type Client, type Options as Options2, type TDataShape, urlSearchParamsBodySerializer } from './client';
 import { client } from './client.gen';
-import type { chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companyProfileCreateCompanyProfileMeData, companyProfileCreateCompanyProfileMeErrors, companyProfileCreateCompanyProfileMeResponses, companyProfileReadCompanyProfileMeData, companyProfileReadCompanyProfileMeResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
+import type { chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companyProfileCreateCompanyProfileMeData, companyProfileCreateCompanyProfileMeErrors, companyProfileCreateCompanyProfileMeResponses, companyProfileFinalizeCompanyProfileChatData, companyProfileFinalizeCompanyProfileChatErrors, companyProfileFinalizeCompanyProfileChatResponses, companyProfileReadCompanyProfileMeData, companyProfileReadCompanyProfileMeResponses, companyProfileSendProfileChatMessageData, companyProfileSendProfileChatMessageErrors, companyProfileSendProfileChatMessageResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
 
 export type Options<TData extends TDataShape = TDataShape, ThrowOnError extends boolean = boolean, TResponse = unknown> = Options2<TData, ThrowOnError, TResponse> & {
     /**
@@ -409,6 +409,46 @@ export class CompanyProfileService {
             responseType: 'json',
             security: [{ scheme: 'bearer', type: 'http' }],
             url: '/api/v1/company-profile/me',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Send Profile Chat Message
+     *
+     * Send a message to the company-profile intake assistant.
+     */
+    public static profileSendProfileChatMessage<ThrowOnError extends boolean = true>(options: Options<companyProfileSendProfileChatMessageData, ThrowOnError>) {
+        return (options.client ?? client).post<companyProfileSendProfileChatMessageResponses, companyProfileSendProfileChatMessageErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/chat/message',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Finalize Company Profile Chat
+     *
+     * Extract a company profile from the intake conversation, save it, and
+     * embed it for later retrieval. Saving the profile always happens if
+     * extraction succeeds; embedding is best-effort and logged on failure
+     * rather than failing the request, since it depends on a separate
+     * embedding server that may not be reachable.
+     */
+    public static profileFinalizeCompanyProfileChat<ThrowOnError extends boolean = true>(options: Options<companyProfileFinalizeCompanyProfileChatData, ThrowOnError>) {
+        return (options.client ?? client).post<companyProfileFinalizeCompanyProfileChatResponses, companyProfileFinalizeCompanyProfileChatErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/chat/finalize',
             ...options,
             headers: {
                 'Content-Type': 'application/json',

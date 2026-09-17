@@ -178,6 +178,10 @@ export type CompanyProfileCreate = {
      * Custom Hardliners
      */
     custom_hardliners?: Array<string>;
+    /**
+     * Self Description
+     */
+    self_description?: string | null;
 };
 
 /**
@@ -272,6 +276,10 @@ export type CompanyProfilePublic = {
      * Custom Hardliners
      */
     custom_hardliners?: Array<string>;
+    /**
+     * Self Description
+     */
+    self_description?: string | null;
     /**
      * Id
      */
@@ -520,6 +528,30 @@ export type PrivateUserCreate = {
      * Is Verified
      */
     is_verified?: boolean;
+};
+
+/**
+ * ProfileChatRequest
+ */
+export type ProfileChatRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<ChatMessage>;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local';
+};
+
+/**
+ * ProfileChatResponse
+ */
+export type ProfileChatResponse = {
+    /**
+     * Content
+     */
+    content: string;
 };
 
 /**
@@ -1370,6 +1402,56 @@ export type companyProfileCreateCompanyProfileMeResponses = {
 };
 
 export type companyProfileCreateCompanyProfileMeResponse = companyProfileCreateCompanyProfileMeResponses[keyof companyProfileCreateCompanyProfileMeResponses];
+
+export type companyProfileSendProfileChatMessageData = {
+    body: ProfileChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/chat/message';
+};
+
+export type companyProfileSendProfileChatMessageErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileSendProfileChatMessageError = companyProfileSendProfileChatMessageErrors[keyof companyProfileSendProfileChatMessageErrors];
+
+export type companyProfileSendProfileChatMessageResponses = {
+    /**
+     * Successful Response
+     */
+    200: ProfileChatResponse;
+};
+
+export type companyProfileSendProfileChatMessageResponse = companyProfileSendProfileChatMessageResponses[keyof companyProfileSendProfileChatMessageResponses];
+
+export type companyProfileFinalizeCompanyProfileChatData = {
+    body: ProfileChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/chat/finalize';
+};
+
+export type companyProfileFinalizeCompanyProfileChatErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileFinalizeCompanyProfileChatError = companyProfileFinalizeCompanyProfileChatErrors[keyof companyProfileFinalizeCompanyProfileChatErrors];
+
+export type companyProfileFinalizeCompanyProfileChatResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyProfilePublic;
+};
+
+export type companyProfileFinalizeCompanyProfileChatResponse = companyProfileFinalizeCompanyProfileChatResponses[keyof companyProfileFinalizeCompanyProfileChatResponses];
 
 export type privateCreateUserData = {
     body: PrivateUserCreate;
