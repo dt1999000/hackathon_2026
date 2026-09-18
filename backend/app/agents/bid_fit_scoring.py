@@ -15,17 +15,22 @@ _FLAG_RANK = {GREEN: 0, YELLOW: 1, RED: 2}
 class HardlinerViolation(BaseModel):
     """One hardliner checked against the bid, with the LLM's verdict."""
 
-    hardliner: str
+    hardliner: str = Field(
+        description="The constraint being checked. Quote the company's own "
+        "wording as written."
+    )
     violated: bool
     reason: str = Field(
         description="Why the bid does or doesn't satisfy this hardliner, "
-        "grounded in the retrieved bid context."
+        "grounded in the retrieved bid context. Write this in the output "
+        "language given in the prompt."
     )
     solution: str | None = Field(
         default=None,
         description="A concrete way to resolve the violation, if one "
         "realistically exists (e.g. subcontracting a missing capability). "
-        "Omit if no viable solution exists.",
+        "Omit if no viable solution exists. Write this in the output "
+        "language given in the prompt.",
     )
     solution_is_realistic: bool = Field(
         default=False,

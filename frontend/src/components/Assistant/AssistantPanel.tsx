@@ -62,7 +62,7 @@ function LanguageSelect({
 
 export function AssistantPanel({ onClose }: { onClose: () => void }) {
   const [provider, setProvider] = useState<Provider>("claude")
-  const [language, setLanguage] = useState<Language>("en")
+  const [language, setLanguage] = useState<Language>("de")
   const [input, setInput] = useState("")
   const [messages, setMessages] = useState<ChatMessage[]>([])
   const { showErrorToast } = useCustomToast()

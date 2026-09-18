@@ -27,6 +27,7 @@ from app.api.deps import CurrentUser, SessionDep, get_current_user
 from app.models import Bid, CompanyProfile
 from app.services.chat_models import ChatProvider, get_chat_model
 from app.services.embeddings import EmbeddingClient
+from app.services.language import OutputLanguage
 
 logger = logging.getLogger(__name__)
 
@@ -73,6 +74,7 @@ class BidFitRequest(_BidInputFields):
     match_threshold: float = DEFAULT_SECTION_MATCH_THRESHOLD
     record_index: int = 0
     record_id: str | None = None
+    language: OutputLanguage = "de"
 
 
 class BidFitResponse(BaseModel):
@@ -125,6 +127,7 @@ def analyze_bid_fit(
         match_threshold=request.match_threshold,
         record_index=request.record_index,
         record_id=request.record_id,
+        language=request.language,
     )
     return _to_bid_fit_response(final_state)
 
@@ -148,6 +151,7 @@ class BidScreenRequest(_BidInputFields):
     # loaders.
     record_index: int = 0
     record_id: str | None = None
+    language: OutputLanguage = "de"
 
 
 @router.post("/screen", response_model=BidFitResponse)
@@ -171,6 +175,7 @@ def screen_bid(request: BidScreenRequest) -> Any:
         match_threshold=request.match_threshold,
         record_index=request.record_index,
         record_id=request.record_id,
+        language=request.language,
     )
     return _to_bid_fit_response(final_state)
 
@@ -198,6 +203,7 @@ def analyze_bids(
     current_user: CurrentUser,
     provider: ChatProvider = "claude",
     per_flag: int = DEFAULT_EXAMPLES_PER_FLAG,
+    language: OutputLanguage = "de",
 ) -> Any:
     """
     Dashboard "Analyze" action: run the full /analyze pipeline (see
@@ -223,6 +229,7 @@ def analyze_bids(
                 bid_content=bid.raw_json,
                 bid_loader="json",
                 provider=provider,
+                language=language,
             )
         except Exception:
             logger.exception(f"Bid analysis failed for bid {bid.id} ({bid.source_file})")
@@ -320,6 +327,7 @@ class GenerateViolationsRequest(BaseModel):
     profile_text: str = ""
     bid_source: str = ""
     provider: ChatProvider = "claude"
+    language: OutputLanguage = "de"
 
 
 class GenerateViolationsResponse(BaseModel):
@@ -342,6 +350,7 @@ def generate_violations_endpoint(request: GenerateViolationsRequest) -> Any:
         profile_text=request.profile_text,
         context_chunks=request.context_chunks,
         bid_source=request.bid_source,
+        language=request.language,
     )
     return GenerateViolationsResponse(violations=violations)
 

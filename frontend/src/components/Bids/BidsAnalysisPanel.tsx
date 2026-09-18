@@ -10,18 +10,18 @@ import { BidMatchCard } from "./BidMatchCard"
 const RESULT_SECTIONS = [
   {
     flag: "green",
-    title: "Good matches",
-    description: "No hardliner conflicts — these fit the profile as-is.",
+    title: "Gute Treffer",
+    description: "Keine Härtekriterien verletzt — diese passen zum Profil.",
   },
   {
     flag: "yellow",
-    title: "Warnings",
-    description: "Conflicts that look workable with a realistic mitigation.",
+    title: "Warnungen",
+    description: "Konflikte, die sich mit einer realistischen Lösung beheben lassen.",
   },
   {
     flag: "red",
-    title: "Poor matches",
-    description: "Hardlined — at least one dealbreaker has no realistic fix.",
+    title: "Schlechte Treffer",
+    description: "Ausschluss — mindestens ein K.o.-Kriterium ohne realistische Lösung.",
   },
 ] as const
 
@@ -125,7 +125,7 @@ export function BidsAnalysisPanel() {
                     {section.description}
                   </p>
                 </div>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
                   {group.map((result) => (
                     <BidMatchCard key={result.bid_id} result={result} />
                   ))}

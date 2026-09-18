@@ -68,6 +68,8 @@ services:
       LLM_LOCAL_BASE_URL: ${LLM_LOCAL_BASE_URL:-http://host.docker.internal:11434}
       FIRECRAWL_API_KEY: ${FIRECRAWL_API_KEY:-}
       LLM_LOCAL_MODEL: ${LLM_LOCAL_MODEL:-qwen3:4b}
+      LLM_EMBEDDING_MODEL: ${LLM_EMBEDDING_MODEL:-bge-m3}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
 
     extra_hosts:
