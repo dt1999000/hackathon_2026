@@ -1,88 +1,101 @@
-# Full Stack FastAPI Template
+# Three Out of Forty
 
-[![Test Docker Compose](../../actions/workflows/test-docker-compose.yml/badge.svg)](../../actions/workflows/test-docker-compose.yml)
-[![Test Backend](../../actions/workflows/test-backend.yml/badge.svg)](../../actions/workflows/test-backend.yml)
+Sponsor Challenge — Arctis AI, SiviHack 2026
 
-## Technology Stack and Features
+## 1. Sản phẩm là gì?
 
-- ⚡ [**FastAPI**](https://fastapi.tiangolo.com) for the Python backend API.
-  - 🧰 [SQLModel](https://sqlmodel.tiangolo.com) for the Python SQL database interactions (ORM).
-  - 🔍 [Pydantic](https://docs.pydantic.dev), used by FastAPI, for the data validation and settings management.
-  - 💾 [PostgreSQL](https://www.postgresql.org) as the SQL database.
-- 🚀 [React](https://react.dev) for the frontend.
-  - 🧩 Built into the backend application and served by FastAPI on the same domain as the API.
-  - 💃 Using TypeScript, hooks, [Vite](https://vitejs.dev), and other parts of a modern frontend stack.
-  - 🎨 [Tailwind CSS](https://tailwindcss.com) and [shadcn/ui](https://ui.shadcn.com) for the frontend components.
-  - 🤖 An automatically generated frontend client.
-  - 🧪 [Playwright](https://playwright.dev) for end-to-end testing.
-  - 🦇 Dark mode support.
-- ☁️ [FastAPI Cloud](https://fastapicloud.com) for deployment.
-- 🐋 [Docker Compose](https://www.docker.com) for local services and self-hosted deployment.
-  - 📞 [Traefik](https://traefik.io) as a reverse proxy with automatic HTTPS.
-- 🔒 Secure password hashing by default.
-- 🔑 JWT (JSON Web Token) authentication.
-- 📫 Email-based password recovery.
-- ✉️ [React Email](https://react.email) for email templates.
-- 📬 [Mailpit](https://mailpit.axllent.org) for local email testing during development.
-- ✅ Tests with [Pytest](https://pytest.org).
-- 🏭 CI (continuous integration) and CD (continuous deployment) based on GitHub Actions.
+Một công ty xây dựng nhận khoảng **40 gói thầu công khai mới mỗi tuần** (thứ Hai), nhưng chỉ đủ năng lực đội ngũ ước tính để bid **3 gói**. Việc chọn sai — bid vào gói không đủ điều kiện, hoặc bỏ lỡ gói phù hợp — tốn hàng tuần công sức ước tính vô ích.
 
-### Dashboard Login
+**Three Out of Forty** là công cụ giúp estimator chọn ra 3 gói thầu đáng bid nhất trong tuần, kèm lý do cụ thể (trích dẫn đúng điều khoản gây loại/giữ), thay vì chỉ xếp hạng theo độ "giống" hồ sơ công ty — vì một gói thầu giống ngành/vùng vẫn có thể là **NO cứng** nếu vượt quy mô hợp đồng, vượt hạn mức bảo lãnh, hoặc thiếu reference bắt buộc.
 
-![Dashboard login screenshot](img/login.png)
+### Đã hoàn thành
+- Pipeline thu thập tender xây dựng (CPV bắt đầu bằng `45`) tại Đức từ 2 nguồn công khai: **TED** (ted.europa.eu) và **oeffentlichevergabe.de**.
+- Khử trùng lặp giữa 2 nguồn (cùng 1 tender công bố cả 2 nơi khi vượt ngưỡng giá trị EU).
+- Trích xuất field quyết định fit/no-fit từ văn bản gốc (Referenzen, Bauzeit, Vertragsstrafe, Bürgschaft, Eigenleistung, Lose).
+- Chuẩn hóa 2 nguồn về 1 schema chung (`contract_schema.json`), lưu vào PostgreSQL.
 
-### Dashboard - Admin
+### Đang làm / chưa xong
+> _(điền chi tiết task đang dở của từng người ở đây)_
 
-![Admin dashboard screenshot](img/dashboard.png)
+## 2. Hướng dẫn setup và chạy demo
 
-### Dashboard - Items
+> **TODO — cần thảo luận nhóm trước khi điền:** cách demo cuối cùng sẽ là gì (Swagger API thuần, UI riêng, notebook, hay khác) chưa chốt. Phần dưới đây là các bước đã xác nhận chạy được tới hết bước dữ liệu; bổ sung bước "chạy demo" sau khi nhóm thống nhất.
 
-![Items dashboard screenshot](img/dashboard-items.png)
+### Yêu cầu
+- Python 3.13+, [uv](https://docs.astral.sh/uv/)
+- Docker + Docker Compose (nếu chạy Postgres local) **hoặc** 1 project Postgres trên [Neon](https://neon.tech) (free tier, không cần thẻ)
+- Node/[bun](https://bun.sh) — chỉ cần nếu chạy frontend
 
-### Dashboard - Dark Mode
+### Bước 1 — Cấu hình môi trường
+Tạo file `.env` ở **gốc repo** (ngang hàng `backend/`, `frontend/`):
+```dotenv
+SECRET_KEY=<random string>
+PROJECT_NAME=Three Out of Forty
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/app   # hoặc connection string Neon
+FIRST_SUPERUSER=admin@example.com
+FIRST_SUPERUSER_PASSWORD=<mật khẩu>
+```
 
-![Dark mode dashboard screenshot](img/dashboard-dark.png)
+### Bước 2 — Database
+**Option A — Docker local:**
+```bash
+docker compose up -d db
+```
+**Option B — Neon (cloud, dễ chia sẻ giữa nhiều máy hơn):** tạo project tại neon.tech, dán connection string vào `DATABASE_URL`.
 
-### React Email Templates
+### Bước 3 — Cài dependency & migrate
+```bash
+cd backend
+uv sync
+uv run alembic upgrade head
+```
 
-![Email templates screenshot](img/react-email.png)
+### Bước 4 — Chạy pipeline lấy dữ liệu tender
+```bash
+uv run python app/run_contract_pipelines.py --import-db
+```
+Chi tiết đầy đủ (flag, biến môi trường, troubleshooting): xem [`CrawlData_InjectionToDatabase_RUNBOOK.md`](./CrawlData_InjectionToDatabase_RUNBOOK.md).
 
-### Mailpit - Local Email Testing
+### Bước 5 — Kiểm tra dữ liệu đã vào DB
+```bash
+uv run python scripts/check_db.py
+```
 
-![Mailpit screenshot](img/mailpit.png)
+### Bước 6 — Chạy demo
+> _TODO — điền sau._
 
-### Interactive API Documentation
+## 3. Công nghệ sử dụng
 
-![API docs](img/docs.png)
+**Backend**
+- [FastAPI](https://fastapi.tiangolo.com) — API framework
+- [SQLModel](https://sqlmodel.tiangolo.com) + [Alembic](https://alembic.sqlalchemy.org) — ORM & migration
+- [PostgreSQL](https://www.postgresql.org) — database (chạy qua Docker local hoặc [Neon](https://neon.tech))
+- [Pydantic](https://docs.pydantic.dev) / pydantic-settings — validate config & data
+- [pypdf](https://pypdf.readthedocs.io) — đọc text từ PDF tender
 
-## How to Use It
+**Hạ tầng / công cụ**
+- [uv](https://docs.astral.sh/uv/) — quản lý dependency & virtualenv Python
+- [Docker Compose](https://www.docker.com) — chạy Postgres + service phụ trợ local
 
-Click the **Use this template** button at the top of this page to create a new repository.
+**Frontend** _(dựng sẵn theo template, chưa customize cho sản phẩm này)_
+- React + TypeScript + [Vite](https://vitejs.dev), [Tailwind CSS](https://tailwindcss.com)
 
-## Backend Development
+## 4. Dataset / API / Library / Template đã sử dụng
 
-Backend docs: [backend/README.md](./backend/README.md).
+**Dataset & API (public, free)**
+- [oeffentlichevergabe.de](https://oeffentlichevergabe.de) — Datenservice Öffentlicher Einkauf (Beschaffungsamt des BMI). OCDS JSON + CSV export, giấy phép **CC0**.
+- [TED (Tenders Electronic Daily)](https://ted.europa.eu) — cổng thông báo thầu toàn EU, free search API.
 
-## Frontend Development
+**Template**
+- [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template) (tiangolo) — khung backend + frontend gốc.
 
-Frontend docs: [frontend/README.md](./frontend/README.md).
+**Thư viện Python** — xem đầy đủ, đã pin version, tại [`requirements.txt`](./requirements.txt) (export từ `backend/pyproject.toml` + `uv.lock`). Các thư viện lõi trực tiếp dùng cho pipeline: `fastapi`, `sqlmodel`, `alembic`, `psycopg`, `pandas`, `pypdf`, `httpx`.
 
-## Deployment
+## 5. Giới hạn hiện tại
 
-FastAPI Cloud deployment: [deployment.md](./deployment.md).
-
-Self-hosted deployment with Docker Compose: [deployment-docker-compose.md](./deployment-docker-compose.md).
-
-## Development
-
-General development docs: [development.md](./development.md).
-
-This includes the local FastAPI and Vite workflow, Docker Compose services, `.env` configuration, and more.
-
-## Release Notes
-
-Check the file [release-notes.md](./release-notes.md).
-
-## License
-
-The Full Stack FastAPI Template is licensed under the terms of the MIT license.
+- **Chưa có rules engine** so khớp company profile với tender đã trích xuất — dữ liệu đã sẵn sàng ở DB, phần logic pass/fail chưa viết.
+- **Chưa có reasoning layer** sinh giải thích tự động cho estimator.
+- **Frontend chưa customize** — vẫn là dashboard User/Item mặc định của template, chưa có màn hình chọn company/xem shortlist.
+- **Độ phủ trích xuất chưa đầy đủ** — 1 số field (đặc biệt Vertragsstrafe, Eigenleistung) chỉ xuất hiện trong phụ lục "Besondere Vertragsbedingungen", không phải tender nào cũng tải được phụ lục này.
+- **Chỉ tiếng Đức** — không dịch nội dung, cần người đọc hiểu tiếng Đức hoặc dùng công cụ dịch riêng.
+- **Không có accuracy metric** — theo đúng tinh thần đề bài (Track_2.pdf mục 7: không có leaderboard/submission file), kết quả được đánh giá qua lý do đưa ra, không qua điểm số.
