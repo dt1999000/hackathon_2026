@@ -2,7 +2,9 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { ListChecks, RefreshCw, Search } from "lucide-react"
 
 import { BidFitService, type BidMatchResult, BidsService } from "@/client"
+import { CompanyProfileCard } from "@/components/CompanyProfile/CompanyProfileCard"
 import { LoadingButton } from "@/components/ui/loading-button"
+import { useCompanyProfile } from "@/hooks/useCompanyProfile"
 import useCustomToast from "@/hooks/useCustomToast"
 import { handleError } from "@/utils"
 import { BidMatchCard } from "./BidMatchCard"
@@ -28,6 +30,7 @@ const RESULT_SECTIONS = [
 export function BidsAnalysisPanel() {
   const queryClient = useQueryClient()
   const { showSuccessToast, showErrorToast } = useCustomToast()
+  const { data: profile } = useCompanyProfile()
 
   const { data: bids } = useQuery({
     queryKey: ["bids"],
@@ -58,15 +61,24 @@ export function BidsAnalysisPanel() {
   const results: BidMatchResult[] = analyzeMutation.data?.results ?? []
   const loadedBids = bids ?? []
 
+  const profileName = profile?.company_name
+  const canAnalyze = Boolean(profile)
+
   return (
     <div className="flex flex-col gap-6">
+      <CompanyProfileCard />
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-xl font-semibold tracking-tight">Bid matches</h2>
           <p className="text-muted-foreground">
-            Load the sample bids, then analyze them against your company
-            profile. Results show two good matches, two warnings, and two
-            poor matches when those flags exist.
+            Load the sample bids, then analyze them against{" "}
+            {profileName ? (
+              <span className="font-medium text-foreground">{profileName}</span>
+            ) : (
+              "your company profile"
+            )}
+            . Results show two good matches, two warnings, and two poor
+            matches when those flags exist.
           </p>
         </div>
         <div className="flex gap-2">
@@ -80,6 +92,12 @@ export function BidsAnalysisPanel() {
           </LoadingButton>
           <LoadingButton
             loading={analyzeMutation.isPending}
+            disabled={!canAnalyze}
+            title={
+              canAnalyze
+                ? undefined
+                : "Set up a company profile before analyzing bids"
+            }
             onClick={() => analyzeMutation.mutate()}
           >
             <Search />
@@ -90,8 +108,9 @@ export function BidsAnalysisPanel() {
 
       {analyzeMutation.isPending && (
         <p className="text-sm text-muted-foreground">
-          Analyzing bids against your profile — this checks every bid against
-          your hardliners with an LLM, so it can take a couple of minutes.
+          Analyzing bids against {profileName ?? "your profile"} — this checks
+          every bid against your hardliners with an LLM, so it can take a
+          couple of minutes.
         </p>
       )}
 
@@ -140,7 +159,8 @@ export function BidsAnalysisPanel() {
         <div className="flex flex-col gap-3">
           <p className="text-sm text-muted-foreground">
             {loadedBids.length} bid{loadedBids.length === 1 ? "" : "s"} loaded.
-            Click Analyze to score them against your profile.
+            Click Analyze to score them against{" "}
+            {profileName ?? "your profile"}.
           </p>
           <ul className="divide-y rounded-lg border">
             {loadedBids.map((bid) => (
