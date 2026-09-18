@@ -1,10 +1,12 @@
 import concurrent.futures
+import json
 import logging
 import uuid
-from typing import Any, Self
+from typing import Any, Literal, Self
 
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, model_validator
+from sqlalchemy import func
 from sqlmodel import select
 
 from app.agents.bid_fit import (
@@ -23,9 +25,17 @@ from app.agents.bid_fit_scoring import (
     score_bid_fit,
 )
 from app.api.deps import CurrentUser, SessionDep, get_current_user
-from app.models import Bid, CompanyProfile
+from app.models import Bid, CompanyProfile, Contract
 from app.services.chat_models import ChatProvider, get_chat_model
 from app.services.embeddings import EmbeddingClient
+
+# Max concurrent analyze_one() calls in analyze_bids — each one is a
+# handful of LLM/embedding calls, so a thread per row (fine for a
+# handful of mock_data/bids/*.json demo rows) turns into hundreds of
+# simultaneous API calls once Contract rows from a real scrape are in
+# the mix, which just trips rate limits across the board instead of
+# actually going faster.
+MAX_ANALYZE_WORKERS = 16
 
 logger = logging.getLogger(__name__)
 
@@ -190,6 +200,56 @@ class AnalyzeBidsResponse(BaseModel):
     results: list[BidMatchResult]
 
 
+class _AnalyzableItem(BaseModel):
+    id: uuid.UUID
+    title: str | None
+    notice_identifier: str | None
+    bid_content: str
+
+
+def _bid_items(session: SessionDep) -> list[_AnalyzableItem]:
+    bids = session.exec(select(Bid)).all()
+    return [
+        _AnalyzableItem(
+            id=b.id, title=b.title, notice_identifier=b.notice_identifier, bid_content=b.raw_json
+        )
+        for b in bids
+    ]
+
+
+def _recent_contracts(session: SessionDep, limit: int) -> list[Contract]:
+    """The `limit` most recently *found* contracts — ordered by when the
+    scrape pipeline's import wrote the row (created_at), not the
+    tender's own publication_date, since "last found" is about our
+    scrape, not the buyer's notice. Applied as a SQL LIMIT, not a
+    fetch-everything-then-slice in Python — the contract table holds
+    every scraped notice (currently in the hundreds) and only keeps
+    growing."""
+    return list(
+        session.exec(
+            select(Contract).order_by(Contract.created_at.desc()).limit(limit)
+        ).all()
+    )
+
+
+def _contract_items(session: SessionDep, limit: int) -> list[_AnalyzableItem]:
+    # Contract rows come straight from the DB — populated directly by
+    # scripts/import_contracts.py off the scrape pipeline's output, no
+    # file copied into mock_data/bids/ needed. raw_json is already a
+    # parsed dict (a proper JSON column), so it's re-serialized here to
+    # match bid_content's "JSON text" contract, the same shape
+    # bid_loader="json" already knows how to flatten.
+    return [
+        _AnalyzableItem(
+            id=c.id,
+            title=c.procedure_title,
+            notice_identifier=c.notice_identifier,
+            bid_content=json.dumps(c.raw_json, ensure_ascii=False),
+        )
+        for c in _recent_contracts(session, limit)
+    ]
+
+
 @router.post("/analyze-bids", response_model=AnalyzeBidsResponse)
 def analyze_bids(
     *,
@@ -197,41 +257,68 @@ def analyze_bids(
     current_user: CurrentUser,
     provider: ChatProvider = "google",
     top_n: int = 8,
+    source: Literal["bids", "contracts", "all"] = "all",
+    limit: int = 20,
 ) -> Any:
     """
     Dashboard "Analyze" action: run the full /analyze pipeline (see
-    analyze_bid_fit) against every bid loaded via POST /bids/load, for
-    the current user's company profile, then rank best-first the same
-    way /bid-fit/rank does (flag first, similarity_score breaks ties)
-    and return the top `top_n`. Runs each bid's analysis concurrently —
-    every one is a handful of independent LLM/embedding calls, so doing
-    them sequentially would take minutes even for a handful of bids. A
-    single bid's analysis failing (e.g. a transient LLM/embedding error)
-    is logged and that bid is dropped from the results rather than
-    failing the whole batch.
+    analyze_bid_fit) against bids for the current user's company
+    profile, then rank best-first the same way /bid-fit/rank does (flag
+    first, similarity_score breaks ties) and return the top `top_n`.
+
+    `source` picks where those bids come from: "bids" is the `bid` table
+    (POST /bids/load, from mock_data/bids/*.json — a fixed handful of
+    demo rows, never capped), "contracts" is the `contract` table
+    (populated directly by the scrape pipeline + scripts/import_contracts.py
+    — queried here as-is, no file copy step involved), "all" (default)
+    combines both.
+
+    `limit` caps how many *contracts* get pulled and actually analyzed —
+    the `limit` most recently found (see `_recent_contracts`), not an
+    arbitrary DB-order slice. Separate from `top_n`, which only limits
+    the *output* after everything already got analyzed and ranked. This
+    matters because the contract table holds every scraped notice
+    (currently in the hundreds) and keeps growing — analyzing all of it
+    on every dashboard click would mean hundreds of concurrent
+    LLM/embedding calls per request. Raise it deliberately, not by
+    leaving it uncapped. GET /bid-fit/contracts with the same `limit`
+    shows exactly which contracts this will analyze.
+
+    Runs each item's analysis concurrently, capped at
+    MAX_ANALYZE_WORKERS — every analysis is a handful of independent
+    LLM/embedding calls, so one thread per item is fine for a handful of
+    demo bids but floods the LLM/embedding APIs with hundreds of
+    simultaneous requests once real scraped contracts are in the mix. A
+    single item's analysis failing (e.g. a transient LLM/embedding
+    error) is logged and that item is dropped from the results rather
+    than failing the whole batch.
     """
     profile = _get_company_profile(session, current_user)
-    bids = session.exec(select(Bid)).all()
-    if not bids:
+    items: list[_AnalyzableItem] = []
+    if source in ("bids", "all"):
+        items.extend(_bid_items(session))
+    if source in ("contracts", "all"):
+        items.extend(_contract_items(session, limit=limit))
+    if not items:
         return AnalyzeBidsResponse(results=[])
 
-    def analyze_one(bid: Bid) -> BidMatchResult | None:
+    def analyze_one(item: _AnalyzableItem) -> BidMatchResult | None:
         try:
             final_state = run_bid_fit_analysis(
                 company_profile=profile,
-                bid_content=bid.raw_json,
+                bid_content=item.bid_content,
                 bid_loader="json",
                 provider=provider,
             )
         except Exception:
-            logger.exception(f"Bid analysis failed for bid {bid.id} ({bid.source_file})")
+            logger.exception(f"Bid analysis failed for {item.id} ({item.notice_identifier})")
             return None
 
         result: BidFitScore = final_state["result"]
         return BidMatchResult(
-            bid_id=bid.id,
-            title=bid.title,
-            notice_identifier=bid.notice_identifier,
+            bid_id=item.id,
+            title=item.title,
+            notice_identifier=item.notice_identifier,
             hardliners=final_state["hardliners"],
             violations=final_state["violations"],
             flag=result.flag,
@@ -240,12 +327,61 @@ def analyze_bids(
             soft_issues=result.soft_issues,
         )
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=len(bids)) as executor:
-        futures = [executor.submit(analyze_one, bid) for bid in bids]
+    max_workers = min(len(items), MAX_ANALYZE_WORKERS)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(analyze_one, item) for item in items]
         results = [r for r in (f.result() for f in futures) if r is not None]
 
     ranked = sorted(results, key=lambda r: (_FLAG_RANK[r.flag], -r.similarity_score))
     return AnalyzeBidsResponse(results=ranked[:top_n])
+
+
+class ContractSummary(BaseModel):
+    id: uuid.UUID
+    title: str | None
+    notice_identifier: str
+    publication_date: str | None
+    estimated_value: float | None
+    currency: str | None
+    place_of_performance: list
+    source_system: str
+
+
+class ListContractsResponse(BaseModel):
+    contracts: list[ContractSummary]
+    total_in_database: int
+
+
+@router.get("/contracts", response_model=ListContractsResponse)
+def list_contracts(*, session: SessionDep, limit: int = 20) -> Any:
+    """
+    Dashboard "Load contracts" action: the `limit` most recently found
+    contracts (see `_recent_contracts`) out of the `contract` table —
+    populated directly by the scrape pipeline + scripts/import_contracts.py,
+    queried here as-is, no file copy step involved. `total_in_database` is
+    the full row count, so the UI can show "20 of 614" rather than
+    implying these are all there are. Calling POST /bid-fit/analyze-bids
+    with the same `limit` analyzes exactly this set (plus the `bid` table
+    rows, unless source="contracts").
+    """
+    total_in_database = session.exec(select(func.count()).select_from(Contract)).one()
+    contracts = _recent_contracts(session, limit)
+    return ListContractsResponse(
+        contracts=[
+            ContractSummary(
+                id=c.id,
+                title=c.procedure_title,
+                notice_identifier=c.notice_identifier,
+                publication_date=c.publication_date,
+                estimated_value=c.estimated_value,
+                currency=c.currency,
+                place_of_performance=c.place_of_performance,
+                source_system=c.source_system,
+            )
+            for c in contracts
+        ],
+        total_in_database=total_in_database,
+    )
 
 
 # --- Per-stage endpoints: each core function, for isolated testing --------

@@ -202,6 +202,58 @@ export type BidPublic = {
 };
 
 /**
+ * ContractSummary
+ */
+export type ContractSummary = {
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Title
+     */
+    title?: string | null;
+    /**
+     * Notice Identifier
+     */
+    notice_identifier: string;
+    /**
+     * Publication Date
+     */
+    publication_date?: string | null;
+    /**
+     * Estimated Value
+     */
+    estimated_value?: number | null;
+    /**
+     * Currency
+     */
+    currency?: string | null;
+    /**
+     * Place Of Performance
+     */
+    place_of_performance: Array<unknown>;
+    /**
+     * Source System
+     */
+    source_system: string;
+};
+
+/**
+ * ListContractsResponse
+ */
+export type ListContractsResponse = {
+    /**
+     * Contracts
+     */
+    contracts: Array<ContractSummary>;
+    /**
+     * Total In Database
+     */
+    total_in_database: number;
+};
+
+/**
  * BidScreenRequest
  */
 export type BidScreenRequest = {
@@ -1916,6 +1968,14 @@ export type bidFitAnalyzeBidsData = {
          * Top N
          */
         top_n?: number;
+        /**
+         * Source
+         */
+        source?: 'bids' | 'contracts' | 'all';
+        /**
+         * Limit
+         */
+        limit?: number;
     };
     url: '/api/v1/bid-fit/analyze-bids';
 };
@@ -1937,6 +1997,36 @@ export type bidFitAnalyzeBidsResponses = {
 };
 
 export type bidFitAnalyzeBidsResponse = bidFitAnalyzeBidsResponses[keyof bidFitAnalyzeBidsResponses];
+
+export type bidFitListContractsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Limit
+         */
+        limit?: number;
+    };
+    url: '/api/v1/bid-fit/contracts';
+};
+
+export type bidFitListContractsErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitListContractsError = bidFitListContractsErrors[keyof bidFitListContractsErrors];
+
+export type bidFitListContractsResponses = {
+    /**
+     * Successful Response
+     */
+    200: ListContractsResponse;
+};
+
+export type bidFitListContractsResponse = bidFitListContractsResponses[keyof bidFitListContractsResponses];
 
 export type bidFitExtractHardlinersData = {
     body?: never;
