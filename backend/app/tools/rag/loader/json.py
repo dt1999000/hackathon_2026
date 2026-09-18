@@ -6,6 +6,17 @@ import requests
 from app.tools.rag.loader.base import BaseLoader, LoaderResult, SourceContent
 
 
+def flatten_json_to_text(data: Any) -> str:
+    """Render parsed JSON as readable "key: value" (dict) or line-per-item
+    (list) text, suitable for chunking. Shared by JSONLoader and
+    JSONLLoader so both format records the same way."""
+    if isinstance(data, dict):
+        return "\n".join(f"{k}: {json.dumps(v, indent=0)}" for k, v in data.items())
+    if isinstance(data, list):
+        return "\n".join(json.dumps(item, indent=0) for item in data)
+    return json.dumps(data, indent=0)
+
+
 class JSONLoader(BaseLoader):
     """Loads a JSON document from a local file path or an http(s) URL.
 
@@ -59,12 +70,7 @@ class JSONLoader(BaseLoader):
     def _parse_json(self, content: str, source_ref: str) -> LoaderResult:
         try:
             data = json.loads(content)
-            if isinstance(data, dict):
-                text = "\n".join(f"{k}: {json.dumps(v, indent=0)}" for k, v in data.items())
-            elif isinstance(data, list):
-                text = "\n".join(json.dumps(item, indent=0) for item in data)
-            else:
-                text = json.dumps(data, indent=0)
+            text = flatten_json_to_text(data)
 
             metadata: dict[str, Any] = {
                 "format": "json",

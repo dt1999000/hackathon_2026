@@ -7,3 +7,5 @@ backend/app/frontend/
 /blob-report/
 /playwright/.cache/
 .env
+/mock_data/
+/docs/

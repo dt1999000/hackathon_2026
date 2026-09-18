@@ -35,13 +35,41 @@ def retrieve_top_chunks(query: str, chunks: list[str], top_k: int = 3) -> list[s
     return [chunk for _, chunk in scored[:top_k]]
 
 
-def _cosine_similarity(a: list[float], b: list[float]) -> float:
+def cosine_similarity(a: list[float], b: list[float]) -> float:
     dot = sum(x * y for x, y in zip(a, b, strict=True))
     norm_a = math.sqrt(sum(x * x for x in a))
     norm_b = math.sqrt(sum(y * y for y in b))
     if norm_a == 0 or norm_b == 0:
         return 0.0
     return dot / (norm_a * norm_b)
+
+
+def score_chunks_embedding(
+    query: str,
+    chunks: list[str],
+    embedding_client: EmbeddingClient | None = None,
+) -> list[tuple[float, str]]:
+    """Rank all chunks by embedding cosine similarity to the query.
+
+    Calls the shared Ollama server's embedding model (see
+    app.services.embeddings.EmbeddingClient) for both the query and every
+    chunk. Returns every (score, chunk) pair, sorted descending — unlike
+    `retrieve_top_chunks_embedding`, callers that need the similarity
+    scores themselves (not just the top text) should use this directly.
+    """
+    if not chunks:
+        return []
+
+    client = embedding_client or EmbeddingClient()
+    query_embedding = client.embed([query])[0]
+    chunk_embeddings = client.embed(chunks)
+
+    scored = [
+        (cosine_similarity(query_embedding, chunk_embedding), chunk)
+        for chunk, chunk_embedding in zip(chunks, chunk_embeddings, strict=True)
+    ]
+    scored.sort(key=lambda pair: pair[0], reverse=True)
+    return scored
 
 
 def retrieve_top_chunks_embedding(
@@ -52,22 +80,9 @@ def retrieve_top_chunks_embedding(
 ) -> list[str]:
     """Rank chunks by embedding cosine similarity to the query.
 
-    Calls the shared Ollama server's embedding model (see
-    app.services.embeddings.EmbeddingClient) for both the query and every
-    chunk, then ranks by cosine similarity. More accurate than lexical
-    overlap for paraphrased/semantic matches, at the cost of a model call
-    per chunk.
+    More accurate than lexical overlap for paraphrased/semantic matches, at
+    the cost of a model call per chunk. See `score_chunks_embedding` if you
+    need the similarity scores as well as the chunk text.
     """
-    if not chunks:
-        return []
-
-    client = embedding_client or EmbeddingClient()
-    query_embedding = client.embed([query])[0]
-    chunk_embeddings = client.embed(chunks)
-
-    scored = [
-        (_cosine_similarity(query_embedding, chunk_embedding), chunk)
-        for chunk, chunk_embedding in zip(chunks, chunk_embeddings, strict=True)
-    ]
-    scored.sort(key=lambda pair: pair[0], reverse=True)
+    scored = score_chunks_embedding(query, chunks, embedding_client=embedding_client)
     return [chunk for _, chunk in scored[:top_k]]

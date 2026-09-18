@@ -156,6 +156,8 @@ class CompanyProfileBase(SQLModel):
     reference_projects: list[str] = Field(default_factory=list)
     custom_hardliners: list[str] = Field(default_factory=list)
 
+    self_description: str | None = Field(default=None, max_length=2000)
+
 
 # Properties to receive via API on creation
 class CompanyProfileCreate(CompanyProfileBase):
