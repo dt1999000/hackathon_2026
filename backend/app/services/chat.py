@@ -68,13 +68,14 @@ def chat_completion(
     messages: list[dict[str, str]],
     provider: ChatProvider,
     language: OutputLanguage = "en",
+    system_prompt: str = ARIA_SYSTEM_PROMPT,
 ) -> str:
-    system_prompt = (
-        f"{ARIA_SYSTEM_PROMPT}\n\nRespond in {_LANGUAGE_NAMES[language]}, "
+    full_system_prompt = (
+        f"{system_prompt}\n\nRespond in {_LANGUAGE_NAMES[language]}, "
         "regardless of the language the user writes in, unless the task is "
         "TRANSLATION and the user asks for a different target language."
     )
-    history: list[BaseMessage] = [SystemMessage(content=system_prompt)]
+    history: list[BaseMessage] = [SystemMessage(content=full_system_prompt)]
     history.extend(_to_lc_message(m["role"], m["content"]) for m in messages)
 
     llm = get_chat_model(provider)

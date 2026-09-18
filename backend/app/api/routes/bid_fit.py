@@ -1,3 +1,6 @@
+import concurrent.futures
+import logging
+import uuid
 from typing import Any, Self
 
 from fastapi import APIRouter, Depends, HTTPException
@@ -14,15 +17,18 @@ from app.agents.bid_fit import (
     run_bid_screen,
 )
 from app.agents.bid_fit_scoring import (
+    _FLAG_RANK,
     BidFitScore,
     HardlinerViolation,
     rank_bid_fits,
     score_bid_fit,
 )
 from app.api.deps import CurrentUser, SessionDep, get_current_user
-from app.models import CompanyProfile
+from app.models import Bid, CompanyProfile
 from app.services.chat_models import ChatProvider, get_chat_model
 from app.services.embeddings import EmbeddingClient
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(
     prefix="/bid-fit", tags=["bid-fit"], dependencies=[Depends(get_current_user)]
@@ -166,6 +172,80 @@ def screen_bid(request: BidScreenRequest) -> Any:
         record_id=request.record_id,
     )
     return _to_bid_fit_response(final_state)
+
+
+class BidMatchResult(BaseModel):
+    bid_id: uuid.UUID
+    title: str | None = None
+    notice_identifier: str | None = None
+    hardliners: list[str]
+    violations: list[HardlinerViolation]
+    flag: str
+    similarity_score: float
+    hard_blockers: list[str]
+    soft_issues: list[str]
+
+
+class AnalyzeBidsResponse(BaseModel):
+    results: list[BidMatchResult]
+
+
+@router.post("/analyze-bids", response_model=AnalyzeBidsResponse)
+def analyze_bids(
+    *,
+    session: SessionDep,
+    current_user: CurrentUser,
+    provider: ChatProvider = "google",
+    top_n: int = 8,
+) -> Any:
+    """
+    Dashboard "Analyze" action: run the full /analyze pipeline (see
+    analyze_bid_fit) against every bid loaded via POST /bids/load, for
+    the current user's company profile, then rank best-first the same
+    way /bid-fit/rank does (flag first, similarity_score breaks ties)
+    and return the top `top_n`. Runs each bid's analysis concurrently —
+    every one is a handful of independent LLM/embedding calls, so doing
+    them sequentially would take minutes even for a handful of bids. A
+    single bid's analysis failing (e.g. a transient LLM/embedding error)
+    is logged and that bid is dropped from the results rather than
+    failing the whole batch.
+    """
+    profile = _get_company_profile(session, current_user)
+    bids = session.exec(select(Bid)).all()
+    if not bids:
+        return AnalyzeBidsResponse(results=[])
+
+    def analyze_one(bid: Bid) -> BidMatchResult | None:
+        try:
+            final_state = run_bid_fit_analysis(
+                company_profile=profile,
+                bid_content=bid.raw_json,
+                bid_loader="json",
+                provider=provider,
+            )
+        except Exception:
+            logger.exception(f"Bid analysis failed for bid {bid.id} ({bid.source_file})")
+            return None
+
+        result: BidFitScore = final_state["result"]
+        return BidMatchResult(
+            bid_id=bid.id,
+            title=bid.title,
+            notice_identifier=bid.notice_identifier,
+            hardliners=final_state["hardliners"],
+            violations=final_state["violations"],
+            flag=result.flag,
+            similarity_score=result.similarity_score,
+            hard_blockers=result.hard_blockers,
+            soft_issues=result.soft_issues,
+        )
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(bids)) as executor:
+        futures = [executor.submit(analyze_one, bid) for bid in bids]
+        results = [r for r in (f.result() for f in futures) if r is not None]
+
+    ranked = sorted(results, key=lambda r: (_FLAG_RANK[r.flag], -r.similarity_score))
+    return AnalyzeBidsResponse(results=ranked[:top_n])
 
 
 # --- Per-stage endpoints: each core function, for isolated testing --------

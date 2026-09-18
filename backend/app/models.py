@@ -3,7 +3,7 @@ from datetime import UTC, datetime
 from typing import Optional
 
 from pydantic import EmailStr
-from sqlalchemy import DateTime
+from sqlalchemy import DateTime, Text
 from sqlmodel import Field, Relationship, SQLModel
 
 
@@ -179,6 +179,34 @@ class CompanyProfile(CompanyProfileBase, table=True):
 class CompanyProfilePublic(CompanyProfileBase):
     id: uuid.UUID
     owner_id: uuid.UUID
+    created_at: datetime | None = None
+
+
+# A tender notice loaded from mock_data/bids/*.json (see app.seed_bids),
+# in this app's "contract notice" schema — see
+# app.agents.bid_fit._extract_bid_notice_text, which reads raw_json back
+# out for the bid-fit pipeline. Not owner-scoped: bids are a shared pool
+# every user's dashboard analyzes against their own company profile.
+class BidBase(SQLModel):
+    source_file: str = Field(max_length=255, unique=True)
+    title: str | None = Field(default=None, max_length=1000)
+    notice_identifier: str | None = Field(default=None, max_length=100)
+    place_of_performance: str | None = Field(default=None, max_length=500)
+
+
+class Bid(BidBase, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+    # The full parsed bid-notice JSON, verbatim — fed back in as
+    # bid_content to run_bid_fit_analysis (bid_loader="json").
+    raw_json: str = Field(sa_type=Text)
+
+
+class BidPublic(BidBase):
+    id: uuid.UUID
     created_at: datetime | None = None
 
 

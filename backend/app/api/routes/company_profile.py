@@ -4,7 +4,7 @@ from fastapi import APIRouter, HTTPException
 from sqlmodel import select
 
 from app.api.deps import CurrentUser, SessionDep
-from app.models import CompanyProfile, CompanyProfileCreate, CompanyProfilePublic
+from app.models import CompanyProfile, CompanyProfileCreate, CompanyProfilePublic, Message
 
 router = APIRouter(prefix="/company-profile", tags=["company-profile"])
 
@@ -41,3 +41,19 @@ def create_company_profile_me(
     session.commit()
     session.refresh(profile)
     return profile
+
+
+@router.delete("/me", response_model=Message)
+def delete_company_profile_me(session: SessionDep, current_user: CurrentUser) -> Any:
+    """
+    Delete the current user's company profile, so POST /me can be used
+    to set it again (POST 409s while a profile already exists).
+    """
+    profile = session.exec(
+        select(CompanyProfile).where(CompanyProfile.owner_id == current_user.id)
+    ).first()
+    if not profile:
+        raise HTTPException(status_code=404, detail="Company profile not found")
+    session.delete(profile)
+    session.commit()
+    return Message(message="Company profile deleted successfully")

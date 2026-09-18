@@ -9,12 +9,45 @@ from app.tools.rag.loader.base import BaseLoader, LoaderResult, SourceContent
 def flatten_json_to_text(data: Any) -> str:
     """Render parsed JSON as readable "key: value" (dict) or line-per-item
     (list) text, suitable for chunking. Shared by JSONLoader and
-    JSONLLoader so both format records the same way."""
+    JSONLLoader so both format records the same way.
+
+    ensure_ascii=False is required here: json.dumps defaults to
+    ensure_ascii=True, which replaces every non-ASCII character with a
+    \\uXXXX escape (e.g. "für" -> "f\\u00fcr", "Straße" -> "Stra\\u00dfe").
+    For non-English bid content (e.g. German notices) that silently
+    corrupts the actual words the embedding model sees on every field,
+    with no error or warning to surface it.
+    """
     if isinstance(data, dict):
-        return "\n".join(f"{k}: {json.dumps(v, indent=0)}" for k, v in data.items())
+        return "\n".join(
+            f"{k}: {json.dumps(v, indent=0, ensure_ascii=False)}" for k, v in data.items()
+        )
     if isinstance(data, list):
-        return "\n".join(json.dumps(item, indent=0) for item in data)
-    return json.dumps(data, indent=0)
+        return "\n".join(json.dumps(item, indent=0, ensure_ascii=False) for item in data)
+    return json.dumps(data, indent=0, ensure_ascii=False)
+
+
+def load_json_data(source_content: SourceContent, headers: dict[str, Any] | None = None) -> Any:
+    """Fetch and parse the JSON at `source_content` (local path, URL, or
+    inline content), returning the parsed Python object rather than
+    flattened text. Split out from JSONLoader so a caller that needs the
+    parsed structure itself — e.g. app.agents.bid_fit's schema-aware bid
+    notice extraction, which only wants specific substantive fields
+    rather than every field flattened — doesn't have to re-implement
+    the same fetch logic.
+    """
+    if source_content.is_url():
+        headers = headers or {
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (compatible; app JSONLoader)",
+        }
+        response = requests.get(source_content.source, headers=headers, timeout=30)
+        response.raise_for_status()
+        return response.json()
+    if source_content.path_exists():
+        with open(source_content.source, encoding="utf-8") as file:
+            return json.load(file)
+    return json.loads(source_content.source)
 
 
 class JSONLoader(BaseLoader):
@@ -51,7 +84,7 @@ class JSONLoader(BaseLoader):
             return (
                 response.text
                 if not self._is_json_response(response)
-                else json.dumps(response.json(), indent=2)
+                else json.dumps(response.json(), indent=2, ensure_ascii=False)
             )
         except Exception as e:
             raise ValueError(f"Error fetching JSON from URL {url}: {e}") from e
