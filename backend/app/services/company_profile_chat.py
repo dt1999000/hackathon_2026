@@ -75,16 +75,19 @@ def _to_lc_message(role: str, content: str) -> BaseMessage:
 
 
 def _normalize_per_line_field(value: str | None) -> str | None:
-    """hardliners/exclusions are read back one line at a time
-    (derive_hardliners_from_profile), but structured-output extraction
-    often collapses several distinct items into one comma-separated
-    sentence instead of the newline-separated list the prompt asks for
-    — a literal newline inside a JSON string value is a less natural
-    thing for a model to produce than a comma. Left uncorrected, that
-    would merge several hardliners into one and have them checked as a
-    single unit instead of individually. Only kicks in when there's no
-    newline yet and there are multiple comma-separated clauses, so a
-    genuinely prose-style sentence with one comma in it is untouched.
+    """`exclusions` is read back one item at a time for retrieval
+    (derive_profile_sections's per-line splitting), and `hardliners` —
+    while no longer split programmatically anywhere, since
+    generate_violations now reads the whole profile at once — is still
+    much easier for that same LLM step to reason over cleanly as a
+    one-per-line list than as a run-on sentence. Structured-output
+    extraction often collapses several distinct items into one
+    comma-separated sentence instead of the newline-separated list the
+    prompt asks for — a literal newline inside a JSON string value is a
+    less natural thing for a model to produce than a comma. Only kicks
+    in when there's no newline yet and there are multiple
+    comma-separated clauses, so a genuinely prose-style sentence with
+    one comma in it is untouched.
     """
     if not value or "\n" in value:
         return value

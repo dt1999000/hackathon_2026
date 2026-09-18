@@ -4,7 +4,6 @@ import pytest
 
 from app.agents.bid_fit import (
     FitAnalysis,
-    derive_hardliners_from_profile,
     derive_profile_sections,
     format_company_profile,
     generate_violations,
@@ -152,24 +151,6 @@ def test_retrieve_bid_context_requires_source_or_content() -> None:
         )
 
 
-def test_derive_hardliners_from_profile_splits_lines_and_needs_no_llm_call() -> None:
-    profile = CompanyProfileBase(
-        company_name="Test Co",
-        hardliners="No bridges\nNo rail-side work",
-        exclusions="work outside Germany",
-    )
-
-    hardliners = derive_hardliners_from_profile(profile)
-
-    # Comes through verbatim, one per line — no paraphrasing.
-    assert hardliners == ["No bridges", "No rail-side work", "work outside Germany"]
-
-
-def test_derive_hardliners_from_profile_is_empty_for_a_minimal_profile() -> None:
-    profile = CompanyProfileBase(company_name="Minimal Co")
-    assert derive_hardliners_from_profile(profile) == []
-
-
 def test_derive_profile_sections_excludes_basic_facts_but_includes_free_text() -> None:
     profile = CompanyProfileBase(
         company_name="Test Co",
@@ -217,8 +198,7 @@ def test_generate_violations_returns_llm_output_unmodified() -> None:
 
     violations = generate_violations(
         llm=llm,
-        hardliners=["No bridges"],
-        profile_text="",
+        profile_text="Hardliners: No bridges",
         context_chunks=["This lot includes bridge construction."],
         bid_source="test",
     )

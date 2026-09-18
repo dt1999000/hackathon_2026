@@ -41,37 +41,41 @@ from app.tools.rag.retrieval import cosine_similarity
 DEFAULT_SECTION_MATCH_THRESHOLD = 0.55
 
 FIT_ANALYSIS_PROMPT = """\
-You are assessing whether a specific bid fits a company, given its \
-hardliners and the bid's own terms.
+You are assessing whether a specific bid fits a company, using the \
+company's own profile (written in its own words) and the bid's \
+retrieved terms.
 
-Hardliners (every one must hold for the bid to be a fit):
-{hardliners_block}
-
-Company profile (use this to judge whether a proposed solution is \
-actually realistic for this company):
+Company profile:
 {profile_text}
 
 Retrieved bid terms and metadata (source: {bid_source}):
 {context_block}
 
-For EACH hardliner, decide whether the bid, based on the context above, \
-ACTUALLY contradicts it — not merely mentions the same topic. A sentence \
-requiring rail-side work and one ruling it out both "mention" a "no \
-rail-side work" hardliner; only the first is a real contradiction. If the \
-context doesn't say enough to tell, assume it does NOT violate the \
-hardliner and say so in the reason — absence of evidence isn't a \
-violation.
+Read the whole profile — its hardliners/exclusions are non-negotiable \
+dealbreakers, but give the same care to any other stated constraint \
+(geographic reach, contract size range, capacity, certifications, \
+contractor role, etc.) that the retrieved bid context actually speaks \
+to. Identify every genuine contradiction between the bid and the \
+profile — not merely a shared topic. A sentence requiring rail-side \
+work and one ruling it out both "mention" a "no rail-side work" \
+hardliner; only the first is a real contradiction. If the context \
+doesn't say enough to tell, assume it does NOT violate that part of \
+the profile — absence of evidence isn't a violation, and you don't \
+need to report on every profile field, only the ones the bid's \
+context genuinely contradicts. If you find no genuine contradictions, \
+return an empty list of violations rather than inventing one.
 
-When a hardliner IS violated, propose a solution only if one is \
-genuinely realistic given the bid and the company's profile (e.g. \
-subcontracting a missing capability, partnering for a certification \
-already in progress). The company profile is free text and may itself \
-describe a conditional workaround (e.g. "above our usual ceiling we can \
-still take it on with a partner") — use that directly if it applies \
-rather than treating the violation as unsolvable. Leave the solution \
-unset whenever it would be impractical, too slow, too costly, or would \
-still leave the hardliner broken — never invent a solution just to have \
-one."""
+For each contradiction you do find, name the specific constraint it \
+violates using the company's own words, explain why based on the \
+retrieved context, and propose a solution only if one is genuinely \
+realistic given the bid and the company's profile (e.g. subcontracting \
+a missing capability, partnering for a certification already in \
+progress). The profile may itself describe a conditional workaround \
+(e.g. "above our usual ceiling we can still take it on with a \
+partner") — use that directly if it applies rather than treating the \
+violation as unsolvable. Leave the solution unset whenever it would be \
+impractical, too slow, too costly, or would still leave the constraint \
+broken — never invent a solution just to have one."""
 
 
 # (label, attribute) for every free-text topic field on CompanyProfileBase,
@@ -119,10 +123,9 @@ def format_company_profile(profile: CompanyProfileBase) -> str:
     return "\n".join(lines)
 
 
-# Fields whose value is a list of independent items, one per line (the
-# same "one per line" convention hardliners/exclusions already use in
-# derive_hardliners_from_profile) — each line becomes its own retrieval
-# section instead of being blended into one query. A blended multi-item
+# Fields whose value is a list of independent items, one per line —
+# each line becomes its own retrieval section instead of being blended
+# into one query. A blended multi-item
 # query (e.g. "Capabilities: Road construction, sewers and pipelines,
 # earthworks...") can't tell a caller which specific item a bid chunk
 # actually matched, and a chunk that matches none of the listed items
@@ -153,21 +156,6 @@ def derive_profile_sections(profile: CompanyProfileBase) -> list[str]:
     return sections
 
 
-def derive_hardliners_from_profile(profile: CompanyProfileBase) -> list[str]:
-    """Hardliners come straight from the profile's own free-text
-    `hardliners` and `exclusions` fields, one per line — no LLM call, no
-    paraphrasing risk.
-
-    Nuanced conditional judgment that doesn't reduce to a flat rule (e.g.
-    "we can bring in a partner if the value is a bit over our usual
-    ceiling") deliberately isn't pre-compiled into a rigid check here —
-    it lives in the other free-text fields (contract_size,
-    geographic_reach, capacity) and is handled by `generate_violations`'
-    LLM reasoning instead, which can read that nuance directly.
-    """
-    return [*_split_lines(profile.hardliners), *_split_lines(profile.exclusions)]
-
-
 class FitAnalysis(BaseModel):
     violations: list[HardlinerViolation]
 
@@ -186,6 +174,11 @@ class BidFitState(TypedDict, total=False):
     # break; still the real cutoff for retrieve_bid_context, used
     # directly (not through the graph) by /bid-fit/retrieve.
     match_threshold: float
+    # Output, not input: analyze_fit derives this from whatever
+    # violations.hardliner labels the LLM actually reported — there's no
+    # separate a-priori hardliner list anymore (see generate_violations).
+    # Kept so BidFitResponse/BidMatchResult's `hardliners` field stays
+    # populated without a response-schema change.
     hardliners: list[str]
     profile_sections: list[str]
     loader_kwargs: dict[str, Any]
@@ -435,25 +428,25 @@ def retrieve_bid_context(
     return metadata, context_chunks, similarity_score
 
 
-DEFAULT_RERANK_CANDIDATE_POOL = 2
+DEFAULT_RERANK_CANDIDATE_POOL = 3
 
 RERANK_PROMPT = """\
 You are filtering bid-retrieval candidates before they're used to check \
-a company's profile sections against a bid. For each section below, \
-a couple of bid-text excerpts were retrieved by embedding similarity — \
-but embedding similarity mostly reflects "same general topic/domain" \
+a company's profile sections against a bid. For each section below, a \
+few bid-text excerpts were retrieved by embedding similarity — but \
+embedding similarity mostly reflects "same general topic/domain" \
 (construction, procurement administration, etc.), not genuine \
 relevance. Generic contract-administration boilerplate routinely \
 scores as high as, or higher than, an excerpt that actually describes \
 what the section is about.
 
-For EACH section, decide fast: does either candidate excerpt \
+For EACH section, decide: does any of its candidate excerpts \
 genuinely, specifically relate to what the section describes — not \
 just share general procurement/construction vocabulary? If yes, pick \
-the single BEST one, copied verbatim, character for character. \
-Otherwise set matched to false and leave chunk unset immediately —  \
-"no genuine match" is the common, expected, default case, not a \
-failure to justify. Do not explain your reasoning, just decide.
+the single BEST one, copied verbatim, character for character. If \
+none is genuinely relevant, set matched to false and leave chunk \
+unset — don't pick the least-bad option just to have one. Decide \
+directly, without writing out your reasoning.
 
 {sections_block}"""
 
@@ -536,22 +529,22 @@ def rerank_bid_context(
 
 def generate_violations(
     llm: BaseChatModel,
-    hardliners: list[str],
     profile_text: str,
     context_chunks: list[str],
     bid_source: str,
 ) -> list[HardlinerViolation]:
-    """LLM call: given the hardliners, the company's profile, and the
-    bid's most relevant (top-k retrieved) content, decide per hardliner
-    whether the bid actually contradicts it and whether a realistic fix
-    exists. This is the step that turns "topically similar" into
-    "genuinely violated or not" — cosine similarity alone can't do this.
+    """LLM call: given the company's whole profile (in its own words)
+    and the bid's most relevant (top-k retrieved) content, find every
+    genuine contradiction — there's no separate pre-extracted hardliner
+    checklist; the LLM reads hardliners/exclusions and every other
+    stated constraint straight out of `profile_text` and decides for
+    itself what's actually relevant to this bid. This is the step that
+    turns "topically similar" into "genuinely violated or not" — cosine
+    similarity alone can't do this.
     """
-    hardliners_block = "\n".join(f"- {h}" for h in hardliners) or "(none identified)"
     context_block = "\n\n".join(context_chunks) or "(no relevant context retrieved)"
     prompt = FIT_ANALYSIS_PROMPT.format(
-        hardliners_block=hardliners_block,
-        profile_text=profile_text or "(no additional company context provided)",
+        profile_text=profile_text or "(no company profile provided)",
         bid_source=bid_source,
         context_block=context_block,
     )
@@ -562,9 +555,9 @@ def generate_violations(
 
 def _screen_nodes(llm: BaseChatModel, embedding_client: EmbeddingClient) -> dict[str, Any]:
     """Node functions shared by the full-analysis graph and the
-    hardliners-given-directly screen graph: retrieve top-k context, ask
-    the LLM for violations, then score. Only differ in whether a prior
-    `extract_hardliners` node has populated `state["hardliners"]`."""
+    screen graph: retrieve top-k context, ask the LLM for violations
+    (reading `state["profile_text"]` as a whole — see
+    generate_violations), then score."""
 
     def load_bid_context(state: BidFitState) -> dict[str, Any]:
         profile_sections = state["profile_sections"]
@@ -596,12 +589,19 @@ def _screen_nodes(llm: BaseChatModel, embedding_client: EmbeddingClient) -> dict
     def analyze_fit(state: BidFitState) -> dict[str, Any]:
         violations = generate_violations(
             llm=llm,
-            hardliners=state["hardliners"],
             profile_text=state.get("profile_text", ""),
             context_chunks=state["context_chunks"],
             bid_source=state.get("bid_source") or "(inline bid content)",
         )
-        return {"violations": violations}
+        # No separate a-priori hardliner list anymore (see
+        # generate_violations) — this just reports back whatever
+        # constraints the LLM actually found relevant enough to check,
+        # so BidFitResponse/BidMatchResult's `hardliners` field stays
+        # populated without a response-schema change.
+        return {
+            "violations": violations,
+            "hardliners": [v.hardliner for v in violations],
+        }
 
     def score_fit(state: BidFitState) -> dict[str, Any]:
         result = score_bid_fit(state["violations"], state["similarity_score"])
@@ -619,12 +619,10 @@ def build_bid_fit_graph(
     embedding_model: str | None = None,
 ) -> Any:
     """Compile the bid-fit pipeline: retrieve the bid content most similar
-    to the company's profile sections, ask the LLM to verify real
-    contradictions/solutions against the given hardliners, then score.
-    Hardliners themselves are never derived inside the graph — both
-    `run_bid_fit_analysis` (from a stored CompanyProfile) and
-    `run_bid_screen` (given directly) compute them up front, since
-    `derive_hardliners_from_profile` needs no LLM call."""
+    to the company's profile sections, then ask the LLM to find genuine
+    contradictions/solutions by reading the company's whole profile
+    text against that retrieved context (see generate_violations), then
+    score."""
     llm = get_chat_model(provider)
     embedding_client = EmbeddingClient(model=embedding_model)
     nodes = _screen_nodes(llm, embedding_client)
@@ -655,20 +653,23 @@ def run_bid_fit_analysis(
     record_index: int = 0,
     record_id: str | None = None,
 ) -> BidFitState:
-    """Build hardliners from `company_profile`'s structured fields (no LLM
-    call — see `derive_hardliners_from_profile`) and run the bid-fit
-    pipeline. Retrieval matches the bid against the profile's own
-    descriptive sections (`derive_profile_sections`), not against the
-    hardliners. Give the bid either as `bid_content` directly (no file
-    path or URL needed) or as `bid_source` (loaded via the registered
-    `bid_loader`) — exactly one of the two. `record_index`/`record_id`
-    are forwarded to the loader (relevant for bid_loader="jsonl") and
-    ignored when `bid_content` is used. Returns the final graph state."""
+    """Run the bid-fit pipeline against `company_profile` as a whole —
+    there's no separate hardliner-extraction step; `generate_violations`
+    reads the full rendered profile (`format_company_profile`, which
+    already includes the profile's own `hardliners`/`exclusions` fields
+    verbatim) and finds whatever contradictions the retrieved bid
+    context actually raises. Retrieval matches the bid against the
+    profile's own descriptive sections (`derive_profile_sections`), not
+    against the hardliners specifically. Give the bid either as
+    `bid_content` directly (no file path or URL needed) or as
+    `bid_source` (loaded via the registered `bid_loader`) — exactly one
+    of the two. `record_index`/`record_id` are forwarded to the loader
+    (relevant for bid_loader="jsonl") and ignored when `bid_content` is
+    used. Returns the final graph state."""
     graph = build_bid_fit_graph(provider=provider, embedding_model=embedding_model)
     initial_state: BidFitState = {
         "profile_text": format_company_profile(company_profile),
         "profile_sections": derive_profile_sections(company_profile),
-        "hardliners": derive_hardliners_from_profile(company_profile),
         "bid_source": bid_source,
         "bid_content": bid_content,
         "bid_loader": bid_loader,
@@ -697,25 +698,30 @@ def run_bid_screen(
     record_id: str | None = None,
 ) -> BidFitState:
     """Screen a bid against a hardliner list given directly by the caller
-    (no stored CompanyProfile). `profile_sections` are the independent
-    descriptive sections retrieval matches against the bid (see
-    `retrieve_bid_context`) — pass real ones (capabilities, regions,
-    certifications, ...) when available, since they retrieve better than
-    LLM-paraphrased hardliner rules; if omitted, falls back to using
-    `hardliners` themselves as the sections. `company_context` is
-    optional free text used only to judge whether a proposed solution is
-    realistic — pass "" if unavailable. Give the bid either as
-    `bid_content` directly (no file path or URL needed) or as
-    `bid_source` (loaded via the registered `bid_loader`) — exactly one
-    of the two. `record_index`/`record_id` are forwarded to the loader
-    (relevant for bid_loader="jsonl", e.g. mock_data/agent_input.jsonl)
-    and ignored when `bid_content` is used. Returns the final graph
-    state."""
+    (no stored CompanyProfile). There's no separate hardliner-checking
+    mechanic anymore (see generate_violations) — `hardliners` is folded
+    into `company_context` as a "Hardliners" block so the LLM reads it
+    as part of the same whole-profile text everything else does.
+    `profile_sections` are the independent descriptive sections
+    retrieval matches against the bid (see `retrieve_bid_context`) —
+    pass real ones (capabilities, regions, certifications, ...) when
+    available, since they retrieve better than LLM-paraphrased
+    hardliner rules; if omitted, falls back to using `hardliners`
+    themselves as the sections. Give the bid either as `bid_content`
+    directly (no file path or URL needed) or as `bid_source` (loaded via
+    the registered `bid_loader`) — exactly one of the two.
+    `record_index`/`record_id` are forwarded to the loader (relevant for
+    bid_loader="jsonl", e.g. mock_data/agent_input.jsonl) and ignored
+    when `bid_content` is used. Returns the final graph state."""
+    profile_text = company_context
+    if hardliners:
+        hardliners_block = "\n".join(f"- {h}" for h in hardliners)
+        profile_text = f"{profile_text}\n\nHardliners:\n{hardliners_block}".strip()
+
     graph = build_bid_fit_graph(provider=provider, embedding_model=embedding_model)
     initial_state: BidFitState = {
-        "hardliners": hardliners,
         "profile_sections": profile_sections if profile_sections is not None else hardliners,
-        "profile_text": company_context,
+        "profile_text": profile_text,
         "bid_source": bid_source,
         "bid_content": bid_content,
         "bid_loader": bid_loader,
