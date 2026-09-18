@@ -33,7 +33,7 @@ import hashlib
 import json
 import sys
 import time
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 
 import requests
@@ -61,10 +61,12 @@ def env_bool(name: str, default: bool) -> bool:
 
 # Same calendar day as the oeffentlichevergabe.de pipeline. run_contract_
 # pipelines.py sets PIPELINE_TARGET_DATE for both subprocesses so they always
-# agree; running this file alone falls back to "yesterday", matching
-# CPV45_Eforms_Attachments_Pipeline.py's own default (its API doesn't publish
-# the current day yet either).
-TARGET_DATE_ISO = os.getenv("PIPELINE_TARGET_DATE") or (date.today() - timedelta(days=1)).isoformat()
+# agree; running this file alone falls back to today's date. Caveat: TED's
+# own API doesn't always have the current day's notices published yet, so a
+# same-day run can legitimately come back with 0 results on some days --
+# pass PIPELINE_TARGET_DATE=<yesterday's date> explicitly if you hit that
+# and want yesterday's (already-published) notices instead.
+TARGET_DATE_ISO = os.getenv("PIPELINE_TARGET_DATE") or date.today().isoformat()
 TARGET_DATE = TARGET_DATE_ISO.replace("-", "")  # TED wants YYYYMMDD
 
 # Scope: what counts as "construction" and "in Germany". CPV_PREFIX="45"

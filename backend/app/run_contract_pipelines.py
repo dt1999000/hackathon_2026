@@ -30,7 +30,7 @@ import os
 import subprocess
 import sys
 from collections import defaultdict
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 
 APP_DIR = Path(__file__).resolve().parent          # backend/app
@@ -55,12 +55,14 @@ SHARED_OUTPUT_DIR = APP_DIR / "output"
 def resolve_target_date() -> str:
     """The one calendar day both pipelines scrape. Respects an explicit
     PIPELINE_TARGET_DATE if the caller already set one; otherwise defaults to
-    yesterday, matching CPV45_Eforms_Attachments_Pipeline.py's own default
-    (its API doesn't publish the current day yet)."""
+    today. Caveat: TED's own API doesn't always have the current day's
+    notices published yet, so a same-day TED run can legitimately come back
+    with 0 results on some days -- set PIPELINE_TARGET_DATE explicitly to
+    yesterday's date if you hit that and want yesterday's notices instead."""
     explicit = os.environ.get("PIPELINE_TARGET_DATE")
     if explicit:
         return explicit
-    return (date.today() - timedelta(days=1)).isoformat()
+    return date.today().isoformat()
 
 
 def run(cmd: list[str], cwd: Path, label: str, extra_env: dict[str, str] | None = None) -> bool:

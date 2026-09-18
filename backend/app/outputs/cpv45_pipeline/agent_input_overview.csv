@@ -30,8 +30,8 @@
 25757646:2:LOT-0000,"Berliner Stadtwerke, Kammergericht Elßholzstraße - Erneuerung Gebäudeleittechnik (GLT)",2026-09-25+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25761330:2:LOT-0000,Labormöbel_711-24.01 Umbau Raumgruppe 2.01.016,2026-10-15+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25764014:2:LOT-0000,"A65, Erneuerung der Beleuchtungsanlage in Trog Landau",2026-10-02+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
-25812978:1:LOT-0000,"Sanierung Wasserspiel Dahlienbecken im egapark Erfurt, Los 2 Tiefbau",2026-10-08+02:00,0,0,1,1,selection_criteria_missing
-25822940:1:LOT-0000,Tiefbauunterhaltungsarbeiten 2027 - 2028,2026-10-07+02:00,0,0,1,1,selection_criteria_missing
+25812978:1:LOT-0000,"Sanierung Wasserspiel Dahlienbecken im egapark Erfurt, Los 2 Tiefbau",2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25822940:1:LOT-0000,Tiefbauunterhaltungsarbeiten 2027 - 2028,2026-10-07+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25827654:1:LOT-0000,"WW Wuhlheide, Opt. Reinwasserförd. u. Nb. UV-Anlage, VP 2 UV-Anlage",2026-10-29+01:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25827676:1:LOT-0000,SWDD / Zeitvertragsarbeiten in DD & Tharandt,,0,0,1,0,submission_deadline_missing | selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25827684:1:LOT-0000,Anlagentechnik und Blitzschutz für Wärmespeicheranlage HKW Dresdner Straße,2026-09-25+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
@@ -56,18 +56,18 @@
 25827984:1:LOT-0000,Los 47 - PV-Anlage,2026-10-13+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25827992:1:LOT-0000,Heizung Lüftung Sanitär,2026-10-15+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25828024:1:LOT-0000,"Erweiterung FÖS Wolmirstedt, Los 30 Elektroinstallation",2026-10-06+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
-25828042:1:LOT-0000,Aufwertung Grünzug Hildapromenade - Ausstattungen,2026-10-14+02:00,0,0,1,1,selection_criteria_missing
-25828062:1:LOT-0000,"Umsetzung des Klimaanpassungkonzeptes des Maria Anna Hauses, Lengerich",2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25828070:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25828074:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25828078:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25828082:1:LOT-0000,"Kinderspielplatz Von-Lilien-Straße - Multisportanlage, Umgestaltung Teilbereich Bolzplatz",2026-10-14+02:00,0,0,1,1,selection_criteria_missing
-25828086:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25828090:1:LOT-0000,Entschlammung Gondelteich Norderney,2026-10-08+02:00,0,0,1,1,selection_criteria_missing
-25828098:1:LOT-0000,Neubau Trinkwasserleitung Tüzen,2026-10-14+02:00,0,0,1,1,selection_criteria_missing
-25828114:1:LOT-0000,Erneuerung BHKW Kläranlage Immenstaad,2026-10-28+01:00,0,0,1,1,selection_criteria_missing
-25828118:1:LOT-0000,"Neubau eines Pumptracks, Skatebowls und Streetballanlage in Ronnenberg-Weetzen",2026-10-08+02:00,0,0,1,1,selection_criteria_missing
-25828130:1:LOT-0000,DLR Standort Oberpfaffenhofen - Kesselhaus Geb. 113 - Schlosserarbeiten (26-0279_B),2026-10-08+02:00,0,0,1,1,selection_criteria_missing
+25828042:1:LOT-0000,Aufwertung Grünzug Hildapromenade - Ausstattungen,2026-10-14+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828062:1:LOT-0000,"Umsetzung des Klimaanpassungkonzeptes des Maria Anna Hauses, Lengerich",2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828070:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828074:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828078:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828082:1:LOT-0000,"Kinderspielplatz Von-Lilien-Straße - Multisportanlage, Umgestaltung Teilbereich Bolzplatz",2026-10-14+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828086:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828090:1:LOT-0000,Entschlammung Gondelteich Norderney,2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828098:1:LOT-0000,Neubau Trinkwasserleitung Tüzen,2026-10-14+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828114:1:LOT-0000,Erneuerung BHKW Kläranlage Immenstaad,2026-10-28+01:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828118:1:LOT-0000,"Neubau eines Pumptracks, Skatebowls und Streetballanlage in Ronnenberg-Weetzen",2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25828130:1:LOT-0000,DLR Standort Oberpfaffenhofen - Kesselhaus Geb. 113 - Schlosserarbeiten (26-0279_B),2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25828152:1:LOT-0000,Sanierung Kreuzung in Seesen B243/B248,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25828176:1:LOT-0000,26B40262; Nds. Landesmuseum; Teilfassadensanierung und Erneuerung Fenster; Fenster- und Verglasungsarbeiten,,0,0,1,0,submission_deadline_missing | selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25828196:1:LOT-0000,Neubau Friedensschule; Bauüberwachung,2026-09-29+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
@@ -125,20 +125,20 @@
 25830962:1:LOT-0000,"Erneuerung Teilabschnitt Füchteler Straße, Kanal- und Straßenbauarbeiten",2026-10-13+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25830970:1:LOT-0000,"VOB, TZH Lüneburg, Neubau WZ 2, LV 4501 Blitzschutz- und Erdungsanlagen",2026-10-07+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25830978:1:LOT-0000,Vereinshaus - Photovoltaikanlage,2026-10-07+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
-25830992:1:LOT-0000,"Sanierung Wasserspiel Dahlienbecken im egapark Erfurt, Los 2 Tiefbau",2026-10-08+02:00,0,0,1,1,selection_criteria_missing
-25830996:1:LOT-0000,Tiefbauunterhaltungsarbeiten 2027 - 2028,2026-10-07+02:00,0,0,1,1,selection_criteria_missing
-25831000:1:LOT-0000,Aufwertung Grünzug Hildapromenade - Ausstattungen,2026-10-14+02:00,0,0,1,1,selection_criteria_missing
-25831016:1:LOT-0000,"Umsetzung des Klimaanpassungkonzeptes des Maria Anna Hauses, Lengerich",2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25831024:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25831028:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25831032:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25831036:1:LOT-0000,"Kinderspielplatz Von-Lilien-Straße - Multisportanlage, Umgestaltung Teilbereich Bolzplatz",2026-10-14+02:00,0,0,1,1,selection_criteria_missing
-25831040:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,1,selection_criteria_missing
-25831044:1:LOT-0000,Entschlammung Gondelteich Norderney,2026-10-08+02:00,0,0,1,1,selection_criteria_missing
-25831052:1:LOT-0000,Neubau Trinkwasserleitung Tüzen,2026-10-14+02:00,0,0,1,1,selection_criteria_missing
-25831068:1:LOT-0000,Erneuerung BHKW Kläranlage Immenstaad,2026-10-28+01:00,0,0,1,1,selection_criteria_missing
-25831072:1:LOT-0000,"Neubau eines Pumptracks, Skatebowls und Streetballanlage in Ronnenberg-Weetzen",2026-10-08+02:00,0,0,1,1,selection_criteria_missing
-25831084:1:LOT-0000,DLR Standort Oberpfaffenhofen - Kesselhaus Geb. 113 - Schlosserarbeiten (26-0279_B),2026-10-08+02:00,0,0,1,1,selection_criteria_missing
+25830992:1:LOT-0000,"Sanierung Wasserspiel Dahlienbecken im egapark Erfurt, Los 2 Tiefbau",2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25830996:1:LOT-0000,Tiefbauunterhaltungsarbeiten 2027 - 2028,2026-10-07+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831000:1:LOT-0000,Aufwertung Grünzug Hildapromenade - Ausstattungen,2026-10-14+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831016:1:LOT-0000,"Umsetzung des Klimaanpassungkonzeptes des Maria Anna Hauses, Lengerich",2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831024:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831028:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831032:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831036:1:LOT-0000,"Kinderspielplatz Von-Lilien-Straße - Multisportanlage, Umgestaltung Teilbereich Bolzplatz",2026-10-14+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831040:1:LOT-0000,Neubau von 2 Mehrfamilienhäuser mit jeweils 12 Wohneinheiten,2026-10-01+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831044:1:LOT-0000,Entschlammung Gondelteich Norderney,2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831052:1:LOT-0000,Neubau Trinkwasserleitung Tüzen,2026-10-14+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831068:1:LOT-0000,Erneuerung BHKW Kläranlage Immenstaad,2026-10-28+01:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831072:1:LOT-0000,"Neubau eines Pumptracks, Skatebowls und Streetballanlage in Ronnenberg-Weetzen",2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
+25831084:1:LOT-0000,DLR Standort Oberpfaffenhofen - Kesselhaus Geb. 113 - Schlosserarbeiten (26-0279_B),2026-10-08+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25831106:1:LOT-0000,Baustelleneinrichtung,2026-10-07+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25831108:1:LOT-0000,B42 Oestrich-Winkel-Sanierung von Pumpenanlagen in Hessen,2026-09-29+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable
 25831112:1:LOT-0000,Erneuerung FGÜ 0661-03-2068 Battenberg,2026-09-29+02:00,0,0,1,0,selection_criteria_missing | attachments_not_downloaded_or_unavailable

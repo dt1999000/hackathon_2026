@@ -50,6 +50,7 @@ from datetime import date, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any, Iterable
+from urllib.error import HTTPError
 from urllib.parse import unquote, urlencode, urljoin, urlparse
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
@@ -93,9 +94,14 @@ SOURCE_MODE = os.getenv('CPV45_SOURCE_MODE', 'api').lower()
 
 # day: YYYY-MM-DD, month: YYYY-MM
 PERIOD_TYPE = os.getenv('CPV45_PERIOD_TYPE', 'day').lower()
+# Defaults to today when nothing overrides it (run_contract_pipelines.py
+# sets CPV45_PERIOD_VALUE explicitly when orchestrating both pipelines
+# together; running this file alone falls back to here). Unlike TED,
+# oeffentlichevergabe.de's own export API doesn't have a same-day
+# publication lag, so "today" is safe as a default here.
 PERIOD_VALUE = os.getenv(
     'CPV45_PERIOD_VALUE',
-    (date.today() - timedelta(days=1)).isoformat(),
+    date.today().isoformat(),
 )
 
 LOCAL_CSV_ZIP = Path(os.getenv('CPV45_LOCAL_CSV_ZIP', 'data/notices_csv.zip'))
@@ -226,7 +232,25 @@ def export_url(format_name: str) -> str:
     })
 
 
+def _export_cache_paths(period_value: str) -> tuple[Path, Path]:
+    safe_period = re.sub(r'[^0-9A-Za-z_-]+', '_', period_value)
+    return (
+        CACHE_DIRECTORY / f'{PERIOD_TYPE}_{safe_period}_csv.zip',
+        CACHE_DIRECTORY / f'{PERIOD_TYPE}_{safe_period}_eforms.zip',
+    )
+
+
+def _download_exports(csv_path: Path, eforms_path: Path) -> None:
+    for format_name, path in [('csv.zip', csv_path), ('eforms.zip', eforms_path)]:
+        if REFRESH_EXPORTS or not path.exists():
+            print(f'Downloading {format_name} ...')
+            download_to_path(export_url(format_name), path, MAX_ARCHIVE_BYTES)
+        validate_zip(path)
+
+
 def resolve_export_paths() -> tuple[Path, Path]:
+    global PERIOD_VALUE  # noqa: PLW0603 -- see fallback comment below
+
     if SOURCE_MODE == 'local':
         validate_zip(LOCAL_CSV_ZIP)
         validate_zip(LOCAL_EFORMS_ZIP)
@@ -235,15 +259,34 @@ def resolve_export_paths() -> tuple[Path, Path]:
     if SOURCE_MODE != 'api':
         raise ValueError("SOURCE_MODE must be 'api' or 'local'.")
 
-    safe_period = re.sub(r'[^0-9A-Za-z_-]+', '_', PERIOD_VALUE)
-    csv_path = CACHE_DIRECTORY / f'{PERIOD_TYPE}_{safe_period}_csv.zip'
-    eforms_path = CACHE_DIRECTORY / f'{PERIOD_TYPE}_{safe_period}_eforms.zip'
+    csv_path, eforms_path = _export_cache_paths(PERIOD_VALUE)
 
-    for format_name, path in [('csv.zip', csv_path), ('eforms.zip', eforms_path)]:
-        if REFRESH_EXPORTS or not path.exists():
-            print(f'Downloading {format_name} ...')
-            download_to_path(export_url(format_name), path, MAX_ARCHIVE_BYTES)
-        validate_zip(path)
+    try:
+        _download_exports(csv_path, eforms_path)
+    except HTTPError as exc:
+        # oeffentlichevergabe.de's day-level export isn't always generated
+        # yet at the time this runs for the *current* day (observed live:
+        # HTTP 400 for today, even though TED's own API had no trouble with
+        # the same calendar day) -- this is a known shape of this specific
+        # API, not a malformed request. One automatic retry against the
+        # previous day instead of a hard crash that also skips DB import
+        # for the TED results this run already got (run_contract_pipelines.py
+        # only imports when both pipelines succeed). Scoped narrowly: only
+        # day-level requests, only HTTP 400, only one retry -- a genuinely
+        # bad or explicitly-requested date still fails loudly on the second
+        # attempt instead of silently drifting further back.
+        if PERIOD_TYPE != 'day' or exc.code != 400:
+            raise
+        fallback_value = (
+            date.fromisoformat(PERIOD_VALUE) - timedelta(days=1)
+        ).isoformat()
+        print(
+            f"oeffentlichevergabe.de export for {PERIOD_VALUE} isn't available "
+            f"yet (HTTP 400) -- retrying with {fallback_value} instead."
+        )
+        PERIOD_VALUE = fallback_value
+        csv_path, eforms_path = _export_cache_paths(PERIOD_VALUE)
+        _download_exports(csv_path, eforms_path)
 
     return csv_path, eforms_path
 
@@ -519,6 +562,27 @@ def parse_organizations(root: ET.Element) -> dict[str, str]:
     return organizations
 
 
+def resolve_buyer_name(party: ET.Element, organizations: dict[str, str]) -> str:
+    """A <cac:ContractingParty><cac:Party> can name its buyer two different
+    ways depending on notice profile: most notices reference an entry in the
+    efac:Organizations extension section by id (organizations, built by
+    parse_organizations above); some profiles -- observed on the generic
+    eforms-sdk-0.1 profile, as opposed to the eforms-de-2.1 German
+    customization, which always populates the Organizations section --
+    instead (or additionally) put the name directly on
+    <cac:Party><cac:PartyName><cbc:Name>, with the id reference either
+    absent or pointing at nothing in Organizations. Try the indirection
+    first (it's the richer, deduplicated source of truth when present), and
+    only fall back to the direct name, then the bare id, when it doesn't
+    resolve to anything -- this is what previously made buyer_names come
+    back empty for every eforms-sdk-0.1 notice.
+    """
+    reference = element_text(party, './cac:PartyIdentification/cbc:ID')
+    resolved = organizations.get(reference, '') if reference else ''
+    direct_name = element_text(party, './cac:PartyName/cbc:Name')
+    return resolved or direct_name or reference
+
+
 def parse_project(project: ET.Element | None) -> dict[str, Any]:
     if project is None:
         return {}
@@ -700,16 +764,9 @@ def parse_eforms_xml(content: bytes, filename: str) -> list[dict[str, Any]]:
     )
 
     organizations = parse_organizations(root)
-    buyer_references = [
-        clean_text(element.text)
-        for element in root.findall(
-            './cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID',
-            NS,
-        )
-    ]
     buyer_names = unique_strings([
-        organizations.get(reference, reference)
-        for reference in buyer_references
+        resolve_buyer_name(party, organizations)
+        for party in root.findall('./cac:ContractingParty/cac:Party', NS)
     ])
 
     notice_project = parse_project(root.find('./cac:ProcurementProject', NS))

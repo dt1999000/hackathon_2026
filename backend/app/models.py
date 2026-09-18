@@ -2,7 +2,7 @@ import uuid
 from datetime import UTC, datetime
 
 from pydantic import EmailStr
-from sqlalchemy import DateTime
+from sqlalchemy import DateTime, Text
 from sqlmodel import Field, Relationship, SQLModel
 
 
@@ -56,7 +56,20 @@ class User(UserBase, table=True):
         default_factory=get_datetime_utc,
         sa_type=DateTime(timezone=True),  # type: ignore
     )
-    items: list[Item] = Relationship(back_populates="owner", cascade_delete=True)
+    # Quoted as forward references: Item and Profile are defined further
+    # down this file, and Python evaluates a class-body annotation's
+    # expression immediately (there's no `from __future__ import
+    # annotations` here), so an unquoted `list[Item]` at this point would
+    # raise NameError -- the quotes defer resolution to SQLModel's
+    # model_rebuild() once every class in the file exists. Ruff's UP037
+    # ("remove quotes from type annotation") doesn't know that and would
+    # reintroduce the crash, so it's silenced on these two lines only.
+    items: list["Item"] = Relationship(  # noqa: UP037
+        back_populates="owner", cascade_delete=True
+    )
+    profiles: list["Profile"] = Relationship(  # noqa: UP037
+        back_populates="owner", cascade_delete=True
+    )
 
 
 # Properties to return via API, id is always required
@@ -112,6 +125,70 @@ class ItemsPublic(SQLModel):
     count: int
 
 
+# --- Profile: a company profile used to match the firm against tenders. ---
+# Replaces the old Items tab in the UI. Every field is optional by design --
+# a contractor can fill this in incrementally, and the matching pipeline
+# should work with whatever subset is on file rather than demand a
+# complete profile up front.
+
+
+# Shared properties
+class ProfileBase(SQLModel):
+    company_name: str | None = Field(default=None, max_length=255)
+    base_location: str | None = Field(default=None, max_length=255)
+    founded_year: int | None = None
+    employee_count: int | None = None
+    annual_revenue_eur: int | None = None
+    # Free-text fields below often hold multi-sentence descriptions (and in
+    # the case of exclusions/hardliners, embedded newlines), so they're
+    # stored as unbounded Text rather than a short varchar.
+    geographic_reach: str | None = Field(default=None, sa_type=Text)
+    contract_size: str | None = Field(default=None, sa_type=Text)
+    capabilities: str | None = Field(default=None, sa_type=Text)
+    exclusions: str | None = Field(default=None, sa_type=Text)
+    certifications: str | None = Field(default=None, sa_type=Text)
+    contractor_role: str | None = Field(default=None, max_length=255)
+    capacity: str | None = Field(default=None, sa_type=Text)
+    reference_projects: str | None = Field(default=None, sa_type=Text)
+    hardliners: str | None = Field(default=None, sa_type=Text)
+    self_description: str | None = Field(default=None, sa_type=Text)
+
+
+# Properties to receive on profile creation -- all optional, same as above
+class ProfileCreate(ProfileBase):
+    pass
+
+
+# Properties to receive on profile update -- all optional
+class ProfileUpdate(ProfileBase):
+    pass
+
+
+# Database model, database table inferred from class name
+class Profile(ProfileBase, table=True):
+    id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
+    created_at: datetime | None = Field(
+        default_factory=get_datetime_utc,
+        sa_type=DateTime(timezone=True),  # type: ignore
+    )
+    owner_id: uuid.UUID = Field(
+        foreign_key="user.id", nullable=False, ondelete="CASCADE"
+    )
+    owner: User | None = Relationship(back_populates="profiles")
+
+
+# Properties to return via API, id is always required
+class ProfilePublic(ProfileBase):
+    id: uuid.UUID
+    owner_id: uuid.UUID
+    created_at: datetime | None = None
+
+
+class ProfilesPublic(SQLModel):
+    data: list[ProfilePublic]
+    count: int
+
+
 # Generic message
 class Message(SQLModel):
     message: str
@@ -136,7 +213,7 @@ class NewPassword(SQLModel):
 # --- Contract table: one row per (notice, lot) from the tender-matching --
 # --- pipeline (ted_pipeline.py -> contract_schema.json instances). ------
 
-from sqlalchemy import JSON, Text, UniqueConstraint  # noqa: E402
+from sqlalchemy import JSON, UniqueConstraint  # noqa: E402
 
 
 class Contract(SQLModel, table=True):
@@ -203,3 +280,55 @@ class Contract(SQLModel, table=True):
             name="uq_contract_notice_version_lot",
         ),
     )
+
+
+# --- Dashboard: pin state + refresh tracking for the bids table. ----------
+# Kept as their own tables (not new columns on Contract) so the crawl/import
+# pipelines (ted_pipeline.py, CPV45_Eforms_Attachments_Pipeline.py,
+# build_schema_from_agent_input.py, dedupe_contracts.py,
+# run_contract_pipelines.py, scripts/import_contracts.py) never need to
+# know about them -- upserting a Contract row never touches these.
+
+
+class BidPin(SQLModel, table=True):
+    """Whether a bid (Contract row) is pinned to the top of the Dashboard.
+    One row per pinned contract; unpinning deletes the row. Pin state is
+    shared across everyone viewing the Dashboard (not per-user), matching
+    the rest of the Contract table, which has no owner concept either."""
+
+    contract_id: uuid.UUID = Field(
+        foreign_key="contract.id", primary_key=True, ondelete="CASCADE"
+    )
+    pinned_at: datetime = Field(
+        default_factory=get_datetime_utc, sa_type=DateTime(timezone=True)  # type: ignore
+    )
+
+
+class DashboardRefreshState(SQLModel, table=True):
+    """Singleton row (id is always 1) tracking the Dashboard's Refresh
+    button: whether a refresh is currently running, when the last one
+    finished, how many new bids it found, and the cutoff timestamp used to
+    flag a Contract as "New!" in the UI.
+
+    new_since_at semantics: any Contract.created_at strictly after
+    new_since_at is considered new. import_contracts.py's upsert only sets
+    created_at when a row is first inserted (see Contract above), so this
+    stays correct across reruns that just update existing rows. Each
+    completed refresh advances new_since_at to that refresh's own start
+    time, so bids found by the refresh that just finished stay flagged
+    "New!" until the *next* refresh completes.
+    """
+
+    id: int = Field(default=1, primary_key=True)
+    status: str = Field(default="idle")  # "idle" | "running" | "error"
+    started_at: datetime | None = Field(
+        default=None, sa_type=DateTime(timezone=True)  # type: ignore
+    )
+    last_refreshed_at: datetime | None = Field(
+        default=None, sa_type=DateTime(timezone=True)  # type: ignore
+    )
+    new_since_at: datetime | None = Field(
+        default=None, sa_type=DateTime(timezone=True)  # type: ignore
+    )
+    last_new_count: int = Field(default=0)
+    last_error: str | None = Field(default=None, sa_type=Text)
