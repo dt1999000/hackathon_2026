@@ -37,7 +37,7 @@ class Settings(BaseSettings):
     # container hostname.
     LLM_LOCAL_BASE_URL: str = "http://host.docker.internal:11434"
     LLM_LOCAL_MODEL: str = "qwen3:4b"
-    LLM_EMBEDDING_MODEL: str = "qwen3-embedding:0.6b"
+    LLM_EMBEDDING_MODEL: str = "gemini-embedding-2-preview"
     LLM_CLAUDE_MODEL: str = "claude-sonnet-5"
     ANTHROPIC_WORKSPACE_ID: str | None = None
     # Google Gemini. GOOGLE_API_KEY itself isn't a Settings field — like
