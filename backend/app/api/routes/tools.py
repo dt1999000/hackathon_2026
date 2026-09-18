@@ -3,7 +3,7 @@ from typing import Any, cast
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from app.services.embeddings import EmbeddingClient
+from app.services.embeddings import EmbeddingClient, EmbeddingModel
 from app.services.llm import LocalLLMClient
 from app.tools.firecrawl_search.firecrawl_extract import FirecrawlExtractTool
 from app.tools.firecrawl_search.firecrawl_scrape import FirecrawlScrapeWebsiteTool
@@ -60,7 +60,7 @@ class GenerateRequest(BaseModel):
     top_k: int = 3
     use_retrieval: bool = True
     retrieval_method: str = "embedding"  # "embedding" or "lexical"
-    embedding_model: str | None = None  # override to compare models, e.g. "nomic-embed-text"
+    embedding_model: EmbeddingModel | None = None  # override the default embedding model
 
 
 class CrawlWebsiteRequest(BaseModel):
