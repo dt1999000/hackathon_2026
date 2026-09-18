@@ -40,7 +40,7 @@ const useAuth = () => {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["currentUser"] })
-      navigate({ to: "/onboarding" })
+      navigate({ to: "/" })
     },
     onError: handleError.bind(showErrorToast),
     onSettled: () => {

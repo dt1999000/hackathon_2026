@@ -1,8 +1,6 @@
 import { createFileRoute, Outlet, redirect } from "@tanstack/react-router"
-import { AxiosError } from "axios"
 import { PanelRightOpen } from "lucide-react"
 import { useEffect, useState } from "react"
-import { CompanyProfileService } from "@/client"
 import { AssistantPanel } from "@/components/Assistant/AssistantPanel"
 import { Footer } from "@/components/Common/Footer"
 import AppSidebar from "@/components/Sidebar/AppSidebar"
@@ -23,15 +21,6 @@ export const Route = createFileRoute("/_layout")({
       throw redirect({
         to: "/login",
       })
-    }
-    try {
-      await CompanyProfileService.profileReadCompanyProfileMe()
-    } catch (err) {
-      if (err instanceof AxiosError && err.response?.status === 404) {
-        throw redirect({
-          to: "/onboarding",
-        })
-      }
     }
   },
 })

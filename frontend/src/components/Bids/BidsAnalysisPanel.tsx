@@ -1,26 +1,20 @@
 import { useMutation } from "@tanstack/react-query"
-import { Download, ListChecks, RefreshCw, Search } from "lucide-react"
+import { ListChecks, RefreshCw, Search } from "lucide-react"
 
-import { BidFitService, type BidMatchResult, BidsService } from "@/client"
+import { BidFitService, type BidMatchResult } from "@/client"
 import { LoadingButton } from "@/components/ui/loading-button"
 import useCustomToast from "@/hooks/useCustomToast"
 import { handleError } from "@/utils"
 import { BidMatchCard } from "./BidMatchCard"
 
 // Matches the backend default in analyze_bids/list_contracts — keep in
-// sync so "Load contracts" shows exactly what "Analyze" will look at.
+// sync so "Load data" shows exactly what "Analyze" will look at.
 const CONTRACTS_LIMIT = 20
 
 export function BidsAnalysisPanel() {
   const { showSuccessToast, showErrorToast } = useCustomToast()
 
   const loadMutation = useMutation({
-    mutationFn: async () => (await BidsService.loadBids()).data,
-    onSuccess: (data) => showSuccessToast(data?.message ?? "Bids loaded"),
-    onError: handleError.bind(showErrorToast),
-  })
-
-  const loadContractsMutation = useMutation({
     // Read-only — contracts are already in the DB (populated directly by
     // the scrape pipeline + scripts/import_contracts.py), so "loading"
     // them here just means fetching the most recent ones to show what
@@ -36,13 +30,18 @@ export function BidsAnalysisPanel() {
 
   const analyzeMutation = useMutation({
     // timeout: 0 is axios for "no timeout" — the full pipeline runs every
-    // seeded bid's retrieval + reranking + LLM verification concurrently,
+    // contract's retrieval + reranking + LLM verification concurrently,
     // but each one is still several LLM/embedding calls, and external API
     // latency (rate limits, "high demand" slowdowns) can vary a lot, so a
     // fixed client-side cutoff just produces a spurious timeout instead of
     // letting the pipeline finish.
     mutationFn: async () =>
-      (await BidFitService.fitAnalyzeBids({ timeout: 0 })).data,
+      (
+        await BidFitService.fitAnalyzeBids({
+          query: { source: "contracts", limit: CONTRACTS_LIMIT },
+          timeout: 0,
+        })
+      ).data,
     onError: handleError.bind(showErrorToast),
   })
 
@@ -54,8 +53,8 @@ export function BidsAnalysisPanel() {
         <div>
           <h2 className="text-xl font-semibold tracking-tight">Bid matches</h2>
           <p className="text-muted-foreground">
-            Load the sample bids and/or the most recently scraped contracts,
-            then analyze them against your company profile.
+            Load the most recently scraped contracts, then analyze them
+            against your company profile.
           </p>
         </div>
         <div className="flex gap-2">
@@ -66,14 +65,6 @@ export function BidsAnalysisPanel() {
           >
             <RefreshCw />
             Load data
-          </LoadingButton>
-          <LoadingButton
-            variant="outline"
-            loading={loadContractsMutation.isPending}
-            onClick={() => loadContractsMutation.mutate()}
-          >
-            <Download />
-            Load contracts
           </LoadingButton>
           <LoadingButton
             loading={analyzeMutation.isPending}
