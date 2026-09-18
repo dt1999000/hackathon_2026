@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "026cada1-120c-44ea-bff8-7b30a328d090:1:LOT-0000",
+    "candidateId": "026cada1-120c-44ea-bff8-7b30a328d090:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45262320",
+      "45262321"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "026cada1-120c-44ea-bff8-7b30a328d090",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "3b1b99cb-cd81-4391-8be9-de8c3fe190f5",
+    "internalIdentifier": "3140-111_2_CBBE",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:21Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Erlangen - Amt 24"
+    ]
+  },
+  "procedure": {
+    "title": "Gussasphalt 2. BA",
+    "description": "BTE/Werkstattfügel + Verbinder\n455m² Untergr. reinigen;50m² Schüttung,zementgeb.12-18mm;135m³ Schüttung,zementgeb.10-60mm;15m² Bodendämmung,Perlite20mm;25m² Bodendämmung,Perlite50mm;455m² Bodendämmung,Perlite30mm;425m² Gussasphaltestrich,farbig,AS-IC10-S35,D35mm;30m² Gussasphaltestrich,o.Farbe,AS-IC10-S35,D35mm;425m² Oberfl. schleifen,spachteln,Terrazzooptik,R9;155mTrennprofil,Flachst.V2A,70/3,gerade;8St Trennprofil,Flachst.V2A,703,gebogen,L=60-95cm;165m Randdämmstr. an Trennprofil,MW,H=100mm;425m² Gussasphalt versiegeln,Polymergrund;\nBTF/Pausenhalle aus 1.BA\n20,5m Gussasphalt+Unterbau abbrechen,Streifen B=27cm;65m² Oberfläche Gussasphalt nachschleifen,stumpf;125m² Oberfläche Gussasphalt nachschleifen,glatt;190m² Gussasphalt versiegeln,Polymergrund\nFreianlagen/Mensahof\n180m² Untergr. reinigen;180m² Bitumenhaltiges Bindemittel aufsprühen;180m² Gussasphaltdeckschicht,farbig,D35mm;180m² Gussasphalt schleifen,grob;180m² Gussasphalt schleifen,fein;180m² Gussasphalt versiegeln,Polymergrund;",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45262320",
+    "additionalCpvCodes": [
+      "45262321"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "91054",
+      "city": "Erlangen",
+      "nuts": "DE252",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 1.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-03-16+01:00",
+    "endDate": "2027-05-06+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-13+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=299696 Die Eignungskriterien und die geforderten Nachweise, Bescheinigungen sind in der Eigenerklärung (Formblatt 124), in der Aufforderung zur Angebotsabgabe (Formblatt 211), im Verzeichnis vorzulegender Unterlagen (Formblatt 216) aufgelistet. Hier finden Sie auch den Zeitpunkt, zu der die Nachweise/Bescheinigungen einzureichen sind."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=299696 Die Eignungskriterien und die geforderten Nachweise, Bescheinigungen sind in der Eigenerklärung (Formblatt 124), in der Aufforderung zur Angebotsabgabe (Formblatt 211), im Verzeichnis vorzulegender Unterlagen (Formblatt 216) aufgelistet. Hier finden Sie auch den Zeitpunkt, zu der die Nachweise/Bescheinigungen einzureichen sind."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=299696 Die Eignungskriterien und die geforderten Nachweise, Bescheinigungen sind in der Eigenerklärung (Formblatt 124), in der Aufforderung zur Angebotsabgabe (Formblatt 211), im Verzeichnis vorzulegender Unterlagen (Formblatt 216) aufgelistet. Hier finden Sie auch den Zeitpunkt, zu der die Nachweise/Bescheinigungen einzureichen sind."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16a EU VOB/A nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/299696",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

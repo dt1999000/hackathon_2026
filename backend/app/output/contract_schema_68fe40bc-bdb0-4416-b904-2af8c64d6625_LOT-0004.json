@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "68fe40bc-bdb0-4416-b904-2af8c64d6625:1:LOT-0004",
+    "candidateId": "68fe40bc-bdb0-4416-b904-2af8c64d6625:1:LOT-0004",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45223210"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "68fe40bc-bdb0-4416-b904-2af8c64d6625",
+    "version": "01",
+    "lotIdentifier": "LOT-0004",
+    "procedureIdentifier": "6d7e7197-0af5-4168-a344-ec546c8a460b",
+    "internalIdentifier": "ccd1ed0c-9e10-49cc-a5ba-210c8fbd7281",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:10:08Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)"
+    ]
+  },
+  "procedure": {
+    "title": "Los 5 Treppen für Funkmaste Strecke 6100 Hamburg - Berlin",
+    "description": "Bereich Wittenberge - Hagenow km 127 - 191",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45223210",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "BE",
+      "city": "Berlin",
+      "nuts": "DE80O",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-11+01:00",
+    "endDate": "2027-12-31+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-26+01:00",
+    "deadlineTime": "10:00:00+01:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-19+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-sec-supply",
+      "label": null,
+      "description": "Bitte beachten Sie dazu die Ziffern 2.1, 2.1.4 und5.1.6 dieser Bekanntmachung"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 51 Abs. 2 SektVO, § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/46fe1e8d-d5f9-47ae-8bd3-5f2531a60c8b",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

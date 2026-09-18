@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "6df5a578-3c08-42f8-bbe2-973255dfd8d9:1:LOT-0000",
+    "candidateId": "6df5a578-3c08-42f8-bbe2-973255dfd8d9:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45233110"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "6df5a578-3c08-42f8-bbe2-973255dfd8d9",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "ea5bd42f-877f-4e96-ad6b-4cc7fc325e05",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:10:04Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Die Autobahn GmbH des Bundes - NL Südwest"
+    ]
+  },
+  "procedure": {
+    "title": "Reinigung RWBA AM-LB 2026",
+    "description": "Reinigung von Regenwasserbehandlungsanlagen im Dienstbereich der AM Ludwigsburg Betriebsstrecken A8 und A81\n\nWasser- und Sedimentanalyse 40 St.\nÜberstandwasser abpumpen 13'071 m³\nDurchführen abfallrechtlicher Pflichten im Begleitscheinverfahren eANV für gefährliche Abfälle und nicht gefährliche Abfälle\nEntnahme und Entsorgung von gefährlichem Abfall AS-Nr. 130502* 2'835 t, \nEntnahme und Entsorgung von gefährlichem Abfall AS-Nr. 130508* 975 t",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "services",
+    "mainCpvCode": "90600000",
+    "additionalCpvCodes": [
+      "45233110"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "",
+      "country": ""
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "13"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "https://vergabe.autobahn.de",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-facil-tools",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angabe in \"Eigenerklärung zur Eignung\" Teil IV: - Beschreibung der technischen Ausrüstung des Unternehmens - Erklärung, aus der hervor geht, über welche Ausstattung, welche Geräte und welche technische Ausrüstung das Unternehmen für die Ausführung des Auftrags verfügt Benannte Nachweise und Erklärungen sind von einer Bietergemeinschaft insgesamt sowie auch von Nachunternehmern für wesentliche Leistungen beizubringen."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angabe in \"Eigenerklärung zur Eignung\" Teil IV: - Angabe der Maßnahmen zur Qualitätssicherung des Unternehmens, die das Unternehmen während der Auftragsausführung anwendet Benannte Nachweise und Erklärungen sind von einer Bietergemeinschaft insgesamt sowie auch von Nachunternehmern für wesentliche Leistungen beizubringen."
+    },
+    {
+      "code": "slc-abil-staff-tech-work",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angabe in \"Eigenerklärung zur Eignung\" Teil IV: - Angabe der technischen Fachkräfte oder der technischen Stellen, die im Zusammenhang mit der Leistungserbringung eingesetzt werden sollen, mit Benennung von Namen der Personen mit Funktion und beruflicher Qualifikation Mindestanforderungen: - Benennung des Entsorger für gefährlichen Abfall - Ort der Entsorgungsanlage für gefährlichen Abfall - Nachweis nach § 56 Nr. 2 KrWG des Entsorgungsfachbetriebes - Nachweis nach § 54 KrWG des Beförderers - Laborakkkreditierung DAkkS nach DIN EN ISO/IEC 17025, - RSA/ZTV-SA/MVAS 99 Nachweis Auf gesondertes Verlangen einzureichen: Benannte Nachweise und Erklärungen sind von einer Bietergemeinschaft insgesamt sowie auch von Nachunternehmern für wesentliche Leistungen beizubringen. Unternehmen, die in den Präqualifizierungsdatenbanken https://amtliches-verzeichnis.ihk.de oder www.pq-verein.de bzw. einer anderen für den öffentlichen Auftraggeber kostenfreien Datenbank innerhalb der EU registriert sind, können dies bei Abgabe eines Teilnahmeantrages bzw. eines Angebotes durch Angabe der Registrierungsnummer und / oder des Zugangscodes angeben."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: - Angabe, welche Teile des Auftrags der Auftragnehmer als Unteraufträge zu vergeben beabsichtigt. Auf gesondertes Verlangen einzureichen: - Ergänzung des Verzeichnisses der Nachunternehmerleistungen um die Namen der Nachunternehmen inkl. entsprechender Eignungsnachweise"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angabe in \"Eigenerklärung zur Eignung\" Teil IV: Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Liefer- und Dienstleistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. Mindestanforderung: Der geforderte Mindestjahresumsatz beträgt 1.500.000,00 €/a brutto in den letzten 3 abgeschlossenen Geschäftsjahren Der geforderte Mindestjahresumsatz in dem Tätigkeitsbereich dieses Auftrags beträgt 900.000,00 €/a brutto in den letzten 3 abgeschlossenen Geschäftsjahren Benannte Nachweise und Erklärungen sind von einer Bietergemeinschaft insgesamt sowie auch von Nachunternehmern für wesentliche Leistungen beizubringen Präqualifizierte Unternehmen Unternehmen, die in den Präqualifizierungsdatenbanken https://amtliches-verzeichnis.ihk.de oder www.pq-verein.de bzw. einer anderen für den öffentlichen Auftraggeber kostenfreien Datenbank innerhalb der EU registriert sind, können dies bei Abgabe eines Teilnahmeantrages bzw. eines Angebotes durch Angabe der Registrierungsnummer und / oder des Zugangscodes angeben. Sofern vom Auftraggeber Nachweise gefordert werden, die nicht in den Präqualifizierungsdatenbanken enthalten sind, sind diese ergänzend einzureichen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angaben in \"Eigenerklärung zur Eignung\" Teil II: über die Eintragung in ein Berufsregister Auf gesondertes Verlangen einzureichen: Vorlage der Gewerbeanmeldung, der Eintragung in die Handwerksrolle oder der Eintragung bei der Industrie- und Handelskammer oder anderweitige sonstige Berufsregisternachweise. Benannte Nachweise und Erklärungen sind von einer Bietergemeinschaft insgesamt sowie auch von Nachunternehmern für wesentliche Leistungen beizubringen. Präqualifizierte Unternehmen Unternehmen, die in den Präqualifizierungsdatenbanken https://amtliches-verzeichnis.ihk.de oder www.pq-verein.de bzw. einer anderen für den öffentlichen Auftraggeber kostenfreien Datenbank innerhalb der EU registriert sind, können dies bei Abgabe eines Teilnahmeantrages bzw. eines Angebotes durch Angabe der Registrierungsnummer und / oder des Zugangscodes angeben. Sofern vom Auftraggeber Nachweise gefordert werden, die nicht in den Präqualifizierungsdatenbanken enthalten sind, sind diese ergänzend einzureichen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Unterlagen richtet sich nach § 56 VgV. Bei ausländischen Bietern werden gleichwertige Nachweise verlangt: Vorzulegende Erklärungen / Nachweise bei der Angebotsabgabe: Angabe der Unternehmen bei Eignungsleihe im Verzeichnis der Leistungen von Unterauftragnehmern bzw. anderen Unternehmen, auf gesondertes Verlangen: Verpflichtungserklärung im Rahmen der finanziellen oder wirtschaftlichen Eignungsleihe, Verpflichtungserklärung Leistungen anderer Unternehmer, Erklärung der Bieter-/Arbeitsgemeinschaft"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.autobahn.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a08fb6ee85-4bc63aa7c4af291b",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

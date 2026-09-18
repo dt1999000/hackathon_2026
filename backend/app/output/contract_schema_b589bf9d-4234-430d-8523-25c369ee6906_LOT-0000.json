@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "b589bf9d-4234-430d-8523-25c369ee6906:1:LOT-0000",
+    "candidateId": "b589bf9d-4234-430d-8523-25c369ee6906:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45215130",
+      "45441000",
+      "45443000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "b589bf9d-4234-430d-8523-25c369ee6906",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "37d1b704-a197-4801-9627-465bcfa7558c",
+    "internalIdentifier": "nke-1-106",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T00:00:00+02:00",
+    "issueDate": "2026-09-14+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landratsamt Eichstätt"
+    ]
+  },
+  "procedure": {
+    "title": "Profilitverglasung",
+    "description": "Neubau Gebäude C am Klinikum Naturpark Altmühltal\nGrobmassen:\n- 320m2\t        Profilitverglasung\n- 150m\t \tStahlwinkel 250-270mm\n- 60m\t\tAußenfensterbank 500mm\n- 20m\t\tAußenfensterbank 600mm",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45443000",
+    "additionalCpvCodes": [
+      "45215130",
+      "45441000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "85072",
+      "city": "Eichstätt",
+      "nuts": "DE219",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-09+01:00",
+    "endDate": "2027-12-03+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "08:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-14+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "1. Vorlage mit dem Angebot: Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. Der Nachweis kann wie folgt erbracht werden: Die Erklärungen sind entweder mittels Angabe der Registriernummer beim Verein für die Präqualifikation von Bauunternehmen e.V. (präqualifizierte Unternehmen) oder mittels Eigenerklärung zur Eignung nach Formblatt 124 (liegt den Ausschreibungsunterlagen bei) oder mittels einer Einheitlichen Europäischen Eigenerklärung (EEE) abzugeben. 2. Beabsichtigt der Bieter, Teile der Leistung von anderen Unternehmen ausführen zu lassen oder sich bei der Erfüllung eines Auftrags im Hinblick auf die erforderliche Leistungsfähigkeit anderer Unternehmen zu bedienen, so hat er den Nachweis auf gesondertes Verlangen der Vergabestelle auch für diese Unternehmen vorzulegen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "1. Vorlage mit dem Angebot: a) Erklärung zu Insolvenzverfahren und Liquidation b) Erklärung zur ordnungsgemäßen Erfüllung der Pflicht zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung c) Erklärung zur Mitgliedschaft bei der zuständigen Berufsgenossenschaft d) Erklärung zum Nichtvorliegen von Ausschlussgründen im Sinne von § 6e EU VOB/A und zu ggf. ergriffenen Selbstreinigungsmaßnahmen im Sinne von § 6f EU Abs. 1 VOB/A. 2. Vorlage auf gesondertes Verlangen der Vergabestelle innerhalb einer gesetzten Frist: a) Rechtskräftig bestätigter Insolvenzplan (sofern zutreffend) b) aktuell gültige Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, soweit das Unternehmen beitragspflichtig ist. Wenn keine Beitragspflicht besteht, ist dies in einem An- oder Begleitschreiben zu erklären und dem AG vorzulegen. c) aktuell gültige Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen, soweit das Finanzamt derartige Bescheinigungen ausstellt. Wenn nicht, ist dies in einem An- oder Begleitschreiben zu erklären und dem AG vorzulegen. d) aktuell gültige Freistellungsbescheinigung nach § 48b EStG e) aktuell gültige Qualifizierte Unbedenklichkeitsbescheinigung der zuständigen Berufsgenossenschaft mit Angabe der Lohnsummen 3. Allgemeine Hinweise: Die Erklärungen gemäß 1. sind entweder mittels Angabe der Registriernummer beim Verein für die Präqualifikation von Bauunternehmen e.V. (präqualifizierte Unternehmen) oder mittels Eigenerklärung zur Eignung nach Formblatt 124 (liegt den Ausschreibungsunterlagen bei) oder mittels einer Einheitlichen Europäischen Eigenerklärung (EEE) abzugeben. Die Pflicht zur Vorlage der Unterlagen gemäß 2. entfällt für präqualifizierte Unternehmen, soweit diese Unterlagen für den AG abrufbar in dem PQ-Verzeichnis vorliegen. Unternehmen, die ihren Sitz nicht in der Bundesrepublik Deutschland haben, müssen gleichwertige Unterlagen vorlegen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in die deutsche Sprache beizufügen. Beabsichtigt der Bieter, Teile der Leistung von anderen Unternehmen ausführen zu lassen oder sich bei der Erfüllung eines Auftrags im Hinblick auf die erforderliche Leistungsfähigkeit anderer Unternehmen zu bedienen, so hat er die Erklärungen gemäß 1. und die Unterlagen gemäß 2. auf gesondertes Verlangen der Vergabestelle auch für diese Unternehmen vorzulegen. 4. Weiterer Hinweis: Ab einer Auftragssumme von 30.000 Euro wird der Auftraggeber für den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, einen Auszug aus dem Wettbewerbsregister gem. § 6 WRegG anfordern."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Aktuell gültiger Nachweis einer Betriebshaftpflichtversicherung oder Eigenerklärung diese bei Vertragszuschlag mindestens in der geforderten Höhe abzuschließen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischen Leitungspersonal. Erklärung, dass die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "1. Vorlage mit dem Angebot: Erklärung zu bestehenden Eintragungen im Handelsregister 2. Vorlage auf gesondertes Verlangen der Vergabestelle innerhalb der gesetzten Frist: Handelsregisterauszug. 3. Allgemeine Hinweise: Die Erklärungen gemäß 1. sind entweder mittels Angabe der Registriernummer beim Verein für die Präqualifikation von Bauunternehmen e.V. (präqualifizierte Unternehmen) oder mittels Eigenerklärung zur Eignung nach Formblatt 124 (liegt den Ausschreibungsunterlagen bei) oder mittels einer Einheitlichen Europäischen Eigenerklärung (EEE) abzugeben. Die Pflicht zur Vorlage der Unterlagen gemäß 2. entfällt für präqualifizierte Unternehmen, soweit diese Unterlagen für den AG abrufbar in dem PQ-Verzeichnis vorliegen. Unternehmen, die ihren Sitz nicht in der Bundesrepublik Deutschland haben, müssen gleichwertige Unterlagen vorlegen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in die deutsche Sprache beizufügen. Beabsichtigt der Bieter, Teile der Leistung von anderen Unternehmen ausführen zu lassen oder sich bei der Erfüllung eines Auftrags im Hinblick auf die erforderliche Leistungsfähigkeit anderer Unternehmen zu bedienen, so hat er die Erklärungen gemäß 1. und die Unterlagen gemäß 2. auf gesondertes Verlangen der Vergabestelle auch für diese Unternehmen vorzulegen. 4. Weiterer Hinweis: Ab einer Auftragssumme von 30.000 Euro wird der Auftraggeber für den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, einen Auszug aus dem Wettbewerbsregister gem. § 6 WRegG anfordern."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "1. Vorlage mit dem Angebot: Erklärung zu bestehenden Eintragungen in die Handwerksrolle oder bei der Industrie-und Handelskammer 2. Vorlage auf gesondertes Verlangen der Vergabestelle innerhalb der gesetzten Frist: Eintragung in der Handwerksrolle (Handwerkskarte) bzw. beider Industrie- und Handelskammer (soweit zutreffend) 3. Allgemeine Hinweise: Die Erklärungen gemäß 1. sind entweder mittels Angabe der Registriernummer beim Verein für die Präqualifikation von Bauunternehmen e.V. (präqualifizierte Unternehmen) oder mittels Eigenerklärung zur Eignung nach Formblatt 124 (liegt den Ausschreibungsunterlagen bei) oder mittels einer Einheitlichen Europäischen Eigenerklärung (EEE) abzugeben. Die Pflicht zur Vorlage der Unterlagen gemäß 2. entfällt für präqualifizierte Unternehmen, soweit diese Unterlagen für den AG abrufbar in dem PQ-Verzeichnis vorliegen. Unternehmen, die ihren Sitz nicht in der Bundesrepublik Deutschland haben, müssen gleichwertige Unterlagen vorlegen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in die deutsche Sprache beizufügen. Beabsichtigt der Bieter, Teile der Leistung von anderen Unternehmen ausführen zu lassen oder sich bei der Erfüllung eines Auftrags im Hinblick auf die erforderliche Leistungsfähigkeit anderer Unternehmen zu bedienen, so hat er die Erklärungen gemäß 1. und die Unterlagen gemäß 2. auf gesondertes Verlangen der Vergabestelle auch für diese Unternehmen vorzulegen. 4. Weiterer Hinweis: Ab einer Auftragssumme von 30.000 Euro wird der Auftraggeber für den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, einen Auszug aus dem Wettbewerbsregister gem. § 6 WRegG anfordern."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "1) Vorlage mit dem Angebot: a) Erklärung, in den letzten fünf Kalenderjahren vergleichbare Leistungen ausgeführt zu haben Mindestanforderung: Mindestens vorzulegen sind drei (3) Referenznachweise aus den letzten fünf Kalenderjahren der Ausführung von Bauleistungen für Profilitverglasungen, in einer vergleichbaren Art und einem vergleichbaren Umfang der ausgeschriebenen Leistung. Die Nachweise müssen umfassen: Angaben zu Ansprechpartner, Auftragssumme, Ausführungszeitraum, eingesetzten Arbeitnehmern, Art/Umfang/Besonderheiten der Leistung, Art der Baumaßnahme, vertragliche Bindung sowie Bestätigung der vertragsgemäßen Ausführung durch den Referenzgeber (Auftraggeber) 2) Vorlage auf gesondertes Verlangen der Vergabestelle innerhalb einer gesetzten Frist: a) Drei Referenznachweise zu der Erklärung gemäß vorstehender Ziffer 1) a). Allgemeine Hinweise: Die Erklärungen gemäß 1) a) sind entweder mittels Angabe der Registriernummer beim Verein für die Präqualifikation von Bauunternehmen e.V. (präqualifizierte Unternehmen) oder mittels Eigenerklärung zur Eignung nach Formblatt 124 (liegt den Ausschreibungsunterlagen bei) oder mittels einer Einheitlichen Europäischen Eigenerklärung (EEE) abzugeben. Die Pflicht zur Vorlage der Unterlagen gemäß 2) a) entfällt für präqualifizierte Unternehmen, mit Ausnahme von Referenznachweisen, soweit die im PQ Verzeichnis abrufbaren Referenznachweise zur Erfüllung der Mindestanforderungen nicht ausreichend sind. In diesem Fall sind die Referenznachweise mit dem Angebot vorzulegen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in die deutsche Sprache beizufügen. Beabsichtigt der Bieter, Teile der Leistung von anderen Unternehmen ausführen zu lassen oder sich bei der Erfüllung eines Auftrags im Hinblick auf die erforderliche Leistungsfähigkeit anderer Unternehmen zu bedienen, so hat er die Erklärungen gemäß 1) und die Unterlagen gemäß 2) auf gesondertes Verlangen der Vergabestelle auch für diese Unternehmen vorzulegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Informationen, die nach Ablauf der Einreichungsfrist ergänzt werden können: Nach Ermessen des Käufers können einige fehlenden Bieterunterlagen nach Fristablauf nachgereicht werden. Bieterunterlagen können nach ermessensgerechter Entscheidung des Auftraggebers nachgefordert werden, soweit dies vergaberechtlich zulässig ist"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/303638",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

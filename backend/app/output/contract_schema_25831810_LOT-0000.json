@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831810:1:LOT-0000",
+    "candidateId": "25831810:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831810",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:37Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Vergebener Auftrag: SM Hagenow Kronenpflege Teil 2, L-Straßen",
+    "description": "Vergebener Auftrag: SM Hagenow Kronenpflege Teil 2, L-Straßen",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "19061 Schwerin",
+      "nuts": "DE8",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-16+02:00",
+    "deadlineTime": "07:24:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "2198",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25764014:2:LOT-0000",
+    "candidateId": "25764014:2:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45316110"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25764014",
+    "version": "2",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:44Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "A65, Erneuerung der Beleuchtungsanlage in Trog Landau",
+    "description": "A65, Erneuerung der Beleuchtungsanlage in Trog Landau\n\nTunnelbeleuchtung",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45316110",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "Landau",
+      "nuts": "DEB",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-02+02:00",
+    "deadlineTime": "10:30:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.autobahn.de/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a013c0c9cf-49515460e21cacf3&PublicationType=0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

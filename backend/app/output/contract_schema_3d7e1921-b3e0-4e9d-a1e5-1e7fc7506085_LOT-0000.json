@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "3d7e1921-b3e0-4e9d-a1e5-1e7fc7506085:1:LOT-0000",
+    "candidateId": "3d7e1921-b3e0-4e9d-a1e5-1e7fc7506085:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "3d7e1921-b3e0-4e9d-a1e5-1e7fc7506085",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "fa53e2e6-a4d2-48fb-a3a1-22c13709eab2",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:11Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Bundesrepublik Deutschland, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe"
+    ]
+  },
+  "procedure": {
+    "title": "BA II_Abbruch- und Erdarbeiten",
+    "description": "ca. 500 m³ Beton- und Stahlbetonabbruch, einschließlich Anzeigerdeckungen, Betriebsnischen und Panzeraufstellfläche, \nca. 1.500 m Rückbau vorhandener Entwässerungsleitungen\nca. 45.000 m² Grasnarben-/Oberbodenarbeiten\nca. 6.000 m³ Bodenabtrag in den Standflächen \nca. 2.400 m³ Abtrag/Profilierung bestehender Seitenwälle\nca. 2.900 m³ Frostschutzschicht 0/32 für die Standflächen\nca. 8.500 m² Standflächen aus 15 cm Hartsteinsplitt 5/8 mm\nca. 3.030 m² Geozellen mit Splittfüllung \nca. 11.500 m² Geotextil\nca. 3.500 m² Zielgeländeflächen neu herstellen, mit insgesamt ca. 1.050 m³ Splitt 5/8 mm\nca. 8.000 m Kabelschutzrohre DN/AD 50-110 mm, überwiegend als mehrzügige Rohrpakete, sowie 38 Kabelzugschächte\nca. 2.000 m Dränleitungen DN 100-250 sowie ca. 515 m Regenwasserkanäle DN 100-250, einschließlich Kontroll-, Spül- und Sammelschächten\nca. 42 PP-Kontroll-/Sammelschächte DN 600 sowie rund 16 Stahlbetonschächte DN 1000\nca. 450 m² Betonpflasterflächen sowie ca. 450 m Traufstreifen aus Betonplatten und weitere Anpassungen an Wegen und Verkehrsflächen\nca. 16.200 m² Böschungssicherung/Erosionsschutz an den Seitenwällen\nca. 28.000 m² Landschaftsrasen einschließlich Fertigstellungspflege",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "34560",
+      "city": "Fritzlar",
+      "nuts": "DE735",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-14+01:00",
+    "endDate": "2029-01-26+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-12+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-supply",
+      "label": null,
+      "description": "Erklärung des Teilnehmers in den letzten fünf Kalenderjahren bzw. dem in der Auftragsbekanntmachung angegebenen Zeitraum mit dem Leistungsgegenstand vergleichbare Leistungen ausgeführt zu haben. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt 124 ist erhältlich bei: https://vergabe.hessen.de/NetServer/download/124-Bund_2019.pdf Folgende sonstige Nachweise/Angaben sind mit dem Angebot vorzulegen: Geforderte auftragsspezifische Einzelnachweise: 'Keine'"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Erklärung des Teilnehmers in den letzten fünf Kalenderjahren bzw. dem in der Auftragsbekanntmachung angegebenen Zeitraum mit dem Leistungsgegenstand vergleichbare Leistungen ausgeführt zu haben. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt 124 ist erhältlich bei: https://vergabe.hessen.de/NetServer/download/124-Bund_2019.pdf Folgende sonstige Nachweise/Angaben sind mit dem Angebot vorzulegen: Geforderte auftragsspezifische Einzelnachweise: 'Keine'"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zu Arbeitskräften Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal angeben. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt 124 ist erhältlich bei: https://vergabe.hessen.de/NetServer/download/124-Bund_2019.pdf"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angabe zu Insolvenzverfahren und Liquidation Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, eine Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen sowie eine Freistellungsbescheinigung nach § 48b EStG Angabe zur Mitgliedschaft bei der Berufsgenossenschaft Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt 124 ist erhältlich bei: https://vergabe.hessen.de/NetServer/download/124-Bund_2019.pdf Folgende sonstige Nachweise/Angaben sind mit dem Angebot vorzulegen: Geforderte auftragsspezifische Einzelnachweise: 'Keine'"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt 124 ist erhältlich bei: https://vergabe.hessen.de/NetServer/download/124-Bund_2019.pdf Folgende sonstige Nachweise/Angaben sind mit dem Angebot vorzulegen: Geforderte auftragsspezifische Einzelnachweise: 'Keine'"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Gewerbeanmeldung, Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt 124 ist erhältlich bei: https://vergabe.hessen.de/NetServer/download/124-Bund_2019.pdf Folgende sonstige Nachweise/Angaben sind mit dem Angebot vorzulegen: Geforderte auftragsspezifische Einzelnachweise: 'Keine'"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Gewerbeanmeldung, Handelsregisterauszug und Eintragung bei der Industrie- und Handelskammer Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt 124 ist erhältlich bei: https://vergabe.hessen.de/NetServer/download/124-Bund_2019.pdf"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Keine"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.hessen.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-19ff118a0cc-7f4e69673ff2e2a",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

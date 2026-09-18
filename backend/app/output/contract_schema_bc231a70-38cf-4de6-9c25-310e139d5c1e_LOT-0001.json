@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "bc231a70-38cf-4de6-9c25-310e139d5c1e:1:LOT-0001",
+    "candidateId": "bc231a70-38cf-4de6-9c25-310e139d5c1e:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45112700"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "bc231a70-38cf-4de6-9c25-310e139d5c1e",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "28b8a55a-0f1f-43e3-acf8-ba6087ff374f",
+    "internalIdentifier": "WS3275325691 - Los 1",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:19Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "50Hertz Transmission GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Los 1 - Landschaftsbauliche Umsetzung von CEF- und Minderungsmaßnahmen Nord",
+    "description": "Die ausgeschriebene Leistung umfasst landschaftsbauliche Leistungen im Zusammenhang mit naturschutzfachlich begründeten Vermeidungs-, Minderungs-, Schutz- sowie vorgezogene Ausgleichsmaßnahmen (CEF-Maßnahmen) im Norden der Regelzone der 50Hertz.\n\nWeitergehende Informationen sind der Leistungsbeschreibung zu entnehmen.",
+    "type": "neg-w-call",
+    "typeRaw": "neg-w-call"
+  },
+  "classification": {
+    "mainNature": "services",
+    "mainCpvCode": "77000000",
+    "additionalCpvCodes": [
+      "45112700"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE300",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 11100000.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "5"
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Der Bewerber hat den Nachweis der Eintragung im Handelsregister des Staates, in dem der Bewerber niedergelassen ist, einzureichen. Der Auszug aus dem Handelsregister darf zum Zeitpunkt des Ablaufs der Teilnahmefrist nicht älter als sechs Monate sein. Alternativ dazu kann der Bewerber angeben, unter welcher elektronischen Adresse der Auszug unentgeltlich, uneingeschränkt, vollständig und direkt abgerufen werden kann. Sofern der Bewerber, das Mitglied einer Bewerbergemeinschaft oder Dritte nicht im Handelsregister verzeichnet ist, genügt der Nachweis der erlaubten Berufsausübung auf andere Weise. Für die Mitgliedsstaaten der Europäischen Union sind die jeweiligen Berufs- oder Handelsregister und die Bescheinigungen oder Erklärungen über die Berufsausübung in Anhang XI der Richtlinie 2014/24/EU des Europäischen Parlaments und des Rates vom 26. Februar 2014 über die öffentliche Auftragsvergabe und zur Aufhebung der Richtlinie 2014/18/EG, Abl. L 94 v. 28. März 2014, S. 65, aufgeführt."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Es ist der Nachweis einer Betriebs-Haftpflichtversicherung für sich aus der gewerblichen Tätigkeit des Bewerbers ergebenden Haftpflichtgefahren für Personen sowie Sach- und Vermögensschäden (inklusive Vermögensschäden aus datenschutzrechtlichen Gründen) durch eine gültige Versicherungsbestätigung zu erbringen. Der Versicherungsvertrag muss die Deckung der vorgenannten Gefahren gewähren. Bei der Bewerbung einer Bewerbergemeinschaft kommt es bezogen auf den Nachweis und das Erfüllen der Anforderungen an die Betriebs-Haftpflichtversicherung auf die Bewerbergemeinschaft insgesamt an. Reicht ein Mitglied der Bewerbergemeinschaft einen Versicherungsnachweis ein, muss aus dem Versicherungsnachweis allerdings hervorgehen, dass Ansprüche gegen die Bewerbergemeinschaft wegen der Schadensverursachung durch andere Mitglieder der Bewerbergemeinschaft ebenfalls vom Versicherungsschutz erfasst sind. Alternativ zur Vorlage des Nachweises einer Versicherung mit den nachfolgend genannten Mindestanforderungen kann der am Auftrag interessierte Wirtschaftsteilnehmer erklären, im Auftragsfall eine den gestellten Anforderungen entsprechende Versicherung abzuschließen. In diesem Fall hat sich der Bewerber zu verpflichten, unverzüglich nach Erhalt des Zuschlages eine entsprechende Betriebs-Haftpflichtversicherung mit den genannten Anforderungen abzuschließen, für die Dauer der Vertragslaufzeit aufrechtzuerhalten sowie die entsprechende Bescheinigung dem Auftraggeber unverzüglich unaufgefordert vorzulegen. Der Wirtschaftsteilnehmer kann ergänzend freiwillig mit dem Teilnahmeantrag eine Erklärung des Versicherers vorlegen, nach der Versicherer im Auftragsfall bereit ist, eine entsprechende Versicherung abzuschließen. Die Anforderungen an die Höhe der Mindestdeckungssummen sind den Vergabeunterlagen unter CEF_02.00_Verfahrenbedingungen_TNW, Ziffer 10.2 (a) zu entnehmen."
+    },
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "Es ist eine Erklärung über den Gesamtumsatz für die Jahre 2023, 2024 und 2025 abzugeben. Falls ein Wirtschaftsteilnehmer erst später als 2023 besteht, sind die entsprechenden Angaben für die Geschäftsjahre seit der Gründung zu tätigen. Es ist in diesem Fall zu erklären, in welchem Jahr der betreffende Wirtschaftsteilnehmer gegründet worden ist."
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Es ist eine Erklärung über den Umsatz in dem Tätigkeitsbereich des hier zu vergebenden Auftrags für die Jahre 2023, 2024 und 2025 abzugeben. Falls ein Wirtschaftsteilnehmer erst später als 2023 besteht, sind die entsprechenden Angaben für die Geschäftsjahre seit der Gründung zu tätigen. Es ist in diesem Fall zu erklären, in welchem Jahr der betreffende Wirtschaftsteilnehmer gegründet worden ist."
+    },
+    {
+      "code": "slc-abil-ref-services",
+      "label": null,
+      "description": "Es wird der Nachweis von Erfahrungen im Bereich der hier zu vergebenden Leistungen durch die Angabe von mit dem hiesigen Vergabegegenstand vergleichbaren Unternehmensreferenzen (im Folgenden nur: Referenzen) nach Maßgabe der folgenden Bestimmungen verlangt: Die Anforderungen an den Referenzzeitraum, die Anzahl der Referenzen und die Vergleichbarkeit der Referenz sind der Anlage „CEF_02.07_Anlage 7.1_Technische_berufliche_Leistungsfähigkeit – Unternehmensreferenz“ losspezifisch im jeweiligen Reiter zu entnehmen. Hinweis: Aufträge, die beim Auftraggeber erbracht worden sind, werden anerkannt. Die Vergleichbarkeit muss anhand der Angaben des Bewerbers überprüfbar sein."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Es ist das auftragsrelevante Personal, also das Personal, welches im Zusam-menhang mit der Leistungserbringung eingesetzt werden soll, inklusive Vertretungen nach Maßgabe der folgenden Vorgaben anzugeben. Gefordert wird die Angabe folgender – nach der jeweiligen Studien- und Ausbildungsqualifikation entsprechend der nachstehenden Bezeichnungen beziehungsweise einer vergleichbaren Qualifikation in einem anderen europäischen Mitgliedstaat unterteilten – Fachkräfte, unabhängig davon, ob diese dem Bewerber beziehungsweise dem jeweiligen Mitglied der Bewerbergemeinschaft angehören: Der Projektleiter / Fachkraft muss eine Qualifikation im Bereich Forstwirtschaft oder im Garten- und Landschaftsbau besitzen. Alternativ werden einschlägige Berufserfahrungen (mindestens 3 Jahre) in verantwortlicher Position anerkannt."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Nutzung des P2P-Verfahrens: Es kommt ein P2P-(Purchase-to-Pay)-Verfahren zur Anwendung. Der Auftragnehmer hat das Leistungsdatenblatt elektronisch über das Portal und in Übereinstimmung mit dem bestätigten Aufmaß/ Abnahmeprotokoll/ Stundenzettel auszufüllen. Die Erbringung der Leistungen ist in geeigneter Form zu belegen. Beim P2P-Verfahren werden die vom Auftraggeber nach dem Vertrag geschuldeten Zahlungen nach der ordnungsgemäßen Online-Erfassung der Leistungen fällig. Dieses Kriterium ist erfüllt, wenn der Bewerber die Bedingung im Vergabetool ARIBA mit der Auswahl \"Ja\" bestätigt. /// Verhaltenskodex für Lieferant*innen: Der Bewerber akzeptiert den Verhaltenskodex für Lieferant*innen (siehe Anlage CEF_07.03_Verhaltenskodex für Lieferanten). Dieses Kriterium gilt als erfüllt, wenn Sie die Bedingung im ARIBA-Beschaffungstool durch Auswahl von „Ja“ bestätigen. /// Eigenerklärung zu Russland-Sanktionen: Die Bewerber haben die ausgefüllte und unterschriebene Eigenerklärung zu Sanktionen gegen Russland einzureichen. Zur Nachweisführung über die Eigenerklärung zur Einhaltung der Russlandsanktionen ist das Formblatt Anlage 10 (ID CEF_02.10) zu verwenden. /// Eigenerklärung über das Nichtvorliegen von Ausschlussgründen; Maßnahmen zur Selbstreinigung und Wiederherstellung der Zuverlässigkeit: An dem Auftrag interessierte Wirtschaftsteilnehmer haben sich zum Vorliegen der folgenden Ausschlussgründe zu erklären. Liegt ein Ausschlussgrund nach § 123 GWB und/oder § 124 GWB (jeweils i.V.m. § 142 GWB) vor, wird dem Wirtschaftsteilnehmer ermöglicht, den Nachweis über durchgeführte Selbstreinigungsmaßnahmen zu erbringen. Zur Nachweisführung über die Ausschlussgründe und der Selbstreinigung ist das Formblatt Anlage 8 (ID CEF_02.08) zu verwenden, an den jeweils relevanten Stellen auszufüllen und gegebenenfalls durch eigene Anlagen zu ergänzen. Liegt bei einem Wirtschaftsteilnehmer ein Ausschlussgrund nach § 123 GWB oder § 124 GWB vor, wird dieser nicht ausgeschlossen, wenn das Unternehmen Selbstreinigungsmaßnahmen nach § 125 GWB nachgewiesen hat. /// Hinweise zum Nachweis der Eignung sowie des Nichtvorliegens von Ausschlussgründen: Der Auftraggeber prüft die Eignung und das Nichtvorliegen von Ausschlussgründen der Bewerber anhand der geforderten Angaben, Erklärungen und Nachweise. Zur Beantragung der Teilnahme am Verfahren sind die Formblätter zu verwenden, welche den Verfahrensbedingungen für den Teilnahmewettbewerb beigefügt sind. Neben den geforderten Unterlagen können erforderlichenfalls zusätzliche, vom Bewerber selbst erstellte Anlagen beigefügt werden. /// Weitergehende Informationen sind den Vergabeunterlagen unter CEF_02.00_Verfahrensbedingungen_TNW, Ziffer 10"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price",
+      "quality"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Nachforderungen gemäß §52 SektVO bleiben vorbehalten."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://eliagroup.sharepoint.com/:f:/s/EFSS/EFSS/IgCoXcRZ36h_RKrhAy9cwNYLATh4f1JdSj_cWPPpgb2Vj10?e=qIm0aw",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

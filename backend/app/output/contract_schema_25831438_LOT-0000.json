@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831438:1:LOT-0000",
+    "candidateId": "25831438:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45311000-0",
+      "45311200-2",
+      "45315600-4"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831438",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:27Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "UzK, Geb. 130, AWR, Elektroarbeiten",
+    "description": "UzK, Geb. 130, AWR, Elektroarbeiten",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45311200-2",
+    "additionalCpvCodes": [
+      "45315600-4",
+      "45311000-0"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "50931 Köln",
+      "nuts": "DEA",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-13+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.nrw.de/VMPSatellite/notice/CXS0YYWYT1RBP78Z",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "c3cddf7e-90c6-47ee-ba1a-0378069eb5a6:1:LOT-0001",
+    "candidateId": "c3cddf7e-90c6-47ee-ba1a-0378069eb5a6:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45311200"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "c3cddf7e-90c6-47ee-ba1a-0378069eb5a6",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "f5534368-8ec2-482b-8b01-1e2b5a795afd",
+    "internalIdentifier": "42112 - DKS Angio OPs",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:08Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Diakonissenkrankenhaus und Paulinenhilfe gGmbH - Diakonieklinikum Stuttgart"
+    ]
+  },
+  "procedure": {
+    "title": "Elektro",
+    "description": "Ausführung der Elektroinstallationsarbeiten im Rahmen der \nBaumaßnahme „Angio-OP BA1 / 2. MRT BA2“.\n\nWesentliche Leistungen und Massen:\n•\tKabeltragsysteme inkl. Zubehör: ca. 35 m E30-Kabelrinne\n•\tStarkstromkabel und -leitungen: ca. 2.000 m\n•\tInstallationsleitungen verschiedener Querschnitte: ca. 1.500 m\n•\tHaupt-/Energieversorgungsleitungen: ca. 130 m\n•\tMedizinische IT-Verteiler inkl. Komponenten: 4 St.\n•\tBeleuchtungs- und Sicherheitsbeleuchtungsanlagen\n•\tMobile Brandmeldeanlagen inkl. Funk-Rauchmelder und Funk-Druckknopfmelder: ca. 30 St.\n•\tDatenübertragungsnetze inkl. Kupfertechnik und Messungen: ca. 210 St.\n•\tElektroakustische Anlagen und Such-/Signalanlagen\n•\tDemontage vorhandener Elektroinstallationen: ca. 1.500 m Leitungen/Kabel sowie ca. 60 St. Geräte und Melder\n•\tProjektierung, Montage, Messungen, Prüfung und Inbetriebnahme der Anlagen.\n\nDie Ausführung erfolgt in mehreren Bauabschnitten im laufenden Krankenhausbetrieb unter Berücksichtigung der erforderlichen technischen und organisatorischen Randbedingungen.\n",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45311200",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Rosenbergstraße 38",
+      "additionalStreet": "",
+      "postcode": "70176",
+      "city": "Stuttgart",
+      "nuts": "DE111",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-24+01:00",
+    "endDate": "2028-05-05+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "09:25:00+02:00",
+    "method": "required",
+    "url": "https://plattform.aumass.de/Veroeffentlichung/av286b8a-eu",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "- Mindestens 3 Referenzen über vergleichbare Sanitär-/Trinkwasserinstallationen innerhalb der letzten 5 Jahre. Davon sollten 2 der Referenzen in einer Gesundheitseinrichtung oder einer hinsichtlich der technischen Anforderungen vergleichbaren Einrichtung ausgeführt worden sein (mit Umbau im laufenden Betrieb). - Nachweis ausreichender personeller Kapazitäten und qualifizierten Fachpersonals. - Benennung eines verantwortlichen Bau-/Projektleiters."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe VHB 216"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://plattform.aumass.de/Veroeffentlichung/av286b8a-eu",
+        "description": "",
+        "documentType": "restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

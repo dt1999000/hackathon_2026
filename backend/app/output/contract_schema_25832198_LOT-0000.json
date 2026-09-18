@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25832198:1:LOT-0000",
+    "candidateId": "25832198:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25832198",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:26Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Fachkrankenhaus für Psychiatrie und Neurologie Altsch.,Haus 16,Probewohnen",
+    "description": "Elektroinstallation Haus 16\n\nFachkrankenhaus für Psychiatrie und Neurologie Altsch.,Haus 16,Probewohnen",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "Fachkrankenhaus für Psychiatrie und Neurologie Altsch.,Haus 16,Probewohnen Leipziger Str. 59, 04435 Schkeuditz",
+      "nuts": "",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-01+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.sachsen-vergabe.de/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a09e455bc1-305257756f117783&PublicationType=0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "57d5fdd7-2bfd-4b14-9ddb-f347675343ec:1:LOT-0000",
+    "candidateId": "57d5fdd7-2bfd-4b14-9ddb-f347675343ec:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "57d5fdd7-2bfd-4b14-9ddb-f347675343ec",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "980087e8-8ad7-4801-abe3-455b617a676c",
+    "internalIdentifier": "MG2/PV/09/2026",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T13:36:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Instandsetzung und Modernisierung Mitarbeitergebäude 2- Photovoltaik",
+    "description": "Auf dem Dach des Mitarbeitergebäudes 2 der Universität in Erfurt soll eine PV-Anlage errichtet werden.\nDas Gebäude wird umfassend saniert und der Dachstuhl vollständig erneuert.\nAuf dem Süd-West-Dach soll eine PV-Anlage installiert werden, welche mit 120 Modulen ausgestattet ist. Die Anlage ist mit 55,8kWp konzipiert. Die erzeugte Leistung soll vollständig auf der Liegenschaft verbraucht werden. Diese Ausschreibung dient der Lieferung, Errichtung, Inbetriebnahme und Abnahme dieser PV-Anlage.\nDie Arbeiten sind mit den Gewerken ELT, Dach und Rohbau entsprechend abzustimmen.\nGrobmengen LV - PV-Anlage\n120 St 465Wp PV-Module\nUnterkonstruktion für die 120 PV-Module\n420 Dachhaken\n1 Wechselrichter\nUmbauarbeiten an der neuen NSHV\nCa. 500m Installationskabel bis 50mm²\nCa. 150m Datenkabel\nProgrammierung und Integration der Anlage in das bestehende Liegenschaftsmanagement\nDetails entsprechend Leistungsverzeichnis",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-02-01",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-06+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: Formblatt 124 \"Eigenerklärung zur Eignung\" ist Teil der Ausschreibungsunterlagen. Es werden folgende Angaben verlangt: Umsatz des Unternehmens in den letzten 3 abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. Angaben zu Leistungen (Referenzen) innerhalb der letzten 3 Jahre, die mit der zu vergebenden Leistung (es muss sich um eine Photovoltaikanlage handeln) vergleichbar sind und Erklärung der Vorlage von drei Referenznachweisen (s. Erläuterung Fbl.124), falls das Angebot in die engere Wahl kommt. Erklärung, dass die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen und falls das Angebot in die engere Wahl gelangt, Vorlage der Zahl der in den letzten 3 abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal. Erklärung zu Eintragung in das Berufsregister des (Wohn-) Sitzes und der Vorlage eines Nachweises, falls das Angebot in die engere Wahl kommt. Erklärung zu Insolvenzverfahren und Liquidation. Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber in Frage stellt Erklärung der ordnungsgemäßen Erfüllung der Zahlungsverpflichtung von Steuern und Abgaben sowie der Beiträge zur gesetzlichen Sozialversicherung und der Vorlage einer Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse (soweit Betrieb beitragspflichtig ist), einer Unbedenklichkeitsbescheinigung des Finanzamtes (soweit das Finanzamt derartige Bescheinigungen ausstellt) sowie einer Freistellungsbescheinigung nach § 48b EStG, falls das Angebot in die engere Wahl kommt. Erklärung der Mitgliedschaft bei der Berufsgenossenschaft und der Vorlage einer qualifizierten Unbedenklichkeitsbescheinigung des Berufsgenossenschaft falls das Angebot in die engere Wahl kommt."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891409",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

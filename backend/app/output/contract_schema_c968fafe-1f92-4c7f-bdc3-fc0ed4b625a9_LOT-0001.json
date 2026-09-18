@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "c968fafe-1f92-4c7f-bdc3-fc0ed4b625a9:1:LOT-0001",
+    "candidateId": "c968fafe-1f92-4c7f-bdc3-fc0ed4b625a9:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45443000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "c968fafe-1f92-4c7f-bdc3-fc0ed4b625a9",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "c968fafe-1f92-4c7f-bdc3-fc0ed4b625a9",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:32Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Paderborn"
+    ]
+  },
+  "procedure": {
+    "title": "Erweiterung Realschule Schloß Neuhaus; Fassadenarbeiten-Hinterlüftet",
+    "description": "Erweiterung einer Realschule über vier Geschosse, einschließlich eines Untergeschosses mit Fahrradgarage, Verwaltungstrakt und Verbindungsbau an den Bestandschulbau. Hier: Fassadenarbeiten, hinterlüftet mit Aluminium-Edelstahl-Unterkonstruktion und Fassadenplatten mit Holzoptik, Brandsperren/ -riegel, Zubehör/ Sonstiges",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45443000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DEA47",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-11+01:00",
+    "endDate": "2027-03-26+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "08:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in das Berufs- oder Handelsregister oder der Handwerksrolle ihres Sitzes oder Wohnsitzes"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer Berufshaftpflicht"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Ausführung von Leistungen in den letzten fünf abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Angabe der technischen Fachkräfte oder der technischen Stellen, die mit der Qualitätskontrolle beauftragt sind, und derjenigen, über die der Unternehmer für die Errichtung des Bauwerks verfügt Maßnahmen des Unternehmens zur Qualitätssicherung"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten: Um einen eventuellen Ausschluss des Angebotes zu vermeiden, legen Sie bitte die geforderten Nachweise und Erklärungen dem Angebot unbedingt vollständig bei."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/c968fafe-1f92-4c7f-bdc3-fc0ed4b625a9",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

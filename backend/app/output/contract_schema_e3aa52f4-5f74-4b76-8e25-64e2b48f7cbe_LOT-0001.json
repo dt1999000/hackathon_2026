@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e3aa52f4-5f74-4b76-8e25-64e2b48f7cbe:1:LOT-0001",
+    "candidateId": "e3aa52f4-5f74-4b76-8e25-64e2b48f7cbe:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45324000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e3aa52f4-5f74-4b76-8e25-64e2b48f7cbe",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "6ce671ad-fab4-450e-b7ce-9b4c182fdd5f",
+    "internalIdentifier": "M-2026-0018",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:29Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Große Kreisstadt Donauwörth"
+    ]
+  },
+  "procedure": {
+    "title": "Trockenbauarbeiten_Sanierung Multifunktionaler Gemeinbedarfsstandort Tanzhaus",
+    "description": "Fertigstellung DG 3+2+1 erfolgt 151 Werktage nach der Auftragserteilung. Fertigstellung OG 2+1 erfolgt 163 Werktage nach der Auftragserteilung.  Fertigstellung EG + UG 2+1 erfolgt 235 Werktage nach der Auftragserteilung.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45324000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "86609",
+      "city": "Donauwörth",
+      "nuts": "DE27D",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "235"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4D6XMPWS",
+    "questionDeadlineDate": "2026-10-08+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Eigenerklärung (s. Formular 124 und Fomular 127): - dass nachweislich keine zwingenden Ausschlussgründe gem. § 123 GWB vorliegen - dass nachweislich keine fakultativen Ausschlussgründe nach § 124 GWB vorliegen - der Bieter seine Verpflichtungen zur Zahlung von Steuern und Abgaben, sowie der Beiträge zur gesetzlichen Sozialversicherung ordnungsgemäß erfüllt - eine Eintragung im Berufs- oder Handelsregister (soweit eine Eintragungspflicht besteht) vorliegt, - dass der Bieter bei der Berufsgenossenschaft gemeldet ist - dass der Bieter im Vergabeverfahren keine vorsätzlich unzutreffenden Erklärungen in Bezug auf die Eignung abgegeben hat, - dass eine Eigenerklärung (Formblatt 127) zu Russlandsanktionen durch den Bieter abgegeben wird. Referenzen werden gefordert und sind mit dem Angebot vorzulegen: mindestens drei Referenzen in den zurückliegenden 5 Jahren mit einem Auftragvolumen von mindestens 1.745.000 EUR Die Referenzen sind dem Angebot beizulegen und müssen Leistungen in folgendem Umfang vorweisen: Holzbau als Gesamtleistung mit einem hohen Vorfertigungsgrad mit den einzelnen Gewerke Holzrohbau (inkl. Holzdachstuhl), Fenster + Pfosten- & Riegelfassade, sowie die Vorhangfassade. der Jahresumsatz der letzten drei Jahre muss jeweils 5.000.000 EUR brutto erreichen"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden im Rahmen des § 16a EU VOB/A nachgefordert. Fehlende Unterlagen können nach § 56 VgV zum Ausschluss führen. Das Leistungsverzeichnis kann nicht nachgefordert werden."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4D6XMPWS/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

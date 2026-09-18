@@ -1,0 +1,867 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sivihack2026.local/schemas/contract_metadata.schema.json",
+  "title": "ContractMetadata",
+  "description": "Common metadata schema for a public procurement contract/lot, unified across heterogeneous sources (e.g. oeffentlichevergabe.de eForms-derived JSON feeds and TED/OJS PDF notices). Every top-level and nested field notes, in its description, whether it is populated by BOTH sources, or only ONE — fields marked 'both' are the safe common ground to build matching logic on; fields marked with a single source are optional enrichment, present when that source supplies it. Both example sources here are themselves eForms-based (Germany's eForms profile and the EU TED eForms profile respectively), which is why so much lines up directly. IMPORTANT: one instance of this schema = one LOT, not one notice -- value, duration, submission, classification, and similar 'single object' properties are lot-scoped. When a notice contains multiple lots, produce one instance per lot and use (notice.identifier, notice.version, notice.lotIdentifier) together as the record's natural key; notice.identifier + notice.version alone is not unique across a multi-lot notice.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "notice",
+    "buyer",
+    "procedure",
+    "classification",
+    "placeOfPerformance"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Version of this common schema (not part of either source; added by the unification step)."
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Where this record came from and how it was produced. Not a contract attribute itself -- pipeline bookkeeping. Present in both, but populated very differently per source.",
+      "properties": {
+        "sourceSystem": {
+          "type": "string",
+          "enum": [
+            "oeffentlichevergabe.de",
+            "TED",
+            "service.bund.de",
+            "other"
+          ],
+          "description": "Which upstream system this record was normalized from. BOTH (you set this when you ingest)."
+        },
+        "sourceRecordId": {
+          "type": "string",
+          "description": "The source's own natural key for this record: JSONL -> candidateId; TED PDF -> '<publicationNumber>' e.g. '369596-2025'. BOTH."
+        },
+        "candidateId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Pipeline-specific candidate key combining notice+version+lot. ONE (oeffentlichevergabe.de JSON only: 'candidateId')."
+        },
+        "matchedVia": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "How the discovery step matched this record to the search (e.g. 'lot'). ONE (oeffentlichevergabe.de JSON only: 'discovery.matchedVia')."
+        },
+        "matchedCpvCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "CPV codes that triggered the match, as opposed to all CPV codes on the lot. ONE (oeffentlichevergabe.de JSON only: 'discovery.matchedCpvCodes')."
+        },
+        "missingEvidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Flags for data the agent pipeline expected but could not retrieve (e.g. 'attachments_not_downloaded_or_unavailable'). ONE (oeffentlichevergabe.de JSON only: top-level 'missingEvidence'). For a PDF-sourced record, treat 'attachments_not_downloaded_or_unavailable' as implicit -- PDFs never carry the underlying tender documents either, only a link to them (see procurementDocuments.links)."
+        },
+        "retrievedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "description": "When your pipeline fetched/parsed this record. BOTH, but you populate it at ingest time; neither source states it directly."
+        }
+      }
+    },
+    "notice": {
+      "type": "object",
+      "description": "Identity of the official notice this record was published as.",
+      "required": [
+        "identifier",
+        "publicationDate",
+        "lotIdentifier"
+      ],
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "description": "Primary notice identifier. BOTH: JSONL -> 'noticeIdentifier' (UUID); TED PDF -> the publication number, e.g. '369596-2025' (see also 'publicationNumber' which duplicates this for TED)."
+        },
+        "version": {
+          "type": "string",
+          "description": "Notice version, as an incrementing string ('01', '02', ...). BOTH: JSONL -> 'noticeVersion'; TED PDF -> parsed from 'Notice identifier/version' line."
+        },
+        "lotIdentifier": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Identifier of the specific LOT this record describes -- required together with 'identifier' (+ 'version') as the natural key for a record, because notice.identifier alone is NOT unique: a single notice can be split into multiple lots (e.g. a EUR 14M framework notice with 5 separately awardable lots), and value/duration/submission/classification on this schema are all single objects, i.e. one record = one lot, not one record = one notice. Inserting records keyed on notice.identifier + notice.version alone will silently overwrite one lot's record with another's. BOTH, different reliability: TED -> 'identifier-lot' (e.g. 'LOT-0001' or a UUID per lot), returned as one array entry per lot alongside the other '-lot'-suffixed search fields (estimated-value-lot, place-of-performance-subdiv-lot, etc.) -- these arrays must be zipped together by position, not just read at index 0. JSONL (oeffentlichevergabe.de) has no separate lot-identifier field exposed at the level sampled here; 'provenance.candidateId' already encodes notice+version+lot combined, so when no cleaner per-lot field is available, parse the lot component out of candidateId (or store the raw candidateId here) rather than leaving this null. Null is valid ONLY when the notice is confirmed to be unsplit into lots (a single-lot notice/procedure) -- do not default to null when lot splitting is simply unknown, since that reintroduces the same collision risk this field exists to prevent."
+        },
+        "procedureIdentifier": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "UUID of the underlying procurement procedure (stable across notice versions/amendments). BOTH: JSONL -> 'eforms.procedureIdentifier'; TED PDF -> '2.1 Procedure > Procedure identifier'."
+        },
+        "internalIdentifier": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The buyer's own internal reference / file number for this procedure. BOTH: JSONL -> 'eforms.internalIdentifier'; TED PDF -> '2.1 Procedure > Internal identifier'."
+        },
+        "formType": {
+          "type": "string",
+          "description": "eForms notice form type / role, e.g. 'competition', 'change'. BOTH: JSONL -> 'discovery.formType'; TED PDF -> subtitle line under the title (e.g. 'Contract or concession notice - standard regime - Change notice') and 'Notice information > Form type'."
+        },
+        "noticeTypeCode": {
+          "type": "string",
+          "description": "eForms machine-readable notice type code, e.g. 'cn-standard'. BOTH: JSONL -> 'discovery.noticeType' / 'eforms.noticeTypeCode'; TED PDF -> not printed verbatim, but derivable from 'Notice information > Notice type' human label (e.g. 'Contract or concession notice - standard regime' -> cn-standard)."
+        },
+        "noticeTypeLabel": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Human-readable notice type label. ONE (TED PDF only: 'Notice information > Notice type')."
+        },
+        "noticeSubtype": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "TED numeric notice subtype code (e.g. '16'). ONE (TED PDF only: 'Notice information > Notice subtype')."
+        },
+        "noticeRootType": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "eForms root type, e.g. 'ContractNotice'. ONE (oeffentlichevergabe.de JSON only: 'eforms.noticeRootType')."
+        },
+        "ojsIssueNumber": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Official Journal (OJ S) issue this notice was published in, e.g. '109/2025'. ONE (TED PDF only, since only TED publishes to the OJ S)."
+        },
+        "publicationNumber": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "TED's own publication number, e.g. '369596-2025'. Duplicates 'identifier' for TED-sourced records. ONE (TED PDF only)."
+        },
+        "publicationDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the notice was published. BOTH: JSONL -> 'discovery.publicationDate'; TED PDF -> header line / 'Notice information > Publication date'."
+        },
+        "issueDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date",
+          "description": "Date the buyer issued/dispatched the notice (may precede publicationDate). BOTH, different labels: JSONL -> 'eforms.issueDate'; TED PDF -> 'Notice information > Notice dispatch date'."
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Language(s) the notice itself is officially available in. ONE reliably (TED PDF: 'Notice information > Languages in which this notice is officially available'); not present as a distinct field in the JSONL sample."
+        },
+        "legalBasis": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Governing legal framework, e.g. 'Directive 2014/24/EU'. ONE (TED PDF only: '2.1.4 General information > Legal basis')."
+        },
+        "changeNotice": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Present only when this notice amends a prior one. ONE (TED PDF only, section '10. Change'); the oeffentlichevergabe.de JSON sample does include formType='change' records (3 of 342) but does not expose the change details in the fields shown here.",
+          "properties": {
+            "previousNoticeVersionId": {
+              "type": "string",
+              "description": "ID of the notice version being changed."
+            },
+            "reasonForChange": {
+              "type": "string",
+              "description": "e.g. 'Information updated'."
+            },
+            "changes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "sectionIdentifier": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "buyer": {
+      "type": "object",
+      "description": "The contracting authority.",
+      "required": [
+        "names"
+      ],
+      "properties": {
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Official name(s) of the buyer (can be a joint procurement with several). BOTH: JSONL -> 'eforms.buyerNames'; TED PDF -> '1.1 Buyer > Official name' (and 'Organisations' entry with role 'Buyer')."
+        },
+        "legalType": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "e.g. 'Local authority'. ONE (TED PDF only: '1.1 Buyer > Legal type of the buyer')."
+        },
+        "activity": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "e.g. 'General public services'. ONE (TED PDF only: '1.1 Buyer > Activity of the contracting authority')."
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ONE reliably (TED PDF: '1.1 Buyer > Email' / Organisations entry); not exposed at buyer level in the JSONL sample (only inside long-text selection criteria)."
+        },
+        "address": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/address"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Buyer's postal address. ONE (TED PDF only, via the 'Organisations' entry with role 'Buyer')."
+        },
+        "website": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Buyer's website / buyer profile URL. ONE (TED PDF only: 'Internet address' / 'Buyer profile' on the Organisations entry)."
+        }
+      }
+    },
+    "procedure": {
+      "type": "object",
+      "description": "The award procedure itself, as distinct from the lot's subject matter.",
+      "required": [
+        "title"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "BOTH: JSONL -> 'discovery.title' / 'eforms.title'; TED PDF -> '2.1 Procedure > Title'."
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Free-text description of the work/procurement. BOTH: JSONL -> 'discovery.description' / 'eforms.description'; TED PDF -> '2.1 Procedure > Description'."
+        },
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Normalized procedure type, e.g. 'open', 'restricted', 'negotiated'. BOTH, but raw vocabularies differ per source/country profile (see 'typeRaw'): JSONL -> 'eforms.procedureType' (seen values include 'open', 'de-open', 'neg-w-call', 'de-restricted-w-call', 'de-restricted-wo-call', and even free German text); TED PDF -> '2.1 Procedure > Type of procedure' (plain label, e.g. 'Open')."
+        },
+        "typeRaw": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Un-normalized procedure type string exactly as the source gave it. Keep alongside 'type' because the code lists are not 1:1 across sources."
+        },
+        "isAccelerated": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "ONE (TED PDF only: '2.1 Procedure > The procedure is accelerated')."
+        },
+        "strategicProcurementAim": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "e.g. 'No strategic procurement'. ONE (TED PDF only: '5.1.7 Strategic procurement > Aim')."
+        }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "description": "What kind of contract this is and its CPV classification.",
+      "required": [
+        "mainNature",
+        "mainCpvCode"
+      ],
+      "properties": {
+        "mainNature": {
+          "type": "string",
+          "enum": [
+            "works",
+            "services",
+            "supplies",
+            ""
+          ],
+          "description": "BOTH: JSONL -> 'discovery.mainNature' / 'eforms.contractNature'; TED PDF -> '2.1.1 Purpose > Main nature of the contract' (title-cased there, e.g. 'Works')."
+        },
+        "mainCpvCode": {
+          "type": "string",
+          "description": "First/primary CPV code. BOTH: JSONL -> first element of 'eforms.cpvCodes'; TED PDF -> '2.1.1 Purpose > Main classification (CPV)', e.g. '45315000'."
+        },
+        "additionalCpvCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "BOTH: JSONL -> remaining elements of 'eforms.cpvCodes' (0 to 23 additional codes observed across the sample); TED PDF -> '2.1.1 Purpose > Additional classification (CPV)'."
+        }
+      }
+    },
+    "placeOfPerformance": {
+      "type": "array",
+      "description": "BOTH (usually a single entry, occasionally 0 or 2 in the JSONL sample): JSONL -> 'eforms.locations'; TED PDF -> '2.1.2 Place of performance' (also repeated per-lot under '5.1.2').",
+      "items": {
+        "$ref": "#/$defs/address"
+      }
+    },
+    "value": {
+      "type": "object",
+      "description": "Estimated contract value. BOTH in structure, but sparsely populated in the JSONL sample (only 16 of 342 records) vs consistently present in the TED PDF ('2.1.3'/'5.1.3/5' Value).",
+      "properties": {
+        "estimatedValue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Numeric value excluding VAT. JSONL -> 'eforms.estimatedValue' (string, often empty -- cast to number); TED PDF -> 'Estimated value excluding VAT', e.g. 6287408.40."
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ISO currency code. JSONL -> 'eforms.estimatedValueCurrency' (often empty in the sample); TED PDF -> inferred from the value line, e.g. 'EUR'."
+        }
+      }
+    },
+    "duration": {
+      "type": "object",
+      "description": "BOTH: JSONL -> 'eforms.durationStartDate' / 'durationEndDate' / 'durationMeasure'; TED PDF -> '5.1.3 Estimated duration > Start date' / 'Duration end date'.",
+      "properties": {
+        "startDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "endDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "measure": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Duration expressed as a length instead of start/end dates (e.g. '12 months'), used when the source gives one or the other. ONE reliably as a distinct field (JSONL: 'eforms.durationMeasure'); TED gives explicit dates instead."
+        }
+      }
+    },
+    "submission": {
+      "type": "object",
+      "description": "Tendering / offer-submission logistics.",
+      "properties": {
+        "deadlineDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date",
+          "description": "BOTH: JSONL -> 'eforms.submissionDeadlineDate'; TED PDF -> '5.1.12 Terms of procurement > Deadline for receipt of tenders'."
+        },
+        "deadlineTime": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "BOTH: JSONL -> 'eforms.submissionDeadlineTime'; TED PDF -> time component of the same deadline line, with timezone label."
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "required",
+            "allowed",
+            null
+          ],
+          "description": "Whether electronic submission is required or merely allowed. BOTH: JSONL -> 'eforms.submissionMethod'; TED PDF -> '5.1.12 > Terms of submission > Electronic submission'."
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Where to submit. BOTH: JSONL -> 'eforms.submissionUrl' (empty in this sample); TED PDF -> '5.1.12 > Address for submission'."
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Languages tenders may be submitted in. ONE reliably (TED PDF: '5.1.12 > Languages in which tenders ... may be submitted'); not present at this granularity in the JSONL sample."
+        },
+        "questionDeadlineDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Deadline to submit clarification questions. ONE reliably as a populated field (JSONL: 'eforms.questionDeadlineDate', empty in this sample but present as a field); TED PDF -> '2.1.4 > Deadline for requesting additional information'."
+        },
+        "variantsAllowed": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "ONE (TED PDF only: '5.1.12 > Variants')."
+        },
+        "electronicCatalogueAllowed": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "ONE (TED PDF only: '5.1.12 > Electronic catalogue')."
+        },
+        "multipleTendersAllowed": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "ONE (TED PDF only: '5.1.12 > Tenderers may submit more than one tender')."
+        },
+        "tenderValidityPeriod": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "e.g. '60 Days'. ONE (TED PDF only: '5.1.12 > Duration during which the tender must remain valid')."
+        }
+      }
+    },
+    "selectionCriteria": {
+      "type": "array",
+      "description": "Eligibility/qualification criteria bidders must meet. BOTH, and unusually well-aligned: JSONL -> 'eforms.selectionCriteria' (list of {code, description}, code drawn from the eForms selection-criteria codelist e.g. 'slc-stand-to-avg'); TED PDF -> '5.1.9 Selection criteria' (list of {criterion label, description}, same underlying codelist rendered as human labels e.g. 'Specific yearly turnover').",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "eForms codelist code where available (JSONL has it directly; for PDF-sourced records this can be left null or back-filled from the label)."
+          },
+          "label": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Human-readable criterion name (TED PDF 'Criterion:' line)."
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "awardCriteria": {
+      "type": "object",
+      "description": "How the winning tender will be chosen.",
+      "properties": {
+        "types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "price",
+              "cost",
+              "quality"
+            ]
+          },
+          "description": "BOTH: JSONL -> 'eforms.awardCriterionTypes' (bare type list, often empty -- 230/342 in the sample); TED PDF -> '5.1.10 Award criteria > Type' per criterion."
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "price",
+                  "cost",
+                  "quality"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "description": "ONE reliably with a free-text description attached (TED PDF: '5.1.10' gives type + description per criterion, e.g. type=Price, description='siehe Vergabeunterlagen'); the JSONL sample only gives bare types without descriptions."
+        }
+      }
+    },
+    "contractTerms": {
+      "type": "object",
+      "description": "Miscellaneous eligibility/contract-condition flags. ONE (TED PDF only, mostly section '5.1.6' and '5.1.12'); the JSONL sample carries an analogous but coded, non-boolean version of some of this in 'eforms.qualificationRequirements' (see that field) and 'eforms.executionConditions' (e.g. reserved-execution, einvoicing, ecatalog-submission codes) rather than these human labels.",
+      "properties": {
+        "reservedParticipation": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "e.g. 'Participation is not reserved.'"
+        },
+        "staffNamesRequired": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Whether names/qualifications of assigned staff must be disclosed."
+        },
+        "euFunded": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "gpaCovered": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Covered by the WTO Government Procurement Agreement."
+        },
+        "suitableForSMEs": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "nonDisclosureRequired": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "eInvoicingAllowed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "eOrderingUsed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "ePaymentUsed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "shelteredEmploymentRequired": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Contract execution reserved for sheltered-employment programmes."
+        },
+        "performanceConditions": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Free-text conditions relating to contract performance."
+        }
+      }
+    },
+    "qualificationRequirementCodes": {
+      "type": "array",
+      "description": "ONE (oeffentlichevergabe.de JSON only: 'eforms.qualificationRequirements', list of {code, codeList, description}). Coded flags such as selection-criteria-source, missing-info-submission, reserved-procurement -- roughly the machine-coded counterpart to several of the free-text 'contractTerms' fields above, but not field-for-field equivalent, so kept separate rather than force-merged.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "codeList": {
+            "type": "string"
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "procurementDocuments": {
+      "type": "object",
+      "description": "Where to find the full tender documents (never the documents themselves, in either source).",
+      "properties": {
+        "links": {
+          "type": "array",
+          "description": "BOTH: JSONL -> 'documentLinks' / 'eforms.documentLinks' (structured, with documentType/scope); TED PDF -> '5.1.11 Procurement documents > Address of the procurement documents' (a single URL, less structured).",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "documentType": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "languagesAvailable": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "ONE reliably (TED PDF: '5.1.11 > Languages in which the procurement documents are officially available')."
+        }
+      }
+    },
+    "framework": {
+      "type": "object",
+      "description": "ONE (TED PDF only: '5.1.15 Techniques'); not present in the JSONL sample fields shown.",
+      "properties": {
+        "hasFrameworkAgreement": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "hasDynamicPurchasingSystem": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "description": "Legal remedies / appeals body. ONE (TED PDF only: '5.1.16 Further information, mediation and review', and the matching 'Organisations' entry with role 'Review organisation').",
+      "properties": {
+        "organisationName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "organisationAddress": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/address"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "organisationEmail": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "deadlinesInfo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Free-text explanation of appeal deadlines/rules."
+        }
+      }
+    },
+    "exclusionGrounds": {
+      "type": "array",
+      "description": "ONE (TED PDF only: '2.1.6 Grounds for exclusion' -- a fixed checklist of ~20 grounds, almost always blank per-ground with occasional free-text notes). Not present in the JSONL sample fields shown.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ground": {
+            "type": "string",
+            "description": "e.g. 'Misrepresentation, withheld information...'"
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Free text if the buyer specified something for this ground, else null."
+          }
+        }
+      }
+    },
+    "organisations": {
+      "type": "array",
+      "description": "All organisations referenced by the notice, with their role(s). ONE as a distinct, structured, multi-role list (TED PDF section '8. Organisations'); the JSONL sample only exposes the buyer as a bare name list ('eforms.buyerNames') without a comparable full organisations table.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "officialName": {
+            "type": "string"
+          },
+          "registrationNumber": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "department": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "$ref": "#/$defs/address"
+          },
+          "email": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "phone": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fax": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "website": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "e.g. 'Buyer', 'Review organisation', 'TED eSender', 'Organisation receiving requests to participate'."
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "additionalStreet": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "postcode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nuts": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "EU NUTS region code, e.g. 'DE501'."
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ISO 3166-1 alpha-3 country code, e.g. 'DEU'."
+        }
+      }
+    }
+  }
+}

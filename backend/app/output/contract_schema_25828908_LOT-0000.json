@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25828908:1:LOT-0000",
+    "candidateId": "25828908:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25828908",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:18Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Neubau WC-Gebäude inkl. Tiefbauarbeiten",
+    "description": "BAB A3, Neubau WC-Gebäude inkl. Tiefbauarbeiten auf der unbewirtschafteten PWC-Anlage Haimburger Wald bei Berg\n\nNeubau WC-Gebäude inkl. Tiefbauarbeiten",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "BAB A3, PWC Haimburger Wald zwischen AS Oberölsbach und AS Neumarkt i.d.OPf, Betr. km 421+618 bis 424+506",
+      "nuts": "",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-28+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.autobahn.de/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a090bd9961-5613abdcd4c2af15&PublicationType=0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "55810981-ec4f-4b9f-89e4-bf744a332882:1:LOT-0000",
+    "candidateId": "55810981-ec4f-4b9f-89e4-bf744a332882:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45232000",
+      "45233120",
+      "45233222",
+      "45234116",
+      "45262300",
+      "45262670",
+      "45316212"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "55810981-ec4f-4b9f-89e4-bf744a332882",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "00fc1769-4a45-46b4-ba87-ca0700ab6f5b",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:25Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Vergabestelle: Städtische Werke Netz + Service GmbH, Auftraggeber: Gleisbauarbeiten (Titel 1 anteilig und Titel 3 des LV) Kasseler Verkehrs-Gesellschaft AG, Königstor 3-13, 34117 Kassel, Brückensanierung und Integration von Radverkehrsanlagen (Titel 1 anteilig, Titel 2 und Tiel 4 des LV), Magistrat der Stadt Kassel, Straßenverkehrsamt- und Tiefbauamt, Obere Königsstraße 8, 34117 Kassel"
+    ]
+  },
+  "procedure": {
+    "title": "Berliner Brücke (Teichstr.) - Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen",
+    "description": "Gleiserneuerung, Brückensanierung und Integration von Radverkehrsanlagen\n\nGewerk 1: Allgemneine Arbeiten\nBaustelleneinrichtung\nBaubegleitende Maßnahmen, Hilfsleistungen\nTechnische Bearbeitung\nVerkehrssicherung\nKampfmittelsondierung\n\nGewerk 2: Brückenbau\n560 m² Asphalt aufnehmen und entsorgen\n760 m² Abdichtung aufnehmen und entsorgen\n760 m² Betonoberfläche vorbereiten\n24 m³ UHFB Schutzschicht einbauen\n545 m² UHFB-Splittmatrix Verschleißschicht\n8 m³ Stahlbeton\n31 m Stahlgeländer\n72 m Vertikaler Berührungsschutz\n205 m² Abdichtung aus Flüssigkunststoff\n45 m Elastische Übergangskonstruktion\n\nGewerk 3: Gleisbauarbeiten\n650 m² Gleisbaupflaster mit Pflastervergussmasse aufnehmen und entsorgen\n240 m² Pflasterstreifen 1 bis 4-reihig aufnehmen\n215 m² Ausbau Asphalt im Gleisbereiche\n175 m² Ausbau Stahlbeton im Gleisbereiche\n890 m² Rillengleis Ausgleichsschicht bis 15 cm ausbauen und entsorgen\n650 m³ Straßenaufbruchmaterial aufnehmen und entsorgen\n260 m³ Untergrundverbesserung aus Schottertragschicht 0/56 liefern und einbauen\n225 m³ Frostschutzschicht 0/45 mm, 20 bis 30 cm dick liefern und einbauen\n220 t Dräntragschicht PA 22 T WDA, d = 10 cm, herstellen\n175 t Dräntragschicht PA 16 TD WDA bis 8 cm herstellen\n75 m³ Betontragschicht C35/45 mit PPP-Fasergehalt\n450 m² Asphaltbinder AC 16 liefern und einbauen\n75 m³ Bituminöse Tragschicht 0/32 herstellen in Bereich von Gleisen\n950 m² Asphaltdeckschicht 0/8mm, 3,5 cm dick liefern und einbauen\n50 m³ Einbau Betonfahrbahn C35/45\n300 m Rillengleis 59R2 ausbauen und entsorgen\n300 m Rillengleis 59R2 herstellen und untergießen\n\nGewerk 4: Radverkehrsführung\n170 m Fugenschnitt herstellen\n475 m² Bituminöser und kohlenteerhaltiger Aufbruch\n135 m² Pflaster aufnehmen und entsorgen\n150 m² Pflaster aufnehmen und zwischenlagern\n215 m Bordsteine aufnehmen und entsorgen\n40 m 1- bis 3- reihige Gosse aufnehmen und entsorgen\n25 m Pflasterstreifen zweizeilig aus Natursteinen aufnehmen und entsorgen\n25 m Pflasterstreifen zweizeilig aus Natursteinen aufnehmen und lagern\n85 m Rinne aufnehmen und entsorgen\n60 m³ Boden lösen und entsorgen\n80 m² Schotter lösen, fördern, zwischenlagern, einbauen\n14 t Frostschutzschicht 0/32\n365 m² Frostschutzschicht 0/45 herstellen\n365 m² Bituminöse Tragschicht AC 32 TS liefern und einbauen\n365 m² Bituminöses Bindemittel aufsprühen\n365 m² Asphaltbeton AC 11 DS liefern und einbauen\n150 Stk Leitschwellen aus Recycling-Gummi liefern und einbauen\n100 m Betonpflasterstreifen herstellen\n25 m² Leitsystem verlegen\n155 m Betonbordsteine liefern und setzen\n60 Stk Querungsbord liefern und verlegen\n1 Stk LSA\n5 m Kabelarbeiten\n\nVorzulegende Unterlagen\nUnterlagen, die mit dem Angebot abzugeben sind:\n121 AS_O_KVG-26-031\n103 NU_O_KVG-26-031\n106 EBG_O_KVG-26-031\n107 EE_O_KVG-26-031\n104.1 ETB_O_KVG-26-031\n104.2 EWL_O_KVG-26-031\nEigenerklaerung_RUS_Sanktionen_Art_5k_O_KVG-26-031\nVerpflichtungserklaerung_zu_Tariftreue_O_KVG-26-031\nSelbstgefertigtes Leistungsverzeichnis (Abschrift oder Kurzfassung) mit Preisen\nProduktangaben in folgenden Positionen:\n03.02.0028, 03.02.0029, 03.02.0031, 03.02.0034, 03.02.0035, 03.02.0047, 03.02.0050, 03.02.0051, 03.03.0007, 03.03.0014\n\n\nUnterlagen, die auf gesondertes Verlangen der Vergabestelle vorzulegen sind:\n- 105 VE_O_KVG-26-031\n- Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis in Anlehnung an das den Vergabeunterlagen beiliegende Muster aus dem HVA B-StB: 3103 HVA B-StB Vorlage Referenzbescheinigung\n- Nachweise hinsichtlich einer eventuell durchgeführten Selbstreinigung\n- Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls das Unternehmen beitragspflichtig ist\n- Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen, falls das Finanzamt eine solche Bescheinigung ausstellt\n- Rechtskräftig bestätigter Insolvenzplan (falls eine Erklärung über das Vorliegen eines solchen Insolvenzplanes angegeben wurde)\n- Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle\n(Handwerkskarte) bzw bei der Industrie- und Handelskammer oder anderweitige sonstige Nachweise\n- Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers\n- Zur Höhe des Umsatzes Bestätigung eines vereidigten Wirtschaftsprüfers/Steuerberaters oder entsprechend testierte Jahresabschlüsse oder entsprechend testierte Gewinn- und Verlustrechnungen\n- Erklärung zur Zahl der in den letzten 3 Jahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen, mit extra ausgewiesenem technischen Leitungspersonal\n- Versicherungsnachweis\n- Zulassungen der Deutschen Bahn für Schweißungen nach OR 8.1.7 - Z2\n- Produktdatenblätter benannter Fabrikate (nur soweit vom Bieter Angaben gemacht wurden)\n- Preisermittlungsunterlagen (z.B. Auszüge aus der Urkalkulation) zur Aufklärung auffälliger Einheitspreise\n- Urkalkulation\n- Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber in Frage stellt. Hierfür ist das Formblatt \"107 EE_O_KVG-26-031\" zu verwenden.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "45262300",
+      "45262670",
+      "45233120",
+      "45234116",
+      "45233222",
+      "45316212",
+      "45232000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Teichstraße",
+      "additionalStreet": "",
+      "postcode": "34130",
+      "city": "Kassel",
+      "nuts": "DE731",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-06-21+02:00",
+    "endDate": "2027-08-13+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-02+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Zulassungen der Deutschen Bahn für Schweißungen nach OR 8.1.7 - Z2"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Vorlage geeigneter Referenzen über die Ausführung von Bauleistungen in den letzten 5 Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind. Als vergleichbare Leistungen werden anerkannt: Mindestens zwei Referenzen über Gleisbauarbeiten. (Mindestreferenzen 1 und 2). Mindestens zwei Referenzen über Brückensanierung (Mindestreferenzen 3 und 4) Falls das Angebot in die engere Wahl kommt, sind für die Mindestreferenzen Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis unter Nutzung des Formblattes \"3103 Referenzbescheinigung\" auf gesondertes Verlangen vorzulegen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Durchschnittliche jährliche Belegschaft Falls das Angebot in die engere Wahl kommt, sind auf gesondertes Verlangen die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen und gesondert ausgewiesenem technischen Leitungspersonal anzugeben."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Die Bieter haben anzugeben, welche Teile des Auftrags an einen Unterauftrag-/ Nachunternehmer vergeben werden. Die Namen der Unterauftragnehmer/Nachunternehmer (einschl. ggf. vorh. PQ-Nummern) sind erst auf gesondertes Verlangen der Vergabestelle mitzuteilen. Auf § 5 HVTG wird hingewiesen."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer bestimmten Betriebshaftpflichtversicherung Die Deckungssummen dieser Versicherung müssen mindestens betragen: - Personen- und Haftpflichtschäden je Person Euro 5.000.000 - Sachschäden je Ereignis Euro 2.000.000 - Vermögensschäden je Ereignis Euro 500.000 Sofern die vorgenannten Deckungssummen derzeit nicht bestehen, muss die bestehende Betriebshaftpflichtversicherung gemäß den vorstehenden Vorgaben im Auftragsfall aufgestockt werden. Falls das Angebot in die engere Wahl kommt, ist eine Bestätigung der Versicherung auf gesondertes Verlangen vorzulegen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung, Angaben zu evtl. Insolvenzverfahren und Liquidation Falls das Angebot in die engere Wahl kommt, ist auf gesondertes Verlangen eine Unbedenklichkeitsbescheinigung des Finanzamtes vorzulegen."
+    },
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "Nachweis Mindestjahresumsatz Falls das Angebot in die engere Wahl kommt, ist eine Bestätigung eines vereidigten Wirtschaftsprüfers/Steuerberaters oder entsprechend testierte Jahresabschlüsse oder entsprechend testierte Gewinn- und Verlustrechnungen auf gesondertes Verlangen vorzulegen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Angabe zur Mitgliedschaft bei der Berufsgenossenschaft Falls das Angebot in die engere Wahl kommt, ist eine qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers auf gesondertes Verlangen vorzulegen."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Registereintragungen Falls das Angebot in die engere Wahl kommt, sind zur Bestätigung der Erklärung auf gesondertes Verlangen vorzulegen: Gewerbeanmeldung, Berufs-/Handelsregisterauszug, Eintragung in der Handwerksrolle oder bei der Industrie- und Handelskammer oder anderweitige sonstige Nachweise."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung richtet sich nach § 16a EU VOB/A Die Bietergemeinschaft, die den Zuschlag erhält, muss eine bestimmte Rechtsform aufweisen: Bietergemeinschaften müssen bei Auftragserteilung eine gesamtschuldnerische ARGE mit bevollmächtigtem Vertreter, gründen."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.had.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a0382ae532-1720e1229d8efd18",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

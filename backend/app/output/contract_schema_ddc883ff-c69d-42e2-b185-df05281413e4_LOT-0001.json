@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "ddc883ff-c69d-42e2-b185-df05281413e4:1:LOT-0001",
+    "candidateId": "ddc883ff-c69d-42e2-b185-df05281413e4:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45313000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "ddc883ff-c69d-42e2-b185-df05281413e4",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "a035aa9e-6586-4db6-8056-cffcc003c467",
+    "internalIdentifier": "26-00-013",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:05Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landkreis Saarlouis"
+    ]
+  },
+  "procedure": {
+    "title": "Aufzugsanlage - Neubau Verwaltungsgebäude Landratsamt Saarlouis",
+    "description": "In den bauseits zu erstellenden Schacht im Treppenhaus des\nneuen Verwaltungsbaus soll ein barrierfreier Aufzug nach\nAufzugsrichtlinie 2014/33/EU eingebaut werden.\nDer Schacht ist in den aktuellen Plänen mit einem lichten Maß\nvon 1,65m x 1,75 m und einer Öffnunghöhe der Türen von\n2,50m von RF eingeplant (siehe Schnitt) . Die Verankerung\ndes Aufzugs soll über Betondübel durch den AN durchgeführt\nwerden.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45313000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Neue-Brauerei-Straße",
+      "additionalStreet": "",
+      "postcode": "66740",
+      "city": "Saarlouis",
+      "nuts": "DEC04",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-22+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXVHYRRDYRFLZ7U6",
+    "questionDeadlineDate": "2026-10-14+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Eigenerklärung Eignung VHB124 VOB (Mit dem Angebot; Mittels Eigenerklärung):"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Fehlende, unvollständige oder fehlerhafte Unterlagen, deren Vorlage mit dem Teilnahmeantrag und/oder dem Angebot gefordert war, werden nachgefordert, soweit zulässig. Ebenso werden fehlende Preisangaben nachgefordert, soweit zulässig."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXVHYRRDYRFLZ7U6/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

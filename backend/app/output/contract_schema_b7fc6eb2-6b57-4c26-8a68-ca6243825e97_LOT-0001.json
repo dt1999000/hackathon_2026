@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "b7fc6eb2-6b57-4c26-8a68-ca6243825e97:1:LOT-0001",
+    "candidateId": "b7fc6eb2-6b57-4c26-8a68-ca6243825e97:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45250000"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "b7fc6eb2-6b57-4c26-8a68-ca6243825e97",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "84324e15-c265-4619-87ed-af82adc56b88",
+    "internalIdentifier": "15.09.2026_Oberwinden",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:34Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Energienetze Bayern GmbH & Co.KG"
+    ]
+  },
+  "procedure": {
+    "title": "BGEA Oberwinden",
+    "description": "Vom AN ist eine (=1 Stück) Biogaseinspeiseanlage gemäß den beschriebenen teilfunktionalen Anforderungen zu errichten. Dabei sind insbesondere die TRBS 3146 / TRGS 746 sowie das DVGW Arbeitsblatt G 213 zu berücksichtigen.",
+    "type": "neg-w-call",
+    "typeRaw": "neg-w-call"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45250000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Oberwinden 5",
+      "additionalStreet": "",
+      "postcode": "85254",
+      "city": "Einsbach",
+      "nuts": "DE275",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 2500000.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YUNMP82",
+    "questionDeadlineDate": "2026-10-05+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price",
+      "quality"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-none",
+      "codeList": "missing-info-submission",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YUNMP82/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "94d5d66d-91ab-4f2e-85dc-e5b6afd22b0c:1:LOT-0000",
+    "candidateId": "94d5d66d-91ab-4f2e-85dc-e5b6afd22b0c:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "94d5d66d-91ab-4f2e-85dc-e5b6afd22b0c",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "e9e75a4f-e186-43c2-ac74-634cb72e47dd",
+    "internalIdentifier": "2026-801-000055",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T11:50:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Rekultivierung der Spülfelder 2.BA/S4,S5, 3.BA/S5,S5a und S6 im Spülgebiet Steenfelde",
+    "description": "Bei den auszuschreibenden Leistungen handelt es sich um die Wiederherstellung von ehemaligen Spülfeldern zu landwirtschaftlichen Nutzflächen (Rekultivierung) in einer Gesamtgröße von ca. 80,00 ha. Die aufgespülten Flächen liegen innerhalb der Gemeinde Westoverledingen / Ortschaft Steenfelde.\nDie Arbeiten umfassen im wesentlichen folgende Leistungen:\n> Herstellen und Vorhalten von Drängräben auf den Einzelteilspülfeldern zur Entwässerung der Spülfeldflächen über die Dauer der Rekultivierung\n> Beseitigung des Vegetationsbestandes auf den Spülfeldflächen über die Dauer der Rekultivierung\n> Bodenverbesserungsarbeiten auf den Spülfeldflächen der Einzelspülfelder\n> Auffüllen nicht bespülter Randbereiche der Einzelspülfelder mit dem aufgespülten Boden\n> Auffüllen von nicht aufgespülten Freiflächen mit Boden aus der Aufspülfläche, einschließlich erforderlicher Bodentransporte\n> Modellierung der Spülfeldflächen einschließlich der Herstellung von Entwässerungseinrichtungen für eine landwirtschaftliche Folgenutzung der Flächen\n> Herstellung von Entwässerungsgräben auf den Spülfeldflächen\n> Herstellung von Grabenüberfahrten\nWeitere Details entnehmen Sie bitte den Vergabeunterlagen",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-09",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-06+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: Kriterium: Durchschnittlicher Jahresumsatz Beschreibung: Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. Kriterium: Eintragung in das Handelsregister Beschreibung: Angaben zu Registereintragungen (Handelsregister/Handwerksrolle/Industrie- und Handelskammer) Kriterium: Andere wirtschaftliche oder finanzielle Anforderungen Beschreibung: Angabe, ob ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren eröffnet oder die Eröffnung beantragt worden ist oder der Antrag mangels Masse abgelehnt oder ein Insolvenzverfahren rechtskräftig bestätigt wurde. Falls ein Insolvenzverfahren rechtskräftig bestätigt wurde, Vorlage auf Verlangen und Angabe, ob sich das Unternehmen in Liquidation befindet. Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber/Bieter in Frage stellt: Erklärung, dass - keine Ausschlussgründe im Sinne von §6e EU VOB/A vorliegen, - in den letzten zwei Jahren kein Verstoß gegen Vorschriften vorlag, der zu einem Eintrag im Wettbewerbsregister geführt hat, mit einer Freiheitsstrafe von mehr als drei Monaten oder einer Geldstrafe von mehr als 90 Tagessätzen oder einer Geldbuße von mehr als 2.500 Euro belegt worden ist. - das Unternehmen in den letzten 3 Jahren nicht aufgrund eines Verstoßesgegen Vorschriften, der zu einer Eintragung im Wettbewerbsregister geführthat, mit einer Geldbuße von mehr als 175.000 Euro belegt worden ist. - ob ein fakultativer Ausschlussgrund im Sinne von § 6e EU Absatz 6 VOB/A vorliegt. - zwar ein fakultativer Ausschlussgrund im Sinnne von § 6e EU Absatz 1 bis 4 VOB/A vorliegt, jedoch vom Unternehmen Maßnahmen zur Selbstreinigung ergriffen wurden, durch die für das Unternehmen die Zuverlässigkeit wieder hergestellt wurde. - Ab einer Auftragssumme von 50.000 Euro (netto) wird der Auftraggeber für den Bieter bzw. alle Mitglieder der Bietergemeinschaft, auf dessen Angebot der Zuschlag erteilt werden soll sowie für andere Unternehmen das Wettbewerbsregister gem. §6 WRegG beim Bundeskartellamt abfragen. Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung: Erklärung, dass der Verpflichtung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen, ordnungsgemäß nachgekommen wurde. Angabe zur Mitgliedschaft bei der Berufsgenossenschaft Nachweise zur Fachkunde: Zur Prüfung der Fachkunde der einzelnen Bieter werden Angaben über durchgeführte, vergleichbare Leistungen aus den letzten fünf Jahren gefordert. Fachkundig ist ein Bieter, der über die für die Vorbereitung und Ausführung der jeweiligen Leistungen notwendigen technischen Kenntnisse verfügt. Die Referenzmaßnahme bezieht sich auf mindestens 1 vergleichbare Leistung. Als vergleichbare Leistung gelten Baumaßnahmen der letzten 5 Jahre welche ähnliche Umfang hatten und unter vergleichbaren technischen Randbedingungen ausgeführt wurden. Für die zu bearbeitenden Flächen liegen ungünstige Untergrundverhältnisse vor, da im Zuge der Aufspülung ausschließlich Schlick aufgespült wurde.Aufgrund noch nicht abgeschlossener Bodenreifungsprozesse sind die oberen Bodenhorizonte (0,00 bis 0,30 m) weich und die darunterliegenden Bodenhorizonte (0,30m bis 1,00) sehr weich bis breiig. Die geringe Festigkeit des sich in der Bodenbildung befindlichen, aufgespülten Schlicks kann durch Niederschlage zusätzlich verringert werden, so dass sich die Ausführung der Arbeiten in der Regel auf Zeiten mit geringen Niederschlagen und hoher Verdunstung eingrenzt. Daher werden als vergleichbare Leistungen Bauleistungen als vergleichbar bewertet, deren Ausführung baubetriebliche Erfahrungen hinsichtlich Gerateeinsatz und Geratetechnik in Weichboden erfordern (z.B. Bauleistungen aus dem Bereich des Deichbaus, der Rekultivierung von Spülfeldflächen) Im Gerätekonzept sind Angaben über den zum Einsatz kommenden Gerätepark zu machen. Auf Grundlage des Gerätekonzeptes hat der Bieter den Nachweis zu erbringen, dass Ihm der Gerätepark zur Verfügung steht, der für die Ausführung der Arbeiten die folgenden Mindestanforderungen erfüllt: Geräteträger für begleitende Arbeiten des LV - Abschnitt 2: - Planier-/ Pistenraupe ausgestattet mit Kettenlaufwerk, Bodendruck aus Betriebsgewicht < 0,15 kg/cm2. Erdbaumaschinen der LV - Abschnitte 3 und 4: - Planierraupe 125 - 160 KW, Betriebsgewicht bis 21 to., Bodendruck < 0,35 kg/cm2. - Planierraupe 125- 160 KW, Betriebsgewicht bis 19 to., Bodendruck < 0,25 kg/cm2. - Planierraupe 80-125 KW, Betriebsgewicht bis 13,5 to., Bodendruck < 0,25 kg/cm2. - Hydraulikkettenbagger"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=890718",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

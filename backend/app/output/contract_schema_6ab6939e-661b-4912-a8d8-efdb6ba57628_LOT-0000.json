@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "6ab6939e-661b-4912-a8d8-efdb6ba57628:1:LOT-0000",
+    "candidateId": "6ab6939e-661b-4912-a8d8-efdb6ba57628:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "6ab6939e-661b-4912-a8d8-efdb6ba57628",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "13ee9c87-fef3-41af-a1c5-88079bffe615",
+    "internalIdentifier": "2372/2026",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T12:22:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Metallbauarbeiten nach DIN 18 360 - 2372/2026",
+    "description": "Metallbauarbeiten nach DIN 18 360 - Gitterroste\nAuszuführende Arbeiten\nGitterroste aus Edelstahl Werkstoffnummer 1.4301\nL/B. ca. 90/ 90cm, ca. 165 Stück\nJe Element 81 Stück Tragstab 23mm/ 4mm, 7 Stück Querstab 18mm/ 3mm\nim WIG- Schweißverfahren hergestellt, in bauseitige Öffnungen in Fußboden mit Natursteinbelag auf bauseitige Unterkonstruktion verlegen,\ninnerhalb eines Bestandsgebäudes mit Sicherheitsanforderungen und erschwerter Zugänglichkeit\nohne BE-Fläche im Außenbereich\nGitterroste aus Edelstahl Werkstoffnummer 1.4301\nWie vorbeschrieben, jedoch mit Klappe und Kabelauslass, ca. sieben Stück\nAlte Gitterrostelemente\nca. 172 Stück, L/B: 90/90cm Stärke 4,0cm, aufnehmen und entsorgen\nAusführungszeiten\nAusführungsbeginn: November 2026\nAusführungsende: März 2027\nDie Vergabestelle weist darauf hin, dass zur Gewährleistung eines zügigen Verfahrens\nnur rechtzeitig bei der Vergabestelle eingegangene Bieteranfragen beantwortet werden können.\nFristende: 06.10.2026\nACHTUNG\nDie Vergabeunterlagen können unentgeltlich, uneingeschränkt, vollständig und direkt\nunter www.evergabe-online.de abgerufen werden. Es besteht keine Pflicht zur\nRegistrierung auf der Vergabeplattform. Über Änderungen der Vergabeunterlagen,\nNachsendungen, Bieterfragen, Antwortschreiben u.ä. werden Sie jedoch nur bei\nvorheriger Registrierungautomatisch unterrichtet. Andernfalls sind Sie verpflichtet, sich eigenständig die erforderlichen Informationen zu verschaffen.\n„Informationen zur Datenerhebung gemäß Artikel 13 Datenschutz-Grundverordnung (DSGVO) sind den Vergabeunterlagen aus dem beiliegenden Informationsblatt zu entnehmen“.",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-14+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: https://www.bbr.bund.de/BBR/DE/Vergaben/InformationenAuftragnehmer/Eigenerklaerung Ausländische Bieter haben gleichwertige Bescheinigungen ihres Herkunftslandes vorzulegen.Der Bieter hat die Einhaltung der Mindestentgelt-Regelungen zu berücksichtigen. Einzelheiten dazu sind in den Ausschreibungsunterlagen enthalten. Nachweise zur Fachkunde: Bei präqualifizierten Unternehmen findet eine Überprüfung ausschließlich anhand der im Präqualifikationsverzeichnis hinterlegten Referenzen statt. Sofern im Präqualifikationsverzeichnis Referenzen in der geforderten Anzahl hinterlegt sind, die in Art und Umfang den Eignungsanforderungen entsprechen, ist der gültige PQ Eintrag für den entsprechenden Leistungsbereich als Eignungsnachweis ausreichend. Sind im Präqualifikationsverzeichnis keine oder weniger als die geforderte Anzahl von Referenzen hinterlegt, die den Eignungsanforderungen entsprechen, müssen mit dem Angebot den Anforderungen entsprechende Referenzen in der fehlenden Anzahl eingereicht werden. Werden fehlende Referenzen nicht mit dem Angebot eingereicht, wird das Angebot ausgeschlossen. Eine Nachforderung fehlender Referenzen nach der Angebotsabgabe erfolgt nicht."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891389",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

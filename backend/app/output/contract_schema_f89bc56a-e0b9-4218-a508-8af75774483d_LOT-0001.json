@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "f89bc56a-e0b9-4218-a508-8af75774483d:1:LOT-0001",
+    "candidateId": "f89bc56a-e0b9-4218-a508-8af75774483d:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45216113",
+      "45340000",
+      "45421147"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "f89bc56a-e0b9-4218-a508-8af75774483d",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "8fb0938b-cf1a-4b0c-a586-1128367df1d7",
+    "internalIdentifier": "7f0852ce-aecf-4371-9031-179ad37cd89c",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:14Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Sprinkenhof GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Schlosserarbeiten",
+    "description": "Die Behörde für Justiz und Verbraucherschutz beabsichtigt, eine für den Justizvollzug nicht mehr benötigte Teilfläche des aktuellen Geländes der JVA Fuhlsbüttel freizuziehen. Zu diesem Zwecke ist geplant, die sich auf der Teilfläche befindlichen Nutzungseinheiten der Anstalt durch die Realisierung zweier Neubauten auf die weiterhin genutzte Fläche zu verlagern. Die aktuelle Versorgungsstruktur der JVA Fuhlsbüttel sowie die Wegeführungen auf dem Anstaltsgelände sind aufgrund des Freizugs der Teilfläche anzupassen. Zur Abgrenzung der verbleibenden Anstaltsfläche gegenüber der freizuziehenden Teilfläche ist außerdem die Außensicherung der JVA Fuhlsbüttel in Teilen neu zu planen und zu versetzen. Hierfür sind einige Bestandsbauten der Anstalt vollständig oder in Teilen zurückzubauen\n\nAm Standort der JVA Fuhlsbüttel sollen zwei Ersatzneubauten erstellt werden; ein Ausbildungsgebäude (A), dieses zentral auf dem JVA-Gelände, sowie ein Garagen- und Verwaltungsgebäude (B) mit Anbindung an eine Bestandspforte.\n\nDie jeweils viergeschossigen Neubauten werden als Mischkonstruktion aus Mauerwerk, Ortbeton und Betonfertigteilelementen, ohne Unterkellerung mit einer Sohle aus WU-Beton erstellt. Die Außenhüllen der Gebäude werden mit Verblendsteinen bekleidet und erhalten ein Satteldach als Pfettendach aus Nadelholz mit Metalldacheindeckung. Sämtliche Fensteröffnungen werden vergittert, Gegenstand der Ausschreibung sind Schlosserarbeiten / Fenstergitter. Gerüste für die Durchführung der Arbeiten werden bauseits gestellt. \n\n__________________________________________________________________________________\n\nWesentliche Arbeiten:\tFür die Neubauten\t- ATV DIN 18360 Metallbauarbeiten\n",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45216113",
+    "additionalCpvCodes": [
+      "45340000",
+      "45421147"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "22335",
+      "city": "Hamburg",
+      "nuts": "DE600",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-30+01:00",
+    "endDate": "2027-09-15+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "12:30:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-13+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "3 Referenzen für die Ausführung von Leistungen in den letzten 5 abgeschlossenen Geschäftsjahren, die mit der zu vergebenden Leistung vergleichbar sind"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zur Zahl der in den letzten 3 abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischen Leitungspersonal"
+    },
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "Angaben zum Umsatz des Unternehmens, jeweils bezogen auf die letzten 3 abgeschlossenen Geschäftsjahre, soweit es Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der Berufsgenossenschaft zum Nachweis, dass die Beiträge ordnungsgemäß abgeführt wurden"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der Sozialkasse (nicht Krankenkasse)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Gültige Freistellungsbescheinigung zum Steuerabzug bei Bauleistungen"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Zur Bestätigung der Eigenerklärung sind die gem. Nr. 5 des Formulars „VV-Bau Anlage 6-020“ Anlage zur Ausschreibungsinformation –VOB – geforderten Nachweise/Angaben/Unterlagen vorzulegen. Angaben zu Insolvenzverfahren und Liquidation – gem. Auslobungsunterlagen/Erklärung zur Eignung. Ausländische Unternehmen haben jeweils vergleichbare Nachweise zu erbringen bzw. gleichwertige Erklärungen abzugeben und eine anerkannte Übersetzung beizufügen."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Gültiger Handelsregisterauszug. Ausländische Bieter haben vergleichbare Nachweise/Bescheinigungen vorzulegen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Gültige Gewerbeanmeldung. Ausländische Bieter haben vergleichbare Nachweise/Bescheinigungen vorzulegen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Nachweis über die Eintragung in das Berufsregister oder die Handwerksrolle bzw. bei der Industrie- und Handelskammer. Ausländische Bieter haben vergleichbare Nachweise/Bescheinigungen vorzulegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten. Nicht nachgefordert werden leistungsbezogene Unterlagen, die die Wirtschaftlichkeitsbewertung der Angebote anhand der Zuschlagskriterien betreffen (Ausnahme: Preisangaben für unwesentliche Einzelpositionen, wenn der Einzelpreis den Gesamtpreis nicht verändern und die Wertungsreihenfolge und den Wettbewerb nicht beeinträchtigen)."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/deeplink/subproject/6f2da44e-d039-4c77-87c9-a26f9f35970b",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "467cd4a5-0e1f-46e3-bc7d-97750d9831fc:1:LOT-0001",
+    "candidateId": "467cd4a5-0e1f-46e3-bc7d-97750d9831fc:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45221112"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "467cd4a5-0e1f-46e3-bc7d-97750d9831fc",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "5c698fce-927c-471f-8a68-54640965a7c2",
+    "internalIdentifier": "f8a2424d-7081-42f9-8c92-e8c13eee2fb4",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:17Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)"
+    ]
+  },
+  "procedure": {
+    "title": "Ern. EÜ Lamersberg (km 32,782) und EÜ Beeckfließ (km 32,858), Str. 2550, Geilenkirchen",
+    "description": "Erneuerung der Eisenbahnüberführungen EÜ Lamersberg und EÜ Beeckfließ auf der Strecke 2550.\nDie beiden Bauwerke werden in Nebenlage hergestellt und eingeschoben.\nBei der EÜ Lamersberg liegt ein beidseitiges Änderungsverlangen (Stadt/DB) vor.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45221112",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "52511",
+      "city": "Geilenkirchen",
+      "nuts": "DEA29",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-02+01:00",
+    "endDate": "2027-10-22+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-29+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-09-23+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-sec-supply",
+      "label": null,
+      "description": "- Erklärung über seine Mitgliedschaft in der Berufsgenossenschaft (Bieter ohne Sitz in der Bundesrepublik Deutschland haben eine entsprechende Erklärung über die Mitgliedschaft bei dem für sie zuständigen Versicherungsträger abzugeben) - Erklärung über die Eintragung in die Handwerksrolle, das Berufsregister oder das Register der Industrie- und Handelskammer seines Sitzes oder Wohnsitzes - Erklärung über die beabsichtigte Zusammenarbeit mit anderen Unternehmen - Erklärung, dass der Bewerber/Bieter nicht durch die Deutsche Bahn AG wegen Verfehlungen gesperrt und vom Wettbewerb ausgeschlossen worden ist - Erklärung über Verfehlungen, die die Zuverlässigkeit als Bieter in Frage stellt (§ 124 Abs. 1 Nr. 3 GWB) - Erklärung zur Kartellrechtlichen Compliance- und Korruptionsprävention - Erklärung, dass bei der Ausführung eines früheren Auftrags bei der Deutsche Bahn AG oder einem mit ihr gemäß §§ 15 ff. AktG verbundenen Unternehmen keine wesentliche Anforderung erheblich oder fortdauernd mangelhaft erfüllt hat - Erklärung über mögliche Eintragungen im Gewerbezentralregister- Erklärung, dass das Unternehmen zu keinem Zeitpunkt in einem Vergabeverfahren der Deutsche Bahn AG oder eines mit ihr gemäß §§ 15 ff. AktG verbundenen Unternehmens a) versucht hat, die Entscheidungsfindung in unzulässiger Weise zu beeinflussen, b) versucht hat, vertrauliche Informationen zu erhalten, durch die es unzulässige Vorteile beim Vergabeverfahren erlangen könnte, oder c) irreführende Informationen übermittelt hat, die die Vergabeentscheidung beeinflussen konnte bzw. dies versucht hat. - Erklärung, dass der Bewerber/Bieter den DB-Verhaltenskodex für Geschäftspartner (https://www.deutschebahn.com/de/konzern/konzernprofil/compliance/geschaeftspartner/verhaltenskodex-1191674) oder die BME-Verhaltensrichtlinie (https://www.bme.de/initiativen/compliance/bme-compliance-initiative/) oder einen eigenen Verhaltenskodex, der im Wesentlichen vergleichbare Prinzipien verbindlich für ihn festlegt, einhalten wird - Erklärungen zur Einhaltung gesetzlicher Verpflichtungen, insbesondere der Pflicht zur Zahlung von Steuern und Abgaben sowie zur Zahlung der Beiträge zur gesetzlichen Sozialversicherung (Renten-, Kranken-, Pflege-, Unfall- und Arbeitslosenversicherung), sowie Verpflichtungen z. B. gem. den in § 21 Arbeitnehmer-Entsendegesetz (AentG), § 98c Aufenthaltsgesetz, § 19 Mindestlohngesetz, § 21 Schwarzarbeitsbekämpfungsgesetz oder § 22 Lieferkettensorgfaltspflichtengesetz genannten Vorschriften - Erklärung, dass kein Insolvenzverfahren oder Liquidationsverfahren anhängig ist - Erklärung, dass das Unternehmen in Bezug auf Ausschlussgründe im Sinne von §§ 123 f. GWB oder Eignungskriterien im Sinne von § 122 GWB keine Täuschung begangen und auch keine Auskünfte zurückgehalten hat und dass das Unternehmen stets in der Lage war, geforderte Nachweise in Bezug auf die §§ 122 bis 124 GWB zu übermitteln"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 51 Abs. 2 SektVO, § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/8215c391-bb8b-4dae-8bc1-074c103c9c89",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "f14bea64-d2de-4871-b3e7-b00bb1f137b4:1:LOT-0000",
+    "candidateId": "f14bea64-d2de-4871-b3e7-b00bb1f137b4:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "f14bea64-d2de-4871-b3e7-b00bb1f137b4",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "4c163873-54e9-4383-82e0-4260c41e74f9",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:26Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Frankfurt am Main - Amt für Bau und Immobilien"
+    ]
+  },
+  "procedure": {
+    "title": "A-JLS_Schlosserarbeiten",
+    "description": "Veröffentlichungstext\nBaubeschreibung\nKernsanierung eines denkmalgeschützten Schulgebäudes mit Brandschutz und statisch\nrelevanten Grundrissänderungen in allen Geschoßen. (3 Geschosse + Gewölbekeller)\nMit Erweiterungsanbau bestehend aus 3 Vollgeschoßen und einem Kellergeschoß (WUBauweise).\nDas Baugrundstück liegt innerstädtisch an einer stark befahrenen Kreuzung mit\nöffentlichem Nahverkehr in der Seilerstrasse 36, 60313 Frankfurt a.M.\nBestandsbau / Altbau\nRechteckiger Kubus aus Mauerwerk mit zwei Seitenflügeln und vorgesetzten Treppenturm,\nverziert mit Gesimsen, Leibungen und Sockeln aus rotem Sandstein.\nSteildach mit Schiefer gedeckt, L/B/H = ca. 42,5 x 21,0 x 21,0 m\nErweiterungsanbau / Neubau\nRechteckiger Kubus als Stahlbetonbau mit Flachdach und vorgehängter Glas -und\nMetallfassade, L/B/H = ca. 11,5 x 25,5 x 16,5 m\nAbmessungen\nGrundstücksfläche Schulgelände 2.933 m2\nGrundfläche Altbau 680 m2\nBGF 4.630 m2\nBRI 20.280 m3\nGrundfläche Neubau 370 m2\nBGF 1.260 m2\nBRI 6.130 m3\nBesonderheiten\nDachentwässerung der beiden Gebäude über Rückhaltebecken (Rigolen)\nNeubau KG in WU- Beton mit Frischbetonverbundsystem\nLeistungen erweiterte Rohbauarbeiten:\n Eigene BE\n Rückbauarbeiten - Innen Decken 650 m2\n Rückbauarbeiten - Außen 250 m3\n Maurerarbeiten Altbau + Neubau 300 m2\n Betonarbeiten Altbau + Neubau 980 m3\n Stahlbetonverbunddecken mit Trapezblech + Ortbeton 650 m2\n Erdarbeiten 2800 m3\n Verbauarbeiten T= bis 7,50 m 250 m\n Entwässerungskanalarbeiten 500 m\n Abdichtungs -und Dämmarbeiten - Neu + Altbau 750 m2\n Stahlbauarbeiten - UK Tech.Zentr. HEB 120-160 L=6 m 30 Stk\n Brandschutzverkleidung Stahlträger 320 m2\n Baustahl Matte 85 t\n Baustahl Stab 25 t\nAusführungszeiten\nBaubeginn Rohbauarbeiten: 4. Quartal 2025\nFertigstellung Rohbauarbeiten: 3. Quartal 2026\nFertigstellung Erdarbeiten Rigolen: 1. Quartal 2027\nFertigstellung BV gesamt: 4. Quartal 2027",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Seilerstraße 36",
+      "additionalStreet": "",
+      "postcode": "60486",
+      "city": "Frankfurt am Main",
+      "nuts": "DE712",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-08+01:00",
+    "endDate": "2027-04-02+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-26+01:00",
+    "deadlineTime": "09:00:00+01:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Angaben zu Formblatt 124 bzw. Referenzbescheinigung Formblatt 444"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "gegliedert nach Lohngruppen gem. Formblatt 124"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "gemäß Formblatt 124"
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "gemäß Formblatt 124"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "gemäß Formblatt 124"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "gemäß Formblatt 124"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16a EU VOB/A nachgefordert"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.stadt-frankfurt.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a09fc87921-107010a54fd95f3d",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

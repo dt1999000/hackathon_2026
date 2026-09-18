@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "c5e2dbd6-2e0d-483b-be28-36d42eb3a2d0:1:LOT-0001",
+    "candidateId": "c5e2dbd6-2e0d-483b-be28-36d42eb3a2d0:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45324000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "c5e2dbd6-2e0d-483b-be28-36d42eb3a2d0",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "0fe7ca7a-edcf-46da-9a32-e78ed188a392",
+    "internalIdentifier": "34212 DKS Angio OPs",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:25Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Diakonissenkrankenhaus und Paulinenhilfe gGmbH - Diakonieklinikum Stuttgart"
+    ]
+  },
+  "procedure": {
+    "title": "Trockenbau",
+    "description": "Trennwand mit Beplankung aus Gipsplatten, mit/ohne Brandschutz\tca. 530 m² \nTrennwand als Vorsatzschale mit Beplankung aus Gipsplatten\t\tca. 160 m²\nTrennwand mit Beplankung aus Stahl, 1mm\t\t\t\tca. 240 m²\nDurchblickfenster\t\t\t\t\t\t\tca. 2 Stk\nDrehtüren\t\t\t\t\t\t\t\tca. 23 Stk\nSchiebetüren\t\t\t\t\t\t\t\tca. 6 Sk\nUnterdecke mit Beplankung aus Gipsplatten\t\t\t\tca. 80 m²\nUnterdecke Mineralwolleplatte \t\t\t\t\t\tca. 170 m²\nUnterdecke Metall-Langfeldplatten\t\t\t\t\tca. 35 m²\nUnterdecke Metallkassettendecke\t\t\t\t\tca. 50 m³\nSchwerlastdeckensystem \t\t\t\t\t\tca. 30 m²\nRückbauarbeiten Wände, Decken, Türen\n",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45324000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Rosenbergstraße 38",
+      "additionalStreet": "",
+      "postcode": "70176",
+      "city": "Stuttgart",
+      "nuts": "DE111",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-23+01:00",
+    "endDate": "2027-12-22+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "required",
+    "url": "https://plattform.aumass.de/Veroeffentlichung/av286b19-eu",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Mindestens drei Referenzen aus den letzten fünf Jahren über vergleichbare Projekte im Krankenhaus-, Labor- oder sonstigen Sonderbau mit erhöhten Anforderungen an Ausbauqualität, Hygiene, Brand- und Schallschutz. Die Referenzen müssen in ihrer Gesamtheit folgende Leistungsbereiche abdecken: • Trockenbauwände und Vorsatzschalen mit erhöhten Anforderungen an Brand-, Schall- und/oder Strahlenschutz, • abgehängte Unterdecken einschließlich technischer Einbauten und Revisionsöffnungen, • Innen- und Funktionstüren, insbesondere Brand-, Rauchschutz-, Schallschutz- oder Sondertüren, • hygienisch anspruchsvolle Wand- und Anschlusskonstruktionen, • OP-Wandsysteme bzw. modulare Wand- oder Trennwandsysteme für OP-, Reinraum- oder vergleichbare Bereiche, • Anschlüsse und Integration von Türen, Verglasungen, Einbaumöbeln, Medizintechnik sowie Elektro- und TGA-Einbauten. Die Anforderungen können über mehrere Referenzen nachgewiesen werden."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe VHB 216"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://plattform.aumass.de/Veroeffentlichung/av286b19-eu",
+        "description": "",
+        "documentType": "restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

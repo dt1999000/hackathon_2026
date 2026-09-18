@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831762:1:LOT-0000",
+    "candidateId": "25831762:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45212140-9",
+      "45212210-1",
+      "45212212-5",
+      "45262330-3",
+      "45262670-8"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831762",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:50Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Sanierung der Sprungturmanlage im Freibad des Rothaarbades",
+    "description": "Sanierung der Sprungturmanlage im Freibad des Rothaarbades",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45212140-9",
+    "additionalCpvCodes": [
+      "45212212-5",
+      "45212210-1",
+      "45262670-8",
+      "45262330-3"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "57319 Bad Berleburg",
+      "nuts": "DEA",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-07+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/3/tenderId/157584",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

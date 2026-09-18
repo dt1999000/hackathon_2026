@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "9a8a4b10-5a8c-4781-a97f-080dd578412a:1:LOT-0001",
+    "candidateId": "9a8a4b10-5a8c-4781-a97f-080dd578412a:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45113000",
+      "45315000",
+      "45331000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "9a8a4b10-5a8c-4781-a97f-080dd578412a",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "8190eb32-bd05-4d82-bdb1-454520160984",
+    "internalIdentifier": "4e0e8a01-c373-4ca0-a928-938d2baaae4c",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:07Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Nürnberg vertreten durch WBG KOMMUNAL GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "UHS - Generalsanierung Ludwig-Uhland Schule - Winterbaubeheizung 2026/2027",
+    "description": "Die WBG KOMMUNAL GmbH plant die Generalsanierung der Uhlandschule für die Stadt Nürnberg, BGF ca. 9.113 m². Winterbaubeheizung über Anschluss an Verteiler der bestehenden Fernwärmeübergabestation.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": [
+      "45113000",
+      "45315000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "90408",
+      "city": "Uhlandstraße 33, Nürnberg",
+      "nuts": "DE254",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-16+01:00",
+    "endDate": "2027-04-11+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-08+02:00",
+    "deadlineTime": "09:20:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-01+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Der Nachweis der Befähigung zur Berufsausübung umfasst die Eintragung in das Berufs- oder Handelsregister oder die Handwerksrolle des Sitzes oder Wohnsitzes. Nachweisführung zu Eignung und dem Fehlen von Ausschlussgründen: Die Eignung kann durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) nachgewiesen oder durch Eigenerklärung vorläufig nachgewiesen werden. Gelangt das Angebot eines nicht präqualifizierten Unternehmens in die engere Wahl, sind die in den Eignungskriterien genannten Bescheinigungen nach Aufforderung innerhalb von 6 Kalendertagen vorzulegen. Gelangt das Angebot eines präqualifizierten Unternehmens in die engere Wahl, hat das Unternehmen zusätzlich die in den Eignungskriterien beschriebenen, konkret auftragsbezogenen Bescheinigungen zum Umsatz nach Aufforderung innerhalb von 6 Kalendertagen vorzulegen, soweit die Prüfung der Vergabestelle ergibt, dass die im Präqualifikationsverzeichnis hinterlegten Unterlagen die beschriebenen Anforderungen quantitativ nicht oder nicht ausreichend belegen. Durch ausländische Unternehmen sind gleichwertige Bescheinigungen vorzulegen. Stützt sich ein Bewerber/Bieter zum Nachweis seiner Eignung auf andere Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder sind die Eigenerklärungen und Bescheinigungen auch für diese anderen Unternehmen auf Verlangen innerhalb von 6 Kalendertagen vorzulegen. Werden die Kapazitäten anderer Unternehmen gemäß § 6d EU Abs. 1 VOB/A in Anspruch genommen, so muss gemäß § 6d EU Abs. 3 VOB/A die Nachweisprüfung auch für diese Unternehmen erfolgen. Gemäß § 6d EU Abs. 1 Satz 5 VOB/A hat der Bieter die Möglichkeit, andere Unternehmen, deren Kapazitäten der Bieter in Anspruch genommen hat, einmal zu ersetzen, wenn dieses Unternehmen einschlägige Eignungsanforderung nicht erfüllt oder bei diesem Ausschlussgründe gemäß § 6e EU Abs. 1 bis 5 VOB/A vorliegen."
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Der Nachweis der wirtschaftlichen und finanziellen Leistungsfähigkeit umfassteine Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen betrifft,die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss desAnteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. Entsprechend der Verordnung (EU) 2022/576 dürfen öffentlichen Aufträge und Konzessionen nach dem 9. April 2022 nicht an Personen oder Unternehmen vergeben werden, die einen Bezug zu Russland im Sinne der Vorschrift aufweisen. Dies umfasst sowohl unmittelbar als Bewerber, Bieter oder Auftragnehmer auftretende Personen oder Unternehmen als auch mittelbar, mit mehr als zehn Prozent, gemessen am Auftragswert, beteiligte Unterauftragnehmer, Lieferanten oder Eignungsverleiher. Es wird vom Bieter daher die Erklärung verlangt, dass er entsprechend den Vorgaben der Verordnung (EU) 2022/576 keinen Bezug zu Russland aufweist. Darüber hinaus werden vom Bieter folgende Erklärungen bzw. Nachweise für das Nichtvorliegen von Ausschlussgründen gemäß § 6e EU VOB/A verlangt: - Erklärung, dass das Unternehmen nicht zahlungsunfähig ist, bzw. ob ein Insolvenzverfahren über das Vermögen des Unternehmens oder ein vergleichbares Verfahren beantragt oder eröffnet worden ist, die Eröffnung eines solchen Verfahrens mangels Masse abgelehnt worden ist, sich das Unternehmen im Verfahren der Liquidation befindet. - Erklärung, dass das Unternehmen seinen Verpflichtungen zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung nachgekommen ist. Falls das Angebot in die engere Wahl kommt, ist eine Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse bzw. der zuständigen Krankenkasse vorzulegen. - Erklärung, dass für das Unternehmen keine schwere Verfehlung gem. § 6a Abs. 2 Nr. 7 VOB/A vorliegt. Ab einer Auftragssumme von 30.000 Euro wird der Auftraggeber für den Bieter, der den Zuschlag erhalten soll, eine Auskunft aus dem bundesweiten Wettbewerbsregister anfordern."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Der Nachweis der technischen und beruflichen Leistungsfähigkeit umfasst: - Erklärung, dass in den letzten bis zu fünf abgeschlossenen Kalenderjahren Leistungen ausgeführt wurden, die mit der zu vergebenden Leistung vergleichbar sind. Falls das Angebot in die engere Wahl kommt, ist für drei Referenzen je eine Referenzbescheinigung vorzulegen. - Erklärung, dass die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen. Falls das Angebot in die engere Wahl kommt, sind Angaben über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischen Leitungspersonal vorzulegen. - Angabe, welche Teile des Auftrags der Unternehmer unter Umständen an andere Unternehmen als Unteraufträge zu vergeben beabsichtigt."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Auftraggeberin legt gem. § 16a EU Abs. 3 VOB/A fest, dass Preisangaben nicht nachgefordert werden."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/deeplink/subproject/cb1aad6a-f6a6-4fc5-9b00-4b72ad900644",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

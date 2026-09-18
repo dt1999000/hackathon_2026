@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "28c16d8b-986e-450a-b0fe-8bb6fbe81643:1:LOT-0000",
+    "candidateId": "28c16d8b-986e-450a-b0fe-8bb6fbe81643:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "28c16d8b-986e-450a-b0fe-8bb6fbe81643",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "a29ad70f-c3c2-4198-901b-8f3ba4e82f31",
+    "internalIdentifier": "2023001-017",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T11:22:06Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Sanierung Wohnhaus Löfflerstraße 2, 07381 Pößneck (Los 17 - Bodenbeläge)",
+    "description": "ca. 300 m2 Designbelag für Wohnungen inkl. Vorbereitung Bestandsdielung, Schüttung; Ausgleichsspachtelung, Sockelleisten etc.\nca. 25 m2 Designbelag für Flure und Treppenpodeste inkl. Vorbereitung Untergründe, Verlegeplatten, Sockelleisten etc.\n60 Trittstufen inkl. Vorbereitung, Grundierung und Belegung mit Designbelag, Sockelleisten etc.",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-09",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-07+02:00",
+    "deadlineTime": "13:15:00+02:00",
+    "method": "not-allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: siehe Vergabeunterlagen"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891330",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

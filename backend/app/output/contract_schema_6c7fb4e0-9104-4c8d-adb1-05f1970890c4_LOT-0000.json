@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "6c7fb4e0-9104-4c8d-adb1-05f1970890c4:1:LOT-0000",
+    "candidateId": "6c7fb4e0-9104-4c8d-adb1-05f1970890c4:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "6c7fb4e0-9104-4c8d-adb1-05f1970890c4",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "03a8c654-88d8-4fd6-a047-da89a73e5edf",
+    "internalIdentifier": "33/61/2026",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T13:36:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Sanierung Rolandbrunnen - Erneuerung Brunnentechnik",
+    "description": "Erneuerung der Zierbrunnentechnik\n- Erneuerung der Schachtabdeckung einer vorhandenen Brunnenkammer\n- Druckleitungs- und Rücklaufsystem 20 m mit Umwälzpumpe ca. 0,44 kW\n- V2A-Brunnenbeckenauskleidung Durchmesser ca. 2,0 m\n- Wasserreservoir in vorhandene Brunnenkammer ca. 1,0 m³\n- Frischwassernachspeisungsanlage\n- Dosieranlage für Wasserhygiene\n- Schachtentwässerung/Abwasseranschlüsse\n- Schachtbelüftung\n- Schalt- und Steuerungseinrichtung im Außenschrank\n- (Tiefbauarbeiten bauseits)",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-16",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-07+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: In den Vergabeunterlagen. Mit dem Angebot sind vorzulegen: . Angebotsschreiben (Formblatt 213 VHB), . Leistungsverzeichnis/Leistungsprogramm (Kurz- oder Langfassung und/oder GAEB-Datei) mit den Preisen sowie den geforderten Angaben und Erklärungen (Hier können nur Nachforderungen gemäß § 16a VOB/A erfolgen!), . Eigenerklärung zur Eignung (Bieter) - Formblatt liegt den Vergabeunterlagen bei, . Angaben zur Preisermittlung (Formblatt 221 oder 222 VHB), . das Verzeichnis der Nachunternehmerleistungen (Formblatt 233 VHB), . Erklärung Bieter-/Arbeitsgemeinschaft (Formblatt 234 VHB), . die Benennung von Referenzobjekten (min. 3 Objekte) für vergleichbare Leistungen der letzten 5 abgeschlossenen Kalenderjahre mit Angabe des Ausführungsjahres, der Objektbezeichnung, des Auftraggebers und eines Ansprechpartners (Hierfür kann die benannte \"Eigenerklärung zur Eignung (Bieter)\" genutzt werden.) sowie . das Formblatt „Unternehmensdaten“. ______________________________________________________________________________ Auf gesondertes Verlangen sind vorzulegen: . die \"Aufgliederung der Einheitspreise\" (Formblatt 223 VHB), . die Eigenerklärung zur Eignung (Nachunternehmer) - Formblatt liegt den Vergabeunterlagen bei, nur bei nicht präqualifizierten Hauptauftragnehmern (s.u.), . die Bescheinigungen, deren Vorlage sich die Vergabestelle mit der Eigenerklärung zur Eignung (Bieter) vorbehalten hat, wenn diese der Vergabestelle nicht aktuell vorliegen, . den Nachweis einer aktuellen Betriebshaftpflichtversicherung, . Schulungsnachweis nach DVS 2212 oder DVGW GW 330 sowie . Schweißzertifikat für nichtrostende Stähle, gemäß DIN EN 1090 (ggf. durch Nachunternehmer - Die entsprechenden Leistungen sind in dem Fall bereits zur Angebotsabgabe im \"FB233 - Verzeichnis der Nachunternehmerleistungen\" zu benennen.). ______________________________________________________________________________ Entgegen der vorherigen Ausführungen ist die Eignung der Nachunternehmer auf Verlangen nur durch nicht präqualifizierte Bieter wie folgt nachzuweisen: Bei nicht präqualifizierten Hauptauftragnehmern ist zum Nachweis der Eignung der Nachunternehmer die \"Eigenerklärung zur Eignung (Nachunternehmer)\" ausgefüllt vorzulegen. Möglich ist auch für die Nachunternehmer der Eignungsnachweis durch Eintrag in das PQ-Verzeichnis. Der Verzicht auf Vorlage dieser Erklärung bei präqualifizierten Hauptauftragnehmern folgt daraus, dass sich derjenige, welcher in das Präqualifikationsverzeichnis aufgenommen ist, verpflichtet hat, nur solche Nachunternehmer einzusetzen, die ihrerseits präqualifiziert sind oder per Einzelnachweis belegen können, dass alle Präqualifikationskriterien erfüllt sind. Der Auftraggeber kann also in der Regel davon ausgehen, dass ein gelistetes Unternehmen nur Drittunternehmer einsetzen wird, gegen deren grundsätzliche Eignung keine Bedenken bestehen. Weitere Pflichten des Hauptauftragnehmers hinsichtlich des Einsatzes von Nachunternehmern ergeben sich aus der VOB und dem Thüringer Vergabegesetz. ______________________________________________________________________________________________ HINWEIS: Erfolgt die Vorlage nachgeforderter fehlender Unterlagen bzw. abgeforderter Unterlagen, deren Vorlage sich die Vergabestelle vorbehalten hat, nicht bis zur angegebenen Frist, wird das Angebot von der Wertung ausgeschlossen."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden nachgefordert soweit ein Nachfordern nach VOB/A möglich ist. Nicht nachgefordert werden kann das Leistungsverzeichnis/Leistungsprogramm. Hier können nur Nachforderungen gemäß § 16a VOB/A erfolgen."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=888139",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

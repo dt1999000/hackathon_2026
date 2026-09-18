@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "a2a5775d-d392-484f-a105-da9e2167032f:1:LOT-0003",
+    "candidateId": "a2a5775d-d392-484f-a105-da9e2167032f:1:LOT-0003",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45200000",
+      "45232200"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "a2a5775d-d392-484f-a105-da9e2167032f",
+    "version": "01",
+    "lotIdentifier": "LOT-0003",
+    "procedureIdentifier": "b37cf7a0-bcb8-4a3e-af85-4ce5b0fd1865",
+    "internalIdentifier": "a5dd5646-0011-478f-83ae-c8ee4887b111",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:10:08Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stromnetz Berlin GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Tiefbau und Fundamente",
+    "description": "Der Auftragnehmer von Los 3 stellt an ca. 30 Standorten mit entsprechenden Videomast-Anlagen die tiefbaulichen und infrastrukturellen Voraussetzungen für die spätere Montage und Inbetriebnahme der Videokameratechnik her. Der Auftragnehmer von Los 3 ist für Tiefbau-, Fundament-, Erdungs- und Videomastleistungen verantwortlich. Die Leistungen erfolgen ausschließlich auf Grundlage der durch Los 1 erstellten Planungsunterlagen. Der Leistungsumfang umfasst insbesondere die Herstellung und Wiederverfüllung von Leitungsgräben, die Verlegung von Leerrohren und Mikrorohrverbänden, Kabelziehschächte und Übergabepunkte, die Einhaltung von Verlegetiefen und Schutzabstände, die Berücksichtigung standortspezifischer Boden-, Umwelt- und Wasserschutzanforderungen sowie die Wiederherstellung betroffener Oberflächen. Zusätzlich sind Mastfundamente, Fundament- und Ringerder sowie Tragmastanlagen nach statischen und planerischen Vorgaben zu errichten und zu dokumentieren. Los 3 muss seine Leistungen so ausführen und übergeben, dass eine  schadensfreie, normkonforme und wirtschaftliche Weiterverarbeitung durch Los 2 möglich ist. \n\nKurzdarstellung der Leistungen:\n\n- Tiefbau, Fundamente und Tragmastsystem.\n",
+    "type": "neg-w-call",
+    "typeRaw": "neg-w-call"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45200000",
+    "additionalCpvCodes": [
+      "45232200"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "12435",
+      "city": "Berlin",
+      "nuts": "DE300",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-08-01+02:00",
+    "endDate": "2033-07-31+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unternehmensdarstellung. Die Darstellung des Bewerberunternehmens beziehungsweise des Mitglieds der Bewerbergemeinschaft muss Ausführungen zu dessen Standorten, Leistungsportfolios, sowie zur Größe beinhalten und es müssen – sofern zutreffend – Angaben zur Konzernstruktur eingereicht werden."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Berufs- und Handelsregisterauszug, Erklärungen und Bescheinigungen. Der Bewerber hat den Nachweis der Eintragung im Handelsregister und/oder Berufsregister des Staates, in dem der Bewerber niedergelassen ist, einzureichen. Ein Registerauszug muss zum Zeitpunkt des Ablaufs der Teilnahmefrist inhaltlich aktuell und darf zeitlich nicht älter als sechs Monate sein. Für Deutschland maßgebliche Register sind: das „Handelsregister“, die „Handwerksrolle“ und bei Dienstleistungsaufträgen das „Vereinsregister“, das „Partnerschaftsregister“ und die „Mitgliederverzeichnisse der Berufskammern der Länder“; für die übrigen Mitgliedsstaaten der Europäischen Union können die in Anhang XI der Richtlinie 2014/24/EU des Europäischen Parlaments und des Rates vom 26. Februar 2014 über die öffentliche Auftragsvergabe und zur Aufhebung der Richtlinie 2014/18/EG, Abl. L 94 v. 28. März 2014 aufgelisteten Dokumente des jeweiligen Sitzstaates entsprechend als Nachweis eingereicht werden. Sofern der Bewerber keinen Registerauszug vorlegen kann, ist die in Formblatt 5 geforderte alternative Erklärung abzugeben."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Bankerklärung. Es ist eine Erklärung der Hausbank des Bewerbers vorzulegen, die bestätigt, dass die finanziellen Verhältnisse des Bewerbers geordnet sind und er über die erforderlichen finanziellen Mittel verfügt, um den Auftrag auszuführen. Der Nachweis darf zum Zeitpunkt des Ablaufs der Teilnahmefrist nicht älter als sechs Monate sein."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Haftpflichtversicherung. Es ist der Nachweis einer Haftpflichtversicherung für die aus der gewerblichen Tätigkeit des Bewerbers resultierenden Haftpflichtgefahren für Sach-, Personen- und Vermögensschäden durch eine gültige Versicherungsbestätigung zu erbringen. Die Versicherung muss die Deckung der vorgenannten Gefahren in angemessener Höhe umfassen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Jahresabschlüsse/Geschäftsberichte/wirtschaftliche Kennzahlen. Es sind Jahresabschlüsse einschließlich Anhänge, Wirtschaftsprüferfreigaben, Lageberichte und Kommentare, falls deren Veröffentlichung in dem Land, in dem der Bewerber zugelassen ist, gesetzlich vorgeschrieben ist, für die Geschäftsjahre 2023, 2024, 2025 oder – sofern für das letzte geforderte Geschäftsjahr noch nicht vorliegend – die letzten drei vorliegenden Jahresabschlüsse, vorzulegen. Falls die Veröffentlichung von Jahresabschlüssen nicht gesetzlich vorgeschrieben ist, haben die Bewerber Geschäftsberichte für die genannten drei letzten abgeschlossenen Geschäftsjahre vorzulegen. Falls ein Bewerber erst seit einem Zeitpunkt besteht, der die Vorlage eines oder mehrerer Jahresabschlüsse/Geschäftsberichte nicht zulässt, sind die entsprechenden Angaben für die Geschäftsjahre seit der Gründung zu tätigen. Es ist in diesem Fall unter Angabe des Gründungszeitpunkts zu erklären, dass der Bewerber erst nach dem betreffenden Zeitpunkt eines geforderten Nachweises gegründet worden ist. In jedem Fall müssen die Bewerber Angaben zum Umsatz, zum spezifischen Umsatz im Tätigkeitsbereich des hier zu vergebenden Auftrags, zum Jahresüberschuss, zur Verwendung des Jahresüberschusses, zum Eigenkapital und zur Bilanzsumme für die drei Geschäftsjahre 2023, 2024, 2025 machen. Falls ein Bewerber erst seit einem Zeitpunkt besteht, der die vollständige Angabe nicht zulässt, sind die entsprechenden Angaben für die Geschäftsjahre seit der Gründung zu tätigen. Es ist in diesem Fall unter Angabe des Gründungszeitpunkts zu erklären, dass der Bewerber erst nach dem betreffenden Zeitpunkt eines geforderten Nachweises gegründet worden ist. Mindestanforderungen: Der Umsatz in dem Tätigkeitsbereich des hier zu vergebenden Auftrags muss im letzten abgeschlossenen Geschäftsjahr betragen: mindestens 0,8 Mio. Euro (Los 3)."
+    },
+    {
+      "code": "slc-abil-ref-services",
+      "label": null,
+      "description": "Unternehmensreferenzen Los 3. Es wird der Nachweis von Erfahrungen im Bereich der hier zu vergebenden Leistungen durch die Angabe von mit dem hiesigen Vergabegegenstand vergleichbaren Referenzen nach Maßgabe der folgenden Bestimmungen verlangt: (i) Leistungsgegenstand Es werden nur Referenzen berücksichtigt, die dem Leistungsgegenstand entsprechen und somit die Anforderungen an die Vergleichbarkeit der Referenz erfüllen (vgl. nachfolgend (iv)). (ii) Referenzzeitraum Es werden nur Referenzen berücksichtigt, deren Leistungen in den vergangenen 5 Jahren (Stichtag ist der Tag der Auftragsbekanntmachung) erbracht wurden. (iii) Mindestanzahl von Referenzen Der Bewerber hat mindestens eine (1) Referenz vorzulegen. (iv) Höchstanzahl von Referenzen Der Bewerber darf maximal fünf (5) Referenzen vorlegen. (v) Vergleichbarkeit der Referenz Ein Auftrag wird als Referenz berücksichtigt, wenn er nach Art, Umfang und Schwierigkeit mit der zu vergebenden Tätigkeit vergleichbar ist. Die Vergleichbarkeit wird bejaht, wenn die in Formblatt 7.1 geforderten Angaben der Tabelle zum Abschnitt „Angaben zu der Vergleichbarkeit der Referenzleistungen“ vollständig und die Mindestbedingungen erfüllt sind. Alle Angaben des Bewerbers müssen nachweisbar sein. Der Auftraggeber behält sich eine Überprüfung vor. Der Auftraggeber legt folgende Mindestanforderungen an die Referenzen (die Erfüllung der Mindestanforderungen kann auf eine oder mehrere Referenzen verteilt sein) fest: - Mindestens 1 Referenz umfasst die Errichtung von Videotragmasten inkl. Fundamentarbeiten. - Mindestens 1 Referenz hat einen Auftragswert von mindestens 250.000 € netto für Tiefbau und Fundamente."
+    },
+    {
+      "code": "slc-abil-ref-services",
+      "label": null,
+      "description": "Der Auftraggeber gibt nachfolgend die Kriterien für die Bewertung der einzureichenden Referenzen (vgl. Eignungskriterium Unternehmensreferenzen Los 3) an, anhand derer die Rangfolge der geeigneten Bewerber ermittelt wird. Es dürfen maximal fünf (5) Referenzprojekte eingereicht werden. Die Referenzen sind nur dann wertungsfähig, wenn sie die festgelegten Mindestkriterien erfüllen (vgl. Eignungskriterium Unternehmensreferenzen Los 3). Die Bewertung erfolgt anhand von fünf definierten Kriterien. Für jedes Kriterium können je Referenzprojekt maximal 2 Punkte erreicht werden. Somit können pro Referenzprojekt insgesamt maximal 10 Punkte erzielt werden. Die Gesamtpunktzahl eines Bewerbers ergibt sich aus der Summe der in den gewerteten Referenzprojekten erreichten Punkte. Somit können über die maximal fünf Referenzprojekte insgesamt maximal 50 Punkte erzielt werden. Die Bewerber werden entsprechend ihrer Gesamtpunktzahl in eine Rangfolge gebracht. Zur Teilnahme an der Angebots- und Verhandlungsphase werden je Los die fünf (5) Bewerber mit der höchsten Gesamtpunktzahl ausgewählt. Erreichen mehrere Bewerber auf dem letzten zur Teilnahme an der Angebots- und Verhandlungsphase berechtigenden Rang dieselbe Gesamtpunktzahl, werden sämtliche auf diesem Rang befindlichen Bewerber zur Angebots- und Verhandlungsphase zugelassen. Die vorgesehene Anzahl von fünf (5) Bewerbern je Los kann in diesem Fall überschritten werden. Die ausgewählten Bewerber werden anschließend zur Teilnahme an der Angebots- und Verhandlungsphase aufgefordert. Weitere Einzelheiten zum vorgesehenen Verfahrensablauf können den Bewerbungsbedingungen für die Angebots- und Verhandlungsphase ent¬nommen werden. Der Auftraggeber behält sich vor, geeignete Bewerber, die bereits ausgeschieden sind, zum Verfahren wieder zuzulassen, wenn sich Bewerber zu einem späteren Zeitpunkt aus dem Verfahren zurückziehen oder aus dem Verfahren ausgeschlossen werden. Kriterien: (1) Ausführung umfangreicher Leitungsgraben- und Leerrohrinfrastruktur. Erfüllung im Referenzprojekt hinsichtlich der Herstellung von Leitungsgräben, Leerrohrsystemen/ Kabelschutzrohren mit Kabelziehschächten. Bewertung je Referenz: 0 Punkte: keine vergleichbaren Leistungen. 1 Punkt: Leistungen zur Herstellung von Leitungsgräben. 2 Punkte: Leistungen zur Herstellung von Leitungsgräben und Leerrohrsystem/ Kabelschutzrohren mit Kabelziehschächten. zu 2) Ausführung von Mastfundamenten und Erdungsanlagen. Nachweis im jeweiligen Referenzprojekt hinsichtlich Fundamentbau (vor Ort oder in Fertigbauweise), Fundamenterder oder Ringerder. Bewertung je Referenz: 0 Punkte: keine vergleichbaren Leistungen. 1 Punkt: Leistungen über Fundamentbau in Fertigbauweise. 2 Punkte: Leistungen über Fundamentbau mit individuell vor Ort gefertigten Mastfundamente einschließlich Erdungsanlagen. zu 3) Errichtung von Mastanlagen im Außenbereich. Erfüllung im Referenzprojekt hinsichtlich Errichtung freistehender Mastanlagen. Bewertung je Referenz: 0 Punkte: keine vergleichbaren Leistungen. 1 Punkt: Leistungen zur Errichtung von Mastanlagen oder vergleichbaren Tragkonstruktionen. 2 Punkte: Leistungen zur Planung und Errichtung von Mastanlagen einschließlich Fundamentanschluss. zu 4) Ausführung mit Aufmaß- und Einheitspreisverträgen. Erfüllung im Referenzprojekt hinsichtlich leistungsbezogener Abrechnung auf Basis von Mengen- und Aufmaßpositionen. Bewertung je Referenz: 0 Punkte: keine vergleichbaren Leistungen. 1 Punkt: Referenzprojekt mit pauschalisierter Abrechnung. 2 Punkte: Referenzprojekt eines Projektes mit aufmaß-basierter Abrechnung mittels softwarebasierter AVA. zu 5) Ausführung mit Bestandsinfrastruktur und im laufenden Betrieb Erfüllung im Referenzprojekt Referenzprojekt hinsichtlich Tiefbau-, Fundamentarbeiten sowie Wiederherstellung von Oberflächen in bestehenden Anlagen oder laufenden Betrieb Bewertung je Referenz*: 0 Punkte: keine vergleichbaren Leistungen. 2 Punkte: Leistungen im laufenden Betrieb. *Es können nur 0 oder 2 Punkte erreicht werden."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung zur Eignung, zum Nichtvorliegen von Ausschlussgründen sowie zu Maßnahmen der Selbstreinigung, Vergabesperre. Zum Nachweis der Zuverlässigkeit hat der Bewerber die in Formblatt 8 geforderten Nachweise und Erklärungen abzugeben beziehungsweise Unterlagen als Nachweis vorzulegen. (a) Eigenerklärungen Die Bewerber haben die in Formblatt 8 enthaltenen Erklärungen wahrheitsgemäß abzugeben. (b) Selbstreinigung gemäß § 125 GWB und Wiederherstellung der Zuverlässigkeit Liegt ein Ausschlussgrund nach § 123 GWB oder § 124 GWB vor, wird ein Bewerber nicht ausgeschlossen, wenn nachweislich Selbstreinigungsmaßnahmen nach § 125 GWB durchgeführt wurden. Auch bei einem Verstoß gegen § 124 Abs. 2 GWB i. V. m. § 19 Abs. 1 i. V. m. § 21 MiLoG, § 124 Abs. 2 GWB i. V. m. § 21 Abs. 1 i. V. m. § 23 AEntG und § 124 Abs. 2 GWB i. V. m. § 98c Abs. 1 Satz 1 AufenthG, § 124 Abs. 2 GWB i.V.m. § 22 Abs. 1 LkSG wird das Unternehmen nicht ausgeschlossen, wenn es die Wiederherstellung der Zuverlässigkeit nachweist. Die Darstellung und der Nachweis der Selbstreinigungsmaßnahme ist mittels gesonderter Anlage des jeweiligen Unterzeichners zu Formblatt 8 vorzunehmen und ggf. weitere Nachweis beizufügen. Der Auftraggeber kann in komplexen Fällen verlangen, dass die Darstellung der Selbstreinigungsmaßnahmen durch ein Rechtsgutachten eines Rechtsanwalts zu ergänzen ist, welches die Selbstreinigungsmaßnahmen als hinreichend im Sinne der gesetzlichen Anforderungen bestätigt. Das Gutachten entbindet den Auftraggeber nicht von einer eigenen Prüfung und Bewertung der Selbstreinigungsmaßnahmen. Der Auftraggeber kann im eigenen Ermessen und unter Setzung von Ausschlussfristen weitere Unterlagen, Informationen und Nachweise anfordern, die er zur Beurteilung der Sach- und Rechtslage für erforderlich hält. Ungeachtet dessen müssen die Darstellung und der Nachweis vollständig sein."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung Verordnung (EU) 2022/576. Aufgrund der Vorgaben der Verordnung (EU) 2022/576 des Rates vom 08.04.2022 zur Änderung der Verordnung (EU) 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in der Ukraine destabilisieren ist es verboten einen öffentlichen Auftrag an ein Unternehmen zu vergeben, was von den Sanktionen der Verordnung erfasst ist. Verboten ist ebenfalls die Einbeziehung von Unterauftragnehmern, Eignungsverleihern und Lieferanten in die Leistungserbringung, wenn diese unter die Sanktionen fallen. Vor dem Hintergrund der geltenden Sanktionen haben alle Bewerber die Erklärungen des Formblattes 16 wahrheitsgemäß abzugeben und entsprechend zu unterzeichnen. Anträge, die das Formblatt 16 nicht oder nicht vollständig unterzeichnet beinhalten, werden vom Verfahren ausgeschlossen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 51 Abs. 2 SektVO. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/deeplink/subproject/db9ef810-7e64-451b-88a9-5a3ae55fe6ec",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e4148c1a-7b48-4333-b771-69d9e8f43385:1:LOT-0001",
+    "candidateId": "e4148c1a-7b48-4333-b771-69d9e8f43385:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45244000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e4148c1a-7b48-4333-b771-69d9e8f43385",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "c448f113-a87f-4181-a511-52172e5ef2db",
+    "internalIdentifier": "2026 803 028",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:50Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Wasserstraßen- und Schifffahrtsamt Elbe-Nordsee"
+    ]
+  },
+  "procedure": {
+    "title": "Kampfmittelerkundung und -räumung am Süddamm auf Helgoland",
+    "description": "Gegenstand dieser Vergabe ist eine zusammenhängende Bauleistung aus Kampfmittelerkundung, Kampfmittelräumung, flächenhafter Volumenräumung zur Hafensohlenanpassung im Bereich des Süddammes auf der Insel Helgoland. Die Leistungen sind technisch und organisatorisch so auszuführen, dass Erkundung, Abtrag mit Separation, Umlagerung, Kontrollpeilung, Dokumentation und Freigabe in einem durchgängigen Arbeitsprozess ineinandergreifen.\nDie theoretische Ausgangshöhe der zu bearbeitenden Hafensohle beträgt NHN -8,53 m. Nach den vorliegenden Fächerlotdaten betragen die Bearbeitungsflächen ca. 24.160 m2 für den Bereich mit Endhöhe NHN -9,30 m (Liegeplatz) und ca. 4.400 m2 für den Bereich mit Endhöhe NHN -9,00 m (Manövrierbereich). Das gelöste und kampfmitteltechnisch freigegebene Boden- und Felsmaterial soll grundsätzlich im Gewässer verbleiben und innerhalb der vorgesehenen Bereiche im Vorhafen umgelagert werden. Kampfmittel, und kampfmittelverdächtige Gegenstände (Schrott, grobe Störkörper) und sonstige aussonderungspflichtige Bestandteile werden getrennt erfasst und nach Maßgabe der zuständigen Stellen dementsprechend behandelt.\nDie Vergabe ist erforderlich, um die für die Einführung der Mehrzweckschiffe erforderlichen Liege- und Manövrierbedingungen am Süddamm herzustellen, die kampfmitteltechnische Sicherheit der Eingriffsflächen sicherzustellen und die direkt darauf anschließenden Arbeiten zur Ertüchtigung des Süddammes termingerecht vorzubereiten.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45244000",
+    "additionalCpvCodes": [
+      "90523100"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "Helgoland",
+      "nuts": "DEF09",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-02+01:00",
+    "endDate": "2027-04-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-09+02:00",
+    "deadlineTime": "10:30:00+02:00",
+    "method": "required",
+    "url": "https://evergabe.bundesverkehrsverwaltung.de/VMPSatellite/notice/CXWSYYLDYY88JXNC",
+    "questionDeadlineDate": "2026-09-28+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Anmeldung bei der Berufsgenossenschaft (Mit dem Angebot; Mittels Eigenerklärung): Nachweis, dass sich das Unternehmen bei der Berufsgenossenschaft angemeldet hat."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Eintragung in das Berufsregister (Mit dem Angebot; Mittels Eigenerklärung): Angabe über die Eintragung in das Berufsregister des Sitzes oder Wohnsitzes des Unternehmens."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Insovenzverfahren (Mit dem Angebot; Mittels Eigenerklärung): Angabe,ob ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren eröffnet oder die Eröffnung beantragt worden ist oder der Antrag mangels Masse abgelehnt wurde oder ein Insolvenzplan rechtskräftig bestätigt wurde."
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Umsatz des Unternehmens (Mit dem Angebot; Mittels Eigenerklärung): Angabe zum Umsatz des Unternehmens soweit es Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zu Arbeitskräften (Mit dem Angebot; Mittels Eigenerklärung): Erklärung, dass für die Ausführung der Leistungen erforderliche Arbeitskräfte zur Verfügung stehen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Zahlung von Steuern und Abgaben, sowie Beiträge zur Sozialversicherung (Mit dem Angebot; Mittels Eigenerklärung): Erklärung, dass der Verpflichtung zur Zahlung von Steuern und Abgaben, sowie Beiträge zur Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen, ordnungsgemäß erfüllt wurden"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Bauzeiten- und Ablaufplan (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Arbeitsverfahren für Erkundung, Sondierung, Verdachtspunkt- und Fundbehandlung (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Darstellung Volumenräumung, Materialaufbereitung, Kontrolle, Umlagerung und Entsorgung (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Qualitätssicherung, Eigenüberwachung und Mess-, Peil- und Dokumentationskonzept (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Sicherheits-, Schutz-, Havarie-, Räum- und Notfallkonzept sowie Lage- und Flächenplan (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Darstellung wesentlicher Projekt- und Umweltrisiken mit Gegen- bzw. Schutzmaßnahmen (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Referenzen Nassbaggerarbeiten im munitionsbbelasteten Bereichen - Erklärung, dass in den letzten fünf Kalenderjahren Leistungen erbracht wurden, die mit der zu vergebenden Leistung vergleichbar sind. Dies ist durch mindestens einer Referenz nachzuweisen. Hierbei sind folgende Mindeststandards gefordert: Vergleichbar sind Leistungen, die hinsichtlich Leistungsumfang, technischer Komplexität und Risikopotential mit der zu vergebenden Leistung vergleichbar sind. Die Referenzprojekte müssen folgende Leistungen umfasst haben: 1.1 Nassbaggerarbeiten in munitionsbelasteten wechsellagerigen Sedimenten bzw. Böden 1.2 Nassbaggerarbeiten in munitionsbelasteten in verwittertem Fels, wechselschichtigen Felsplatten, Geröllen oder vergleichbar schwer lösbarem Untergrund 1.3 Arbeiten unter Anwendung der einschlägigen Regelwerke (BFR KMR, DGUV) zum Umgang mit Kampfmitteln und Munition im Wasser 1.4 Separation des geförderten Materials auf einer schwimmenden Arbeitseinheit mit anschließendem Boden- und Materialhandling auf dem Wasser 1.5 Durchführung der Leistungen unter fortlaufender Berücksichtigung der Belange der Kampfmittelräumung Auf Verlangen sind die Referenzen mit mindestens folgenden Angaben vorzulegen: - Auftraggeber; - Art der ausgeführten Leistung; - Auftragssumme; - Ausführungszeitraum; - stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; - Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; - stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; - Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); - Angabe zur vertraglichen Bindung (Hauptauftragunternehmen, ARGE-Partner, Unterauftragunternehmen);ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; - Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung. Die Anzahl der Referenzen ist nicht beschränkt. Ein Bieter, der nicht mindestens eine erfolgreich abgeschlossene Referenz zu vergleichbaren Leistungen benennt wird ausgeschlossen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "CPT-Sondierungenvon schwimmenden Arbeitseinheiten im Offshore-Bereich - Erklärung, dass in den letzten fünf Kalenderjahren Leistungen erbracht wurden, die mit der zu vergebenden Leistung vergleichbar sind. Dies ist durch mindestens zwei Referenzen nachzuweisen. Hierbei sind folgende Mindeststandards gefordert: Vergleichbar sind Leistungen, die hinsichtlich der hydrographischen und nautischen Randbedingungen mit den Verhältnissen im Bereich der Nordsee vergleichbar sind. Die Referenzprojekte müssen folgende Leistungen umfasst haben: 2.1 Durchführung von CPT-Drucksondierungen von einer schwimmenden Arbeitseinheit aus mit integriertem Magnetometer-Messsystem bzw. gleichwertiger magnetischer Sensorik, Sondierung bis zur Felsoberkante bzw. bis zum technisch begründeten Sondierende. 2.2 Größerer rasterförmiger Sondierumfang. Der ausgeschriebene Auftrag umfasst voraussichtlich rund 2.000 Sondierpunkte. (NB : zusammen mind. 1.000 Sondierpunkte, davon mind. 500 in einer Referenz) 2.3 Arbeiten unter offshore-Bedingungen auf der Nordsee 2.4 Berücksichtigung von Tide, Strömung, Wetter, Seegang und eingeschränkten Einsatzfenstern 2.5 Einsatz geeigneter Positionierungs- und Navigationsverfahren 2.6 Durchführung vergleichbarer Untersuchungs- oder Räummaßnahmen auf See 2.7 Die Referenzprojekte müssen hinsichtlich der hydrographischen und nautischen Randbedingungen mit den Verhältnissen im Bereich der Nordsee vergleichbar sein. Auf Verlangen sind die Referenzen mit mindestens folgenden Angaben vorzulegen: - Auftraggeber; - Art der ausgeführten Leistung; - Auftragssumme; - Ausführungszeitraum; - stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; - Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; - stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; - Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); - Angabe zur vertraglichen Bindung (Hauptauftragunternehmen, ARGE-Partner, Unterauftragunternehmen);ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; - Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung. Die Anzahl der Referenzen ist nicht beschränkt. Ein Bieter, der nicht mindestens zwei erfolgreich abgeschlossene Referenzen zu vergleichbaren Leistungen benennt, wird ausgeschlossen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Arbeiten im laufenden Hafenbetrieb, Insel- und Offshore-Logistik - Erklärung, dass in den letzten fünf Kalenderjahren Leistungen erbracht wurden, die mit der zu vergebenden Leistung vergleichbar sind. Dies ist durch mindestens zwei Referenzen nachzuweisen. Hierbei sind folgende Mindeststandards gefordert: Vergleichbar sind Leistungen, die hinsichtlich der hydrographischen und nautischen Randbedingungen mit den Verhältnissen im Bereich der Nordsee vergleichbar sind. Kleinere Einzelmaßnahmen mit lediglich geringem Personal-, Geräte- oder Logistikaufwand werden nicht als vergleichbare Referenz anerkannt. Die Referenzprojekte müssen folgende Leistungen umfasst haben: 3.1 Durchführung der Arbeiten innerhalb eines aktiv genutzten Hafenbereiches 3.2 Störungsfreie Durchführung der Eigenleistungen ohne wesentliche Beeinträchtigung des Hafenbetriebes 3.3 Personal-, Geräte- und Materialtransporte über den Seeweg 3.4 Sicherstellung der Ver- und Entsorgung der Baustelle unter eingeschränkten Nachschub- und Versorgungsmöglichkeiten 3.5 Durchführung der Leistungen unter tide-, wetter- oder verkehrsbedingten Einschränkungen Auf Verlangen sind die Referenzen mit mindestens folgenden Angaben vorzulegen: - Auftraggeber; - Art der ausgeführten Leistung; - Auftragssumme; - Ausführungszeitraum; - stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; - Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; - stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; - Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); - Angabe zur vertraglichen Bindung (Hauptauftragunternehmen, ARGE-Partner, Unterauftragunternehmen);ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; - Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung. Die Anzahl der Referenzen ist nicht beschränkt. Ein Bieter, der nicht mindestens zwei erfolgreich abgeschlossene Referenzen zu vergleichbaren Leistungen benennt, wird ausgeschlossen."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Es können fehlende, unvollständige oder fehlerhafte unternehmensbezogene Unterlagen, insbesondere Eigenerklärungen, Angaben, Bescheinigungen oder sonstige Nachweise, nachgefordert werden. Die Nachforderung von leistungsbezogenen Unterlagen, die die Wirtschaftlichkeitsbewertung der Angebote anhand der Zuschlagskriterien betreffen, ist ausgeschlossen. Dies gilt nicht für Preisangaben, wenn es sich um unwesentliche Einzelpositionen handelt, deren Einzelpreise den Gesamtpreis nicht verändern oder die Wertungsreihenfolge und den Wettbewerb nicht beeinträchtigen. Die Unterlagen sind nach Aufforderung innerhalb von 6 KT einzureichen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://evergabe.bundesverkehrsverwaltung.de/VMPSatellite/notice/CXWSYYLDYY88JXNC/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

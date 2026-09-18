@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "15ed5508-3ca7-41ae-ae4f-fbf9d413b124:1:LOT-0000",
+    "candidateId": "15ed5508-3ca7-41ae-ae4f-fbf9d413b124:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45230000",
+      "45231000",
+      "45311200",
+      "45317000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "15ed5508-3ca7-41ae-ae4f-fbf9d413b124",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "f2576957-7066-4088-addf-6dc85bd28a14",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:28Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "ZfP Calw - Klinikum Nordschwarzwald, Abt. Bau & Technik"
+    ]
+  },
+  "procedure": {
+    "title": "00 PH 2023-01/D.03 Gebäudeautomation",
+    "description": "Gebäudeautomation für den Neubau eines gerontopsychiatrischen Pflegeheims am Standort des Klinikums Nordschwarzwald in Calw-Hirsau.\nDafür werden ungefähr benötigt:\n2 Schaltschränke Lüftungsgerät Dach und Technikzentrale UG\nca. 50 Brandschutzklappen aufschalten\nca. 135 Raumbediengeräte Fußbodenheizung/Temperierung\nca. 220 Elektrothermische Antriebe\n1 Fernwärmeübergabestation aufschalten\n1 Warmwasserbereitung aufschalten\n1 Lüftungsgerät aufschalten",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "45317000",
+      "45230000",
+      "45231000",
+      "45311200"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Im Lützenhardter Hof",
+      "additionalStreet": "",
+      "postcode": "75365",
+      "city": "Calw-Hirsau",
+      "nuts": "DE12A",
+      "country": "DEU"
+    },
+    {
+      "street": "Im Lützenhardter Hof",
+      "additionalStreet": "",
+      "postcode": "75365",
+      "city": "Calw-Hirsau",
+      "nuts": "DE12A",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-07-19+02:00",
+    "endDate": "2028-03-31+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Wirtschaftliche und finanzielle Leistungsfähigkeit"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Befähigung zur Berufsausübung einschließlich Auflagen hinsichtlich der Eintragungen in einem Berufs- und Handelregister."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Befähigung zur Berufsausübung einschließlich Auflagen hinsichtlich der Eintragungen in einem Berufs- und Handelregister."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Es gelten die gesetzlichen Bestimmungen über den Ausschluss von Angeboten."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.vergabe24.de/vergabeunterlagen/54321-Tender-1a0a4fc5fb3-7612fe3ef85981c0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

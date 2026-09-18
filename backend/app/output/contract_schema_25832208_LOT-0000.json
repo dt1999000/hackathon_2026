@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25832208:1:LOT-0000",
+    "candidateId": "25832208:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25832208",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:49Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "LVR Klinik Köln Instandhaltung Aufzugsanlagen",
+    "description": "Instandhaltung Aufzugsanlagen\n\nLVR Klinik Köln Instandhaltung Aufzugsanlagen",
+    "type": "beabsichtigte Beschränkte Ausschreibung",
+    "typeRaw": "beabsichtigte Beschränkte Ausschreibung"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "Hauptstandort: Merheim: Wilhelm-Griesinger-Str. 23, 51109 Köln Außenstellen: Maßregelvollzug, Porz: Porzer Ringstraße 25, 51149 Köln Tagesklinik und Wohnheim, Bilderstöckchen: Rottweiler Str. 1-3, 50739 Köln Tagesklinik, Mülheim: Adamsstraße 12, 51063 Köl",
+      "nuts": "",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.lvr.de/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a0a9f41eec-2cd0dafc2d8ac38e&PublicationType=4",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

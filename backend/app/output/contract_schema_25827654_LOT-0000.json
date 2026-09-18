@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827654:1:LOT-0000",
+    "candidateId": "25827654:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45351000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827654",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:33Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "WW Wuhlheide, Opt. Reinwasserförd. u. Nb. UV-Anlage, VP 2 UV-Anlage",
+    "description": "Lieferung und Montage von einer oder zwei UV-Anlagen im Wasserwerk Wuhlheide\n\nUV-Anlage",
+    "type": "de-comp-neg-wo-call",
+    "typeRaw": "de-comp-neg-wo-call"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45351000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "Lieferung und Montage von einer oder zwei UV-Anlagen im Wasserwerk Wuhlheide",
+      "nuts": "",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-29+01:00",
+    "deadlineTime": "10:00:00+01:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabekooperation.berlin/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a023619110-10c94caa131ec36&PublicationType=0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

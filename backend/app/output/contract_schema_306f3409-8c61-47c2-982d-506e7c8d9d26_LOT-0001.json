@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "306f3409-8c61-47c2-982d-506e7c8d9d26:1:LOT-0001",
+    "candidateId": "306f3409-8c61-47c2-982d-506e7c8d9d26:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45443000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "306f3409-8c61-47c2-982d-506e7c8d9d26",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "424385f1-b324-4b22-af01-9627f14b0236",
+    "internalIdentifier": "1",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:18Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Bundesrepublik Deutschland und Freistaat Bayern letztlich vertreten durch die WIGES Wasserbauliche Infrastrukturgesellschaft mbH",
+      "WIGES Wasserbauliche Infrastrukturgesellschaft mbH"
+    ]
+  },
+  "procedure": {
+    "title": "Los 1: Sulz.3073 Metallbau Fassade SW Sulzbach II",
+    "description": "Fassaden und Klempnerarbeiten am Schöpfwerk Sulzbach II:\n-\tEdelstahlfassade inklusive Unterkonstruktion, ca. 245 m2.  \nTechnische Bearbeitung:\n-\tPlanungsleistungen, Dokumentation",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45443000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "94553",
+      "city": "Mariaposching",
+      "nuts": "DE22B",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-14+01:00",
+    "endDate": "2027-09-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "- Wirtschaftliche Leistungsfähigkeit: Nachweis des Umsatzes der letzten 3 Geschäftsjahre: 3,0 Mio Euro pro Geschäftsjahr (für Los 1-3 zusammen) - Der Bieter kann mit dem Angebot zum Nachweis seiner Leistungsfähigkeit eine direkt abrufbare Eintragung in die allgemein zugängliche Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) nachweisen. Der Nachweis der Eignung kann auch durch Eigenerklärung gemäß der \"Eigenerklärung zur Eignung\" oder der EEE, ergänzt durch einschlägige Unterlagen erbracht werden."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "- Referenzen: Mind. 3 positive Referenzen zu ausgeführten vergleichbaren Projekten zu Metallfassaden und Dachabdichtungen innerhalb der letzten 3 Jahre - Der Bieter kann mit dem Angebot zum Nachweis seiner Leistungsfähigkeit eine direkt abrufbare Eintragung in die allgemein zugängliche Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) nachweisen. Der Nachweis der Eignung kann auch durch Eigenerklärung gemäß der \"Eigenerklärung zur Eignung\" oder der EEE, ergänzt durch einschlägige Unterlagen erbracht werden."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "- Personal: mindestens ein Spenglermeister im Betrieb - Der Bieter kann mit dem Angebot zum Nachweis seiner Leistungsfähigkeit eine direkt abrufbare Eintragung in die allgemein zugängliche Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) nachweisen. Der Nachweis der Eignung kann auch durch Eigenerklärung gemäß der \"Eigenerklärung zur Eignung\" oder der EEE, ergänzt durch einschlägige Unterlagen erbracht werden."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16a EU VOB/A nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/303405",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

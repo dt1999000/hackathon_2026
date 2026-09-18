@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25d2e6c2-5cf0-430d-b4d6-fca7dc517bfa:1:LOT-0002",
+    "candidateId": "25d2e6c2-5cf0-430d-b4d6-fca7dc517bfa:1:LOT-0002",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45442100",
+      "45442110",
+      "45442180"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25d2e6c2-5cf0-430d-b4d6-fca7dc517bfa",
+    "version": "01",
+    "lotIdentifier": "LOT-0002",
+    "procedureIdentifier": "25d2e6c2-5cf0-430d-b4d6-fca7dc517bfa",
+    "internalIdentifier": "0002",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:16Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Zentrale Vergabestelle der Städte Rietberg, Verl und der Gemeinde Langenberg"
+    ]
+  },
+  "procedure": {
+    "title": "Los 2: 2. OG",
+    "description": "'- Wände (spachteln, Anstrichvlies, Beschichtung) ca. 3.400 m²  \n- Decken (Grundierung, Beschichtung) ca. 570 m²\n- Deckenfriese (Schachtelung, Grundierung, Beschichtung) ca. 810 lfm\n- Türzargen lackieren ca. 29 Stk. \n\nDie Arbeiten sind mit mindesten 7 Arbeitskräften gleichzeitig zu kalkulieren. \n\nAngebote sind nur für ein Los möglich. Bietet ein Unternehmen mehr als ein Los an, werden alle Angebote von diesem ausgeschlossen. \n\nAusführungszeitraum: \n02.11.2026 - 18.12.2026",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45442100",
+    "additionalCpvCodes": [
+      "45442110",
+      "45442180"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DEA42",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-02+01:00",
+    "endDate": "2026-12-18+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-02+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Erklärung, dass in den letzten fünf Kalenderjahren vergleichbare Leistungen ausgeführt wurden. drei Referenznachweise mit mindestens folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Mit Angebotsabgabe abzugeben: - Angabe des eingesetzten Personals (mind. 7 Arbeitskräfte) Auf gesondertes Verlangen abzugeben: - Angaben zur Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal"
+    },
+    {
+      "code": "slc-abil-staff-yrly-no-mgmt",
+      "label": null,
+      "description": "Angaben zur Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Erklärung des Versicherungsgebers über das Bestehen eines entsprechenden Versicherungsvertrages. Ansonsten Erklärung, dass ein entsprechender Vertrag geschlossen wird"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Angaben zum Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen;"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Erklärung, dass, soweit zutreffend, für das Unternehmen eine Eintragung im Berufsregister (z.B. Handwerkskammer/Industrie- und Handelskammer) vorhanden ist. Ansonsten Erklärung, dass keine Verpflichtung zur Eintragung besteht."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Gewerbeanmeldung oder Handelsregisterauszug, sofern zutreffend"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Erklärung, dass der Verpflichtung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung, soweit die Pflicht zur Beitragszahlung besteht, ordnungsgemäß erfüllt ist. - Unbedenklichkeitsschreiben der Krankenkassen - Unbedenklichkeitsbescheinigung der zuständigen Berufsgenossenschaft - Unbedenklichkeitsbescheinigung Finanzamt"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten: Um einen eventuellen Ausschluss des Angebotes zu vermeiden, legen Sie bitte die geforderten Nachweise und Erklärungen dem Angebot unbedingt vollständig bei."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/25d2e6c2-5cf0-430d-b4d6-fca7dc517bfa",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "bf7b6e04-b0a5-42d8-aa5d-72d64c77b3c3:1:LOT-0001",
+    "candidateId": "bf7b6e04-b0a5-42d8-aa5d-72d64c77b3c3:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "bf7b6e04-b0a5-42d8-aa5d-72d64c77b3c3",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "885016d8-b4f5-45df-a9cc-d11f320d830f",
+    "internalIdentifier": "2026/2887",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:09Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Rems-Murr-Kliniken gGmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Rems-Murr-Kliniken gGmbH - Europaweite Vergabe des Baugewerks \"Sanitär\" für die Realisierung des Funktionsneubaus an der Rems-Murr-Klinik Schorndorf",
+    "description": "Gegenstand der vorliegenden Bauausschreibung ist das Gewerk \"Sanitär\" (KG 410 Abwasser-, Wasser-, Gasanlagen) für die Realisierung des Funktionsneubaus an der Rems-Murr-Klinik Schorndorf. Die Sanitärarbeiten umfassen die Herstellung der sanitärtechnischen Anlagen für den Funktionsneubau einschließlich der hierfür erforderlichen Liefer-, Montage-, Inbetriebnahme-, Einregulierungs- und Dokumentationsleistungen. Die Anlagen dienen der Trinkwasser- und Abwasserversorgung der medizinischen Funktionsbereiche, Pflegebereiche sowie der sonstigen Nutzungsbereiche des Neubaus. Die Bauleistungen im Gewerk Sanitär weisen insbesondere folgende Leistungen auf: - Errichtung der Abwasserleitungen (ca. 2.400 m Guss DN 50 - DN 150) einschließlich Regenwasser- und Schachtanlagen, - Lieferung und Montage von ca. 4.200 m Trinkwasserleitung aus Edelstahl DN 15 - DN 75,  - Lieferung und Inbetriebnahme einer Druckerhöhungsanlage für Laborwasser,  - Lieferung und Montage von 65 Handwaschbecken,  - Einbau von 13 Nasszellen mit Dusche, WC und Handwaschbecken, - Lieferung und Montage von 40 WC-Anlagen mit Zubehör.   Die sanitärtechnischen Anlagen sind für den Gesamtbauablauf und die spätere Inbetriebnahme des Funktionsneubaus von maßgeblicher Bedeutung, da sie wesentliche Voraussetzungen für die Fertigstellung und den bestimmungsgemäßen Betrieb der medizinischen Funktions-, Behandlungs- und Pflegebereiche schaffen. Die Leistungen stehen in enger technischer und terminlicher Abhängigkeit zu zahlreichen weiteren Ausbau- und TGA-Gewerken, insbesondere den Gewerken Heizung, Lüftung, Elektroinstallation, Gebäudeleittechnik sowie der Energiezentrale. Besondere Herausforderungen ergeben sich aus der Integration anspruchsvoller Trinkwasser- und Abwassersysteme in hochinstallierte medizinische Bereiche, der Vielzahl von Schnittstellen zu anderen technischen Anlagen sowie den teilweise beengten Platzverhältnissen innerhalb des Gebäudes. Hervorzuheben sind dabei die Installationen im Erdgeschoss mit einer lichten Abhangdeckenhöhe von 25 cm. Hinzu kommt die Erforderlichkeit, die Ausführung und Montageabläufe auf den Baufortschritt sowie die Leistungen der übrigen Gewerke abzustimmen. Diese Rahmenbedingungen erfordern eine enge Abstimmung mit den Bietern bereits im Vergabeverfahren hinsichtlich der technischen Umsetzung, der Ausführungsorganisation und der Schnittstellenkoordination. Die Leistungen sind voraussichtlich im Zeitraum von Ende April 2027 bis September 2029 auszuführen. Detaillierte Informationen zu Art und Umfang der zu erbringenden Leistungen (u.a. Leistungsverzeichnis) werden den im Teilnahmewettbewerb ausgewählten Bietern mit Angebotsaufforderung zur Verfügung gestellt.",
+    "type": "neg-w-call",
+    "typeRaw": "neg-w-call"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE116",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "29"
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YMZMPPQ",
+    "questionDeadlineDate": "2026-10-06+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Aktueller Nachweis über die Eintragung des Unternehmens in das Berufs- oder Handelsregister oder in die Handwerksrolle."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Eigenerklärung über das Bestehen einer Betriebshaftpflichtversicherung mit einer Deckungssumme in Höhe von mind. EUR 5 Mio. für Personen- und Sachschäden sowie mind. EUR 5 Mio. für Vermögensschäden bzw. Eigenerklärung, dass im Auftragsfalle eine entsprechende Versicherung abgeschlossen wird."
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Eigenerklärung über den Jahresumsatz in den vergangenen drei abgeschlossenen Geschäftsjahren einschließlich des Jahresumsatzes mit vergleichbaren Leistungen. Es gilt folgende Mindestanforderung: Der durchschnittliche Gesamtjahresumsatz der vergangenen drei Geschäftsjahre muss mindestens EUR 4 Mio. netto betragen. Hinweis der Vergabestelle: Der geforderte Mindestumsatz ist von Bewerbergemeinschaften in Summe nachzuweisen."
+    },
+    {
+      "code": "slc-abil-ref-services",
+      "label": null,
+      "description": "Es sind folgende Mindestreferenzen nachzuweisen: - Eigenerklärung über das Vorliegen von drei Referenzen über die Ausführung von vergleichbaren Bauleistungen im Gewerk \"Sanitär\" mit einem Auftragswert in Höhe von mindestens EUR 2.000.000,- netto. Die Bauleistung muss in den letzten bis zu fünf abgeschlossenen Kalenderjahren (frühestens am 01.01.2021) und spätestens bis zum Ablauf der Teilnahmefrist abgeschlossen (Abnahme) worden sein. Hinweise: Die geforderten Mindestreferenzen sind von Bewerbergemeinschaften nur einmal vorzulegen. Die Erklärungen über das Referenzprojekt muss folgende Angaben enthalten: - Bezeichnung des Auftrags, - Auftraggeber (Anschrift, Ansprechpartner, Telefonnummer), - Leistungsumfang / -gegenstand - Ausführung von vergleichbaren Bauleistungen im Gewerk \"Sanitär\" - Auftragswert in EUR netto - Zeitraum der Bauarbeiten - Fertigstellung der Bauarbeiten (Abnahme) Die Vorlage von insgesamt mehr als drei Referenzen ist nicht erwünscht. Die Bewertung der Teilnahmeanträge und somit die Auswahl der Bewerber, die zur Abgabe eines ersten Angebots aufgefordert werden, erfolgt in einem dreistufigen Verfahren. Stufe 1: Zunächst wird geprüft, ob die Teilnahmeanträge den formalen Anforderungen genügen. Unvollständige Teilnahmeanträge, die trotz ggf. erfolgter Nachforderung von Unterlagen weiterhin unvollständig bleiben, können nicht berücksichtigt werden. Stufe 2: Anschließend wird beurteilt, ob der Bewerber nach den vorgelegten Angaben und Nachweisen grundsätzlich geeignet erscheint, die verfahrensgegenständlichen Leistungen ordnungsgemäß zu erbringen. Stufe 3: Schließlich wird für den Fall, dass mehr als drei grundsätzlich geeignete Unternehmen sich beworben haben, unter den Bewerbern anhand der Referenzen gem. der Bekanntmachung beurteilt, wer unter den als grundsätzlich geeignet eingestuften Bewerbern im Vergleich zu den Mitbewerbern mit Blick auf die zu erbringende Leistung besonders geeignet erscheint und daher am weiteren Verfahren beteiligt werden soll. Damit eine vorgelegte Referenz im Rahmen der Auswahlentscheidung berücksichtigt werden kann, müssen kumulativ folgende Voraussetzungen vorliegen: 1. Die Referenz muss in der Referenztabelle im Teilnahmeformular (vgl. Seite 22 ff.) als priorisiert gekennzeichnet werden. Erfolgt, auch nach ggf. erfolgter Nachforderung, keine Priorisierung durch den Bewerber, so wird die Vergabestelle die Referenzen priorisieren und entsprechend in die Wertung einbeziehen. 2. Die als priorisiert gekennzeichnete Referenz muss die Mindestanforderungen an die Referenz erfüllen. Je Bewerber werden lediglich die drei als priorisiert gegenzeichneten Mindestreferenzen herangezogen. Im Rahmen der Auswahlentscheidung können maximal 18 Punkte (max. 6 Punkte je Mindestreferenz) erzielt werden. Dabei werden diese Mindestreferenzen wie folgt bewertet: - Bewertet wird bei dieser Referenzleistung der Auftragswert in EUR netto nach folgender Maßgabe: EUR 2 Mio. bis EUR 3 Mio. 1 Punkt > EUR 3 Mio. bis EUR 4 Mio. 2 Punkte > EUR 4 Mio. 3 Punkte - Bewertet wird bei dieser Referenzleistung der Zeitraum der Leistungserbringung (maßgeblich ist der Tag der Abnahme) nach folgender Maßgabe: Die Leistungserbringung (Tag der Abnahme) erfolgte nach dem 31.12.2022 1 Punkt Die Leistungserbringung (Tag der Abnahme) erfolgte nach dem 31.12.2023 2 Punkte Die Leistungserbringung (Tag der Abnahme) erfolgte nach dem 31.12.2024 3 Punkte Für den Fall, dass nach der vorstehend beschriebenen Vorgehensweise durch Punktegleichstand die vorgesehene Anzahl der zur Angebotsabgabe aufzufordernden Bieter überschritten wird, entscheidet das Los."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price",
+      "quality"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Vergabestelle behält sich vor, von den Bewerbern die Nachreichung, Vervollständigung und/oder Korrektur von Unterlagen im Rahmen des vergaberechtlich Zulässigen zu verlangen. Werden Unterlagen nicht fristgemäß nachgereicht, vervollständigt oder korrigiert, wird der Teilnahmeantrag ausgeschlossen. Ein Anspruch auf Nachforderung besteht nicht."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YMZMPPQ/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

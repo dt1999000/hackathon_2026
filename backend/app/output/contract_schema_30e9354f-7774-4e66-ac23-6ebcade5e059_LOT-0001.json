@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "30e9354f-7774-4e66-ac23-6ebcade5e059:1:LOT-0001",
+    "candidateId": "30e9354f-7774-4e66-ac23-6ebcade5e059:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45223300"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "30e9354f-7774-4e66-ac23-6ebcade5e059",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "bae7f365-c3e4-4f4d-ae8b-b531dca9519d",
+    "internalIdentifier": "ZVSt-2026-B56",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:08Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landkreis Vorpommern-Greifswald - Der Landrat"
+    ]
+  },
+  "procedure": {
+    "title": "GAZ - Los 34 (Außenanlagen)",
+    "description": "Es wird ein 3-geschossiges, rechteckiges Gebäude aus Stahlbeton errichtet. Das EG und das 1.OG erhalten eine kerngedämmte Fassade mit Verblendmauerwerk, das 2.OG erhält eine hinterlüftete Metallfassade. Das 2.OG kragt auf der Nordseite um ca. 2,5m aus. Das Dach besteht aus einem Flachdach auf dem Haustechnikgeräte verortet sind und einem Satteldach mit geringer Neigung unter 5 Grad. Beide Dächer sind mit PV-Modulen belegt und erhalten eine extensive Dachbegrünung.\n\n- BGF: ca. 4.550 qm\n- Gebäudeabmessung: ca. 62,5 m x 24,0 m",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "45223300",
+      "71400000",
+      "77300000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Feldstraße 85a",
+      "additionalStreet": "",
+      "postcode": "17489",
+      "city": "Greifswald",
+      "nuts": "DE80N",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-01+01:00",
+    "endDate": "2028-06-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "required",
+    "url": "https://evergabe-mv.de/Satellite/notice/CXVHYDBDYR9SBYS5",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Befähigung und Erlaubnis zur Berufsausübung (Mit dem Angebot; Mittels Eigenerklärung): Folgende Eigenerklärungen, Nachweise und Unterlagen insbesondere über die Befähigung und Erlaubnis zur Berufsausübung sind als gesonderte Anlagen beizufügen; Dokumente werden hochgeladen, Unterschriften werden durch die ordnungsgemäße Einreichung in Textform gemäß § 126b BGB ersetzt: - wenn vorhanden, Vorlage eines Präqualifizierungszertifikats, - wenn keine Präqualifizierung vorliegt, Vorlage eines aktuellen Auszuges aus dem Berufs- oder Handelsregister oder einer vergleichbaren Eintragung nicht älter als 6 Wochen für den Bewerber, jedes Mitglied der Bewerber-/Bietergemeinschaft und (bei Eignungsleihe) jeden Nachunternehmer (im Falle eines Handelsregisterauszuges genügt ein Auszug von www.handelsregister.de); wenn keine Registerpflicht besteht, ist eine entsprechende Eigenerklärung einzureichen - Benennung der zur Führung der Geschäfte vor Ort bestellten Person und eines Stellvertreters (Eigenerklärung)."
+    },
+    {
+      "code": "slc-sche-qu-cert-indep",
+      "label": null,
+      "description": "technische und berufliche Leistungsfähigkeit (Mit dem Angebot; Mittels Eigenerklärung): Folgende Eigenerklärungen, Nachweise und Unterlagen im Hinblick auf die besonderen Anforderungen an die technische und berufliche Leistungsfähigkeit sind als gesonderte Anlagen beizufügen; Dokumente werden hochgeladen, Unterschriften werden durch die ordnungsgemäße Einreichung in Textform gemäß § 126b BGB ersetzt: - Darstellung der Geschäftstätigkeit des Bieters (eigene Geschäftsfelder, Branchenschwer-punkte, für die der Bieter hauptsächlich tätig ist etc. zur näheren Erläuterung der Angaben im Formblatt \"Informationen über das Unternehmen\"; Eigenerklärung), - Eigenerklärung zur Personalstruktur des Bieters, aus der das jährliche Mittel der vom Bieter in den letzten drei Jahren Beschäftigten, deren Qualifikation und Erfahrung mit der Erbringung vergleichbarer Leistungen (in Gruppen von Beschäftigten nach sowie die Anzahl der Führungskräfte ersichtlich ist (bezogen auf benannte verantwortliche Führungskräfte unter Nennung von Qualifikation, Stellung im Unternehmen und Berufserfahrung)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "wirtschaftliche und finanzielle Leistungsfähigkeit (Mit dem Angebot; Mittels Eigenerklärung): Folgende Eigenerklärungen, Nachweise und Unterlagen insbesondere über die wirtschaftliche und finanzielle Leistungsfähigkeit sind als gesonderte Anlagen beizufügen; Dokumente werden hochgeladen, Unterschriften werden durch die ordnungsgemäße Einreichung in Textform gemäß § 126b BGB ersetzt: - Nachweis einer angemessenen Berufs- oder Betriebshaftpflichtversicherung bei einem in der Europäischen Union zugelassenen Versicherer oder Erklärung über den Abschluss im Zuschlagsfalle Mindestanforderungen an die Deckungssummen: Die Deckungssumme je Schadensfall muss: - mindestens 1 Mio. Euro pauschal für Personenschäden, - mindestens 2 Mio. Euro pauschal für Sach-/, Vermögens-/ und sonstigen Schäden betragen, jeweils bezogen auf den jeweiligen Schadenfall, und sich auch auf die gegenständlichen Aufgaben des ausgeschriebenen Vertrages beziehen. Die Deckung muss über die Vertragslaufzeit uneingeschränkt erhalten bleiben. Wenn ein solcher Versicherungsschutz noch nicht oder nicht in der geforderten Höhe besteht, ist eine schriftliche Eigenerklärung vorzulegen, wonach der Bieter dem AG den Abschluss einer entsprechenden Versicherung im Zuschlagsfalle zusichert. Der Abschluss der (erhöhten) Versicherung ist im Zuschlagsfalle innerhalb von vier Wochen nach Zuschlag nachzuweisen. Bei Bietergemeinschaften ist der Versicherungsschein mit den geforderten Deckungssummen für jedes Mitglied beizufügen. Bezüglich der Eigenerklärung zur Anpassung auf die geforderten Deckungssummen genügt es, wenn sie von der Bietergemeinschaft insgesamt vorgelegt wird. Hinweis: Bei Nichterfüllen dieser Voraussetzungen wird das Angebot wegen nicht nachgewiesener Eignung und Unvollständigkeit vom Verfahren ausgeschlossen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Das verpreiste Leistungsverzeichnis und das Dokument 2.01 - 213 Angebotsschreiben.pdf werden nicht nachgefordert. Das Nichteinreichen dieser Dokumente führt zum Ausschluss des Angebotes."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://evergabe-mv.de/Satellite/notice/CXVHYDBDYR9SBYS5/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

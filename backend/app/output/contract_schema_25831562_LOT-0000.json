@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831562:1:LOT-0000",
+    "candidateId": "25831562:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000-7"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831562",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:36Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "26/2005 (LBB NL Diez) VG Bad Ems, Nassau, Montabaur / Nieder-/Mittelspannungsanlagen bis 36 kV",
+    "description": "26/2005 (LBB NL Diez) VG Bad Ems, Nassau, Montabaur / Nieder-/Mittelspannungsanlagen bis 36 kV",
+    "type": "de-restricted-w-call",
+    "typeRaw": "de-restricted-w-call"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45000000-7",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "65582 Diez",
+      "nuts": "DEB",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-02+02:00",
+    "deadlineTime": "23:59:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://lbb.vergabe.rlp.de/VMPSatellite/notice/CXPLYYDYNEZ",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

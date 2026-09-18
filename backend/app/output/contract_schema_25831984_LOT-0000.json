@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831984:1:LOT-0000",
+    "candidateId": "25831984:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831984",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:50Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Deckenbau 2026",
+    "description": "Deckenbauarbeiten an Kreisstraßen DON 5 (Ortsdurchfahrt Dürrenzimmern), DON 24/25 (Gansheim - Burgmannshofen), DON 12 (Wallerstein - Birkhausen) und DON 9 (Mönchsdeggingen - Schaffhausen)\n\nWichtiger Hinweis: Die Ausschreibung beinhaltet vier Lose. Aus innerorganisatorischen Gründen entfällt in der konkreten Benennung das Los 1. Ein Los 1 existiert somit namentlich nicht. \nDie Lose lauten Los 2, Los 3, Los 4 und Los 5.\n\nDeckenbau 2026",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "86720 Nördlingen, Dürrenzimmern",
+      "nuts": "DE2",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-13+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/576267b8-33c3-42df-ba71-4bd439e72493",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "d401b235-197f-4d4d-af15-cfe7a6d83568:1:LOT-0001",
+    "candidateId": "d401b235-197f-4d4d-af15-cfe7a6d83568:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45421153",
+      "45422000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "d401b235-197f-4d4d-af15-cfe7a6d83568",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "2c18ba50-08e0-44c4-82b8-683eef88734d",
+    "internalIdentifier": "b3d83bc3-8217-4415-8033-c47f321f15d9",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:30Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Oldenburg (Oldb)"
+    ]
+  },
+  "procedure": {
+    "title": "SGF | Sport- und Gesundheitsbad Flötenteich, Tischlerarbeiten, Einbaumöbel aus Holz",
+    "description": "Die Tischlerarbeiten für das Sport- und Gesundheitsbad Flötenteich umfassen die Lieferung und Montage von Einbaumöbeln aus Holz, einen höhenverstellbaren Kassentresen, Einbau-Tische, Schränke, Regale und Akustikwände",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45422000",
+    "additionalCpvCodes": [
+      "39130000",
+      "45421153"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "26125",
+      "city": "Oldenburg (Oldb), Mühlenhofsweg 80",
+      "nuts": "DE943",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-06+01:00",
+    "endDate": "2027-08-15+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-02+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-09-25+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/4a83f8c3-5d3c-4b20-87ef-6a4d4263aad0/suitabilitycriteria"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/4a83f8c3-5d3c-4b20-87ef-6a4d4263aad0/suitabilitycriteria"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/4a83f8c3-5d3c-4b20-87ef-6a4d4263aad0/suitabilitycriteria"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/4a83f8c3-5d3c-4b20-87ef-6a4d4263aad0/suitabilitycriteria"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/4a83f8c3-5d3c-4b20-87ef-6a4d4263aad0/suitabilitycriteria"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/4a83f8c3-5d3c-4b20-87ef-6a4d4263aad0/suitabilitycriteria"
+    },
+    {
+      "code": "slc-stand-ratio",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/4a83f8c3-5d3c-4b20-87ef-6a4d4263aad0/suitabilitycriteria"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 56 Abs. 2 VgV, § 51 Abs. 2 SektVO, § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/deeplink/subproject/ae445c9c-3523-414d-a1f2-d43c9febc1dd",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

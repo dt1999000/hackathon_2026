@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "46168221-4d85-4890-9b02-c1c4bfeed155:1:LOT-0001",
+    "candidateId": "46168221-4d85-4890-9b02-c1c4bfeed155:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45261210"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "46168221-4d85-4890-9b02-c1c4bfeed155",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "f1d00d9a-14b4-45bb-bbdb-5640cfba956c",
+    "internalIdentifier": "B/2025/042",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:41Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Gronau (Westf.)"
+    ]
+  },
+  "procedure": {
+    "title": "Erweiterung der Martin-Luther-Schule - Dachdeckerarbeiten",
+    "description": "Ausgeschrieben sind Dachdeckerarbeiten für den Umbau- sowie Erweiterungsbau der Martin-Luther-Grundschule in Gronau an der Herzogstraße. Dieses umfasst die folgenden Leistungen: \n\n- ca. 800,00 m2 bituminöse Flachdachabdichtung einschl. EPS-Gefälledämmung\n- ca. 800,00 m2 Gründachfläche\n- ca. 120,00 m Attikableche aus Aluminium, gekantet \n- ca. 800,00 m2 Abklebung der Sohlplatte\n- ca. 75,00 m Abdichtung bodentiefer Fensterelemente im System",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45261210",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Herzogstraße 26",
+      "additionalStreet": "",
+      "postcode": "48599",
+      "city": "Gronau",
+      "nuts": "DEA34",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "40"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.vergabe-westfalen.de/VMPSatellite/notice/CXWFYYDDYR55PG53",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Durchschnittliche jährliche Belegschaft (Mit dem Angebot; Mittels Eigenerklärung): - Angaben zu den zur Verfügung stehenden Arbeitskräften des Bieters. - - Angabe gem. Eigenerklärung zur Eignung, Formular 124. - Angaben zu Referenzen über in den letzten 5 Jahren ausgeführten und mit der Ausschreibung vergleichbaren Leistungen. - Angabe gem. Eigenerklärung zur Eignung, Formular 124."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Referenzen zu bestimmten Arbeiten (Mit dem Angebot; Mittels Eigenerklärung): Angaben zu Referenzen über in den letzten 5 Jahren ausgeführten und mit der Ausschreibung vergleichbaren Leistungen Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. Angabe gem. Eigenerklärung zur Eignung, Formular 124."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in ein relevantes Berufsregister (Mit dem Angebot; Mittels Eigenerklärung): - Nachweis über den Eintrag in die Handwerksrolle oder ein vergleichbares nationales Register"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Spezifischer Jahresumsatz (Mit dem Angebot; Mittels Eigenerklärung): Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. Angabe gem. Eigenerklärung zur Eignung, Formular 124."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Eintragung in das Handelsregister (Mit dem Angebot; Mittels Eigenerklärung): Nachweis über den Eintrag in das Handelsregister sowie in das örtliche Gewerberegister oder ein vergleichbares nationales Register"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Bescheinigung in Steuersachen des Finanzamtes (Mit dem Angebot; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Kopie der Gewerbeanmeldung (Mit dem Angebot; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-sche-qu-cert-indep",
+      "label": null,
+      "description": "Zertifikate von unabhängigen Stellen über Qualitätssicherungsstandards (Mit dem Angebot; Mittels Eigenerklärung): Zertifikate von unabhängigen Stellen über Qualitätssicherungsstandards (Mit dem Angebot; Mittels Eigenerklärung): Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder durch die Vorlage einer Einheitlichen Europäischen Eigenerklärung (EEE) oder durch eine Eigenerklärung gemäß Formblatt 124 (Eigenerklärung zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die in der EEE oder im Formblatt 124 angegebenen Nachweise innerhalb von sechs Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeit anderer Unternehmen, ist deren Eintrag im o.g. Präqualifikationsverzeichnis oder es sind die Erklärungen bzw. Nachweise gemäß der EEE oder der Eigenerklärung gemäß Formblatt 124 für diese Unternehmen auf Verlangen vorzulegen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in deutscher Sprache beizufügen. Das Formblatt 124 wird mit den Vergabeunterlagen zum Download bereitgestellt."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die in der EEE oder im Formblatt 124 angegebenen Nachweise innerhalb von sechs Kalendertagen nach Aufforderung vorzulegen."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.vergabe-westfalen.de/VMPSatellite/notice/CXWFYYDDYR55PG53/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

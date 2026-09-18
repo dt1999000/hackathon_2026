@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "39ce80d8-6d2b-4282-9ee7-2a41fe6612a5:1:LOT-0001",
+    "candidateId": "39ce80d8-6d2b-4282-9ee7-2a41fe6612a5:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000",
+      "45332400"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "39ce80d8-6d2b-4282-9ee7-2a41fe6612a5",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "8ace5052-6e97-4fcd-96a8-90d688278888",
+    "internalIdentifier": "2026/24",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:10:04Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Wildau"
+    ]
+  },
+  "procedure": {
+    "title": "Erweiterung Grundschulcampus Wildau - Los 13 - Heizung, Sanitär",
+    "description": "Los 13 - Heizung, Sanitär  Inhalt der Ausschreibung ist die Herstellung von Heizungs- und Sanitäranlagen für den Neubau der Grundschule und Sporthalle.   Leistungsumfang:  Sanitärinstallation:  - Herstellung Grundleitungen außen  - Fettabscheideranlagen für Austeilküche und Lehrküche  - Ausrüstung Sanitär - Behindertengerechte Ausstattung  - Be- und Entwässerung  Heizungsinstallation:  - Wärmeerzeugungsanlage - Wärmeverteilungsanlage  - Fußbodenheizung  - Gasinstallation   zu den Ausführungszeiten:  - Erstellung und Übergabe Werk- und Montageplanung: 04.01.2027 bis 29.01.2027 - Ausführung / Montage Baustelle: 08.04.2027 bis 27.10.2028",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": [
+      "45332400"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Fichtestraße 90",
+      "additionalStreet": "",
+      "postcode": "15745",
+      "city": "Wildau",
+      "nuts": "DE406",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-04+01:00",
+    "endDate": "2028-10-27+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-23+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://vergabemarktplatz.brandenburg.de/VMPSatellite/notice/CXP9YB2HX3N",
+    "questionDeadlineDate": "2026-10-16+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "1. Formblatt 4.1. EU - Eigenerklärung Ausschlussgründe 2. Formblatt 5.3 EU - Vereinbarung Mindestanforderungen BbgVergG 3. Formblatt 5.4 EU - Vereinbarung Mindestanforderungen BbgVergG NU Entsprechende Formblätter liegen den Vergabeunterlagen bei. Stichtag für die Gültigkeit ist der Schlusstermin für den Eingang der Angebote. Eigenerklärungen dürfen an diesem Stichtag nicht älter als 6 Monate, jeweils gerechnet ab Ausstellungsdatum sein. Werden anstelle von Eigenerklärungen Unbedenklichkeitsbescheinigungen der zuständigen Stellen eingereicht und ist in diesen keine Gültigkeitsdauer angegeben, dürfen die Bescheinigungen an diesem Stichtag nicht älter als 6 Monate sein."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "4. Eigenerklärung über die ordnungsgemäße Erfüllung der Verpflichtung zur Zahlung von Steuern und Abgaben; 5. Eigenerklärung über die ordnungsgemäße Anmeldung und Erfüllung der Verpflichtung zur Entrichtung der gesetzlichen Beiträge bei der/den Krankenkasse(n); 6. Eigenerklärung über die ordnungsgemäße Eintragung und Erfüllung der Verpflichtung zur Entrichtung der gesetzlichen Beiträge bei der Berufsgenossenschaft. Entsprechende Formblätter liegen den Vergabeunterlagen bei. Stichtag für die Gültigkeit ist der Schlusstermin für den Eingang der Angebote. Eigenerklärungen dürfen an diesem Stichtag nicht älter als 6 Monate, jeweils gerechnet ab Ausstellungsdatum sein. Werden anstelle von Eigenerklärungen Unbedenklichkeitsbescheinigungen der zuständigen Stellen eingereicht und ist in diesen keine Gültigkeitsdauer angegeben, dürfen die Bescheinigungen an diesem Stichtag nicht älter als 6 Monate sein. Hinweis: Eingereichte Eigenerklärungen zu Nr. 4-6 sind durch den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, vor Zuschlagserteilung nach Aufforderung durch die Vergabestelle kurzfristig durch Vorlage entsprechender Bescheinigungen der zuständigen Stellen zu bestätigen. 7. Datenschutzverpflichtungserklärung 8. Eigenerklärung zur restriktiven Maßnahmen Russland-Sanktionen 9. Nachweis der Betriebshaftpflicht. 10. Vorlage der Freistellungsbescheinigung gemäß § 48 b Abs. 1 Satz 1 des Einkommensteuergesetzes (EStG) die noch mindestens 3 Monate gültig ist."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "11. Nachweis der Eintragung in die Handwerksrolle (Handwerkskarte) 12. Eigenerklärung Umsatz letzte 3 Geschäftsjahre 13. Erklärung über die Anzahl der in den letzten 3 Geschäftsjahren (2023 bis 2025) jahresdurchschnittlich Beschäftigten (aufgeschlüsselt nach gewerbliche und angestellte Mitarbeiter), tabellarisch dargestellt. 14. Referenzliste über erfolgreich beendete ähnliche Bauleistungen in vergleichbarer Größenordnung im Zeitraum 2021 - August 2026 mit Angabe der Projekte, der Auftraggeber (mit Ansprechpartner, Adresse und Tel.-Nr.) Bezeichnung des Referenzprojektes; Zeitraum der Leistungserbringung; Art und Umfang der Leistungen. Die Referenzliste ist in Form einer Tabelle entsprechend Formblatt beizufügen. Der Bieter muss sämtliche Angaben zu den Referenzen auf dem vorgegebenen Formblatt machen. Mindestanforderungen / Mindestkriterium Referenzen: Es sind durch die Bieter mindestens 2 vergleichbare Referenzen (Zeitraum 2021 bis August 2026) nachzuweisen. Eine hinreichende Vergleichbarkeit besteht, wenn die erbrachten Leistungen dem Auftragsgegenstand nach Art, Umfang, Ausführungsdauer und Auftragswert nahekommen oder ähneln, sodass ein tragfähiger Rückschluss auf die Leistungsfähigkeit des Bieters für die ausgeschriebene Leistung möglich ist. Die Vorlage der vorgenannten einzureichenden Unterlagen kann auch durch Nachweis der Eintragung im Präqualifikationsverzeichnis erfolgen. Es wird ausdrücklich darauf hingewiesen, dass die Eintragung in das PQ-Verzeichnis nicht die im Ausschreibungsverfahren konkret geforderten Eignungsnachweise ersetzt. Im PQ-Verzeichnis fehlende Unterlagen werden im Rahmen der Angebotsauswertung durch die Vergabestelle nachgefordert. Ausländische Bieter haben gleichwertige Bescheinigungen ihres Herkunftslandes vorzulegen sowie eine Bescheinigung des zuständigen Versicherungsträgers, jeweils in deutscher Sprache."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Nachforderungen erfolgen entsprechend § 16a VOB/A EU"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabemarktplatz.brandenburg.de/VMPSatellite/notice/CXP9YB2HX3N/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

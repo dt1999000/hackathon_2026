@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "7931e06d-b360-4ac7-af80-63fb9c64c6f8:1:LOT-0001",
+    "candidateId": "7931e06d-b360-4ac7-af80-63fb9c64c6f8:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "7931e06d-b360-4ac7-af80-63fb9c64c6f8",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "4afd20bd-77a7-4afd-b646-a740797afd97",
+    "internalIdentifier": "43113 DKS Angio OPs",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:36Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Diakonissenkrankenhaus und Paulinenhilfe gGmbH - Diakonieklinikum Stuttgart"
+    ]
+  },
+  "procedure": {
+    "title": "Heizung/Kälte",
+    "description": "1 x WRG-Einheit als RLT-Gerät (ca. 3.600m³/h) mit Zubehör und KVS-Wärmeübertrager\n- 1 x Hydraulikstation für KVS-System\n- 3x Klimaschrank mit Luftaufbereitungsstufen Heizen, Kühlen, Befeuchten, Entfeuchten\n(ca. 3.600m³/h bzw. 2.600m³/h und 1.200m³/h)\n- Ca. 880 m² Kanäle + Formstücke inkl. Dämmung\n- Ca. 150 m Wickelfalzrohre inkl. Dämmung - Ca. 40 m flexible Luftrohre inkl. Dämmung - 8x Deckendurchlass mit H13-Filterstufe\n- Ca. 18 Deckendralldurchlässe\n- Ca. 5x Tellerventile\n- Ca. 12 Brandschutzklappen\n- 2 x Außenluftturm in Edelstahlausführung\n- 1x provisorischer Fortluftturm mit Gitter\n- Ca. 25 m² Demontage + Neumontage von bestehendem isoliertem Lüftungskanal",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Rosenbergstraße 38",
+      "additionalStreet": "",
+      "postcode": "70176",
+      "city": "Stuttgart",
+      "nuts": "DE111",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-02+01:00",
+    "endDate": "2027-08-27+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "09:20:00+02:00",
+    "method": "required",
+    "url": "https://plattform.aumass.de/Veroeffentlichung/av286b6f-eu",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Mindestens 3 Referenzen über vergleichbare Lüftungs-/RLT-Anlagen innerhalb der letz- ten 5 Jahre. Davon sollten 2 der Referenzen in einer Gesundheitseinrichtung oder einer hinsichtlich der technischen Anforderungen vergleichbaren Einrichtung ausgeführt worden sein (mit Umbau im laufenden Betrieb). • Nachweis ausreichender personeller Kapazitäten und qualifizierten Fachpersonals. • Benennung eines verantwortlichen Bau-/Projektleiters. • Erfahrung mit Montage, Inbetriebnahme und Einregulierung von RLT-Anlagen vergleich- barer Größenordnung. • Techn. Ausstattung für die Montageausführung, erforderliche Prüf- und Messtechnik so- wie geeignete Montage- und Hebeeinrichtungen. • Nachweis für Qualifikation für Hygieneprüfung nach VDI 6022 + DIN 1946-4."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe VHB 216"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://plattform.aumass.de/Veroeffentlichung/av286b6f-eu",
+        "description": "",
+        "documentType": "restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

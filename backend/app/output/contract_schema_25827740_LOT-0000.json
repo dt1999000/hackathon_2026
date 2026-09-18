@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827740:1:LOT-0000",
+    "candidateId": "25827740:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827740",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:31Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Transparenzbekanntmachung - K 9250 Bordanlage Oberlichtenau",
+    "description": "1. Allgemeine Informationen: Titel: Transparenzbekanntmachung - K 9250 Bordanlage Oberlichtenau; Vergabenummer: 26 326 3; Die Bekanntmachung erfolgt wegen bestehender Binnenmarktrelevanz: nein\n2. Auftraggeber: Name des Auftraggebers: Landratsamt Bautzen; Straße, Hausnummer: Bahnhofstraße 9; PLZ: 02625; Ort: Bautzen; Land: Deutschland; Telefon: +49 3591-5251-23300; Fax: +49 3591-5250-23300; E-Mail: vergabe3@lra-bautzen.de; Internet-Adresse: https://www.landkreis-bautzen.de\n3. Vergabeverfahren: Voraussichtliche Vergabeart/Rechtsrahmen: Beschränkte Ausschreibung ohne Teilnahmewettbewerb - VOB/A\n4. Auftragsgegenstand: Angaben zum Auftragsgegenstand: K 9250 Bordanlage Oberlichtenau\n5. Ausführungsort: PLZ: 01896; Ort: Pulsnitz - Oberlichtenau; Land: Deutschland\n6. Art und Umfang der Leistung: CPV-Code: 45233222; Art und voraussichtlicher Umfang der Leistung: ca. 150,00 m Betonbord liefern und einbauen (Hochbord, Rundbord und Absenker) inkl. Erdarbeiten; ca. 10,00 m\tSteinzeugrohrleitung ausbauen und KG Rohr einbauen DN 150; 1,00 St Straßeneinlauf ausbauen und entsorgen und neuen Straßeneinlauf mit Kunststoffschachtboden liefern und einbauen inkl. Anschluss der ankommenden und abgehenden Leitungen; ca. 200,00 m² Asphalt fräsen aufnehmen und entsorgen b=ca. 1,20 m, d= ca. 0,15 m; ca. 70,00 t AC 22 T S, d=12 cm liefern und einbauen; ca. 200,00 m²\tBitumenemulsion C60 BP4 aufsprühen; ca. 200,00 m² AC 11 DS. D=4 cm liefern und einbauen; ca. 400,00 m²\tAngleichung Seitenstreifen mit Schotter 0/32 und Abdeckung mit Mineralgemisch zum Bestand\nDie Verkehrssicherung der Baumaßnahme erfolgt mittels Lichtsignalanlage.\n7. Ausführungszeitraum: Voraussichtlicher Zeitraum der Ausführung: 26.10.2026 bis 20.11.2026\n8. Zusätzliche Angaben: Teilnehmerkreis: Der Teilnehmerkreis steht bereits fest. Eine Bewerbung ist nicht mehr möglich.; Datum, bis zu dessen Ablauf die Bekanntmachung sichtbar bleiben soll: 05.10.2026\n9. Dokumente: -\n\nStraßenbau,Straßenpflaster,Entwässerungskanäle,Erdbau",
+    "type": "de-restricted-wo-call",
+    "typeRaw": "de-restricted-wo-call"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "01896 Pulsnitz OT Oberlichtenau",
+      "nuts": "DED",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Landratsamt%2520Bautzen/3454535",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

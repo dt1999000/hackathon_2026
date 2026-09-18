@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "5f24df01-f65a-4b80-83f4-cb082ddcc57c:1:LOT-0000",
+    "candidateId": "5f24df01-f65a-4b80-83f4-cb082ddcc57c:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45214200",
+      "45214210",
+      "45223200",
+      "45313000",
+      "45313100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "5f24df01-f65a-4b80-83f4-cb082ddcc57c",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "8409c74e-5d53-4f58-9cc9-fc5cd8de64b5",
+    "internalIdentifier": "0",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:22Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Gemeinde Bernau am Chiemsee"
+    ]
+  },
+  "procedure": {
+    "title": "Aufzugsanlagen - Sanierung und Erweiterung Grundschule Bernau am Chiemsee",
+    "description": "'- Personenaufzug, Förderhöhe ca. 11,77m, inkl. Kabine und Schachtüren etc.: 1 Stck \n- Steuerung: 1 Stck \n- Einbauteile für Rohbau, Montageschienen: ca. 60m\n- Wartung",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45214200",
+    "additionalCpvCodes": [
+      "45214210",
+      "45223200",
+      "45313000",
+      "45313100"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "83233",
+      "city": "Bernau am Chiemsee",
+      "nuts": "DE21K",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "2027-07-07+02:00",
+    "measure": "8"
+  },
+  "submission": {
+    "deadlineDate": "2026-09-21+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-09-14+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=302514 Befähigung zur Berufsausübung einschließlich Auflagen hinsichtlich der Eintragung in die Handwerksrolle/Industrie und Handwerkskammer (wenn Verpflichtung besteht) Nicht präqualifizierte Unternehmen geben über das Formblatt 124 eine Eigenerklärung über die Eintragung in das Berufs- oder Handelsregister ab (gilt für Bieter, Mitglieder einer Bietergemeinschaft)*** Präqualifizierte Unternehmen führen den Nachweis der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) und geben hierzu die PQ-Nummer an (gilt für Bieter, Mitglieder einer Bietergemeinschaft)****"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=302514 Nicht präqualifizierte Unternehmen geben über das mit dem Angebot abzugebende Formblatt 124 eine Eigenerklärung ab: - Nachweis einer Berufs- oder/ und Betriebshaftpflichtversicherung oder eine Erklärung, dass die Versicherung in der geforderten Höhe/Deckungssummen im Auftragsfall abgeschlossen wird. - Umsatz pro Jahr der letzten drei abgeschlossenen Geschäftsjahre, soweit dieser Bauleistungen und andere Leistungen betreffen, die mit der zu vergebenden Leistung vergleichbar ist, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen ab (für Bieter, Mitglieder einer Bietergemeinschaft,) - Erklärung, dass ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren weder beantragt noch eröffnet wurde, ein Antrag auf Eröffnung nicht mangels Masse abgelehnt wurde und sich das Unternehmen nicht in Liquidation befindet. - Falls zutreffend, Erklärung, dass ein Insolvenzplan rechtskräftig bestätigt wurde. - Erklärung, dass das Unternehmen seine Verpflichtung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen, ordnungsgemäß erfüllt hat. - Erklärung, dass das Unternehmen Mitglied der Berufsgenossenschaft ist. *** Präqualifizierte Unternehmen führen den Nachweis der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) und geben hierzu die PQ-Nummer an (gilt für Bieter, Mitglieder einer Bietergemeinschaft) ***Nimmt der Bieter/Bewerber in Hinblick auf die Kriterien für die wirtschaftliche und finanzielle Leistungsfähigkeit im Rahmen einer Eignungsleihe die Kapazitäten anderer Unternehmen in Anspruch, müssen diese gemeinsam für die Auftragsausführung haften; die Haftungserklärung ist gleichzeitig mit der „Verpflichtungserklärung“ (Formblatt 236) abzugeben.******"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=302514 Nicht präqualifizierte Unternehmen geben mit dem Angebot folgende Eigenerklärungen ab: - 3 Referenzen aus den letzten 5 Jahren unter Verwendung des Formblatts 444 (nur die Seiten 1 und 2) jeweils mit Angaben zum Leistungsgegenstand, Leistungsanteil, zur Zahl der eigenen eingesetzten Arbeitnehmer, zu etwaigen besonderen technischen oder gerätespezifischen Anforderungen/Besonderheiten der Ausführung und zum Auftragswert vor (gilt für Bieter, Mitglieder einer Bietergemeinschaft). - über die für die Ausführung der Leistungen erforderlichen Arbeitskräfte stehen zur Verfügung (über Formblatt 124) Präqualifizierte Unternehmen führen den Nachweis der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e. V. und geben hierzu die PQ-Nummer an und legen mit dem Angebot eine Eigenerklärung zu 3 Referenzen über vergleichbare Leistungen aus den letzten 5 Jahren unter Verwendung des Formblatts 444 (nur die Seiten 1 und 2) jeweils mit Angaben zum Leistungsgegenstand, Leistungsanteil, zur Zahl der eigenen eingesetzten Arbeitnehmer, zu etwaigen besonderen technischen oder gerätespezifischen Anforderungen/Besonderheiten der Ausführung und zum Auftragswert vor (gilt für Bieter, Mitglieder einer Bietergemeinschaft). Auftragsspezifische Einzelnachweise (von präqualifizierten und nicht präqualifizierten Unternehmen vorzulegen): Mit dem Angebot sind die Teile des Auftrags, die als Unteraufträge an andere Unternehmen vergeben werden sollen, zu benennen (Formblatt 235)."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden nachgefordert. Fehlende / unvollständige leistungsbezogene Unterlagen, die die Wirtschaftlichkeitsbewertung der Angebote anhand der Zuschlagskriterien betreffen, werden nicht nachgefordert. *** Fehlende Preisangaben dürfen nicht nachgefordert werden. Angebote, die den Bestimmungen des § 13 EU Abs. 1 Nr. 3 VOB/A nicht entsprechen, sind auszuschließen. Dies gilt nicht für Angebote, bei denen lediglich in unwesentlichen Positionen die Angabe des Preises fehlt und sowohl durch die Außerachtlassung dieser Positionen der Wettbewerb und die Wertungsreihenfolge nicht beeinträchtigt werden als auch bei Wertung dieser Positionen mit dem jeweils höchsten Wettbewerbspreis. Hierbei wird nur auf den Preis ohne Berücksichtigung etwaiger Nebenangebote abgestellt."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/302514",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

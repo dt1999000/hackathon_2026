@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "7efb5f65-2b5c-426d-a79b-907bfebac095:1:LOT-0001",
+    "candidateId": "7efb5f65-2b5c-426d-a79b-907bfebac095:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45261210"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "7efb5f65-2b5c-426d-a79b-907bfebac095",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "89f3254a-f9c0-4123-834e-bbf895050d8a",
+    "internalIdentifier": "8256ca8a-0655-48ec-9c94-0d2291937a6f",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:47Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landkreis Marburg-Biedenkopf"
+    ]
+  },
+  "procedure": {
+    "title": "Dachdeckerarbeiten_Freiherr-vom-Stein-Schule / Europaschule, Ringstraße 33, 35075 Gladenbach_Ersatzneubau Förderstufentrakt",
+    "description": "Ca. 1.100 m² Elastomerbitumen- Dampfsperrbahn auf Betondecke (als Notabdichtung) \nCa. 1.100 m² Wärmedämmung WLG 023 als Grund- und Gefälledämmung i.M. 232 mm \nCa. 1.100 m² Dachabdichtung FPO- Bahn Ca. 230 m \nCa. 18 Stck. Ca. 180 m \nCa. 75 m Attika- bzw. Wandanschlussbahn Attikagullys sowie Notentwässerung Dachrandabdeckung aus Aluminium Fallrohre, Zink, DN 120   \n",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45261210",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "35075",
+      "city": "Gladenbach",
+      "nuts": "DE724",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 352066.31,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-02-08+01:00",
+    "endDate": "2027-04-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-27+01:00",
+    "deadlineTime": "11:15:00+01:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-19+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/71bd0e6f-1738-4b1a-a912-f8f5c2de9cef/suitabilitycriteria Die Eignungskriterien sind im Angebotsschreiben und den Teilnahme-/Bewerbungsbedingungen (beides Bestandteile der Auftrags- und Vergabeunterlagen) genannt, siehe oben aufgeführten Link."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 56 Abs. 2 VgV, § 51 Abs. 2 SektVO, § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/deeplink/subproject/71bd0e6f-1738-4b1a-a912-f8f5c2de9cef",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

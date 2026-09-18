@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "89405766-4d32-4ae2-8cc4-b0aacf19a2ec:1:LOT-0001",
+    "candidateId": "89405766-4d32-4ae2-8cc4-b0aacf19a2ec:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45314000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "89405766-4d32-4ae2-8cc4-b0aacf19a2ec",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "9d2be5cf-c78a-4f14-8499-5c859e17f7e1",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:09Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "kbo-Inn-Salzach Klinikum gGmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau kbo-Inn-Salzach-Klinikum - Errichtung Pflegegebäude BT C + D-107_3-4500 Elektro Schwachstrom",
+    "description": "2 Stk Brandmeldeunterzentrale, 12 Loops\t\t\t\n1.693 Stk Meldersockel\t\t\t\n1.665 Stk O²T-Multisensormelder\t\t\t\n156 Stk Einbau und Anschluss bauseitge PNA Sender\t\t\t\n156 Stk Verbindungskasten, UP\t\t\t\n2 Stk BOS Systemtechnik, TMO-Anbinderepeater\t\t\t\n2 Stk Remoteunit\t\t\t\n985 m Leckwellenleiter\t\t\t\n2 Stk Server für Video Management System\t\t\t\n16 Stk Client am Stützpunkt für Videoanlage\t\t\t\n76 Stk Deckenkamera mit 360° Erfassungsbereich\t\t\t\n12 Stk Stationszentralen\t\t\t\n36 Stk Informationsdisplay doppelseitig für Deckenmontage\t\t\t\n295 Stk Zimmer-Elektronikmodul mit Bettenbus\t\t\t\n309 Stk Displaymodul\t\t\t\n925 Stk Ruftaster\t\t\t\n74 Stk Multiband-Indoor-Antenne\t\t\t\n900 m 7/8\" HF-Kabel\t\t\t\n1.850 m 1/2\" HF-Kabel\t\t\t\n162 Stk Leistungsteiler\t\t\t\n54 Stk Türzentrale GEZE, Bus Technik, AP\t\t\t\n18 Stk All-In-One PC, 27 Zoll Touchscreen\t\t\t\n18 Stk myGEZE Control Hardware-Controllersystem\t\t\t\n32 Stk IP-Sprechstelle\t\t\t\n24 Stk Schaltersprechanlage\t\t\t\n81 Stk Selbstrichtende Nebenuhr\t\t\t\n7.700 m LWL Mikrokabel / Fiber Unit 12E9/125 OS2\t\t\t\n7.700 m LWL Mikrokabel / Fiber Unit 12G50/125 OM4\t\t\t\n16.600 m Einblasen Mikrokabel inkl. Einblasequipment\t\t\t\n1.980 m Multi-Rohr-System 4x5 mm\t\t\t\n44 Stk Abschlussgehäuse 19-Zoll\t\t\t\n38 Stk 19\"-Stand-Verteilerschrank 100 x 80 cm\t\t\t\n350 Stk C-Montageschiene\t\t\t\n185 Stk Patchfeld\t\t\t\n2.336 Stk Spleißarbeiten\t\t\t\n128.000 m Datenkabel S/FTP Duplex\t\t\t\n1.637 Stk Beidseitigen Anschluss erstellen für Datenkabel\t\t\t\n1.168 Stk LWL-Kabelmessung\t\t\t\n3.358 Stk Messung Cu PL Link Ea\t\t\t\n1.434 Stk Datenanschlussdose\t\t\t\n18 Stk Verteiler Standschrank\t\t\t\n36 Stk Tür-Verteiler Wandschrank\t\t\t\n13.100 m J-Y(ST)Y 4x2x0,6mm\t\t\t\n10.800 m J-Y(ST)Y 2x2x0,8mm\t\t\t\n11.800 m J-Y(ST)Y 4x2x0,8mm\t\t\t\n31.040 m BMA-Leistung J-Y(ST)Y 2x2x0,8\t\t\t\n4.020 m Koaxialkabel TV für Innenbereich\t\t\t\n1.460 Stk Schalterdose Hohlwand\t\t\t\n1.700 Stk Elektronikdose Hohlwand\t\t\t\n3.000 Stk Sammelhalter-Trasse für Funktionserhaltleitungen E90-E90",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45314000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE21K",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-15+01:00",
+    "endDate": "2028-12-29+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-11-05+01:00",
+    "deadlineTime": "10:30:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Die Eignung ist durch Vorlage der PQ-Nr. oder durch das ausgefüllte Formblatt 124 Eigenerklärung zur Eignung (in den Vergabeunterlagen aufgeführt oder unter https://www.stmb.bayern.de/assets/stmi/buw/bauthemen/vergabeundvertragswesen/vhb/z5_vergabe_bauauftraege_formblatt_124_eigenerklaerung.pdf einsehbar) mit dem Angebot nachzuweisen. Nachfolgende Unterlagen sind auf Aufforderung ergänzend zur Vorlage der PQ-Nr. oder des Formblattes 124 einzureichen: 1. Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse 2. Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen 3. Freistellungsbescheinigung nach § 48b EStG 4. Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des für das Unternehmen zuständige Versicherungsträgers mit Angabe der Lohnsummen"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Bescheinigung über die Eintragung in das Berufsregister"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Handelsregister und der Handwerksrolle ihres Sitzes oder Wohnsitzes"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer bestehenden Betriebshaftpflichtversicherung in angemessener Höhe"
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "1. Vorlage von Jahresabschlüssen aus den letzten 3 Geschäftsjahren, falls deren Veröffentlichung in dem Land, in dem das Unternehmen ansässig ist, gesetzlich vorgeschrieben ist. 2. Eine Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "3 Referenzen über die Ausführung von Leistungen in den letzten bis zu fünf abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischem Leitungspersonal."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Angabe, welche Teile des Auftrags der Unternehmer unter Umständen als Unteraufträge zu vergeben beabsichtigt werden."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16 VOB/A EU nachgefordert."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/9d2be5cf-c78a-4f14-8499-5c859e17f7e1",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "42ab89a4-7c1e-4915-b21c-0e9a5a4314c8:2:LOT-0000",
+    "candidateId": "42ab89a4-7c1e-4915-b21c-0e9a5a4314c8:2:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "42ab89a4-7c1e-4915-b21c-0e9a5a4314c8",
+    "version": "2",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "a05a2f1b-d809-4c5a-8b77-381b59b93597",
+    "internalIdentifier": "ÖAB 399/26-66",
+    "formType": "change",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T10:06:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Brücke Schwarzburger Straße - Ersatzneubau mit Behelfsumfahrung",
+    "description": "BW 153 - Brücke Schwarzburger Straße in Erfurt\nErsatzneubau mit Behelfsumfahrung\nca. 90 t Stahlbau\nca. 1500 m³ Stahlbeton\nca. 240 t Bewehrungsstahl\nca. 1400 t Betonabbruch\nca. 1500 t nicht gefährlichen Abbruch entsorgen\nca. 10 t gefährlichen Abbruch entsorgen\nca. 5500 m³ Erdarbeiten (Aushub und Entsorgung)\nca. 6000 m³ Erdarbeiten (Verfüllen / Einbau)\nca. 600 m² Asphaltarbeiten\nca. 550 m² Pflasterarbeiten",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-07",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-06+02:00",
+    "deadlineTime": "09:30:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: Präqualifizierte Unternehmen führen den Nachweis der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis). Bei Einsatz von Nachunternehmen ist auf gesondertes Verlangen nachzuweisen, dass diese präqualifiziert sind oder die Voraussetzung für die Präqualifikation erfüllen. Nicht präqualifizierte Unternehmen haben zum Nachweis der Eignung mit dem Angebot das ausgefüllte Formblatt „Eigenerklärung zur Eignung“ vorzulegen. Bei Einsatz von Nachunternehmen sind auf gesondertes Verlangen die Eigenerklärungen auch für diese abzugeben. Sind die Nachunternehmen präqualifiziert, reicht die Angabe der Nummer, unter der diese in der Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) geführt werden. Gelangt das Angebot in die engere Wahl, sind die Eigenerklärungen (auch die der Nachunternehmen) auf gesondertes Verlangen durch Vorlage der in der „Eigenerklärung zur Eignung“ genannten Bescheinigungen zuständiger Stellen zu bestätigen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in die deutsche Sprache beizufügen. Das Formblatt „Eigenerklärung zur Eignung von Bauleistungen“ liegt der Vergabeunterlage bei. Eigenerklärungen für folgende Eignungsanforderungen sind mit dem Angebot einzureichen: > Erklärung über den Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen > Erklärung, dass in den letzten sieben Kalenderjahren vergleichbare Leistungen ausgeführt wurden > Erklärung, dass die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen > Erklärung über die Eintragung im Handelsregister, Eintragung in der Handwerksrolle oder ggf. keine Verpflichtung zur Eintragung in die genannten Register besteht > Erklärung, dass ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren weder beantragt noch eröffnet wurde, ein Antrag auf Eröffnung nicht mangels Masse abgelehnt wurde und sich das Unternehmen nicht in Liquidation befindet. > Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bieter in Frage stellt: > Es dürfen keine Ausschlussgründe gemäß § 6e EU VOB/A vorliegen. > Eigenerklärung, dass das Unternehmen in den letzten zwei Jahren nicht aufgrund eines Verstoßes gegen Vorschriften, der zu einem Eintrag im Wettbewerbsregister geführt hat, mit einer Freiheitsstrafe von mehr als drei Monaten oder einer Geldstrafe von mehr als 90 Tagessätzen oder einer Geldbuße von mehr als 2.500 Euro belegt worden ist > Oder für das Unternehmen ein Ausschlussgrund gemäß § 6e EU Absatz 6 VOB/A vorliegt. > Zwar für das Unternehmen ein Ausschlussgrund gemäß § 6e EU Absatz 1 bis 4 VOB/A vorliegt, jedoch für das Unternehmen Maßnahmen zur Selbstreinigung ergriffen worden, durch die das Unternehmen die Zuverlässigkeit wiederhergestellt wurde. > Das keine Ausschlussvoraussetzungen gem. § 22 Abs. 1 S. 1 Lieferkettensorgfaltspflichtengesetz (LkSG) vorliegen und das Unternehmen nicht mit einer Geldbuße gem. § 22 Abs. 2 LkSG belegt worden ist. > Erklärung über die ordnungsgemäße Erfüllung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur gesetzlichen Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen > Erklärung, dass sie Mitglied einer Berufsgenossenschaft sind Die Bescheinigungen (Nachweise) umfassen die folgenden Angaben: > zwei Referenznachweise (Referenzbestätigungen) aus den letzten sieben Kalenderjahren vergleichbare Leistungen mit folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme, Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschließlich Angabe der ausgeführten Mengen; Zahl der hier durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung > Erklärung zur Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen, mit extra ausgewiesenem Leitungspersonal > Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer > rechtskräftig bestätigter Insolvenzplan (falls eine Erklärung über das Vorliegen eines solchen Insolvenzplanes angegeben wurde) > Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls das Unternehmen beitragspflichtig ist > Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen, falls das Finanzamt eine solche Bescheinigung ausstellt > Freistellungsbescheinigung nach § 48b Einkommensteuergesetz > Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers mit Angabe der Lohnsummen Präqualifizierte Unternehmen müssen, wenn die geforderten Unterlagen nicht im Präqualifikationsverzeichnis enthalten sind, die entsprechenden Nachweise mit dem Angebot vorlegen. Darüber hinaus sind folgende weitere auftragsspezifische Eigenerklärungen vom Bieter bzw. den eingesetzten Nachunternehmen mit dem Angebot einzureichen: > Konzept der Behelfsumfahrung gem. \"1.1.15 Bauzeitliche Behelfsumfahrung\" in der Baubeschreibung"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=888838",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

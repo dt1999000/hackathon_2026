@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "fb3c77b8-a4bf-4b2a-a158-f6b915a32e19:1:LOT-0000",
+    "candidateId": "fb3c77b8-a4bf-4b2a-a158-f6b915a32e19:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45432100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "fb3c77b8-a4bf-4b2a-a158-f6b915a32e19",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "8f69a977-6340-4f7b-887d-19291512b845",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:17Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Gemeindevorstand der Gemeinde Heuchelheim a. d. Lahn"
+    ]
+  },
+  "procedure": {
+    "title": "Heu-FWGH: Rüttelboden",
+    "description": "Verlegearbeiten des Rüttelbodens für den Neubau des Feuerwehrgerätehauses in Heuchelheim a.d. Lahn. Dies umfasst folgende Leistungen:\n\n- Vorbereitende Maßnahmen (Reinigen der Bodenplatte, Prüfen der Bodenabdichtung, Schutz eingebauter Türen und Tore und  Stahlwinkel als Bodenabschluss einbauen)\n- Rüttelklinker (Schutzlage, Feinsteinzeugplatten in Rüttelverlegung, Wärmedämmung, Trägerplatten, Industrieboden-Stahlankerplatten, Hohlkehlsockel, Flächenentwässerungsrinne, Entwässerungsrinne, Bodenabläufe einarbeiten, Flächenentwässerungsrinnen verfüllen, Dauerelastische Fugen, Dehnung-Randstreifen, und Zementschleieremtferner)",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45432100",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Landstraße 320/Marktstraße",
+      "additionalStreet": "",
+      "postcode": "35452",
+      "city": "Heuchelheim",
+      "nuts": "DE721",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-11+01:00",
+    "endDate": "2027-01-25+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Nachweis des durchschnittlichen Jahresumsatzes der vergangenen drei abgeschlossenen Geschäftsjahre (2023, 2024 und 2025). Mindestanforderung: 480.000 EUR Umsatz (netto) jahresdurchschnittlich gemittelt aus den letzten drei abgeschlossenen Geschäftsjahre."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Nachforderungen erfolgen online über die Vergabeplattform und sind ausschließlich über die Nachrichtenfunktion des Bietercockpits zu beantworten."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.had.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a0a5da68bb-54ba31e81f6835d3",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827800:1:LOT-0000",
+    "candidateId": "25827800:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827800",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:46Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Transparenzbekanntmachung_FM Teicha, Errichtung Durchfahrtsgarage - Stahlbau",
+    "description": "1. Allgemeine Informationen: Titel: Transparenzbekanntmachung_FM Teicha, Errichtung Durchfahrtsgarage - Stahlbau; Vergabenummer: 5.272.0008.003; Die Bekanntmachung erfolgt wegen bestehender Binnenmarktrelevanz: nein\n2. Auftraggeber: Name des Auftraggebers: Landestalsperrenverwaltung des Freistaates Sachsen, Betrieb Spree/ Neiße; Straße, Hausnummer: Am Staudamm 1; PLZ: 02625; Ort: Bautzen; Land: Deutschland; Telefon: +49 3591-6711-0; Fax: +49 3591-6711-901; E-Mail: betrieb.sn@ltv.sachsen.de; Internet-Adresse: http://www.smul.sachsen.de/ltv/\n3. Vergabeverfahren: Voraussichtliche Vergabeart/Rechtsrahmen: Beschränkte Ausschreibung ohne Teilnahmewettbewerb - VOB/A\n4. Auftragsgegenstand: Angaben zum Auftragsgegenstand: Herstellung und Errichtung einer Durchfahrtsgarage\n5. Ausführungsort: Offizielle Bezeichnung: Landestalsperrenverwaltung d. FS Sachsen, Flussmeisterei Teicha; Straße, Hausnummer: Teichaer Allee 1; PLZ: 02956; Ort: Rietschen OT Teicha; Land: Deutschland\n6. Art und Umfang der Leistung: CPV-Code: 45223210-1; Art und voraussichtlicher Umfang der Leistung: Die Konstruktion besteht aus einer Stahltragkonstruktion mit Stützen, Trägern und Verbänden aus Walzprofilen und Rundrohren sowie einer Dach- und Wandbekleidung aus Trapezprofilblechen. Die Durchfahrtsgarage wird auf bereits vorhandenen Stahlbetonsockel gegründet. Die Herstellung der Fundamente und Sockel sind nicht Bestandteil dieser Ausschreibung. Die Stahlkonstruktion umfasst insgesamt ca. 17,3 t einschließlich Anschluss- und Konstruktionsbauteilen.\n\nDie Grundfläche der Durchfahrtsgarage beträgt ca. 18,25 m x 18,00 m. Die Dachausbildung erfolgt als Pultdach mit einer Dachneigung von ca. 5,1°. Dachbekleidungen wird aus Trapezprofilen hergestellt.\n7. Ausführungszeitraum: Voraussichtlicher Zeitraum der Ausführung: Baubeginn:  16.11.2026\nBauende:     15.02.2026\n8. Zusätzliche Angaben: Teilnehmerkreis: Der Teilnehmerkreis steht bereits fest. Eine Bewerbung ist nicht mehr möglich.; Datum, bis zu dessen Ablauf die Bekanntmachung sichtbar bleiben soll: 02.11.2026\n9. Dokumente: -\n\nFertigbauelemente,Metallbau/ Stahlbau (konstruktiv)",
+    "type": "de-restricted-wo-call",
+    "typeRaw": "de-restricted-wo-call"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "02956 Rietschen",
+      "nuts": "DED",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Landestalsperrenverwaltung%2520des%2520Freistaates%2520Sachsen%252C%2520Betrieb%2520Spree%252F%2520Nei%25C3%259Fe/3455044",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

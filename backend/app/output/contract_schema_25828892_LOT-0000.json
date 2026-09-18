@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25828892:1:LOT-0000",
+    "candidateId": "25828892:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45100000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25828892",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:25Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "A10 BW13, Aufwuchsentfernungsarbeiten",
+    "description": "A 10, BW 13 Mühlenfließbrücke - Aufwuchsentfernungsarbeiten\n\nA10 BW13, Aufwuchsentfernungsarbeiten Mühlenfließbrücke Neuaufwuchs Baufeldfreimachung",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45100000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "Die Baustelle liegt an der A 10 bei km 22,016, in der Nähe von Rüdersdorf bei Berlin im Landkreis Märkisch-Oderland im Land Brandenburg in Zuständigkeit der Autobahn GmbH des Bundes, Niederlassung Nordost",
+      "nuts": "",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-15+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.autobahn.de/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a0a49e2748-1a2d70e7d6df31e7&PublicationType=0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

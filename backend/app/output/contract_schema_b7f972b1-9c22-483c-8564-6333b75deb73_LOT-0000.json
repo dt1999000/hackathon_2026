@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "b7f972b1-9c22-483c-8564-6333b75deb73:1:LOT-0000",
+    "candidateId": "b7f972b1-9c22-483c-8564-6333b75deb73:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45111100",
+      "45112000",
+      "45112500",
+      "45113000",
+      "45214210",
+      "45223220",
+      "45232411",
+      "45232452",
+      "45262300",
+      "45262310",
+      "45262311",
+      "45262400",
+      "45262520",
+      "45410000",
+      "45432200"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "b7f972b1-9c22-483c-8564-6333b75deb73",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "36f14799-e1fd-4de4-8d0b-ae15bb088775",
+    "internalIdentifier": "2026-031",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:18Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Große Kreisstadt Dachau"
+    ]
+  },
+  "procedure": {
+    "title": "2026-031 GS DAH Ost - E302 - Umbau- und Rohbauarbeiten",
+    "description": "'-\tca. 150 m² Abbruch und Entsorgung Betonpflaster\n-\tca. 500 m³ Aushub mit Abfuhr Oberbodenauffüllung \n-\tca. 650 m³ Aushub mit Abfuhr Auffüllung Kies/Sandgemisch\n-\tca. 185 m Verlegung Grundleitungen und Schmutzwasserkanal\n-\tca. 450 m³ Einbau Kieskoffer\n-\tca. 450 m² Feinplanie\n-\tca. 80 Stück Ausbau und Entsorgung Innentüren mit Stahlumfassungszarge \n-\tca. 30 Stück Ausbau und Entsorgung Holz-Alu Fenster\n-\tca. 150 m² Ausbau und Entsorgung Glas-Metall Innentürelemente\n-\tca. 1.700 m² Rückbau und Entsorgung von abgehängten Deckenkonstruktionen\n-\tca. 3.000 m² Rückbau und Entsorgung von Bodenbelägen, teilweise einschl. Estrichkonstruktion\n-\tca. 1.400 m² Teilrückbau und Entsorgung von Innen- und Außenmauerwerk sowie Leichtbauwänden\n-\tca. 450 m² Abstemmen und Entsorgen von PCB-haltigem Wandputz \n-\tca. 25 m³ Abbruch und Entsorgung Ortbeton der 4 Stück Stahlbetontreppen\n-\tca. 20 m² Ergänzung Gründungsbauteile einschl. Teilrückbau Bodenplatte und Handaushub im Gebäude\n-\tca. 50 m² Ergänzung Stahlbetondecke mit Unterzugkonstruktion zur Schließung Deckenöffnungen\n-\tca. 20 m Unterfangung mit Stützen und Trägern aus Profilstahl herstellen einschl. Hilfsunterstützungsmaßnahmen\n-\tca. 40 Stück Einbau Betonstürze zur Herstellung neuer Tür- und Fensteröffnungen \n-\tca. 300 m² Ergänzung Mauerwerk Innen- und Außenwände\n-\tca. 85 m³ Ortbeton Stahlbetonbodenplatte\n-\tca. 450 m² Schalung Stahlbetonwände und ca. 50 m³ Ortbeton Stahlbetonwände\n-\tca. 300 m² Deckenschalung\n-\tca. 75 m³ Ortbeton Massivdecke\n-\tca. 40 t Betonstabstahl\n-\tca. 75 m² Doppelwandelemente\n-\tca. 600 m² Innenputz- und Beiputzarbeiten\n-\tca. 200 m Kabelschutzrohre\n-\tca. 350 m Ringerder\n-\tca. 200 m Leerrohrverlegung in Ortbetonwänden mit ca. 85 Stück Gerätedosen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45214210",
+    "additionalCpvCodes": [
+      "45432200",
+      "45111100",
+      "45112000",
+      "45232411",
+      "45262400",
+      "45113000",
+      "45262300",
+      "45262311",
+      "45232452",
+      "45112500",
+      "45262520",
+      "45410000",
+      "45223220",
+      "45262310"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE217",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-11+01:00",
+    "endDate": "2027-07-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Angaben zu Leistungen, die mit der zu vergebenden Leistung vergleichbar sind. Erklärung, dass in den letzten fünf Kalenderjahren bzw. dem in der Auftragsbekanntmachung angegebenen Zeitraum, vergleichbare Leistungen ausgeführt wurden. Falls der Teilnahmeantrag/das Angebot in die engere Wahl kommt, sind auf Anforderung drei Referenznachweise vorzulegen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zu Arbeitskräften. Erklärung, dass die für die Ausführung der Leistung erforderlichen Arbeitskräfte zur Verfügung stehen. Falls der Teilnahmeantrag/das Angebot in die engere Wahl kommt, ist auf Anforderung die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit extra ausgewiesenem technischen Leitungspersonal, anzugeben."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Registereintragungen. Angaben, ob der Bieter - in das Handelsregister eingetragen ist und/oder - für die auszuführenden Leistungen in die Handwerksrolle eingetragen und/oder - bei der Industrie- und Handelskammer eingetragen oder - zu keiner Eintragung in die genannten Register verpflichtet ist. Falls der Teilnahmeantrag/das Angebot in die engere Wahl kommt, sind auf Anforderung zur Bestätigung vorzulegen: Gewerbeanmeldung, ggf. Handelsregisterauszug, Eintragung in die Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber oder Bieter in Frage stellt."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung. Erklärung, dass der Bieter/das Mitglied der Bietergemeinschaft seiner Verpflichtung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen, ordnungsgemäß erfüllt hat. Falls das Angebot/ der Teilnahmeantrag in die engere Wahl kommt, sind auf Anforderung entsprechende Nachweise vorzulegen"
+    },
+    {
+      "code": "slc-sec-supply",
+      "label": null,
+      "description": "Angabe zur Mitgliedschaft bei der Berufsgenossenschaft. Erklärung dass der Bieter/das Mitglied der Bietergemeinschaft Mitglied der Berufsgenossenschaft ist. Falls das Angebot/der Teilnahmeantrag in die engere Wahl kommt, ist auf Anforderung eine qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des für den Bieter/das Mitglied der Bietergemeinschaft zuständigen Versicherungsträgers mit Angabe der Lohnsummen vorzulegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Erklärungen, Unterlagen und Nachweisen ist nicht ausgeschlossen."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.staatsanzeiger-eservices.de/aJs/EFormsBekVuUrl?z_param=329921",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

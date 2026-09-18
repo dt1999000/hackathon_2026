@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827784:1:LOT-0000",
+    "candidateId": "25827784:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827784",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:59Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Neugestaltung des Außenbereichs Teilabschnitt A",
+    "description": "a) Auftraggeber:  Offizielle Bezeichnung: Gesamtschule im Gartenreich; Straße, Hausnummer: Marienstraße 42; Postleitzahl: 06785; Ort: Oranienbaum-Wörlitz; Land: DE; Telefon: +49 34904-550; E-Mail: info@stacked-room.de\nb) Vergabeart: Öffentliche Ausschreibung\nc) Angebote können nur elektronisch abgegeben werden.\nd) Art des Auftrages: Bauleistungen, Pflasterarbeiten, Erdarbeiten, Pflanzarbeiten\ne) Ort(e) der Ausführung: Offizielle Bezeichnung: Gesamtschule im Gartenreich; Straße, Hausnummer: Marienstraße 42; Postleitzahl: 06785; Ort: Oranienbaum-Wörlitz; Land: DE\nf) Art und Umfang der Leistung: Vorbereitung, Sonstiges: Absteck- und Einmessarbeiten, 15 m Betonschneidearbeiten, 40 m² Betonbelag abbrechen, Sicherungsmaßnahmen Leitungsbestände und Schächte, 31 m³ Sickergrube stilllegen, 50 m Regenwasserleitungen ausbauen, 360 m² prov. Zuwegung rückbauen, 20 m Hecke roden, \nErdarbeiten: 1180 m² Oberbodenabtrag+Entsorgung, 530 m² Planum, 29 m³ Oberboden\nOberbau, Deckschichten: 185 m³ Frostschutzschicht, 105 m² Schottertragschicht Gehweg, 106 m³ Schottertragschicht Fahrbahn, 530 m² Betonsteinpflaster, 215 m Borde und Einfasssteine, 48 m Granitpflasterrinne, 4 St Kellerlichtschächte, \nPflanzflächen/Spielflächen: 95 m³ Oberboden, 250 m² Rasenansaatfläche+Ansaat, 37 m³ Dränageschicht, 100 m³ Spielsand, 250 m² Filtervliesabdeckung, 3 St Baumpflanzungen, \nRegenwasserbeseitigun: 66 m³ Muldenaushub, 31 m³ Bodenaustausch, 2,6 t  Wasserbausteine, 105 m² Sickermulde, 50 St Findlinge, \nBaukonstruktionen: 1,5 m³ Stahlbetonfundamte, 1 t Stahlkonstruktion für Treppe mit Podest, 140 m Lehrrohr mit Ziehdraht, 2 St Kernbohrungenm Futterrohr und Dichtsatz\ng) Es werden keine Planungsleistungen gefordert\nh) Aufteilung in mehrere Lose: nein\ni) Ausführungsfristen: Beginn: 26.10.2026, Ende: 18.12.2026, Pflanzarbeiten Ausführung 04/2027\nj) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 3 zur Nichtzulassung von Nebenangeboten: Entfällt, da Nebenangebote zugelassen sind.\nk) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 4 zur Nichtzulassung der Abgabe mehrerer Hauptangebote: Entfällt, da die Abgabe mehrerer Hauptangebote zugelassen ist.\n l) Stelle, bei der die Vergabeunterlagen angefordert werden können: Die Vergabeunterlagen werden auf der Vergabeplattform evergabe.de bereitgestellt. Ein unentgeltlicher Abruf ohne Registrierung ist möglich unter https://www.evergabe.de/unterlagen/3454998/zustellweg-auswaehlen.\nm) Kosten für Vervielfältigungen der Vergabeunterlagen: entfällt\nn) entfällt\no) Frist für den Eingang der Angebote: 01.10.2026, 10:00 Uhr; Bindefrist: 30.10.2026\np) Elektronische Angebote sind auf der Vergabeplattform evergabe.de abzugeben.\nq) Angebote sind abzufassen in: Deutsch\nr) Zuschlagskriterien, sofern diese nicht in den Vergabeunterlagen genannt werden und gegebenenfalls deren Gewichtung: Die Zuschlagskriterien sind in den Vergabeunterlagen genannt.\ns) Eröffnungstermin: Datum: 01.10.2026, 10:00 Uhr; Ort: Zum Heidehügel 25, 06785 Oranienbaum-Wörlitz; Personen, die anwesend sein dürfen: keine\nt) Sicherheiten: gem. Vertragsbedingungen\nu) Finanzierungs- und Zahlungsbedingungen: gem. Vertragsbedingungen\nv) Rechtsform einer Bietergemeinschaft: gem. Vertragsbedingungen\nw) Verlangte Nachweise für die Beurteilung der Eignung: gem. Vertragsbedingungen\nx) Vergabenachprüfstelle: Offizielle Bezeichnung: Landesverwaltungsamt \n\nLandschaftsbau/ Außenanlagen",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "06785 Oranienbaum-Wörlitz",
+      "nuts": "DEE",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-01+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Gesamtschule%2520im%2520Gartenreich/3454998",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

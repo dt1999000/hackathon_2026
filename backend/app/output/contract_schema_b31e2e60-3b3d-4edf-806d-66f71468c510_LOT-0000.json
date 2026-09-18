@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "b31e2e60-3b3d-4edf-806d-66f71468c510:1:LOT-0000",
+    "candidateId": "b31e2e60-3b3d-4edf-806d-66f71468c510:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "b31e2e60-3b3d-4edf-806d-66f71468c510",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "21349b36-3d50-45d0-a942-07dfcb2b0178",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:44Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Vermögen und Bau Baden-Württemberg, Amt Ravensburg"
+    ]
+  },
+  "procedure": {
+    "title": "H7 Tischlerarbeiten - Innentüren",
+    "description": "Leistungen Tischlerarbeiten (Innentüren)\n8 St Holztürelemente mit Schallschutz- und Rauchutzanforderungen\n2 St Stahltürelemente\n7 St Obertürschließer\n1 St RC3-Anforderung",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "88518",
+      "city": "Herbertingen-Hundersingen",
+      "nuts": "DE148",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 44968.53,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-01-11+01:00",
+    "endDate": "2027-04-23+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Aktuelle Referenzliste über mindestens drei Einzelleistungen der letzten fünf Kalenderjahre, die mit der zu vergebenden Leistung vergleichbar sind, mit Angabe des Ansprechpartners; der Art der ausgeführten Leistung; der Auftragssumme; des Ausführungszeitraums, der stichwortartigen Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angabe der Anzahl der jahresdurchschnittlich Beschäftigten der letzten drei abgeschlossenen Geschäftsjahre gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung, dass kein Insolvenzverfahren beantragt wurde und sich das Unternehmen nicht in Liquidation befindet. Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls beitragspflichtig. Unbedenklichkeitsbescheinigung des Finanzamts bzw. Bescheinigung in Steuersachen. Freistellungsbescheinigung nach § 48b EStG. Eigenerklärung, dass keine schweren Verfehlungen begangen wurden. Erklärung über Registereintragungen. Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer. Qualifizierte Unbedenklichkeitsbescheinigung des zuständigen Versicherungsträgers mit Angabe der Lohnsummen."
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Eigenerklärung über den Umsatz der letzten drei Jahre."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe Vergabeunterlagen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.landbw.de/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a08bee9561-4d996b9ae859bdd3",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

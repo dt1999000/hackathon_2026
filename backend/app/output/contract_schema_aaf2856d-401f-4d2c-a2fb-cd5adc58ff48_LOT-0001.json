@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "aaf2856d-401f-4d2c-a2fb-cd5adc58ff48:1:LOT-0001",
+    "candidateId": "aaf2856d-401f-4d2c-a2fb-cd5adc58ff48:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45262670"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "aaf2856d-401f-4d2c-a2fb-cd5adc58ff48",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "eea5964e-94cb-4a42-94c1-9cc3d3756fdb",
+    "internalIdentifier": "60.4.921.26",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:37Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landeshauptstadt Kiel - Der Oberbürgermeister"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau Friedrich-Junge-Gemeinschaftsschule; Metallbau Fahrradunterstand",
+    "description": "Zaunanlage ca. 18,70m x 2,33m mit 3 doppelflg. Toren, verzinkt und lackiert, als Abgrenzung eines überdachten Fahrrad-Abstellbereiches im Untergeschoss (ebenerdig) auf der Gebäude-Rückseite.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45262670",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Langenbeckstraße 65",
+      "additionalStreet": "",
+      "postcode": "24116",
+      "city": "Kiel",
+      "nuts": "DEF02",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-25+01:00",
+    "endDate": "2027-03-15+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "08:25:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YHMMVYY",
+    "questionDeadlineDate": "2026-10-08+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Eintragung in Handelsregister"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Eintragung Handwerkskammer"
+    },
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - allgemeiner Jahresumsatz der letzten drei Geschäftsjahre"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Nachweis einer ausreichenden Haftpflichtversicherung"
+    },
+    {
+      "code": "slc-stand-to-spec-avg",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Durchschnittlicher Jahresumsatz für die letzten drei Geschäftsjahre"
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Anteil der Unterauftragsvergabe"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Durchschnittliche jährliche Belegschaft der letzten drei abgeschlossenen Kalenderjahre"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Drei mit der Bauaufgabe vergleichbare Referenzprojekte aus den letzten 3 Jahren (Fertigstellung bis 31.12.2025). Bezeichnung des Projektes und Objektbeschreibung mit Fotos oder Plänen, aus der die Vergleichbarkeit mit der vorliegenden Aufgabenstellung hervorgeht - Gesamtbaukosten - Leistungsumfang - Leistungszeitraum - Auftraggeber mit Ansprechpartner und dessen Kontaktdaten - Projektleiter des Bewerbers"
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Auf gesondertes Verlangen der Vergabestelle sind nach Angebotsabgabe die folgenden Unterlagen/Angaben/Nachweise vorzulegen: - Schweißbefähigung nach EN 1090, mind. EXC 2"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden im Rahmen des § 16a EU VOB/A nachgefordert. Das Leistungsverzeichnis, welches zwingend im pdf-Format vorzulegen ist, kann nicht nachgefordert werden. Inhaltliche Nachbesserungen/Korrekturen bereits vorgelegter Unterlagen sind nicht zulässig."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YHMMVYY/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "823fc496-0186-4eea-8250-7e7718bf6af2:1:LOT-0001",
+    "candidateId": "823fc496-0186-4eea-8250-7e7718bf6af2:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45213240"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "823fc496-0186-4eea-8250-7e7718bf6af2",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "e0313b00-aa05-4a74-b044-35b3f637f705",
+    "internalIdentifier": "2026-033",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:47Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landwirtschaftskammer Nordrhein-Westfalen"
+    ]
+  },
+  "procedure": {
+    "title": "Gülleschiebertechnik und Güllecontainer im Projekt ZISSAU, 2. Baufenster",
+    "description": "Die Leistung teilt sich in drei Leistungspakete auf.\nDas erste Leistungspaket umfasst die Lieferung und Erstellung eines Unterflurschiebersystem mit Kot-Harn Trennung.\nDas zweite Leistungspaket besteht aus der Lieferung und Montage einer Steilförderschnecke zum Transport von Festmist.\nDas dritte Leistungspaket besteht aus der Lieferung und Inbetriebnahme eines Mistcontainers für die Aufnahme und den Transport von Festmist.",
+    "type": "neg-w-call",
+    "typeRaw": "neg-w-call"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45213240",
+    "additionalCpvCodes": [
+      "51521000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Haus Düsse 2",
+      "additionalStreet": "",
+      "postcode": "59505",
+      "city": "Bad Sassendorf",
+      "nuts": "DEA5B",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "27"
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "https://www.evergabe.nrw.de/VMPSatellite/notice/CXS7YDBYTT9RUCV6",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angabe zu Insolvenzverfahren und Liquidation (Mit dem Teilnahmeantrag; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angabe zur Mitgliedschaft in der Berufsgenossenschaft (Mit dem Teilnahmeantrag; Mittels Eigenerklärung): Qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des für Sie zuständigen Versicherungsträgers mit Angabe der Lohnsummen"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischem Leitungspersonal (Mit dem Teilnahmeantrag; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung (Mit dem Teilnahmeantrag; Mittels Eigenerklärung): Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen (soweit das Finanzamt derartige Bescheinigungen ausstellt) und Unbedenklichkeitsbescheinigung der Sozialkasse"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Drei Referenzen über vergleichbare abgeschlossene Leistungen aus den letzten fünf abgeschlossenen Kalenderjahren (Mit dem Teilnahmeantrag; Mittels Eigenerklärung): Alle im Formblatt 124 - Eigenerklärung zur Eignung aufgeführten Referenzen müssen jeweils einer in der Bewertungsmatrix unter Kritierum 4 angegebenen Anlage entsprechen."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Eintragung in das Handelsregister (Mit dem Teilnahmeantrag; Mittels Eigenerklärung): Eintragung in ein Berufs- oder Handelsregister oder der Handwerksrolle des Wohnsitzes"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in ein relevantes Berufsregister (Mit dem Teilnahmeantrag; Mittels Eigenerklärung): Eintragung in ein Berufs- oder Handelsregister oder der Handwerksrolle des Wohnsitzes"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Erklärung über Jahresumsatz der letzten drei abgeschlossenen Geschäftsjahre, soweit er Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind (Mit dem Teilnahmeantrag; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Erklärungen und Nachweise zu den in der Auftragsbekanntmachung aufgezählten Ausschlussgründen (Mit dem Teilnahmeantrag; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Serviceverfügbarkeit - Innerhalb von max. 24 Stunden nach Mitteilung der Betriebsstörung beim Servicepartner muss ein Mitarbeiter vor Ort sein. Sind vorgenannte Vorgaben erfüllt, erhält der Teilnahmeantrag für dieses Kriterium 1 Punkt. Dieser wird entsprechend der Bewertungsmatrix mit einem Gewichtungsfaktor von 0,3 multipliziert. Sollten die vorgenannten Vorgaben nicht erfüllt werden, erhält der Teilnahmeantrag für dieses Kriterium keinen Punkt."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Entfernung - Innerhalb eines Umkreises von max. 100 km um den Betriebsstandort muss ein Servicepunkt des Vertragspartners ansässig sein. Sind vorgenannte Vorgaben erfüllt, erhält der Teilnahmeantrag für dieses Kriterium 1 Punkt. Dieser wird entsprechend der Bewertungsmatrix mit einem Gewichtungsfaktor von 0,4 multipliziert. Sollten die vorgenannten Vorgaben nicht erfüllt werden, erhält der Teilnahmeantrag für dieses Kriterium keinen Punkt."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Qualifikation der Mitarbeiter - Die Servicemitarbeiter vor Ort müssen einen Abschluss in Ihrem Aufgabengebiet haben, dieser ist auf Anforderung durch Vorlage des Ausbildungsnachweises zu belegen. Sind vorgenannte Vorgaben erfüllt, erhält der Teilnahmeantrag für dieses Kriterium 1 Punkt. Dieser wird entsprechend der Bewertungsmatrix mit einem Gewichtungsfaktor von 0,1 multipliziert. Sollten die vorgenannten Vorgaben nicht erfüllt werden, erhält der Teilnahmeantrag für dieses Kriterium keinen Punkt."
+    },
+    {
+      "code": "slc-abil-ref-supply",
+      "label": null,
+      "description": "Verbreitung der Gülleschiebertechnik in NRW - Regionale Bedeutung des Herstellers in NRW in Bezug auf die Anzahl der installierten Unterflurschiebertechnik (Kot-Harn Trennung - Schweinestall) in NRW je nach Anzahl der in NRW verbauten Schiebertechnik können zwischen 1 und 4 Punkte erzielt werden: 5-9 Anlagen = 1 Punkt 10-14 Anlagen = 2 Punkte 15-19 Anlagen = 3 Punkte 20 und mehr Anlagen = 4 Punkte Es wird eine Mindestanzahl von 5 Anlagen gefordert (Mindestanforderung). Bewerber mit weniger in NRW verbauten Anlagen werden ausgeschlossen. Sind vorgenannte Vorgaben erfüllt, erhält der Teilnahmeantrag für dieses Kriterium 1 bis 4 Punkt(e). Diese Punktzahl wird entsprechend der Bewertungsmatrix mit einem Gewichtungsfaktor von 0,5 multipliziert. Alle im FB 124 - Eigenerklärung zur Eignung aufgeführten Referenzen müssen jeweils einer in der Bewertungsmatrix unter Kritierum 4 angegebenen Anlage entsprechen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Nicht fristgerecht nachgereichte und nachgeforderte Unterlagen führen zum Ausschluss vom Verfahren."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.nrw.de/VMPSatellite/notice/CXS7YDBYTT9RUCV6/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

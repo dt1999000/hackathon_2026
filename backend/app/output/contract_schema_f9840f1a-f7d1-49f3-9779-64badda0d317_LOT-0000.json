@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "f9840f1a-f7d1-49f3-9779-64badda0d317:1:LOT-0000",
+    "candidateId": "f9840f1a-f7d1-49f3-9779-64badda0d317:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45420000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "f9840f1a-f7d1-49f3-9779-64badda0d317",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "fa6af8c2-473b-4023-88af-68d476f4a374",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:36Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Vitos gGmbH für Vitos Herborn gGmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Revitalisierung Vitos KJP Herborn - Tischlerarbeiten Festeinbauten",
+    "description": "Eigene Baustelleneinrichtung\nKüchenzeilen Stationsküchen 4 St\nKüche: Therapieküche 1 St\nKüche: Teeküche Bereitschaft 1 St\nKüche: Teeküche Verwaltung 1 St\nKüche: Teeküche Personal 1 St\nMedikamenten Gestellung 1 St\nSitzbank + Tresen Stützpunkt 4 St\nSchrank ISO Zimmer 4 St\nPatienten, Schrank, Tisch, Bett je 73 St\nEsszimmer Sideboards 4 St\nTresen Anmeldung 2 St\nFensterbänke ca. 200\nDokumentation\nMontageplanung",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45420000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Austraße 40",
+      "additionalStreet": "",
+      "postcode": "35745",
+      "city": "Herborn",
+      "nuts": "DE722",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "200"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "allowed",
+    "url": "https://www..bietercockpit.de",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-sub-espd",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "keine"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.had.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a0a500d3ad-d723cff880d84a6",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

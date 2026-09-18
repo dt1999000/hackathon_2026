@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "1a2a4888-9648-42b2-a813-c1f19f6d6930:1:LOT-0000",
+    "candidateId": "1a2a4888-9648-42b2-a813-c1f19f6d6930:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45112720"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "1a2a4888-9648-42b2-a813-c1f19f6d6930",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "4ee98d55-4fa7-4254-b141-a0219e0764be",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:51Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Berliner Bäder-Betriebe AöR"
+    ]
+  },
+  "procedure": {
+    "title": "Garten- und Landschaftsbauarbeiten Bad 28",
+    "description": "Garten- und Landschaftsbauarbeiten mit Rodungsarbeiten, Erdbauarbeiten, Pflasterarbeiten, Lieferung \n+Einbau Entwässerungsrinnen und Zaunanlage (300m); Errichtung Matschspielplatz; Geländemodellierung und -wiederherstellung, Rasenaussaat; Pflanzarbeiten Leiferung und Einbau neuer Pflanzen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45112720",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "13595",
+      "city": "Berlin",
+      "nuts": "DE300",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-23+01:00",
+    "endDate": "2027-07-02+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Ein Anspruch der Bieter auf eine Nachforderung von Unterlagen besteht nicht."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabekooperation.berlin/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a0906466a3-7804166bb1f41d6b",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}
