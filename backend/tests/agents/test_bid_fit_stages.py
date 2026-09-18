@@ -4,6 +4,7 @@ import pytest
 
 from app.agents.bid_fit import (
     FitAnalysis,
+    RerankResult,
     derive_profile_sections,
     format_company_profile,
     generate_violations,
@@ -40,7 +41,7 @@ class _FakeChatModel:
     def __init__(self, response: object) -> None:
         self._response = response
 
-    def with_structured_output(self, schema: type) -> _FakeStructuredLLM:
+    def with_structured_output(self, schema: type, **kwargs: object) -> _FakeStructuredLLM:
         return _FakeStructuredLLM(self._response)
 
 
@@ -180,6 +181,60 @@ def test_format_company_profile_includes_basic_facts_and_free_text() -> None:
     assert "Company: Test Co" in text
     assert "Founded: 1962" in text
     assert "Capabilities: road construction, sewers" in text
+
+
+def test_fit_analysis_parses_stringified_wrapped_json() -> None:
+    """Claude sometimes returns the whole object as a JSON string in the
+    list field instead of a real list (tool-calling structured output)."""
+    raw = json.dumps(
+        {
+            "violations": [
+                {
+                    "hardliner": "No bridges",
+                    "violated": True,
+                    "reason": "The bid requires bridge construction.",
+                    "solution": None,
+                    "solution_is_realistic": False,
+                }
+            ]
+        }
+    )
+    analysis = FitAnalysis.model_validate({"violations": raw})
+    assert len(analysis.violations) == 1
+    assert analysis.violations[0].hardliner == "No bridges"
+
+
+def test_fit_analysis_parses_stringified_list() -> None:
+    raw = json.dumps(
+        [
+            {
+                "hardliner": "No bridges",
+                "violated": True,
+                "reason": "The bid requires bridge construction.",
+                "solution": None,
+                "solution_is_realistic": False,
+            }
+        ]
+    )
+    analysis = FitAnalysis.model_validate({"violations": raw})
+    assert analysis.violations[0].violated is True
+
+
+def test_rerank_result_parses_stringified_wrapped_json() -> None:
+    raw = json.dumps(
+        {
+            "matches": [
+                {
+                    "section": "Capabilities: road construction",
+                    "matched": True,
+                    "chunk": "road resurfacing",
+                }
+            ]
+        }
+    )
+    result = RerankResult.model_validate({"matches": raw})
+    assert result.matches[0].matched is True
+    assert result.matches[0].chunk == "road resurfacing"
 
 
 def test_generate_violations_returns_llm_output_unmodified() -> None:

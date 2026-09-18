@@ -1,3 +1,5 @@
+from typing import Protocol, TypeVar
+
 from pydantic import BaseModel, Field
 
 RED = "red"
@@ -94,3 +96,27 @@ def rank_bid_fits(results: list[BidFitScore]) -> list[BidFitScore]:
     matter the similarity_score on either side. Ties within the same flag
     are broken by similarity_score, higher first."""
     return sorted(results, key=lambda r: (_FLAG_RANK[r.flag], -r.similarity_score))
+
+
+class Rankable(Protocol):
+    flag: str
+    similarity_score: float
+
+
+T = TypeVar("T", bound=Rankable)
+
+# Dashboard Analyze shows a mix of outcomes, not only the top greens.
+DEFAULT_EXAMPLES_PER_FLAG = 2
+
+
+def pick_flag_examples(results: list[T], per_flag: int = DEFAULT_EXAMPLES_PER_FLAG) -> list[T]:
+    """Take up to `per_flag` bids of each color, highest similarity
+    within that flag, in green → yellow → red order."""
+    selected: list[T] = []
+    for flag in (GREEN, YELLOW, RED):
+        bucket = sorted(
+            (r for r in results if r.flag == flag),
+            key=lambda r: -r.similarity_score,
+        )
+        selected.extend(bucket[:per_flag])
+    return selected

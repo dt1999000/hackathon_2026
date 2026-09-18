@@ -1,4 +1,4 @@
-import { useMutation } from "@tanstack/react-query"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { ListChecks, RefreshCw, Search } from "lucide-react"
 
 import { BidFitService, type BidMatchResult, BidsService } from "@/client"
@@ -7,12 +7,39 @@ import useCustomToast from "@/hooks/useCustomToast"
 import { handleError } from "@/utils"
 import { BidMatchCard } from "./BidMatchCard"
 
+const RESULT_SECTIONS = [
+  {
+    flag: "green",
+    title: "Good matches",
+    description: "No hardliner conflicts — these fit the profile as-is.",
+  },
+  {
+    flag: "yellow",
+    title: "Warnings",
+    description: "Conflicts that look workable with a realistic mitigation.",
+  },
+  {
+    flag: "red",
+    title: "Poor matches",
+    description: "Hardlined — at least one dealbreaker has no realistic fix.",
+  },
+] as const
+
 export function BidsAnalysisPanel() {
+  const queryClient = useQueryClient()
   const { showSuccessToast, showErrorToast } = useCustomToast()
+
+  const { data: bids } = useQuery({
+    queryKey: ["bids"],
+    queryFn: async () => (await BidsService.listBids()).data ?? [],
+  })
 
   const loadMutation = useMutation({
     mutationFn: async () => (await BidsService.loadBids()).data,
-    onSuccess: (data) => showSuccessToast(data?.message ?? "Bids loaded"),
+    onSuccess: (data) => {
+      showSuccessToast(data?.message ?? "Bids loaded")
+      queryClient.invalidateQueries({ queryKey: ["bids"] })
+    },
     onError: handleError.bind(showErrorToast),
   })
 
@@ -29,6 +56,7 @@ export function BidsAnalysisPanel() {
   })
 
   const results: BidMatchResult[] = analyzeMutation.data?.results ?? []
+  const loadedBids = bids ?? []
 
   return (
     <div className="flex flex-col gap-6">
@@ -37,7 +65,8 @@ export function BidsAnalysisPanel() {
           <h2 className="text-xl font-semibold tracking-tight">Bid matches</h2>
           <p className="text-muted-foreground">
             Load the sample bids, then analyze them against your company
-            profile.
+            profile. Results show two good matches, two warnings, and two
+            poor matches when those flags exist.
           </p>
         </div>
         <div className="flex gap-2">
@@ -73,16 +102,60 @@ export function BidsAnalysisPanel() {
           </div>
           <h3 className="text-lg font-semibold">No bids to show</h3>
           <p className="text-muted-foreground">
-            Load data first, then analyze to see your best matches here.
+            Load data first, then analyze to see good matches, warnings, and
+            poor matches here.
           </p>
         </div>
       )}
 
       {results.length > 0 && (
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {results.map((result) => (
-            <BidMatchCard key={result.bid_id} result={result} />
-          ))}
+        <div className="flex flex-col gap-8">
+          {RESULT_SECTIONS.map((section) => {
+            const group = results.filter((result) => result.flag === section.flag)
+            if (group.length === 0) {
+              return null
+            }
+            return (
+              <section key={section.flag} className="flex flex-col gap-3">
+                <div>
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    {section.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {section.description}
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {group.map((result) => (
+                    <BidMatchCard key={result.bid_id} result={result} />
+                  ))}
+                </div>
+              </section>
+            )
+          })}
+        </div>
+      )}
+
+      {results.length === 0 && !analyzeMutation.isPending && loadedBids.length > 0 && (
+        <div className="flex flex-col gap-3">
+          <p className="text-sm text-muted-foreground">
+            {loadedBids.length} bid{loadedBids.length === 1 ? "" : "s"} loaded.
+            Click Analyze to score them against your profile.
+          </p>
+          <ul className="divide-y rounded-lg border">
+            {loadedBids.map((bid) => (
+              <li key={bid.id} className="px-4 py-3">
+                <p className="font-medium leading-snug">
+                  {bid.title || bid.source_file}
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  {[bid.notice_identifier, bid.place_of_performance]
+                    .filter(Boolean)
+                    .join(" · ")}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>
