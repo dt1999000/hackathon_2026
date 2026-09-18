@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "90f899ac-09f1-4a4d-bc75-0adb9122a341:1:LOT-0000",
+    "candidateId": "90f899ac-09f1-4a4d-bc75-0adb9122a341:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "90f899ac-09f1-4a4d-bc75-0adb9122a341",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "5fce20bd-3117-460b-b2be-f3aaaad9f7f9",
+    "internalIdentifier": "26/N/0118/GN",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T12:22:04Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Rahmenvertrag Unterhaltungsmaßnahmen an Gewässern 1. Ordnung - Gewässerunterhaltung, Holzungen, Kleinschadensbeseitigung, Wegebau",
+    "description": "Der Umfang der Leistungen beziehen sich auf folgende Bereiche:\n.\nGewässerunterhaltung:\nHierzu zählen die Frühjahrskrautung in die Herbstkrautung an Gewässern 1. Ordnung. Darunter fallen Arbeiten mit Krautschneideboot, maschinelle Arbeit mit Traktor und Mähkorb sowie Handmahd vorrangig in den den bebauten Ortslagen. Dazu gehören auch die Mahd der Böschung und der Böschungsoberkante mit geeigneter Schlegeltechnik sowie die Ablagerung oder Entsorgung des Schnittgutes.\n.\nGewässerkrautung mit Krautschneideboot: 110.500 m²\nGewässerkrautung mit Bagger: 65.000 m²\nGewässerkrautung in Handarbeit: 55.000 m²\nBöschungsmahd mit Traktor und Schlegler:120.000 m²\nBöschungsmahd Handarbeit: 14.000 m²\nEntsorgung Kraut: 500 m³\n.\nWeiterhin sind kleine wasserbauliche Maßnahmen an Gewässern 1. Ordnung Leistungen dieser Ausschreibung. Dazu zählen vor allem Liefer- (Totholzelemente, Kies, Oberboden, Störsteine, Holzpfähle etc.) und Einbauleistungen sowie Abbrucharbeiten beispielsweise von Mauerwerken, Betonwiderlagern und Stahlkonstruktionsbauwerken.\n.\nGehölzpflege:\nDie Gehölzpflege erfolgt an Gewässern 1. Ordnung und wasserwirtschaftlichen Anlagen in den Ortslagen zum Nachkommen der Verkehrssicherungspflichten aber auch zur Freihaltung des Abflussprofils.\n.\nDeichunterhaltung:\nDie Leistungen zur Deichunterhaltung beziehen sich auf das Beseitigen von Schwemmgut nach Hochwasserereignissen, Liefern und Aufstellen von Ausstattungsstrukturen, die Beseitigung von Wild- und Wühltierschäden sowie einfache Risssanierung und auch umfangreiche Wegebausanierungen (Deichverteidgungs- und Deichkronenweg)\n.\nNeophytenbekämpfung:\nJe nach Standort und Notwendigkeit müssen invasive Arten durch gezielte, dauerhafte Maßnahmen zurückgedrängt und ihre weitere Ausbreitung verhindert werden. Dies bedarf bei Erforderniss eine langjährige und intensive Pflege.\n.\nHinweise zum Rahmenvertrag:\n1. Laufzeit:\nDie Laufzeit des Rahmenvertrages von 4 Jahren wird in eine garantierte Vertragslaufzeit von 3 Jahren und optionaler Vertragsverlängerung um jeweils 1 Jahr aufgeteilt. Der Auftraggeber kann mit einer einseitigen Erklärung die Option nutzen und den Vertrag entsprechend der Vereinbarung verlängern. Wird die Vertragsverlängerungsoption nicht genutzt, endet der Rahmenvertrag nach Ende der garantierten Vertragslaufzeit bzw. nach der jeweiligen Verlängerung. Vor dem Ende der Vertragslaufzeit abgerufene Leistungen sind auch über das Vertragsende hinaus zu den Bedingungen des Vertrages zu erfüllen.\n.\n2. Auftragswert Rahmenvertrag:\nSchätzwert Rahmenvertrag: 2.607.128,00 EUR (brutto)\nHöchstwert Rahmenvertrag: 3.350.000,00 EUR (brutto)\nDie Rahmenvereinbarung verliert ihre Wirkung, wenn der Höchstwert erreicht ist.",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-01",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-14+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: w.1) Eigenerklärungen bzgl. Eignung (Formblätter): [+] Fb 124 wenn nicht präqualifiziert [+] PQ-Nachweis wenn präqualifiziert [+] Fb TVergG.11 Tariftreue Entgelt [+] Fb TVergG.14 Nachunternehmer . w.2) Nachweise und Erklärungen gemäß Fb124 / PQ: [+] Umsatz [+] Arbeitskräfte, Lohngruppen, Leitungspersonal [+] Berufsregister [+] Steuersachen Finanzamt [+] Sozialkasse [+] Berufsgenossenschaft . (Details siehe Formblätter. Die Formblätter liegen den Ausschreibungsunterlagen bei.) Nachweise zur Fachkunde: . w.3) ZUSÄTZLICHE, AUFTRAGSSPEZIFISCHE NACHWEISE ZUR FACHKUNDE (technische/berufliche Leistungsfähigkeit): . [+] Zwei Referenznachweise über Rahmenverträge zur Gewässerunterhaltung (Krautung und Holzung), mit den weiteren Anforderungen und Angaben, gemäß Fb124. . [+] Ein Referenznachweis mit den Anforderungen und Angaben, gemäß Fb124. . [+] Nachweis über Grundlagenkenntnisse der ökologischen Gewässerunterhaltung (z.B. Zertifikat, Schulung o.ä.) . [+] Nachweis der eingesetzten Mähtechnik . [+] Nachweis eines eingesetzten Kettenbaggers mit einem maximalen Bodenbelastungsdruck von 0,15 Kg/cm² (bodenschonende Fahrzeuge) . [+] Betriebshaftpflichtversicherung mit folgenden Mindestdeckungssummen: a) Für Personen- und Sachschäden: 2.000.000,00€ b) Für Vermögensschäden 1.000.000,00 € c) oder Bestätigung des Versicherers über Anpassung im Auftragsfall."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Es werden alle Unterlagen nachgefordert, außer: [+] Angebotsschreiben [+] Leistungsverzeichnis . Hinweise: Der Bestbieter muss im Fall der beabsichtigten Zuschlagserteilung die nach dem Tariftreu- und Vergabegesetz Sachsen-Anhalt verpflichtend vorzulegenden Erklärungen und Nachweise, auf gesondertes Verlangen der Vergabestelle innerhalb einer nach Tagen bestimmten Frist (3 - 10 Kalendertage) vorlegen. Bei nicht fristgerechter Vorlage kann das Angebot von der Wertung ausgeschlossen werden. Die Vergabestelle behält sich vor, von nachrangigen Bietern parallel nachzufordern."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891384",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

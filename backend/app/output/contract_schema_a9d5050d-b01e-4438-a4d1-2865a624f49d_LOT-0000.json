@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "a9d5050d-b01e-4438-a4d1-2865a624f49d:1:LOT-0000",
+    "candidateId": "a9d5050d-b01e-4438-a4d1-2865a624f49d:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45320000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "a9d5050d-b01e-4438-a4d1-2865a624f49d",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "d53a7355-b2c7-42e1-bf1a-efa51428ea4c",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:05Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Vermögen und Bau Baden-Württemberg, Amt Heilbronn"
+    ]
+  },
+  "procedure": {
+    "title": "Dämmungsarbeiten",
+    "description": "Neuinstallation Technische Wärmedämmung:\n- ca. 5000 m Wärmedämmung Rohr Mineralwolle\n- ca. 1300 m Kälteisolierung Rohr Mineralwolle\n- ca. 150 m Kälteisolierung Rohr Schaumglas\n- ca. 1000 m² Wärmedämmung Lüftung Kanal Mineralwolle\n- ca. 250 m² Wärmedämmung Lüftung Kanal Elastomerschaum\n- ca. 1200 m Wärmedämmung Lüftung Rohr\n- ca. 740 m Wärmedämmung Trinkwasser Mineralwolle\n- ca. 570 m Wärmedämmung Entwässerung Mineralwolle\n- ca. 270 St Brandschottung R90 Heizung\n- ca. 100 St Brandschottung R90 Kälte\n- ca. 120 St Brandschottung R90 Trinkwasser\n- ca. 90 St Brandschottung R90 Entwässerung\n- ca. 30 St Brandschottung R90 Löschwasser\n- ca. 100 m Brandschutzbekleidung Löschwasser Mineralwolle",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45320000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "74076",
+      "city": "Heilbronn",
+      "nuts": "DE117",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 289326.5,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-03-30+02:00",
+    "endDate": "2029-04-20+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-22+02:00",
+    "deadlineTime": "23:59:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Aktuelle Referenzliste über mindestens drei Einzelleistungen der letzten fünf Kalenderjahre, die mit der zu vergebenden Leistung vergleichbar sind, mit Angabe des Ansprechpartners; der Art der ausgeführten Leistung; der Auftragssumme; des Ausführungszeitraums, der stichwortartigen Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angabe der Anzahl der jahresdurchschnittlich Beschäftigten der letzten drei abgeschlossenen Geschäftsjahre gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung, dass kein Insolvenzverfahren beantragt wurde und sich das Unternehmen nicht in Liquidation befindet. Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls beitragspflichtig. Unbedenklichkeitsbescheinigung des Finanzamts bzw. Bescheinigung in Steuersachen. Freistellungsbescheinigung nach § 48b EStG. Eigenerklärung, dass keine schweren Verfehlungen begangen wurden. Erklärung über Registereintragungen. Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer. Qualifizierte Unbedenklichkeitsbescheinigung des zuständigen Versicherungsträgers mit Angabe der Lohnsummen."
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Eigenerklärung über den Umsatz der letzten drei Jahre. Folgende Mindeststandards werden gefordert: Nachweis einer mind. dreijährigen Geschäftstätigkeit anhand von drei abgeschlossenen Geschäftsjahren. Für jedes dieser drei abgeschlossenen Geschäftsjahre ist ein Mindestumsatz von 140.000 € netto nachzuweisen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe Vergabeunterlagen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.landbw.de/NetServer/PublicationControllerServlet?function=Detail&TWOID=54321-Tender-1a08f3d1697-7c8c0d0cf7758a3a",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

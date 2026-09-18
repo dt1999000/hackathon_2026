@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "18dc6ea3-81dc-4721-af6e-7edfb736c2d6:1:LOT-0001",
+    "candidateId": "18dc6ea3-81dc-4721-af6e-7edfb736c2d6:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45324000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "18dc6ea3-81dc-4721-af6e-7edfb736c2d6",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "bc3259eb-41c0-4858-a9c3-cdfd7ec14600",
+    "internalIdentifier": "715/22353 - M305",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:27Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "St. Elisabeth-Hospital Beckum GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "SEB Anbau Bettenhaus II - Altersmedizin / Aufstockung - Trockenbauarbeiten",
+    "description": "KG bis 1.OG: Wände/Vorsatzschalen Metallständerwände aller Qualitäten:  ca. 2890 qm Vorsatzschalen:    ca.  755 qm  Decken: GK- Montagedecken (glatt):   ca. 180 qm GK- Lochdecken:    ca.   72 qm Mineralfaser-Rasterdecken:   ca. 100 qm F30-Metalldecken-Systeme:   ca. 435 qm F30-Brandschutzdecken:   ca.   85 qm  2.OG: Wände/Vorsatzschalen Metallständerwände aller Qualitäten:  ca. 1275 qm Vorsatzschalen:    ca.   340 qm  Decken: GK- Montagedecken (glatt):   ca.    75 qm Mineralfaser-Rasterdecken:   ca.    45 qm F30-Metalldecken-Systeme:   ca.  170 qm F30-Brandschutzdecken:   ca.  50 qm",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45324000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Elisabethstraße 10",
+      "additionalStreet": "",
+      "postcode": "59269",
+      "city": "Beckum",
+      "nuts": "DEA38",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "338"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-15+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMPQ6",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Elektronisch über die Plattform DTVP"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMPQ6/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

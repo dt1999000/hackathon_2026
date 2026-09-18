@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "4c97c212-a70e-47f9-a823-82c2a1a91e9d:1:LOT-0001",
+    "candidateId": "4c97c212-a70e-47f9-a823-82c2a1a91e9d:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45110000",
+      "45111100",
+      "45262660"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "4c97c212-a70e-47f9-a823-82c2a1a91e9d",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "64ee7100-2ce2-49ef-ae80-1e9d18e24e99",
+    "internalIdentifier": "2449/2026",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:09Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Bundesamt für Bauwesen und Raumordnung, in Vertretung der Bundesanstalt für Immobilienaufgaben"
+    ]
+  },
+  "procedure": {
+    "title": "Bundesanstalt für Immobilienaufgaben - Grundsanierung - Abbruch / Schadstoffsanierung - Vergabe 2449/2026",
+    "description": "Abbruch / Schadstoffsanierung BT D DIN 18 448, 18 459 - VE 300.77\n\nBaustelleneinrichtung für Schadstoffsanierung\nGerüstarbeiten \n160 St Innentüren\n1280 m2 Innenwandputz\n1050 m2 Wandfliesen\n2025 m2 Trockenbauwände\n100 m2 Wandbekleidungen aus Holz\n230 m2 Mauerwerkswand\n850 m Wandschlitze öffnen\n105 m2 Stahlsteindecken\n650 m2 Abhangdecken\n5000 m2 lose Beschichtung an Decken\n275 m2 Zementestrich\n50 m2 Gussasphaltestrich\n5325 m2 Linoleum\n190 m2 Nadelvlies\n500 m2 Bodenfliesen\n27 m3 Stahlbetonsohle\n5325 m2 Kleber- u. Spachtelreste fräsen\n3200 m Holzsockelleiste\n160 m2 Sanitärtrennwandanlagen HPL \n20 m Teeküchen und Wandpanel Holzwerkstoff beschichtet\n125 m Holzhandlauf zur Wiederverwertung demontieren\n\nElektro \n170 St Verteilerkästen mit Sicherungseinsätzen \n106 St Blitzschutzgerät, Messgeräte u.a. \n225 Schalter/ Taster \n13 St Steuergeräte, Transformatoren\n75000 m Niederspannungskabel 0,8 bis 95mm2\n960 m Glasfaserleitung 0,25mm2\n800 m Installationskanal Stahl \n295 m Gitterrinne \n5600 m Kabelkanal 30 bis 90 mm breit<\n905 St Anbau- u. Hängeleuchten\n2560 St Schalter, Steckdosen, Installationsdosen. AP + UP\n\nSanitär\n200 m Rohrltg. Formstück Guss\n270 m Rohrltg. Formstück Kunststoff\n1428 m Rohrltg. Formstück Kupfer AD 20-100 mm \n9 St Spültisch Stahl niro\n16 St Waschbecken Sanitärporzellan\n5 St Urinal Sanitärporzellan\n28 St WC Sanitärporzellan\n10 St Ausgussbecken Stahl \n\nHeizung\n4 St Anlage entleeren\n2753 m Rohrltg. Formstück Stahl \n79 St Gliederheizkörper Stahl \n\nSchadstoffbelastete Bauteile \n60 m2 Sperr- und Abdichtungsschichten PAK\n400 m2 Gussasphaltestrich PAK \n170 m Niederspannungskabel PAK\n50 m2 Wandfliesen Asbest\n200 m2 Linoleum Asbest\n17 St Türen Asbest\n500 m2 Innenwandputz Asbest\n26 St Flach- und Schnurdichtungen Asbest\n377 St Gliederheizkörper Guss Asbest \n600 m2 Dämmung abgehängte Decke KMF\n450 m2 Dämmung Innenwand KMF \n150m2 Bekleidungspl. Mineralpl. KMF\n3200 m Rohrleitungsdämmung KMF\n1200 St Leuchtstoffröhren Quecksilber\n80 m2 Dachdämmung HBCD\n\n175 t Containerstellung, Transport und Entsorgung von Abfall \n165 t Containerstellung, Transport gefährlicher Abfall\n\nAusführungsfristen\nBeginn der Ausführung 12/2026\nFertigstellung der Ausführung 06/2027\nsiehe verbindliche Einzelfristen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45111100",
+    "additionalCpvCodes": [
+      "45262660",
+      "45110000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Fasanenstraße 87",
+      "additionalStreet": "",
+      "postcode": "10623",
+      "city": "Berlin",
+      "nuts": "DE300",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "7"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "09:30:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-07+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eignung zur Berufsausübung: Die Eignung ist mit dem Angebot durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) oder anhand der Einheitlichen Europäischen Eigenerklärung (EEE) nachzuweisen. Sofern im Präqualifikationsverzeichnis 3 hinterlegte Referenzen in Art und Umfang mit der zu vergebenden Leistung vergleichbar sind, ist der gültige PQ Eintrag für den entsprechenden Leistungsbereich als Eignungsnachweis ausreichend. Sofern der Nachweis der Eignung durch die Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) erfolgen soll, können bei Bedarf noch zusätzliche Einzelnachweise eingereicht werden. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen nach Aufforderung vorzulegen. Beabsichtigt der Bewerber/Bieter zur Erfüllung des Auftrages andere Unternehmen (Nachunternehmer) einzusetzen, ist auf Verlangen deren jeweilige Nummer in der Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) anzugeben oder es sind das Formblatt 124 sowie die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen vorzulegen. Beabsichtigt der Bewerber/Bieter zum Nachweis seiner Eignung auf die Kapazitäten eines anderen Unternehmens zu verweisen (Eignungsleihe), so muss der Bewerber/Bieter für den (jeweiligen) Eignungsleihgeber die Nummer in der Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) angeben oder es sind das Formblatt 124 sowie die Erklärungen und Bescheinigungen gemäß diesem Formblatt für dieses Unternehmen vorzulegen. Darüber hinaus muss der Bewerber/Bieter seine tatsächliche Zugriffsmöglichkeit auf dieses Unternehmen durch Vorlage einer Verpflichtungserklärung des Eignungsleihgebers nachweisen. Das Formblatt 124 ist erhältlich bei: https://www.bbr.bund.de/BBR/DE/Vergaben/InformationenAuftragnehmer/Eigenerklaerung Bieter, die ihren Sitz nicht in der Bundesrepublik Deutschland haben, haben gleichwertige Bescheinigungen von anerkannten Stellen ihres Herkunftslandes vorzulegen. Mit der Verordnung (EU) 2022/576 des Rates vom 8. April 2022 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in der Ukraine destabilisieren, ist es verboten, öffentliche Aufträge oder Konzessionen an Personen oder Unternehmen zu vergeben, die einen Bezug zu Russland im Sinne der Vorschrift aufweisen. Teil der Vergabeunterlage ist eine Eigenerklärung zur Verordnung EU 2022-576 die auf gesondertes Verlangen vorzulegen ist. Der Auftraggeber wird für den Bieter, der den Zuschlag erhalten soll, einen Auszug aus dem Gewerbezentralregister (§150 a Gewerbeordnung) beim Bundeszentralregister anfordern. Ausländische Bieterhaben gleichwertige Bescheinigungen ihres Herkunftslandes vorzulegen. Der Bieter hat die Einhaltung der Mindestentgeltregelungen zu berücksichtigen. Einzelheiten dazu sind in den Ausschreibungsunterlagen enthalten."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eignung - Wirtschaftliche und finanzielle Leistungsfähigkeit: Die Eignung ist mit dem Angebot durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) oder anhand der Einheitlichen Europäischen Eigenerklärung (EEE) nachzuweisen. Sofern die im Präqualifikationsverzeichnis hinterlegten Umsatzangaben für die letzten 3 abgeschlossenen Geschäftsjahre, soweit sie Bauleistungen und andere Leistungen betreffen, die mit der zu vergebenden Leistung vergleichbar sind, in einem angemessenen Verhältnis zum Umfang der zu vergebenden Leistung und der Bauzeit stehen, ist der gültige PQ-Eintrag für den entsprechenden Leistungsbereich als Eignungsnachweis ausreichend. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen nach Aufforderung vorzulegen. Beabsichtigt der Bewerber/Bieter zur Erfüllung des Auftrages andere Unternehmen (Nachunternehmer) einzusetzen, ist auf Verlangen deren jeweilige Nummer in der Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) anzugeben oder es sind das Formblatt 124 sowie die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen vorzulegen. Beabsichtigt der Bewerber/Bieter zum Nachweis seiner Eignung auf die Kapazitäten eines anderen Unternehmens zu verweisen (Eignungsleihe), so muss der Bewerber/Bieter für den (jeweiligen) Eignungsleihgeber die Nummer in der Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) angeben oder es sind das Formblatt 124 sowie die Erklärungen und Bescheinigungen gemäß diesem Formblatt für dieses Unternehmen vorzulegen. Darüber hinaus muss der Bewerber/Bieter seine tatsächliche Zugriffsmöglichkeit auf dieses Unternehmen durch Vorlage einer Verpflichtungserklärung des Eignungsleihgebers nachweisen. Das Formblatt 124 ist erhältlich bei: https://www.bbr.bund.de/BBR/DE/Vergaben/InformationenAuftragnehmer/Eigenerklaerung Bieter, die ihren Sitz nicht in der Bundesrepublik Deutschland haben, haben gleichwertige Bescheinigungen von anerkannten Stellen ihres Herkunftslandes vorzulegen. Weitere Nachweise/Unterlagen, die mit dem Angebot einzureichen sind: Wirtschaftliche Eignung: - Betriebshaftpflichtversicherung mit einer Mindestdeckung von 3 Mio €. Der Auftraggeber wird für den Bieter, der den Zuschlag erhalten soll, einen Auszug aus dem Gewerbezentralregister (§150 a Gewerbeordnung) beim Bundeszentralregister anfordern. Ausländische Bieterhaben gleichwertige Bescheinigungen ihres Herkunftslandes vorzulegen. Der Bieter hat die Einhaltung der Mindestentgeltregelungen zu berücksichtigen. Einzelheiten dazu sind in den Ausschreibungsunterlagen enthalten."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Eignung - Technische und berufliche Leistungsfähigkeit: Die Eignung ist mit dem Angebot durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) oder anhand der Einheitlichen Europäischen Eigenerklärung (EEE) nachzuweisen. Sofern im Präqualifikationsverzeichnis 3 hinterlegte Referenzen in Art und Umfang mit der zu vergebenden Leistung vergleichbar sind, ist der gültige PQEintrag für den entsprechenden Leistungsbereich als Eignungsnachweis ausreichend. Sofern der Nachweis der Eignung durch die Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) erfolgen soll, können bei Bedarf noch zusätzliche Einzelnachweise eingereicht werden. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen nach Aufforderung vorzulegen. Beabsichtigt der Bewerber/Bieter zur Erfüllung des Auftrages andere Unternehmen (Nachunternehmer) einzusetzen, ist auf Verlangen deren jeweilige Nummer in der Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) anzugeben oder es sind das Formblatt 124 sowie die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen vorzulegen. Beabsichtigt der Bewerber/Bieter zum Nachweis seiner Eignung auf die Kapazitäten eines anderen Unternehmens zu verweisen (Eignungsleihe), so muss der Bewerber/Bieter für den (jeweiligen) Eignungsleihgeber die Nummer in der Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) angeben oder es sind das Formblatt 124 sowie die Erklärungen und Bescheinigungen gemäß diesem Formblatt für dieses Unternehmen vorzulegen. Darüber hinaus muss der Bewerber/Bieter seine tatsächliche Zugriffsmöglichkeit auf dieses Unternehmen durch Vorlage einer Verpflichtungserklärung des Eignungsleihgebers nachweisen. Das Formblatt 124 ist erhältlich bei: https://www.bbr.bund.de/BBR/DE/Vergaben/InformationenAuftragnehmer/Eigenerklaerung Bieter, die ihren Sitz nicht in der Bundesrepublik Deutschland haben, haben gleichwertige Bescheinigungen von anerkannten Stellen ihres Herkunftslandes vorzulegen. Weitere Nachweise/Unterlagen, die mit dem Angebot einzureichen sind: Referenzen: - Referenzauflistung, mindestens 3 vergleichbare Projekte aus den letzten 5 Jahren Der Auftraggeber wird für den Bieter, der den Zuschlag erhalten soll, einen Auszug aus dem Gewerbezentralregister (§150 a Gewerbeordnung) beim Bundeszentralregister anfordern. Ausländische Bieterhaben gleichwertige Bescheinigungen ihres Herkunftslandes vorzulegen. Der Bieter hat die Einhaltung der Mindestentgeltregelungen zu berücksichtigen. Einzelheiten dazu sind in den Ausschreibungsunterlagen enthalten."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Weitere Nachweise/Unterlagen, die mit dem Angebot einzureichen sind: Fachliche Eignung und Qualifikation: - Zulassung Fachbetrieb Asbestsanierung - TRGS 519 Nr. 5.2 i.V.m. § 19 GefahrstoffV - Sachkundenachweis der verantwortlichen Person und der aufsichtsführenden Personen (Asbest) - TRGS 519 Nr. 5.2 - Nachweis arbeitsmedizinische Vorsorge der einzusetzenden Mitarbeiter - ArbMedVV Anhang Teil 1 Nr. 1"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Fehlende Unterlagen, deren Vorlage mit dem Angebot gefordert war, werden nachgefordert. Diese sind nach Aufforderung durch den Auftraggeber vorzulegen. Werden die nachgeforderten Unterlagen nicht innerhalb dieser Frist vorgelegt, führt dies zum Ausschluss aus dem weiteren Verfahren."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdocuments.html?id=891071",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

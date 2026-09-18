@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25828260:1:LOT-0000",
+    "candidateId": "25828260:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000-7"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25828260",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:55Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "26B20122 - Nato - Marinefliegerstützpunkt Nordholz, Sanierung Mun. - Lagerhäuser, KMR Sanierung Blitzschutz MLH, Begleitung Volumenräumung",
+    "description": "26B20122 - Nato - Marinefliegerstützpunkt Nordholz, Sanierung Mun. - Lagerhäuser, KMR Sanierung Blitzschutz MLH, Begleitung Volumenräumung",
+    "type": "beabsichtigte Beschränkte Ausschreibung",
+    "typeRaw": "beabsichtigte Beschränkte Ausschreibung"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45000000-7",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "27637 Wurster Nordseeküste",
+      "nuts": "DE9",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXQ6YY5RS6M",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

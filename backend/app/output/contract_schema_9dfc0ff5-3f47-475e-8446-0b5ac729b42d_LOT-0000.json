@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "9dfc0ff5-3f47-475e-8446-0b5ac729b42d:1:LOT-0000",
+    "candidateId": "9dfc0ff5-3f47-475e-8446-0b5ac729b42d:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45112700",
+      "45112720"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "9dfc0ff5-3f47-475e-8446-0b5ac729b42d",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "2cb18dd5-a3a3-421a-ab79-d1675765ecf9",
+    "internalIdentifier": "510",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:13Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Immenstadt i. Allgäu"
+    ]
+  },
+  "procedure": {
+    "title": "Außenanlagen",
+    "description": "Außenanlagen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45112700",
+    "additionalCpvCodes": [
+      "45112720"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "87509",
+      "city": "Immenstadt im Allgäu",
+      "nuts": "DE27E",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-04-26+02:00",
+    "endDate": "2027-12-16+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-06+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-01+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16a EU VOB/A nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/303599",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

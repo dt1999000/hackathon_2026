@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "05c30013-5b92-4ca5-956a-5a084dbbef1d:1:LOT-0000",
+    "candidateId": "05c30013-5b92-4ca5-956a-5a084dbbef1d:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45261410"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "05c30013-5b92-4ca5-956a-5a084dbbef1d",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "1457b0b4-59f3-4818-a18b-861ef185213e",
+    "internalIdentifier": "0",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:32Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Staatliches Bau- und Liegenschaftsamt Schwerin"
+    ]
+  },
+  "procedure": {
+    "title": "VE 3.07-Dachabdichtung- und Dachklempnerarbe",
+    "description": "Dachabdichtungs- und Dachklempnerarbeiten\n\nLaborneubau Dachfläche 1:\n1320 m²\tFlachdachabdichtung mit Steinwolle-Dachdämmplatten und mehrlagiger Bitumenschweißbahn mit extensiver Begrünung auf Flachdach\n325 m²\tKiesflächen 16/32 mm, d=8 cm\n235 m\t\tMauerabdeckung als Attika-Abdeckung aus Aluminium\n226 Stück\tAuflastgehaltene PV-Unterkonstruktion\n86 m²\t\tBetonwerksteinplatten als Wartungsgang\n3 Stück \tNRA-Flachdachfenster 1,50 x 1,20 m, Neigung  3 Grad\n3 Stück \tHauptentwässerung Retentionselement-Set Dachgully DN100 einschl. aller Einbauteile\n5 Stück \tNotentwässerung Attikagully DN70 einschl. aller Einbauteile\n\nTechnikriegel Dachfläche 2:\n479 m²\t\tFlachdachabdichtung mit Wärmedämmung aus Polyurethan und mehrlagiger Bitumenschweißbahn mit extensiver Begrünung auf Flachdach\n120 m²\tKiesflächen 16/32 mm, d=8 cm\n102 m \tBrandwandverblechung aus Titan-Zinkblech\n102 m\tMauerabdeckung als Attika-Abdeckung aus Aluminium\n139 m²\t\tBetonwerksteinplatten als Wartungsgang und als Terrasse\n6 m\t\tAbsturzsicherung Flachdachgeländer\n6 m\t\tSicherheitsgeländer an Attika, l= ca. 60 cm\n3 Stück \tHauptentwässerung Retentionselement-Set, Dachgully DN100 einschl. aller Einbauteile\n2 Stück \tNotentwässerung Attikagully DN70 einschl. aller Einbauteile\n\nForschungshalle Dachfläche 3:\n1591 m²\tFlachdachabdichtung mit Steinwolle-Dachdämmplatten und mehrlagiger Bitumenschweißbahn mit extensiver Begrünung auf Flachdach\n243 m²\tKiesflächen 16/32 mm, d=8 cm\n132 m\t\tMauerabdeckung als Attika-Abdeckung aus Aluminium\n274 Stück\tAuflastgehaltene PV-Unterkonstruktion\n93 m²\t\tBetonwerksteinplatten als Wartungsgang\n199 m\t\tAbsturzsicherung als Edelstahlseil mit Stützen und 1x Steigleiter\n1 Stück\t\tPersönliche Schutzausrüstung\n3 Stück\t\tLichtband 14,00 x 3,90 m mit je einem Lüftungsflügel 2,90 x 2,10m\n4 Stück \tHauptentwässerung Retentionselement-Set, Dachgully DN70 einschl. aller Einbauteile\n6 Stück \tNotentwässerung Attikagully DN70 einschl. aller Einbauteile",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45261410",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Philipp-Müller-Straße 14",
+      "additionalStreet": "",
+      "postcode": "23966",
+      "city": "Wismar",
+      "nuts": "DE80M",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-04-01+02:00",
+    "endDate": "2028-01-30+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "23:59:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "https://my.vergabe.rib.de/eignungskriterien.php?lv_id=157325 Eigenerklärung (Formblatt 124) über den Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen oder andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen."
+    },
+    {
+      "code": "slc-abil-ref-supply",
+      "label": null,
+      "description": "Eigenerklärung (Formblatt 124), dass in den letzten fünf Kalenderjahren mit der zu vergebenden Leistung vergleichbare Leistungen ausgeführt wurden sowie Vorlage von drei Referenznachweisen mit mindestens folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. Kurzbeschreibung der Dienstleistung einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme; Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGEPartner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung."
+    },
+    {
+      "code": "slc-abil-staff-tech-work",
+      "label": null,
+      "description": "Eigenerklärung (Formblatt 124), dass für die Ausführung der Leistungen erforderliche Arbeitskräfte zur Verfügung stehen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angabe über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen (nebst extra ausgewiesenem Leitungspersonal, s. hierzu Eignungskriterium \"Anzahl der Führungskräfte\")"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Eigenerklärung (Formblatt 124) über die Eintragung im Handelsregister oder in einem vergleichbaren Register sowie Vorlage des Nachweises über die Eintragung im Handelsregister oder in einem vergleichbaren Register."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eigenerklärung (Formblatt 124) über die Eintragung in der Handwerksrolle oder der Industrie­ und Handelskammer sowie Vorlage der Gewerbeanmeldung, der Eintragung in der Handwerksrolle (Handwerkskarte) bzw. der Industrie­ und Handelskammer."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Vorlage einer qualifizierten Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers mit Angabe der Lohnsummen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Alle Unterlagen (Angaben, Erklärungen und Nachweise), deren Vorlage mit dem Angebot gefordert war, mit Ausnahme fehlender Preisangaben."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/3/tenderId/157325",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

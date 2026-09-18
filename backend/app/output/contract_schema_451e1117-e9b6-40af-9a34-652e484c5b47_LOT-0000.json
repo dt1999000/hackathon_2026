@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "451e1117-e9b6-40af-9a34-652e484c5b47:1:LOT-0000",
+    "candidateId": "451e1117-e9b6-40af-9a34-652e484c5b47:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45342000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "451e1117-e9b6-40af-9a34-652e484c5b47",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "caec9754-b9bf-4eaa-90ef-29073fcedf89",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:34Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Bad Urach"
+    ]
+  },
+  "procedure": {
+    "title": "Gartenschau Bad Urach 2027: Zaunbauarbeiten BA 12",
+    "description": "BA 12 Zaunbauarbeiten\n- Errichtung von ca. 1.200 m Wildschutzzaun,\n- Errichtung von ca. 1.300 m Drahtgeflechtzaun,\n- Errichtung von ca. 100 m Gittermattenzaun \n- Einbau von ca. 20 Stück Toranlagen,\n- Rückbau aller zuvor eingebauter Zaun- und Toranlagen nach Beendigung der Gartenschau",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45342000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "72574",
+      "city": "Bad Urach",
+      "nuts": "DE141",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-23+01:00",
+    "endDate": "2027-12-17+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Referenzen zu Arbeiten: Referenzen der letzten 3 abgeschlossenen Kalenderjahre über Leistungen, die mit der zu vergebenen Leistung vergleichbar sind. KEV 179 bitte ausfüllen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Arbeitskräfte: Ich erkläre/Wir erklären, dass mir/uns die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen. Falls mein/unser Teilnahmeantrag/Angebot in die engere Wahl gelangt, werde ich/werden wir die Zahl der in den letzten 3 Kalenderjahren Beschäftigte vorlegen. (Siehe KEV 179.)"
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Umsatz des Unternehmens: Umsatz des Unternehmens der letzten 3 abgeschlossenen Geschäftsjahre, welche Bauleistungen und andere Leistungen betreffen, die mit der zu vergebenen Leistung vergleichbar sind. KEV 179 bitte ausfüllen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Berufsregister: Eintragung in das Berufsregister. KEV 179 bitte ausfüllen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten Sie hierzu auch KEV 110.2!"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.vergabe24.de/vergabeunterlagen/54321-Tender-1a0a3f6d2be-598fbe8f5eb5d5ec",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

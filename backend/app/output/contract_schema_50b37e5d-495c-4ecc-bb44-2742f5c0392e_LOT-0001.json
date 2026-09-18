@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "50b37e5d-495c-4ecc-bb44-2742f5c0392e:1:LOT-0001",
+    "candidateId": "50b37e5d-495c-4ecc-bb44-2742f5c0392e:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45233120"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "50b37e5d-495c-4ecc-bb44-2742f5c0392e",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "50b37e5d-495c-4ecc-bb44-2742f5c0392e",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:23Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "VAG Verkehrs-Aktiengesellschaft"
+    ]
+  },
+  "procedure": {
+    "title": "TMS- Straßenbahnverlängerung Minervastraße VP50 Verkehrswegebau",
+    "description": "Die Stadt Nürnberg und die VAG planen den Bau einer neuen Straßenbahntrasse im südlichen Nürnberger Stadtgebiet. Die geplante 1,7 km lange Straßenbahnstrecke verläuft entlang der Dianastraße und der Minervastraße und verbindet die bisherige Straßenbahnendhaltestelle Gibitzenhof und die Haltestelle Finkenbrunn.\n\nDie vorliegenden Ausschreibungsunterlagen umfassen den kompletten Gleis- und Straßenbau von der bestehenden Straßenbahn-Wendeschleife „Gibitzenhof“ über die Minervastraße bis zur Kreuzung Finkenbrunn.\n\nDer Auftragsumfang beinhaltet den Neubau einer zweigleisigen Straßenbahntrasse, den Neubau von zwei Haltestellen, der Erneuerung der Haltestelle Finkenbrunn, die Herstellung einer Straßenbahnwendeschleife sowie umfangreiche Arbeiten im Straßenbau (Herstellung der Fahrbahnen, der Parkstreifen, Rad- und Gehwege, der Entwässerungsanlagen sowie der Vorbereitung der neuen Baumstandorte). \n\nDie Durchführung der Bauarbeiten ist ab Q1/2027 geplant.\n\nDie Maßnahme ist in drei Titel aufgeteilt, die gemeinsam ausgeschrieben werden. \nDie Auftraggeber sind die Verkehrsaktiengesellschaft Nürnberg (VAG) und die Stadt Nürnberg (SÖR). Die beiden Vorhabensträger treten gemeinsam als Auftraggeber auf. \n\nDie Kosten für die jeweiligen Titel werden von den jeweiligen Kostenträgern VAG und SÖR getragen: \n\n- Titel 1: Übergeordnete Arbeiten (VAG / SÖR) \n- Titel 2: Straßenbau (SÖR) \n- Titel 3: Gleisbau (VAG)",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45233120",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE254",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-18+01:00",
+    "endDate": "2028-07-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "13:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Name und Rechtsform des Bieters / der Bietergemeinschaft (Muss-Kriterium)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung, dass keine Ausschlussgründe nach § 123 und 124 GWB vorliegen (Muss-Kriterium)"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Kopie der Anmeldungs- bzw. Eintragungsbescheinigung ins Berufs- oder Handelsregister nach Maßgabe der Rechtsvorschriften des Herkunftslandes, anderenfalls vergleichbarer Nachweis für die Existenz und den Gegenstand des Unternehmens des Bewerbers. (Muss-Kriterium)"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der Berufsgenossenschaft (nicht älter als 12 Monate) (Gewichtung 3 %)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung, dass keine Eintragung im Wettbewerbsregister vorliegt. (Gewichtung 3 %)"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Kopie der Versicherungspolice(n) mit einer Deckungssumme i. H. v. 5,0 Mio. Euro (nicht älter als 12 Monate) oder Vorlage einer Bescheinigung der Versicherung, dass diese bereit ist, im Auftragsfall eine Versicherung mit den entsprechenden Deckungssummen mit dem Bieter abzuschließen. (Muss-Kriterium)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung von ausländischen Firmen zur Anerkennung von deutschem Recht im Auftragsfall (Muss-Kriterium)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung zum Einsatz von deutschsprachigem Schlüsselpersonal im Auftragsfall (Muss-Kriterium)"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Umsatzangaben der letzten 3 abgeschlossenen Geschäftsjahre bezogen auf Tätigkeiten im ausgeschriebenen Aufgabengebiet, Gewichtung 5 %,"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Anzahl der fest angestellten Mitarbeiter im Mittel der letzten 3 Geschäftsjahre mit Angabe der entsprechenden Qualifikationen. (Gewichtung 4 %)"
+    },
+    {
+      "code": "slc-stand-ratio",
+      "label": null,
+      "description": "Wirtschaftliche Eigenauskunft (z. B. Creditreform, Bankauskunft, etc.), (Gewichtung 7 %)."
+    },
+    {
+      "code": "slc-stand-ratio",
+      "label": null,
+      "description": "Eigenerklärung, dass keine Eröffnung oder beantragte Eröffnung eines Insolvenzverfahrens oder einer vergleichbaren gesetzlich geregelten Verfahrens über das Vermögen des Unternehmens oder Ablehnung vorliegt (Gewichtung 3 %)"
+    },
+    {
+      "code": "slc-stand-ratio",
+      "label": null,
+      "description": "Eigenerklärung, dass sich das Unternehmen nicht in Liquidation befindet. (Gewichtung 3 %)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung, dass Ihr Unternehmen seine Verpflichtung zur Zahlung der Steuern und Abgaben nach den Rechtsvorschriften des Landes des Sektorenauftraggebers erfüllt (Gewichtung 3 %),"
+    },
+    {
+      "code": "slc-abil-facil-tools",
+      "label": null,
+      "description": "Unternehmenseigene technische Ausrüstung (insbesondere zur Verfügung stehende Asphaltfertiger, Kettenbagger, Verdichtungsgerät, Straßenbauwalze, Radlader) (Gewichtung 3 %)."
+    },
+    {
+      "code": "slc-sche-qu-cert-indep",
+      "label": null,
+      "description": "Qualifikationsnachweis von Verantwortlichen für Sicherungsarbeiten bei Arbeitsstellen an Straßen (Bescheinigung RSA – Fachmann) oder gleichwertige Qualifikationsnachweise bei ausländischen Bietern, (Gewichtung 3 %)."
+    },
+    {
+      "code": "slc-sche-qu-cert-indep",
+      "label": null,
+      "description": "Vorhandene Zertifikate zu Qualitätssicherung (QM-System, Arbeitssicherheit, Sifa, UVV, Umweltschutz), Gewichtung 3 %)"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Zwei Referenzen für vergleichbare und zur Zufriedenheit des Auftraggebers ausgeführte Leistungen im Gleisbau mit Bauausführung 2020 bis 2025. Eine der beiden Referenzen soll ein Auftragsvolumen von mindestens 8 Mio. Euro aufweisen. Gewichtung 30 % (zweimal 15 %), Wertung jeweils im Vergleich zur ausgeschriebenen Leistung für eine Referenz: 15 % voll vergleichbar, 0 % überhaupt nicht vergleichbar. Zwischenwerte werden interpoliert. Die Referenzen sollen folgende Angaben enthalten: a.) Auftraggeber/Referenzgeber mit Referenzbestätigung b.) Art der ausgeführten Leistung c.) Auftragssumme d.) Ausführungszeitraum e.) Kurzbeschreibung des im eigenen Betrieb erbrachten maßgeblichen Leistungsumfangs f.) Zahl der durchschnittlichen eingesetzten Arbeitskräfte."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Zwei Referenzen für vergleichbare und zur Zufriedenheit des Auftraggebers ausgeführte Leistungen im Straßenbau mit Bauausführung 2020 bis 2025. Eine der beiden Referenzen soll ein Auftragsvolumen von mindestens 8 Mio. Euro aufweisen. Gewichtung 30 % (zweimal 15 %), Wertung jeweils im Vergleich zur ausgeschriebenen Leistung für eine Referenz: 15 % voll vergleichbar, 0 % überhaupt nicht vergleichbar. Zwischenwerte werden interpoliert. Die Referenzen sollen folgende Angaben enthalten: a.) Auftraggeber/Referenzgeber mit Referenzbestätigung b.) Art der ausgeführten Leistung c.) Auftragssumme d.) Ausführungszeitraum e.) Kurzbeschreibung des im eigenen Betrieb erbrachten maßgeblichen Leistungsumfangs f.) Zahl der durchschnittlichen eingesetzten Arbeitskräfte. Ausländische Bieter haben gleichwertige Nachweise des Herkunftslandes vorzulegen. Bei Dokumenten, die nicht in deutscher Sprache verfasst sind, ist eine beglaubigte Übersetzung ins Deutsche beizufügen. Ein Verweis auf Präqualifikationsportale (z.B. PQ-Bau) ist möglich, sofern die geforderten Unterlagen dort hinterlegt sind."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten: Um einen eventuellen Ausschluss des Angebotes zu vermeiden, legen Sie bitte die geforderten Nachweise und Erklärungen dem Angebot unbedingt vollständig bei."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/50b37e5d-495c-4ecc-bb44-2742f5c0392e",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "a337080c-967b-4dd9-a373-e99406e5ada7:2:LOT-0000",
+    "candidateId": "a337080c-967b-4dd9-a373-e99406e5ada7:2:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "a337080c-967b-4dd9-a373-e99406e5ada7",
+    "version": "2",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "8b1086d0-2413-4016-b0d9-2b674686340d",
+    "internalIdentifier": "JMB 186/2026",
+    "formType": "change",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T10:06:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Bauvorhaben Neugestaltung Foyer und Garderobe im Jüdischen Museum Berlin/ Tischlerarbeiten II nach DIN 18355",
+    "description": "Die Tischlerarbeiten II erfolgen im Foyer des Museums im Altbau.\nDie Arbeiten finden innerhalb der verschiedenen Bauabschnitte zeitversetzt zueinander statt.\nEin Übersichtsplan und die Festlegungen zu genauen Größen, Ausstattungen, Qualitäten etc.\nsind den der Ausschreibung beigelegten Detailplänen zu entnehmen.\nIm Vorfeld der Tischlerarbeiten II werden die derzeitigen Foyereinbauten und -ausstattungen\nabgebrochen sowie aufgrund des schadstoffbelasteten Altputzes eine Schadstoffsanierung mit Abbruch\nund Erneuerung des Putzes durchgeführt.\nDie Tischlerarbeiten II umfassen Wandverkleidungen (größtenteils microperforiert mit akustischer\nWirksamkeit), Tapetentüren innerhalb dieser Verkleidungen sowie Klappgarderoben, Zargenelemente im\nBereich von Durchgängen, Sockelleisten, Schrankelemente mit Schließfächern, Sitzbänke (teilw. in\nKombination mit reversiblen Heizkörperverkleidungen und Fensterbänken) sowie mobile Elemente\n(Flyerregal und mobiler Tresen). Der große Tresen im Foyer ist Teil der Tischlerarbeiten III und somit\nnicht Leistungsbestandteil dieser Ausschreibung.",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-10-26",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-29+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: Formblatt \"Eigenerklärung zur Eignung\" / 124_Tischler_II_JMB_186_2026 Nachweise zur Fachkunde: https://www.evergabe-online.de/tenderdetails.html?id=888752&criteriaId=51058"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=888752",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

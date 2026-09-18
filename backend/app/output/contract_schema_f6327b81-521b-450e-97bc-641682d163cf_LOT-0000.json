@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "f6327b81-521b-450e-97bc-641682d163cf:1:LOT-0000",
+    "candidateId": "f6327b81-521b-450e-97bc-641682d163cf:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "f6327b81-521b-450e-97bc-641682d163cf",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "0b2febd0-3246-4f19-bd2d-f4efeaf78ce3",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:40Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Gemeinde Kabelsketal"
+    ]
+  },
+  "procedure": {
+    "title": "Neubeu Rathaus Los 22 Heizung Lüftung-Sanitärinstallation ",
+    "description": "Grobmengen Los 22 Heizung, Lüftung, Sanitär\n\nKapitel 1: Sanitärtechnische Anlagen\n-Baustelleneinrichtung Sanitär\n-93 m\tAbwasserleitungen PP, schallgedämmt, DN 40 - DN 125\n-3 St\tHauptlüftung über Dach DN 100, komplett\n-25 m\tKondensatleitung DN 32 mit 5 St Geräteanschlüssen\n-120 m\tTrinkwasserleitungen Mehrschichtverbundrohr 20 - 40 mm\n-114 m\tDämmung Trinkwasserleitungen bis DN 40\n-6 St\tWand-Tiefspül-WC spülrandlos, davon 2 St barrierefrei\n-4 St\tUrinale mit IR-Spülsteuerung\n-9 St\tWaschtische mit Einhebelmischer bzw. Kaltwasserarmatur\n-11 St\tWarmwasser-Kleinspeicher 5 l, Unter-/Übertisch\n-3 St\tAusgussbecken mit Wandarmatur\n-3 St\tAnschluss Küchenzeile komplett\n-21 St\tMontageelemente Vorwandinstallation\n-8 St\tBrandschutz-Rohrabschottungen Abwasser R 90\n-Druck-/Dichtheitsprüfung, Spülung, Trinkwasserbeprobung, Inbetriebnahme, Dokumentation\n-Wartung Sanitäranlagen im Gewährleistungszeitraum (4 Jahre)\n-Abfrage Stundenlohnsätze\n\nKapitel 2: Heizungstechnische Anlagen\n-Baustelleneinrichtung Heizung\n-1 St\tLuft/Wasser-Wärmepumpe Split-Kaskade (1 x Inneneinheit, 4 x Außeneinheiten)\n-110 m\tKältemittel-Leitungspaar Cu 16x1/10x1\n-2 St\tPufferspeicher ca. 800 - 1.000 l\n-1 St\tHocheffizienz-Umwälzpumpe 8,75 m³/h / 3,4 m\n-111 m\tHeizungsrohr Edelstahl pressverbunden DN 25 - DN 65\n-1.250 m²\tFußbodenheizung Klettsystem, Systemfläche VA 15\n-55 m²\tZulage Fußbodenheizung Verlegeabstand VA 30 (Nebenräume)\n-12 St\tHeizkreisverteiler 7 - 10 Heizkreise mit Verteilerschrank\n-99 St\tThermische Stellantriebe 230 V\n-65 St\tRaumthermostate Einzelraumregelung\n-111 m\tRohrdämmung 100 % GEG, DN 25 - DN 65\n-10 St\tBrandschutz-Rohrabschottungen Heizung R 90\n-4 Wo\tVorhaltung mobiles Heizgerät (Bauheizung / Estrichaufheizung)\n-Druckprobe, Spülen, hydraulischer Abgleich, Funktions- und Belegreifheizen, Inbetriebnahme, Dokumentation\n-Wartung WP-/Heizungsanlage im Gewährleistungszeitraum (4 Jahre)\n-Abfrage Stundenlohnsätze\n \nKapitel 3: Raumlufttechnische Anlagen\n-Baustelleneinrichtung Lüftung\n-1 St\tZentrales Zu-/Abluftgerät mit WRG, Deckenmontage, inkl. Bedienteil\n-212 m\tWickelfalzrohr DN 80 - DN 280\n-19 m²\tRechteckkanal 400x280, verzinkt\n-20 St\tRevisionsöffnungen Kanalnetz\n-24 St\tBrandschutzklappen rund DN 100 - DN 280, R 90\n-250 m\tVerkabelung Brandschutzklappenüberwachung\n-21 St\tVolumenstromregler DN 80 - DN 200\n-23 St\tRohrschalldämpfer DN 80 - DN 200\n-4 St\tKanalschalldämpfer 500/300\n-8 St\tSelbsttätige Rückschlagklappen DN 100 / DN 160\n-2 St\tAußenwand-/Wetterschutzgitter 500x300\n-39 St\tTellerventile Zu-/Abluft DN 80 - DN 200\n-35 m²\tDämmung Lüftungskanäle\n-Dichtheitsprüfung Kanalnetz, Hygiene-Erstinspektion VDI 6022, Inbetriebnahme, Dokumentation\n-Wartung RLT-Anlage im Gewährleistungszeitraum (4 Jahre)\n-Abfrage Stundenlohnsätze\n\nKapitel 4: Kälte-/Klimatechnische Anlagen\n-Baustelleneinrichtung Kälte\n-1 St\tDuo-Split-Klimagerät Serverraum mit Außeneinheit\n-1 St\tDuo-Split-Klimagerät Lagerräume mit Außeneinheit\n-55 m\tKältemittelleitung Twin-CU isoliert, inkl. Elektro-Verbindungsleitung\n-4 St\tKondensatleitungen Inneneinheit mit Pumpe\n-6 St\tKlimatisierung südliche Büroräume (Eventualposition)\n-Druckprobe, Vakuum, Inbetriebnahme Kältekreise, AwSV-\n/immissionsschutzrechtliche Nachweise, Dokumentation\n-Wartung Klimaanlagen im Gewährleistungszeitraum (4 Jahre)\n-Abfrage Stundenlohnsätze",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Schulstraße 7",
+      "additionalStreet": "",
+      "postcode": "06184",
+      "city": "Kabelsketal",
+      "nuts": "DEE0B",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-25+01:00",
+    "endDate": "2028-01-28+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:30:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe Vergabeunterlagen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/unterlagen/54321-Tender-1a0a90607cf-2a69c3c8164a8879",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

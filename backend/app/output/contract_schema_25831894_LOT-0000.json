@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831894:1:LOT-0000",
+    "candidateId": "25831894:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45221000",
+      "45221112"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831894",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:17Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Ersatzneubau EÜ Grabenbrücke km 71,477 Str.6311",
+    "description": "Die Baumaßnahme Erneuerung EÜ Grabenbrücke beinhaltet die Erneuerung des ca. 3,50 langen und 4,50 breiten Brückenbauwerkes in Stahlbetonfertigbauweise über einen Bach mit allen erforderlichen Zusammenhangsarbeiten im Gleisbereich/Baufeld (Ausbau/Einbau Oberbau, Erdarbeiten, Kabeltiefbau, LST, TK)\n\nErsatzneubau EÜ Grabenbrücke km 71,477 Str.6311",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45221000",
+    "additionalCpvCodes": [
+      "45221112"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "98617 Belrieth",
+      "nuts": "DEG",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-11-04+01:00",
+    "deadlineTime": "10:00:00+01:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/ae3c1d3e-707d-4aec-b0c8-061b964679e1",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

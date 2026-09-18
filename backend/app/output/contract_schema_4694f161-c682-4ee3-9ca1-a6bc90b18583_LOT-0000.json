@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "4694f161-c682-4ee3-9ca1-a6bc90b18583:1:LOT-0000",
+    "candidateId": "4694f161-c682-4ee3-9ca1-a6bc90b18583:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45234160"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "4694f161-c682-4ee3-9ca1-a6bc90b18583",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "1fd28dff-a100-4660-a9b4-cd6d07c65eaa",
+    "internalIdentifier": "SV-FLA-260915-002",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:31Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadtwerke München GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "SV-FLA-260915-002 - Tram-Westtangente, Fahrleitungsbau Bauabschnitt IV Baulos 6 und 7",
+    "description": "Tram-Westtangte (TWT): Fahrleitungsanlage BAIV zwischen Waldfriedhof und Ratzingerplatz:\n109 Stück Stahlrohrgründungen im kombinierten Bohr-Eindrehverfahren (kein Vibrationsverfahren);\n109 Stück Maststellungen;\n109 Stück Fahrleitungsmaste (Lieferleistung);\n2,3km Hochkettenfahrleitung;\nPrellleiter und Berührschutz unter Bauwerken",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45234160",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE212",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-07+01:00",
+    "endDate": "2028-09-08+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Nachweis der Eintragung in einem Berufsregister mittels Kopie der Eintragung im Berufsregister (Handwerksrolle bzw. Industrie- und Handelskammer)."
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Kriterium Umsatz bei vergleichbaren Leistungen: Erklärung über den Umsatz des Unternehmens bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. Die aufgestellte Forderung stellt keine Mindestanforderung im Hinblick auf die Dauer der Geschäftstätigkeit dar; geforderte Mindeststandards: zu Kriterium Umsatz bei vergleichbaren Leistungen: Nachweis eines Mindestjahresumsatz bezogen auf das Mittel der angegeben Umsätze für vergleichbare Leistungen in Höhe von: 2.000.000 €"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Kriterium Personelle Ausstattung: Erklärung über die Zahl der in den letzten 3 abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte des Unternehmens, gegliedert nach Lohngruppen bzw. Qualifikationen mit gesondert ausgewiesenem technischem Leitungspersonal. Die aufgestellte Forderung stellt keine Mindestanforderung im Hinblick auf die Dauer der Geschäftstätigkeit dar;"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Kriterium Referenzen: Angabe von Referenzen über vergleichbare Leistungen die in den letzten bis zu 5 abgeschlossenen Kalenderjahren oder im aktuellen Jahr vor dem Schlusstermin zur Einreichung der Teilnahmeanträge/Angebote ausgeführt und fertiggestellt (= abgenommen) wurden. Hinsichtlich der Vergleichbarkeit wird auf die Kurzbeschreibung des Auftrags sowie die Vergabeunterlagen verwiesen. Die Referenzangaben beziehen sich auf folgende Aspekte: Art und Umfang der erbrachten Leistungen mit Angaben zur Auftragssumme und zum Ausführungszeitraum; Kriterium auftragsspezifische Einzelnachweise: Vorlage nachfolgender auftragsspezifischer Angaben, Erklärungen oder Nachweise (in Kopie); Befähigungsschein nach §20 SprengG"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß Vergabeunterlagen"
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.swm.de/einkauf/bekanntmachungen",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "7556ca40-0007-44fb-afa2-417b3df61e34:1:LOT-0000",
+    "candidateId": "7556ca40-0007-44fb-afa2-417b3df61e34:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "7556ca40-0007-44fb-afa2-417b3df61e34",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "6857bcc8-d2f3-4346-804d-96970555c264",
+    "internalIdentifier": "2023001-019",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T11:36:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Sanierung Wohnhaus Löfflerstraße 2, 07381 Pößneck (Los 19 - Fliesenarbeiten)",
+    "description": "Fliesenarbeiten in 4 Bädern:\nca. 65 m2 Wandfliesen inkl. Untergrundvorbereitung, Abdichtung, Verfugung, Profile inkl. aller Nebenarbeiten\nca. 26 m2 Bodenfliesen inkl. Untergrundvorbereitung, Abdichtung, Verfugung, Profile inkl. aller Nebenarbeiten",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-09",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-07+02:00",
+    "deadlineTime": "13:45:00+02:00",
+    "method": "not-allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: siehe Vergabeunterlagen"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891339",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

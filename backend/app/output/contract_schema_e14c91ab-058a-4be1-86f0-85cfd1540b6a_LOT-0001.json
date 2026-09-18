@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e14c91ab-058a-4be1-86f0-85cfd1540b6a:1:LOT-0001",
+    "candidateId": "e14c91ab-058a-4be1-86f0-85cfd1540b6a:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45262670"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e14c91ab-058a-4be1-86f0-85cfd1540b6a",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "e14c91ab-058a-4be1-86f0-85cfd1540b6a",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:22Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Bad Oldesloe"
+    ]
+  },
+  "procedure": {
+    "title": "Ida-Ehre-Schule Bad Oldesloe; Erweiterungsneubau - Allgemeine Metallbauarbeiten",
+    "description": "Die Ida-Ehre-Schule, eine Gemeinschaftsschule mit Oberstufe, soll an ihrem Standort in der Olivet-Allee 4-6 in D-23843 Bad Oldesloe erweitert werden. Bei dem Neubau handelt es sich um einen freistehenden Baukörper auf einer nicht befestigten Freifläche im Nordosten des Schulgeländes, angrenzend zu privaten Hinterhöfen. Für die Schule wurde ein Mehrbedarf an Nutzfläche für Fach und Oberstufenklassen als auch an Aufenthalts- und Freizeitbereichen der Schüler festgestellt. Mit dem Neubau sollen außerdem Räume für Musikunterricht und Schulsozialarbeit entstehen. Geplant ist ein dreigeschossiger, gestaffelter Massivbau aus Kalksandstein und Stahlbeton mit einer Bruttogrundrissfläche von ca. 1.650 m² und einer Nutzfläche von ca. 1.100 m², zuzüglich ca. 200 m² Terrasse im 1.OG.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45262670",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DEF0F",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "15"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "08:30:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Gem. Formblatt 124 Eigenerklärung zur Eignung oder den Nachweis einer PQ-Qualifizierung"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer bestehenden Betriebshaftpflicht oder die Bereitschaft im Auftragsfall eine abzuschließen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung des Finanzamtes, Bestätigung, dass keine Insolvenz, Liquidation vorliegt"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Referenznachweise mit den im Formblatt 124 Eigenerklärung zur Eignung genannten Angaben"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten: Um einen eventuellen Ausschluss des Angebotes zu vermeiden, legen Sie bitte die geforderten Nachweise und Erklärungen dem Angebot unbedingt vollständig bei."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/e14c91ab-058a-4be1-86f0-85cfd1540b6a",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

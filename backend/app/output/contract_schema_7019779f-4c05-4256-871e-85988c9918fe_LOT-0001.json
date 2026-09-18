@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "7019779f-4c05-4256-871e-85988c9918fe:1:LOT-0001",
+    "candidateId": "7019779f-4c05-4256-871e-85988c9918fe:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45223210",
+      "45262410"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "7019779f-4c05-4256-871e-85988c9918fe",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "78491b36-8d5b-414d-920a-6419fbf76dbb",
+    "internalIdentifier": "2026_SpriG_VS_KMP_E61",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:41Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Sprinkenhof GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Stahlbau Bauteil 01-S (Halle - Südteil)",
+    "description": "Das Leistungsverzeichnis umfasst Stahlbau-, Schlosser- und Beschichtungsarbeiten für folgende Gebäudeteile:  - Bauteil 01-S (Halle - Südteil)   Wesentliche Arbeiten: - Erstellung von Zwischengeschossen (Mezzaninen) in den Hallen  - Erstellung von Wechselträgern am Bestandsdach der Hallen  - Erstellung von Treppen in Verbindung mit Stahltragwerken  - Korrosionsschutzbeschichtungen der Stahlbauteile",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45223210",
+    "additionalCpvCodes": [
+      "45262410"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Jarrestraße 20",
+      "additionalStreet": "",
+      "postcode": "22303",
+      "city": "Hamburg",
+      "nuts": "DE600",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-23+01:00",
+    "endDate": "2027-07-21+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "09:30:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YURMPWU",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "3 Referenzen für die Ausführung von Leistungen in den letzten 5 abgeschlossenen Geschäftsjahren, die mit der zu vergebenden Leistung vergleichbar sind."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zur Zahl der in den letzten 3 abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischen Leitungspersonal."
+    },
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "Angaben zum Umsatz des Unternehmens, jeweils bezogen auf die letzten 3 abgeschlossenen Geschäftsjahre, soweit es Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der Berufsgenossenschaft zum Nachweis, dass die Beiträge ordnungsgemäß abgeführt wurden."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der Sozialkasse (nicht Krankenkasse)."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Gültige Freistellungsbescheinigung zum Steuerabzug bei Bauleistungen"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Zur Bestätigung der Eigenerklärung sind die gem. Nr. 5 des Formulars \"VV-Bau Anlage 6-020\" Anlage zur Ausschreibungsinformation -VOB - geforderten Nachweise/Angaben/Unterlagen vorzulegen. Angaben zu Insolvenzverfahren und Liquidation - gem. Auslobungsunterlagen/Erklärung zur Eignung. Ausländische Unternehmen haben jeweils vergleichbare Nachweise zu erbringen bzw. gleichwertige Erklärungen abzugeben und eine anerkannte Übersetzung beizufügen."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Gültiger Handelsregisterauszug. Ausländische Bieter haben vergleichbare Nachweise/Bescheinigungen vorzulegen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Gültige Gewerbeanmeldung. Ausländische Bieter haben vergleichbare Nachweise/Bescheinigungen vorzulegen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Nachweis über die Eintragung in das Berufsregister oder die Handwerksrolle bzw. beider Industrie- und Handelskammer. Ausländische Bieter haben vergleichbare Nachweise/Bescheinigungen vorzulegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagensind zu beachten. Nicht nachgefordert werden leistungsbezogene Unterlagen, die die Wirtschaftlichkeitsbewertung der Angebote anhand der Zuschlagskriterien betreffen (Ausnahme: Preisangaben für unwesentliche Einzelpositionen, wenn der Einzelpreis den Gesamtpreis nicht verändern und die Wertungsreihenfolge und den Wettbewerb nicht beeinträchtigen)."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YURMPWU/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

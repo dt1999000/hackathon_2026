@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827764:1:LOT-0000",
+    "candidateId": "25827764:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827764",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:08Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Sanierung Mehrzweckhalle Eula; Los 10 Elektro",
+    "description": "a) Auftraggeber:  Offizielle Bezeichnung: Stadt Borna; Bereich/Abteilung: Vergabestelle; Straße, Hausnummer: Markt 1; Postleitzahl: 04552; Ort: Borna; Land: DE\nb) Vergabeart: Öffentliche Ausschreibung\nc) Angebote können nur elektronisch abgegeben werden.\nd) Art des Auftrages: Bauauftrag\ne) Ort(e) der Ausführung: Offizielle Bezeichnung: Mehrzweckhalle Eula; Postleitzahl: 04552; Ort: Borna; Land: DE\nf) Art und Umfang der Leistung: 1 Stk Wandlermessung\n3500 m Kabel\n2 Stk Unterverteilungen\n48 Stk Leuchten\n1 Stk Behindertenruf\n1 Stk RWA\nBaustrom und Baubeleuchtung\nDemontage\ng) Es werden keine Planungsleistungen gefordert\nh) Aufteilung in mehrere Lose: nein\ni) Ausführungsfristen: Beginn: 10.12.2026, Ende: 14.10.2027\nj) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 3 zur Nichtzulassung von Nebenangeboten: Nebenangebote sind nicht zugelassen. .\nk) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 4 zur Nichtzulassung der Abgabe mehrerer Hauptangebote: Die Abgabe mehrerer Hauptangebote ist nicht zugelassen. .\n l) Stelle, bei der die Vergabeunterlagen angefordert werden können: Die Vergabeunterlagen werden auf der Vergabeplattform evergabe.de bereitgestellt. Ein unentgeltlicher Abruf ohne Registrierung ist möglich unter https://www.evergabe.de/unterlagen/3454914/zustellweg-auswaehlen.\nm) Kosten für Vervielfältigungen der Vergabeunterlagen: entfällt\nn) entfällt\no) Frist für den Eingang der Angebote: 30.09.2026, 09:30 Uhr; Bindefrist: 20.11.2026\np) Elektronische Angebote sind auf der Vergabeplattform evergabe.de abzugeben.\nq) Angebote sind abzufassen in: Deutsch\nr) Zuschlagskriterien, sofern diese nicht in den Vergabeunterlagen genannt werden und gegebenenfalls deren Gewichtung: Preis\ns) Eröffnungstermin: Datum: 30.09.2026, 09:30 Uhr; Ort: elektronische Eröffnung; Personen, die anwesend sein dürfen: elektronische Eröffnung\nt) Sicherheiten: Der § 7 Sächsisches Vergabegesetz (SächsVergabeG) legt fest, dass im Anwendungsbereich der VOB bei einer Auftragssumme unter 250 000 EUR (ohne Umsatzsteuer) auf Sicherheitsleistungen für Vertragserfüllung und für Mängelansprüche zu verzichten ist .\nu) Finanzierungs- und Zahlungsbedingungen: Zahlung und Finanzierungsbedingungen gemäß VOB\nv) Rechtsform einer Bietergemeinschaft: Die Bietergemeinschaft hat mit ihrem Angebot eine Erklärung aller Mitglieder in Textform abzugeben,\n- in der die Bildung einer Arbeitsgemeinschaft im Auftragsfall erklärt ist,\n- in der alle Mitglieder aufgeführt sind und der für die Durchführung des Vertrags bevollmächtigte \nVertreter bezeichnet ist,\n- dass der bevollmächtigte Vertreter die Mitglieder gegenüber dem Auftraggeber rechtsverbindlich \nvertritt, \n- dass alle Mitglieder als Gesamtschuldner haften.\nw) Verlangte Nachweise für die Beurteilung der Eignung: Nachweis des Eintrags im Präqualifikationsverzeichnis;  nicht präqualifizierte Unternehmen: VHB-Formblatt 124 &#39;&#39;Eigenerklärung zur Eignung&#39;&#39;; Verpflichtungserklärung-Mindestlohngesetz; Freistellungsbescheinigung zur Bauabzugssteuer; Auszug aus dem Gewerbezentralregister (nicht älter als 3 Monate) oder Gewerbeanmeldung; Gleiches gilt - auf gesondertes Verlangen - für Nachunternehmen;  auf gesondertes Verlangen der Vergabestelle: Preisermittlung bei Zuschlagskalkulation VHB 221, Aufgliederung der Einheitspreise VHB 223, Urkalkulation, Bestätigung der Auskömmlichkeit des Angebotes\nx) Vergabenachprüfstelle: Offizielle Bezeichnung: Landesdirektion Sachsen; Bereich/Abteilung: Referat 39; Postleitzahl: 09105; Ort: Chemnitz; Land: DE\n\nElektro",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "04552 Borna OT Eula",
+      "nuts": "DED",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-30+02:00",
+    "deadlineTime": "09:30:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Stadt%2520Borna/3454914",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

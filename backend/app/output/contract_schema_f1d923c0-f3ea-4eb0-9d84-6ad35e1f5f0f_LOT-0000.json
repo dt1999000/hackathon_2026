@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "f1d923c0-f3ea-4eb0-9d84-6ad35e1f5f0f:1:LOT-0000",
+    "candidateId": "f1d923c0-f3ea-4eb0-9d84-6ad35e1f5f0f:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45113000",
+      "45233110",
+      "45233124",
+      "45233294",
+      "45316213"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "f1d923c0-f3ea-4eb0-9d84-6ad35e1f5f0f",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "940751e7-f7e4-4d3f-bc44-4afdad9bcaae",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:12Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Die Autobahn GmbH des Bundes - NL Ost"
+    ]
+  },
+  "procedure": {
+    "title": "Los 2: Verkehrsführung während der Bauzeit",
+    "description": "Los 2: Verkehrsführung während der Bauzeit\nDas Bauvorhaben umfasst die grundhafte Erneuerung der Richtungsfahrbahn (RF) Hannover der BAB 2 im Streckenabschnitt zwischen Betr.-km 68+877 bis Betr.-km 79+462. Die Baustrecke hat eine Länge von 10,585 km. Innerhalb der Baustrecke befindet sich die Anschlussstelle Burg-Zentrum. Darüber hinaus befindet sich im Zuge der Baustrecke die PWC-Anlage Krähenberge.  \n\n-Längsmarkierung Typ II herstellen\ndurchgehend, Breite 0,15 m, Folie, P 7\t52.265 m\n-Längsmarkierung Typ II herstellen\nStr/L 1zu2 Leitl., Breite 0,15 m, Folie, P7\t10.600 m\n-Längsmarkierung Typ II herstellen\nStr/L 1zu1 Leitl., Breite 0,30 m, Folie, P7\t2.205 m\t\n-Transp.Schutzeinrichtung aufbauen und vorhalten\nArb.st./fl. Verk., T3, max. W1       \t                             28.800 m\n-Transport. Schutzeinr. Vorhalten\t                         5.191.500 md\n-Bauliches Leitelement aufb. , vorh. u. abb.\nLeitschwelle*Leitb. RA2 Ab.5 m, Leite.+Bef. entf.\t\n-mobile SWA  RiFa Hannover aufbauen, vorhalten, betreiben und abbauen 1 Stk\n-mobile SWA  RiFa Berlin aufbauen, vorhalten, betreiben und abbauen 1 Stk",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "45316213",
+      "45233294",
+      "45113000",
+      "45233110",
+      "45233124"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "39288",
+      "city": "Burg",
+      "nuts": "DEE06",
+      "country": "DEU"
+    },
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "39288",
+      "city": "Burg",
+      "nuts": "DEE06",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 3202616.83,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-03-01+01:00",
+    "endDate": "2027-12-03+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "https://vergabe.autobahn.de",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-facil-tools",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen gem. Eigenerklärung zur Eignung Teil II: - Erklärung, aus der hervor geht, über welche Ausstattung, welche Geräte und welche technische Ausrüstung das Unternehmen für die Ausführung des Auftrags verfügt. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft* einzureichen. *Bei einer Bietergemeinschaft muss diese insgesamt über eine geeignete Ausstattung verfügen. Jedes Unternehmen gibt nur seine eigene Ausstattung an. Werden Teile der erforderlichen Ausstattung durch einen Unterauftragnehmer beigebracht, ist von diesem die Abgabe der \"Verpflichtungserklärung Eignungsleihe\" erforderlich."
+    },
+    {
+      "code": "slc-abil-qual-inst",
+      "label": null,
+      "description": "Auf gesondertes Verlangen einzureichen gem. Vorzulegende Unterlagen: -Nachweis zum RAL-Gütezeichen Nummer 628 (für die Herstellung von Verkehrszeichen) oder vergleichbar Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angaben zu wenigstens drei geeigneten Referenzen über die Ausführung von Bauleistungen in den letzten 5 abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind. Als vergleichbare Leistungen werden anerkannt (s. Eigenerklärung zur Eignung Teil 1 Nr. 4): Mindestens 3 Referenzen,welche die Verkehrssicherung mit Markierung von Bundesautobahnen betreffen. Auf gesondertes Verlangen einzureichen: - Zu den benannten Referenzen Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis in Anlehnung an die HVA B-StB-Vorlage 3103 \"Referenzbescheinigung\" Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte und nicht präqualifizierte Unternehmen siehe Hinweis unter Weitere Bedingungen zur Qualifizierung, Zusätzliche Information (BT-772) Ziffer 1. Sofern die im PQ-Verzeichnis hinterlegten Referenznachweise nicht den o. g. definierten Mindestanforderungen an vergleichbare Leistungen entsprechen, sind mit dem Angebot geeignete Referenzen gem. Eigenerklärung zur Eignung Ziffer I.4. anzugeben, die den geforderten Mindestanforderungen entsprechen."
+    },
+    {
+      "code": "slc-abil-staff-tech-work",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen gem. Eigenerklärung zur Eignung Teil II: Angaben zu technischen Fachkräften oder den technischen Stellen, die im Zusammenhang mit der Leistungserbringung eingesetzt werden sollen Auf gesondertes Verlangen einzureichen: -Nachweis der Qualifikation des zu benennenden Verantwortlichen für die Sicherungsarbeiten an Arbeitsstellen gem., dem \"Merkblatt über Rahmenbedingungen für erforderliche Fachkenntnisse zur Verkehrssicherung von Arbeitsstellen an Straßen / [Autobahnen] (MVAS) -Nachweise der Qualifikation der geprüften Fachkraft für Fahrbahnmarkierungen gemäß den \"Zusätzlichen Technischen Vertragsbedingungen und Richtlinien für Markierungen auf Straßen (ZTV M)\". Bei ausländischen Bietern ist ein gleichwertiger Qualifikationsnachweis in deutscher Sprache vorzulegen. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft* einzureichen. *Bei einer Bietergemeinschaft müssen die geforderten Angaben insgesamt erbracht werden. Jedes Unternehmen gibt nur zu denjenigen Angaben Daten an, die es selbst zur Erfüllung der erforderlichen Anforderungen beiträgt. Wird eine der erforderlichen Leistungen durch einen Unterauftragnehmer beigebracht, ist von diesem die Abgabe der \"Verpflichtungserklärung Eignungsleihe\" erforderlich."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen gem. Eigenerklärung zur Eignung Ziffer I.4: Angabe über das Vorhandensein der erforderlichen Arbeitskräfte. Auf gesondertes Verlangen einzureichen gem. Eigenerklärung zur Eignung Ziffer I.4: - Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen und gesondert ausgewiesenem technischen Leitungspersonal zur Bestätigung des Vorhandenseins der erforderlichen Arbeitskräfte Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen : Gem. Eigenerklärung zur Eignung Teil II: - Angabe, welche Teile des Auftrags der Unternehmer als Unteraufträge zu vergeben beabsichtigt im \"Verzeichnis der Unterauftragnehmer\" - soweit eine Eignungsleihe stattfindet: Formular: Eignungsleihe technische und berufliche Leistungsfähigkeit und/oder Eignungsleihe wirtschaftliche und finanzielle Leistungsfähigkeit Auf gesondertes Verlangen einzureichen: - Benennung der für die Unterauftragsvergabe vorgesehenen Unternehmer im Verzeichnis der Unterauftrag-/Nachunternehmer, - entsprechende Eignungsnachweise der Unterauftrag-/Nachunternehmer - Verpflichtungserklärung Unterauftragnehmer und anderer Unternehmen"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen (gem. vorzulegender Unterlagen): Bietererklärung zur Haftpflichtversicherung Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte und nicht präqualifizierte Unternehmen siehe Hinweis unter Weitere Bedingungen zur Qualifizierung, Zusätzliche Information (BT-772) Ziffer 1."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen gem. Aufforderung zur Angebotsabgabe: - Klarstellend wird ebenfalls auf die gesetzliche Regelung des Art. 5k VO (EU) Nr. 833-2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in der Ukraine destabilisieren, hingewiesen. Die als Formular vorgegebene Eigenerklärung im Formblatt EIGENERKLAERUNG_BEZUG_RUSSLAND, mittels derer die Auftraggeber die Einhaltung der vorgenannten Vorschrift zu prüfen haben, ist abzugeben. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte und nicht präqualifizierte Unternehmen siehe Hinweis unter Weitere Bedingungen zur Qualifizierung, Zusätzliche Information (BT-772) Ziffer 1."
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: - Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. Auf gesondertes Verlangen einzureichen: Bestätigung eines vereidigten Wirtschaftsprüfers/ Steuerberaters oder entsprechend testierte Jahresabschlüsse oder entsprechend testierte Gewinn- und Verlustrechnungen. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggeber auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte und nicht präqualifizierte Unternehmen siehe Hinweis unter Weitere Bedingungen zur Qualifizierung, Zusätzliche Information (BT-772) Ziffer 1."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Eigenerklärung Ziffer I.2 - Angaben zum Eintrag in ein Berufsregister, insbesondere in die Handwerksrolle und/oder bei der Industrie- und Handelskammer bzw., dass das Unternehmen zu keiner Eintragung in v. g. Register verpflichtet ist. Auf gesondertes Verlangen einzureichen: - Nachweis über die Gewerbeanmeldung, Berufsregisterauszug, Eintragung in der Handwerksrolle oder bei der Industrie- und Handelskammer oder anderweitige sonstige Nachweise Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte und nicht präqualifizierte Unternehmen siehe Hinweis unter Weitere Bedingungen zur Qualifizierung, Zusätzliche Information (BT-772) Ziffer 1."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen gem. Eigenerklärung zur Eignung I.2: - Angaben zum Eintrag ins Handelsregister, bzw., dass das Unternehmen zu keiner Eintragung in v. g. Register verpflichtet ist. Auf gesondertes Verlangen: - Handelsregisterauszug Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte und nicht präqualifizierte Unternehmen siehe Hinweis unter Weitere Bedingungen zur Qualifizierung, Zusätzliche Information (BT-772) Ziffer 1."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "*Präqualifizierte Unternehmen können die Nachweise der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) führen. Nicht präqualifizierte Unternehmen haben als vorläufigen Nachweis der Eignung mit dem Angebot das ausgefüllte Formblatt \"Eigenerklärung zur Eignung\" an entsprechender Stelle auszufüllen und die oben geforderten Angaben unter Beachtung etwaiger Mindestanforderungen zu tätigen bzw. formlos als Anlage beizufügen. Die Nachforderung von Unterlagen richtet sich nach § 16a EU VOB/A. Soweit zutreffend ist die Erklärung Bieter-/Arbeitsgemeinschaft bereits mit dem Angebot einzureichen."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.autobahn.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a062857ca3-2affa6ed163df384",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

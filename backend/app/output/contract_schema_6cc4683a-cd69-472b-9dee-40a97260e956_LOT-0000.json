@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "6cc4683a-cd69-472b-9dee-40a97260e956:1:LOT-0000",
+    "candidateId": "6cc4683a-cd69-472b-9dee-40a97260e956:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45410000",
+      "45442100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "6cc4683a-cd69-472b-9dee-40a97260e956",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "ef61ccec-41f4-45cb-9348-7f1e4e02a168",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:26Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Gemeindevorstand der Gemeinde Heuchelheim a. d. Lahn"
+    ]
+  },
+  "procedure": {
+    "title": "Heu-FWGH: Innenputz-/Malerarbeiten",
+    "description": "Trockenbauarbeiten für den Neubau des Feuerwehrgerätehauses in Heuchelheim a.d. Lahn. Dies umfasst folgende Leistungen für Erdgeschoss und Obergeschoss:\n\n- Vorbereitende Arbeiten (Untergrund reinigen, Schlitz/Fehlstellen füllen, Ausgleichsputz und Haftgrund, Aufnahme von Kalkzementputz)\n- Innenputz (Wärmedämmung Innenwand und Decke, Armierungsschicht, Kalkzementputz für Decke, Leibungen, Sturz und Kleinflächen, Armiergewebe, Eckschutzwinkel, Anputzleiste Fenster und Kellenschnitt)\n- Malerarbeiten mit Untergrundvorbereitung, Grundierung und Schlussbeschichtung",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45410000",
+    "additionalCpvCodes": [
+      "45442100"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Landstraße 320/Marktstraße",
+      "additionalStreet": "",
+      "postcode": "35452",
+      "city": "Heuchelheim",
+      "nuts": "DE721",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-07+01:00",
+    "endDate": "2027-08-10+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Nachweis des durchschnittlichen Jahresumsatzes der vergangenen drei abgeschlossenen Geschäftsjahre (2023, 2024 und 2025). Mindestanforderung: 450.000 EUR Umsatz (netto) jahresdurchschnittlich gemittelt aus den letzten drei abgeschlossenen Geschäftsjahre."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Nachforderungen erfolgen online über die Vergabeplattform und sind ausschließlich über die Nachrichtenfunktion des Bietercockpits zu beantworten."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.had.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a0a597d153-661c0e1847ce3823",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

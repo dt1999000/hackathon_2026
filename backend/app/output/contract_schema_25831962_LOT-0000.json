@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831962:1:LOT-0000",
+    "candidateId": "25831962:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45112000",
+      "45234100",
+      "45234116",
+      "45262310"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831962",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:37Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Ern. zwei Stützwände in Feldafing, Strecke 5504, km 34,970 bis 35,180",
+    "description": "Erneuerung von zwei Stützwänden zwischen Tutzing und Starnberg am Haltepunkt Feldafing, zweigleisige elektrifizierte Strecke\nLänge: bahnlinks190m bzw. bahnrechts 40m\nTiefgründung als aufgelöste Bohrpfahlwand D=90cm, Länge ca. 1000m\nAushub ca. 5500m³\nHinterfüllung ca. 6200m³\n\nErn. zwei Stützwände in Feldafing, Strecke 5504, km 34,970 bis 35,180",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45234100",
+    "additionalCpvCodes": [
+      "45112000",
+      "45234116",
+      "45262310",
+      "44114210"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "82340 Feldafing",
+      "nuts": "DE2",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-22+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/0662c298-4733-4313-9577-dd760eae74e0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "d6763d17-8b05-4b4e-9267-b31f0f80dc2e:1:LOT-0001",
+    "candidateId": "d6763d17-8b05-4b4e-9267-b31f0f80dc2e:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45422000",
+      "45441000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "d6763d17-8b05-4b4e-9267-b31f0f80dc2e",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "16e3e6ec-e06c-454f-8db5-4fae1867a8c3",
+    "internalIdentifier": "LOT-0001 16-1/26008009/A26/IB",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:30Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Eigenbetrieb Da-Di-Werk, Gebäudemanagement"
+    ]
+  },
+  "procedure": {
+    "title": "Tischlerarbeiten - Türen",
+    "description": "8 St. Innentüren Holz mit Stahlzarge\n22 St. Innentüren Holz mit Stahlzarge, mit Schallschutzanforderungen\n  4 St. Innentüren Holz mit Stahlzarge, mit Brandschutzanforderungen\n  3 St. Innenfenster mit Aluminiumzarge, mit Schallschutzanforderungen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45422000",
+    "additionalCpvCodes": [
+      "44221200",
+      "44221220",
+      "45441000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "Ober-Ramstadt",
+      "nuts": "DE716",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 115790.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "383"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-08+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "mit dem Angebot: • Erklärung, dass das Unternehmen in den letzten bis zu drei abgeschlossenen Kalenderjahren vergleichbare Leistungen erbracht hat (PQ, FB 124 oder EEE)"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Mit dem Angebot • dass dem Unternehmen die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen (PQ, FB 124 oder EEE) auf gesondertes Verlangen: • der Zahl, der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal (gem. FB 124 oder EEE oder hinterlegt im PQ-Register)"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "mit dem Angebot: Erklärung • zu Insolvenzverfahren und Liquidation • zur Zahlung von Steuern, Abgaben und Beiträgen zur gesetzlichen • zur Sozialversicherung • zur Mitgliedschaft bei der Berufsgenossenschaft • zu Berufsverboten oder Gewerbeuntersagung (Eintragung in PQ, FB 124 oder EEE)"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "mit dem Angebot: • Erklärung zum Umsatz in den letzten drei abgeschlossenen Geschäftsjahren (Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit es Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen.) (Eintragung in PQ, FB 124 oder EEE) auf gesondertes Verlangen: • Eine Bestätigung eines vereidigten Wirtschaftsprüfers/Steuerberaters oder entsprechend testierte Jahresabschlüsse oder entsprechend testierte Gewinn- und Verlustrechnungen"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "mit dem Angebot: • Eintragung in einem Berufsregister (Eintragung in PQ, FB 124 oder EEE)"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "mit dem Angebot: • Eintragung in einem Handelsregister und Handwerksrolle (Eintragung in PQ, FB 124 oder EEE) auf gesondertes Verlangen: • Gewerbeanmeldung, Handelsregisterauszug, Eintragung in der Handwerksrolle oder bei der Industrie- und Handelskammer"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "1. Unterlagen, die mit dem Angebot vorzulegen sind Erforderlich: • 213 EU Angebotsschreiben ZAvS • Leistungsverzeichnis • Verpflichtungserklärung zu Tariftreue und Mindestentgelt (sofern nicht bereits in einem Präqualifikationsregister hinterlegt) • Eigenerklärung RU-Sanktionen bei der Vergabe Optional, in Abhängigkeit des Angebots: • Bieterangabenverzeichnis (mit Leitfabrikat) • 124 LD Eigenerklärungen zur Eignung ZAvS (sofern nicht präqualifiziert) oder EEE • 234 Erklärung Bieter-/Arbeitsgemeinschaft (sofern gebildet) • 235 Verzeichnis der Leistungen/Kapazitäten anderer Unternehmen (sofern eingesetzt) 2. Unterlagen, die auf gesondertes Verlangen vorzulegen sind - Prüfzeugnisse bezüglich Brandschutz • Prüfzeugnisse bezüglich Schallschutz • Prüfzeugnisse bezüglich Barrierefreiheit • Urkalkulation • Angaben zur Preisermittlung entsprechend Formblatt 221 oder 222 • Aufgliederung der Einheitspreise entsprechend Formblatt 223 • 236 Verpflichtungserklärung anderer Unternehmen ZAvS • Bescheinigung über die ordnungsgemäße Teilnahme am Sozialkassenverfahren oder alternativ Krankenkassenbescheinigung über die Abführung der Sozialversicherungsbeiträge (falls kein Tarifvertrag gilt, für im Inland ansässige Unternehmen) oder Eigenerklärung über die Entrichtung der Beiträge zur sozialen Sicherheit (für nicht in den vergangenen sechs Monaten im Inland ansässige Unternehmen) • Sollten Arbeitskräfte aus einem Verleihunternehmen zur Ausführung des Auftrags eingesetzt werden und deren Auftragsvolumen übersteigt 10.000, - € (netto), ist auch von diesen Unternehmen die Verpflichtungserklärung zu Tariftreue und Mindestentgelt einzureichen. • Sollten Nachunternehmer und vom Nachunternehmer eingesetzte Arbeitskräfte aus einem Verleihunternehmen zur Ausführung des Auftrags eingesetzt werden und deren Auftragsvolumen übersteigt 10.000, - € (netto), ist auch von diesen Unternehmen die Verpflichtungserklärung zu Tariftreue und Mindestentgelt einzureichen."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.subreport.de/E47674295",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

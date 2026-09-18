@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "1d0284d8-e61d-4932-bb60-0388a986b6f9:1:LOT-0000",
+    "candidateId": "1d0284d8-e61d-4932-bb60-0388a986b6f9:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45261210",
+      "45422000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "1d0284d8-e61d-4932-bb60-0388a986b6f9",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "a867c383-6178-4015-971f-39be6bfd2f69",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:10:07Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landkreis Vechta"
+    ]
+  },
+  "procedure": {
+    "title": "Stadt Damme: Neubau Kita Holter Kapelle - Zimmerer- und Dachdeckerarbeiten",
+    "description": "Dachsparrren 8/26 cm - 38,5 cbm;\nDachsparren abbinden und richten - 2097 m;\nDachschalung d = 24mm - 1450 qm;\nWärmedämmung d = 260 mm - 1150 qm;\nWärmedämmung PIR - 1450 qm;\nFPO/TPO-Kunststoffdachbahn - 1450 qm;\nAbsturzsicherungssystem - 325 m;",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45422000",
+    "additionalCpvCodes": [
+      "45261210"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Holter Kapelle 1",
+      "additionalStreet": "",
+      "postcode": "49401",
+      "city": "Damme",
+      "nuts": "DE94F",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "130"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-07+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Nachweis zur Präqualifikation von Bauunternehmen e. V. (Präqualifikation) oder zusätzlich die beiden nachfolgend aufgeführten Eignungsunterlagen: - Angaben über die Ausführung von Leistungen in den letzten bis zu 5 abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind, wobei für die wichtigsten Bauleistungen Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis beizufügen sind (Unternehmensreferenz). Bitte verwenden Sie hierzu das Formular Nr. 444 \"Referenzbescheinigung\" - es sind mindestens drei entsprechende Referenzen vorzuweisen; Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 - Eigenerklärungen zur Eignung - nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 - Eigenerklärungen zur Eignung - angegebenen Bescheinigungen vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifitaktionsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 - Eigenerklärung zur Eignung - auch für diese anderen Unternemen vorzulegen. Daraus ergibt sich folgende Forderung zum Eignungsnachweis: 1. Nachweis Eintragung in die Liste des Vereins für Präqualifikation oder Eigenerklärung gem. Formblatt 124 zur Eigenerklärung 2. Eignungsnachweise zur Eigenerklärung gem. Formblatt 124, sofern keine Präqualifikations vorliegt: - Gewerbeanmeldung; - Nachweis über die Eintragung in das Berufsregister (Handwerksrolle bzw. IHK); - Unbedenklichkeitsbescheinigung der Sozialkasse bzw. Mitteilung, das keine Teilnahme am Sozialkassenverfahren erfolgt; - Unbedenklichkeitsbescheinigung bzw. Bescheinigung in Steuersachen des Finazamtes; - Qualifizierte Unbedenklichkeitsbescheinigung mit Angabe der Lohnsummen der Berufsgenossenschaft; - aktuell gültige Freistellungsbescheinigung § 48b EStG des Finanzamtes 3. Eigenerklägung zu Art 5k Verordnung (EU) Nr. 880/2014 (In der fassung des Art, 1 Ziff. 23 der Verordnung /EU) 2022/576 des Rates vom 08.04.2022) Erklärung, dass das Unternehmen nicht unter die EU-Sankrionen gegen Russland fällt (Bitte verwenden Sie hierzu die bereitsgestellte Eigenerklärung)."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben über die Zahl der in den letzten 3 abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischen Leistungspersonal."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer entsprechenden Berufshaftpflichtversicherung (Absicherung für Personenschäden in Höhe von mind. 3.000.000,00 EUR und für sonstige Schäden (Sach- und Vermögenschäden) in Höhe von 2.000.000,00 EUR Deckungssumme;"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Eine Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten 3 abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in Handwerksrolle bzw. IHK"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Auszug vom Handelsregister"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Es werden die gesetzlich nachforderbaren Unterlagen entsprechend § 16a EU VOB/A nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsches-ausschreibungsblatt.de/VN/K-LKV-2026-0192",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

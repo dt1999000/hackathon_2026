@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "102bccf8-a966-4bd3-a056-17b000244675:1:LOT-0001",
+    "candidateId": "102bccf8-a966-4bd3-a056-17b000244675:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45333000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "102bccf8-a966-4bd3-a056-17b000244675",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "73653641-8ddb-4c3a-80b8-170cb3f890a4",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:09Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "kbo-Inn-Salzach Klinikum gGmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau kbo-Inn-Salzach-Klinikum - Errichtung Pflegegebäude BT C + D - 107_3-4135 Med.Gase BT C+D",
+    "description": "Bauteil C\t\t\t\t\t\t\n1 St. Sauerstoff-Reduzierstation\t\t\t\n1 St. Druckluft-Reduzierstation\t\t\t\n6 St. Bereichskontrolleinheit 2-fach\t\t\t\n50 St. Gasentnahmestelle Sauerstoff\t\t\t\n50 St. Gasentnahmestelle Druckluft\t\t\t\n6 St. CO2-Anschluss Wasserspender\t\t\t\n2.000 m Kupferrohr DN 10 bis DN 32\t\t\t\n250 St. Brandschutzdurchführung DN 10 bis DN 32\t\t\t\n1 St. WC-Container für eigenes Gewerk inkl. Unterhalt\t\t\t\n\nBauteil D\t\t\t\t\t\t\n1 St. Sauerstoff-Reduzierstation\t\t\t\n1 St. Druckluft-Reduzierstation\t\t\t\n6 St. Bereichskontrolleinheit 2-fach\t\t\t\n50 St. Gasentnahmestelle Sauerstoff\t\t\t\n50 St. Gasentnahmestelle Druckluft\t\t\t\n6 St. CO2-Anschluss Wasserspender\t\t\t\n1.700 m Kupferrohr DN 10 bis DN 32\t\t\t\n230 St. Brandschutzdurchführung DN 10 bis DN 32\t\t\t\n1 St. WC-Container für eigenes Gewerk inkl. Unterhalt",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45333000",
+    "additionalCpvCodes": [
+      "24111500"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE21K",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-15+01:00",
+    "endDate": "2028-12-29+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-11-05+01:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Die Eignung ist durch Vorlage der PQ-Nr. oder durch das ausgefüllte Formblatt 124 Eigenerklärung zur Eignung (in den Vergabeunterlagen aufgeführt oder unter https://www.stmb.bayern.de/assets/stmi/buw/bauthemen/vergabeundvertragswesen/vhb/z5_vergabe_bauauftraege_formblatt_124_eigenerklaerung.pdf einsehbar) mit dem Angebot nachzuweisen. Nachfolgende Unterlagen sind auf Aufforderung ergänzend zur Vorlage der PQ-Nr. oder des Formblattes 124 einzureichen: 1. Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse 2. Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen 3. Freistellungsbescheinigung nach § 48b EStG 4. Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des für das Unternehmen zuständige Versicherungsträgers mit Angabe der Lohnsummen"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Bescheinigung über die Eintragung in das Berufsregister"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Handelsregister und der Handwerksrolle ihres Sitzes oder Wohnsitzes"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer bestehenden Betriebshaftpflichtversicherung in angemessener Höhe"
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "1. Vorlage von Jahresabschlüssen aus den letzten 3 Geschäftsjahren, falls deren Veröffentlichung in dem Land, in dem das Unternehmen ansässig ist, gesetzlich vorgeschrieben ist. 2. Eine Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "3 Referenzen über die Ausführung von Leistungen in den letzten bis zu fünf abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischem Leitungspersonal."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Angabe, welche Teile des Auftrags der Unternehmer unter Umständen als Unteraufträge zu vergeben beabsichtigt werden."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16 VOB/A EU nachgefordert."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/73653641-8ddb-4c3a-80b8-170cb3f890a4",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

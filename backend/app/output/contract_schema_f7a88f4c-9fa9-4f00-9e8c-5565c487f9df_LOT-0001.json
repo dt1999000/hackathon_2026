@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "f7a88f4c-9fa9-4f00-9e8c-5565c487f9df:1:LOT-0001",
+    "candidateId": "f7a88f4c-9fa9-4f00-9e8c-5565c487f9df:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45221112",
+      "45221119"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "f7a88f4c-9fa9-4f00-9e8c-5565c487f9df",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "7d8dbb80-f89a-4916-9307-3bffc828d059",
+    "internalIdentifier": "b69ed047-59ed-4ec3-9206-655cd2b0ddda",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:11Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)"
+    ]
+  },
+  "procedure": {
+    "title": "Fehmarnsundbrücke, Erneuerung Seilklemmen, Seilkraftmessung und Asbestreinigung",
+    "description": "Die Ausschreibung umfasst die hydraulische Messung und gegebenenfalls Korrektur der Seilkräfte sowie die Herstellung, Lieferung und Montage von 116 dauerhaften Seilklemmen an den Kreuzungspunkten der Schrägseile der Fehmarnsundbrücke. Die bestehenden temporären Seilklemmen sind zuvor zurückzubauen.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45221112",
+    "additionalCpvCodes": [
+      "45221119"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "23769",
+      "city": "Fehmarn",
+      "nuts": "DEF08",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-01+01:00",
+    "endDate": "2027-12-31+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-14+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-sec-supply",
+      "label": null,
+      "description": "Bitte beachten Sie dazu die Ziffern 2.1, 2.1.4 und5.1.6 dieser Bekanntmachung."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 51 Abs. 2 SektVO, § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/0440e464-aa79-47fd-814b-e3689c5cd6d3",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

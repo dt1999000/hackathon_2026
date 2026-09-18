@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827756:1:LOT-0000",
+    "candidateId": "25827756:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827756",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:13Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Transparenzbekanntmachung",
+    "description": "1. Allgemeine Informationen: Titel: Transparenzbekanntmachung; Vergabenummer: I.30-51/26; Die Bekanntmachung erfolgt wegen bestehender Binnenmarktrelevanz: ja\n2. Auftraggeber: Name des Auftraggebers: Stadt Naumburg (Saale); Straße, Hausnummer: Markt 1; PLZ: 06618; Ort: Naumburg (Saale); Land: Deutschland\n3. Vergabeverfahren: Voraussichtliche Vergabeart/Rechtsrahmen: Nichtförmliche Ausschreibung - LHO\n4. Auftragsgegenstand: Angaben zum Auftragsgegenstand: Brandschutztechnische Ertüchtigung Schulgebäude, 5.BAS, Salztorschule, Kramerplatz 13, 06618 Naumburg (Saale) Los 6 Elektro\n5. Ausführungsort: Offizielle Bezeichnung: Salztorschule; Straße, Hausnummer: Kramerplatz 13; PLZ: 06618; Ort: Naumburg (Saale); Land: Deutschland\n6. Art und Umfang der Leistung: CPV-Code: 45000000-7, 45214200-2; Art und voraussichtlicher Umfang der Leistung: Sicherheitsbeleuchtung Salztorschule Naumburg\n442 Ersatzstromversorgung\n- Die bestehende Zentralbatterieanlage entspricht auf Grund der Aufstellung im Elektroraum nicht mehr der aktuellen Normung.\n- Es gibt keine Möglichkeit die Batterieanlage gemäß ELTBV und MLAR in einem separatem F30 Raum aufzustellen. Daher ist es notwendig für die Zentralbatterieanlage einen F30 Umschrank vorzusehen. Mit Wechsel der Batterieanlage müssen alle peripheren Leuchten der Sicherheitsbeleuchtung getauscht werden. Nach augenscheinlicher Sichtung der abgehenden Leitungen von der Batterieanlage ist davon auszugehen, dass die Leitungen entgegen aktueller Normung speziell nach MLAR nicht in Funktionserhalt E30 ausgeführt sind. Daraus ergibt sich der Aufbau eines neuen Leitungsnetzes für abgehende Leitungen von der Batterie in F30 FE.\n444 Installationssysteme\nUnterverteilungen\n- Zur Überwachung der Leuchtenstromkreise in den Unterverteiler sind bereichsweise Unterspannungsrelais und Hilfskontakte zur Spannungsüberwachung der Leuchtenstromkreise inzubauen.\n444 Verlegesysteme\n- Verlegung der von der Batterie ausgehend auf C- Schienen. Die vertikale Verlegung in soll in einem Unterputz Schacht, vorgesehen im Mitteltreppenhaus erfolgen. Für die Abdeckung der verlegten Leitungen im Unterputz Schacht ist eine mindestens 15 mm Putzschicht erforderlich. (MLAR)\n- Für die Verlegung in der Fläche oberhalb von Unterhangdecken kommen Leitungshalter aus Metall (E30) zu Anwendung.\n444 Kabel und Leitungen\n- Die Leitungen von der Zentralbatterie in die Brandabschnitt müssen mit Leitungen in Funktionserhalt E30 ausgeführt werden. Alle Bereiche erhalten 2 Stromkreise für Sicherheitsleuchten. Die E30 Ausführung der Leitungen endet an der ersten Leuchte im Bereich.\n- Die weitere Verlegung kann nach der ersten Leuchte mittels NYM FE0 vorgenommen werden.\n444 Brandschutz\n- Ausführung nach Erfordernis im Bereich des Treppenhauses und der Geschosse. Der Brandschutz ist für die Durchdringung von Wänden zwischen 2 Brandabschnitten oder für nicht zugehörige Leitungen in Fluchtwegen notwendig\n445 Beleuchtung\n- Alle Leuchten sind gemäß Stand der Technik mit eingebauten LED Leuchtmitteln vorgesehen. Kompletter Austausch der Sicherheitsleuchten in der Schule für den Betrieb an einem\nzentralen System. Die Aufteilung der Leuchten in Bereitschaftsbetrieb (Ausleuchtung der Fluchtwege) und Dauerbetrieb (Rettungszeichen) ist vorgesehen. Ziel ist die Ausleuchtung aller Fluchtwege in Fluren, Treppen, in der Aula, in der Turnhalle und an den Ausgängen nach Außen eine Beleuchtungsstärke von 1 Lux zu gewährleisten. Die Beleuchtung muss für die Dauer von 3 Stunden gewährleistet sein.\n494 Abruch und Demontage\n- Rückbau der bestehenden Zentralbatterieanlage und fachgerechter\nEntsorgung.\n- Demontage der Sicherheitsleuchten\n762 Abnahme\n- Abnahme der Anlage durch einen Prüfsachverständigen ist nach TPrüfVO für die Erstinbetriebnahme angezeigt\n7. Ausführungszeitraum: Voraussichtlicher Zeitraum der Ausführung: Der Baubeginn wäre im Oktober 2026 und Ende im Oktober 2026 in Abschnitten mit Abstimmung Schulbetrieb.\n8. Zusätzliche Angaben: Teilnehmerkreis: Der Teilnehmerkreis steht bereits fest. Eine Bewerbung ist nicht mehr möglich.; Datum, bis zu dessen Ablauf die Bekanntmachung sichtbar bleiben soll: 24.09.2026\n9. Dokumente: -\n\nElektro",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "06618 Naumburg Saale",
+      "nuts": "DEE",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Stadt%2520Naumburg%2520%2528Saale%2529/3454922",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

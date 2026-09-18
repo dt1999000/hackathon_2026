@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "931d516d-ef0c-4140-8e80-e0ec3d4638d2:1:LOT-0001",
+    "candidateId": "931d516d-ef0c-4140-8e80-e0ec3d4638d2:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45300000",
+      "45310000",
+      "45311000",
+      "45311100",
+      "45311200",
+      "45315000",
+      "45315100",
+      "45315600",
+      "45315700",
+      "45316000",
+      "45317000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "931d516d-ef0c-4140-8e80-e0ec3d4638d2",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "60c416d8-51cc-4f71-88ad-19a66da276ae",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:09Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Porta Westfalica über Kreis Minden-Lübbecke"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau GS Lerbeck    -    Elektro-Technik",
+    "description": "Die Stadt Porta - Westfalica beabsichtigt die Bestandsschule abzubrechen und einen neuen 3-geschossigen Grundschulkomplex mit integrierter Sporthalle neu zu errichten. Auf dem Areal befinden sich zusätzlich eine Bestandssporthalle, die erhalten bleibt, sowie eine Wärmestation, die neu errichtet wird. Die Wärmestation dient der Versorgung des neuen Schulkomplexes sowie der bestehenden Sporthalle. Die Wärmestation wird zeitgleich mit dem neuen Schulkomplex errichtet. Die Außenanlagen werden im Zuge der Baumaßnahme neu gestaltet. Vorhandene Baumbestände werden so weit wie möglich erhalten und in den neuen Außenanlagen eingebunden. Der Auftragnehmer ist zuständig für die Elektroinstallationen des Schulgebäudes und der Wärmestation. Bestandteil der ausgeschriebenen Leistung sind unter anderem die Erstellung von Sicherheitsbeleuchtungen, Niederspannungsinstallationen, Beleuchtungsanlagen, Blitzschutz- und Erdungsanlagen, Such- und Signalanlagen, elektroakustische Anlagen, Gefahrenmelde- und Alarmanlagen und Datenübertragungsnetze.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45300000",
+    "additionalCpvCodes": [
+      "45310000",
+      "45311000",
+      "45311100",
+      "45311200",
+      "45315000",
+      "45315100",
+      "45315600",
+      "45315700",
+      "45316000",
+      "45317000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DEA46",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-04+01:00",
+    "endDate": "2027-11-29+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-23+02:00",
+    "deadlineTime": "08:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Es müssen mindestens drei Referenzen aus den letzten drei Jahren mit mindestens folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung benannt werden."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Zur Bestätigung der Eigenerklärung wird bei Bedarf die Zahl der in den letzten drei abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal angefordert."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Zur Bestätigung der Eigenerklärung wird bei Bedarf eine qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des für Sie zuständigen Versicherungsträgers mit Angabe der Lohnsummen; Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen sowie eine Freistellungsbescheinigung nach § 48b EStG; Bestätigung eines vereidigten Wirtschaftsprüfers/Steuerberaters oder entsprechend testierte Jahresabschlüsse oder entsprechend testierte Gewinn- und Verlustrechnungen benötigt. Ab einem geschätzten Auftragswert von 30.000 Euro wird der Auftraggeber für den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, einen Auszug aus dem Wettbewerbsregister gem. § 6 WRegG bei der Registerbehörde anfordern. Zudem ist eine Abgabe einer Eigenerklärung bezüglich Angaben zu Insolvenzverfahren und Liquidation erforderlich."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Zur Bestätigung der Eigenerklärung wird bei Bedarf eine Bescheinigung über die Erklärung zur Eintragung in das Berufsregister benötigt."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Zur Bestätigung der Eigenerklärung werden bei Bedarf die Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle bzw. bei der Industrie- und Handelskammer benötigt."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten: Um einen eventuellen Ausschluss des Angebotes zu vermeiden, legen Sie bitte die geforderten Nachweise und Erklärungen dem Angebot unbedingt vollständig bei."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/60c416d8-51cc-4f71-88ad-19a66da276ae",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

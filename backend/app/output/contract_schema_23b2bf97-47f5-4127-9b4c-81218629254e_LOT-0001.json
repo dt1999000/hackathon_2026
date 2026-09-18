@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "23b2bf97-47f5-4127-9b4c-81218629254e:1:LOT-0001",
+    "candidateId": "23b2bf97-47f5-4127-9b4c-81218629254e:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45200000",
+      "45221250"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "23b2bf97-47f5-4127-9b4c-81218629254e",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "4a306266-ba99-42cf-b96b-45556b0b60dd",
+    "internalIdentifier": "31/B/191/26/FD15",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:26Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Hochsauerlandkreis"
+    ]
+  },
+  "procedure": {
+    "title": "Tiefbauarbeiten zum Neubau des Berufskollegs in Meschede",
+    "description": "Wesentliche Leistungen:\n- Freimachung des Baufeldes: ca. 14.000 m2\n- Schaffung eines Planums für Neubau und Baustellenlogistikflächen\n- Aushub: ca. 14.000 m3\n- Auffüllung: ca. 8.000 m3\n- Davon Bodenverbesserung: ca. 6.000 m3\n- Schacht- und Grabenaushub Regenwasser/Schmutzwasser\n- Schacht- und Leistungseinbau\n- Stellen von L-Steinen als Fertigteile\n- Vorbereitung Fläche für Winkelstützwand Ortbeton (Rohbau)\n\nKonkretere Angaben sind den Vergabeunterlagen zu entnehmen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45221250",
+    "additionalCpvCodes": [
+      "45000000",
+      "45200000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Dünnefeldweg 5",
+      "additionalStreet": "",
+      "postcode": "59872",
+      "city": "Meschede",
+      "nuts": "DEA57",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "96"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-27+01:00",
+    "deadlineTime": "09:00:00+01:00",
+    "method": "required",
+    "url": "https://www.vergabe-westfalen.de/VMPSatellite/notice/CXS0YYKDYR9JWD0B",
+    "questionDeadlineDate": "2026-10-19+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "VVB 124 - Eigenerklärung zur Eignung 07-2019-Fassung 2022 (Mit dem Angebot; Mittels Eigenerklärung):"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "-"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.vergabe-westfalen.de/VMPSatellite/notice/CXS0YYKDYR9JWD0B/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

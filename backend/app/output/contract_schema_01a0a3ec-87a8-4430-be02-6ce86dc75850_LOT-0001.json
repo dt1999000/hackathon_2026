@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "01a0a3ec-87a8-4430-be02-6ce86dc75850:1:LOT-0001",
+    "candidateId": "01a0a3ec-87a8-4430-be02-6ce86dc75850:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45232421"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "01a0a3ec-87a8-4430-be02-6ce86dc75850",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "01a0a3eb-08b6-4eef-980b-03e69392262d",
+    "internalIdentifier": "LOT-0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:40Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Große Kreisstadt Bad Waldsee"
+    ]
+  },
+  "procedure": {
+    "title": "LOT-0001",
+    "description": "Die Stadt Bad Waldsee plant die Erweiterung der biologischen und mechanischen Stufe der Kläranlage Bad Waldsee.\nDie Erweiterung der biologischen Stufe - Neubau Belebungsbecken, Gebläsestation ist bereits abgeschlossen. \nGegenstand dieser Ausschreibung ist der Neubau der Rechenhalle zur Erweiterung der mechanischen Stufe.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45232421",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Im Herrschaftsried 6",
+      "additionalStreet": "",
+      "postcode": "88339",
+      "city": "Bad Waldsee",
+      "nuts": "DE148",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-16+01:00",
+    "endDate": "",
+    "measure": "6"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-22+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Die durch das eForms-Formular vorgegebenen Begriffe geben keine Möglichkeit eine Vorbemerkung zu definieren. Die Vorbemerkung zu den Eignungskriterien bzw. die Festlegung zur Form des Nachweises wird folgendermaßen definiert: Soweit möglich führen präqualifizierte Unternehmen den Nachweis der folgenden Anforderungen durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis). Nichtpräqualifizierte Unternehmen haben als vorläufigen Nachweis mit dem Angebot das in diesem Punkt ausgefüllte Formblatt KEV 179 „Eigenerklärung zur Eignung“ vorzulegen. Soweit Präqualifikation und/oder Formblatt KEV 179 die erforderliche Erklärung bzw. den erforderlichen Nachweis nicht beinhalten, führt der Bieter die Erklärung mit dem angegebenen Formblatt. Diese Festlegung gilt für alle Anforderungen, die unter Eignungskriterien in der Auftragsbekanntmachung benannt sind, soweit bei der jeweiligen Anforderung nicht eine andere Form des Nachweises angegeben ist."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "A) Erklärung, dass Ausschlussgründe nach § 6e EU VOB/A nicht vorliegen. Soweit Ausschlussgründe gem. § 6e EU VOB/A vorliegen, ist dies vom Bieter anzuzeigen. Auf Anforderung sind vom Bieter die Unterlagen hinsichtlich der Maßnahmen vorzulegen, die der Bieter zur Herstellung seiner Zuverlässigkeit vorgenommen hat (z. B. Unterlagen zur Selbstreinigung)."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "B) Eigenerklärung des Bieters, dass die in § 21 AEntG, § 98c AEntG, § 98c AufenthG, § 19 MiLoG, § 21 SchwarzArbG und § 22 LkSG genannten Ausschlussgründe nicht vorliegen bzw. Eigenerklärung für ausländische Bieter, dass keine Ausschlussgründe vorliegen, die nach den Rechtsvorschriften des jeweiligen Landes § 21 AEntG, § 98c AufenthG, § 19 MiLoG, § 21 SchwarzArbG und § 22 LkSG vergleichbar sind (Formblatt Nichtvorliegen weiterer Ausschlussgründe )."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "C) Erklärung, dass keine Eintragungen im Wettbewerbsregister gespeichert sind."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "D) Erklärung zur Registereintragung. Sollte das Angebot in die engere Wahl kommen, sind durch nicht-präqualifizierte Unternehmen als Nachweis auf gesonderte Anforderung zudem folgende Belege vorzulegen: - Gewerbeanmeldung, - Handelsregisterauszug, - Eintragung in die Handwerksrolle bzw. bei der Industrie- und Handelskammer."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "E) Erklärung bezüglich der Mitgliedschaft bei der Berufsgenossenschaft."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "F) Erklärung (soweit erforderlich) der Bietergemeinschaftsmitglieder einschließlich Benennung desjenigen, der die Bietergemeinschaft (BIGE) vertritt (Formblatt KEV 175). Bei BIGE sind die gem. in dieser Bekanntmachung definierten Eignungskriterien, Buchstabe einzureichenden Erklärungen und Nachweise von jedem Bietergemeinschaftsmitglied gesondert zu erbringen mit Ausnahme der Haftpflichtversicherung (Buchstabe M), die in dieser Höhe nur durch ein Mitglied der Bietergemeinschaft nachgewiesen werden muss. Die Mindestanforderung an die Referenzen (Buchstabe O) muss nicht durch jedes BIGE-Mitglied, sondern durch die Bietergemeinschaft insgesamt erfüllt werden."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "G) Erklärung zur Eignungsleihe (soweit erforderlich): Eigenerklärung zur Eignungsleihe (Formblatt KEV 177) einschließlich der Verpflichtungserklärung des Unternehmens/sonstigen Dritten (Formblatt KEV 178). Jedes Unternehmen, dessen Kapazitäten der Bieter für die Erfüllung eines oder mehrerer Eignungskriterien in Anspruch nehmen will, muss folgende Erklärungen vorlegen: Verbindliche Verpflichtungserklärung des jeweiligen Unternehmens, dass ihm die Mittel zur Verfügung stehen werden bzw. dass der Dritte die Leistung ausführen wird (§ 6d Abs. 1 Satz 3 EU VOB/A) sowie eine Erklärung der gemeinsamen Haftung des Bieters und des anderen Unternehmens für die Auftragsausführung entsprechend dem Umfang der Eignungsleihe. Jedes Unternehmen, dessen Kapazitäten der Bieter für die Erfüllung eines oder mehrerer Eignungskriterien in Anspruch nehmen will, muss darüber hinaus folgende Erklärungen vorlegen: a. Erklärung, dass Ausschlussgründe nach § 6e EU VOB/A nicht vorliegen. Hinweis: Soweit Ausschlussgründe gem. § 6e EU VOB/A ist dies vom Unternehmen anzuzeigen. Auf Anforderung sind vom Unternehmen, bei dem sich der Bieter die Eignung leihen möchte, die Unterlagen hinsichtlich der Maßnahmen vorzulegen, die das Unternehmen zur Herstellung seiner Zuverlässigkeit vorgenommen hat (z. B. Unterlagen zur Selbstreinigung). b. Erklärung, dass keine Eintragungen im Wettbewerbsregister gespeichert sind. c. Eigenerklärung des Bieters, dass die in § 21 AEntG, § 98c AEntG, § 98c AufenthG, § 19 MiLoG, § 21 SchwarzArbG und § 22 LkSG genannten Ausschlussgründe nicht vorliegen bzw. Eigenerklärung für ausländische Bieter, dass keine Ausschlussgründe vorliegen, die nach den Rechtsvorschriften des jeweiligen Landes § 21 AEntG, § 98c AufenthG, § 19 MiLoG, § 21 SchwarzArbG und § 22 LkSG vergleichbar sind (Formblatt weitere Ausschlussgründe). d. Erklärung zur Registereintragung: Sollte das Angebot in die engere Wahl kommen, sind durch nicht-präqualifizierte Unternehmen als Nachweis auf Anforderung folgende Belege vorzulegen: - Gewerbeanmeldung, - Handelsregisterauszug, - Eintragung in die Handwerksrolle bzw. bei der Industrie- und Handelskammer. e. Erklärung bezüglich der Mitgliedschaft bei der Berufsgenossenschaft. f. Nachweis der Eignung des Unternehmens, dessen Kapazitäten der Bieter für die Erfüllung eines oder mehrerer Eignungskriterien in Anspruch nehmen will, in Bezug auf die Eignungskriterien entsprechend dem Umfang der Eignungsleihe (Verwendung des entsprechenden Formblatts (soweit vorhanden) oder durch Präqualifikationsnummer je nachdem, welche Eignung in Anspruch genommen werden soll). Nicht- präqualifizierte Unternehmen haben zum Nachweis der Eignung – soweit nicht anders benannt auf Anforderung - die entsprechend in dieser Auftragsbekanntmachung genannten Nachweise vorzulegen."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "H) Verzeichnis derjenigen Leistungen (Art und Umfang), die der Bieter im Wege von Unteraufträgen an Dritte zu vergeben gedenkt (Formblätter KEV 176.1 und 176.2). Sollte das Angebot in die engere Wahl kommen, sind auf gesonderte Anforderung die Namen der Nachunternehmer einschl. ggf. vorh. PQ-Nummer zu nennen bzw. das Formblatt KEV 179 für Unterauftragnehmer einzureichen, die nicht präqualifiziert sind. Sowohl präqualifizierte als auch nicht präqualifizierte Unterauftragnehmer haben auf gesonderte Anforderung zudem das Formblatt zu den weiteren Ausschlussgründen einzureichen."
+    },
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "I) Erklärung über den Umsatz des Unternehmens in den letzten 3 abgeschlossenen Geschäftsjahren in Euro, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "J) Erklärung, dass in Bezug auf das Unternehmen ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren weder beantragt noch eröffnet wurde, ein Antrag auf Eröffnung nicht mangels Masse abgelehnt wurde und sich das Unternehmen nicht in Liquidation befindet oder ein Insolvenzplan rechtskräftig bestätigt wurde. Soweit ein Insolvenzplan rechtskräftig bestätigt worden ist, ist der Bieter verpflichtet, dies gesondert mitzuteilen und hat den Insolvenzplan auf Verlangen vorzulegen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "K) Erklärung, dass das Unternehmen seine Verpflichtung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen, ordnungsgemäß erfüllt hat."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "L) Falls das Angebot in die engere Wahl kommt, sind durch nicht-präqualifizierte Unternehmen zusätzlich auf gesonderte Anforderung folgende Nachweise vorzulegen: - eine Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, - eine Unbedenklichkeitsbescheinigung des Finanzamtes bzw. eine Bescheinigung in Steuersachen, - Unbedenklichkeitsbescheinigung der Berufsgenossenschaft."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "M) Haftpflichtversicherung: Sowohl präqualifizierte Unternehmen als auch nicht-präqualifizierte Unternehmen müssen einen Nachweis einer Haftpflichtversicherung mit mindestens folgenden Deckungssummen je Versicherungsfall vorlegen: 5 Mio. € für Personenschäden und 5 Mio. € für sonstige Schäden (Sach- und Vermögensschäden), jeweils einschließlich Umweltdeckung, mit mindestens zweifacher Maximierung pro Versicherungsjahr."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "N) Bei Abgabe des Angebotes ist der Bieter verpflichtet, die Verpflichtungserklärung zur Tariftreue und Mindestentlohnung für die Vergabe von öffentlichen Bau-, Liefer- und Dienstleistungen zu übergeben (Formblatt KEV 179.3)."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "O) Erklärung, dass das Unternehmen in den letzten drei Kalenderjahren vergleichbare Leistungen ausgeführt hat. Vergleichbare Leistungen sind Bauleistungen betreffend Stahlbauarbeiten. MINDESTANFORDERUNG: Die Mindestanforderung an die Referenzen ist darüber hinaus mit dem Angebot nachzuweisen: Der Bieter muss mindestens drei abgeschlossene Referenzprojekte betreffend die Lieferung, Montage und Inbetriebnahme aus den letzten fünf Kalenderjahren vorlegen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "P) Erklärung, dass dem Unternehmen die für die Ausführung der Leistungen notwendigen Arbeitskräfte zur Verfügung stehen. Falls das Angebot in die engere Wahl gelangt, ist durch nicht-präqualifizierte Unternehmen zusätzlich als Nachweis auf Anforderung vorzulegen: Erklärung über die Zahl der in den letzten 3 abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Die durch das eForms-Formular vorgegebenen Begriffe geben keine Möglichkeit eine Bedingungen für die Ausführung des Auftrags einzutragen. Bei Bedingungen für die Ausführung des Auftrags ist einzutragen: Öffentliche Aufträge und Konzessionen dürfen nach dem 9. April 2022 nicht an Personen oder Unternehmen vergeben werden, die einen Bezug zu Russland im Sinne von Artikel 5k der Verordnung (EU) Nr. 833 /2014 aufweisen. Jeder Bieter muss daher die Erklärung zum Nichtvorliegen eines entsprechenden Russlandbezugs abgeben (Formblatt Eigenerklärung Russland ). Sollte es sich bei dem Bieter um eine Bietergemeinschaft handeln, so muss die Erklärung für jedes Mitglied der Bietergemeinschaft gesondert abgegeben werden."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Erklärungen, Unterlagen und Nachweisen ist nicht ausgeschlossen und erfolgt gemäß den vergaberechtlichen Vorschriften. Fehlende Preise werden nicht nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://evoportal.vergabe.staatsanzeiger.de/ui/awardProcedure/01a0a3eb-08b6-4eef-980b-03e69392262d",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

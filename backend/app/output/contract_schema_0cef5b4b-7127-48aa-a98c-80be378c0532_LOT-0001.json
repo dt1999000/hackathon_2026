@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "0cef5b4b-7127-48aa-a98c-80be378c0532:1:LOT-0001",
+    "candidateId": "0cef5b4b-7127-48aa-a98c-80be378c0532:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45111000",
+      "45221250",
+      "45232000",
+      "45233120"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "0cef5b4b-7127-48aa-a98c-80be378c0532",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "d45cf8a6-b719-4f9e-98bf-49f7f092da0d",
+    "internalIdentifier": "c1612d26-982f-46ff-8294-a1bbb5989936",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:41Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "MV Mannheimer Verkehr GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Betriebshof Käfertal - VE3 Vorabmaßnahmen",
+    "description": "Die Gesamtmaßnahme \"Umbau und Kapazitätserweiterung Käfertal Bahnhof und Betriebshof\" besteht aus drei Hauptkomponenten:\n1. Umbau des Bahnhofs Käfertal mit den anschließenden Streckenteilen und Straßenknoten\n2. Neubau der Betriebswerkstatt\n3. Neubau der Abstellhalle unter Einbeziehung der bestehenden historischen Werkhalle\n\nDie vorliegende Ausschreibung beinhaltet folgende Leistungen:\n- Abbrucharbeiten (Garagen, Schüttgutboxen, Lagergebäude)\n- Erdarbeiten\n- Abtragen, Zwischenlagern und Wiederandecken des Mutterbodens\n- Herstellen des Erd-Grund-Niveau, Einbringen von Erdmassen\n- Tief-, Kanal- und Entwässerungsarbeiten\n- Neubau Rigolen\n- Kabel- und Leerrohrarbeiten\n- Straßenbau\n- Herstellung Fundamente für Oberleitungsmaste\n- Herstellung von provisorischen Oberflächen für die Bauarbeiten\n- Verkehrssicherungsleistungen mit Beschilderung und Markierung während der Bauzeit",
+    "type": "neg-w-call",
+    "typeRaw": "neg-w-call"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45221250",
+    "additionalCpvCodes": [
+      "45111000",
+      "45232000",
+      "45233120"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "68309",
+      "city": "Mannheim",
+      "nuts": "DE126",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-01+01:00",
+    "endDate": "2028-03-10+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-09-25+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/subproject/ced3c5ad-2c0d-445a-b3d4-f1e6d544f727/suitabilitycriteria Präqualifizierte Unternehmen führen den Nachweis der Eignung durch den Eintrag in das Präqualifikationsverzeichnis. Nicht präqualifizierte Unternehmen haben zum Nachweis der Eignung mit dem Teilnahmeantrag die ausgefüllte \"Eigenerklärung zur Eignung\" (Formular 124) vorzulegen. Diese beinhaltet:- Eintragung in das Berufsregister- Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber/Bieter in Frage stellt. Die Vergabestelle behält sich für den Fall, dass der Teilnahmeantrag/das Angebot in die engere Wahl kommt vor, zur Bestätigung die folgenden Nachweise anzufordern: Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer. Die in diesem Abschnitt geforderten Erklärungen und Nachweise sind vom Bewerber und den jeweiligen Mitgliedern einer Bewerbergemeinschaft jeweils gesondert vorzulegen. Ausländische Bewerber haben gleichwertige Nachweise der für sie zuständigen Behörde/ Institution ihres Heimatlandes beizubringen. Zusätzlich sind diese ins Deutsche zu übersetzen. Der Auftraggeber behält sich vor, vor Durchführung von Verhandlungen bzw. vor Beauftragung von ausländischen Bietern eine Beglaubigung der Übersetzung zu verlangen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Präqualifizierte Unternehmen führenden Nachweis der Eignung durch den Eintrag in das Präqualifikationsverzeichnis. Nicht präqualifizierte Unternehmen haben zum Nachweis der Eignung mit dem Angebot die ausgefüllte \"Eigenerklärung zur Eignung\" (Formular 124) vorzulegen. Diese beinhaltet: - Umsätze des Unternehmens, die Bauleistungen betreffen, welche mit der zu vergebenden Leistung vergleichbar sind und den Anteil bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen einschließen, aus den letzten 3 abgeschlossenen Geschäftsjahren; - Angabe zu Insolvenzverfahren und Liquidation; - Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur gesetzlichen Sozialversicherung; - Angabe zur Mitgliedschaft bei der Berufsgenossenschaft. Die Vergabestelle behält sich für den Fall, dass der Teilnahmeantrag/das Angebot in die engere Wahl kommt vor, zur Bestätigung die folgenden Nachweise anzufordern: - rechtskräftig bestätigter Insolvenzplan (falls eine Erklärung über das Vorliegen eines solchen Insolvenzplanes angegeben wurde) - Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls das Unternehmen beitragspflichtig ist - Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen, falls das Finanzamt eine solche Bescheinigung ausstellt - Freistellungsbescheinigung nach § 48bEinkommensteuergesetz - Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers mit Angabe der Lohnsummen, - Eigenerklärung das der Bewerber/Bieter spätestens unverzüglich nach Zuschlagserteilung über eine Berufs- bzw. Betriebshaftpflichtversicherung verfügt, die über die gesamte Vertragslaufzeit erhalten bleiben muss. Die Deckungssumme dieser Versicherung muss je Schadensfall mindestens betragen: - 10 Mio. Euro für Personen- und Sachschäden, - 500.000,00 Euro für Schlüsselverlustschäden, die Maximierung der Ersatzleistung pro Versicherungsjahr muss mindestens das Zweifache der Deckungssumme betragen. Die in diesem Abschnitt geforderten Erklärungen und Nachweise sind vom Bieter und den jeweiligen Mitgliedern einer Bietergemeinschaft jeweils gesondert vorzulegen. Ausländische Bewerber haben gleichwertige Nachweise der für sie zuständigen Behörde/ Institution ihres Heimatlandes beizubringen. Zusätzlich sind diese ins Deutsche zu übersetzen. Der Auftraggeber behält sich vor, vor Durchführung von Verhandlungen bzw. vor Beauftragung von ausländischen Bietern eine Beglaubigung der Übersetzung zu verlangen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Präqualifizierte Unternehmen führenden Nachweis der Eignung durch den Eintrag in das Präqualifikationsverzeichnis. Nicht präqualifizierte Unternehmen haben zum Nachweis der Eignung mit dem Angebot die ausgefüllte \"Eigenerklärung zur Eignung\" (Formular 124) vorzulegen. Dieses beinhaltet: - Angaben zu Leistungen, die mit der zu vergebenden Leistung vergleichbar sind - Angaben zu Arbeitskräften. Mit dem Angebot sind zusätzliche Eigenerklärungen über Referenzen folgender Leistungen einzureichen: - Mindestens 3 Referenzen über vergleichbare Straßen-, Tief- und Leitungsarbeiten im unmittelbaren Bereich (< 2,10m) von Gleisanlagen aus den letzten 3 abgeschlossenen Geschäftsjahren. Die Vergabestelle behält sich für den Fall, dass der Teilnahmeantrag/das Angebot in die engere Wahlkommt vor, zur Bestätigung die folgenden Nachweise anzufordern: -Erklärung zur Zahl der in den letzten 3 Jahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen, mit extraausgewiesenem Leitungspersonal. Die in diesem Abschnitt geforderten Erklärungen und Nachweise sind vom Bieter und den jeweiligen Mitgliedern einer Bietergemeinschaft jeweils gesondert vorzulegen. Ausländische Bewerber haben gleichwertige Nachweise der für sie zuständigen Behörde/Institution ihres Heimatlandes beizubringen. Zusätzlich sind diese ins Deutsche zu übersetzen. Der Auftraggeber behält sich vor, vor Durchführung von Verhandlungen bzw. vor Beauftragung von ausländischen Bietern eine Beglaubigung der Übersetzung zu verlangen."
+    },
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Die in diesem Abschnitt geforderten Nachweise sind vom Bieter bzw. mindestens einem Mitglied der Bietergemeinschaft vorzulegen. - Zertifizierung DVGW-GW 129 Sicherheit bei Bauarbeiten im Bereich von Netzanlagen oder vergleichbar - Zertifizierung DVGW-GW 301 Unternehmen zur Einrichtung, Instandsetzung und Einbindung von Rohrleitungen - Anforderungen und Prüfungen oder vergleichbar Zertifizierung DVGW-GW 381 Bauunternehmen im Leitungstiefbau Mindestanforderung oder vergleichbar"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 51 Abs. 2 SektVO. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterzugang.deutsche-evergabe.de/evergabe.bieter/api/supplier/external/deeplink/subproject/49341223-e769-4401-b04d-bd1262f5a757",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

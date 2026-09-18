@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827684:1:LOT-0000",
+    "candidateId": "25827684:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827684",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:34Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Anlagentechnik und Blitzschutz für Wärmespeicheranlage HKW Dresdner Straße",
+    "description": "Der Auftraggeber Technische Werke Coswig GmbH, Karrasstraße 3, 01640 Coswig, Deutschland gibt in dem Vergabeverfahren mit der Vergabenummer TWC-WSP-ANL-2026 zu der am 21.08.2026 13:23 Uhr auf www.evergabe.de (Vergabe-ID: 3441894) veröffentlichten Bekanntmachung mit dem Titel \"Anlagentechnik und Blitzschutz für Wärmespeicheranlage HKW Dresdner Straße\" folgende Berichtigung bekannt:\nAufgrund der heutigen kurzfristigen 2. Nachreichung wird die Angebotsfrist um eine Woche auf den 25.09.2026 verlängert.\n\n\nBlitzschutz,Blockheizkraftwerke",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "01640 Coswig",
+      "nuts": "DED",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-25+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Technische%2520Werke%2520Coswig%2520GmbH/3441894",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

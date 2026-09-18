@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "4400516d-4d5a-4319-8592-35bc13899142:1:LOT-0001",
+    "candidateId": "4400516d-4d5a-4319-8592-35bc13899142:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45244100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "4400516d-4d5a-4319-8592-35bc13899142",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "881e2289-d6ea-4fef-b4f8-ed33798a9e80",
+    "internalIdentifier": "2026 803 007",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:13Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Wasserstraßen- und Schifffahrtsamt Elbe-Nordsee"
+    ]
+  },
+  "procedure": {
+    "title": "Unterhaltungsbaggerung Elbe 2027 / 2029",
+    "description": "Die auszuführenden Bauleistungen sind Nassbaggerarbeiten zur Erhaltung und Wiederherstellung der erforderlichen Solltiefen und -breiten in der Fahrrinne und im Fahrwasser der Unter- und Außenelbe. Die Gesamtleistung umfasst die Baggerung, den Transport und die Umlagerung von ca. 30 Mio. m3 Bodenvolumen innerhalb einer 24 monatigen Vertragsdauer.\n\nVertragsbeginn ist der 01.05.2027 Der Vertrag endet am 30.04.2029.\n\nDie Nassbaggerarbeiten (ca. 14,5 Mio. m3/a Bodenvolumen im ersten Vertragsjahr und ca. 10,5 Mio. m3/a Bodenvolumen im zweiten Vertragsjahr) sind mit maximal zwei Baggergeräten auszuführen. Der mittlere kalkulierte Förderweg für den Transport von 25 Mio. m3 beträgt rund 22,8 km. Die Leistung ist mit Laderaumsaugbaggern zu erbringen. Im Rahmen von Nebenangeboten können Saugbagger mit Schuten vorgesehen werden.\n\nIm Vertragszeitraum ist zudem ein weiteres Baggergerät für vier Kampagnenbaggerungen zum Einsatz zu bringen. Die Leistung teilt sich ungefähr wie folgt auf:\n\n1.+ 3. Kampagne: je 1 Mio. m3 im Zeitraum vom 29.06.-27.07.2027 und \n27.06.-25.07.2028:\n1,8Tm3 Homogenbereich Schlick über einen Förderweg von 77,5-80,0 Km\n1,8Tm3 Homogenbereich Schlick über einen Förderweg von 80,0-82,5 Km\n60Tm3 Homogenbereich Schlick über einen Förderweg von 82,5-85,0 Km\n60Tm3 Homogenbereich Schlick über einen Förderweg von 85,0-87,5 Km\n10Tm3 Homogenbereich Schlick über einen Förderweg von 87,5-90,0 Km\n100Tm3 Homogenbereich Schlick über einen Förderweg von 90,0-92,5 Km\n352,6Tm3 Homogenbereich Schlick über einen Förderweg von 92,5-95,0 Km\n320Tm3 Homogenbereich Schlick über einen Förderweg von 95,0-97,5 Km\n92Tm3 Homogenbereich Schlick über einen Förderweg von 97,5-100,0 Km\n1,8Tm3 Homogenbereich Schlick über einen Förderweg von 100,0-102,5 Km\n\n2.+ 4. Kampagne: je 1,5 Mio. m3 im Zeitraum vom 29.02.-14.04.2028 und \n27.02.-14.04.2029:\n2,7Tm3 Homogenbereich Schlick über einen Förderweg von 77,5-80,0 Km\n2,7Tm3 Homogenbereich Schlick über einen Förderweg von 80,0-82,5 Km\n90Tm3 Homogenbereich Schlick über einen Förderweg von 82,5-85,0 Km\n90Tm3 Homogenbereich Schlick über einen Förderweg von 85,0-87,5 Km\n15Tm3 Homogenbereich Schlick über einen Förderweg von 87,5-90,0 Km\n150Tm3 Homogenbereich Schlick über einen Förderweg von 90,0-92,5 Km\n528,9Tm3 Homogenbereich Schlick über einen Förderweg von 92,5-95,0 Km\n480Tm3 Homogenbereich Schlick über einen Förderweg von 95,0-97,5 Km\n138Tm3 Homogenbereich Schlick über einen Förderweg von 97,5-100,0 Km\n2,7Tm3 Homogenbereich Schlick über einen Förderweg von 100,0-102,5 Km\n\nDer AN hat während der Vertragsdauer mit seinen angebotenen Geräten das beauftragte Bodenvolumen aus der Fahrrinne zwischen Fahrrinnenkilometer (FR-km) 638,90 und FR-km 755,30 zu baggern, zu transportieren und auf zugewiesenen Stellen umzulagern.\n\nUnterhaltungsbaggerungen finden im Wesentlichen in der planfestgestellten und durch Ausbauarbeiten hergestellten Fahrrinne statt. Die heutigen Solltiefen im Revier liegen zwischen 15,40 m Seekartennull (SKN (LAT)2025) und 16,90 m SKN (LAT)2025.\nIm Bereich des betonnten Fahrwassers werden bedarfsweise Baggerungen durchgeführt. Die Unterhaltung des Fahrwassers erfolgt auf einer Tiefe von 7,5 m SKN (LAT)2025 bis 9,5 m SKN (LAT)2025.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45244100",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE932",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-05-01+02:00",
+    "endDate": "2029-04-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:30:00+02:00",
+    "method": "required",
+    "url": "https://evergabe.bundesverkehrsverwaltung.de/VMPSatellite/notice/CXWSYYLDYY664GEE",
+    "questionDeadlineDate": "2026-10-07+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Insolvenzverfahren (Mit dem Angebot; Mittels Eigenerklärung): Angabe,ob ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren eröffnet oder die Eröffnung beantragt worden ist oder der Antrag mangels Masse abgelehnt wurde oder ein Insolvenzplan rechtskräftig bestätigt wurde. Falls ein Insolvenzplan rechtskräftig bestätigt wurde, ist dieser auf Verlangen der Vergabestelle vor zu legen."
+    },
+    {
+      "code": "slc-stand-to-spec-avg",
+      "label": null,
+      "description": "Umsatz des Unternehmens (Mit dem Angebot; Mittels Eigenerklärung): Angabe zum Umsatz des Unternehmens, soweit es Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. Auf Verlangen sind entsprechende Jahresabschlüsse vor zu legen, soweit deren Veröffentlichung in dem Land, in dem das Unternehmen ansässig ist, gesetzlich vorgeschrieben ist."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Zahl der jahresdurchschnittlich beschäftigten Arbeitskräfte (Mit dem Angebot; Mittels Eigenerklärung): Angabe über die Anzahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischem Leitungspersonal. Auf Verlangen ist ein entsprechender Nachweis vorzulegen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in ein relevantes Berufs- / Handelsregister (Mit dem Angebot; Mittels Eigenerklärung): Wenn nach dem Recht des Herkunftsstaates des Bewerbers / Bieters für die Ausübung der ausgeschriebenen Tätigkeit eine Zulassung (Erlaubnis, Genehmigung, Konzession oder Eintragung in ein Register) erforderlich ist, ist dies mit dem Angebot mitzuteilen. Auf Verlangen ist als Nachweis vorlegen: Gewerbeanmeldung, Handelsregisterauszug, Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer."
+    },
+    {
+      "code": "slc-abil-facil-tools",
+      "label": null,
+      "description": "72-Stunden-Regelung (Mit dem Angebot; Mittels Eigenerklärung): Für die Beseitigung von Mindertiefen in der Fahrrinne muss ständig ausreichend Hopperkapazität verfügbar sein. Die Baggerarbeiten zur Beseitigung von Mindertiefen sind unmittelbar, spätestens aber 72h nach Auftragserteilung zu beginnen. Bei Nichteinhaltung der geforderten Leistung oder bei Ausfall des eingesetzten Baggergerätes durch Reparatur oder aus anderen Gründen ist innerhalb 72 Stunden ein entsprechend leistungsfähiges Gerät bereitzustellen. Es werden nur Ersatzgeräte anerkannt, die den beschriebenen Standardaufweisen. Der Nachweis für eine ausreichenden Gerätekapazität ist bei Angebotsabgabe zu erbringen. Genügt das Angebot der 72-Stunden-Regelung nicht, wird es ausgeschlossen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Referenzen - Nachweis von Leistungen in den letzten 5 abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind Vergleichbare Mindestleistungen sind: Nassbaggerarbeiten mit Laderaumsaugbaggern oder Saugbaggern mit Schuten in Tidegewässern mit einem Baggervolumen von mindestens 580.000 cbm/Monat bzw. 7 Mio. cbm / Jahr. Beschreibung: Die Anzahl der Referenzen ist nicht beschränkt. Ein Bieter, der nicht mindestens 3 Referenzen mit den oben genannten Bedingungen vorlegt, wird ausgeschlossen. Jede Referenz muss mindestens folgende Angaben enthalten: Auftraggeber/Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur vertraglichen Bindung (Hauptauftragunternehmen, ARGE-Partner, Unterauftragunternehmen); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Die Bestätigungen des jeweiligen Auftraggebers über die vertragsgemäße Ausführung der Leistung ist für die jeweilige Referenz mit dem Angebot abzugeben."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden mit einer Frist von 6 Kalendertagen nachgefordert. Sollten die Unterlagen nicht innerhalb der angegebenen Frist eingereicht werden, wird das Angebot ausgeschlossen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://evergabe.bundesverkehrsverwaltung.de/VMPSatellite/notice/CXWSYYLDYY664GEE/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

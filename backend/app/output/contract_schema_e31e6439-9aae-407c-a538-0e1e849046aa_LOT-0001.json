@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e31e6439-9aae-407c-a538-0e1e849046aa:1:LOT-0001",
+    "candidateId": "e31e6439-9aae-407c-a538-0e1e849046aa:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45300000",
+      "45312310"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e31e6439-9aae-407c-a538-0e1e849046aa",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "41959361-b45a-44d0-ab55-d0db8e67f032",
+    "internalIdentifier": "2026-LM-135-60-EU",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:16Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Magistrat der Kreisstadt Limburg a. d. Lahn"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau Feuerwehrgerätehaus Lindenholzhausen -Erdungs- und Blitzschutzanlage-",
+    "description": "Gegenstand der Ausschreibung ist die Neuinstallation einer Erdungs- und Blitzschutzanlage für das Feuerwehrgerätehaus in Limburg-Lindenholzhausen.   Der Leistungsumfang der Erdungsanlage umfasst die Herstellung eines Ring- und Fundamenterders einschließlich der erforderlichen Anschlussfahnen für die Potentialausgleichsschiene (PAS) im Gebäudeinneren sowie der Anschlussfahnen zur Anbindung der Blitzschutzanlage.   Der Leistungsumfang der Blitzschutzanlage umfasst die Lieferung und Montage der Fangeinrichtungen auf dem Dach sowie der Ableitungseinrichtungen an der Fassade. Die Blitzschutzanlage ist fachgerecht mit der Erdungsanlage zu verbinden.   Nach Abschluss der Arbeiten sind die erforderlichen Messungen und Prüfungen gemäß den einschlägigen Normen durchzuführen. Dem Auftraggeber ist ein Mess- und Prüfprotokoll als Nachweis der ordnungsgemäßen Funktion der Erdungs- und Blitzschutzanlage zu übergeben.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "45300000",
+      "45312310"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "An den Krautgärten 42",
+      "additionalStreet": "",
+      "postcode": "65551",
+      "city": "Limburg-Lindenholzhausen",
+      "nuts": "DE723",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-11+01:00",
+    "endDate": "2027-10-15+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YXYMPP5",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eigenerklärung des Bieters über die Eintragung in ein Berufs- oder Handelsregister. --- Für die vorgenannten Auskünfte (Eigenerklärungen) sind entsprechende Formblätter den Vergabeunterlagen beigefügt (Formblatt 124). Ebenso zugelassen ist die Vorlage einer Einheitlichen Europäischen Eigenerklärung (EEE) als vorläufiger Beleg der Eignung. Eigenerklärungen und Eignungsnachweise, die durch Präqualifizierung geführt werden, sind zugelassen. Die durch Präqualifizierung geführten Eigenerklärungen und Eignungsnachweise müssen die gestellten auftragsbezogenen Mindestanforderungen nachweisen. --- Auf Verlangen der Vergabestelle sind durch den Bieter zum Beleg seiner Eigenerklärungen als Nachweise vorzulegen: --- - Nachweis über die Eintragung in ein Berufs- oder Handelsregister bzw. ein den Rechtvorschriften seines Sitzstaates entsprechender Nachweis (wie Handelsregister, Berufskammern der Länder, Handwerksrolle). --- Die Vergabestelle behält sich vor, weitere Auskünfte und Bestätigungen/Nachweise, die zur Überprüfung der Eigenerklärung dienen, zu verlangen bzw. einzuholen. --- Werden die Leistungen von einer Bietergemeinschaft angeboten, sind die Auskünfte für jedes Mitglied der Bietergemeinschaft zu erklären. Will sich der Bieter bei der Leistungserbringung eines Dritten (Nachunternehmer, Eignungsleihe) bedienen, sind die Auskünfte ggf. auch vom Dritten abzugeben. Die Vergabestelle behält sich vor, weitere Erklärungen oder Nachweise zur Eignung anzufordern."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "1.) Eigenerklärung zum Umsatz des Unternehmens in den letzten 3 abgeschlossenen Geschäftsjahren, soweit er Leistungen betrifft, die mit der Maßnahme vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. --- Für die vorgenannten Auskünfte (Eigenerklärungen) sind entsprechende Formblätter den Vergabeunterlagen beigefügt (Formblatt 124). Ebenso zugelassen ist die Vorlage einer Einheitlichen Europäischen Eigenerklärung (EEE) als vorläufiger Beleg der Eignung. Eigenerklärungen und Eignungsnachweise, die durch Präqualifizierung geführt werden, sind zugelassen. Die durch Präqualifizierung geführten Eigenerklärungen und Eignungsnachweise müssen die gestellten auftragsbezogenen Mindestanforderungen nachweisen. --- Die Vergabestelle behält sich vor, Auskünfte und Bestätigungen/Nachweise, die zur Überprüfung der Eigenerklärung dienen, zu verlangen bzw. einzuholen. --- Werden die Leistungen von einer Bietergemeinschaft angeboten, sind die Auskünfte/Nachweise für jedes Mitglied der Bietergemeinschaft zu erklären. --- Will sich der Bieter bei der Leistungserbringung eines Dritten (Nachunternehmer, Eignungsleihe) bedienen, sind die Auskünfte erforderlichenfalls auch von Dritten abzugeben. Die Vergabestelle behält sich vor, weitere Erklärungen oder Nachweise zur Eignung anzufordern."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "1.) Eigenerklärung über die Ausführung vergleichbarer Leistungen in den letzten fünf Jahren --- 2.) Eigenerklärung über die Bereithaltung der für die Ausführung der Leistung erforderlichen Arbeitskräfte --- Für die vorgenannten Auskünfte (Eigenerklärungen) sind entsprechende Formblätter den Vergabeunterlagen beigefügt (Formblatt 124). Ebenso zugelassen ist die Vorlage einer Einheitlichen Europäischen Eigenerklärung (EEE) als vorläufiger Beleg der Eignung. Eigenerklärungen und Eignungsnachweise, die durch Präqualifizierung geführten Eigenerklärungen und Eignungsnachweise müssen die gestellten auftragsbezogenen Mindestanforderungen nachweisen. --- Auf Verlangen der Vergabestelle sind durch den Bieter zum Beleg seiner Eigenerklärungen folgende Nachweise vorzulegen: --- Drei Referenzen, die mit der ausgeschriebenen Leistung vergleichbar sind, mit folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des ausgeführten maßgeblichen Leistungsumfanges, --- Angaben zu Arbeitskräften: Zahl der in den letzten 3 abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal. --- Werden die Leistungen von einer Bietergemeinschaft angeboten, sind die Auskünfte/Nachweise für jedes Mitglied der Bietergemeinschaft zu erklären. Will sich der Bieter bei der Leistungserbringung eines Dritten (Nachunternehmer, Eignungsleihe) bedienen, sind die Auskünfte erforderlichenfalls auch von Dritten abzugeben. Die Vergabestelle behält sich vor, weitere Erklärungen oder Nachweise zur Eignung anzufordern."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "1.) Erklärung, ob und hinsichtlich welcher Leistungen sich der Bieter der Kapazitäten anderer Unternehmen bedient. --- 2.) ggf. Erklärung, dass die Kapazitäten anderer Unternehmen im Auftragsfall zur Verfügung stehen (Formblatt 236 Verpflichtungserklärung anderer Unternehmen). --- Die Vergabestelle behält sich vor, weitere Auskünfte und Bestätigungen/Nachweise, die zur Überprüfung der Eigenerklärung dienen, zu verlangen bzw. einzuholen. --- Für die vorgenannten Auskünfte (Eigenerklärungen) sind entsprechende Formblätter den Vergabeunterlagen beigefügt (Formblatt 235, 236). Ebenso zugelassen ist die Vorlage einer Einheitlichen Europäischen Eigenerklärung (EEE) als vorläufiger Beleg der Eignung. Eigenerklärungen und Eignungsnachweise, die durch Präqualifizierung geführt werden, sind zugelassen. Die durch Präqualifizierung geführten Eigenerklärungen und Eignungsnachweise müssen die gestellten auftragsbezogenen Mindestanforderungen nachweisen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Unterlagen richtet sich nach §16a EU VOB/A."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YXYMPP5/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

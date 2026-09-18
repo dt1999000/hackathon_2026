@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "42beb090-d7f5-4983-b6f4-63f2a0ba21e3:1:LOT-0000",
+    "candidateId": "42beb090-d7f5-4983-b6f4-63f2a0ba21e3:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "42beb090-d7f5-4983-b6f4-63f2a0ba21e3",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "eacfec24-a334-4376-a8aa-de2356006d42",
+    "internalIdentifier": "0",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:07Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Land Berlin, vertreten durch das Bezirksamt Treptow-Köpenick von Berlin"
+    ]
+  },
+  "procedure": {
+    "title": "Lüftung - Kälte",
+    "description": "Das Bestandsgebäude wird durch einen Erweiterungsbau, bestehend aus vier oberirdischen\nGeschossen und einem Untergeschoss, ergänzt. Der Erweiterungsbau wird an der Südseite über\neinen Verbindungsbau an das bestehende Schulgebäude angeschlossen. \nEs werden die innenliegenden Sanitärräume, die Küche\nsowie die Technik und Nebenräume im UG, der Mehrzweckraum und zur Einhaltung\nder Luftqualität gemäß VDI 6040 die Klassen- und Gruppenräume mechanisch be- und entlüftet.\nDazu sind diverse Lüftungsanlagen vorgesehen.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Hans-Grade-Schule",
+      "additionalStreet": "Heubergerweg 37",
+      "postcode": "12487",
+      "city": "Berlin",
+      "nuts": "DE300",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 366035.93,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-01-04+01:00",
+    "endDate": "2028-09-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-22+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-15+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Erklärung über das Nichtvorliegen von Ausschlussgründen nach § 6e EU VOB/A i.V.m. § 123 GWB (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung im Formular V 124 HF. Sollten Ausschlussgründe nach § 6e EU Absatz 1 bis 4 VOB/A vorliegen, ist der Nachweis zu führen, dass eine Selbstreinigung nach § 6f EU VOB/A erfolgte. Hinweis: Ab einer Auftragssumme von 50 000 EUR wird der Auftraggeber für den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, einen Auszug aus dem Wettbewerbsregister (WRegG) gem. §§ 123 und 124 GWB beim Bundeskartellamt anfordern. Angabe zu Insolvenzverfahren und Liquidation (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung im Formular V 124 HF. Wurde ein Insolvenzplan rechtskräftig bestätigt, ist dieser auf Verlangen vorzulegen.) Die Verwendung einer Einheitlichen Europäischen Eigenerklärung (EEE) durch einen Bieter wird als vorläufiger Nachweis akzeptiert. Eigenerklärung zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung (vgl. Formblatt V124.HF) Angabe zur Mitgliedschaft bei der Berufsgenossenschaft (vgl. Formblatt V 124.H F)"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer Berufshaftpflichtversicherung (Nachweis durch Eigenerklärung, die von Bietern der engeren Wahl durch entsprechende Bescheinigungen zu belegen sind.) Haftpflichtversicherung Personenschäden, Deckungssumme mind. 3,0 Mio EUR. Haftpflichtversicherung Sachschäden, Deckungssumme mind. 3,0 Mio EUR."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischem Leitungspersonal (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung mit Formular V 124 HF. Bieter der engeren Wahl haben auf Verlangen die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal anzugeben.) Mindestanforderung: Nachweis mindestens 15 gewerbliche Mitarbeiter (ohne Verwaltungspersonal)"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in das Berufs- oder Handelsregister oder der Handwerksrolle am Sitz oder Wohnsitz des Unternehmens (Nachweis durch Präqualifizierung oder für nicht präqualifzierte Unternehmen durch Eigenerklärung im Formular V 124 HF, sollte das Angebot in die engere Wahl kommen, so ist auf Verlangen folgendes vorzulegen: Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle bzw. bei der Industrie- und Handelskammer. Die Einheitliche Europäische Eigenerklärung wird als vorläufiger Nachweis akzeptiert."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Angaben über die Ausführung von Leistungen in den letzten bis zu fünf abgeschlossenen Kalenderjahren, die mit der zu vergebenden Bauleistung vergleichbar sind, wobei für die wichtigsten Bauleistungen Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis beizufügen sind (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung mit Formular V 124 HF, die von Bietern der engeren Wahl durch entsprechende Bescheinigungen mit dem dort genannten Inhalt zu belegen sind), Mindestanforderung: 3 Referenzen über die Ausführung von Lüftungs- / Kältearbeiten mit je mindestens 435.000,00 EUR brutto Auftragswert. Davon ist 1 Referenz für Lüftungsanlage in Versammlungsstätten gemäß VStättVO nachzuweisen und 1 Referenz für Lüftungsanlagen in einer (Ausgabe-) Küche."
+    },
+    {
+      "code": "slc-stand-to-spec-avg",
+      "label": null,
+      "description": "Erklärung über den Umsatz in den letzten drei abgeschlossenen Geschäftsjahren, soweit er vergleichbare Bauleistungen betrifft (Nachweis durch Präqualifizierung oder durch Eigenerklärung im Formular V 124 HF, die von Bietern der engeren Wahl durch entsprechende Bescheinigungen zu belegen sind). Mindestanforderung: 870.000,- EUR brutto pro Jahr"
+    },
+    {
+      "code": "slc-abil-staff-tech-ctrl",
+      "label": null,
+      "description": "Nachweis erfolgreich bestandener und aktueller Hygieneschulung Kat. A gemäß VDI 6022"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Fehlende Unterlagen, deren Vorlage mit dem Angebot gefordert war, werden nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/2/tenderId/206209",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

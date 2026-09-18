@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "bb2d8bda-6080-4657-ad2e-6ceb2de56a3e:1:LOT-0001",
+    "candidateId": "bb2d8bda-6080-4657-ad2e-6ceb2de56a3e:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45212212"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "bb2d8bda-6080-4657-ad2e-6ceb2de56a3e",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "5dd0e3ba-1c94-4448-a71a-66e03900a122",
+    "internalIdentifier": "30-ZV-0149/26",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:17Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landeshauptstadt Magdeburg, Die Oberbürgermeisterin"
+    ]
+  },
+  "procedure": {
+    "title": "Förderung von Maßnahmen zur Verbesserung städtischen Grüns - Zukunft Stadtgrün, Umgestaltung Naherholungszentrum Strandbad Barleber See 1, Buschweg/Wiedersdorfer Straße, 39126 Magdeburg, Los Schwimmponton",
+    "description": "Art und Umfang:\nLieferung und Montage von Schwimmpontons für den NEZ Barleber See Strandbad 1\n\nAls Teilmaßnahme im Rahmen der Sanierung und Fertigstellung des Bauvorhabens Strandbad Barleber See in Magdeburg (Lage: WiedersdorferStraße/ Buschweg, Flur 299, Gemarkung 0938 Magdeburg) soll eine neue Boots-/Schwimmsteganlage für die Rettungswacht des Betreibers (Stadt Magdeburg / FB 40) hergerichtet werden. Diese soll mittels Schwimmpontons in unmittelbarer Nähe der Rettungstürme 1 u. 2 realisiert werden, an diesem auch die Rettungsboote befestigt werden soll. Die Fläche des Schwimmpontons Gesamt sollen eine Größe/Fläche von 90 m² (Nähe Rettungsturm 1 = 65 m², Nähe Rettungsturm 2 = 25 m²) aufweisen, welche sich aus mehreren modularen Doppelelemente zusammensetzt. \nBeschreibung der Schwimmpontons 65 m²:\n- Schwimmponton 15,0m x 3,0m, mit einem Zugangssteg 10,0m x 2,0m, - Schwimmpontons mit seeseitiger PE-Reibeschiene und 4 Stück Stahlspannösen zum Befestigen von Booten, - 4 Stück Verankerungshaltern zur Aufnahme einer Verankerung, - Zugangssteg mit landseitiger PE-Randschiene als Reibeschutz an einer landseitig vorhandenen Gangway/Landgang/Treppe,- gesamte Anlage mittels Fluten auf einen beliebigen Freibord einstellbar, Pontons mit umlaufen verschraubten Randbereich,- 1 Stück Leiter für Schwimmsteg als Badeleiter o. Boarding.\n\nBeschreibung zu Schwimmponton 25m²:\n- Schwimmponton 25,0m x 1,00m mit zusätzlicher Abgrenzung mit einem Maschengeländer zur einseitigen Absperrung/Übersteigschutz,- 12 Stück Netz-/Maschengeländer für Steg (Schwimmponton), 2,0m x 1,10m, Maschenweite 60 mm, - 4 Stück Verankerungshaltern zur Verankerung.\n\nAnforderungen an den Produkteigenschaften der Schwimmenden PE-Pontons:\n- Witterungsfest und frostsicher, - UV-Stabil und schlägzäh, - verrottungsfest und wartungsfrei, - max. Tragfähigkeit bis zu einer Tonne/m², - Salzwasser-, Seewasser-, chlor- und säurebeständig, lebensmittelecht, - Rutschfeste Oberfläche, geeignet auch für die Barfußbegehung, - Material aus 100% sortenreinem Material (hochmolekularer Kunststoff (HD-PE), Lupolen 5261Z (gem. ISO-Daten, ohne Beimischung von Recyclingmaterialien.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45212212",
+    "additionalCpvCodes": [
+      "34515000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Buschweg/Wiedersdorfer Straße",
+      "additionalStreet": "",
+      "postcode": "39126",
+      "city": "Magdeburg",
+      "nuts": "DEE03",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 0.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-03-15+01:00",
+    "endDate": "2027-05-05+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-26+01:00",
+    "deadlineTime": "08:59:00+01:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-19+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "1)Mit dem Angebot: Eigenerklärung gemäß Formblatt 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019): a) Angaben zum Umsatz in den letzten drei abgeschlossenen Geschäftsjahren, die mit der zu vergebenden Leistung vergleichbar sind Weitere Inhalte des Formblattes 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019) die nicht in diesem Punkt zugeordnet wurden, sind in anderen Abschnitten aufgelistet. Hinweis: Das Formblatt 124 ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "1)Mit dem Angebot: Eigenerklärung gemäß Formblatt 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019): a) Erklärung, dass keine Ausschlussgründe gem. § 6e EU VOB/A vorliegen, sofern zutreffend b) Erklärung, dass in den letzten 2 Jahren kein Verstoß gegen Vorschriften zu einem Eintrag im Wettbewerbsregister geführt hat, mit einer Freiheitsstrafe von mehr als 3 Monaten oder einer Geldstrafe von mehr als 90 Tagessätzen oder einer Geldbuße von mehr als 2500 EUR geahndet wurde, sofern zutreffend c) Erklärung, dass ein Ausschlussgrund gem. § 6e EU Abs. 6 VOB/A vorliegt, sofern zutreffend d) Erklärung zum Vorliegen eines Ausschlussgrundes gem. § 6e EU Abs. 1 bis 4 VOB/A, die Zuverlässigkeit des Bieters durch Maßnahmen zur Selbstreinigung wiederhergestellt wurde, sofern zutreffend e) Erklärung zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung f) Erklärung zu Insolvenzverfahren und Liquidation sofern zutreffend ------------ 2) Auf gesondertes Verlangen: Folgende Einzelnachweise gemäß Formblatt 124 sind der Vergabestelle vom nicht präqualifizierten Bieter/jedem nicht präqualifizierten Mitglied der Bietergemeinschaft, von jedem Nachunternehmer/Unterauftragnehmer sowie von jedem Verleiher (andere Unternehmen, deren Kapazitäten in Anspruch genommen werden [Eignungsleihe]) einzureichen: a) Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen oder eine gleichwertige Bescheinigung einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters im Original, sofern nur im Original gültig b) Freistellungsbescheinigung nach § 48b Einkommensteuergesetz oder eine gleichwertige Bescheinigung einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters c) Nachweise hinsichtlich einer eventuell durchgeführten Selbstreinigung, sofern zutreffend d) Vorlage eines rechtskräftig bestätigten Insolvenzplans, sofern zutreffend e) Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls das Unternehmen beitragspflichtig ist oder eine gleichwertige Bescheinigung einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters Weitere Inhalte des Formblattes 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019) die nicht in diesem Punkt zugeordnet wurden, sind in anderen Abschnitten aufgelistet. Hinweis: Das Formblatt 124 ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Mit dem Angebot ist das in den Unterlagen beigefügte Namentliches Verzeichnis der Leistungen von Nachunternehmern und Verleihern ausgefüllt einzureichen, sofern Nachunternehmer/Unterauftragnehmer sowie Verleiher (andere Unternehmen, deren Kapazitäten in Anspruch genommen werden [Eignungsleihe]) beteiligt sind."
+    },
+    {
+      "code": "slc-abil-staff-yrly-no-mgmt",
+      "label": null,
+      "description": "1) Mit dem Angebot: Eigenerklärung gemäß Formblatt 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019): a) Erklärung, dass die für die Ausführung dieser Leistung erforderlichen Arbeitskräfte zur Verfügung stehen --------------------------------------------- 2) Auf gesondertes Verlangen: Folgende Einzelnachweise gemäß Formblatt 124 sind der Vergabestelle vom nicht präqualifizierten Wirtschaftsteilnehmer/jedem nicht präqualifizierten Mitglied der Bietergemeinschaft, von jedem Nachunternehmer/Unterauftragnehmer sowie von jedem Verleiher (andere Unternehmen, deren Kapazitäten in Anspruch genommen werden [Eignungsleihe]) einzureichen: a) Benennung der Anzahl des technischen Leitungspersonals in den letzten drei abgeschlossenen Kalenderjahren und deren Lohngruppen Weitere Inhalte des Formblattes 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019) die nicht in diesem Punkt zugeordnet wurden, sind in anderen Abschnitten aufgelistet. Hinweis: Das Formblatt 124 ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Auf gesondertes Verlangen: - Nachweis der bestehenden Betriebshaftpflichtversicherung"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "1) Mit dem Angebot: Eigenerklärung gemäß Formblatt 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019): a) Erklärung, dass die für die Ausführung dieser Leistung erforderlichen Arbeitskräfte zur Verfügung stehen --------------------------------------------- 2) Auf gesondertes Verlangen: Folgende Einzelnachweise gemäß Formblatt 124 sind der Vergabestelle vom nicht präqualifizierten Wirtschaftsteilnehmer/jedem nicht präqualifizierten Mitglied der Bietergemeinschaft, von jedem Nachunternehmer/Unterauftragnehmer sowie von jedem Verleiher (andere Unternehmen, deren Kapazitäten in Anspruch genommen werden [Eignungsleihe]) einzureichen: a) Benennung der Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich Beschäftigten, gegliedert nach Lohngruppen Weitere Inhalte des Formblattes 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019) die nicht in diesem Punkt zugeordnet wurden, sind in anderen Abschnitten aufgelistet. Hinweis: Das Formblatt 124 ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "1) mit dem Angebot: Eigenerklärung gemäß Formblatt 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019): a) Erklärung hinsichtlich Eintragung im Handelsregister, sofern zutreffend oder einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters b) Erklärung zur Eintragung in einer Handwerksrolle oder einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters c) Erklärung zur Eintragung Industrie- und Handelskammer oder einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters d) Erklärung, dass keine Pflicht zur Eintragung in einem Register oder einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters ------------ 2)auf gesondertes Verlangen: Folgende Einzelnachweise gemäß Formblatt 124 sind auf gesondertes Verlangen der Vergabestelle vom nicht präqualifizierten Bieter/jedem nicht präqualifizierten Mitglied der Bietergemeinschaft, von jedem Nachunternehmer/Unterauftragnehmer sowie von jedem Verleiher (andere Unternehmen, deren Kapazitäten in Anspruch genommen werden [Eignungsleihe]) einzureichen: a) qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers mit Angaben der Lohnsummen oder eine gleichwertige Bescheinigung einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters im Original, sofern nur im Original gültig b) Gewerbeanmeldung oder gleichwertige Bescheinigungen einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters c) Berufs-/Handelsregisterauszug oder gleichwertige Bescheinigungen einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters d) Eintragung in der Handwerksrolle (Handwerkskarte) oder gleichwertige Bescheinigungen einer zuständigen Stelle des Herkunftslandes oder des Niederlassungsstaates des Bieters e) Nachweis der Eintragung bei der Industrie- und Handelskammer oder eine gleichwertige Bescheinigung einer zuständigen Stelle des Herkunftslandes oder Niederlassungsstaates des Bieters Weitere Inhalte des Formblattes 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019) die nicht in diesem Punkt zugeordnet wurden, sind in anderen Abschnitten aufgelistet. Hinweis: Das Formblatt 124 ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "1) Mit dem Angebot: Eigenerklärung gemäß Formblatt 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019): a) Erklärung zur Ausführung vergleichbarer Leistung in den letzten fünf Kalenderjahren ------------ 2) Auf gesondertes Verlangen: Folgende Einzelnachweise gemäß Formblatt 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019) sind der Vergabestelle vom nicht präqualifizierten Wirtschaftsteilnehmer/jedem nicht präqualifizierten Mitglied der Bietergemeinschaft, von jedem Nachunternehmer/Unterauftragnehmer sowie von jedem Verleiher (andere Unternehmen, deren Kapazitäten in Anspruch genommen werden [Eignungsleihe]) einzureichen: a) Referenznachweise mit mindestens folgenden Angaben: - Ansprechpartner - Art der ausgeführten Leistung - Auftragssumme - Ausführungszeitraum - Benennung des mit eigenem Personal ausgeführten Leistungsumfangs - Angabe der ausgeführten Mengen - Zahl der durchschnittlich für diese Tätigkeit eingesetzte Arbeitnehmer - Beschreibung der technischen und gerätespezifischen Anforderungen - Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal) - Angabe der vertraglichen Bindung (ARGE, Hauptauftragnehmer, Nachauftragnehmer) - Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden - kurze Beschreibung der Baumaßnahme und Besonderheiten der Ausführung - Bestätigung des Auftraggebers über eine Ausführung der Leistung Weitere Inhalte des Formblattes 124 (Eigenerklärung zur Eignung - in Anlehnung an VHB – Bund – Ausgabe 2017 – Stand 2019) die nicht in diesem Punkt zugeordnet wurden, sind in anderen Abschnitten aufgelistet. Hinweis: Das Formblatt 124 ist den Ausschreibungsunterlagen beigefügt."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Unterlagen erfolgt unter Berücksichtigung vergaberechtlicher Regelungen."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdocuments.html?id=890946",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

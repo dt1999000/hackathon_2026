@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "8b749c6c-4c48-4309-a810-d992de876080:1:LOT-0001",
+    "candidateId": "8b749c6c-4c48-4309-a810-d992de876080:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45200000",
+      "45234000",
+      "45236000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "8b749c6c-4c48-4309-a810-d992de876080",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "4f75632c-aa5e-4f46-b3db-f966cf8409a1",
+    "internalIdentifier": "e64eeff4-da5f-4bf3-a0b4-4d37a2b5a467",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:19Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)"
+    ]
+  },
+  "procedure": {
+    "title": "Bahnmark Karsdorf ( Oberbau, KTB, Bautechnik, 50Hz)",
+    "description": "Die Komplexmassnahme Karsdorf umfasst die Erneuerung der Bahninfrastruktur im Bahnhof Karsdorf im Zuge des ESTW Neubaus der Modernisierung technischer Anlagen sowie der Erneuerung von zwei Bahnuebergaengen Ziel ist ein leistungsfaehiger und regelkonformer Anlagenzustand bei Aufrechterhaltung des Verkehrs\nDer Leistungsumfang beinhaltet\nOberbau Erneuerung von Gleisen und Weichen inklusive Schotter und Schwellenarbeiten\nTiefbau Kabeltiefbau Kabeltrassen fuer LST und EEA Querungen Oberflaechenwiederherstellung sowie Entwaesserungs und Ingenieurbauleistungen\nBautechnik Neubau Anpassung und Rueckbau baulicher Anlagen fuer ESTW und zugehoerige Technik\nElektroenergieanlagen 50 Hz Erneuerung der Gleisfeldbeleuchtung Weichenheizungen Energieverteilungen und Kabelanlagen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45234000",
+    "additionalCpvCodes": [
+      "45200000",
+      "45236000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "06638",
+      "city": "Karsdorf",
+      "nuts": "DEE08",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-30+01:00",
+    "endDate": "2028-12-29+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-28+02:00",
+    "deadlineTime": "14:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-09-22+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-sec-supply",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/subproject/f519d084-d8ef-46c6-bfa0-1a9dffb0009b/suitabilitycriteria"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 51 Abs. 2 SektVO, § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/46cd729b-e7e7-487f-8077-0a6dc92d4b57",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25831946:1:LOT-0000",
+    "candidateId": "25831946:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45112200",
+      "45112400",
+      "45112420",
+      "45112500",
+      "45232130",
+      "45232400",
+      "45232410",
+      "45232411",
+      "45232440",
+      "45232450",
+      "45232451",
+      "45232452",
+      "45233222"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25831946",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:47Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Bauliche Verbesserung Georgswerder Bogen 9",
+    "description": "Der Landesbetrieb Straßen, Brücken und Gewässer (LSBG) ? Fachbereich Deich- und Wasserbau ? plant auf dem Grundstück Georgswerder Bogen 9, Flurstück 786, die zukünftige Unterbringung der Deichunterhaltung.\nZur Unterbringung von Fahrzeugen, Geräten und Materialien der Deichunterhaltung ist der Neubau einer Halle mit den Abmessungen von ca. 12,00 m × 15,00 m vorgesehen.\nGegenstand dieser Ausschreibung sind die vorbereitenden Baumaßnahmen für den geplanten Hallenneubau sowie die Erstellung von 5 PKW-Stellplätzen. Hierzu gehören insbesondere:\n? Rückbauarbeiten im Bereich des zukünftigen Hallenstandortes,\n? Erd- und Geländeprofilierungsarbeiten,\n? Herstellung der Streifenfundamente einschließlich erforderlicher Nebenarbeiten,\n? Sielbauarbeiten,\n? Pflaster- und Befestigungsarbeiten im Umfeld der Halle.\n\nBauliche Verbesserung Georgswerder Bogen 9",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45112200",
+    "additionalCpvCodes": [
+      "45112400",
+      "45112420",
+      "45112500",
+      "45232130",
+      "45232400",
+      "45232410",
+      "45232411",
+      "45232440",
+      "45232450",
+      "45232451",
+      "45232452",
+      "45233222"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "21109 Hamburg",
+      "nuts": "DE6",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-30+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://fbhh-evergabe.web.hamburg.de/evergabe.bieter/api/supplier/external/deeplink/subproject/7b36fd7d-0780-4e53-a0be-8354f3e37c22",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}
