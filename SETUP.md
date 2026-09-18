@@ -1,6 +1,6 @@
 # Running and using this app
 
-Bid-matching dashboard: log in, describe your company to Aria, then score German construction tenders against that profile. Matches show as **Gute Treffer** / **Warnungen** / **Schlechte Treffer**. Aria in the right panel chats in German by default.
+Bid-matching dashboard: describe your company, then score German construction tenders against that profile. Matches show as **Gute Treffer** / **Warnungen** / **Schlechte Treffer**.
 
 ## What you need
 
@@ -126,22 +126,5 @@ Open [http://localhost:5173](http://localhost:5173).
 4. **Load data** — imports tenders from `mock_data/`. A 404 means `mock_data/` is missing.
 5. **Analyze** — scores every loaded bid against the profile. Needs Ollama `bge-m3` plus Claude (or another configured LLM). Can take a couple of minutes.
 6. Read **Gute Treffer / Warnungen / Schlechte Treffer**.
-7. **Aria** (right panel) is general chat. Switch language (Deutsch/English) and provider (Claude / Local / Google) in the panel header.
 
 **Update profile** on the card goes back to onboarding and overwrites the saved profile when you finish again.
-
-## Typical failures
-
-| Symptom | Fix |
-| --- | --- |
-| `SECRET_KEY is missing` on `docker compose` | `.env` missing from the repo root |
-| Login works, Analyze disabled / “No company profile” | Finish onboarding |
-| Load data 404 | Copy `mock_data/` to the repo root |
-| Analyze hangs or embed errors | Ollama running and `ollama pull bge-m3` |
-| Aria/Claude errors | Put `ANTHROPIC_API_KEY` in `.env`, then restart `fastapi dev` |
-| Port 8000 or 5432 in use | Stop the other process or Compose stack |
-| `changethis` ValueError | Set a real `SECRET_KEY`, or keep `FASTAPI_ENV=development` |
-
-## What not to copy
-
-Do not commit `.env` or API keys. You do not need `hanse_guide/` for this app. Mailpit (`docker compose up -d db mailpit`) is only for password-reset emails.
