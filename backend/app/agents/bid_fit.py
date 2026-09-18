@@ -40,22 +40,6 @@ from app.tools.rag.retrieval import cosine_similarity
 
 DEFAULT_SECTION_MATCH_THRESHOLD = 0.55
 
-HARDLINER_MERGE_PROMPT = """\
-A company's hardliners (non-negotiable constraints — if a bid violates \
-one, the bid is unworkable regardless of how valuable it otherwise is) \
-have already been derived directly from its structured profile data:
-
-{base_hardliners_block}
-
-The user has added these free-text notes on top of that:
-{user_notes}
-
-Merge the notes into the hardliner list: add anything genuinely new, and \
-sharpen or override an existing hardliner if the notes contradict or \
-refine it. Don't drop or reword anything from the base list that the \
-notes don't touch. Phrase each hardliner as a short, independently \
-checkable rule. Return the final deduplicated list."""
-
 FIT_ANALYSIS_PROMPT = """\
 You are assessing whether a specific bid fits a company, given its \
 hardliners and the bid's own terms.
@@ -173,10 +157,7 @@ def derive_hardliners_from_profile(profile: CompanyProfileBase) -> list[str]:
     literal rules the user typed in; running them through an LLM
     "extraction" step would only risk paraphrasing away their precision
     for no benefit. The remaining fields here are numeric/structural
-    constraints turned into checkable rule text. The one thing this can't
-    do is interpret free-text `user_notes` — that's what
-    `merge_hardliners_with_notes` is for, and it's only worth an LLM call
-    when there actually are notes to merge.
+    constraints turned into checkable rule text.
     """
     hardliners: list[str] = list(profile.custom_hardliners)
     hardliners.extend(f"Must not involve: {exclusion}" for exclusion in profile.explicit_exclusions)
@@ -204,24 +185,18 @@ def derive_hardliners_from_profile(profile: CompanyProfileBase) -> list[str]:
     return hardliners
 
 
-class HardlinerExtraction(BaseModel):
-    hardliners: list[str]
-
-
 class FitAnalysis(BaseModel):
     violations: list[HardlinerViolation]
 
 
 class BidFitState(TypedDict, total=False):
     profile_text: str
-    user_notes: str
     bid_source: str | None
     bid_content: str | None
     bid_loader: str
     bid_chunker: str
     top_k: int
     match_threshold: float
-    base_hardliners: list[str]
     hardliners: list[str]
     profile_sections: list[str]
     loader_kwargs: dict[str, Any]
@@ -230,24 +205,6 @@ class BidFitState(TypedDict, total=False):
     similarity_score: float
     violations: list[HardlinerViolation]
     result: BidFitScore
-
-
-def merge_hardliners_with_notes(
-    llm: BaseChatModel, base_hardliners: list[str], user_notes: str
-) -> list[str]:
-    """LLM call: merge free-text user notes into the profile-derived
-    hardliner list (add what's new, let notes override/sharpen what
-    conflicts). Only worth calling when `user_notes` is non-empty — with
-    nothing to interpret, `base_hardliners` alone is the answer; see the
-    `extract_hardliners` graph node, which skips this call otherwise.
-    """
-    prompt = HARDLINER_MERGE_PROMPT.format(
-        base_hardliners_block="\n".join(f"- {h}" for h in base_hardliners) or "(none)",
-        user_notes=user_notes,
-    )
-    merged = llm.with_structured_output(HardlinerExtraction).invoke(prompt)
-    assert isinstance(merged, HardlinerExtraction)
-    return merged.hardliners
 
 
 def _resolve_bid_text(
@@ -425,47 +382,13 @@ def build_bid_fit_graph(
     provider: ChatProvider = "claude",
     embedding_model: str | None = None,
 ) -> Any:
-    """Compile the full pipeline: derive hardliners from a company profile,
-    then screen a bid against them."""
-    llm = get_chat_model(provider)
-    embedding_client = EmbeddingClient(model=embedding_model)
-    nodes = _screen_nodes(llm, embedding_client)
-
-    def extract_hardliners(state: BidFitState) -> dict[str, Any]:
-        base_hardliners = state["base_hardliners"]
-        user_notes = state["user_notes"].strip()
-        if not user_notes:
-            # Nothing free-text to interpret — the profile's own
-            # structured fields already say everything checkable, so
-            # there's no LLM call to make here.
-            return {"hardliners": base_hardliners}
-        hardliners = merge_hardliners_with_notes(
-            llm=llm, base_hardliners=base_hardliners, user_notes=user_notes
-        )
-        return {"hardliners": hardliners}
-
-    graph = StateGraph(BidFitState)
-    graph.add_node("extract_hardliners", extract_hardliners)
-    graph.add_node("load_bid_context", nodes["load_bid_context"])
-    graph.add_node("analyze_fit", nodes["analyze_fit"])
-    graph.add_node("score_fit", nodes["score_fit"])
-
-    graph.add_edge(START, "extract_hardliners")
-    graph.add_edge("extract_hardliners", "load_bid_context")
-    graph.add_edge("load_bid_context", "analyze_fit")
-    graph.add_edge("analyze_fit", "score_fit")
-    graph.add_edge("score_fit", END)
-
-    return graph.compile()
-
-
-def build_bid_screen_graph(
-    provider: ChatProvider = "claude",
-    embedding_model: str | None = None,
-) -> Any:
-    """Compile the pipeline for callers who already have a hardliner list:
-    skips hardliner-extraction and screens a bid against the given
-    hardliners directly."""
+    """Compile the bid-fit pipeline: retrieve the bid content most similar
+    to the company's profile sections, ask the LLM to verify real
+    contradictions/solutions against the given hardliners, then score.
+    Hardliners themselves are never derived inside the graph — both
+    `run_bid_fit_analysis` (from a stored CompanyProfile) and
+    `run_bid_screen` (given directly) compute them up front, since
+    `derive_hardliners_from_profile` needs no LLM call."""
     llm = get_chat_model(provider)
     embedding_client = EmbeddingClient(model=embedding_model)
     nodes = _screen_nodes(llm, embedding_client)
@@ -485,7 +408,6 @@ def build_bid_screen_graph(
 
 def run_bid_fit_analysis(
     company_profile: CompanyProfileBase,
-    user_notes: str,
     bid_loader: str,
     bid_source: str | None = None,
     bid_content: str | None = None,
@@ -498,21 +420,19 @@ def run_bid_fit_analysis(
     record_id: str | None = None,
 ) -> BidFitState:
     """Build hardliners from `company_profile`'s structured fields (no LLM
-    call), merging in `user_notes` via the LLM only if there are any, then
-    run the full bid-fit pipeline. Retrieval matches the bid against the
-    profile's own descriptive sections (`derive_profile_sections`), not
-    against the hardliners. Give the bid either as `bid_content` directly
-    (no file path or URL needed) or as `bid_source` (loaded via the
-    registered `bid_loader`) — exactly one of the two. `record_index`/
-    `record_id` are forwarded to the loader (relevant for
-    bid_loader="jsonl") and ignored when `bid_content` is used. Returns
-    the final graph state."""
+    call — see `derive_hardliners_from_profile`) and run the bid-fit
+    pipeline. Retrieval matches the bid against the profile's own
+    descriptive sections (`derive_profile_sections`), not against the
+    hardliners. Give the bid either as `bid_content` directly (no file
+    path or URL needed) or as `bid_source` (loaded via the registered
+    `bid_loader`) — exactly one of the two. `record_index`/`record_id`
+    are forwarded to the loader (relevant for bid_loader="jsonl") and
+    ignored when `bid_content` is used. Returns the final graph state."""
     graph = build_bid_fit_graph(provider=provider, embedding_model=embedding_model)
     initial_state: BidFitState = {
         "profile_text": format_company_profile(company_profile),
         "profile_sections": derive_profile_sections(company_profile),
-        "base_hardliners": derive_hardliners_from_profile(company_profile),
-        "user_notes": user_notes,
+        "hardliners": derive_hardliners_from_profile(company_profile),
         "bid_source": bid_source,
         "bid_content": bid_content,
         "bid_loader": bid_loader,
@@ -555,7 +475,7 @@ def run_bid_screen(
     (relevant for bid_loader="jsonl", e.g. mock_data/agent_input.jsonl)
     and ignored when `bid_content` is used. Returns the final graph
     state."""
-    graph = build_bid_screen_graph(provider=provider, embedding_model=embedding_model)
+    graph = build_bid_fit_graph(provider=provider, embedding_model=embedding_model)
     initial_state: BidFitState = {
         "hardliners": hardliners,
         "profile_sections": profile_sections if profile_sections is not None else hardliners,

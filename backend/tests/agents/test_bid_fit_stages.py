@@ -4,10 +4,8 @@ import pytest
 
 from app.agents.bid_fit import (
     FitAnalysis,
-    HardlinerExtraction,
     derive_hardliners_from_profile,
     generate_violations,
-    merge_hardliners_with_notes,
     retrieve_bid_context,
 )
 from app.agents.bid_fit_scoring import HardlinerViolation
@@ -184,16 +182,6 @@ def test_derive_hardliners_from_profile_needs_no_llm_call() -> None:
 def test_derive_hardliners_from_profile_is_empty_for_a_minimal_profile() -> None:
     profile = CompanyProfileBase(company_name="Minimal Co")
     assert derive_hardliners_from_profile(profile) == []
-
-
-def test_merge_hardliners_with_notes_returns_llm_output() -> None:
-    expected = HardlinerExtraction(hardliners=["No bridges", "No work on Sundays"])
-    llm = _FakeChatModel(expected)
-
-    hardliners = merge_hardliners_with_notes(
-        llm, base_hardliners=["No bridges"], user_notes="also no Sunday work"
-    )
-    assert hardliners == expected.hardliners
 
 
 def test_generate_violations_returns_llm_output_unmodified() -> None:

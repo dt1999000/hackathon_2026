@@ -9,7 +9,6 @@ from app.agents.bid_fit import (
     derive_hardliners_from_profile,
     derive_profile_sections,
     generate_violations,
-    merge_hardliners_with_notes,
     retrieve_bid_context,
     run_bid_fit_analysis,
     run_bid_screen,
@@ -60,7 +59,6 @@ def _get_company_profile(session: SessionDep, current_user: CurrentUser) -> Comp
 
 
 class BidFitRequest(_BidInputFields):
-    user_notes: str = ""
     bid_loader: str
     bid_chunker: str = "default"
     top_k: int = 5
@@ -97,8 +95,8 @@ def analyze_bid_fit(
     *, session: SessionDep, current_user: CurrentUser, request: BidFitRequest
 ) -> Any:
     """
-    Full pipeline: derive hardliners from the current user's company
-    profile + `user_notes`, then check each of the profile's own
+    Full pipeline: build hardliners from the current user's company
+    profile's structured fields, then check each of the profile's own
     descriptive sections (capabilities, regions, certifications, ...)
     against the bid for its best-matching content — the more sections
     that find a match, the higher `similarity_score` — and hand the
@@ -110,7 +108,6 @@ def analyze_bid_fit(
     profile = _get_company_profile(session, current_user)
     final_state = run_bid_fit_analysis(
         company_profile=profile,
-        user_notes=request.user_notes,
         bid_source=request.bid_source,
         bid_content=request.bid_content,
         bid_loader=request.bid_loader,
@@ -174,36 +171,21 @@ def screen_bid(request: BidScreenRequest) -> Any:
 # --- Per-stage endpoints: each core function, for isolated testing --------
 
 
-class ExtractHardlinersRequest(BaseModel):
-    user_notes: str = ""
-    provider: ChatProvider = "claude"
-
-
 class ExtractHardlinersResponse(BaseModel):
     hardliners: list[str]
 
 
-@router.post("/extract-hardliners", response_model=ExtractHardlinersResponse)
-def extract_hardliners(
-    *, session: SessionDep, current_user: CurrentUser, request: ExtractHardlinersRequest
-) -> Any:
+@router.get("/extract-hardliners", response_model=ExtractHardlinersResponse)
+def extract_hardliners(*, session: SessionDep, current_user: CurrentUser) -> Any:
     """
     Stage 1 alone: build hardliners from the current user's company
     profile's own structured fields (custom_hardliners,
     explicit_exclusions, contract value range, ... — see
-    app.agents.bid_fit.derive_hardliners_from_profile). No LLM call
-    unless `user_notes` is non-empty, in which case it's merged in via
-    the LLM (add what's new, let notes override/sharpen conflicts). No
-    bid involved.
+    app.agents.bid_fit.derive_hardliners_from_profile). Pure, no LLM
+    call, no bid involved.
     """
     profile = _get_company_profile(session, current_user)
-    base_hardliners = derive_hardliners_from_profile(profile)
-    if not request.user_notes.strip():
-        return ExtractHardlinersResponse(hardliners=base_hardliners)
-
-    llm = get_chat_model(request.provider)
-    hardliners = merge_hardliners_with_notes(llm, base_hardliners, request.user_notes)
-    return ExtractHardlinersResponse(hardliners=hardliners)
+    return ExtractHardlinersResponse(hardliners=derive_hardliners_from_profile(profile))
 
 
 class ProfileSectionsResponse(BaseModel):
