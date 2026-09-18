@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "aa4af011-4022-45dd-b684-8843cc3e010e:1:LOT-0001",
+    "candidateId": "aa4af011-4022-45dd-b684-8843cc3e010e:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45421000",
+      "45422100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "aa4af011-4022-45dd-b684-8843cc3e010e",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "aa4af011-4022-45dd-b684-8843cc3e010e",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:16Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Forchheim"
+    ]
+  },
+  "procedure": {
+    "title": "Generalsan. Rathaus Forchheim - G32 Tischlerarbeiten 2 DIN 18355 - Bauschreiner  5.26-6.63.20",
+    "description": "G 32 Tischlerarbeiten 2 DIN 18355 - Bauschreinerarbeiten \n\nFür die Generalsanierung historisches Rathaus Forchheim werden Bauschreinerarbeiten benötigt.\n\nDie Leistungen erstrecken sich dabei über die Geschosse UG bis 2.OG\nLeistungsumfang:\nc. 60m² Paneel-Bekleidungen horizontal und vertikal\n3 Stück Treppenpodeste mit Trittstufe\n20 Stück Eichenfensterbretter\nCa. 120m² prov. OSB-Platten als Absturzbrüstungen bzw. Fassadenverschluß\n2 Orientierungspaneele\nCa. 23 Stück Tritt- u. setzstufen auf Bestands-Revisionstreppe",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45421000",
+    "additionalCpvCodes": [
+      "45422100"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE248",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "226"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Referenznachweise mit den im Formblatt Eigenerklärung zur Eignung genannten Angaben"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Erklärung zur Zahl der in den letzten 3 Jahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen, mit extra ausgewiesenem Leitungspersonal."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer."
+    },
+    {
+      "code": "slc-sec-supply",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls das Unternehmen beitragspflichtig ist."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "- BITTE BEACHTEN SIE, DASS FORMBLATT EIGENERKLÄRUNG ZUR EIGNUNG! - Vorname, Name, Geburtsdatum und Geburtsort aller Geschäftsführer und Prokuristen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten: Um einen eventuellen Ausschluss des Angebotes zu vermeiden, legen Sie bitte die geforderten Nachweise und Erklärungen dem Angebot unbedingt vollständig bei."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/aa4af011-4022-45dd-b684-8843cc3e010e",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

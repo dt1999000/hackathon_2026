@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "08763a6e-46a6-4e98-84da-56be25797ade:1:LOT-0000",
+    "candidateId": "08763a6e-46a6-4e98-84da-56be25797ade:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000",
+      "45332400"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "08763a6e-46a6-4e98-84da-56be25797ade",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "518cdce5-a523-43e7-881a-e21da6a42689",
+    "internalIdentifier": "0",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:49Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Land Berlin, vertreten durch das Bezirksamt Treptow-Köpenick von Berlin"
+    ]
+  },
+  "procedure": {
+    "title": "Sanitär - Heizung",
+    "description": "Das Bestandsgebäude wird durch einen Erweiterungsbau, bestehend aus vier oberirdischen\nGeschossen und einem Untergeschoss, ergänzt. Der Erweiterungsbau wird an der Südseite über\neinen Verbindungsbau an das bestehende Schulgebäude angeschlossen.\nDie Bauleistung betrifft:\nSanitär\n- Schmutzwasserleitung und Zubehör\n- Trinkwasserleitung und Zubehör\n- Rohrleitungsarmaturen und Zubehör\n- Installationselemente\n- Sanitäre Einrichtungen\n- Ausstattungen\n- Dämmung Sanitär\n- Brandschutz Sanitär\nsowie Heizung\n- Rohrleitungen und Zubehör\n- Verteiler, Pumpen, Armaturen und Zubehör\n- Fußbodenheizung, Heizkörper und Zubehör\n- Dämmung Heizung\n- Brandschutz Heizung",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": [
+      "45332400"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Hans-Grade-Schule",
+      "additionalStreet": "Heubergerweg 37",
+      "postcode": "12487",
+      "city": "Berlin",
+      "nuts": "DE300",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 307803.95,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-01-04+01:00",
+    "endDate": "2028-09-30+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-15+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Erklärung über das Nichtvorliegen von Ausschlussgründen nach § 6e EU VOB/A i.V.m. § 123 GWB (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung im Formular V 124 HF. Sollten Ausschlussgründe nach § 6e EU Absatz 1 bis 4 VOB/A vorliegen, ist der Nachweis zu führen, dass eine Selbstreinigung nach § 6f EU VOB/A erfolgte. Hinweis: Ab einer Auftragssumme von 50 000 EUR wird der Auftraggeber für den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, einen Auszug aus dem Wettbewerbsregister (WRegG) gem. §§ 123 und 124 GWB beim Bundeskartellamt anfordern. Angabe zu Insolvenzverfahren und Liquidation (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung im Formular V 124 HF. Wurde ein Insolvenzplan rechtskräftig bestätigt, ist dieser auf Verlangen vorzulegen.) Die Verwendung einer Einheitlichen Europäischen Eigenerklärung (EEE) durch einen Bieter wird als vorläufiger Nachweis akzeptiert. Eigenerklärung zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung (vgl. Formblatt V124.HF) Angabe zur Mitgliedschaft bei der Berufsgenossenschaft (vgl. Formblatt V 124.H F)"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer Berufshaftpflichtversicherung (Nachweis durch Eigenerklärung, die von Bietern der engeren Wahl durch entsprechende Bescheinigungen zu belegen sind.) Haftpflichtversicherung Personenschäden, Deckungssumme mind. 3,0 Mio EUR. Haftpflichtversicherung Sachschäden, Deckungssumme mind. 3,0 Mio EUR."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischem Leitungspersonal (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung mit Formular V 124 HF. Bieter der engeren Wahl haben auf Verlangen die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal anzugeben.) Mindestanforderung: Nachweis mindestens 20 gewerbliche Mitarbeiter (ohne Verwaltungspersonal)"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in das Berufs- oder Handelsregister oder der Handwerksrolle am Sitz oder Wohnsitz des Unternehmens (Nachweis durch Präqualifizierung oder für nicht präqualifzierte Unternehmen durch Eigenerklärung im Formular V 124 HF, sollte das Angebot in die engere Wahl kommen, so ist auf Verlangen folgendes vorzulegen: Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle bzw. bei der Industrie- und Handelskammer. Die Einheitliche Europäische Eigenerklärung wird als vorläufiger Nachweis akzeptiert."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Angaben über die Ausführung von Leistungen in den letzten bis zu fünf abgeschlossenen Kalenderjahren, die mit der zu vergebenden Bauleistung vergleichbar sind, wobei für die wichtigsten Bauleistungen Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis beizufügen sind (Nachweis durch Präqualifizierung oder für nicht präqualifizierte Unternehmen durch Eigenerklärung mit Formular V 124 HF, die von Bietern der engeren Wahl durch entsprechende Bescheinigungen mit dem dort genannten Inhalt zu belegen sind), Mindestanforderung: a) 3 Referenzen über Sanitärarbeiten für Neubau je mindestens 350.000,- EUR brutto Auftragswert b) 3 Referenzen über Heizungsarbeiten für Neubau je mindestens 350.000,- EUR brutto Auftragswert c) 1 Referenz mit Verlegung einer Fußbodenheitzung in einem öffentlichen Gebäude (bspw. Kita, Schule, Bibliothek, Museum) d) 1 Referenz für die Installation und Inbetriebnahme eines Fettabscheiders mindestens NS2"
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Nachweis einer Arbeitskraft mit Schweißerschein für die Ausführung von Heizleitungen."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Nachweis der Mitgliedschaft in der Gütegemeinschaft nach RAL-GZ 961 bzw. RAL-GZ968 oder Nachweis des Gütezeichen \"Fremdüberwachter Kanalbau\" der Zertifizierung Bau GmbH"
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Nachweis Fachbetrieb für die Installation des Fettabscheiders."
+    },
+    {
+      "code": "slc-stand-to-spec-avg",
+      "label": null,
+      "description": "Erklärung über den Umsatz in den letzten drei abgeschlossenen Geschäftsjahren, soweit er vergleichbare Bauleistungen betrifft (Nachweis durch Präqualifizierung oder durch Eigenerklärung im Formular V 124 HF, die von Bietern der engeren Wahl durch entsprechende Bescheinigungen zu belegen sind). Mindestanforderung: 730.000,- EUR brutto pro Jahr"
+    },
+    {
+      "code": "slc-abil-staff-tech-ctrl",
+      "label": null,
+      "description": "Nachweis Fachkunde Generalinspektion nach DIN 4040-100."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Fehlende Unterlagen, deren Vorlage mit dem Angebot gefordert war, werden nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/2/tenderId/206200",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "1d82829d-0ec1-44ef-9a07-4e0649f48369:1:LOT-0000",
+    "candidateId": "1d82829d-0ec1-44ef-9a07-4e0649f48369:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "1d82829d-0ec1-44ef-9a07-4e0649f48369",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "1c7cb3a0-3892-4e91-8098-9294a9823531",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:16Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Zentrale Vergabestelle der Gemeinde Barleben"
+    ]
+  },
+  "procedure": {
+    "title": "Los 405: Heizung, Lüftung, Sanitär - Neubau Ärztehaus 2.0 Hansenstraße in Barleben",
+    "description": "Der Bauherr, die Gemeinde Barleben, plant den Neubau eines Ärztehauses\nmit 5 Praxen in der Hansenstraße 42 in 39179 Barleben.\nIm Dachgeschoss befinden sich zudem Abstellräume für die Mieter.\nDas Gebäude besteht aus einem Erd-, Ober- und einem Dachgeschoss.\nEs wird nicht unterkellert.\nDas Gebäude steht frei auf dem Grundstück.\nDer Neubau wird als konventioneller Mauerwerksbau mit Stahlbetondecken\nund Satteldach errichtet. Das Dach wird als traditionelles Holztragwerk mit\nZiegeleindeckung und Wärmedämmung ausgeführt.\nDie Aussteifung des Gebäudes wird über ausreichend zu dimensionierende\nWand- und Deckenscheiben sichergestellt.\nDie Gründung erfolgt über eine Stahlbetonsohlplatte mit umlaufenden\nStreifen-fundamenten / Frostschürzen.\nDie Baustelle wird über die über die Ernst-Thälmann-Straße und die\nHansenstraße erreichbar.\nDie Baustellenzufahrten erfolgen über die südöstlich gelegene künftige\nGrundstückszufahrt.\n\nAdresse: Hansenstraße 42 · 39179 Barleben\n\nBitte beachten Sie, dass eine Besichtigung des Objekts im Zeitraum vom: 31.08.-25.09.2026 erfolgt!\nEinen Termin vereinbaren Sie bitte vorab unter der Telefonnummer: +49 39203 565-2965.\nFehlende vom Auftraggeber bestätigte Vor-Ort-Besichtigungsbescheinigung führt zwingend zum Ausschluss!\n\nGrobmengen:\nSanitärtechnik\n- ca. 220 m Abwasserleitungen\n- ca. 400 m Trinkwasserleitungen mit Isolierung\n- Absperrventile, 1 Hauswasserstation, 12 Durchlauferhitzer, 20 Mini-Durchlauferhitzer\n- Brandschutzrohrschalen, Brandschutzmanschetten\n- 10 WC-Anlagen, 30 Waschtischanlagen\n- 1 BH-WC-Anlage, 1 BH-Waschtischanlage\n- Sanitärraumausstattungen, Leichtbauinstallationseinheiten\n- Kernlochbohrungen DN60- DN130 ca. 40 Stück\n\nHeizungstechnik\n- Luft-Wasserwärmepumpe ca. 25 kW einschließlich Zubehör und elektrischer Verdrahtung\n- Heizungspufferspeicher 1.000 Liter, Druckhaltung\n- Elektro-Heizeinsatz ca. 18 kW\n- ca. 265 m Heizleitungen mit Isolierung\n- Heizkreisverteiler mit 2 Pumpenbaugruppen\n- Brandschutzrohrschalen ca. 12 Kernlochbohrungen DN60-DN100\n- Fußbodenheizung ca. 1.410 m² einschl. Tackerplatte, Verteilern und Zubehör\n- Winterbauheizung- Ölwarmluftheizung,\n- Aufheizung Estrich- mobiles Elektroheizmobil\n\nLüftungstechnik\n- 5 Zu- und Abluftgerät mit WRG ca. 470 m³/h mit elektrischem Vorheizregister\n- 6 Dezentrale Lüftungsgeräte mit WRG\n- Luftkanäle ca. 230m Spiralfalzrohr DN 100- DN 160\n- 28 Rohrschalldämpfer DN 100 - DN 315\n- 4 Volumenstromregler DN 140\n- 70 Irisblende zur Volumenstromregelung DN 125\n- 2 Brandschutz-Deckenschott DN 100\n- ca. 8m² Isolierung Luftkanal\n- 70 Tellerventile DN 125\n- 26 Kernlochbohrungen DN150 - DN 220",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Hansenstraße 42",
+      "additionalStreet": "",
+      "postcode": "39179",
+      "city": "Barleben",
+      "nuts": "DEE07",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-30+01:00",
+    "endDate": "2027-09-17+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-28+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Nachfolgende Nachweise und Erklärungen sind vom Bieter mit dem Angebot vorzulegen: - FB 234 Erklärung Bieter-/Arbeitsgemeinschaft - falls keine Bietergemeinschaft gebildet wird, bitte im Formblatt vermerken - FB 235 Verzeichnis der Leistungen / Kapazitäten anderer Unternehmen - falls keine Nachunternehmen eingesetzt werden, bitte im Formblatt vermerken - Nachweis der Vor-Ort-Besichtigungsbescheinigung der Gemeinde Barleben Hinweis: Fehlende vom Auftraggeber bestätigte Vor-Ort-Besichtigungsbescheinigung führt zwingend zum Ausschluss des Angebotes! Auf gesondertes Verlangen sind vom Bestbieter und ggf. seinen Nachunternehmen sowie Mitgliedern einer Bieter-/Arbeitsgemeinschaft nachfolgende Nachweise und Erklärungen vorzunehmen: - Formblätter 221/222 - Preisermittlung bei Zuschlagskalkulation (Bieter) - Formblatt 223 - Aufgliederung der Einheitspreise (Bieter) - Formblatt 236 - Verpflichtungserklärung anderer Unternehmen - Formblatt 124 - Eigenerklärung zur Eignung inkl. Angabe der Umsätze aus den letzten drei abgeschlossenen Geschäftsjahren - Auszug aus dem Handelsregister - Unbedenklichkeitsbescheinigung Berufsgenossenschaft mit Angabe der Lohnsummen - Haftpflichtversicherung mit Angaben der Deckungssummen und Ablaufdatum - Freistellungsbescheinigung nach § 48 EstG vom Finanzamt - Bescheinigung in Steuersachen vom Finanzamt - Bescheinigung der Industrie-/Handwerkskammer - Unbedenklichkeitsbescheinigung der Sozialkasse - Unbedenklichkeitsbescheinigung der Krankenkasse - Erklärung EU-Sanktionen gegen Russland - Nachweis personeller Ausstattung - Gewerbeanmeldung - mind. 3 Referenznachweise gem. FB 124 mit folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung Auf gesondertes Verlangen geforderten Nachweise und Erklärungen sind innerhalb von sechs Kalendertagen vorzulegen. Alle erforderlichen Nachweise und Erklärungen sind aktuell gültig und fristgerecht vorzulegen. Die Frist für die Nachreichung der geforderten Nachweise und Erklärungen beginnt am darauffolgenden Tag des Tages, an dem die Versendung des Nachforderungsschreibens erfolgte. Im Falle einer Präqualifizierung durch Vorlage eines gültigen Nachweises werden die bei der PQ-Stelle hinterlegten Nachweise akzeptiert. Sollten nicht alle erforderlichen Nachweise bei der PQ-Stelle hinterlegt sein, behalten wir uns vor, zur Vollständigkeit Ihrer Unterlagen fehlende Nachweise laut dieser Liste nachzufordern."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/unterlagen/54321-Tender-1a04261676f-488d5ed1e24d11b6",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

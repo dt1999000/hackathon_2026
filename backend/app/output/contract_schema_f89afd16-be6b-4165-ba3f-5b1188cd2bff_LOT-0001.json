@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "f89afd16-be6b-4165-ba3f-5b1188cd2bff:1:LOT-0001",
+    "candidateId": "f89afd16-be6b-4165-ba3f-5b1188cd2bff:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45232400"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "f89afd16-be6b-4165-ba3f-5b1188cd2bff",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "8fc83936-bec8-49c0-9245-5c1cbd240407",
+    "internalIdentifier": "26 E 20144",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:56Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Bundesrepublik Deutschland vertreten durch das Staatliche Baumanagement Niedersachsen"
+    ]
+  },
+  "procedure": {
+    "title": "26E20144 - Kaserne Seedorf, Sanierung Abwasseranlagen Kaserne Seedorf, Kanalsanierung Seedorf, offene Bauweise, 3 u.4 BA",
+    "description": "Kanalbauarbeiten PP, DN 110 (50m), DN 160 (700m), DN 200 (170m), DN 250 (145m), DN 315 (25m), DN 600 Beton (5m), Wiederherstellung Pflasterfläche 190 m², Wiederherstellung Betonfahrbahn 80 m², Wiederherstellung Asphaltfahrbahn 320m²  Alle zu verwendenden Holzprodukte müssen nachweislich aus nachhaltiger Waldbewirtschaftung kommen.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45232400",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Twistenberg 120",
+      "additionalStreet": "",
+      "postcode": "27404",
+      "city": "Seedorf",
+      "nuts": "DE937",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 1109244.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-02-22+01:00",
+    "endDate": "2028-02-25+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "09:19:00+02:00",
+    "method": "required",
+    "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXQ6YY5RSRK",
+    "questionDeadlineDate": "2026-10-14+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Nachweis der Gewebeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle bzw. bei der Industrie- und Handelskammer oder einer anderen zuständigen Kammer."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "1. Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren soweit es Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen 2. Angaben zur Zahlung von Steuern, Abgaben und Beträgen zur Sozialversicherung 3. Mitgliedschaft bei einer Berufsgenossenschaft 4. Erklärung, dass sich das Unternehmen nicht in Liquidation befindet 5. Erklärung, dass kein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren eröffnet oder die Eröffnung beantragt oder der Antrag mangels Masse abgelehnt worden ist bzw. eine Bestätigung des Insolvenzverwalters über die rechtskräftige Bestätigung eines Insolvenzplans zu 1. Eigenerklärung zum Umsatz zu 2. Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse (soweit der Betrieb beitragspflichtig ist), eine Unbedenklichkeitsbescheinigung des Finanzamtes bzw. eine Bescheinigung in Steuersachen (soweit das Finanzamt derartige Bescheinigungen ausstellt), eine Freistellungsbescheinigung nach § 48b EStG zu 3. eine qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des für den Bewerber/ Bieter zuständigen Versicherungsträgers mit Angabe der Lohnsummen zu 4. Eigenerklärung 'Angaben zu Liquidation' zu 5. Eigenerklärung 'Angaben zu Insolvenzverfahren'"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "1. Angaben zur Leistung, die mit der zu vergebenden Leistung vergleichbar sind aus bis zu fünf abgeschlossenen Kalenderjahren. 2. Angaben darüber, dass für die Ausführung der Leistungen erforderliche Arbeitskräfte zur Verfügung stehen. zu 1. Drei Referenznachweise mit mindestens folgenden Angaben: Ansprechpartner, Art der ausgeführten Leistung, Auftragssumme, Ausführungszeitraum, stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen, Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer, stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahmen einschl. eventueller Besonderheiten der Ausführung, Angabe zur Art der Baumaßnahmen (Neubau, Umbau, Denkmal) Angabe zur vertraglichen Bindung (Hauptauftragnehmer ARGE-Partner, Nachunternehmer), ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden, Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung. zu 2. Eigenerklärung mit mindestens folgenden Angaben: Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Unterlagen erfolgt gemäß den Angaben in den Formblättern 211EU und 216."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXQ6YY5RSRK/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

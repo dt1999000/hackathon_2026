@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "3e63b0f0-bcfc-4c68-b624-b78f4bf8d18a:1:LOT-0001",
+    "candidateId": "3e63b0f0-bcfc-4c68-b624-b78f4bf8d18a:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45421000",
+      "45421100",
+      "45422000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "3e63b0f0-bcfc-4c68-b624-b78f4bf8d18a",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "3e63b0f0-bcfc-4c68-b624-b78f4bf8d18a",
+    "internalIdentifier": "0001",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:32Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Bamberg / Zentrale Beschaffungs- und Vergabestelle im Auftrag der Bürgerspitalstiftung Bamberg vertreten durch das Immobilienmanagement / Abt. Hochbau"
+    ]
+  },
+  "procedure": {
+    "title": "Sanierung ehem. Kloster St. Michael Pfortenflügel - WC-Anlage Schreinerarbeiten Innentüren",
+    "description": "Für die zu erwartenden Besucherströme nach Eröffnung der Abteikirche soll eine moderne, barrierefrei zugängliche Toilettenanlage entstehen, für deren Realisierung als Standort die ungenutzten Räume der ehemaligen Studentenverbindung im Sockelgeschoss des Pfortenflügels aufgrund ihrer zentralen Lage im Zugangsbereich der Klosteranlage als besonders sinnvoll erachtet werden Für das in Zukunft geplante neue Besucherzentrum \"Kloster Michaelsberg\" wird ein zentrales Entree geschaffen, welches im Sockelgeschoss des Pfortenflügels beheimatet ist und somit im direkten Zugangsbereich zur Klosteranlage liegt. Über ein großzügiges, Rundbogentor mittig des Pfortenflügels betritt der Besucher zunächst einen Vorraum, von welchem rechterhand die neue öffentliche WC-Anlage barrierefrei erreicht werden kann. Eine automatische gläserne Schiebetüranlage, welche der Toranlage hintangestellt ist, dient der klimatischen Trennung. Durch die Wiederherstellung eines ehemaligen, aktuell zugemauerten Durchgangs in der nördlichen Flurwand, gelingt die Anbindung des nördlich hieran angrenzenden, drei Joche breiten wie drei Schiffe tiefen kleinen Gewölbesaals, der ehemals der studentischen Verbindung als Aufenthalt diente. In diesem wird nun die öffentliche Toilettenanlage integriert, wobei über eine zwei Gewölbe einnehmende Erschließungszone sowohl das barrierefreie WC direkt im Zugangsbereich wie auch die im rückwärtigen Bereich befindlichen, jeweils drei Joche einnehmenden Damen - und Herren WC´s erreicht werden. Die, die unterschiedlichen Abschnitte voneinander abgrenzenden, Trenn- und Installationswände sind hierbei stets in den Gewölbescheiteln angeordnet.\n\nDie Bauaufgabe beinhaltet die Herstellung und Montage von 3 Holz-Furniertüren mit wandbündigen Umfassungszargen (Montagezarge bauseits), sowie drei Rahmenfüllungstüren aus Holz, sowie die Herstellung und Montage eines Einbauschranks.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45421000",
+    "additionalCpvCodes": [
+      "45421100",
+      "45422000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE241",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-21+01:00",
+    "endDate": "2027-02-12+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "Die Eignung ist für die zu vergebende Leistung durch Eintragung in die Liste des Vereins für Präqualifizierung von Bauunternehmen e.V. oder vorläufig durch die ausgefüllte Eigenerklärung zur Eignung gem. FB 124 oder durch die Einheitliche Europäische Eigenerklärung (EEE) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl sind die im FB 124 oder der EEE genannten Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter auf die Fähigkeiten anderer Bieter zur Erfüllung des Auftrags, so ist die jeweilige Nummer im Präqualifikationsverzeichnis oder die Erklärung nach FB 124 oder EEE auch für diese Unternehmen auf Verlangen vorzulegen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in deutscher Sprache beizufügen. Das FB 124 liegt den Ausschreibungsunterlagen bei. Die EEE kann über den Link (www.evergabe-online.info/e-Vergabe/DE/5 Service/EEE/node_EEE.html) online ausgefüllt werden."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Bitte beachten: Um einen eventuellen Ausschluss des Angebotes zu vermeiden, legen Sie bitte die geforderten Nachweise und Erklärungen dem Angebot unbedingt vollständig bei."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.deutsche-evergabe.de/dashboards/dashboard_off/3e63b0f0-bcfc-4c68-b624-b78f4bf8d18a",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

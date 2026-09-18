@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "71dcdb38-8f8a-4f56-a9e4-8dcc8ea05d74:1:LOT-0001",
+    "candidateId": "71dcdb38-8f8a-4f56-a9e4-8dcc8ea05d74:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45313100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "71dcdb38-8f8a-4f56-a9e4-8dcc8ea05d74",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "e3348a5e-a523-4546-9ebb-533377ea7d2a",
+    "internalIdentifier": "LOT-0001 65.26.124",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:37Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Magistrat der Universitätsstadt Gießen - Hochbauamt -"
+    ]
+  },
+  "procedure": {
+    "title": "Aufzugsanlage",
+    "description": "Die Stadt Gießen beabsichtigt, auf dem Gelände der Liegenschaft „Theodor-Litt-Schule“ in Gießen, ein Werkstattgebäude als Ersatzneubau zu errichten. Es handelt sich um ein zweigeschossiges Gebäude für die Lehrausbildung handwerklicher Berufe, in Holzbau. Die Grundfläche beträgt ca. 3000 m². Die Räume im EG und OG werden als Werkstatträume, teilweise mit Maschinenausbildungsplätzen, aber auch für theoretischen Unterricht genutzt. Im Untergeschoss befindet sich die gesamte technische Ausrüstung für den Gebäudebetrieb. Die Hausanschlüsse, Elt-, Heizungs-, Trinkwasser- und Druckluftverteiler, Zentralgeräte für die Raumlufttechnik sowie die Absauganlagen für die Holzbearbeitungsmaschinen und die Schweißausbildungsplätze.\nIm Wesentlichen besteht der Installationsumfang aus:\n-\t1 St.\t\tPersonen-/Lastenaufzug\nMit den entsprechend erforderlichen Komponenten und Zubehör im Gebäude zu installieren.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45313100",
+    "additionalCpvCodes": [
+      "42416100"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Ringalle 62",
+      "additionalStreet": "",
+      "postcode": "35390",
+      "city": "Gießen",
+      "nuts": "DE721",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 80830.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "3"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. – Mindeststandard: Umsatz der letzten drei abgeschlossenen Geschäftsjahre mindestens das Zweifache der Angebotssumme. Kann ein Bewerber aus einem berechtigten Grund die geforderten Unterlagen nicht vorlegen, sind anderweitig entsprechende Angaben und Nachweise vorzulegen, dass die erforderliche finanzielle Eignung besteht, diesen Auftrag auszuführen. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) bzw. in andere amtliche Verzeichnisse (z.B. AVPQ) oder Eigenerklärungen gem. Formblatt „Hessen 124 - Eigenerklärung zur Eignung“ nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt „Eigenerklärung zur Eignung“ angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gem. dem Formblatt „Eigenerklärung zur Eignung“ auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt „Eigenerklärung zur Eignung“ ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Erklärung des Bieters in den letzten fünf Kalenderjahren bzw. dem in der Auftragsbekanntmachung angegebenen Zeitraum mit dem Leistungsgegenstand vergleichbare Leistungen ausgeführt zu haben und Vorlage von drei Referenznachweisen mit mindestens den in Formblatt 124 Eigenerklärung zur Eignung geforderten Angaben (Referenzbescheinigungen gem. Formblatt 444 von Haupt- und ggf. Nachunternehmer). Es können Aufklärungsgespräche mit den drei günstigsten Bietern geführt werden. Die Benennung und Teilnahme des vom Bieter vorgesehenen projektverantwortlichen (Fach-) Bauleiter mit entsprechender Qualifikation und Erfahrung ist erwünscht. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V.(Präqualifikationsverzeichnis) bzw. in andere amtliche Verzeichnisse (z.B. AVPQ) oder Eigenerklärungen gem. Formblatt „Hessen 124 - Eigenerklärung zur Eignung“ nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt „Eigenerklärung zur Eignung“ angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gem. dem Formblatt „Eigenerklärung zur Eignung“ auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt „Eigenerklärung zur Eignung“ ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zu Arbeitskräften. Erklärung, dass die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen. Sollte das Angebot in die engere Auswahl gelangen, sind folgende Angaben zu den Arbeitskräften zu machen: Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal angeben. Angabe zur Mitgliedschaft bei der Berufsgenossenschaft: Die Vorlage einer qualifizierten Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers ist erforderlich, sofern das Angebot in die engere Auswahl gelangt. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) bzw. in andere amtliche Verzeichnisse (z.B. AVPQ) oder Eigenerklärungen gem. Formblatt „Hessen 124 - Eigenerklärung zur Eignung“ nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt „Eigenerklärung zur Eignung“ angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gem. dem Formblatt „Eigenerklärung zur Eignung“ auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt „Eigenerklärung zur Eignung“ ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Erklärung, dass ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren weder beantragt noch eröffnet wurde, ein Antrag auf Eröffnung nicht mangels Masse abgelehnt wurde und sich das Unternehmen nicht in Liquidation befindet. Erklärung, dass der Bieter seine Verpflichtung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen, ordnungsgemäß erfüllt hat. Sollte das Angebot in die engere Auswahl gelangen, ist eine Unbedenklichkeitsbescheinigung in Steuersachen sowie eine Freistellungsbescheinigung nach § 48b ESt sowie eine Sozialkassenbescheinigung, ersatzweise Krankenkassenbescheinigung über die ordnungsgemäße Abführung der Sozialversicherungsbeiträge abzugeben. Die Bescheinigungen dürfen nicht älter als 3 Monate sein. Die Bieter haben eine Eigenerklärung zum 5. Sanktionspaket; Art. 5k der Verordnung (EU) 2022/576 gegen Russland abzugeben. Entsprechendes Formblatt liegt den Vergabeunterlagen bei. Der Bieter hat eine „Verpflichtungserklärung zu Tariftreue und Mindestentgelt bei öffentlichen Aufträgen unter Berücksichtigung der Vorgaben des Hessischen Vergabe- und Tariftreuegesetz (HVTG) vom 12. Juli 2021, GVBl. S. 338„ vorzulegen. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) bzw. in andere amtliche Verzeichnisse (z.B. AVPQ) oder Eigenerklärungen gem. Formblatt „Hessen 124 - Eigenerklärung zur Eignung“ nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt „Eigenerklärung zur Eignung“ angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gem. dem Formblatt „Eigenerklärung zur Eignung“ auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt „Eigenerklärung zur Eignung“ ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Befähigung zur Berufsausübung einschließlich Auflagen hinsichtlich der Eintragung in ein relevantes Berufsregister: Die nachfolgenden Nachweise sind erforderlich, sofern das Angebot in die engere Auswahl gelangt: Gewerbeanmeldung, Handelsregisterauszug und Eintragung bei der Industrie- und Handelskammer. Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) bzw. in andere amtliche Verzeichnisse (z.B. AVPQ) oder Eigenerklärungen gem. Formblatt „Hessen 124 - Eigenerklärung zur Eignung“ nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt „Eigenerklärung zur Eignung“ angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gem. dem Formblatt „Eigenerklärung zur Eignung“ auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt „Eigenerklärung zur Eignung“ ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Befähigung zur Berufsausübung einschließlich Auflagen hinsichtlich der Eintragung in einem Berufs- oder Handelsregister. Die nachfolgenden Nachweise sind erforderlich, sofern das Angebot in die engere Auswahl gelangt: Gewerbeanmeldung, Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer. Die Eignung ist durch Eintragung in die Liste einer staatlich anerkannten Präqualifikationsstelle von Unternehmen (Präqualifikationsverzeichnis) bzw. in andere amtliche Verzeichnisse (z.B. AVPQ) oder Eigenerklärungen gem. Formblatt „Hessen 124 - Eigenerklärung zur Eignung“ nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt „Eigenerklärung zur Eignung“ angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gem. dem Formblatt „Eigenerklärung zur Eignung“ auch für diese anderen Unternehmen auf Verlangen vorzulegen. Das Formblatt „Eigenerklärung zur Eignung“ ist den Ausschreibungsunterlagen beigefügt."
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Der Bieter muss über eine gültige Betriebshaftpflichtversicherung verfügen, die im Falle von Personen-, Sach- und Vermögensschäden ausreichenden Versicherungsschutz bietet. Der Nachweis ist auf gesondertes Verlangen der Vergabestelle durch Vorlage einer aktuellen Versicherungsbestätigung oder eines Versicherungsscheins vorzulegen. Mindestanforderung: Zum Nachweis der wirtschaftlichen und finanziellen Leistungsfähigkeit ist eine Berufshaftpflichtversicherung mit folgenden Mindestdeckungssummen erforderlich: • Personenschäden: mindestens 2.000.000 EUR je Schadensfall • Sach- und Vermögensschäden: mindestens 1.000.000 EUR je Schadensfall • Maximale Jahreshöchstleistung: mindestens zweifache Deckungssumme pro Jahr Nachweisform: Die Eignung ist durch Eintragung in die Liste einer staatlich anerkannten Präqualifikationsstelle von Unternehmen (Präqualifikationsverzeichnis) bzw. in andere amtliche Verzeichnisse (z.B. AVPQ) oder Eigenerklärungen gem. Formblatt „Hessen 124 - Eigenerklärung zur Eignung“ nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt „Eigenerklärung zur Eignung“ angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Der Nachweis ist durch Vorlage einer aktuellen Versicherungsbestätigung oder eines Versicherungsscheins zu erbringen. Die Bescheinigung darf nicht älter als 3 Monate sein und muss erkennen lassen, dass die geforderten Deckungssummen erfüllt sind. Hinweis: Im Falle einer Bietergemeinschaft muss jedes Mitglied die geforderte Versicherung nachweisen oder eine gemeinsame Versicherung mit entsprechender Deckung vorlegen. Geforderte Eignungsnachweise (gem. § 33 UVgO), die in Form anerkannter Präqualifikationsnachweise (u.a. HPQR) vorliegen, werden zugelassen und anerkannt, wenn die Präqualifikationsnachweise in Form und Inhalt den geforderten Eignungsnachweisen entsprechen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Fehlende Unterlagen, deren Vorlage mit dem Angebot gefordert war, werden nachgefordert. Ausnahme: Nachweis zur Tariftreue (PQ Tarif bzw. Verpflichtungserklärung Tariftreue und Mindestlohn)"
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.subreport.de/E61165884",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

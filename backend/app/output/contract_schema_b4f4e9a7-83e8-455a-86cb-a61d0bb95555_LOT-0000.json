@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "b4f4e9a7-83e8-455a-86cb-a61d0bb95555:1:LOT-0000",
+    "candidateId": "b4f4e9a7-83e8-455a-86cb-a61d0bb95555:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45431000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "b4f4e9a7-83e8-455a-86cb-a61d0bb95555",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "63038ed6-1e41-452e-996e-5f551e864e6e",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:40Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Leipziger Wohnungs-und Baugesellschaft mbH"
+    ]
+  },
+  "procedure": {
+    "title": "Revitalisierung Ringstraße 60 Los 14 Fliesen",
+    "description": "'-\t   845 m² Bodenfliesen\n-\t   980 m² Wandfliesen\n-\t    635 m² Wandabdichtung\n-\t    585 m  Eckschutzschienen\n-\t2. 125 m dauerelastische Verfugung\n-\t    845 m Schutzabdeckung\n-\t      56 m² Bodenbelag aus Betonwerkstein\n-\t      40 m Sockelplatten aus Betonwerkstein\n-\t        1 St.Sauberlaufzone",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45431000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Ringstraße 60",
+      "additionalStreet": "",
+      "postcode": "04209",
+      "city": "Leipzig",
+      "nuts": "DED51",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-05-03+02:00",
+    "endDate": "2028-01-14+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "08:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Kriterium: Technische und berufliche Leistungsfähigkeit Der Bieter hat zum Nachweis seiner technischen und beruflichen Leistungsfähigkeit mit Angebotsabgabe eine Eigenerklärung zur Eignung mit folgenden Angaben einzureichen: 1.1. Angaben über die Zahl der in den letzten 3 abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischen Leitungspersonal; 1.2. eine Erklärung, aus der hervorgeht, über welche Ausstattung, welche Geräte und welche technische Ausrüstung das Unternehmen für die Ausführung des Auftrags verfügt; 1.3.Vorlage von 3 Referenzen in den letzten 5 abgeschlossenen Geschäftsjahren die mit der ausgeschriebenen Leistung (Menge/Umfang und Art der Leistung, hier Referenzen für Fliesenlegerarbeiten vergleichbar sind. Sind vergleichbare Referenzen bei präqualifizierten Bietern nicht in der PQ Datenbank hinterlegt, hat der Bieter geeignete Referenzen zusätzlich mit dem Angebot vorzulegen! 2. Der Nachweis der Eignung kann auch durch einen Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) geführt werden; 3. Beim vorgesehenen Einsatz von Nachunternehmen hat der Auftragnehmer, nach gesonderter Aufforderung durch die Vergabestelle, geeignete Nachweise auch vom Nachunternehmer vorzulegen, um eine wirtschaftlich, technisch und organisatorisch ordnungsgemäße Vertragserfüllung zu gewährleisten; 4. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 benannten Referenzbescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung durch die Vergabestelle vorzulegen. Formblatt 124 liegt den Verdingungsunterlagen bei. 5. Bieter aus anderen EU-Mitgliedsstaaten müssen mit Angebotsabgabe die im Herkunftsland einschlägigen Registereintragungen gemäß RL 2014/24/EU, Anhang XI in deutscher Übersetzung vorlegen oder rechtlich zulässige Gründe für das Fehlen der Bescheinigung mittels Eigenerklärung in deutscher Sprache darlegen."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "1. Kriterium Eignung zur Berufsausübung Der Bieter hat zum Nachweis seiner Befähigung und Erlaubnis zur Berufsausübung mit Angebotsabgabe eine Eigenerklärung zur Eignung (Formblatt 124 der Vergabeunterlagen) mit folgenden Angaben einzureichen: 1.1. Eintragung in das Berufs- oder Handelsregister des Sitzes oder Wohnsitzes - zum Zeitpunkt der Angebotsabgabe nicht älter als 1 Jahr; 1.2. Nachweis der Fachkunde ( mit Eintragung in die Handwerksrolle) als Fliesenleger 1.3. Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber in Frage stellt; 1.4. gültige Unbedenklichkeitsbescheinigung der Berufsgenossenschaft; 2. Der Nachweis der Eignung kann auch durch einen Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) geführt werden; 3. Beim vorgesehenen Einsatz von Nachunternehmen hat der Auftragnehmer, nach gesonderter Aufforderung durch die Vergabestelle, geeignete Nachweise auch vom Nachunternehmer vorzulegen, um eine wirtschaftlich, technisch und organisatorisch ordnungsgemäße Vertragserfüllung zu gewährleisten. Die Verpflichtungserklärung für Leistungen anderer Unternehmen Formblatt 236 liegt den Verdingungsunterlagen bei; 4. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Formblatt 124 liegt den Verdingungsunterlagen bei. 5. Bieter aus anderen EU-Mitgliedsstaaten müssen mit Angebotsabgabe die im Herkunftsland einschlägigen Registereintragungen gemäß RL 2014/24/EU, Anhang XI in deutscher Übersetzung vorlegen oder rechtlich zulässige Gründe für das Fehlen der Bescheinigung mittels Eigenerklärung in deutscher Sprache darlegen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "1. Kriterium: Wirtschaftliche und finanzielle Leistungsfähigkeit Der Bieter hat zum Nachweis seiner wirtschaftlichen und finanziellen Leistungsfähigkeit mit Angebotsabgabe eine Eigenerklärung zur Eignung (Formblatt 124 der Vergabeunterlagen) mit folgenden Angaben einzureichen: 1.1. Umsatz des Unternehmens jeweils bezogen auf die letzten 3 abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen; 1.2. Angaben zu Insolvenzverfahren und Liquidation; 1.3. Angaben zur Zahlung von Steuern; Abgaben und Beiträgen zur gesetzlichen Sozialversicherung; Unbedenklichkeitsbescheinigungen der Krankenkassen; 1.4. Der Nachweis einer bestehenden Betriebshaftpflichtversicherung für 2026 mit Angabe der Deckungssummen. Der Nachweis des Versicherungsschutzes kann durch eine Bestätigung der Versicherung (z. B. in Form einer Kopie der Versicherungspolice) geführt werden 2. der Nachweis der Eignung kann auch durch einen Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e. V. (Präqualifikationsverzeichnis) geführt werden; 3. mit Angebotsabgabe ist anzugeben, ob beabsichtigt ist, Teile der Leistung von anderen Unternehmen ausführen zu lassen. Wenn dies so ist, ist die vorgesehene Teilleistung mittels gesonderter Anlage \"VHB 235 Verzeichnis der Leistungen/Kapazitäten anderer Unternehmen\" mit Angebot anzugeben. Auf gesondertes Verlangen der Vergabestelle müssen die Angaben zur Firma, zur Eignung und zu Ausschlussgründen bzgl. der anderen Unternehmen mittels Eigenerklärung gemacht werden und es sind geeignete Nachweise auch vom Nachunternehmer vorzulegen, um eine wirtschaftlich, technisch und organisatorisch ordnungsgemäße Vertragserfüllung zu gewährleisten. Der Bieter muss ungeeignete andere Unternehmen und andere Unternehmen bei denen Ausschlussgründe nach § 6e EU Absatz 1-6 VOB/A vorliegen auf Aufforderung des öffentlichen Auftraggebers ersetzen. 4. gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Formblatt 124 liegt den Verdingungsunterlagen bei. 5. Bieter aus anderen EU-Mitgliedsstaaten müssen mit Angebotsabgabe die im Herkunftsland einschlägigen Registereintragungen gemäß RL 2014/24/EU, Anhang XI in deutscher Übersetzung vorlegen oder rechtlich zulässige Gründe für das Fehlen der Bescheinigung mittels Eigenerklärung in deutscher Sprache darlegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Eine Nachforderung von Unterlagen erfolgt gemäß § 16a VOB/A-EU."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/unterlagen/54321-Tender-19eef98f353-47ced53a5571ece0",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

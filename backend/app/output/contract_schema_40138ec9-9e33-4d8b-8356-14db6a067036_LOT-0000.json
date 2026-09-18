@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "40138ec9-9e33-4d8b-8356-14db6a067036:1:LOT-0000",
+    "candidateId": "40138ec9-9e33-4d8b-8356-14db6a067036:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "40138ec9-9e33-4d8b-8356-14db6a067036",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "bff6d1fc-e947-4291-b340-28313d71ba0d",
+    "internalIdentifier": "26/N/0154/GN",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T13:22:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Rahmenvertrag Unterhaltungsmaßnahmen an Gewässern 1. Ordnung - FB Genthin Nord; Gewässerunterhaltung, Holzungen, Kleinschadensbeseitigung, Wegebau",
+    "description": "Rahmenvertrag über Gewässer-, Deich- und Anlagenunterhaltung über 4 Jahre mit den folgenden Hauptpositionen (Mengen ca. je Jahr):\nGewässerkrautung mit Krautschneidboot - 200.000 m²\nGewässerkrautung mit Bagger - 25.000 m²\nBöschungsmahd mit Traktor und Schlegler - 20.000 m²\nEntsorgung Kraut - 600 m³\nHolzung (verschiedene Durchmesser) - 20 Stück\nEntfernung Windbruch auch aus Gewässer (verschiedene Durchmesser) - 20 Stück\nVerbau von Wühltierschäden und Kolken - 60 m³\nLieferung, Transport, Einbau von Oberboden und/oder Kies - 50 m³\nRasenansaat - 1.000 m³\nLändlicher Wegebau (mit Schotter) - 30 m³\nLändlicher Wegebau (mit Betonplatten des AG) 30 m²\n.\nHinweise zum Rahmenvertrag:\n1. Laufzeit:\nDie Laufzeit des Rahmenvertrages von 4 Jahren wird in eine garantierte Vertragslaufzeit von 3 Jahren und optionaler Vertragsverlängerung um 1 Jahr aufgeteilt. Der Auftraggeber kann mit einer einseitigen Erklärung die Option nutzen und den Vertrag entsprechend der Vereinbarung verlängern. Wird die Vertragsverlängerungsoption nicht genutzt, endet der Rahmenvertrag nach Ende der garantierten Vertragslaufzeit bzw. nach der Verlängerung. Vor dem Ende der Vertragslaufzeit abgerufene Leistungen sind auch über das Vertragsende hinaus zu den Bedingungen des Vertrages zu erfüllen.\n2. Auftragswert Rahmenvertrag:\nSchätzwert Rahmenvertrag: 1.773.100,00 EUR (brutto)\nHöchstwert Rahmenvertrag: 2.300.000,00 EUR (brutto)\nDie Rahmenvereinbarung verliert ihre Wirkung, wenn der Höchstwert erreicht ist.",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-01",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-14+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: ist Bestandteil der Vergabeunterlagen. . einzureichende Referenzen hier abweichend vom Forrmblatt 124 (Eigenerklärung zur Eignung): insgesamt DREI Referenzen aus den letzten fünf Kalenderjahren davon 2 Referenznachweise über Rahmenverträge Gewässerunterhaltung (Krautung, Holzung) und 1 Referenznachweis gem. Fb124 (vergleichbare Leistungen) mit folgenden Angaben (in Anlehnung an das Formblatt 124): - Ansprechpartner beim Auftraggeber mit Kontaktdaten; - Art der ausgeführten Leistung; - Auftragssumme; - Ausführungszeitraum (Baubeginn, Fertigstellung); - Art der Baumaßnahme (Neubau, Umbau, Denkmal); - Vertragliche Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); - Bei Einzelleistung: Mit eigenem Personal ausgeführter maßgeblicher Leistungsumfang einschl. Mengen, bzw. bei Komplettleistung: Kurzbeschreibung der Baumaßnahme; - Bei Einzelleistung: Anzahl der hierfür durchschnittlich eingesetzten Arbeitnehmer, bzw. bei Komplettleistung: Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; - Bei Einzelleistung: Stichwortartige Beschreibung der besonderen technischen u. gerätespezifischen Anforderungen, bzw. bei Komplettleistung: Eventuelle Besonderheiten der Ausführung; - Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung. . Gemäß Tariftreue- und Vergabegesetz (TVergG LSA) sind auf gesondertes Verlangen der Vergabestelle vom Bestbieter/ jedem Mitglied der Bietergemeinschaft Eigenerklärungen zu folgenden Paragraphen einzureichen: - § 11 Eigenerklärung zur Tariftreue, Mindeststundenentgelt und Entgeltgleichheit, - § 14 Eigenerklärung zum Einsatz von Nachunternehmern oder Verleihern. Des Weiteren ist auf gesondertes Verlangen der Vergabestelle von jedem Nachunternehmer/ Unterauftragnehmer sowie von jedem Verleiher (andere Unternehmen, deren Kapazitäten in Anspruch genommen werden [Eignungsleihe]) die Eigenerklärung zu folgenden Paragraphen einzureichen: - § 11 Eigenerklärung zur Tariftreue, Mindeststundenentgelt und Entgeltgleichheit sowie - PQ Nachweis / Angabe der Präqualifizierung (von präqualifizierten NUN) bzw. Fbl.124_Bau Eigenerklärung Eignung (von nicht präqualifizierte NUN). . Weiterhin sind auf gesondertes Verlangen vom Bestbieter / jedem Mitglied der Bietergemeinschaft / NUN einzureichen: Nachweise gemäß Formblatt 124 (nicht präqualifizierte Bieter, BieGe, NUN) (z.B. Referenzen, Angabe zu Arbeitskräften, Berufsregister, Gewerbeanmeldung, Bescheinigung in Steuersachen, Sozialkasse, Berufsgenossenschaft) sowie Betriebshaftpflichtversicherung mit Angabe der Deckungssummen"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Folgende Unterlagen werden NICHT nachgefordert: Angebotsschreiben, Leistungsverzeichnis und Bieterangabenverzeichnis. . Hinweise: Die Vergabe unterliegt den Regelungen des Tariftreue- und Vergabegesetzes Sachsen-Anhalt (TVergG LSA). Es gilt das Bestbieterprinzip gemäß § 8 TVergG LSA. Der Bestbieter muss im Fall der beabsichtigten Zuschlagserteilung die nach dem Tariftreue- und Vergabegesetz Sachsen-Anhalt verpflichtend vorzulegenden Erklärungen und Nachweise, auf gesondertes Verlangen der Vergabestelle innerhalb einer nach Tagen bestimmten Frist (3 - 10 Kalendertage) vorlegen. Bei nicht fristgerechter Vorlage kann das Angebot von der Wertung ausgeschlossen werden. Die Vergabestelle behält sich vor, von nachrangigen Bietern parallel nachzufordern. Nachweise und Erklärungen können freiwillig bereits mit dem Angebot abgegeben werden."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891410",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

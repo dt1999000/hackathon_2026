@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "59a91aeb-3d86-4fd6-b942-02ea80ed6228:1:LOT-0000",
+    "candidateId": "59a91aeb-3d86-4fd6-b942-02ea80ed6228:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45421140",
+      "45421150",
+      "45422000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "59a91aeb-3d86-4fd6-b942-02ea80ed6228",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "32e35f15-d167-453e-898a-efe9f2802349",
+    "internalIdentifier": "0",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:09Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Ingolstadt"
+    ]
+  },
+  "procedure": {
+    "title": "Tischler - Einbaumöbel",
+    "description": "Tischler - Einbaumöbel\n\nMengen ca.:\n•\t1 Stück Innenfensterbank aus Brettschichtholz, Eiche, d=30 mm, B x T = 246 x 56 cm\n•\t6 Stück Verkaufswagen auf Rollen, LxBxH 128x85x72 cm \n        Material: MDF 30 mm, 2K-Wasserlack matt, RAL 7044\n•\t2 Stück Schließfächerschrank, 16 Fächer, Nische B/H/T=120/217/52 cm\n•\t1 Stück Schließfächerschrank, 12 Fächer, Nische B/H/T=90/217/52 cm\n•\t1 Stück Schließfächerschrank, 20 Fächer, Nische B/H/T=150/217/52 cm\n•\t1 Stück Schließfächerschrank, 24 Fächer, Nische B/H/T=180/217/52 cm\n•\t1 Stück Teeküche Aufenthalt, L = 2.520/3.200 mm,\n        incl. Induktionskochfeld, Einbaukühlschrank, Einbaubecken\n•\t1 Stück Teeküche Atelier, L = 4050 mm,\n        incl. Einbaubackofen, Einbaugeschirrspülmaschine, Einbaukühlschrank, Einbauwaschrinne, 2.100x570 mm",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45421150",
+    "additionalCpvCodes": [
+      "45421140",
+      "45422000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "85049",
+      "city": "Ingolstadt",
+      "nuts": "DE211",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-17+01:00",
+    "endDate": "2027-03-10+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-22+02:00",
+    "deadlineTime": "10:15:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-09-09+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Auflistung und kurze Beschreibung der Bedingungen: siehe Vergabeunterlagen, insbesondere: - Auszug aus dem Gewerbezentralregister oder entsprechende Bescheinigung des EU-Mitgliedsstaates - Vorlage eines Nachweises über das Bestehen einer Betriebshaftpflichtversicherung - Erklärung Tariftreue . Die Fachkunde, Leistungsfähigkeit und Zuverlässigkeit (Eignung) ist durch Eintragung in die Präqualifizierungsdatenbank (Präqualifikationsverzeichnis unter www.pq-verein.de) oder Eigenerklärung gem. Formblatt 124 (Eigenerklärung zur Eignung) bzw. der Einheitliche Europäische Eigenerklärung (EEE) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind Nachweise und Bescheinigungen zu den Eigenerklärungen binnen 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 bzw. Einheitliche Europäische Eigenerklärung (EEE) auch für diese anderen Unternehmen auf Verlangen innerhalb der genannten Frist vorzulegen. Präqualifizierte Unternehmen legen nur auf gesondertes Verlangen Referenzbescheinigungen vor. . Das Formblatt 124 (Dateiname: „L 124 EU_Eigenerklärungen zur Eignung(0416).pdf“) ist erhältlich als bearbeitbares Formblatt unter: http://vergabe.bayern.de innerhalb der jeweiligen Ausschreibung oder unter: https://www.stmi.bayern.de/buw/bauthemen/vergabeundvertragswesen/bauauftraege/index.php . Die Einheitliche Europäische Eigenerklärung (EEE) ist erhältlich unter: https://ec.europa.eu/growth/tools-databases/espd"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe Vergabeunterlagen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/301178",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

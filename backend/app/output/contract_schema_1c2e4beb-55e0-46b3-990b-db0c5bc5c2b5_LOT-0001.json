@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "1c2e4beb-55e0-46b3-990b-db0c5bc5c2b5:1:LOT-0001",
+    "candidateId": "1c2e4beb-55e0-46b3-990b-db0c5bc5c2b5:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45310000",
+      "45311000",
+      "45311100",
+      "45311200",
+      "45312100",
+      "45314200",
+      "45314300",
+      "45314310",
+      "45314320",
+      "45315100",
+      "45315300",
+      "45315600",
+      "45315700",
+      "45317000",
+      "45317300"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "1c2e4beb-55e0-46b3-990b-db0c5bc5c2b5",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "b17fa876-d6f1-4c4e-8e5e-73f3b96a564b",
+    "internalIdentifier": "715/22353 - M404",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:19Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "St. Elisabeth-Hospital Beckum GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "SEB Anbau Bettenhaus II - Altersmedizin / Aufstockung - Elektroarbeiten",
+    "description": "Der Leistungsumfang umfasst die Lieferung, Montage, Installation und Inbetriebnahme sämtlicher für das Bauvorhaben erforderlicher elektrotechnischer Anlagen. Hierzu zählen insbesondere die Stromversorgung und Energieverteilung, die Gebäudehaupt- und Unterverteilungen, die Leitungs- und Kabelanlagen, die Beleuchtungsanlagen sowie die sicherheitstechnischen Anlagen und Anlagen der Informations- und Datentechnik.  Der vorgesehene Leistungsumfang umfasst unter anderem folgende wesentliche Anlagen und Mengen:  1 Gebäudehauptverteilung AV/SV,  4 AV-Unterverteilungen,  4 SV-Unterverteilungen,  ca. 50.000 m Leitungen und Kabel,  ca. 650 m Kabeltrassen,  ca. 500 Leuchten,  ca. 1.500 Steckdosen, Schalter, Taster etc.  Die vorstehenden Mengenangaben stellen voraussichtliche Größenordnungen dar. Die endgültigen Mengen ergeben sich im Zuge der Ausführungs- und Montageplanung.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45310000",
+    "additionalCpvCodes": [
+      "45311000",
+      "45311100",
+      "45311200",
+      "45312100",
+      "45314200",
+      "45314300",
+      "45314310",
+      "45314320",
+      "45315100",
+      "45315300",
+      "45315600",
+      "45315700",
+      "45317000",
+      "45317300"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Elisabethstraße 10",
+      "additionalStreet": "",
+      "postcode": "59269",
+      "city": "Beckum",
+      "nuts": "DEA38",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "360"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-15+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP8F",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Elektronisch über die Plattform DTVP"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP8F/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

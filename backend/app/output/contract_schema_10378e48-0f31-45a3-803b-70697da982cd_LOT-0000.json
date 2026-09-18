@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "10378e48-0f31-45a3-803b-70697da982cd:1:LOT-0000",
+    "candidateId": "10378e48-0f31-45a3-803b-70697da982cd:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "10378e48-0f31-45a3-803b-70697da982cd",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "93f8779e-5800-4eb4-b2a3-585b499d29f3",
+    "internalIdentifier": "DL BÖ 183/26",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T08:06:08Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Neubau eines 2-geschossigen Hortgebäudes in Gernrode, Metallbauarbeiten und Verglasung",
+    "description": "Außentüren:\n- 1 St EG, AT 1.1- Treppenraum Notausgang A, Automatiktür m. Festfeld, b/h = ca. 174,5/ 251 cm, ds\n- 1 St EG, AT 1.2- Garderobe/ Sitzen Notausgang C m. Festfeld, b/h = ca. 174,5/ 251 cm, ds\n- 1 St EG, AT 1.4- Mehrzweckraum Notausgang B Garten Süd, zweiflügelig, b/h = ca. 248/ 251 cm, ds\n- 1 St OG, AT 2.1- Treppenraum m. Festfeld, b/h = ca. 174,5/ 251 cm, ds\n- 1 St OG, AT2.2- Garderobe/ Sitzen m. Festfeld, b/h = ca. 174,5/ 251 cm, ds\n- 1 St OG, AT2.3- Mehrzweckraum Notausgang E, Garten Süd, zweiflügelig, b/h= ca.248/ 251cm, ds\nAluminium Innentüren Brand-/ Rauchschutz T30:\n- 1 St EG,T1.1- Treppenraum TH Raum 1.1, T30 rd ss, 2-flg., b/h= 150/226cm\n- 1 St EG, T1.1 - Treppenraum TH Raum 1.1 , T30 rd ss, 2-flg., b/h = 150/226 cm\n- 1 St EG, T1.9 - Bereich 1 Garderobe Raum 1.7 , T30 rd ss, 2-flg. asym., b/h = ca. 189/226 cm\n- 1 St EG, T1.10 - Bereich 1 Garderobe Raum 1.7 , T30 rd ss, 2-flg. asym., b/h = ca. 189/226 cm\n- 1 St OG, T2.1 - Treppenraum TH Raum 2.1 , T30 rd ss, 2-flg., b/h = 150/226 cm\n- 1 St OG, T2.2 - Treppenraum TH Raum 2.1 , T30 rd ss, 2-flg. m. Antrieb, b/h = 201/226 cm\n- 1 St OG, T2.8 - Bereich 2 Garderobe Raum 2.7 , T30 rd ss, 2-flg., b/h = ca. 189/226 cm\n- 1 St OG, T2.9 - Bereich 2 Garderobe Raum 2.7 , T30 rd ss, 2-flg., b/h = ca. 189/226 cm\nStahltüren:\n- 1 St AT1.3, b/h = ca. 126/213,5 cm, T30, ds, ss",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-02",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-01+02:00",
+    "deadlineTime": "09:30:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: Das Formblatt \"Eigenerklärung zur Eignung\" (Formblatt 124) liegt den Ausschreibungsunterlagen bei. Ein präqualifiziertes Unternehmen hat sicherzustellen, dass hinterlegte Referenzen auf die ausgeschriebene Leistung anzuwenden sind. Nachweise zur Fachkunde: Folgende Unterlagen sind auf gesondertes Verlangen der Vergabestelle vorzulegen: - Gewerbeanmeldung, Handelregisterauszug und Eintragung in der Handwerktkarte bzw. bei der Industrie- und Handelskammer - rechtskräftig bestätigter Insolvenzplan (falls eine Erklärung über das Vorliegen eines solchen Insolvenzplanes angegeben wurde) - Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls das Unternehmen beitragspflichtig ist - Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen - Freistellungsbescheinigung nach §48b Einkommenssteurgesetz - Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers mit Angabe der Lohnsumme - Nachweis Berufs-/Betriebshaftpflichtversicherung"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891278",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

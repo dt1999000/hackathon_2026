@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "3ff5e5a1-30e8-45dc-bd89-bfe4cce6b24d:1:LOT-0001",
+    "candidateId": "3ff5e5a1-30e8-45dc-bd89-bfe4cce6b24d:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45232460",
+      "45321000",
+      "45332400"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "3ff5e5a1-30e8-45dc-bd89-bfe4cce6b24d",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "b69fe9e8-e785-420b-879a-2edb3cdedfbe",
+    "internalIdentifier": "2026/07/036",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:33Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landkreis Northeim"
+    ]
+  },
+  "procedure": {
+    "title": "KAW Northeim - Neubau Betriebshof - Sanitärarbeiten",
+    "description": "Sanitärarbeiten u. a. bestehend aus Sanitärinstallation und Wärmedämmarbeiten",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45232460",
+    "additionalCpvCodes": [
+      "45321000",
+      "45332400"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Baugrundstück Industriegebiet, Industriestr. 17",
+      "additionalStreet": "",
+      "postcode": "37186",
+      "city": "Moringen",
+      "nuts": "DE918",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-04-01+02:00",
+    "endDate": "2027-08-01+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-17+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "required",
+    "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXW5YYDYTTQ5HX5B",
+    "questionDeadlineDate": "2026-08-27+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "3 Referenzen auf VHB 444 gem. VHB 124 - Eigenerklärung zur Eignung - ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angabe der PQ-Nummer im Angebotsschreiben ODER Formblatt Eigenerklärung zur Eignung (VHB 124)- ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Mit dem Angebot; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zu Arbeitskräften gem. VHB 124 - Eigenerklärung zur Eignung - ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Angaben zum Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren gem. VHB 124 - Eigenerklärung zur Eignung (Mit dem Angebot; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle/-karte bzw. bei der IHK gem. VHB 124 - Eigenerklärung zur Eignung - ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (VOB/A-EU) (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "ggf. Insolvenzplan - gem. VHB 124 - Eigenerklärung zur Eignung- ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Gültige Freistellungsbescheinigung nach § 48b EStG gem. VHB 124 - Eigenerklärung zur Eignung - ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Gültige qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers mit Angaben der Lohnsummen gem. VHB 124 - Eigenerklärung zur Eignung- ggf. auch von Mitgliedern der Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Nachweis (nicht älter als ein Jahr) der vollständigen Entrichtung von Beiträgen zur gesetzlichen Sozialversicherung gem. § 8 Abs. 2 und § 13 NTVergG ggf. auch von Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse (SOKA Bau o.a., nicht älter als ein Jahr) gem. VHB 124 - Eigenerklärung zur Eignung ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen (jeweils nicht älter als ein Jahr) gem. VHB 124 - Eigenerklärung zur Eignung ggf. auch von allen Mitgliedern einer Bietergemeinschaft und Nachunternehmern (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Keine"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXW5YYDYTTQ5HX5B/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

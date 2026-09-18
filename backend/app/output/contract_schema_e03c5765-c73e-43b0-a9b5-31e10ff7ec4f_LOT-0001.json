@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e03c5765-c73e-43b0-a9b5-31e10ff7ec4f:1:LOT-0001",
+    "candidateId": "e03c5765-c73e-43b0-a9b5-31e10ff7ec4f:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45112713",
+      "45210000",
+      "45214200",
+      "45214220",
+      "45261410"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e03c5765-c73e-43b0-a9b5-31e10ff7ec4f",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "7ee0dc4f-e293-41a5-ab4d-d9e8d183a633",
+    "internalIdentifier": "NGH-G-H06",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:16Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Würzburg Fachbereich Schule"
+    ]
+  },
+  "procedure": {
+    "title": "NGH-G-H06 Dachabdichtungsarbeiten einschl. Dachbegrünung",
+    "description": "Dachabdichtung Heißbitumen ca. 1800 m2Verbundabdichtung ca. 2150 m2Sockelbekleidung, Faserzementplatte, Dicke 8mm, Plattenhöhe 50 cm, ca. 176 mDachbegrünung Gesamt ca. 2400 m2",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "45210000",
+      "45214200",
+      "45214220",
+      "45261410",
+      "45112713"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Elisabeth-Scheuring-Straße 1",
+      "additionalStreet": "",
+      "postcode": "97074",
+      "city": "Würzburg",
+      "nuts": "DE263",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-23+01:00",
+    "endDate": "2028-10-02+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-26+01:00",
+    "deadlineTime": "10:30:00+01:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-10-19+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Die Eignung ist durch die Eintragung in die Liste des Vereins für Präqualifikation von Unternehmen e. V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gemäß Formblatt 124 (Eigenerklärung zur Eignung) aus dem Vergabehandbuch Bayern nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich ein Bieter zur Erfüllung des Auftrags auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen.Auf Verlangen der Vergabestelle sind für die Beurteilung der Eignung vorzulegen:- Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle bzw. der Industrie- und Handelskammer oder vergleichbaren Institutionen in den Ländern der Europäischen Union,- Qualifizierte Unbedenklichkeitsbescheinigung der Berufsgenossenschaft bzw. eine gleichwertige Bescheinigung des zuständigen Versicherungsträgers mit Angabe der Lohnsummen. Bieter, die ihren Sitz nicht in der Bundesrepublik Deutschland haben, müssen Bescheinigungen des zuständigen Versicherungsträgers vorlegen,- Name und Geburtsdatum aller Geschäftsführer und Prokuristen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Die Eignung ist durch die Eintragung in die Liste des Vereins für Präqualifikation von Unternehmen e. V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gemäß Formblatt 124 (Eigenerklärung zur Eignung) aus dem Vergabehandbuch Bayern nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich ein Bieter zur Erfüllung des Auftrags auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen.Auf Verlangen der Vergabestelle sind für die Beurteilung der Eignung vorzulegen:- Bestätigung über den Umsatz an Bauleistungen in den letzten 3 abgeschlossenen Geschäftsjahren,- Angabe über die Zahl der in den letzten 3 abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nachLohngruppen mit extra ausgewiesenem technischen Leitungspersonal,- Vorlage Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, eine Unbedenklichkeitsbescheinigung des Finanzamtes, sowie eine Freistellungsbescheinigung nach § 48b EStG,- Angaben, ob für die geforderten Leistungen Nachunternehmer eingesetzt werden,- Verfügbare technische Ausrüstung."
+    },
+    {
+      "code": "slc-abil-staff-tech-work",
+      "label": null,
+      "description": "Die Eignung ist durch die Eintragung in die Liste des Vereins für Präqualifikation von Unternehmen e. V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gemäß Formblatt 124 (Eigenerklärung zur Eignung) aus dem Vergabehandbuch Bayern nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb von 6 Kalendertagen nach Aufforderung vorzulegen. Beruft sich ein Bieter zur Erfüllung des Auftrags auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen.Referenzbescheinigungen für mindestens drei vergleichbare Leistungen in den letzten 3 Geschäftsjahren mit Angabe des Auftraggebers, der Ausführungsart, der Ausführungszeit, des im eigenen Betrieb erbrachten Leistungsumfangs, der durchschnittlich eingesetzten Arbeitnehmer, den besonderen technischen und gerätespezifischen Anforderungen sowie des Auftragswertes (in Anlehnung an das Formblatt 444) sind auf Verlangen der Vergabestelle innerhalb von 6 Kalendertagen vorzulegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe hierzu Formblatt 216"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.staatsanzeiger-eservices.de/aJs/EFormsBekVuUrl?z_param=329929",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

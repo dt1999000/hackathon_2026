@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "9f32d970-1f4f-472a-ac79-0534b1527478:1:LOT-0001",
+    "candidateId": "9f32d970-1f4f-472a-ac79-0534b1527478:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45262100",
+      "45262110",
+      "45262120"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "9f32d970-1f4f-472a-ac79-0534b1527478",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "f3fca71f-457a-4df8-ab46-d018e143753e",
+    "internalIdentifier": "2026-0647-BW",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:32Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Bauwerke Münster GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "Gerüstarbeiten - Beachvolleyballhalle Münster - Bauwerke Münster GmbH",
+    "description": "Fassadengerüst inkl. Treppentürme; Innengerüst Treppenhaus",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45262100",
+    "additionalCpvCodes": [
+      "45262110",
+      "45262120"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Beachvolleyballhalle Münster, Grevener Straße 125a",
+      "additionalStreet": "",
+      "postcode": "48147",
+      "city": "Münster",
+      "nuts": "DEA33",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-04+01:00",
+    "endDate": "2027-06-04+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "https://www.vergabe-westfalen.de/VMPSatellite/notice/CXTDYYDDYR9WHUHC",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Insolvenzverfahren, Liquidation (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Angabe ob ein Insolvenzplan rechtskräftig bestätigt wurde oder ein Insolvenzverfahren o.ä. eröffnet wurde, ein Antrag auf Eröffnung nicht mangels Masse abgelehnt wurde und das Unternehmen sich nicht in Liquidation befindet (Die Vorlage für eine Eigenerklärung (VVB 124) befindet sich in den Vergabeunterlagen). Bieter, deren Angebote/Teilnahmeanträge in die engere Wahl kommen, müssen auf besondere Aufforderung der ausschreibenden Stelle die Eigenerklärung per aktueller Dritterklärung innerhalb der gesetzten Frist belegen."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Referenzen (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Erklärung: Es wurden in den letzten fünf Kalenderjahren bzw. dem in der Auftragsbekanntmachung angegebenen Zeitraum, vergleichbare Leistungen ausgeführt (Vorlage für die Eigenerklärung (VVB 124) befindet sich in den Vergabeunterlagen). Bieter, deren Angebote/Teilnahmeanträge in die engere Wahl kommen, müssen auf besondere Aufforderung der ausschreibenden Stelle die Referenznachweise innerhalb der gesetzten Frist nach Aufforderung vorlegen. Es sind mind. folgende Angaben zu machen: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Registereintragungen (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Angaben über bestehende Registereintragungen (Die Vorlage für eine Eigenerklärung (VVB 124) befindet sich in den Vergabeunterlagen). Bieter, deren Angebote/Teilnahmeanträge in die engere Wahl kommen, müssen auf besondere Aufforderung der ausschreibenden Stelle zur Bestätigung der Erklärung folgende Nachweise innerhalb der gesetzten Frist vorlegen: Gewerbeanmeldung, Handelsregisterauszug und Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Berufsgenossenschaft (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Erklärung: Es besteht eine Mitgliedschaft in der Berufsgenossenschaft. Bieter, deren Angebote/Teilnahmeanträge in die engere Wahl kommen, müssen auf besondere Aufforderung der ausschreibenden Stelle die Eigenerklärung per aktueller Dritterklärung (Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers mit Angabe der Lohnsummen) innerhalb der gesetzten Frist nach Aufforderung vorlegen."
+    },
+    {
+      "code": "slc-stand-ratio",
+      "label": null,
+      "description": "Steuern, Abgaben, Beiträge (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Erklärung: Die Verpflichtung zur Zahlung von Steuern und Abgaben sowie der Beiträge zur Sozialversicherung, soweit sie der Pflicht zur Beitragszahlung unterfallen, wurden ordnungsgemäß erfüllt (Die Vorlage für eine Eigenerklärung (VVB 124) befindet sich in den Vergabeunterlagen). Bieter, deren Angebote/Teilnahmeanträge in die engere Wahl kommen, müssen auf besondere Aufforderung der ausschreibenden Stelle zur Bestätigung der Erklärung folgende Nachweise innerhalb der gesetzten Frist vorlegen: Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen, eine Freistellungsbescheinigung nach § 48b EStG"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Zuverlässigkeit als Bewerber oder Bieter (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber oder Bieter in Frage stellt (Die Vorlage für eine Eigenerklärung (VVB 124) befindet sich in den Vergabeunterlagen)."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angaben zu Arbeitskräften (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Erklärung: Es stehen die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung (Die Vorlage für eine Eigenerklärung (VVB 124) befindet sich in den Vergabeunterlagen). Bieter, deren Angebote/Teilnahmeanträge in die engere Wahl kommen, müssen auf besondere Aufforderung der ausschreibenden Stelle die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal innerhalb der gesetzten Frist nach Aufforderung angeben."
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "Gesamtumsatz (VVB 124) (Mit dem Angebot; Mittels Eigenerklärung): Angaben zum Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungeng (Die Vorlage für eine Eigenerklärung (VVB 124) befindet sich in den Vergabeunterlagen). Bieter, deren Angebote/Teilnahmeanträge in die engere Wahl kommen, müssen auf besondere Aufforderung der ausschreibenden Stelle die Eigenerklärung per aktueller Dritterklärung (Bestätigung eines vereidigten Wirtschaftsprüfers/Steuerberaters oder entsprechend testierte Jahresabschlüsse oder entsprechend testierte Gewinn- und Verlustrechnungen) innerhalb der gesetzten Frist belegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "keine"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.vergabe-westfalen.de/VMPSatellite/notice/CXTDYYDDYR9WHUHC/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

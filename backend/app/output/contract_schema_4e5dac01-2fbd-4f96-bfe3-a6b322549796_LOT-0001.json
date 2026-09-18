@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "4e5dac01-2fbd-4f96-bfe3-a6b322549796:1:LOT-0001",
+    "candidateId": "4e5dac01-2fbd-4f96-bfe3-a6b322549796:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45330000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "4e5dac01-2fbd-4f96-bfe3-a6b322549796",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "ebdfca94-9ede-43e7-9b90-d302ab073bf7",
+    "internalIdentifier": "715/22353 - M401",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:30Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "St. Elisabeth-Hospital Beckum GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "SEB Anbau Bettenhaus II - Altersmedizin / Aufstockung - Sanitärtechnik",
+    "description": "Hauptmassen:  45 WC-Anlagen 45 Waschtisch-Anlagen + 8 hygienische Händewaschplätze 42 Duschanlagen 5 Arbeitsräume mit Pflegekombination 2.500 m Trinkwasserleitungen 900 m Abwasserleitungen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45330000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Elisabethstraße 10",
+      "additionalStreet": "",
+      "postcode": "59269",
+      "city": "Beckum",
+      "nuts": "DEA38",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "590"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-15+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP73",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Elektronisch über die Plattform DTVP"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP73/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

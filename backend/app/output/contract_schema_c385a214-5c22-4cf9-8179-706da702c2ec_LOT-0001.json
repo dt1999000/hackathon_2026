@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "c385a214-5c22-4cf9-8179-706da702c2ec:1:LOT-0001",
+    "candidateId": "c385a214-5c22-4cf9-8179-706da702c2ec:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45262800",
+      "45410000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "c385a214-5c22-4cf9-8179-706da702c2ec",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "28ba9088-0a8e-433a-af30-07015ff9c32e",
+    "internalIdentifier": "2026-0226-(BL)",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:58Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Salzgitter"
+    ]
+  },
+  "procedure": {
+    "title": "Grundschule Waldschule, Salzgitter-Bad - Putz- und Spachtelarbeiten",
+    "description": "Ca. 100 m2 Überarbeitung/Spachteln von vorhandenen Kunstharzputzflächen. Putzen/Spachteln von 2x beschichteten Betontreppenläufen. Ca. 15x Stahlbetonstützen 35x35x305 cm überwiegend vierseitig Putzen/Spachteln. Ca. 18x Stahlbetonstützen und davor gestelltes Mauerwerk ca. 35x65x305 cm dreiseitig Putzen/Spachteln und ca. 120 m Stahlbetonbrüstungen tiefe ca. 40 cm Überarbeiten/Putzen.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45410000",
+    "additionalCpvCodes": [
+      "45262800"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Burgstraße 43",
+      "additionalStreet": "",
+      "postcode": "38259",
+      "city": "Salzgitter",
+      "nuts": "DE912",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-30+01:00",
+    "endDate": "2026-12-18+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "09:30:00+02:00",
+    "method": "required",
+    "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXUAYYDDYDW7FBDA",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Aktueller Auszug aus dem Handelsregister - nicht älter als drei Monate (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Angabe über die Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte gegliedert nach Lohngruppen mit extra ausgewiesenem Leitungspersonal (Auf Anforderung der Vergabestelle; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Berufs- / Betriebshaftpflichtversicherung (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Drei Referenznachweise über mit dem aktuellen Auftrag vergleichbare Leistungen aus den vergangenen fünf Kalenderjahren (Auf Anforderung der Vergabestelle; Mittels Eigenerklärung): Mit mindestens folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Freistellungsbescheinigung nach § 48b EStG (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung Berufsgenossenschaft (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung des Finanzamtes (Bescheinigung in Steuersachen) (Auf Anforderung der Vergabestelle; Mittels Dritterklärung):"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung erfolgt nach § 16 a VOB/A-EU."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXUAYYDDYDW7FBDA/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

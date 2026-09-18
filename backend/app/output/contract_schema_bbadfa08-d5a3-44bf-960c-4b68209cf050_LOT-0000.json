@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "bbadfa08-d5a3-44bf-960c-4b68209cf050:1:LOT-0000",
+    "candidateId": "bbadfa08-d5a3-44bf-960c-4b68209cf050:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45262670",
+      "45441000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "bbadfa08-d5a3-44bf-960c-4b68209cf050",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "1bdc98da-7b63-477b-bc8d-65a447992eb9",
+    "internalIdentifier": "1",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:14Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Bezirksamt Steglitz-Zehlendorf von Berlin"
+    ]
+  },
+  "procedure": {
+    "title": "Profilglasfassade als durchgängiges Lichtband als Wandverglasung, vertikal verlegt",
+    "description": "Das durchgängige Lichtband der Sporthalle besteht aus einer 2-schaligen inneren Profil-Glasebene und einer mit Abstand davorgesetzen, ebenfalls 2-schaligen Profilglas-Fassade als\näußere Ebene, so dass sich im Gesamtaufbau ein 4-schaliger\nAufbau ergibt.\nFür die linienförmig gelagerte Vertikalverglasung kommen thermisch vorgespannte Profilbaugläser und heißgelagertes thermisch vorgespanntes Profilbauglas zum Einsatz.\nAuf der Innenseite der äußeren, 2-schaligen Profilglas-Fassade ist eine nicht festigkeitsmindernde Emaillierung, bzw. eine Beschichtung nach DIN EN 1096-1 vorgesehen.\nDie Verglasung wird planmäßig ausschließlich durch Eigengewicht und Windlast beansprucht.\nDie Gesamtkonstruktion der Profilglas-Fassade muss den Anforderungen der DIN 18 032 genügen.\nEinbau unter Berücksichtigung aller statischen Erfordernisse.\n\nDie im Leistungsverzeichnis detailliert beschriebene Ausführungsleistung beinhaltet folgende Teilleistungen:\n1. Profilglasfassade 2 x 2-schalig,Höhe = ca. 5,00 m (ca. 700 m²)\n2. Profilglasfassade 2 x 2-schalig, mit transluzenter WD, Höhe = ca. 2,90 m \n    (ca. 256 m²)\n3. Umlaufende Rahmenprofile asl Alu-Strangpreß-Profile (teilweise thermisch \n    getrennt)\n4. Lamellenfenster-Element, ca. 1.350 x 2.800 mm (8 St.) mit 3-fach \n    Stufenisolierglas  \n5. Steigleiter mit Rückschutz (2 St.)",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45441000",
+    "additionalCpvCodes": [
+      "45262670"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Königin-Luise-Str. 80-84",
+      "additionalStreet": "",
+      "postcode": "14195",
+      "city": "Berlin",
+      "nuts": "DE300",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-04+01:00",
+    "endDate": "2027-05-21+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Die Eignung ist durch Eigenerklärung gem. Formblatt V-124 H F (Eigenerklärung zur Eignung - EU) nachzuweisen. Das Formblatt ist auf der Adresse https://www.berlin.de/vergabeplattform/ unter Rubrik Veröffentlichungen bei der Vergabenummer 197HOEU26 zum Download zur Verfügung gestellt. Es ist zu erklären, dass: - nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bieter in Frage stellt, d.h. - für das Unternehmen keine Ausschlussgründe gemäß § 6e EU VOB/A vorliegen. - das Unternehmen nicht im Wettbewerbsregister beim Bundeskartellamt eingetragen ist. oder - für das Unternehmen ein Ausschlussgrund gemäß § 6e EU Absatz 6 VOB/A vorliegt. oder - zwar für das Unternehmen ein Ausschlussgrund gemäß § 6e EU Absatz 1 bis 4 VOB/A vorliegt, jedoch Maßnahmen zur Selbstreinigung ergriffen wurden, durch die die Zuverlässigkeit wieder hergestellt wurde. Ab einer Auftragssumme von 50.000 Euro wird der Auftraggeber für den Bieter, auf dessen Angebot der Zuschlag erteilt werden soll, eine Abfrage beim Wettbewerbsregister (Bundeskartellamt) durchführen. Weiterhin sind Angaben zu (eventuellen) Insolvenzverfahren und Liquidation erforderlich. Es werden Sicherheiten für Vertragserfüllung (5 %) und Mängelansprüche (3 %) gefordert."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "- Nachweis über Eintragung in das Berufsregister oder eine anderweitige Erlaubnis zur Berufsausübung sowohl für den Bewerber/Bieter, als auch für jedes Mitglied der Bewerber-/ Bietergemeinschaft bzw. für jeden anderen Unternehmer, deren Kapazität sich bedient wird. - erforderliche Anzahl qualifiziertes Personal für auszuführende Arbeiten - Mitglied in Berufsgenossenschaft"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "- Nachweis Umsatz letzte 3 Jahre - Nachweis vgl.barer Leistungen letzte 5 Jahre - Nachweis, dass Verpflichtung zu Zahlung von Steuern, Sozialabgaben und -beiträgen nachgekommen wird"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Es werden lediglich Erklärungen und Nachweise nachgefordert. Weitere, darüber hinaus gehende Nachforderungen sind ausgeschlossen."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/2/tenderId/210374",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

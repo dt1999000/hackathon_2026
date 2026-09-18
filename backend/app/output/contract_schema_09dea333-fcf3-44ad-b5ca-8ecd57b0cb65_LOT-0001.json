@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "09dea333-fcf3-44ad-b5ca-8ecd57b0cb65:1:LOT-0001",
+    "candidateId": "09dea333-fcf3-44ad-b5ca-8ecd57b0cb65:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "09dea333-fcf3-44ad-b5ca-8ecd57b0cb65",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "7e191db7-d875-44a3-bfdb-da7fe4b88021",
+    "internalIdentifier": "HZ-2026-25",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:07Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Universitätsklinikum Heidelberg"
+    ]
+  },
+  "procedure": {
+    "title": "Bauleistungen im Bereich Niederspannung und Kabeltrassen für den Neubau Herzzentrum und Informatics for Life am Universitätsklinikum Heidelberg VE 443.01",
+    "description": "Bauleistungen im Bereich Niederspannung und Kabeltrassen für den Neubau Herzzentrum und Informatics for Life am Universitätsklinikum Heidelberg VE 443.01",
+    "type": "restricted",
+    "typeRaw": "restricted"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Im Neuenheimer Feld 150 und 155",
+      "additionalStreet": "",
+      "postcode": "69120",
+      "city": "Heidelberg",
+      "nuts": "DE125",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "3"
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "https://vergabeportal-bw.de/Satellite/notice/CXRAYY6YMMW",
+    "questionDeadlineDate": "2026-10-06+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Ich/Wir erkläre(n), dass mir/uns die für die Ausführung der Leistungen erforderlichen Arbeitskräfte zur Verfügung stehen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angabe zu Insolvenzverfahren und Liquidation"
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung in das Berufsregister / Handelsregister / Handwerksrolle oder vergleichbar Ihres Sitzes oder Wohnsitzes"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung"
+    },
+    {
+      "code": "slc-stand-to-avg",
+      "label": null,
+      "description": "A Wirtschaftliche und finanzielle Leistungsfähigkeit Mindestkriterium an die Leistungsfähigkeit: a) Durchschnittlicher Netto-Gesamtjahresumsatz in Höhe von 2.000.000 EUR über die letzten 3 Geschäftsjahre für die zu beschaffende Leistung b) Durchschnittliche Anzahl der Beschäftigten von 50 Personen über die letzten 3 Geschäftsjahre für die zu beschaffende Leistung c) Berufshaftpflichtversicherung in eines der EU zugelassenen Versicherungsunternehmens mit den Mindestdeckungssummen (jeweils zweifach maximiert) in Höhe von 10.000.000 EUR für Personenschäden und 10.000.000 EUR für sonstige Schäden (Sach- und Vermögensschäden) d) Erklärung des AN, dass über ein geeignetes Qualitätssicherungssystem verfügt Eignungskriterium A - Wirtschaftliche und finanzielle Leistungsfähigkeit (20%) A.1. Erklärung über den Netto-Gesamtjahresumsatz des Bewerbers in den letzten 3 Geschäftsjahren für die zu beschaffende Leistung (Bewertung des durchschnittlichen Netto-Gesamtjahresumsatzes in den letzten 3 Geschäftsjahren - 2023, 2024, 2025) größer bzw. gleich 80.000.000 EUR: 10 Punkte kleiner 80.000.000 EUR und größer bzw. gleich 50.000.000 EUR: 8 Punkte kleiner 50 .000.000 EUR und größer bzw. gleich 30.000.000 EUR: 6 Punkte kleiner 30.000.000 EUR und größer bzw. gleich 15.000.000 EUR: 4 Punkte kleiner 15.000.000 EUR und größer bzw. gleich 8.000.000 EUR: 2 Punkte kleiner 8.000.000 EUR: Ausschluss des entsprechenden Teilnahmeantrags! Maximal zu erreichende Punktzahl: 10 Punkte"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "A.2. Erklärung über die Anzahl der Beschäftigten für das gesamte Büro des Bewerbers in den letzten 3 Geschäftsjahren (2023, 2024, 2025) für die zu beschaffende Leistung größer bzw. gleich 200 Gesamtmitarbeitende: 10 Punkte kleiner 200 Gesamtmitarbeiter und größer bzw. gleich 80 Gesamtmitarbeitende: 7 Punkte kleiner 80 Gesamtmitarbeiter und größer bzw. gleich 50 Gesamtmitarbeitende: 3 Punkte kleiner 50 Gesamtmitarbeitende: Ausschluss des entsprechenden Teilnahmeantrags! Mindestanforderung ist eine durchschnittliche Mitarbeiteranzahl von 50 Personen innerhalb der letzten 3 Geschäftsjahren - 2023, 2024, 2025 Maximal zu erreichende Punktzahl: 10 Punkte Summe A.1. - A.2.: max. Punktzahl 20 Punkte Summe des Eignungskriterium A - entspricht 20% somit 20 Punkte der in den Eignungskriterien A, B.1 und B.2 erreichbaren Gesamtpunktzahl von 100 Punkten"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "A.3. Erklärung über eine bestehende oder im Zuschlagsfalle abzuschließende Berufshaftpflichtversicherung bei einem in der EU zugelassenen Versicherungsunternehmen mit den Mindestdeckungssummen (jeweils zweifach maximiert im Versicherungsjahr) in Höhe von für Personenschäden 10.000.000 Euro für sonstige Schäden (Sach- und Vermögenschäden) 10.000.000 Euro Mindestkriterium, daher keine Punktebewertung! Mindestkriterium nicht erfüllt und Ausschluss des Teilnahmeantrags als Folge!"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "B1 Referenzkriterium Mindestkriterium an die Referenzobjekte: a) Klinik/Krankenhaus mit OP und radiologischer Abteilung, Laborgebäude oder sonstige Projekte b) Kostenvolumen der KG 440 von mind. 9 Mio. EUR brutto c) Mit Anwendung der BIM-Methode Eignungskriterium B.1 - Referenzprojekt 1 (40%) B1.1 Gebäudeart Referenzprojekte aus den folgenden Referenzarten Klinik/Krankenhaus mit OP und radiologischer Abteilung 8 Punkte Laborgebäude 6 Punkte Sonstige Projekte 4 Punkte B1.2 Öffentlicher Auftraggeber mit Fördermitteln Projekt als Landesbaumaßnahme Baden-Württemberg 8 Punkte Projekt öffentlicher Auftraggeber 4 Punkte Sonstige Projekte 2 Punkte B1.3 Neubau Neubau mit Anbindung an Bestand: 6 Punkte Neubau + Sanierung im laufenden Betrieb: 4 Punkte Neubau 2 Punkte Bauen im Bestand oder Umbau/ Sanierung im Bestand: 0 Punkte B1.4 Baukosten Bereich Fernmeldetechnik bzw. KG440 mind. 15 Mio. EUR brutto: 6 Punkte mind. 12 Mio. EUR brutto: 4 Punkte mind. 9 Mio. EUR brutto: (MINDESTKRITERIUM) 2 Punkte Mindestkriterium nicht erfüllt: Hat Ausschluss des Teinahmeantrags als Folge! B1.5 Projektstand / abgeschlossene Leistungsphase Projekt abgeschlossen + In Betrieb genommen (spätestens im Jahr 2025): 6 Punkte Projekt abgeschlossen + In Betrieb genommen (spätestens im Jahr 2023): 4 Punkte Projekt in Betrieb genommen (spätestens im Jahr 2022): 2 Punkte Ältere Projekte 0 Punkte B1.6 BIM-Methode BIM-Methode (max. 4 x 1,5 Punkte) - Erfahrung bei der Zusammenarbeit in einer CDE (gemeinsame Datenumgebung) 1,5 Punkte - zuständige BIM-Fachkoordinator/in als personelle Besetzung 1,5 Punkte - Übergabe von nativen Modelldaten an den Auftraggeber 1,5 Punkte - Werkstatt und Montageplanung mind. in LOD 300 1,5 Punkte Keine Anwendung vom BIM-Modell (Mindestkriterium nicht erfüllt und hat Ausschluss des Teilnahmeantrags als Folge!) Summe des Eignungskriterium B.1 mit 40 Punkten entspricht 40% der in den Eignungskriterien A, B.1 und B.2 erreichbaren Gesamtpunktzahl von 100 Punkten"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "B2 Referenzkriterium Mindestkriterium an die Referenzobjekte: a) Klinik/Krankenhaus mit OP und radiologischer Abteilung, Laborgebäude oder sonstige Projekte b) Kostenvolumen der KG 440 von mind. 9 Mio. EUR brutto Eignungskriterium B.2 - Referenzprojekt 2 (40%) B2.1 Gebäudeart Referenzprojekte aus den folgenden Referenzarten Klinik/Krankenhaus mit OP und radiologischer Abteilung 8 Punkte Laborgebäude 6 Punkte Sonstige Projekte 4 Punkte B2.2 Öffentlicher Auftraggeber mit Fördermitteln Projekt als Landesbaumaßnahme Baden-Württemberg 8 Punkte Projekt öffentlicher Auftraggeber 4 Punkte Sonstige Projekte 2 Punkte B2.3 Neubau Neubau mit Anbindung an Bestand: 6 Punkte Neubau: + Sanierung im laufenden Betrieb: 4 Punkte Neubau 2 Punkte Bauen im Bestand oder Umbau/ Sanierung im Bestand: 0 Punkte B2.4 Baukosten Bereich Niederspannungsinstallationsanlagen bzw. KG440 mind. 15 Mio. EUR brutto: 6 Punkte mind. 12 Mio. EUR brutto: 4 Punkte mind. 9 Mio. EUR brutto: (MINDESTKRITERIUM) 2 Punkte Mindestkriterium nicht erfüllt: Hat Ausschluss des Teilnahmeantrags als Folge! B2.5 Projektstand / abgeschlossene Leistungsphase Projekt abgeschlossen + In Betrieb genommen (spätestens im Jahr 2025): 6 Punkte Projekt abgeschlossen + In Betrieb genommen (spätestens im Jahr 2023): 4 Punkte Projekt in Betrieb genommen (spätestens im Jahr 2022): 2 Punkte Ältere Projekte 0 Punkte B2.6 BIM-Methode BIM-Methode (max. 4 x 1,5 Punkte) - Erfahrung bei der Zusammenarbeit in einer CDE (gemeinsame Datenumgebung) 1,5 Punkte - zuständige BIM-Fachkoordinator/in als personelle Besetzung 1,5 Punkte - Übergabe von nativen Modelldaten an den Auftraggeber 1,5 Punkte - Werkstatt und Montageplanung mind. in LOD 300 1,5 Punkte Keine Anwendung vom BIM-Modell (Mindestkriterium nicht erfüllt und Ausschluss des Teinahmeantrags als Folge!) Summe des Eignungskriterium B.2 mit 40 Punkte entspricht 40% der in den Eignungskriterien A, B.1 und B.2 erreichbaren Gesamtpunktzahl von 100 Punkten Maximal zu erreichende Punktzahl GESAMT der Eignungskriterien A und B Berechnung =erreichte Punktzahl des Kriterium A+ erreichte Punktzahl des Kriterium B.1+ erreichte Punktzahl des Kriterium B.2 Summe pro Bewerber GESAMT 100 Punkte"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Nach Ermessen des Käufers können alle fehlenden Bieterunterlagen nach Fristablauf nachgereicht werden."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabeportal-bw.de/Satellite/notice/CXRAYY6YMMW/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

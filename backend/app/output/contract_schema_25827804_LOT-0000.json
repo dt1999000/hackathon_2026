@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827804:1:LOT-0000",
+    "candidateId": "25827804:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827804",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:43Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Teilortskanal OT Neumolis Gemeinde Käbschütztal",
+    "description": "a) Auftraggeber:  Offizielle Bezeichnung: Gemeindeverwaltung Käbschütztal; Straße, Hausnummer: Kirchgasse 4 a; Postleitzahl: 01665; Ort: Käbschütztal; Land: DE\nb) Vergabeart: Öffentliche Ausschreibung\nc) Angebote können nur schriftlich abgegeben werden.\nd) Art des Auftrages: Tiefbauleistungen\ne) Ort(e) der Ausführung: Offizielle Bezeichnung: Teilortskanal Neumohlis; Postleitzahl: 01665; Ort: Käbschütztal; Land: DE\nf) Art und Umfang der Leistung: 510 m³ \t        Rohrgrabenaushub\n130 m \t       Rohrleitung PP DN 160\n160 m \t       Rohrleitung PP DN 315\n265 m \t        Rohrleitung PP DN 400\n11 St.\t\tKontrollschächte\n1650 m²\tAsphalt fräsen\n1650 m²\tAsphaltdeck- und -tragschicht\ng) Es werden keine Planungsleistungen gefordert\nh) Aufteilung in mehrere Lose: nein\ni) Ausführungsfristen: Beginn: 15.03.2027, Ende: 31.07.2027, im Zeitraum 15.03.-31.07.2027 (Bauzeit 8 Wochen)\nj) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 3 zur Nichtzulassung von Nebenangeboten: Entfällt, da Nebenangebote zugelassen sind.\nk) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 4 zur Nichtzulassung der Abgabe mehrerer Hauptangebote: Entfällt, da die Abgabe mehrerer Hauptangebote zugelassen ist.\n l) Stelle, bei der die Vergabeunterlagen angefordert werden können: Die Vergabeunterlagen werden auf der Vergabeplattform evergabe.de bereitgestellt. Ein unentgeltlicher Abruf ohne Registrierung ist möglich unter https://www.evergabe.de/unterlagen/3454877/zustellweg-auswaehlen.\nm) Kosten für Vervielfältigungen der Vergabeunterlagen: entfällt\nn) entfällt\no) Frist für den Eingang der Angebote: 29.09.2026, 11:00 Uhr; Bindefrist: 09.11.2026\np) Angebote sind schriftlich (Papierform) zu richten an: siehe Buchstabe a).\nq) Angebote sind abzufassen in: Deutsch\nr) Zuschlagskriterien, sofern diese nicht in den Vergabeunterlagen genannt werden und gegebenenfalls deren Gewichtung: Preis\ns) Eröffnungstermin: Datum: 29.09.2026, 11:00 Uhr; Ort: 01665 Käbschütztal Kirchgasse 4a; Personen, die anwesend sein dürfen: Bieter oder deren Bevollmächtigte\nt) Sicherheiten: 3 % Gewährleistungsbürgschaft\nu) Finanzierungs- und Zahlungsbedingungen: Zahlung entsprechend Baufortschritt\nv) Rechtsform einer Bietergemeinschaft: nicht angegeben\nw) Verlangte Nachweise für die Beurteilung der Eignung: PQ-Nachweis oder gleichwertige Unterlagen\nx) Vergabenachprüfstelle: Offizielle Bezeichnung: Landesdirektion Dresden; Straße, Hausnummer: Staufenbergallee 1; Postleitzahl: 01099; Ort: Dresden\n\nStraßenbau,Fräsen (Asphalt/ Beton)",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "01665 Käbschütztal",
+      "nuts": "DED",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-29+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Gemeindeverwaltung%2520K%25C3%25A4bsch%25C3%25BCtztal/3454877",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

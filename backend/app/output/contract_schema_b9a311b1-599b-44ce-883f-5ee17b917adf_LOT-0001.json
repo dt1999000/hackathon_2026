@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "b9a311b1-599b-44ce-883f-5ee17b917adf:1:LOT-0001",
+    "candidateId": "b9a311b1-599b-44ce-883f-5ee17b917adf:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45261210"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "b9a311b1-599b-44ce-883f-5ee17b917adf",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "81b417bb-9d7d-4c8a-9442-eef3b035c3e4",
+    "internalIdentifier": "2026-0590-CL",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:49Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Universitätsklinikum Aachen AöR"
+    ]
+  },
+  "procedure": {
+    "title": "Dachdeckerarbeiten - Dach Neubau - Radiopharmakalabor und Zyklotronbunker",
+    "description": "Im Hauptgebäude des UKA wird in den Ebenen -3 und -4 ein ehemaliger Laborbereich mit \nTechnikräumen zu einem Radiopharmakalabor zur Versorgung von Nuklearmedizin-Patienten \numgebaut. Auf der Ostseite des Gebäudes wird direkt angrenzend an den Bestand in der \nEbene -5 ein unterirdischer Neubau errichtet, in dem mit Hilfe eines Zyklotrons Radionuklide \nzur Synthese von Radiopharmaka hergestellt werden. Ein oberirdischer Neubau mit einer \nStrahlenschutzschleuse verbindet den neuen Zyklotronbunker mit dem Laborbereich. Der \nZugang zur Strahlenschutzschleuse erfolgt über einen vorhandenen Flur in der Ebene -3 des \nHauptgebäudes. \nGegenstand des Leistungsverzeichnisses sind die Dachdeckerarbeiten inkl. Dämmung, \nAbdichtungsebenen und Klempnerarbeiten für die Errichtung des Zyklotronbunkers mit \noberirdischem Neubau der Strahlenschutzschleuse, sowie die Anbindung an das \nBestandsgebäude. Ein Seilsicherungssystem und außenliegender Dachaufstieg sind \nebenfalls Bestandteil des LVs. Der Dachbereich liegt auf OK Dachrand bei  ca.  +5,02m, dies \nentspricht  ca.  3,22m über Gelände geplant.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45261210",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Pauwelsstr. 30",
+      "additionalStreet": "",
+      "postcode": "52074",
+      "city": "Aachen",
+      "nuts": "DEA2D",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-18+01:00",
+    "endDate": "2027-05-31+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "required",
+    "url": "https://www.evergabe.nrw.de/VMPSatellite/notice/CXS0YYJDYDCN6C6J",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "VOB/A EU - Referenzen (Mit dem Angebot; Mittels Eigenerklärung): Darüber hinaus hat der Bieter zum Nachweis seiner Fachkunde folgende Angaben gemäß § 6a Abs. 3 a EU VOB/A zu machen: Angaben über die Ausführung von Leistungen in den letzten bis zu fünf abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind, wobei für die wichtigsten Bauleistungen Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis beizufügen sind. Folgende Angaben sind im Referenzblatt aufzuführen: - Bezeichnung und Ort des Bauvorhabens, - Auftraggeber, - Datum der Fertigstellung, - abgewickeltes Auftragsvolumen in Millionen EURO netto"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Einreichung zusätzlicher Nachweise und Erklärungen durch den Bieter ist zulässig. Hat der Auftraggeber nach Auswertung der eingereichten Erklärungen und Nachweise Zweifel an der Eignung eines Bieters, kann er den Bieter zur Erläuterung der von ihm eingereichten Unterlagen auffordern; im Übrigen behält sich der Auftraggeber die Nachforderung gemäß § 16a EU VOB/A vor."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.nrw.de/VMPSatellite/notice/CXS0YYJDYDCN6C6J/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

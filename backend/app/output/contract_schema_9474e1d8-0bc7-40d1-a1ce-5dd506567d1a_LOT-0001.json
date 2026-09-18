@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "9474e1d8-0bc7-40d1-a1ce-5dd506567d1a:1:LOT-0001",
+    "candidateId": "9474e1d8-0bc7-40d1-a1ce-5dd506567d1a:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331200"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "9474e1d8-0bc7-40d1-a1ce-5dd506567d1a",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "d62c479f-bb05-40e5-aa27-4ee4e91540e6",
+    "internalIdentifier": "715/22353 - M403",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:17Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "St. Elisabeth-Hospital Beckum GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "SEB Anbau Bettenhaus II - Altersmedizin / Aufstockung - Raumlufttechnik",
+    "description": "Hauptmassen:  1 Zentrallüftungsgerät (Zu- und Abluft) 18.000 m³/h, kvs-System, Hydraulik-Modul 2 Lamellentürme für Fort- und Außenluft, 1.300 mm Durchmesser 550 m² Lüftungskanal zzgl. 630 m² Formteile 1.400 m Wickelfalzrohr zzgl. Formteile 160 Deckenluftdurchlässe Zu-/Abluft 34 Brandschutzklappen eckig, 92 Brandschutzklappen, rund",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331200",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Elisabethstraße 10",
+      "additionalStreet": "",
+      "postcode": "59269",
+      "city": "Beckum",
+      "nuts": "DEA38",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "595"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-15+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP8B",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Elektronisch über die Plattform DTVP"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP8B/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "53483cc8-7254-439a-b024-cd843b94e513:1:LOT-0001",
+    "candidateId": "53483cc8-7254-439a-b024-cd843b94e513:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "53483cc8-7254-439a-b024-cd843b94e513",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "fd21780e-720a-4020-9922-1612c067723a",
+    "internalIdentifier": "715/22353 - M402",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:30Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "St. Elisabeth-Hospital Beckum GmbH"
+    ]
+  },
+  "procedure": {
+    "title": "SEB Anbau Bettenhaus II - Altersmedizin / Aufstockung - Heizungstechnik",
+    "description": "Hauptmassen: 1.620 m² Heiz- und Kühldecke 20 Raumheizflächen 1.800 m Heizungsverteilleitung",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Elisabethstraße 10",
+      "additionalStreet": "",
+      "postcode": "59269",
+      "city": "Beckum",
+      "nuts": "DEA38",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "590"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-15+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP8Y",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Elektronisch über die Plattform DTVP"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YCJMP8Y/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

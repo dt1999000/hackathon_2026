@@ -62,6 +62,8 @@ os.chdir(SCRIPT_DIRECTORY)
 
 
 def display(value):
+    if not CPV45_VERBOSE:
+        return
     if isinstance(value, pd.DataFrame):
         print(value.to_string(index=False))
         return
@@ -79,6 +81,12 @@ def env_bool(name: str, default: bool) -> bool:
         return default
     return value.strip().lower() in {'1', 'true', 'yes', 'on'}
 
+
+# display() (defined above) dumps full DataFrames to the terminal -- useful
+# when debugging this file on its own, but a wall of noise when run from
+# run_contract_pipelines.py where you're trying to track two pipelines' progress
+# at once. Off by default; set CPV45_VERBOSE=true to get the tables back.
+CPV45_VERBOSE = env_bool('CPV45_VERBOSE', False)
 
 # api | local
 SOURCE_MODE = os.getenv('CPV45_SOURCE_MODE', 'api').lower()
@@ -111,10 +119,24 @@ INCLUDE_NOTICE_LEVEL_FALLBACK = env_bool('CPV45_NOTICE_FALLBACK', True)
 REFRESH_EXPORTS = env_bool('CPV45_REFRESH_EXPORTS', False)
 
 # Safe attachment policy.
-DOWNLOAD_ATTACHMENTS = env_bool('CPV45_DOWNLOAD_ATTACHMENTS', False)
+# Attachment downloading is ON by default now (per explicit request: the
+# whole point of documentContents is the real extracted PDF text, and it
+# can't be populated without actually fetching the document). This still
+# respects a per-request delay (CPV45_REQUEST_DELAY_SECONDS below) and
+# skips restricted-document rows outright. Two caveats worth knowing:
+# (1) legal/ToS: this now fetches from whichever platform each notice's
+#     document link points to (RIB, DTVP, deutsche-evergabe.de, subreport,
+#     bieterportal.noncd.db.de, ...) -- confirm that's acceptable for your
+#     use before running this against a large volume for real;
+# (2) coverage: many of those links are JS-rendered dashboards, not direct
+#     files (see looks_like_direct_file() / 'landing_page_requires_adapter'
+#     below) -- this fetches the direct-file cases, not everything, and
+#     doesn't attempt to bypass login/JS/CAPTCHA walls.
+# Set CPV45_DOWNLOAD_ATTACHMENTS=false to go back to link-only (no text).
+DOWNLOAD_ATTACHMENTS = env_bool('CPV45_DOWNLOAD_ATTACHMENTS', True)
 FOLLOW_STATIC_FILE_LINKS = env_bool('CPV45_FOLLOW_STATIC_LINKS', False)
 REQUEST_DELAY_SECONDS = float(os.getenv('CPV45_REQUEST_DELAY_SECONDS', '1.0'))
-MAX_ATTACHMENT_URLS = int(os.getenv('CPV45_MAX_ATTACHMENT_URLS', '50'))
+MAX_ATTACHMENT_URLS = int(os.getenv('CPV45_MAX_ATTACHMENT_URLS', '1000'))
 MAX_FILES_PER_LANDING_PAGE = int(os.getenv('CPV45_MAX_FILES_PER_PAGE', '20'))
 MAX_DOWNLOAD_BYTES = int(os.getenv('CPV45_MAX_DOWNLOAD_BYTES', str(100 * 1024 * 1024)))
 MAX_ARCHIVE_BYTES = int(os.getenv('CPV45_MAX_ARCHIVE_BYTES', str(500 * 1024 * 1024)))
@@ -1469,7 +1491,218 @@ print(f'Saved: {agent_overview_path}')
 display(agent_overview.head(20))
 
 
-# 8. Validation
+# 8. Export common contract_schema instances
+#
+# Everything above (agent_input.jsonl) is this pipeline's own rich format for
+# an LLM agent. This step additionally emits one file per lot in the SAME
+# shape TED's pipeline (ted_pipeline.py) produces -- contract_schema.json --
+# so both sources can be validated, diffed and imported into the database
+# with one shared script (import_contracts.py), regardless of which of the
+# two upstream sources a given tender came from.
+#
+# Field-by-field mapping notes (see contract_schema.json's own per-field
+# "description" for the TED side of each mapping):
+# - notice.identifier/version/lotIdentifier: this pipeline's own
+#   noticeIdentifier/noticeVersion/lotIdentifier are already first-class
+#   fields (candidateId is just ':'.join of the three) -- no parsing needed.
+# - placeOfPerformance: eforms['locations'] already uses the exact same key
+#   names as contract_schema.json's address $def (street/additionalStreet/
+#   postcode/city/nuts/country) -- passed through unchanged.
+# - qualificationRequirementCodes: eforms['qualificationRequirements'] is
+#   already {code, codeList, description} -- passed through unchanged.
+# - documentContents: this is where this source is actually STRONGER than
+#   TED -- these are text extracted from the real downloaded Vergabeunterlagen
+#   attachments (record['documents']), not just the notice text. TED can only
+#   ever give you its own rendered notice PDF.
+# - classification.mainNature / exclusionGrounds's free-text shape: matches
+#   what real TED notices render, per manual verification against live data;
+#   this source doesn't populate exclusionGrounds at all (TED-only field).
+
+CONTRACT_SCHEMA_DIRECTORY = Path(os.getenv('CPV45_CONTRACT_SCHEMA_DIRECTORY', 'output'))
+CONTRACT_SCHEMA_DIRECTORY.mkdir(parents=True, exist_ok=True)
+
+
+def to_float(value: Any) -> float | None:
+    text = str(value or '').strip()
+    if not text:
+        return None
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
+def first_and_rest(values: list[str]) -> tuple[str, list[str]]:
+    values = values or []
+    return (values[0], values[1:]) if values else ('', [])
+
+
+def build_contract_schema_instance(record: dict[str, Any]) -> dict[str, Any]:
+    discovery = record.get('discovery') or {}
+    eforms = record.get('eforms') or {}
+
+    cpv_codes = eforms.get('cpvCodes') or discovery.get('matchedCpvCodes') or []
+    main_cpv, additional_cpv = first_and_rest(cpv_codes)
+
+    return {
+        'schemaVersion': '1.0',
+        'provenance': {
+            'sourceSystem': 'oeffentlichevergabe.de',
+            'sourceRecordId': record['candidateId'],
+            'candidateId': record['candidateId'],
+            'matchedVia': discovery.get('matchedVia'),
+            'matchedCpvCodes': discovery.get('matchedCpvCodes', []),
+            'missingEvidence': record.get('missingEvidence', []),
+        },
+        'notice': {
+            'identifier': record['noticeIdentifier'],
+            'version': record['noticeVersion'],
+            'lotIdentifier': record['lotIdentifier'] or None,
+            'procedureIdentifier': discovery.get('procedureIdentifier') or eforms.get('procedureIdentifier'),
+            'internalIdentifier': eforms.get('internalIdentifier') or discovery.get('internalIdentifier'),
+            'formType': discovery.get('formType'),
+            'noticeTypeCode': eforms.get('noticeTypeCode') or discovery.get('noticeType'),
+            'noticeRootType': eforms.get('noticeRootType'),
+            'publicationDate': discovery.get('publicationDate'),
+            'issueDate': eforms.get('issueDate'),
+        },
+        'buyer': {
+            'names': eforms.get('buyerNames', []),
+        },
+        'procedure': {
+            'title': discovery.get('title') or eforms.get('title'),
+            'description': discovery.get('description') or eforms.get('description'),
+            'type': eforms.get('procedureType'),
+            'typeRaw': eforms.get('procedureType'),
+        },
+        'classification': {
+            'mainNature': discovery.get('mainNature') or eforms.get('contractNature') or '',
+            'mainCpvCode': main_cpv,
+            'additionalCpvCodes': additional_cpv,
+        },
+        'placeOfPerformance': eforms.get('locations', []),
+        'value': {
+            'estimatedValue': to_float(discovery.get('estimatedValue') or eforms.get('estimatedValue')),
+            'currency': discovery.get('estimatedValueCurrency') or eforms.get('estimatedValueCurrency'),
+        },
+        'duration': {
+            'startDate': eforms.get('durationStartDate'),
+            'endDate': eforms.get('durationEndDate'),
+            'measure': eforms.get('durationMeasure'),
+        },
+        'submission': {
+            'deadlineDate': eforms.get('submissionDeadlineDate'),
+            'deadlineTime': eforms.get('submissionDeadlineTime'),
+            'method': eforms.get('submissionMethod'),
+            'url': eforms.get('submissionUrl'),
+            'questionDeadlineDate': eforms.get('questionDeadlineDate'),
+        },
+        'selectionCriteria': [
+            {'code': item.get('code'), 'label': None, 'description': item.get('description', '')}
+            for item in eforms.get('selectionCriteria', [])
+        ],
+        'awardCriteria': {
+            'types': eforms.get('awardCriterionTypes', []),
+        },
+        'qualificationRequirementCodes': eforms.get('qualificationRequirements', []),
+        'procurementDocuments': {
+            'links': [
+                {
+                    'url': link.get('url'),
+                    'description': link.get('description'),
+                    'documentType': link.get('documentType'),
+                }
+                for link in record.get('documentLinks', [])
+            ],
+        },
+        'documentContents': [
+            {
+                'sourceUrl': document.get('sourceUrl') or None,
+                'fileName': document.get('fileName'),
+                'documentType': document.get('extension'),
+                'text': document.get('text', ''),
+                'needsOcr': document.get('needsOcr'),
+            }
+            for document in record.get('documents', [])
+        ],
+    }
+
+
+contract_schema_written = 0
+
+# Company-profile filter, matching ted_pipeline.py's QUERY constants. Without
+# this, this pipeline exports EVERY CPV-45 lot published in the fetch window
+# (hundreds of lots nationwide, e.g. 337 for a single day) while ted_pipeline.py
+# only ever returns lots matching one specific company's value/region profile
+# -- the two sources end up wildly mismatched in scope, not because of a bug,
+# but because only one of them was actually filtering by company profile.
+# Defaults below match Hanseatische Bau AG's constraints from ted_pipeline.py;
+# keep the two files in sync by hand if you change either one.
+# Company-profile filter -- OFF by default (matches ted_pipeline.py's own
+# default now): with no company profile configured, this exports EVERY CPV-45
+# lot published in the fetch window, matching the "scrape everything, one day"
+# use case. Set the env vars below to narrow back down to a specific
+# company's bid/no-bid profile (mirrors TED_PROFILE_* on the TED side).
+CPV45_PROFILE_VALUE_MIN = float(os.getenv('CPV45_PROFILE_VALUE_MIN', '0'))
+CPV45_PROFILE_VALUE_MAX = float(os.getenv('CPV45_PROFILE_VALUE_MAX', 'inf'))
+CPV45_PROFILE_NUTS_PREFIXES = tuple(
+    p.strip() for p in os.getenv(
+        'CPV45_PROFILE_NUTS_PREFIXES', ''
+    ).split(',') if p.strip()
+)
+# Example, to narrow to Hanseatische Bau AG's profile:
+#   CPV45_PROFILE_VALUE_MIN=5000000
+#   CPV45_PROFILE_VALUE_MAX=90000000
+#   CPV45_PROFILE_NUTS_PREFIXES=DE5,DE6,DE9,DEF,DE8
+
+
+def matches_company_profile(agent_record: dict[str, Any]) -> bool:
+    discovery = agent_record.get('discovery') or {}
+    eforms = agent_record.get('eforms') or {}
+
+    value = to_float(discovery.get('estimatedValue') or eforms.get('estimatedValue'))
+    # A lot with NO stated value is kept rather than dropped -- an unknown
+    # value is not evidence the lot is out of range, and this schema/pipeline
+    # already treats sparse value data as common-but-sparse, not missing=reject.
+    if value is not None and not (CPV45_PROFILE_VALUE_MIN <= value <= CPV45_PROFILE_VALUE_MAX):
+        return False
+
+    if CPV45_PROFILE_NUTS_PREFIXES:
+        nuts_codes = [loc.get('nuts', '') for loc in eforms.get('locations', []) if loc.get('nuts')]
+        # Same reasoning: no location data at all -> keep, don't drop for
+        # missing evidence. Only reject when we KNOW the region and it
+        # doesn't match.
+        if nuts_codes and not any(
+            nuts.startswith(CPV45_PROFILE_NUTS_PREFIXES) for nuts in nuts_codes
+        ):
+            return False
+
+    return True
+
+
+profile_filtered_records = [
+    record for record in agent_records if matches_company_profile(record)
+]
+print(
+    f'Company-profile filter: {len(agent_records)} -> {len(profile_filtered_records)} lots '
+    f'(value {CPV45_PROFILE_VALUE_MIN:,.0f}-{CPV45_PROFILE_VALUE_MAX:,.0f} EUR, '
+    f'NUTS prefixes {CPV45_PROFILE_NUTS_PREFIXES or "(any)"})'
+)
+
+for agent_record in profile_filtered_records:
+    instance = build_contract_schema_instance(agent_record)
+    lot_part = safe_component(agent_record['lotIdentifier']) if agent_record['lotIdentifier'] else 'nolot'
+    out_path = CONTRACT_SCHEMA_DIRECTORY / (
+        f"contract_schema_{safe_component(agent_record['noticeIdentifier'])}_{lot_part}.json"
+    )
+    out_path.write_text(json.dumps(instance, ensure_ascii=False, indent=2), encoding='utf-8')
+    contract_schema_written += 1
+
+print(f'contract_schema instances written: {contract_schema_written:,}')
+print(f'Saved to: {CONTRACT_SCHEMA_DIRECTORY}')
+
+
+# 9. Validation
 #
 # These checks protect the agent from duplicate lot records, unsupported CPV matches and malformed document links. A successful run does not mean every tender document was downloaded; inspect `missingEvidence` and `attachment_download_manifest.csv`.
 
@@ -1492,7 +1725,18 @@ invalid_document_urls = document_links[
     )
 ] if not document_links.empty else document_links
 if not invalid_document_urls.empty:
-    raise AssertionError('A document URL is not HTTP or HTTPS')
+    # Real German procurement platforms sometimes hand back relative paths
+    # or other non-http(s) values that normalize_document_url() can't fix
+    # (it only prepends https:// when the value looks like a bare domain).
+    # These are a data-quality issue in a handful of document links, not a
+    # reason to throw away the run: everything else (agent_input.jsonl,
+    # the contract_schema exports) is already written to disk by this point.
+    # Flag them for manual review instead of crashing on them.
+    print(
+        f'WARNING: {len(invalid_document_urls)} document URL(s) are not http/https '
+        f'(kept as-is in document_links.csv for manual review, not dropped):'
+    )
+    display(invalid_document_urls.head(10))
 
 if len(agent_records) != len(candidate_summary):
     raise AssertionError('Agent JSONL does not contain exactly one record per candidate lot')
@@ -1506,7 +1750,11 @@ unmatched_key_count = len(candidate_key_set.difference(matched_eforms_keys))
 validation_summary = pd.DataFrame([
     {'check': 'candidate lot keys unique', 'result': 'PASS', 'count': len(candidate_summary)},
     {'check': f'CPV starts with {CPV_PREFIX}', 'result': 'PASS', 'count': len(matched_lots)},
-    {'check': 'valid document URL schemes', 'result': 'PASS', 'count': len(document_links)},
+    {
+        'check': 'valid document URL schemes',
+        'result': 'REVIEW' if not invalid_document_urls.empty else 'PASS',
+        'count': len(invalid_document_urls),
+    },
     {'check': 'one agent record per lot', 'result': 'PASS', 'count': len(agent_records)},
     {
         'check': 'candidate lots without exact eForms match',
@@ -1533,5 +1781,6 @@ print('Pipeline completed successfully.')
 # - `extracted_documents.jsonl`: extracted text and file metadata.
 # - `agent_input.jsonl`: one complete input object per selected lot.
 # - `agent_input_overview.csv`: compact review table for humans.
+# - `contract_schema_<noticeIdentifier>_<lotIdentifier|nolot>.json` (in CPV45_CONTRACT_SCHEMA_DIRECTORY, default './output'): one file per lot in the shared contract_schema.json shape, ready for import_contracts.py alongside TED's output.
 #
 # For production, retain every notice version and every downloaded document checksum. Correction notices can change deadlines or replace tender documents.

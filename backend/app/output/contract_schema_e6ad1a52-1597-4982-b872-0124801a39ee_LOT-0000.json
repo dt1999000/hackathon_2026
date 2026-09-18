@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e6ad1a52-1597-4982-b872-0124801a39ee:1:LOT-0000",
+    "candidateId": "e6ad1a52-1597-4982-b872-0124801a39ee:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45421141"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e6ad1a52-1597-4982-b872-0124801a39ee",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "c23cf63f-53d3-47bc-bccc-7ad80048978e",
+    "internalIdentifier": "3090-109_5_CBBE",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:14Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Erlangen - Amt 24"
+    ]
+  },
+  "procedure": {
+    "title": "WC-Trennwände u. Wandbekleidung 2. BA",
+    "description": "WC-Trennwände und Wandbekleidungen\n- ca. 140 m² Sanitärtrennwände, wasserbeständiger Kern+HPL-Beschichtung, Alumi-unium-Profile\n- ca. 350 m² Wandbekleidung, HPL-Kompaktplatten, Spiegel",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45421141",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "91054",
+      "city": "Erlangen",
+      "nuts": "DE252",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": 1.0,
+    "currency": "EUR"
+  },
+  "duration": {
+    "startDate": "2027-04-12+02:00",
+    "endDate": "2027-05-11+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:15:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-13+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=303613 Die Eignungskriterien und die geforderten Nachweise, Bescheinigungen sind in der Eigenerklärung (Formblatt 124), in der Aufforderung zur Angebotsabgabe (Formblatt 211), im Verzeichnis vorzulegender Unterlagen (Formblatt 216) aufgelistet. Hier finden Sie auch den Zeitpunkt, zu der die Nachweise/Bescheinigungen einzureichen sind."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=303613 Die Eignungskriterien und die geforderten Nachweise, Bescheinigungen sind in der Eigenerklärung (Formblatt 124), in der Aufforderung zur Angebotsabgabe (Formblatt 211), im Verzeichnis vorzulegender Unterlagen (Formblatt 216) aufgelistet. Hier finden Sie auch den Zeitpunkt, zu der die Nachweise/Bescheinigungen einzureichen sind."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=303613 Die Eignungskriterien und die geforderten Nachweise, Bescheinigungen sind in der Eigenerklärung (Formblatt 124), in der Aufforderung zur Angebotsabgabe (Formblatt 211), im Verzeichnis vorzulegender Unterlagen (Formblatt 216) aufgelistet. Hier finden Sie auch den Zeitpunkt, zu der die Nachweise/Bescheinigungen einzureichen sind."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16a EU VOB/A nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/303613",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

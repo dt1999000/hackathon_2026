@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25828248:1:LOT-0000",
+    "candidateId": "25828248:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45310000-3"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25828248",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:01:00Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "26B80126, BU BImA Clausewitz-Kaserne Nienburg/Lgd., 1433140035 - Geb. 63 - Komplettsanierung, Sanierung der Elektroinstallation und Datenverkabelung",
+    "description": "26B80126, BU BImA Clausewitz-Kaserne Nienburg/Lgd., 1433140035 - Geb. 63 - Komplettsanierung, Sanierung der Elektroinstallation und Datenverkabelung",
+    "type": "beabsichtigte Beschränkte Ausschreibung",
+    "typeRaw": "beabsichtigte Beschränkte Ausschreibung"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45310000-3",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "31582 Nienburg/Weser",
+      "nuts": "DE9",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXQ6YY5RSY6",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

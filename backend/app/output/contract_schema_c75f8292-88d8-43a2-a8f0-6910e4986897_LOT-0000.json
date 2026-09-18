@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "c75f8292-88d8-43a2-a8f0-6910e4986897:1:LOT-0000",
+    "candidateId": "c75f8292-88d8-43a2-a8f0-6910e4986897:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45421110"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "c75f8292-88d8-43a2-a8f0-6910e4986897",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "72e112d1-4f46-428f-892b-6413ac20fec2",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:22Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Isny im Allgäu"
+    ]
+  },
+  "procedure": {
+    "title": "Tischler  Innentüren, Grund- und Förderschule E+F",
+    "description": "Baubeschreibung: \nDie bestehenden Gebäudeteile (Bauteile E und F) der ehemaligen Realschule Isny werden im Rahmen dieser Sanierungs- und Umbaumaßnahme zur Grund- und Förderschule ertüchtigt.\nLeistungsumfang:\nca. 69 Stück Innentürelemente (Stahlzarge mit Holztürblatt), ca. 8 Stück Türblätter (Holztürblatt), ca. 21 Stück Bestandstürblätter überarbeiten",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45421110",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "88316",
+      "city": "Isny",
+      "nuts": "DE148",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-23+01:00",
+    "endDate": "2027-05-31+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-sub-espd",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "nach Aufforderung"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.vergabe24.de/vergabeunterlagen/54321-Tender-1a08b427090-62c6ff10f251a4dc",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "d0397369-bf5a-411b-8bc9-3f118f2246df:1:LOT-0001",
+    "candidateId": "d0397369-bf5a-411b-8bc9-3f118f2246df:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45236000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "d0397369-bf5a-411b-8bc9-3f118f2246df",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "b518a71a-d8e0-42d1-be4b-14190e0019e8",
+    "internalIdentifier": "681fabf6-1fc8-4945-97dd-80186df97365",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:19Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)"
+    ]
+  },
+  "procedure": {
+    "title": "Paket 302057 - Investcontainer B04",
+    "description": "ca. 11km Gleiserneuerung mit GMT und VBE + 2km Gleiserneuerung im konventionellen Verfahren im Bahnhofsbereich mit VBE. Dazu folgen 9x Weichenerneuerungen inkl. VBE und inkl. 5x mit PSS. Begleitarbeiten LST und Sicherungsleistungen.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45236000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "40670",
+      "city": "Meerbusch",
+      "nuts": "DEA1D",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-02-05+01:00",
+    "endDate": "2027-08-31+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-02+02:00",
+    "deadlineTime": "11:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": "2026-09-25+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-sec-supply",
+      "label": null,
+      "description": "Die Eignungskriterien finden Sie unter nachfolgendem Link. Diese müssen nicht ausschließlich auf die angegebene Kategorie zutreffen, sondern können auch für weitere gelten. https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/subproject/1417fef9-cdd7-4cbe-bee0-89555b95edcb/suitabilitycriteria"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 51 Abs. 2 SektVO, § 16a Abs. 1 VOB/A-EU. Mögliche Hinweise des Auftraggebers in den Vergabeunterlagen sind zu beachten."
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/e7b99aea-6203-49a0-9885-6c94a0259635",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

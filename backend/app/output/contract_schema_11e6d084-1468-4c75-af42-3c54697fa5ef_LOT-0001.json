@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "11e6d084-1468-4c75-af42-3c54697fa5ef:1:LOT-0001",
+    "candidateId": "11e6d084-1468-4c75-af42-3c54697fa5ef:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "submission_deadline_missing",
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "11e6d084-1468-4c75-af42-3c54697fa5ef",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "23c63ba6-79ab-40a1-a2c7-0eb02e81148c",
+    "internalIdentifier": "2023.725 - VOB GU II",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:47Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Gemeinde Henstedt-Ulzburg"
+    ]
+  },
+  "procedure": {
+    "title": "Gemeinde Henstedt-Ulzburg: Neubau des Alstergymnasiums (Generalunternehmer)",
+    "description": "Auftragsgegenstand sind die Bauleistungen, inkl. Planungsleistungen  für den Neubau des Alstergymnasiums in Henstedt-Ulzburg gem. Gliederung der Funktionaler Leistungsbeschreibung.",
+    "type": "neg-w-call",
+    "typeRaw": "neg-w-call"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "854"
+  },
+  "submission": {
+    "deadlineDate": "",
+    "deadlineTime": "",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YNDMP2T",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "quality",
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Bieter werden gebeten darauf zu achten, dass sie die angeforderten Unterlagen und Erklärungen vollständig und fehlerfrei einreichen. Nach § 16a VOB/A ist der Auftraggeber zwar grundsätzlich verpflichtet, Unterlagen und Erklärungen, die in der Ausschreibung gefordert werden, nachzufordern. Dieses ist aber nicht für alle Unterlagen und Erklärungen rechtlich zulässig. Sollten Sie also die vorgegebenen Unterlagen nicht vollständig einreichen, kann in Einzelfällen auch ohne Nachforderung usw. der Ausschluss vom Verfahren erfolgen. Darüber hinaus darf nur einmal nachgefordert usw. werden. Sollten also innerhalb der Submissionsfrist nicht alle geforderten Unterlagen und Erklärungen eingegangen sein und nach einer zulässigen Nachforderung wieder Unterlagen oder Angaben fehlen oder unvollständig sein, muss der betreffende Bieter vom weiteren Verfahren ausgeschlossen werden."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YNDMP2T/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

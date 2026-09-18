@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "aa7872e7-fc82-4bb1-82fe-67642421e044:1:LOT-0001",
+    "candidateId": "aa7872e7-fc82-4bb1-82fe-67642421e044:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000",
+      "45331110",
+      "45331231"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "aa7872e7-fc82-4bb1-82fe-67642421e044",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "fa996125-e0b3-4d0a-920f-a887411684c3",
+    "internalIdentifier": "39/2026",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:54Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Access e.V."
+    ]
+  },
+  "procedure": {
+    "title": "Access - Heizung/Kälte",
+    "description": "Das Gebäude besteht aus einem vieretagigen Kopfbau mit Büro- und Laborflächen als Betonbaukörper und einer Grundfläche von etwa 1.000m² (Bauteile A und B).  An diesen Baukörper schließt sich eine zweigeteilte Stahlbauhalle mit einer Sandwichfassade an. Davon ist der eine Teil etwa 2.000m² groß und hat eine lichte Höhe von ca. 10,5m (Bauteil C). Hier sind verschiedene Produktionsanlagen aufgestellt.  Der andere Teil mit einer lichten Höhe von etwa 5,7m ist deutlich niedriger und verfügt über eine Fläche von etwa 2.500m² (Bauteil D). Hier sind kleinteilige Funktionsbereiche Werkstatt, QS und für Herstellungsprozesse untergebracht.  Die Erschließung mit Trinkwasser soll bereits über einen Graben bis an den Übergabepunkt in der Sanitärzentrale erfolgt sein. Die elektrische Versorgung erfolgt aus dem Mittelspannungsnetz zu einer Schaltanlage auf dem südlichen Teil des Grundstücks. von dort werden die Trafos an der westlichen Hallenseite versorgt. Die NSHV ist im Bereich der hohen Halle positioniert, von wo die Versorgungsbereiche erschlossen werden. Die Anlagentechnik für Photovoltaik befindet sich auf den Dachflächen.  Die Wärme- und Kälteversorgung des Gebäudes erfolgt vollständig über elektrische Erzeuger, die auf der Dachfläche des Bauteils D verortet sind. Die Heizungs- und Kältezentrale liegt im nördlichen Teil der hohen Halle. Von hier erfolgt die Verteilung sowohl für die Prozessanlagen als auch für die Gebäudetechnik.  Die Lüftungsanlagen stehen auf den Dachflächen der zu versorgenden Bereiche (Bauteile A, B und D). Das Bauteil C wird größtenteils nicht belüftet.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": [
+      "45331231",
+      "45331110"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DEA2D",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-01+01:00",
+    "endDate": "2027-11-26+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-21+02:00",
+    "deadlineTime": "12:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXP4YW6MQWY",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Die Bieter haben folgende Erklärungen abzugeben bzw. über die Präqualifikation nachzuweisen: - Bieterangaben (Name/Anschrift/Rechtsform/Eintrag Handels-/Berufsregister, Ansprechpartner mit Kontaktdaten), - über das Vermögen des Unternehmens wurde nicht das Insolvenzverfahren oder ein vergleichbares Verfahren eröffnet oder die Eröffnung beantragt oder der Antrag mangels Masse abgelehnt nach den Bestimmungen des Landes, in dem unser Unternehmen seinen Sitz hat, - unser Unternehmen befindet sich nicht in Liquidation, - keine Person, deren Verhalten dem Unternehmen zuzurechnen ist, ist rechtskräftig verurteilt worden, wegen: a) § 129 des Strafgesetzbuches (StGB) (Bildung krimineller Vereinigungen), § 129a StGB (Bildung terroristischer Vereinigungen), §129b StGB (kriminelle und terroristische Vereinigungen im Ausland), b) § 89c des Strafgesetzbuchs (Terrorismusfinanzierung) oder wegen der Teilnahme an einer solchen Tat oder wegen der Bereitstellung oder Sammlung finanzieller Mittel in Kenntnis dessen, dass diese finanziellen Mittel ganz oder teilweise dazu verwendet werden oder verwendet werden sollen, eine Tat nach § 89a Absatz 2 Nummer 2 des Strafgesetzbuchs zu begehen, c) § 261 StGB (Geldwäsche, Verschleierung unrechtmäßig erlangter Vermögenswerte), d) § 263 StGB (Betrug), soweit sich die Straftat gegen den Haushalt der EU oder gegen Haushalte richtet, die von der EU oder in ihrem Auftrag verwaltet werden, e) § 264 StGB (Subventionsbetrug), soweit sich die Straftat gegen den Haushalt der EU oder gegen Haushalte richtet, die von der EU oder in ihrem Auftrag verwaltet werden, f) § 299 des Strafgesetzbuchs (Bestechlichkeit und Bestechung im geschäftlichen Verkehr), §§ 299a und 299b des Strafgesetzbuchs (Bestechlichkeit und Bestechung im Gesundheitswesen), g) § 108e des Strafgesetzbuchs (Bestechlichkeit und Bestechung von Mandatsträgern), h) §§ 333 und 334 des Strafgesetzbuchs (Vorteilsgewährung und Bestechung), jeweils auch in Verbindung mit § 335a des Strafgesetzbuchs (Ausländische und internationale Bedienstete), i) Artikel 2 § 2 des Gesetzes zur Bekämpfung internationaler Bestechung (Bestechung ausländischer Abgeordneter im Zusammenhang mit internationalem Geschäftsverkehr) oder j) den §§ 232, 232a Absatz 1 bis 5, den §§ 232b bis 233a des Strafgesetzbuches (Menschenhandel, Zwangsprostitution, Zwangsarbeit, Ausbeutung der Arbeitskraft, Ausbeutung unter Ausnutzung einer Freiheitsberaubung). Einem Verstoß gegen diese Vorschriften gleichgesetzt sind Verstöße gegen entsprechende Strafnormen anderer Staaten. Ein Verhalten einer rechtskräftig verurteilten Person ist einem Bewerber oder einem Bieter zuzurechnen, wenn sie für diesen Bewerber oder Bieter bei der Führung der Geschäfte selbstverantwortlich gehandelt hat oder ein Aufsichts- oder Organisationsverschulden gemäß § 130 des Gesetzes gegen Ordnungswidrigkeiten dieser Person im Hinblick auf das Verhalten einer anderen für den Bewerber oder Bieter handelnden, rechtskräftig verurteilten Person vorliegt. - Unser Unternehmen kommt seinen Verpflichtungen zur Zahlung von Steuern und Abgaben gemäß den Bestimmungen des Landes, in dem unser Unternehmen seinen Sitz hat, ordnungsgemäß nach. - Zudem haben die Bieter die Sanktionserklärung Russland mit dem Angebot abzugeben. - Betriebs-/Berufshaftpflichtversicherung mit Deckungssummen für Personenschäden in Höhe von mindestens EUR 5,0 Mio. und Sachschäden in Höhe von 3 Mio. pro Jahr., alternativ zu vorstehender Erklärung, Erklärung, die Versicherung entsprechend aufzustocken. - Unser Unternehmen wird im Auftragsfall die bestehende Betriebs- bzw. Berufshaftpflichtversicherung gemäß der vorstehenden Vorgaben zu den Versicherungssummen aufstocken, - Bruttoumsätze der letzten 3 Geschäftsjahre. - Anzahl der Mitarbeiter der letzten 3 Geschäftsjahre - mind. 3 vgl. Referenzen aus den letzten drei Jahren. Vergleichbar sind Referenzen zu Wärmeversorgungs- und Kälteanlagen, wobei mindestens eine Referenz eine BGF von mind. 8.000 m² und mind. EUR 4 Mio. netto Auftragsvolumen haben muss und die beiden übrigen Referenzen eine BGF von mind. 5.000 m² und einem Auftragsvolumen von EUR 2,5 Mio. netto."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Nachforderung gemäß § 16a VOB/A"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXP4YW6MQWY/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

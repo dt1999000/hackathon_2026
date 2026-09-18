@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e319dd27-487a-41af-a526-df880accbdd7:1:LOT-0000",
+    "candidateId": "e319dd27-487a-41af-a526-df880accbdd7:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45315100"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e319dd27-487a-41af-a526-df880accbdd7",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "9d199be5-10ee-4c90-8d36-c82ed780b692",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:45Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "WiBau Gesellschaft mbH"
+    ]
+  },
+  "procedure": {
+    "title": "Erweiterung Kohlheckschule Wiesbaden ",
+    "description": "Wesentliche Leistungen dieser Ausschreibung:\n\n3 St. Außenverteiler mit Wandlermessung (Neubau, Bestandsgebäude, E-Mobilität)\n1 St. Niederspannungshauptverteilung Neubau\n5 St. Unterverteiler\nca. 323 m Hauptzuleitung Gebäude, 120 mm²\nca. 230 m Hauptzuleitungen Verteiler, bis 70 mm²\nca. 625 m Hauptzuleitungen Verteiler, bis 35 mm²\nca. 48.000 m Stromkreiszuleitungen\nca. 669 St. Installationsgeräte\nca. 419 St. LED-Ein-, An- und Pendelleuchten\nca. 383 m Kabelbahnen und Steigetrassen\n1 St. Sicherheitsbeleuchtungsanlage, Zentralbatterieanlage, mit ca. 164 Sicherheitsleuchten inkl. Verkabelung\n1 St. PV-Anlage, 93 kWp, bestehend aus Generator, Wechselrichter und Verkabelung; Unterkonstruktion bauseits durch Dachdecker\n1 St. PV-Anlage, 99 kWp, bestehend aus Generator, Wechselrichter und Verkabelung; Unterkonstruktion bauseits durch Dachdecker\n1 St. Blitzschutzanlage mit 25 Ableitungen und ca. 360 m Fangleitung\nKG 450\n1 St. ELA-Anlage für betriebliche Durchsagen und Pausensignal mit ca. 78 Lautsprechern inkl. Verkabelung\n1 St. Brandmeldeanlage mit ca. 171 automatischen und 11 Handfeuermeldern inkl. Verkabelung\n2 St. RWA-Anlagen inkl. Verkabelung\n1 St. Netzwerkverkabelung, bestehend aus 3 St. Datenverteilerschränken, 42 HE, und ca. 83 St. Doppeldatendosen inkl. Verkabelung\nKG 480\n1 St. Jalousiesteuerung für ca. 42 Jalousiebehänge inkl. Verkabelung\nKG 556\nca. 21 St. Mastleuchten\nca. 14 St. Fassadenleuchten\nKG 590\n1 St. Verkabelung E-Mobilität, bestehend aus ca. 200 m NYY 5 × 16 mm² und ca. 200 m Kat. 7A Innen-/Außenkabel",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45315100",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Kohlheckstraße 43",
+      "additionalStreet": "",
+      "postcode": "65199",
+      "city": "Wiesbaden",
+      "nuts": "DE714",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-14+01:00",
+    "endDate": "2028-03-24+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Fehlende Unterlagen, deren Vorlage mit dem Angebot gefordert war, werden teilweise nachgefordert, und zwar folgende Unterlagen: Alle Unterlagen, mit Ausnahme von: - alle Unterlagen und Angaben, deren Nachforderung / Aufklärung gemäß VOB/A EU ausgeschlossen sind. - das Formblatt \"BAV_Bieterangabenverzeichnis\" wird nicht nachgefordert und/oder aufgeklärt. Es ist zwingend, vollständig ausgefüllt mit dem Angebot vorzulegen. Angebote, die dieses Formblatt nicht enthalten, werden gemäß §16EU VOB/A von der Wertung ausgeschlossen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.had.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a0a45d5ab3-2a36b69718a40ee1",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

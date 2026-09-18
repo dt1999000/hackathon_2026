@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "e3493149-d94d-46cf-ae9d-b4c7f138ca36:1:LOT-0000",
+    "candidateId": "e3493149-d94d-46cf-ae9d-b4c7f138ca36:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000",
+      "45233130"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "e3493149-d94d-46cf-ae9d-b4c7f138ca36",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "f3c8ebec-ad2c-4119-93e1-b800a07783b0",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:16Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Die Autobahn GmbH des Bundes - NL Westfalen"
+    ]
+  },
+  "procedure": {
+    "title": "Deckensanierung A42, AK Bochum",
+    "description": "Deckensanierung A42, AK Bochum",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "45233130"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "44803",
+      "city": "Bochum",
+      "nuts": "DEA51",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": "5"
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "https://vergabe.autobahn.de",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angaben zu wenigstens drei geeigneten Referenzen über die Ausführung von Bauleistungen in den letzten 5 abgeschlossenen Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind. Als vergleichbare Leistungen werden anerkannt (s. Eigenerklärung zur Eignung Teil 1 Nr. 4): Leistungen gemäß den nachfolgenden PQ-Leistungsbereichen: - 411-03 Oberbauschichten aus Asphalt - 411-06 Verkehrssicherung Auf gesondertes Verlangen einzureichen: - Zu den benannten Referenzen Bescheinigungen über die ordnungsgemäße Ausführung und das Ergebnis in Anlehnung an die HVA B-StB-Vorlage 3103 \"Referenzbescheinigung\" Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte Unternehmen Präqualifizierte Unternehmen können die Nachweise der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) führen. Sofern die im PQ-Verzeichnis hinterlegten Referenznachweise nicht den o. g. definierten Mindestanforderungen an vergleichbare Leistungen entsprechen, sind mit dem Angebot zusätzliche Referenznachweise einzureichen, die den geforderten Mindestanforderungen entsprechen. Nicht präqualifizierte Unternehmen Nicht präqualifizierte Unternehmen haben als vorläufigen Nachweis der Eignung mit dem Angebot das in Ziff. I.4. ausgefüllte Formblatt \"Eigenerklärung zur Eignung\" mit folgenden Angaben vorzulegen: - Vorlage geeigneter Referenzen über die Ausführung von Bauleistungen in den letzten 5 Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind; Mindestanforderungen s. o."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Sonstige individuell geforderte Nachweise: - Nachweis der Qualifikation des zu benennenden Verantwortlichen für die Sicherungsarbeiten an Arbeitsstellen gem. dem \"Merkblatt über Rahmenbedingungen für erforderliche Fachkenntnisse zur Verkehrssicherung von Arbeitsstellen an Straßen (MVAS). Bei ausländischen Bietern wird ein gleichwertiger Qualifikationsnachweis verlangt. -Nachweis der Qualifikation der geprüften Fachkraft für Fahrbahnmarkierungen gemäß den \"Zusätzlichen Technischen Vertragsbedingungen und Richtlinien für Markierungen auf Straßen\" (ZTV M) -Nachweise der Qualifikation des Unternehmens gemäß den \"Zusätzlichen Technischen Vertragsbedingungen und Richtlinien für Markierungen auf Straßen (ZTV M). Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen."
+    },
+    {
+      "code": "slc-abil-staff-tech-work",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: 1. Gültige Präqualifikationsnachweise (PQ VOB) für die folgenden PQ-Leistungsbereiche: - 411-03 Oberbauschichten aus Asphalt - 411-06 Verkehrssicherung Sofern der Bieter/die Bietergemeinschaft für einzelne der vorgenannten Leistungsbereiche nicht präqualifiziert ist, sind auf den Leistungsbereich bezogene Eigenerklärungen gem. Formblatt HVA B-StB \"Eigenerklärung Eignung\", auch für ggf. vorgesehene Nachunternehmer, mit dem Angebot vorzulegen. 2. Sonstige individuell geforderte Nachweise: - Benennung Aufsteller /Koordinator für die Ausführungsplanung. - Benennung des Entsorgungsbetriebes für asbesthaltigen Abfall (incl. asbesthaltigem Beton). Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen."
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Auf gesondertes Verlangen einzureichen: Zahl der in den letzten drei abgeschlossenen Kalenderjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen und gesondert ausgewiesenem technischen Leitungspersonal. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte Unternehmen Präqualifizierte Unternehmen können den Nachweis durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) führen. Nicht präqualifizierte Unternehmen Nicht präqualifizierte Unternehmen geben v. g. Angaben formlos ab."
+    },
+    {
+      "code": "slc-abil-subc",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angabe, welche Teile des Auftrags der Unternehmer als Unteraufträge zu vergeben beabsichtigt. Auf gesondertes Verlangen einzureichen: Benennung der für die Unterauftragsvergabe vorgesehenen Unternehmer."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: - Angaben und Nachweise gem. Beschreibung der o. g. Ausschlussgründe. - Angaben, dass sich das Unternehmen bei der Berufsgenossenschaft angemeldet hat. - Klarstellend wird ebenfalls auf die gesetzliche Regelung des Art. 5k VO (EU) Nr. 833-2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in der Ukraine destabilisieren, hingewiesen. Die als Formular vorgegebene Eigenerklärung im Formblatt EIGENERKLAERUNG_BEZUG_RUSSLAND, mittels derer die Auftraggeber die Einhaltung der vorgenannten Vorschrift zu prüfen haben, ist abzugeben. Auf gesondertes Verlangen einzureichen: - Nachweis über die Anmeldung bei der für Ihr Unternehmen zuständigen Berufsgenossenschaft. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte Unternehmen Präqualifizierte Unternehmen können die Nachweise der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) führen. Nicht präqualifizierte Unternehmen Nicht präqualifizierte Unternehmen haben als vorläufigen Nachweis der Eignung mit dem Angebot das ausgefüllte Formblatt \"Eigenerklärung zur Eignung\" mit folgenden Angaben in Ziff. I.1. u. I.2. vorzulegen: - Angaben zur Zahlung von Steuern und Abgaben sowie der Beiträge zur gesetzlichen Sozialversicherung, - Angabe zu Insolvenzverfahren und Liquidation"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: - Erklärung über den Umsatz des Unternehmens jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen. 1. Der geforderte Mindestjahresumsatz beträgt 10.000.000,00 €/a brutto in den letzten 3 abgeschlossenen Geschäftsjahren 2. Der geforderte Mindestjahresumsatz in dem Tätigkeitsbereich dieses Auftrags beträgt 10.000.000,00 €/a brutto in den letzten 3 abgeschlossenen Geschäftsjahren Auf gesondertes Verlangen einzureichen: - Bestätigung eines vereidigten Wirtschaftsprüfers / Steuerberaters oder entsprechend testierte Jahresabschlüsse oder entsprechend testierte Gewinn- und Verlustrechnungen. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte Unternehmen Präqualifizierte Unternehmen können die Nachweise der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) führen. Nicht präqualifizierte Unternehmen Nicht präqualifizierte Unternehmen haben als vorläufigen Nachweis der Eignung mit dem Angebot das in Ziff. I.3. ausgefüllte Formblatt \"Eigenerklärung zur Eignung\" mit folgenden Angaben vorzulegen: - Angaben zum Umsatz des Unternehmens, jeweils bezogen auf die letzten drei abgeschlossenen Geschäftsjahre, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Auf gesondertes Verlangen einzureichen: Gewerbeanmeldung, Eintragung in der Handwerksrolle oder bei der Industrie- und Handelskammer. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte Unternehmen Präqualifizierte Unternehmen können die Nachweise des Nichtvorliegens o. g. Ausschlussgründe und der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) führen. Nicht präqualifizierte Unternehmen Nicht präqualifizierte Unternehmen haben als vorläufigen Nachweis der Eignung mit dem Angebot das ausgefüllte Formblatt \"Eigenerklärung zur Eignung\" mit folgenden Angaben in Ziff. I.1. u. I.2. vorzulegen: - Angaben über die Eintragung in einem Berufsregister."
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Mit dem Angebot einzureichen: Angaben zum Eintrag ins Handelsregister, in die Handwerksrolle und/oder bei der Industrie- und Handelskammer bzw., dass das Unternehmen zu keiner Eintragung in v. g. Register verpflichtet ist. Auf gesondertes Verlangen einzureichen: Vorlage der Gewerbeanmeldung, des Handelsregisterauszugs, der Eintragung in die Handwerksrolle oder der Eintragung bei der Industrie- und Handelskammer oder anderweitige sonstige Nachweise. Benannte Nachweise und Erklärungen sind auf gesondertes Verlangen des Auftraggebers auch von Nachunternehmern und Mitgliedern einer Bietergemeinschaft einzureichen. Präqualifizierte Unternehmen Präqualifizierte Unternehmen können die Nachweise des Nichtvorliegens o. g. Ausschlussgründe und der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) führen. Nicht präqualifizierte Unternehmen Nicht präqualifizierte Unternehmen haben als vorläufigen Nachweis der Eignung mit dem Angebot das ausgefüllte Formblatt \"Eigenerklärung zur Eignung\" mit folgenden Angaben in Ziff. I.1. u. I.2. vorzulegen: - Angaben über die Eintragung in einem Handelsregister."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Unterlagen richtet sich nach § 16a EU VOB/A."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.autobahn.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a08a88b831-4eaa3fc3673407e1",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

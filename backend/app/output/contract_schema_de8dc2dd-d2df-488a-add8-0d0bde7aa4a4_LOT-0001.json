@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "de8dc2dd-d2df-488a-add8-0d0bde7aa4a4:1:LOT-0001",
+    "candidateId": "de8dc2dd-d2df-488a-add8-0d0bde7aa4a4:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45331000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "de8dc2dd-d2df-488a-add8-0d0bde7aa4a4",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "ddbc65c9-30a9-4afc-a4dd-960c9ac5fa06",
+    "internalIdentifier": "42112 DKS Angio OPs",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:25Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Diakonissenkrankenhaus und Paulinenhilfe gGmbH - Diakonieklinikum Stuttgart"
+    ]
+  },
+  "procedure": {
+    "title": "Heizung/Kälte",
+    "description": "Heizungsverteiler mit 7 Gruppen\n- 1 Heizkörper mit Zubehör\n- Heizungsseitiger Anschluss an Bestandsnetz\n- Heizungsseitiger Anschluss an RLT-Geräte (1x WRG-Einheit und 3x Klimaschrank) - Kälteverteiler mit 10 Gruppen\n- Kaltwasserseitiger Anschluss an Bestandsnetz\n- Kaltwasserseitiger Anschluss an RLT-Geräte (3x Klimaschrank)\n- 4x Umluftkühlgeräte mit Zubehör (Wandgeräte)\n- 2x Umluftkühlgerät mit Zubehör (Deckengerät)\n- 4x Umluftkühlgerät in Hygieneausführung (Deckengerät)\n- Ca. 350 m Heizungsrohr (Edelstahl gepresst) DN 15-100 inkl. Dämmung\n- Ca. 500 m Kälterohr (Edelstahl gepresst) DN 15-100 inkl. Kältedämmung",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45331000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Rosenbergstraße 38",
+      "additionalStreet": "",
+      "postcode": "70176",
+      "city": "Stuttgart",
+      "nuts": "DE111",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-12-02+01:00",
+    "endDate": "2027-08-27+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-16+02:00",
+    "deadlineTime": "09:15:00+02:00",
+    "method": "required",
+    "url": "https://plattform.aumass.de/Veroeffentlichung/av286b67-eu",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Mindestens 3 Referenzen über vergleichbare Heizungsinstallationen innerhalb der letzten 5 Jahre. Davon sollten 2 der Referenzen in einer Gesundheitseinrichtung oder einer hinsichtlich der technischen Anforderungen vergleichbaren Einrichtung ausgeführt worden sein (mit Umbau im laufenden Betrieb). • Nachweis ausreichender personeller Kapazitäten und qualifizierten Fachpersonals. • Benennung eines verantwortlichen Bau-/Projektleiters. • Nachweis der erforderlichen fachlichen Qualifikationen für die Ausführung der Heizungs- anlagen. • Qualifikation für Schweißtechnik • Techn. Ausstattung für die Montageausführung, erforderliche Prüf- und Messtechnik so- wie geeignete Montage- und Hebeeinrichtungen. • Erfahrung mit Inbetriebnahme, hydraulischem Abgleich und Dokumentation vergleichba- rer Anlagen."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe VHB 216"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://plattform.aumass.de/Veroeffentlichung/av286b67-eu",
+        "description": "",
+        "documentType": "restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

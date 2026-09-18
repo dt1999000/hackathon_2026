@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "3b370605-9999-418b-9725-15a6689be5f6:1:LOT-0001",
+    "candidateId": "3b370605-9999-418b-9725-15a6689be5f6:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45212190"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "3b370605-9999-418b-9725-15a6689be5f6",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "280ede57-225e-4ba2-8ee5-d692466026ec",
+    "internalIdentifier": "89-2026",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:12:09Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Zentrale Gebäudebewirtschaftung Lünen"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau Leoschule - Dachfenster und Sonnenschutz",
+    "description": "Die Arbeiten umfassen die Lieferung und Montage von passivhaustauglichen Glasdachkonstruktionen mit hochwärmedämmender Dreifachverglasung, einschließlich öffenbarer RWA- und Lüftungsflügel, Antriebstechnik, Steuerungen, Notstromversorgung sowie aller erforderlichen Anschluss- und Abdichtungsarbeiten.  Ergänzend hierzu sind außenliegender, motorisch betriebener Sonnenschutz zur Verschattung der Glasdächer einschließlich Steuerungs-, Sensorik- und Elektrotechnik vorgesehen. Zum Leistungsumfang gehören außerdem die Werk- und Montageplanung, statische Nachweise, Inbetriebnahmen, behördliche Abnahmen sowie die Wartung der RWA- und Sonnenschutzanlagen.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45212190",
+    "additionalCpvCodes": [
+      "44221100"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "44532",
+      "additionalStreet": "",
+      "postcode": "44532",
+      "city": "Lünen",
+      "nuts": "DEA5C",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-29+01:00",
+    "deadlineTime": "10:00:00+01:00",
+    "method": "required",
+    "url": "https://www.vergabe.metropoleruhr.de/VMPSatellite/notice/CXPSYYVDQ1T",
+    "questionDeadlineDate": "2026-10-22+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Es gilt die Erfüllung der Eignungsnachweise nach § 6a EU VOB/A. Präqualifizierte Unternehmen führen den Nachweis der Eignung durch den Eintrag in die Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis). Bei Einsatz von Nachunternehmen ist auf gesondertes Verlangen nachzuweisen, dass diese präqualifiziert sind oder die Voraussetzung für die Präqualifikation erfüllen. Nicht präqualifizierte Unternehmen haben als vorläufigen Nachweis der Eignung mit dem Angebot das ausgefüllte Formblatt \"Eigenerklärung zur Eignung\" vorzulegen. Bei Einsatz von Nachunternehmen sind auf gesondertes Verlangen die Eigenerklärungen auch für diese abzugeben. Sind die Nachunternehmen präqualifiziert, reicht die Angabe der Nummer, unter der diese in der Liste des Vereins für die Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) geführt werden. Gelangt das Angebot in die engere Wahl, sind die Eigenerklärungen (auch die der Nachunternehmen) auf gesondertes Verlangen durch Vorlage der in der \"Eigenerklärung zur Eignung\" genannten Bescheinigungen zuständiger Stellen zu bestätigen. Bescheinigungen, die nicht in deutscher Sprache abgefasst sind, ist eine Übersetzung in die deutsche Sprache beizufügen. Das Formblatt \"Eigenerklärung zur Eignung\" liegt den Vergabeunterlagen bei."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "- Angaben zum Umsatz des Unternehmen in den letzten drei abgeschlossenen Geschäftsjahren soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebenden Leistung vergleichbar sind, unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Aufträgen; ggf. Nachweis des Mindestjahresumsatzes (§ 6a EU Nr. 2c VOB/A) - Angaben zur Ausführung von vergleichbaren Leistungen in den letzten bis zu fünf abgeschlossenen Kalenderjahren - Vorlage einer entsprechenden Bankerklärung oder Berufshaftpflichtversicherung"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Vorlage des Nachweis über die Eintragung in das Berufs- und Handelsregister oder die Handwerksrolle (nicht älter als 6 Monate) - nicht eintragungspflichtige Unternehmen reichen eine entsprechende Eigenerklärung ein."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Gemäß § 16a EU VOB/A"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.vergabe.metropoleruhr.de/VMPSatellite/notice/CXPSYYVDQ1T/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

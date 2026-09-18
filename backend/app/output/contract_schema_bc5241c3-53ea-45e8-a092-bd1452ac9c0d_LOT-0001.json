@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "bc5241c3-53ea-45e8-a092-bd1452ac9c0d:1:LOT-0001",
+    "candidateId": "bc5241c3-53ea-45e8-a092-bd1452ac9c0d:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45421141",
+      "45421152"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "bc5241c3-53ea-45e8-a092-bd1452ac9c0d",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "96637bdd-2dcc-4023-a5fb-0d0f8004b39d",
+    "internalIdentifier": "96-41-536-26",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:14Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landkreis Gießen - Der Kreisausschuss -"
+    ]
+  },
+  "procedure": {
+    "title": "Schreinerarbeiten Systemtrennwand,Gesamtschule Busecker Tal",
+    "description": "An der Gesamtschule Busecker Tal wird das Gebäude 1, der naturwissenschaftliche Trakt, saniert. \nHierfür steht nun die Vergabe der Schreinerarbeiten für die Systentrennwände an. Die Leistung beinhaltet den Einbau einer Vollwand ca. 11.075/3.000 mm  (Glastrennwand) mit allen Vorarbeiten.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45421141",
+    "additionalCpvCodes": [
+      "45421152"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Grüner Weg 3",
+      "additionalStreet": "",
+      "postcode": "35418",
+      "city": "Buseck",
+      "nuts": "DE721",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-05+01:00",
+    "endDate": "2027-05-27+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "https://www.dtvp.de/Satellite/notice/CXVTYYDDYR64WE0U",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Anlage Referenzen VOB (Mit dem Angebot; Mittels Eigenerklärung): Es sind mindestens 3 Referenzen über die Erbringung vergleichbarer Leistungen aus den letzten 3 Gechäftsjahren vorzulegen."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Nachforderung ist möglich nach Maßgabe von § 16 a EU VOB/A."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.dtvp.de/Satellite/notice/CXVTYYDDYR64WE0U/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

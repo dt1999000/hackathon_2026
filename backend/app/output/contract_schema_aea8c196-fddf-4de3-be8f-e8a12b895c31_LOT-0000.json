@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "aea8c196-fddf-4de3-be8f-e8a12b895c31:1:LOT-0000",
+    "candidateId": "aea8c196-fddf-4de3-be8f-e8a12b895c31:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "aea8c196-fddf-4de3-be8f-e8a12b895c31",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "a6038228-0342-4a80-b013-c39f022525d8",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:23Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Zentrale Vergabestelle der Gemeinde Barleben"
+    ]
+  },
+  "procedure": {
+    "title": "Los 406: Kälteanlagen, Splitkälte - Neubau Ärztehaus 2.0 Hansenstraße in Barleben",
+    "description": "Der Bauherr, die Gemeinde Barleben, plant den Neubau eines Ärztehauses\nmit 5 Praxen in der Hansenstraße 42 in 39179 Barleben.\nIm Dachgeschoss befinden sich zudem Abstellräume für die Mieter.\nDas Gebäude besteht aus einem Erd-, Ober- und einem Dachgeschoss.\nEs wird nicht unterkellert.\nDas Gebäude steht frei auf dem Grundstück.\nDer Neubau wird als konventioneller Mauerwerksbau mit Stahlbetondecken\nund Satteldach errichtet. Das Dach wird als traditionelles Holztragwerk mit\nZiegeleindeckung und Wärmedämmung ausgeführt.\nDie Aussteifung des Gebäudes wird über ausreichend zu dimensionierende\nWand- und Deckenscheiben sichergestellt.\nDie Gründung erfolgt über eine Stahlbetonsohlplatte mit umlaufenden\nStreifen-fundamenten / Frostschürzen.\nDie Baustelle wird über die über die Ernst-Thälmann-Straße und die\nHansenstraße erreichbar.\nDie Baustellenzufahrten erfolgen über die südöstlich gelegene künftige\nGrundstückszufahrt.\nAdresse: Hansenstraße 42 · 39179 Barleben\n\nBitte beachten Sie, dass eine Besichtigung des Objekts im Zeitraum vom: 31.08.-25.09.2026 erfolgt!\nEinen Termin vereinbaren Sie bitte vorab unter der Telefonnummer: +49 39203 565-2965.\nFehlende vom Auftraggeber bestätigte Vor-Ort-Besichtigungsbescheinigung führt zwingend zum Ausschluss!\n\nGrobmengen:\n- 4 - VRF-Multisplitanlagen (Außeneinheiten) zwischen ca. 5 - 15 kW\n- 28 Inneneinheiten als Deckenkassette\n- 28 Fernbedienungen\n- 1 x Anlage mit Außeneinheit und Wandgerät 3,5 kW für Serverraum\n- ca. 500 m Kältemittelleitungen 6 bis 16 mm aus Kupferrohr, einschl. Dämmung\n- ca. 160 m Kondensatleitungen DN 32 - DN 40\n- ca. 400 m Elektroleitungen einschl. der erforderlichen elektrischen Anschlüsse",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Hansenstraße 42",
+      "additionalStreet": "",
+      "postcode": "39179",
+      "city": "Barleben",
+      "nuts": "DEE07",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-30+01:00",
+    "endDate": "2027-09-17+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-29+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Nachfolgende Nachweise und Erklärungen sind vom Bieter mit dem Angebot vorzulegen: - FB 234 Erklärung Bieter-/Arbeitsgemeinschaft - falls keine Bietergemeinschaft gebildet wird, bitte im Formblatt vermerken - FB 235 Verzeichnis der Leistungen / Kapazitäten anderer Unternehmen - falls keine Nachunternehmen eingesetzt werden, bitte im Formblatt vermerken - Nachweis der Vor-Ort-Besichtigungsbescheinigung der Gemeinde Barleben Hinweis: Fehlende vom Auftraggeber bestätigte Vor-Ort-Besichtigungsbescheinigung führt zwingend zum Ausschluss des Angebotes! Auf gesondertes Verlangen sind vom Bestbieter und ggf. seinen Nachunternehmen sowie Mitgliedern einer Bieter-/Arbeitsgemeinschaft nachfolgende Nachweise und Erklärungen vorzunehmen: - Formblätter 221/222 - Preisermittlung bei Zuschlagskalkulation (Bieter) - Formblatt 223 - Aufgliederung der Einheitspreise (Bieter) - Formblatt 236 - Verpflichtungserklärung anderer Unternehmen - Formblatt 124 - Eigenerklärung zur Eignung inkl. Angabe der Umsätze aus den letzten drei abgeschlossenen Geschäftsjahren - Auszug aus dem Handelsregister - Unbedenklichkeitsbescheinigung Berufsgenossenschaft mit Angabe der Lohnsummen - Haftpflichtversicherung mit Angaben der Deckungssummen und Ablaufdatum - Freistellungsbescheinigung nach § 48 EstG vom Finanzamt - Bescheinigung in Steuersachen vom Finanzamt - Bescheinigung der Industrie-/Handwerkskammer - Unbedenklichkeitsbescheinigung der Sozialkasse - Unbedenklichkeitsbescheinigung der Krankenkasse - Erklärung EU-Sanktionen gegen Russland - Nachweis personeller Ausstattung - Gewerbeanmeldung - mind. 3 Referenznachweise gem. FB 124 mit folgenden Angaben: Ansprechpartner; Art der ausgeführten Leistung; Auftragssumme; Ausführungszeitraum; stichwortartige Benennung des mit eigenem Personal ausgeführten maßgeblichen Leistungsumfanges einschl. Angabe der ausgeführten Mengen; Zahl der hierfür durchschnittlich eingesetzten Arbeitnehmer; stichwortartige Beschreibung der besonderen technischen und gerätespezifischen Anforderungen bzw. (bei Komplettleistung) Kurzbeschreibung der Baumaßnahme einschließlich eventueller Besonderheiten der Ausführung; Angabe zur Art der Baumaßnahme (Neubau, Umbau, Denkmal); Angabe zur vertraglichen Bindung (Hauptauftragnehmer, ARGE-Partner, Nachunternehmer); ggf. Angabe der Gewerke, die mit eigenem Leitungspersonal koordiniert wurden; Bestätigung des Auftraggebers über die vertragsgemäße Ausführung der Leistung Auf gesondertes Verlangen geforderten Nachweise und Erklärungen sind innerhalb von sechs Kalendertagen vorzulegen. Alle erforderlichen Nachweise und Erklärungen sind aktuell gültig und fristgerecht vorzulegen. Die Frist für die Nachreichung der geforderten Nachweise und Erklärungen beginnt am darauffolgenden Tag des Tages, an dem die Versendung des Nachforderungsschreibens erfolgte. Im Falle einer Präqualifizierung durch Vorlage eines gültigen Nachweises werden die bei der PQ-Stelle hinterlegten Nachweise akzeptiert. Sollten nicht alle erforderlichen Nachweise bei der PQ-Stelle hinterlegt sein, behalten wir uns vor, zur Vollständigkeit Ihrer Unterlagen fehlende Nachweise laut dieser Liste nachzufordern."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/unterlagen/54321-Tender-1a0478ca75b-2ae5fc8dc3ddc66e",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

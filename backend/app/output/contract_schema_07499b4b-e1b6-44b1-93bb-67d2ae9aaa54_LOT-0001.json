@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "07499b4b-e1b6-44b1-93bb-67d2ae9aaa54:1:LOT-0001",
+    "candidateId": "07499b4b-e1b6-44b1-93bb-67d2ae9aaa54:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45210000",
+      "45262670"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "07499b4b-e1b6-44b1-93bb-67d2ae9aaa54",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "ec1de13a-0b15-45d5-8581-df5de4d67c3b",
+    "internalIdentifier": "2026-VOBEU-23/5-019",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:14Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Stadt Osnabrück - FD Öffentliche Aufträge"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau der Friedensschule; Metallbau- / Schlosserarbeiten",
+    "description": "'- Staketengeländer inkl. Stahlwange ca. 146 m; Ausschnitte in Stahlwange, dreieckförmig ca. 230 Stck.; Holzhandläufe, rund, Ø 40 mm, ca. 272 m; Taktile Handlaufkennzeichnung 32 Stck.; Feuerlösch-Schutzschränke 11 Stck.Revi-Klappen 3 Stck..",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45210000",
+    "additionalCpvCodes": [
+      "45262670"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Hakenstr. 6",
+      "additionalStreet": "",
+      "postcode": "49074",
+      "city": "Osnabrück",
+      "nuts": "DE944",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-07-26+02:00",
+    "endDate": "2027-09-03+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "08:30:00+02:00",
+    "method": "required",
+    "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXTBYY6DYRFLXTHB",
+    "questionDeadlineDate": "2026-10-09+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Betriebshaftpflichtversicherung (Auf Anforderung der Vergabestelle; Mittels Dritterklärung): Nachweis der Betriebshaftpflichtversicherung mit Angabe der Deckungssumme und der festgelegten Vertragsdauer (Aktualität nicht älter als 1 Jahr zum Submissionszeitpunkt)"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Erklärung_Tariftreue__4_NTVergG (Mit dem Angebot; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Umsatz der letzten drei Kalenderjahre (Auf Anforderung der Vergabestelle; Mittels Eigenerklärung): Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebend en Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. - Nimmt der Bieter in Hinblick auf die Kriterien für die wirtschaftliche und finanzielle Leistungsfähigkeit im Rahmen einer Eignungsleihe die Kapazitäten anderer Unternehmen in Anspruch, müssen diese gemeinsam für die Auftragsausführung haften; die Haftungserklärung ist gleichzeitig mit der \"Verpflichtungserklärung\" abzugeben"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen zur Prüfung des Angebotes werden nachgefordert. Fehlende Unterlagen, deren Vorlagen mit Teilnahmeantrag/Angebotsabgabe gefordert war, werden nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXTBYY6DYRFLXTHB/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

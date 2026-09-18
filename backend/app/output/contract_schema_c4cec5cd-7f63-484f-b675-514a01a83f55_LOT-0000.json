@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "c4cec5cd-7f63-484f-b675-514a01a83f55:1:LOT-0000",
+    "candidateId": "c4cec5cd-7f63-484f-b675-514a01a83f55:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45317300"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "c4cec5cd-7f63-484f-b675-514a01a83f55",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "90309742-7a62-44c5-a102-b3508001ef22",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T04:30:05Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Gemeinde Kabelsketal"
+    ]
+  },
+  "procedure": {
+    "title": "Neubau Rathaus Los 24 Photovoltaikanlage",
+    "description": "Titel 1.1: Vorbereitende Arbeiten\n- Baustelleneinrichtung\n- Technische Bearbeitung\n\nTitel 1.2: Bauabschnitt DC\n- 107 St PV-Unterkonstruktion + Module + Absturzsicherung\n- 250 m PV-Stringleitung\n\nTitel 1.3: Bauabschnitt AC\n- 1 St Wetter-/Sonnenschutz für Wechselrichter und Verteilung\n- 2 St PV-Stringwechselrichter, dreiphasig, 25 kVA\n\nTitel 1.4: Inbetriebnahme / Abnahme\n- Leistungen für die Inbetriebnahme\n\nTitel 1.6: Stundensätze\n- Abfrage Stundenlohnsätze",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45317300",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Schulstraße 7",
+      "additionalStreet": "",
+      "postcode": "06184",
+      "city": "Kabelsketal",
+      "nuts": "DEE0B",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-02-01+01:00",
+    "endDate": "2027-10-29+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-19+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe Vergabeunterlagen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/unterlagen/54321-Tender-1a0a4c2943b-12c2eb154af67d28",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "7ee0398d-898e-4429-b597-db38f4cc1a75:1:LOT-0000",
+    "candidateId": "7ee0398d-898e-4429-b597-db38f4cc1a75:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45000000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "7ee0398d-898e-4429-b597-db38f4cc1a75",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "68e4ae62-682b-4e46-a401-45b69b736ab3",
+    "internalIdentifier": "OB2-V-2026-73",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T09:36:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Kita Borstel in 06886 Luth. Wittenberg-Außenanlagen inkl. Entwässerung",
+    "description": "Baustelleneinrichtung\nAbbruch von Oberflächenbefestigungen und Erdarbeiten\nzwei Treppenanlagen\nBetonpflaster ca. 240 m², Beton ca. 2.500 m²\nBordsteine, Zaun, alte Rohre\nErdarbeiten für Rigole und Sickerschacht\nErdarbeiten für Verkehrsflächen\nVerkehrsflächen\nBeton-Rechteckpflaster 80 m²\nDrain-Pflaster 160 m²\nTreppen Haupt- und Nebeneingang aus Blockstufen ca. 14 lfm\nEntwässerung Dachfläche Straßenseite\nRohrrigole, Sickerschacht, Drainschacht, Leitungen, Muldenrinne\nBegrünung\nHecke 30 m\nPflanzflächen 50 m²\nStabmattenzaun 5 m, Tor zweiflüglig 2 Stk, 4 m Öffnungsbreite",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45000000",
+    "additionalCpvCodes": [
+      "43000000",
+      "44000000",
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-16",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-06+02:00",
+    "deadlineTime": "10:30:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "",
+      "label": null,
+      "description": "Bezug zum Formblatt: siehe Vergabeunterlagen, FB 124 oder PQ"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe-online.de/tenderdetails.html?id=891326",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

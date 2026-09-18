@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "c09e0dd3-7404-4c13-b086-c04e50294524:1:LOT-0001",
+    "candidateId": "c09e0dd3-7404-4c13-b086-c04e50294524:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45252100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "c09e0dd3-7404-4c13-b086-c04e50294524",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "c425b333-ce9a-473c-b3e8-20a20c1430cf",
+    "internalIdentifier": "LOT-0001 2025_104",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:15Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Entsorgungsverband Saar"
+    ]
+  },
+  "procedure": {
+    "title": "Bau-, Maschinen- und E-/MSR-Technik",
+    "description": "Rückbau der bestehenden Teichkläranlage und Herstellung einer technischen Kläranlage mit Feinrechenanlage, Rundsandfanganlage, Belebungsbecken (Biocos-Verfahren), Phosphatfällungsanlage und Schlammspeicher.\nErneuerung der Regenwasserbehandlung mit Trennbauwerk, Regenüberlaufbecken, Drossel-/Zulaufpumpwerk, Retentionsbodenfilter und Ablaufdrosselung.\nNeubau eines Funktionalgebäudes mit einer nutzbaren Gebäudefläche von ca. 190 m² mit Werkstatt/Lager, Messraum, WC-Raum, NSHV-/Betriebsüberwachungsraum, Raum für Rechenanlage, Raum für Sandfanganlage, Raum für Gebläse/Verdichter, Raum für Brauchwasseranlage.\nDie Maßnahme beinhaltete sämtliche Leistungen der Bau-, Maschinen- und E-/MSR-Technik sowie der technischen Gebäudeausrüstung, u. a.:\n- Abbruch Stahlbeton ca. 320m³\n- Aushub und Verwertung Erdmassen ca. 10.000 m³\n- Lieferung und Einbau Ersatzboden ca. 8500 m³\n- Asphaltarbeiten ca. 2000 m²\n- Stahlbeton herstellen ca. 900 m³\n- Spundwandverbau ca. 700 m²,\n- Komplettabbruch Betriebsgebäude",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45252100",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DEC01",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-09-25+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Vorstehendes Kriterium wurde aus technischen Gründen beispielhaft ausgewählt. Eignung zur Berufsausübung: Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb der vorgegebenen Frist nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Bei Bietergemeinschaften sind die Erklärungen von jedem Mitglied der Bietergemeinschaft vorzulegen. Eine Einheitliche Europäische Eigenerklärung (EEE) wird akzeptiert."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Vorstehendes Kriterium wurde aus technischen Gründen beispielhaft ausgewählt. Wirtschaftliche und finanzielle Leistungsfähigkeit: Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb der vorgegebenen Frist nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Bei Bietergemeinschaften sind die Erklärungen von jedem Mitglied der Bietergemeinschaft vorzulegen. Eine Einheitliche Europäische Eigenerklärung (EEE) wird akzeptiert."
+    },
+    {
+      "code": "slc-abil-staff-tech-work",
+      "label": null,
+      "description": "Vorstehendes Kriterium wurde aus technischen Gründen beispielhaft ausgewählt. Technische und berufliche Leistungsfähigkeit: Die Eignung ist durch Eintragung in die Liste des Vereins für Präqualifikation von Bauunternehmen e.V. (Präqualifikationsverzeichnis) oder Eigenerklärungen gem. Formblatt 124 (Eigenerklärungen zur Eignung) nachzuweisen. Gelangt das Angebot eines nicht präqualifizierten Bieters in die engere Wahl, sind die im Formblatt 124 angegebenen Bescheinigungen innerhalb der vorgegebenen Frist nach Aufforderung vorzulegen. Beruft sich der Bieter zur Erfüllung des Auftrages auf die Fähigkeiten anderer Unternehmen, ist die jeweilige Nummer im Präqualifikationsverzeichnis oder es sind die Erklärungen und Bescheinigungen gemäß dem Formblatt 124 auch für diese anderen Unternehmen auf Verlangen vorzulegen. Bei Bietergemeinschaften sind die Erklärungen von jedem Mitglied der Bietergemeinschaft vorzulegen. Eine Einheitliche Europäische Eigenerklärung (EEE) wird akzeptiert. • Sachkundenachweis nach TRGS 519: Sachkundenachweis TRGS 519 nach Anlage 3 und 4c. • Qualifikationsnachweise Schweißarbeiten: Prüfzeugnisse für das Schweißen von Rohrleitungen/Druckleitungen aus Kunststoffen (PE, PVC, PP, PB) nach DVS 2212-1 Prüfzeugnisse für das Schweißen von Rohrleitungen/Druckleitungen aus Edelstahl nach DIN EN ISO 9606-1 Prüfzeugnisse für das Schweißen von Kunststoffdichtungsbahnen gem. der Richtlinie DVS 2212-3 • Qualifikationsnachweise für Arbeiten am öffentlichen Trinkwasserversorgungsnetz: DVGW-Zertifikat nach GW 301 Gruppe W3/pe, st, ge • Eignungsnachweis nach RAL-GZ 961: Bieter müssen mit Angebotsabgabe und während der Werkleistung die fachliche Qualifikation (Fachkunde, technische Leistungsfähigkeit, Zuverlässigkeit der technischen Vertragserfüllung) und Gütesicherung des Unternehmens nachweisen. Die Anforderungen der vom Deutschen Institut für Gütesicherung und Kennzeichnung e. V. herausgegebenen Gütesicherung Kanalbau RAL-GZ 9611) sind für die nachstehend angegebenen Beurteilungsgruppen zu erfüllen und mit Angebotsabgabe nachzuweisen: AK (Offener Kanalbau) - AK1 I (Inspektion) R (Reinigung) D (Dichtheitsprüfung) Der Nachweis gilt als erbracht, wenn der Bieter die Erfüllung der Anforderungen und die Gütesicherung des Unternehmens nach Gütesicherung Kanalbau RAL-GZ 961 mit dem Besitz des entsprechenden RAL-Gütezeichens Kanalbau für die geforderte(n) Beurteilungsgruppe(n) nachweist. Aufgrund des Diskriminierungsverbotes darf die Ausschreibende Stelle keinen Bieter benachteiligen. Deshalb gilt der Nachweis als gleichwertig erbracht, wenn der Bieter die Erfüllung der Anforderungen durch eine Prüfung, welche inhaltlich den Anforderungen der Güte- und Prüfbestimmungen RALGZ 961 Abschnitt 4.1 für die geforderte(n) Beurteilungsgruppe(n) entspricht, mit einem Prüfbericht nachweist. Der Prüfbericht muss die Erfüllung der gestellten Anforderungen nachvollziehbar belegen. Mit dem Prüfbericht sind vorzulegen: Angaben zur Personalausstattung mit Aus- und Weiterbildungsnachweisen / Angaben zur Betriebs- und Geräteausstattung / Angaben zu den in den letzten drei Jahren durchgeführten vergleichbaren Projekten / Muster der Dokumentation der Eigenüberwachung (Sanierungshandbuch bei Gruppe S)."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Unterlagen richtet sich nach § 16a EU VOB/A-EU."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.subreport.de/E95727845",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

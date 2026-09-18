@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "25827808:1:LOT-0000",
+    "candidateId": "25827808:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "25827808",
+    "version": "1",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "",
+    "internalIdentifier": "",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T07:00:43Z",
+    "issueDate": ""
+  },
+  "buyer": {
+    "names": []
+  },
+  "procedure": {
+    "title": "Sonderbau Möbeltischler und Ausstattung / Umgestaltung Stadtbibliothek Freiberg/Sa.",
+    "description": "a) Auftraggeber:  Offizielle Bezeichnung: Stadtverwaltung Freiberg; Straße, Hausnummer: Schlossplatz 6; Postleitzahl: 09599; Ort: Freiberg; Land: DE; Telefon: +49 3731273651; Internet-Adresse: www.freiberg.de; E-Mail: marketing@freiberg.de\nb) Vergabeart: Öffentliche Ausschreibung\nc) Angebote können nur elektronisch abgegeben werden.\nd) Art des Auftrages: Bau- und Lieferverträge (Sonderbau Möbeltischler und Ausstattung)\ne) Ort(e) der Ausführung: Offizielle Bezeichnung: Stadtbibliothek Freiberg/Sa.; Straße, Hausnummer: Korngasse 14; Postleitzahl: 09599; Ort: Freiberg; Land: DE\nf) Art und Umfang der Leistung: Tresenanlage mit einer Gesamtfläche 21m2 aus Holzwerkstoff; Mineralwerkstoff und Sonderanbauten aus Metall; 4lfm Verkaufsbereich aus Holzwerkstoff; Mineralwerkstoff und Sonderanbauten aus Metall; 1Stk. Schiebefläche aus Holzwerkstoff; 8m2 multifunktionale Wandverkleidung mit akustisch wirksamen Oberflächen in Kombination mit beschreibbaren Flächen; 3 Stk. Ausbau Fensternischen als Sitzflächen mit Polster und Stauraum; 5m2 multifunktionale Wandverkleidung mit akustisch wirksamen Oberflächen; 1 Stk. Sideborard B 2m; 1 Stk. Raumteilerregal aus Metall mit Einbauten aus Metall und Holz und Rückwand mit akustisch wirksamen Oberflächen;  Verschiedene Einbauten in Bestandsregalen aus Metall und Holz; 22m2 Baffeldecke/Akustik; verschiedene Ausstattungen\ng) Es werden Planungsleistungen gefordert: vgl. Leistungsbeschreibung (Werksplanung)\nh) Aufteilung in mehrere Lose: nein\ni) Ausführungsfristen: Beginn: 12.11.2026, Ende: 27.02.2027\nj) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 3 zur Nichtzulassung von Nebenangeboten: Entfällt, da Nebenangebote zugelassen sind.\nk) Gegebenenfalls Angaben nach § 8 Absatz 2 Nummer 4 zur Nichtzulassung der Abgabe mehrerer Hauptangebote: Entfällt, da die Abgabe mehrerer Hauptangebote zugelassen ist.\n l) Stelle, bei der die Vergabeunterlagen angefordert werden können: Die Vergabeunterlagen werden auf der Vergabeplattform evergabe.de bereitgestellt. Ein unentgeltlicher Abruf ohne Registrierung ist möglich unter https://www.evergabe.de/unterlagen/3455042/zustellweg-auswaehlen.\nm) Kosten für Vervielfältigungen der Vergabeunterlagen: entfällt\nn) entfällt\no) Frist für den Eingang der Angebote: 14.10.2026, 23:59 Uhr; Bindefrist: 31.12.2026\np) Elektronische Angebote sind auf der Vergabeplattform evergabe.de abzugeben.\nq) Angebote sind abzufassen in: Deutsch\nr) Zuschlagskriterien, sofern diese nicht in den Vergabeunterlagen genannt werden und gegebenenfalls deren Gewichtung: Die Zuschlagskriterien sind in den Vergabeunterlagen genannt.\ns) Eröffnungstermin: Datum: 15.10.2026, 09:00 Uhr; Ort: Stadtverwaltung Freiberg, Schlossplatz 6 in 09599 Freiberg; Personen, die anwesend sein dürfen: digitale Angebotsöffnung - keine\nt) Sicherheiten: vgl. Leistungsbeschreibung zzgl. Formblätter\nu) Finanzierungs- und Zahlungsbedingungen: vgl. Leistungsbeschreibung zzgl. Formblätter\nv) Rechtsform einer Bietergemeinschaft: vgl. Leistungsbeschreibung zzgl. Formblätter\nw) Verlangte Nachweise für die Beurteilung der Eignung: vgl. Leistungsbeschreibung zzgl. Formblätter\nx) Vergabenachprüfstelle: Offizielle Bezeichnung: Landesdirektion Sachsen; Bereich/Abteilung: Referat 39; Straße, Hausnummer: Stauffenbergallee2; Postleitzahl: 01099; Ort: Dresden; Land: DE\n\nTischler/ Innenausbau/ Einbaumöbel,Möbel (Bildungseinrichtungen)",
+    "type": "de-open",
+    "typeRaw": "de-open"
+  },
+  "classification": {
+    "mainNature": "",
+    "mainCpvCode": "45",
+    "additionalCpvCodes": [
+      "43",
+      "44",
+      "71"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "09599 Freiberg",
+      "nuts": "DED",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-14+02:00",
+    "deadlineTime": "23:59:00+02:00",
+    "method": "",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.evergabe.de/auftraege/suche-ueber-vergabestellen/Stadtverwaltung%2520Freiberg/3455042",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

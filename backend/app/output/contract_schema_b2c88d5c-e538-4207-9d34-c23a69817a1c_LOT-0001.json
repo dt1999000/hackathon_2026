@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "b2c88d5c-e538-4207-9d34-c23a69817a1c:1:LOT-0001",
+    "candidateId": "b2c88d5c-e538-4207-9d34-c23a69817a1c:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45112713",
+      "45261300",
+      "45261410"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "b2c88d5c-e538-4207-9d34-c23a69817a1c",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "b1000000-c0de-4000-a000-00d462814084",
+    "internalIdentifier": "A-2026-FWT-303",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:25Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Amt Oeversee"
+    ]
+  },
+  "procedure": {
+    "title": "Dachdeckungsarbeiten",
+    "description": "Titel: Dachdeckerarbeiten\nBeschreibung: Die gesamte Baumaßnahme umfasst den Neubau eines Feuerwehrgebäudes auf dem Grundstück am Ferdinand-Porsche-Ring in Tarp, bestehend aus einer Fahrzeughalle mit 8 Stellplätzen, die von einem eingeschossigen Anbau mit angegliederter Küche von Süden und Westen „umklammert“ wird. Die hierfür neu herzustellenden Außenanlagen bestehen aus einer gebäudeumschließenden Zufahrtsstraße beginnend an der Zufahrt vom Ferdinand-Porsche-Ring zu den Besucher- und Alarmstellplätzen mit Anschluss an die südöstliche Übungsfläche und an den Hallenvorplatz nördlich der Fahrzeughalle \n\nDiese Ausschreibung umfasst die Dachdeckerarbeiten\nFolgende Hauptleistungen sind u.a. im Rahmen dieser Ausschreibung zu erbringen: \n-\tSohle abschweißen G200S4 ca. 1.500m²\n-\tDachaufbau, Dampfsperre Gefälledämmung FPO Dachbahn, ca.830m²\n-\tDachaufbau, Dampfsperre Dämmung FPO Dachbahn, ca.720m²\n-\tEinfache intensive Dachbegrünung, ca. 1320 m²\n-\tAuflastgehaltenes Seilsicherungssystem, ca. 110m\n-\tAuflastgehaltenes Geländer, ca. 115m\n-\tDachabläufe und Fallrohre\n-\tDachrandabschlussprofile, ca. 240m\n",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45261410",
+    "additionalCpvCodes": [
+      "45261300",
+      "45112713"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "24963",
+      "city": "Tarp",
+      "nuts": "DEF0C",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-01-12+01:00",
+    "endDate": "2027-06-02+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-15+02:00",
+    "deadlineTime": "15:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eigenerklärung: Angabe zur Mitgliedschaft bei der Berufsgenossenschaft"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung: Angaben zur Zahlung von Steuern, Abgaben und Beiträgen zur Sozialversicherung"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung: Angabe, dass nachweislich keine schwere Verfehlung begangen wurde, die die Zuverlässigkeit als Bewerber in Frage stellt"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung: Angaben, ob ein Insolvenzverfahren oder ein vergleichbares gesetzlich geregeltes Verfahren eröffnet/die Eröffnung beantragt/mangels Masse abgelehnt/ein Insolvenzplan rechtskräftig bestätigt wurde oder ob sich das Unternehmen in Liquidation befindet"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Eigenerklärung: Eintragung im Berufs- oder Handelsregister des Sitzes oder Wohnsitzes des Unternehmens"
+    },
+    {
+      "code": "slc-stand-to-spec-avg",
+      "label": null,
+      "description": "Eigenerklärung: Umsatz in den letzten 3 abgeschlossenen Geschäftsjahren, Bauleistungen und andere Leistungen betreffend, die mit der zu vergebenden Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Eigenerklärung: Zahl der in den letzten drei abgeschlossenen Geschäftsjahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen mit gesondert ausgewiesenem technischen Leitungspersonal"
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Eigenerklärung: Ausführung von Leistungen, die mit der zu vergebenden Leistung vergleichbar sind"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "siehe Unterlagen"
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://bi-medien.de/ausschreibungsdienste/ausschreibungen/D462814084",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "9c7c5cb9-220a-41b2-ba70-d8e698bb08aa:1:LOT-0000",
+    "candidateId": "9c7c5cb9-220a-41b2-ba70-d8e698bb08aa:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45112713"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "9c7c5cb9-220a-41b2-ba70-d8e698bb08aa",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "763ae64f-d7ef-4971-b120-9d320af42915",
+    "internalIdentifier": "26-049651",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:43Z",
+    "issueDate": "2026-09-16+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Staatliches Bauamt München 2"
+    ]
+  },
+  "procedure": {
+    "title": "Landschaftsbauarbeiten",
+    "description": "MRI Stamm, Erschließung Strahlenbunker\n\nDas staatliche Bauamt München plant die Errichtung eines neuen Strahlenbunkers auf dem Klinik-gelände rechts der Isar. Hierfür erfolgt im 1. Bauabschnitt die Erweiterung der Ver- und Entsor-gungsanlagen in unterschiedlichen Bereichen und Geschoßen der Strahlenklinik (Erweiterung Rohrpostzentrale).\n\nGewerk:  Landschaftsbau\n-\tSystemaufbau Intensive Dachbegrünung 85m²\n-\tSystemaufbau Extensive Dachbegrünung 60m²\n-\tKiesfangleiste Aluminium 30m\n-\tRandeinfassung Steinfaser 35m\n-\tRandeinfassung Aluminium 11m\n-\tRollkies als Traufstreifen 45m²       \n-\tKontrollschacht 4 St.\n-\tIntensive Dachbegrünung 55 m²\n-\tExtensive Dachbegrünung 40m²\n-\tSolitärstrauch (Taxus baccata) 3 St.  \n-\tBlockstufe 1 St.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45112713",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "81675",
+      "city": "München, Ismaninger Str. 22",
+      "nuts": "DE212",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-03+01:00",
+    "endDate": "2027-04-01+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "required",
+    "url": "https://www.meinauftrag.rib.de",
+    "questionDeadlineDate": "2026-10-12+02:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-stand-to-spec-avg",
+      "label": null,
+      "description": "Auflistung und kurze Beschreibung der Eignungskriterien – siehe: https://my.vergabe.bayern.de/eignungskriterien.php?lv_id=298303 - Umsatz des Unternehmens in den letzten drei abgeschlossenen Geschäftsjahren, soweit er Bauleistungen und andere Leistungen betrifft, die mit der zu vergebend en Leistung vergleichbar sind unter Einschluss des Anteils bei gemeinsam mit anderen Unternehmen ausgeführten Leistungen. - Nimmt der Bieter in Hinblick auf die Kriterien für die wirtschaftliche und finanzielle Leistungsfähigkeit im Rahmen einer Eignungsleihe die Kapazitäten anderer Unternehmen in Anspruch, müssen diese gemeinsam für die Auftragsausführung haften; die Haftungserklärung ist gleichzeitig mit der „Verpflichtungserklärung“ abzugeben (siehe Teilnahmebedingungen)."
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Unterlagen werden gem. § 16a EU VOB/A nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.meinauftrag.rib.de/public/DetailsByPlatformIdAndTenderId/platformId/1/tenderId/298303",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

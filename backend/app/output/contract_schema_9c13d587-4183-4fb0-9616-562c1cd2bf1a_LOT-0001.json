@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "9c13d587-4183-4fb0-9616-562c1cd2bf1a:1:LOT-0001",
+    "candidateId": "9c13d587-4183-4fb0-9616-562c1cd2bf1a:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45221100"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "9c13d587-4183-4fb0-9616-562c1cd2bf1a",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "6ab48bdc-d7f0-4c30-8512-f2041b7f9273",
+    "internalIdentifier": "2026.0296",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:08:58Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Landkreis Harburg - Zentrale Vergabestelle"
+    ]
+  },
+  "procedure": {
+    "title": "K54 Ersatzneubau Brücke über DB - Bendestorfer Str. - Teilfunktionale Ausschreibung Ingenieurbau m. Planungsleistungen u. Straßenbau",
+    "description": "Ersatzneubau Straßenüberführung,\nStraßenausbau von 180m Länge\n\nDie Leistungsbeschreibung besteht aus einer Baubeschreibung mit Leistungsprogramm und Leistungsverzeichnis, sowie einer separaten\nBaubeschreibung zum Straßenbau.\nFür die Herstellung des Ersatzneubaus im Gleisbereich einschließlich des Abbruchs der Bestandsbrücken stehen lediglich 4 Wochen während einer Totalsperrung der Bahnstrecke und parallel dazu laufend 7 Wochen Totalsperrung der K54 zur Verfügung. Das Bauwerk ist so zu entwerfen und auszuführen, dass alle im Gleisbereich befindlichen Bauteile in der Zeit der Totalsperrung der DB Strecke\nhergestellt werden.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45221100",
+    "additionalCpvCodes": [
+      "71000000"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Bendestorfer Straße 60 (Landkreis Harburg, Kreisstraße 54, Brücke über DB)",
+      "additionalStreet": "",
+      "postcode": "21244",
+      "city": "Buchholz i.d.N.",
+      "nuts": "DE933",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-11-26+01:00",
+    "deadlineTime": "10:00:00+01:00",
+    "method": "required",
+    "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXTMYYDYT1A3MN1E",
+    "questionDeadlineDate": "2026-11-18+01:00"
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Nachweis der Qualifikation (Mit dem Angebot; Mittels Eigenerklärung): Mit Angebotsabgabe sind der zum Einsatz vorgesehene Polier, der verantwortliche Bauleiter, der Koordinator gem. ZTV-ING und der Aufsteller der Planung verbindlich im Formblatt 107 zu benennen. Diese sollten in den letzten 5 Jahren vergleichbare Baumaßnahmen ordnungsgemäß ausgeführt haben. Die für das Projekt eingesetzten verantwortlichen genannten Mitarbeiter müssen über Sprachkenntnisse auf einem Kompetenzniveau mindestens (C1) der Deutschen Sprache in Wort und Schrift verfügen. Der projektverantwortliche Mitarbeiter für Ingenieurleistungen soll mind. einen Bachlorabschluss in dem ausgeschriebenen Fachbereich haben."
+    },
+    {
+      "code": "slc-abil-ref-work",
+      "label": null,
+      "description": "Nachweis von Referenzen (Mit dem Angebot; Mittels Eigenerklärung): Vorlage geeigneter Referenzen über die Ausführung von Bauleistungen in den letzten 5 Kalenderjahren, die mit der zu vergebenden Leistung vergleichbar sind. Als vergleichbare Leistungen werden anerkannt: - Neubau von Brückenbauwerk für den Straßenverkehr über eine Bahnstrecke, - Ingenieursplanung von Brückenbauwerk für den Straßenverkehr über eine elektrifizierte Bahnstrecke, - Neubau von Brückenbauwerk mit einem Überbaufeld für die Überführung des Straßenverkehrs, - Tief- und Straßenbau im Rahmen Neubau von Ersatzbauwerk einer Straßenüberführung"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der Berufsgenossenschaft des zuständigen Versicherungsträgers (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung des Finanzamtes bzw. Bescheinigung in Steuersachen (Mit dem Angebot; Keine oder anderweitige Formerfordernis): Bitte beachten Sie, dass diese Bescheinigung nicht in der Präqualifizierungsdatenbank hinterlegt ist."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Unbedenklichkeitsbescheinigung der tariflichen Sozialkasse, falls das Unternehmen beitragspflichtig ist (Mit dem Angebot; Keine oder anderweitige Formerfordernis): Alle Arbeitgeber bzw. Betriebe in bestimmten Wirtschaftszweigen sind verpflichtet, an Sozialkassen-Verfahren teilzunehmen, soweit diese auf allgemeinverbindlichen Tarifverträgen beruhen (§§ 5 Absatz 1 und Absatz 1a des Tarifvertragsgesetzes). Sozialkassen sind gemeinsame Einrichtungen von Tarifvertragsparteien (§ 4 Absatz 2 des Tarifvertragsgesetzes). Alternativ reicht eine Bescheinigung darüber, dass keine Verpflichtung zur Teilnahme am Sozialkasse-Verfahren besteht."
+    },
+    {
+      "code": "slc-stand-to-spec",
+      "label": null,
+      "description": "Nachweis eines bestimmten Mindestjahresumsatzes in dem Tätigkeitsbereich des Auftrags (alle Angaben brutto) (Mit dem Angebot; Mittels Eigenerklärung): Angaben zum Jahresumsatz in dem Tätigkeitsbereich in den letzten drei abgeschlossenen Geschäftsjahren Der geforderte Mindestjahresumsatz in dem Tätigkeitsbereich des Auftrages beträgt: 8.000.000 EUR."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Eigenerklärung zu Art. 5k Absatz 1 der Verordnung (EU) Nr. 833/2014 (Mit dem Angebot; Mittels Eigenerklärung): - Eigenerklärung, dass der Bieter/ die Bieter einer Bietergemeinschaft keinen Bezug zu Russland im Sinne des Art. 5k Absatz 1 der Verordnung (EU) Nr. 833/2014 in der Fassung des Art. 1 Ziff. 23 der Verordnung (EU) 2022/576 des Rates vom 8. April 2022 über restriktive Maßnahmen angesichts der Handlungen Russlands hat/ haben (das entsprechende Formular \"Eigenerklärung-VO-2022-833.pdf\" liegt in den Vergabeunterlagen) Entsprechend der Verordnung (EU) 2022/576 dürfen öffentlichen Aufträge nach dem 9. April 2022 nicht an Personen oder Unternehmen vergeben werden, die einen Bezug zu Russland im Sinne der Vorschrift aufweisen. Dies umfasst sowohl unmittelbar als Bewerber, Bieter oder Auftragnehmer auftretende Personen oder Unternehmen als auch mittelbar, mit mehr als zehn Prozent, gemessen am Auftragswert, beteiligte Unterauftragnehmer, Lieferanten oder Eignungsverleiher."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Erklärung zu Mindestentgelte nach NTVergG (Mit dem Angebot; Mittels Eigenerklärung): Die Einhaltung der Vorgaben des NTVergG (Mindestentgelte) ist durch Abgabe einer Erklärung zur Umsetzung des NTVergG (entsprechendes Formular liegt in den Vergabeunterlagen) zu bestätigen. Sofern Nachunternehmer eingesetzt werden, ist die Erklärung zu den Mindestentgelten auch zusätzlich von diesen einzureichen."
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Erklärung zur Insolvenz bzw. Liquidation (Mit dem Angebot; Mittels Eigenerklärung):"
+    },
+    {
+      "code": "slc-abil-staff-yrly-avg-mp",
+      "label": null,
+      "description": "Erklärung zur Zahl der in den letzten 3 Jahren jahresdurchschnittlich beschäftigten Arbeitskräfte, gegliedert nach Lohngruppen, mit extra ausgewiesenem Leitungspersonal (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-stand-other",
+      "label": null,
+      "description": "Freistellungsbescheinigung vom Finanzamt (nach § 48b EStG) (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "Gewerbeanmeldung, Handelsregisterauszug oder Eintragung in der Handwerksrolle (Handwerkskarte) bzw. bei der Industrie- und Handelskammer (Mit dem Angebot; Keine oder anderweitige Formerfordernis):"
+    },
+    {
+      "code": "slc-stand-to-gen",
+      "label": null,
+      "description": "Nachweis eines bestimmten Mindestjahresumsatzes (alle Angaben brutto) (Mit dem Angebot; Mittels Eigenerklärung): Angaben zum Jahresumsatz in den letzten drei abgeschlossenen Geschäftsjahren Der geforderte Mindestjahresumsatz beträgt: 28.000.000 EUR"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer Betriebshaftpflichtversicherung (Mit dem Angebot; Mittels Dritterklärung): Nachweis über die Höhe der Betriebshaftpflichtversicherung von mind. 10.000.000,- EUR (jeweils für Personen- und Sachschäden)."
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die fehlenden Unterlagen werden gem. § 16a VOB/A EU innerhalb einer angemessenen Nachfrist nachgefordert."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://vergabe.niedersachsen.de/Satellite/notice/CXTMYYDYT1A3MN1E/documents",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

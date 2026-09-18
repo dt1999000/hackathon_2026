@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "93e9a283-4c40-4c5e-8af1-8ef4df1e0b3b:1:LOT-0001",
+    "candidateId": "93e9a283-4c40-4c5e-8af1-8ef4df1e0b3b:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45431000"
+    ],
+    "missingEvidence": [
+      "selection_criteria_missing",
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "93e9a283-4c40-4c5e-8af1-8ef4df1e0b3b",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "50575089-50e4-49f7-b824-b5d87ca12143",
+    "internalIdentifier": "P 24 012-024-1",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T09:36:05Z",
+    "issueDate": "2026-09-17+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Rehabilitationszentrum Thüringer Wald"
+    ]
+  },
+  "procedure": {
+    "title": "024-1_Fliesenarbeiten",
+    "description": "Fliesen- und Plattenarbeiten im Rahmen der Sanierung des Dachgeschosses eines Bestandsgebäudes. Der Leistungsumfang umfasst die Untergrundvorbereitung, die Herstellung von Verbundabdichtungen in Nassräumen sowie die Lieferung und Verlegung keramischer Boden- und Wandfliesen in Sanitär-, Dusch- und Umkleidebereichen einschließlich Sockelfliesen, Profilen, elastischen Anschluss- und Bewegungsfugen sowie sämtlicher erforderlicher Anschluss-, Anpassungs- und Nebenarbeiten.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45431000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "98553",
+      "city": "Schleusingen",
+      "nuts": "DEG0E",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2026-11-16+01:00",
+    "endDate": "2026-12-04+01:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Fehlende Unterlagen, deren Vorlage mit Angebotsabgabe gefordert war, werden oder können nachgefordert werden."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.staatsanzeiger-eservices.de/aJs/EFormsBekVuUrl?z_param=328805",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "21ff0564-a054-4e81-8a23-3f177b316471:1:LOT-0000",
+    "candidateId": "21ff0564-a054-4e81-8a23-3f177b316471:1:LOT-0000",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45262800",
+      "45432210"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "21ff0564-a054-4e81-8a23-3f177b316471",
+    "version": "01",
+    "lotIdentifier": "LOT-0000",
+    "procedureIdentifier": "3145e344-ebc5-421a-85e4-69a211d7f891",
+    "internalIdentifier": "LOT-0000",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:39Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Wetteraukreis"
+    ]
+  },
+  "procedure": {
+    "title": "Trockenbauarbeiten, Erweiterung Ganztag JFK+Saalburgschule",
+    "description": "Allgemeine Baubeschreibung:\nIm Zuge des Ausbaues der Ganztagsbetreuung an der Saalburgschule benötigt die Grundschule eine eigene Mensa. Aufgrund steigender Schülerzahlen benötigt die Real- und Hauptschule (John-F.-Kennedy-Schule) weitere Klassen- und Betreuungsräume. Der Schulcampus in Bad Vilbel ist flächenmäßig eng genutzt, deshalb soll ein gemeinsamer Erweiterungsbau an die John-F.-Kennedy-Schule beide Bedarfe decken. Das  neue Erweiterungsgebäude soll an der nordwestlichen Grundstücksecke gebaut werden. \nZwischen dem Baufeld und der bestehenden Sporthalle im Osten ist ein Streifen mit einem dichtgewachsenen Baumbestand. Die Baumschutz und die Wurzelschutzmassnahmen werden bauseits ausgeführt. Bei der Ausführung ist darauf Rücksicht zu nehmen. Die Zu- und Abfahrt für den Baustellenverkehr erfolgt im Norden vom Massenheimer Weg aus. Hier wird ab der Feuerwehrzufahrt der Saalburgschule der Verkehr gesperrt und eine Sackgasse ausgebildet. Die Beschilderung erfolgt bauseits. Die Baueinrichtungsfläche und der Kran sollen im Norden des Baufeldes aufgestellt werden. \nDer Neubau ist mit 3 aufgehenden Vollgeschossen mit Flachdach und den Abmessungen von ca. 30m x 30m geplant. Aufgrund der geneigten Geländesituation ist im südlichen Bereich ein Teiluntergeschoss geplant, dass auch einen ebenerdigen Zugang von der bestehenden JFK-Schule ermöglicht. Die Erschliessung der Saalburgschule ist im EG über eine großzügige Treppenanlage vom bestehenden Pausenhof aus geplant. Für die Technikzentrale Lüftung wird im Dachgeschoss ein weiteres Staffelgeschoss mit einem Walmdach mit einer Holzkonstruktion ausgeführt.\n\nGewerke-Beschreibung:\nHiermit sollen die Trockenbauarbeiten vergeben werden, diese sind im Einzelnen Trockenbauarbeiten für die Innenwände und die Abhangdecke im Rahmen des Innenausbaus des bezeichneten Erweiterungsneubaus. Direkt nach dem Einbau der Fenster sollen die Trockenbauarbeiten beginnen, mit der Stellung der Profile sowie einseitiger Beplankung. Nach Abstimmung mit der Bauleitung können Teilbereiche direkt zweiseitig geschlossen werden, insbesondere die Flurwände mit F30/F90 Anforderungen. Die Installationen laufen alle in einer Vorsatzwand.  Nach Fertigstellung der Wandinstallation können die Trockenbauwände geschlossen werden. Die Abhangdecke wird in der Fläche als Rasterdecke ausgeführt und in den Schrankzonen sowie im Sturzbereich als GK-Decke. Ausführung der UK für die Rasterdecke ist nach Fertigstellung der Estricharbeiten geplant. Die Einlegearbeiten der Abhangdecke erfolgen dann nach Abstimmung mit der Bauleitung im Zuge des Baufortschrittes. Die Wandabsorber werden erst nach Fertigstellung der Malerarbeiten an den Wänden montiert.",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45432210",
+    "additionalCpvCodes": [
+      "45262800"
+    ]
+  },
+  "placeOfPerformance": [
+    {
+      "street": "Saalburgstraße 10",
+      "additionalStreet": "",
+      "postcode": "61118",
+      "city": "Bad Vilbel",
+      "nuts": "DE71E",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "2027-03-01+01:00",
+    "endDate": "2028-05-19+02:00",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-01+02:00",
+    "deadlineTime": "09:00:00+02:00",
+    "method": "allowed",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-abil-mgmt-qual",
+      "label": null,
+      "description": "Produktangaben werden gefordert, s. Anlage Bieterliste für Produkt- und Fabrikatsangaben"
+    },
+    {
+      "code": "slc-abil-ref-services",
+      "label": null,
+      "description": "Mit Ihrem Angebot sind mind. 2 Referenzen zu bereits erbrachten vergleichbaren Leistungen eines abgeschlossenen Projektes einzureichen. Als vergleichbar werden Trockenbauarbeiten im Hochbau im laufenden Betrieb angesehen, Auftragswert insgesamt mind. 250.000€ netto. Hierbei müssen alle Teilgewerke betroffen gewesen und als Hauptauftragnehmer erbracht worden sein. Folgende Angaben müssen beinhaltet sein: - Kurzbeschreibung des Projektes inkl. Beschreibung des eigenen Tätigkeitsbereichs - Benennung des Auftraggebers mit Kontakt - Zeitraum der Umsetzung - Auftragssumme."
+    },
+    {
+      "code": "slc-abil-staff-qual",
+      "label": null,
+      "description": "Nachweis der beruflichen Qualifikation für das vor Ort verantwortliche Personal: Nachweis mit Meisterbrief im Maler- und Lackiererhandwerk"
+    },
+    {
+      "code": "slc-stand-ins",
+      "label": null,
+      "description": "Nachweis einer gültigen Betriebshaftpflichtversicherung bei einem in der EU zugelassenen Haftpflichtversicherer oder Kreditinstitut, welche die Deckungssumme für Personenschäden mind. 2 Mio. € für Sach- und Vermögensschäden, jeweils 2-fach maximiert im Versicherungsjahr umfasst. Der Nachweis muss das Ablaufdatum des aktuellen Zahlungszeitraums enthalten. Die erforderliche Deckungshöhe kann vor der Zuschlagserteilung angepasst werden (falls zutreffend, ist der zeitgerechte Nachweis durch den künftigen Auftragnehmer erforderlich)."
+    },
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eintragung Handwerkskammer"
+    },
+    {
+      "code": "slc-suit-reg-trade",
+      "label": null,
+      "description": "HRB Nr. und Registergericht (im Formblatt 213 rechts oben eintragen und/oder gültiger Auszug aus dem Handelsregister)"
+    }
+  ],
+  "awardCriteria": {
+    "types": [
+      "price"
+    ]
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "epo-procurement-document",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "late-some",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung leistungsbezogener Unterlagen ist ausgeschlossen."
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.had.de/NetServer/TenderingProcedureDetails?function=_Details&TenderOID=54321-Tender-1a033438b57-14178de4f1c8f798",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}

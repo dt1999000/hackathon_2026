@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "sourceSystem": "oeffentlichevergabe.de",
+    "sourceRecordId": "7c587aaf-e7b0-4e91-900e-a45b3d880d40:1:LOT-0001",
+    "candidateId": "7c587aaf-e7b0-4e91-900e-a45b3d880d40:1:LOT-0001",
+    "matchedVia": "lot",
+    "matchedCpvCodes": [
+      "45200000"
+    ],
+    "missingEvidence": [
+      "attachments_not_downloaded_or_unavailable"
+    ]
+  },
+  "notice": {
+    "identifier": "7c587aaf-e7b0-4e91-900e-a45b3d880d40",
+    "version": "01",
+    "lotIdentifier": "LOT-0001",
+    "procedureIdentifier": "d32ffdfd-30aa-4aa0-b44b-9db88c1f7795",
+    "internalIdentifier": "LOT-0001 026/26/IIb",
+    "formType": "competition",
+    "noticeTypeCode": "cn-standard",
+    "noticeRootType": "ContractNotice",
+    "publicationDate": "2026-09-17T02:06:29Z",
+    "issueDate": "2026-09-15+02:00"
+  },
+  "buyer": {
+    "names": [
+      "Amt Mecklenburgische Schweiz -Der Amtsvorsteher-"
+    ]
+  },
+  "procedure": {
+    "title": "Los 26 Freianlagen",
+    "description": "Erdbau, Oberbau, Deckschichten, Baukonstruktion, technische Anlagen, Einbauten in Aussenanlagen, Vegetationsflächen, sonstige Maßnahmen",
+    "type": "open",
+    "typeRaw": "open"
+  },
+  "classification": {
+    "mainNature": "works",
+    "mainCpvCode": "45200000",
+    "additionalCpvCodes": []
+  },
+  "placeOfPerformance": [
+    {
+      "street": "",
+      "additionalStreet": "",
+      "postcode": "",
+      "city": "",
+      "nuts": "DE80K",
+      "country": "DEU"
+    }
+  ],
+  "value": {
+    "estimatedValue": null,
+    "currency": ""
+  },
+  "duration": {
+    "startDate": "",
+    "endDate": "",
+    "measure": ""
+  },
+  "submission": {
+    "deadlineDate": "2026-10-20+02:00",
+    "deadlineTime": "10:00:00+02:00",
+    "method": "required",
+    "url": "",
+    "questionDeadlineDate": ""
+  },
+  "selectionCriteria": [
+    {
+      "code": "slc-suit-reg-prof",
+      "label": null,
+      "description": "Eigenerklärung zur Eignung"
+    }
+  ],
+  "awardCriteria": {
+    "types": []
+  },
+  "qualificationRequirementCodes": [
+    {
+      "code": "epo-notice",
+      "codeList": "selection-criteria-source",
+      "description": ""
+    },
+    {
+      "code": "none",
+      "codeList": "reserved-procurement",
+      "description": ""
+    },
+    {
+      "code": "late-all",
+      "codeList": "missing-info-submission",
+      "description": "Die Nachforderung von Unterlagen wird über die Bieterkommunikation kommuniziert."
+    }
+  ],
+  "procurementDocuments": {
+    "links": [
+      {
+        "url": "https://www.subreport.de/E88822157",
+        "description": "",
+        "documentType": "non-restricted-document"
+      }
+    ]
+  },
+  "documentContents": []
+}
