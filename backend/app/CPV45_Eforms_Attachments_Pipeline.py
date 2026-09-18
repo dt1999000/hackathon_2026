@@ -88,7 +88,6 @@ def env_bool(name: str, default: bool) -> bool:
 # at once. Off by default; set CPV45_VERBOSE=true to get the tables back.
 CPV45_VERBOSE = env_bool('CPV45_VERBOSE', False)
 
-
 # api | local
 SOURCE_MODE = os.getenv('CPV45_SOURCE_MODE', 'api').lower()
 
