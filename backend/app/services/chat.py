@@ -79,4 +79,7 @@ def chat_completion(
 
     llm = get_chat_model(provider)
     response = llm.invoke(history)
-    return str(response.content)
+    # .content is a plain string for Claude/Ollama, but Gemini can return a
+    # list of content blocks (text + thinking-signature metadata); .text()
+    # normalizes both to the actual text instead of str()-ing a list.
+    return response.text()
