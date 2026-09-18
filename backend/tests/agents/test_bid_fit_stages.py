@@ -5,6 +5,8 @@ import pytest
 from app.agents.bid_fit import (
     FitAnalysis,
     derive_hardliners_from_profile,
+    derive_profile_sections,
+    format_company_profile,
     generate_violations,
     retrieve_bid_context,
 )
@@ -150,38 +152,53 @@ def test_retrieve_bid_context_requires_source_or_content() -> None:
         )
 
 
-def test_derive_hardliners_from_profile_needs_no_llm_call() -> None:
+def test_derive_hardliners_from_profile_splits_lines_and_needs_no_llm_call() -> None:
     profile = CompanyProfileBase(
         company_name="Test Co",
-        base_location="Augsburg",
-        max_radius_km=150,
-        served_regions=["Bavaria"],
-        excluded_regions=["Saxony"],
-        min_contract_value_eur=400_000,
-        max_contract_value_eur=4_000_000,
-        explicit_exclusions=["rail-side work"],
-        max_self_perform_pct=40,
-        guarantee_limit_total_eur=1_500_000,
-        guarantee_currently_committed_eur=200_000,
-        custom_hardliners=["No bridges"],
+        hardliners="No bridges\nNo rail-side work",
+        exclusions="work outside Germany",
     )
 
     hardliners = derive_hardliners_from_profile(profile)
 
-    # custom_hardliners come through verbatim — no paraphrasing.
-    assert "No bridges" in hardliners
-    assert "Must not involve: rail-side work" in hardliners
-    assert "Must be within 150 km of Augsburg" in hardliners
-    assert "Must be in one of these regions: Bavaria" in hardliners
-    assert "Must not be in: Saxony" in hardliners
-    assert any("400000" in h and "4000000" in h for h in hardliners)
-    assert "Self-performed work share must not exceed 40%" in hardliners
-    assert any("1300000" in h for h in hardliners)  # 1.5M limit - 200k committed
+    # Comes through verbatim, one per line — no paraphrasing.
+    assert hardliners == ["No bridges", "No rail-side work", "work outside Germany"]
 
 
 def test_derive_hardliners_from_profile_is_empty_for_a_minimal_profile() -> None:
     profile = CompanyProfileBase(company_name="Minimal Co")
     assert derive_hardliners_from_profile(profile) == []
+
+
+def test_derive_profile_sections_excludes_basic_facts_but_includes_free_text() -> None:
+    profile = CompanyProfileBase(
+        company_name="Test Co",
+        founded_year=1962,
+        capabilities="road construction, sewers",
+        self_description="We are reliable and local.",
+    )
+
+    sections = derive_profile_sections(profile)
+
+    assert "Capabilities: road construction, sewers" in sections
+    assert "In the company's own words: We are reliable and local." in sections
+    # Basic facts never "match" anything in a bid via embedding
+    # similarity, so they're deliberately excluded from the sections.
+    assert not any("Test Co" in s or "1962" in s for s in sections)
+
+
+def test_format_company_profile_includes_basic_facts_and_free_text() -> None:
+    profile = CompanyProfileBase(
+        company_name="Test Co",
+        founded_year=1962,
+        capabilities="road construction, sewers",
+    )
+
+    text = format_company_profile(profile)
+
+    assert "Company: Test Co" in text
+    assert "Founded: 1962" in text
+    assert "Capabilities: road construction, sewers" in text
 
 
 def test_generate_violations_returns_llm_output_unmodified() -> None:

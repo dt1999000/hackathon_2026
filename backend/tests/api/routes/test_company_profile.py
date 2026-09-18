@@ -10,9 +10,9 @@ def test_create_company_profile(client: TestClient, db: Session) -> None:
     data = {
         "company_name": "Brenner & Sohn Tiefbau GmbH",
         "base_location": "Augsburg, Bavaria",
-        "max_radius_km": 150,
-        "capabilities": ["road construction", "sewers and pipelines"],
-        "custom_hardliners": ["No rail-side work", "Nothing outside Germany"],
+        "geographic_reach": "Bavaria, mainly Schwaben and Oberbayern, up to ~150 km from Augsburg",
+        "capabilities": "road construction, sewers and pipelines",
+        "hardliners": "No rail-side work\nNothing outside Germany",
     }
     response = client.post(
         f"{settings.API_V1_STR}/company-profile/me", headers=headers, json=data
@@ -22,7 +22,7 @@ def test_create_company_profile(client: TestClient, db: Session) -> None:
     assert content["company_name"] == data["company_name"]
     assert content["base_location"] == data["base_location"]
     assert content["capabilities"] == data["capabilities"]
-    assert content["custom_hardliners"] == data["custom_hardliners"]
+    assert content["hardliners"] == data["hardliners"]
     assert "id" in content
     assert "owner_id" in content
 

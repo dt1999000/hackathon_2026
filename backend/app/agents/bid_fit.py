@@ -65,124 +65,89 @@ violation.
 When a hardliner IS violated, propose a solution only if one is \
 genuinely realistic given the bid and the company's profile (e.g. \
 subcontracting a missing capability, partnering for a certification \
-already in progress). Leave the solution unset whenever it would be \
-impractical, too slow, too costly, or would still leave the hardliner \
-broken — never invent a solution just to have one."""
+already in progress). The company profile is free text and may itself \
+describe a conditional workaround (e.g. "above our usual ceiling we can \
+still take it on with a partner") — use that directly if it applies \
+rather than treating the violation as unsolvable. Leave the solution \
+unset whenever it would be impractical, too slow, too costly, or would \
+still leave the hardliner broken — never invent a solution just to have \
+one."""
+
+
+# (label, attribute) for every free-text topic field on CompanyProfileBase,
+# shared by format_company_profile and derive_profile_sections so both stay
+# in sync with the schema in one place.
+_PROFILE_TEXT_SECTIONS: list[tuple[str, str]] = [
+    ("Geographic reach", "geographic_reach"),
+    ("Contract size preferences", "contract_size"),
+    ("Capabilities", "capabilities"),
+    ("Exclusions", "exclusions"),
+    ("Certifications", "certifications"),
+    ("Contractor role", "contractor_role"),
+    ("Capacity", "capacity"),
+    ("Reference projects", "reference_projects"),
+    ("Hardliners", "hardliners"),
+    ("In the company's own words", "self_description"),
+]
+
+
+def _split_lines(text: str | None) -> list[str]:
+    """Split a free-text field into individual items, one per line —
+    matches how a user naturally types a list of hardliners or
+    exclusions into a text box."""
+    if not text:
+        return []
+    return [line.strip() for line in text.splitlines() if line.strip()]
 
 
 def format_company_profile(profile: CompanyProfileBase) -> str:
+    """Full profile dump — basic facts plus every free-text section —
+    for the LLM's context (app.agents.bid_fit.generate_violations)."""
     lines = [f"Company: {profile.company_name}"]
     if profile.base_location:
         lines.append(f"Based in: {profile.base_location}")
-    if profile.max_radius_km is not None:
-        lines.append(f"Max service radius: {profile.max_radius_km} km")
-    if profile.served_regions:
-        lines.append(f"Served regions: {', '.join(profile.served_regions)}")
-    if profile.excluded_regions:
-        lines.append(f"Excluded regions: {', '.join(profile.excluded_regions)}")
-    if profile.min_contract_value_eur is not None or profile.max_contract_value_eur is not None:
-        lines.append(
-            "Contract value range (EUR): "
-            f"{profile.min_contract_value_eur or 0} - {profile.max_contract_value_eur or 'no max'}"
-        )
-    if profile.capabilities:
-        lines.append(f"Capabilities: {', '.join(profile.capabilities)}")
-    if profile.explicit_exclusions:
-        lines.append(f"Explicit exclusions: {', '.join(profile.explicit_exclusions)}")
-    if profile.certifications:
-        lines.append(f"Certifications held: {', '.join(profile.certifications)}")
-    if profile.contractor_role:
-        lines.append(f"Contractor role: {profile.contractor_role}")
-    if profile.max_self_perform_pct is not None:
-        lines.append(f"Max self-perform share: {profile.max_self_perform_pct}%")
-    if profile.guarantee_limit_total_eur is not None:
-        lines.append(
-            "Guarantee capacity (EUR): "
-            f"{profile.guarantee_currently_committed_eur or 0} committed of "
-            f"{profile.guarantee_limit_total_eur} total"
-        )
-    if profile.available_from:
-        lines.append(f"Available from: {profile.available_from}")
-    if profile.capacity_note:
-        lines.append(f"Capacity note: {profile.capacity_note}")
-    if profile.reference_projects:
-        lines.append(f"Reference projects: {', '.join(profile.reference_projects)}")
-    if profile.custom_hardliners:
-        lines.append(f"Explicitly stated hardliners: {', '.join(profile.custom_hardliners)}")
-    if profile.self_description:
-        lines.append(f"In the company's own words: {profile.self_description}")
+    if profile.founded_year is not None:
+        lines.append(f"Founded: {profile.founded_year}")
+    if profile.employee_count is not None:
+        lines.append(f"Employees: {profile.employee_count}")
+    if profile.annual_revenue_eur is not None:
+        lines.append(f"Annual revenue (EUR): {profile.annual_revenue_eur}")
+    for label, attr in _PROFILE_TEXT_SECTIONS:
+        value = getattr(profile, attr)
+        if value:
+            lines.append(f"{label}: {value}")
     return "\n".join(lines)
 
 
 def derive_profile_sections(profile: CompanyProfileBase) -> list[str]:
-    """Break the company profile into independent descriptive sections,
-    each checked separately against a bid's chunks in `retrieve_bid_context`.
-
-    Deliberately narrower than `format_company_profile`'s full dump: only
-    fields with descriptive text a bid is likely to echo (capabilities,
-    regions, certifications, self-description, ...), not purely numeric
-    constraints — a contract-value range or a guarantee limit has no
-    textual counterpart to "match" via embedding similarity, and
-    including them would just dilute every bid's match ratio.
+    """Break the company profile's free-text fields into independent
+    sections, each checked separately against a bid's chunks in
+    `retrieve_bid_context`. Company name/founding year/etc. are omitted
+    here — they're facts a bid is never going to "echo", so they'd never
+    match anything and would just sit in the denominator dragging the
+    similarity score down.
     """
-    sections: list[str] = []
-    if profile.capabilities:
-        sections.append(f"Capabilities: {', '.join(profile.capabilities)}")
-    if profile.explicit_exclusions:
-        sections.append(f"Explicit exclusions: {', '.join(profile.explicit_exclusions)}")
-    if profile.certifications:
-        sections.append(f"Certifications held: {', '.join(profile.certifications)}")
-    if profile.served_regions:
-        sections.append(f"Served regions: {', '.join(profile.served_regions)}")
-    if profile.excluded_regions:
-        sections.append(f"Excluded regions: {', '.join(profile.excluded_regions)}")
-    if profile.contractor_role:
-        sections.append(f"Contractor role: {profile.contractor_role}")
-    if profile.reference_projects:
-        sections.append(f"Reference projects: {', '.join(profile.reference_projects)}")
-    if profile.custom_hardliners:
-        sections.append(f"Explicitly stated hardliners: {', '.join(profile.custom_hardliners)}")
-    if profile.capacity_note:
-        sections.append(f"Capacity note: {profile.capacity_note}")
-    if profile.self_description:
-        sections.append(f"In the company's own words: {profile.self_description}")
+    sections = []
+    for label, attr in _PROFILE_TEXT_SECTIONS:
+        value = getattr(profile, attr)
+        if value:
+            sections.append(f"{label}: {value}")
     return sections
 
 
 def derive_hardliners_from_profile(profile: CompanyProfileBase) -> list[str]:
-    """Build the hardliner list directly from the profile's own structured
-    constraint fields — no LLM call needed.
+    """Hardliners come straight from the profile's own free-text
+    `hardliners` and `exclusions` fields, one per line — no LLM call, no
+    paraphrasing risk.
 
-    `custom_hardliners` and `explicit_exclusions` are already explicit,
-    literal rules the user typed in; running them through an LLM
-    "extraction" step would only risk paraphrasing away their precision
-    for no benefit. The remaining fields here are numeric/structural
-    constraints turned into checkable rule text.
+    Nuanced conditional judgment that doesn't reduce to a flat rule (e.g.
+    "we can bring in a partner if the value is a bit over our usual
+    ceiling") deliberately isn't pre-compiled into a rigid check here —
+    it lives in the other free-text fields (contract_size,
+    geographic_reach, capacity) and is handled by `generate_violations`'
+    LLM reasoning instead, which can read that nuance directly.
     """
-    hardliners: list[str] = list(profile.custom_hardliners)
-    hardliners.extend(f"Must not involve: {exclusion}" for exclusion in profile.explicit_exclusions)
-
-    if profile.max_radius_km is not None:
-        location = profile.base_location or "the company's base"
-        hardliners.append(f"Must be within {profile.max_radius_km} km of {location}")
-    if profile.served_regions:
-        hardliners.append(f"Must be in one of these regions: {', '.join(profile.served_regions)}")
-    if profile.excluded_regions:
-        hardliners.append(f"Must not be in: {', '.join(profile.excluded_regions)}")
-    if profile.min_contract_value_eur is not None or profile.max_contract_value_eur is not None:
-        hardliners.append(
-            "Contract value must be between EUR "
-            f"{profile.min_contract_value_eur or 0} and "
-            f"{profile.max_contract_value_eur or 'no upper limit'}"
-        )
-    if profile.max_self_perform_pct is not None:
-        hardliners.append(f"Self-performed work share must not exceed {profile.max_self_perform_pct}%")
-    if profile.guarantee_limit_total_eur is not None:
-        remaining = profile.guarantee_limit_total_eur - (profile.guarantee_currently_committed_eur or 0)
-        hardliners.append(
-            f"Required guarantee/bond must not exceed EUR {remaining} (remaining guarantee capacity)"
-        )
-    return hardliners
+    return [*_split_lines(profile.hardliners), *_split_lines(profile.exclusions)]
 
 
 class FitAnalysis(BaseModel):

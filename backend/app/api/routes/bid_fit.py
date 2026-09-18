@@ -179,10 +179,9 @@ class ExtractHardlinersResponse(BaseModel):
 def extract_hardliners(*, session: SessionDep, current_user: CurrentUser) -> Any:
     """
     Stage 1 alone: build hardliners from the current user's company
-    profile's own structured fields (custom_hardliners,
-    explicit_exclusions, contract value range, ... — see
-    app.agents.bid_fit.derive_hardliners_from_profile). Pure, no LLM
-    call, no bid involved.
+    profile's own free-text `hardliners`/`exclusions` fields, one per
+    line (see app.agents.bid_fit.derive_hardliners_from_profile). Pure,
+    no LLM call, no bid involved.
     """
     profile = _get_company_profile(session, current_user)
     return ExtractHardlinersResponse(hardliners=derive_hardliners_from_profile(profile))

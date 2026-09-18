@@ -1,10 +1,9 @@
 import uuid
-from datetime import UTC, date, datetime
+from datetime import UTC, datetime
 from typing import Optional
 
 from pydantic import EmailStr
-from sqlalchemy import Column, DateTime, String
-from sqlalchemy.dialects.postgresql import ARRAY
+from sqlalchemy import DateTime
 from sqlmodel import Field, Relationship, SQLModel
 
 
@@ -117,44 +116,43 @@ class ItemsPublic(SQLModel):
     count: int
 
 
-# The string-list fields below are declared as plain `list[str]` (Pydantic-only)
-# on the shared Base/Create classes, and re-declared with an explicit Postgres
-# ARRAY column only on the table model (CompanyProfile) — same split as
-# `created_at`/`sa_type` on User/Item, which also only appears on the table
-# class rather than the shared Base.
+# Deliberately minimal set of typed fields — see the note above each
+# free-text field below for why the rest aren't numeric/enum/array
+# columns. No Postgres ARRAY columns are needed anymore, so the table
+# model doesn't re-declare anything beyond CompanyProfileBase.
 
 
 # Shared properties
 class CompanyProfileBase(SQLModel):
+    # Basic, objective facts — no business-rule nuance, safe as plain
+    # typed fields.
     company_name: str = Field(min_length=1, max_length=255)
     base_location: str | None = Field(default=None, max_length=255)
     founded_year: int | None = None
     employee_count: int | None = None
     annual_revenue_eur: float | None = None
 
-    max_radius_km: int | None = None
-    served_regions: list[str] = Field(default_factory=list)
-    excluded_regions: list[str] = Field(default_factory=list)
-
-    min_contract_value_eur: float | None = None
-    max_contract_value_eur: float | None = None
-    partner_threshold_eur: float | None = None
-
-    capabilities: list[str] = Field(default_factory=list)
-    explicit_exclusions: list[str] = Field(default_factory=list)
-    certifications: list[str] = Field(default_factory=list)
-
-    contractor_role: str | None = Field(default=None, max_length=32)
-    max_self_perform_pct: int | None = None
-
-    guarantee_limit_total_eur: float | None = None
-    guarantee_currently_committed_eur: float | None = None
-
-    available_from: date | None = None
-    capacity_note: str | None = Field(default=None, max_length=1000)
-
-    reference_projects: list[str] = Field(default_factory=list)
-    custom_hardliners: list[str] = Field(default_factory=list)
+    # Everything else is free text, one field per topic, instead of
+    # narrow numeric/enum/array fields (e.g. a bare partner_threshold_eur
+    # number can't express "we can bring in a partner if the value is a
+    # bit over our usual ceiling" — the company's own words can). Each
+    # field is both (a) embedded independently for bid-similarity
+    # matching (app.agents.bid_fit.derive_profile_sections) and (b)
+    # passed as context to the LLM that reasons about hardliner
+    # violations and solutions (app.agents.bid_fit.generate_violations),
+    # which can work with that nuance directly instead of it being lost
+    # to a rigid pre-computed rule.
+    geographic_reach: str | None = Field(default=None, max_length=1000)
+    contract_size: str | None = Field(default=None, max_length=1000)
+    capabilities: str | None = Field(default=None, max_length=1000)
+    exclusions: str | None = Field(default=None, max_length=1000)
+    certifications: str | None = Field(default=None, max_length=1000)
+    contractor_role: str | None = Field(default=None, max_length=500)
+    capacity: str | None = Field(default=None, max_length=1000)
+    reference_projects: str | None = Field(default=None, max_length=1000)
+    # One hardliner/exclusion per line — see
+    # app.agents.bid_fit.derive_hardliners_from_profile.
+    hardliners: str | None = Field(default=None, max_length=1000)
 
     self_description: str | None = Field(default=None, max_length=2000)
 
@@ -175,15 +173,6 @@ class CompanyProfile(CompanyProfileBase, table=True):
         foreign_key="user.id", nullable=False, unique=True, ondelete="CASCADE"
     )
     owner: User | None = Relationship(back_populates="company_profile")
-
-    # Postgres array columns — see the string-list note above CompanyProfileBase.
-    served_regions: list[str] = Field(sa_column=Column(ARRAY(String)))
-    excluded_regions: list[str] = Field(sa_column=Column(ARRAY(String)))
-    capabilities: list[str] = Field(sa_column=Column(ARRAY(String)))
-    explicit_exclusions: list[str] = Field(sa_column=Column(ARRAY(String)))
-    certifications: list[str] = Field(sa_column=Column(ARRAY(String)))
-    reference_projects: list[str] = Field(sa_column=Column(ARRAY(String)))
-    custom_hardliners: list[str] = Field(sa_column=Column(ARRAY(String)))
 
 
 # Properties to return via API, id is always required
