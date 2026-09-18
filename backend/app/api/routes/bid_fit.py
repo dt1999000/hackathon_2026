@@ -9,7 +9,6 @@ from sqlmodel import select
 
 from app.agents.bid_fit import (
     DEFAULT_SECTION_MATCH_THRESHOLD,
-    derive_hardliners_from_profile,
     derive_profile_sections,
     generate_violations,
     retrieve_bid_context,
@@ -101,15 +100,16 @@ def analyze_bid_fit(
     *, session: SessionDep, current_user: CurrentUser, request: BidFitRequest
 ) -> Any:
     """
-    Full pipeline: build hardliners from the current user's company
-    profile's structured fields, then check each of the profile's own
-    descriptive sections (capabilities, regions, certifications, ...)
-    against the bid for its best-matching content — the more sections
-    that find a match, the higher `similarity_score` — and hand the
-    matched context to the LLM to verify real contradictions and
-    solutions, then flag red/yellow/green (see
-    app.agents.bid_fit_scoring). `similarity_score` ranks bids sharing a
-    flag, it does not decide the flag itself.
+    Full pipeline: check each of the current user's company profile's
+    own descriptive sections (capabilities, regions, certifications,
+    ...) against the bid for its best-matching content — the more
+    sections that find a match, the higher `similarity_score` — and hand
+    the matched context plus the whole profile to the LLM to find real
+    contradictions and solutions (there's no separate pre-extracted
+    hardliner checklist; it reads hardliners/exclusions and every other
+    stated constraint straight out of the profile), then flag
+    red/yellow/green (see app.agents.bid_fit_scoring). `similarity_score`
+    ranks bids sharing a flag, it does not decide the flag itself.
     """
     profile = _get_company_profile(session, current_user)
     final_state = run_bid_fit_analysis(
@@ -251,22 +251,6 @@ def analyze_bids(
 # --- Per-stage endpoints: each core function, for isolated testing --------
 
 
-class ExtractHardlinersResponse(BaseModel):
-    hardliners: list[str]
-
-
-@router.get("/extract-hardliners", response_model=ExtractHardlinersResponse)
-def extract_hardliners(*, session: SessionDep, current_user: CurrentUser) -> Any:
-    """
-    Stage 1 alone: build hardliners from the current user's company
-    profile's own free-text `hardliners`/`exclusions` fields, one per
-    line (see app.agents.bid_fit.derive_hardliners_from_profile). Pure,
-    no LLM call, no bid involved.
-    """
-    profile = _get_company_profile(session, current_user)
-    return ExtractHardlinersResponse(hardliners=derive_hardliners_from_profile(profile))
-
-
 class ProfileSectionsResponse(BaseModel):
     profile_sections: list[str]
 
@@ -302,7 +286,7 @@ class RetrieveBidContextResponse(BaseModel):
 @router.post("/retrieve", response_model=RetrieveBidContextResponse)
 def retrieve(request: RetrieveBidContextRequest) -> Any:
     """
-    Stage 2 alone: load + chunk a bid (JSON, JSONL, PDF, or any other
+    Stage 1 alone: load + chunk a bid (JSON, JSONL, PDF, or any other
     registered loader), then check each of `profile_sections` (e.g. the
     company's capabilities, regions, certifications, self_description —
     see app.agents.bid_fit.derive_profile_sections) against the bid's
@@ -332,7 +316,6 @@ def retrieve(request: RetrieveBidContextRequest) -> Any:
 
 
 class GenerateViolationsRequest(BaseModel):
-    hardliners: list[str]
     context_chunks: list[str]
     profile_text: str = ""
     bid_source: str = ""
@@ -346,15 +329,16 @@ class GenerateViolationsResponse(BaseModel):
 @router.post("/generate-violations", response_model=GenerateViolationsResponse)
 def generate_violations_endpoint(request: GenerateViolationsRequest) -> Any:
     """
-    Stage 3 alone: given hardliners, retrieved bid context (e.g. from
-    /bid-fit/retrieve), and optional company context, ask the LLM which
-    hardliners are ACTUALLY contradicted (not just topically related) and
-    whether a realistic solution exists.
+    Stage 2 alone: given the company's whole profile text and retrieved
+    bid context (e.g. from /bid-fit/retrieve), ask the LLM to find every
+    genuine contradiction (not just topically related mentions) and
+    whether a realistic solution exists for each — there's no separate
+    pre-extracted hardliner list; the LLM reads hardliners/exclusions
+    and every other stated constraint straight out of `profile_text`.
     """
     llm = get_chat_model(request.provider)
     violations = generate_violations(
         llm=llm,
-        hardliners=request.hardliners,
         profile_text=request.profile_text,
         context_chunks=request.context_chunks,
         bid_source=request.bid_source,
@@ -370,7 +354,7 @@ class ScoreBidFitRequest(BaseModel):
 @router.post("/score", response_model=BidFitScore)
 def score(request: ScoreBidFitRequest) -> Any:
     """
-    Stage 4 alone: turn a violations list + similarity score into the
+    Stage 3 alone: turn a violations list + similarity score into the
     red/yellow/green flag. Pure function, no LLM/embedding calls — see
     app.agents.bid_fit_scoring for the asymmetric weighting rationale.
     """

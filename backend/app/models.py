@@ -150,8 +150,9 @@ class CompanyProfileBase(SQLModel):
     contractor_role: str | None = Field(default=None, max_length=500)
     capacity: str | None = Field(default=None, max_length=1000)
     reference_projects: str | None = Field(default=None, max_length=1000)
-    # One hardliner/exclusion per line — see
-    # app.agents.bid_fit.derive_hardliners_from_profile.
+    # One hardliner per line — read as part of the whole profile by
+    # app.agents.bid_fit.generate_violations, which finds contradictions
+    # directly rather than checking a separately pre-extracted list.
     hardliners: str | None = Field(default=None, max_length=1000)
 
     self_description: str | None = Field(default=None, max_length=2000)
