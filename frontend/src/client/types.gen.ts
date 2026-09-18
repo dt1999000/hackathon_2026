@@ -202,58 +202,6 @@ export type BidPublic = {
 };
 
 /**
- * ContractSummary
- */
-export type ContractSummary = {
-    /**
-     * Id
-     */
-    id: string;
-    /**
-     * Title
-     */
-    title?: string | null;
-    /**
-     * Notice Identifier
-     */
-    notice_identifier: string;
-    /**
-     * Publication Date
-     */
-    publication_date?: string | null;
-    /**
-     * Estimated Value
-     */
-    estimated_value?: number | null;
-    /**
-     * Currency
-     */
-    currency?: string | null;
-    /**
-     * Place Of Performance
-     */
-    place_of_performance: Array<unknown>;
-    /**
-     * Source System
-     */
-    source_system: string;
-};
-
-/**
- * ListContractsResponse
- */
-export type ListContractsResponse = {
-    /**
-     * Contracts
-     */
-    contracts: Array<ContractSummary>;
-    /**
-     * Total In Database
-     */
-    total_in_database: number;
-};
-
-/**
  * BidScreenRequest
  */
 export type BidScreenRequest = {
@@ -554,6 +502,44 @@ export type CompleteRequest = {
 };
 
 /**
+ * ContractSummary
+ */
+export type ContractSummary = {
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Title
+     */
+    title: string | null;
+    /**
+     * Notice Identifier
+     */
+    notice_identifier: string;
+    /**
+     * Publication Date
+     */
+    publication_date: string | null;
+    /**
+     * Estimated Value
+     */
+    estimated_value: number | null;
+    /**
+     * Currency
+     */
+    currency: string | null;
+    /**
+     * Place Of Performance
+     */
+    place_of_performance: Array<unknown>;
+    /**
+     * Source System
+     */
+    source_system: string;
+};
+
+/**
  * CrawlWebsiteRequest
  */
 export type CrawlWebsiteRequest = {
@@ -561,16 +547,6 @@ export type CrawlWebsiteRequest = {
      * Url
      */
     url: string;
-};
-
-/**
- * ExtractHardlinersResponse
- */
-export type ExtractHardlinersResponse = {
-    /**
-     * Hardliners
-     */
-    hardliners: Array<string>;
 };
 
 /**
@@ -635,10 +611,6 @@ export type GenerateRequest = {
  * GenerateViolationsRequest
  */
 export type GenerateViolationsRequest = {
-    /**
-     * Hardliners
-     */
-    hardliners: Array<string>;
     /**
      * Context Chunks
      */
@@ -795,6 +767,20 @@ export type ItemsPublic = {
      * Count
      */
     count: number;
+};
+
+/**
+ * ListContractsResponse
+ */
+export type ListContractsResponse = {
+    /**
+     * Contracts
+     */
+    contracts: Array<ContractSummary>;
+    /**
+     * Total In Database
+     */
+    total_in_database: number;
 };
 
 /**
@@ -1965,10 +1951,6 @@ export type bidFitAnalyzeBidsData = {
          */
         provider?: 'claude' | 'local' | 'google';
         /**
-         * Top N
-         */
-        top_n?: number;
-        /**
          * Source
          */
         source?: 'bids' | 'contracts' | 'all';
@@ -1976,6 +1958,10 @@ export type bidFitAnalyzeBidsData = {
          * Limit
          */
         limit?: number;
+        /**
+         * Per Flag
+         */
+        per_flag?: number;
     };
     url: '/api/v1/bid-fit/analyze-bids';
 };
@@ -2027,22 +2013,6 @@ export type bidFitListContractsResponses = {
 };
 
 export type bidFitListContractsResponse = bidFitListContractsResponses[keyof bidFitListContractsResponses];
-
-export type bidFitExtractHardlinersData = {
-    body?: never;
-    path?: never;
-    query?: never;
-    url: '/api/v1/bid-fit/extract-hardliners';
-};
-
-export type bidFitExtractHardlinersResponses = {
-    /**
-     * Successful Response
-     */
-    200: ExtractHardlinersResponse;
-};
-
-export type bidFitExtractHardlinersResponse = bidFitExtractHardlinersResponses[keyof bidFitExtractHardlinersResponses];
 
 export type bidFitProfileSectionsData = {
     body?: never;

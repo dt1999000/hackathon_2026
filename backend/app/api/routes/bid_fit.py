@@ -18,9 +18,10 @@ from app.agents.bid_fit import (
     run_bid_screen,
 )
 from app.agents.bid_fit_scoring import (
-    _FLAG_RANK,
+    DEFAULT_EXAMPLES_PER_FLAG,
     BidFitScore,
     HardlinerViolation,
+    pick_flag_examples,
     rank_bid_fits,
     score_bid_fit,
 )
@@ -256,15 +257,18 @@ def analyze_bids(
     session: SessionDep,
     current_user: CurrentUser,
     provider: ChatProvider = "google",
-    top_n: int = 8,
     source: Literal["bids", "contracts", "all"] = "all",
     limit: int = 20,
+    per_flag: int = DEFAULT_EXAMPLES_PER_FLAG,
 ) -> Any:
     """
     Dashboard "Analyze" action: run the full /analyze pipeline (see
     analyze_bid_fit) against bids for the current user's company
-    profile, then rank best-first the same way /bid-fit/rank does (flag
-    first, similarity_score breaks ties) and return the top `top_n`.
+    profile, then return a mix of outcomes: up to `per_flag` good
+    matches (green), warnings (yellow), and hardlined bids (red),
+    highest similarity within each flag — so the dashboard always shows
+    examples across the spectrum, not just whichever happen to rank
+    highest overall.
 
     `source` picks where those bids come from: "bids" is the `bid` table
     (POST /bids/load, from mock_data/bids/*.json — a fixed handful of
@@ -275,14 +279,13 @@ def analyze_bids(
 
     `limit` caps how many *contracts* get pulled and actually analyzed —
     the `limit` most recently found (see `_recent_contracts`), not an
-    arbitrary DB-order slice. Separate from `top_n`, which only limits
-    the *output* after everything already got analyzed and ranked. This
-    matters because the contract table holds every scraped notice
-    (currently in the hundreds) and keeps growing — analyzing all of it
-    on every dashboard click would mean hundreds of concurrent
-    LLM/embedding calls per request. Raise it deliberately, not by
-    leaving it uncapped. GET /bid-fit/contracts with the same `limit`
-    shows exactly which contracts this will analyze.
+    arbitrary DB-order slice. This matters because the contract table
+    holds every scraped notice (currently in the hundreds) and keeps
+    growing — analyzing all of it on every dashboard click would mean
+    hundreds of concurrent LLM/embedding calls per request. Raise it
+    deliberately, not by leaving it uncapped. GET /bid-fit/contracts
+    with the same `limit` shows exactly which contracts this will
+    analyze.
 
     Runs each item's analysis concurrently, capped at
     MAX_ANALYZE_WORKERS — every analysis is a handful of independent
@@ -332,8 +335,7 @@ def analyze_bids(
         futures = [executor.submit(analyze_one, item) for item in items]
         results = [r for r in (f.result() for f in futures) if r is not None]
 
-    ranked = sorted(results, key=lambda r: (_FLAG_RANK[r.flag], -r.similarity_score))
-    return AnalyzeBidsResponse(results=ranked[:top_n])
+    return AnalyzeBidsResponse(results=pick_flag_examples(results, per_flag=per_flag))
 
 
 class ContractSummary(BaseModel):

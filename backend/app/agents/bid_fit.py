@@ -27,7 +27,7 @@ from typing import Any, TypedDict
 
 from langchain_core.language_models import BaseChatModel
 from langgraph.graph import END, START, StateGraph
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 
 from app.agents.bid_fit_scoring import BidFitScore, HardlinerViolation, score_bid_fit
 from app.models import CompanyProfileBase
@@ -156,8 +156,43 @@ def derive_profile_sections(profile: CompanyProfileBase) -> list[str]:
     return sections
 
 
+def _coerce_list_field(value: object, wrapper_key: str) -> object:
+    """Claude's tool-calling structured output sometimes puts a nested list
+    in as a JSON string — occasionally the whole parent object, e.g.
+    `'{"violations": [...]}'` in the `violations` field. Parse that back
+    into a list so Pydantic can validate the items."""
+    if isinstance(value, str):
+        stripped = value.strip()
+        if not stripped:
+            return []
+        try:
+            value = json.loads(stripped)
+        except json.JSONDecodeError:
+            return value
+        return _coerce_list_field(value, wrapper_key)
+    if isinstance(value, dict):
+        if wrapper_key in value:
+            return _coerce_list_field(value[wrapper_key], wrapper_key)
+        return [value]
+    return value
+
+
+def _structured_output(llm: BaseChatModel, schema: type[Any]) -> Any:
+    """Anthropic's default tool-calling path is what stringifies nested
+    lists; native JSON-schema output does not. Other providers keep their
+    default method."""
+    if llm.__class__.__name__ == "ChatAnthropic":
+        return llm.with_structured_output(schema, method="json_schema")
+    return llm.with_structured_output(schema)
+
+
 class FitAnalysis(BaseModel):
     violations: list[HardlinerViolation]
+
+    @field_validator("violations", mode="before")
+    @classmethod
+    def _parse_violations(cls, value: object) -> object:
+        return _coerce_list_field(value, "violations")
 
 
 class BidFitState(TypedDict, total=False):
@@ -460,6 +495,11 @@ class RerankedMatch(BaseModel):
 class RerankResult(BaseModel):
     matches: list[RerankedMatch]
 
+    @field_validator("matches", mode="before")
+    @classmethod
+    def _parse_matches(cls, value: object) -> object:
+        return _coerce_list_field(value, "matches")
+
 
 def _format_rerank_sections_block(
     profile_sections: list[str], candidates_per_section: list[list[tuple[str, float]]]
@@ -496,7 +536,7 @@ def rerank_bid_context(
     if not sections_block:
         return [], 0.0
 
-    result = llm.with_structured_output(RerankResult).invoke(
+    result = _structured_output(llm, RerankResult).invoke(
         RERANK_PROMPT.format(sections_block=sections_block)
     )
     assert isinstance(result, RerankResult)
@@ -548,7 +588,7 @@ def generate_violations(
         bid_source=bid_source,
         context_block=context_block,
     )
-    analysis = llm.with_structured_output(FitAnalysis).invoke(prompt)
+    analysis = _structured_output(llm, FitAnalysis).invoke(prompt)
     assert isinstance(analysis, FitAnalysis)
     return analysis.violations
 

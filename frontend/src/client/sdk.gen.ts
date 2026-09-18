@@ -2,7 +2,7 @@
 
 import { type Client, type Options as Options2, type TDataShape, urlSearchParamsBodySerializer } from './client';
 import { client } from './client.gen';
-import type { bidFitAnalyzeBidFitData, bidFitAnalyzeBidFitErrors, bidFitAnalyzeBidFitResponses, bidFitAnalyzeBidsData, bidFitAnalyzeBidsErrors, bidFitAnalyzeBidsResponses, bidFitListContractsData, bidFitListContractsErrors, bidFitListContractsResponses, bidFitExtractHardlinersData, bidFitExtractHardlinersResponses, bidFitGenerateViolationsEndpointData, bidFitGenerateViolationsEndpointErrors, bidFitGenerateViolationsEndpointResponses, bidFitProfileSectionsData, bidFitProfileSectionsResponses, bidFitRankData, bidFitRankErrors, bidFitRankResponses, bidFitRetrieveData, bidFitRetrieveErrors, bidFitRetrieveResponses, bidFitScoreData, bidFitScoreErrors, bidFitScoreResponses, bidFitScreenBidData, bidFitScreenBidErrors, bidFitScreenBidResponses, bidsListBidsData, bidsListBidsResponses, bidsLoadBidsData, bidsLoadBidsResponses, chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companyProfileCreateCompanyProfileMeData, companyProfileCreateCompanyProfileMeErrors, companyProfileCreateCompanyProfileMeResponses, companyProfileDeleteCompanyProfileMeData, companyProfileDeleteCompanyProfileMeResponses, companyProfileFinalizeCompanyProfileChatData, companyProfileFinalizeCompanyProfileChatErrors, companyProfileFinalizeCompanyProfileChatResponses, companyProfileReadCompanyProfileMeData, companyProfileReadCompanyProfileMeResponses, companyProfileSendProfileChatMessageData, companyProfileSendProfileChatMessageErrors, companyProfileSendProfileChatMessageResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
+import type { bidFitAnalyzeBidFitData, bidFitAnalyzeBidFitErrors, bidFitAnalyzeBidFitResponses, bidFitAnalyzeBidsData, bidFitAnalyzeBidsErrors, bidFitAnalyzeBidsResponses, bidFitGenerateViolationsEndpointData, bidFitGenerateViolationsEndpointErrors, bidFitGenerateViolationsEndpointResponses, bidFitListContractsData, bidFitListContractsErrors, bidFitListContractsResponses, bidFitProfileSectionsData, bidFitProfileSectionsResponses, bidFitRankData, bidFitRankErrors, bidFitRankResponses, bidFitRetrieveData, bidFitRetrieveErrors, bidFitRetrieveResponses, bidFitScoreData, bidFitScoreErrors, bidFitScoreResponses, bidFitScreenBidData, bidFitScreenBidErrors, bidFitScreenBidResponses, bidsListBidsData, bidsListBidsResponses, bidsLoadBidsData, bidsLoadBidsResponses, chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companyProfileCreateCompanyProfileMeData, companyProfileCreateCompanyProfileMeErrors, companyProfileCreateCompanyProfileMeResponses, companyProfileDeleteCompanyProfileMeData, companyProfileDeleteCompanyProfileMeResponses, companyProfileFinalizeCompanyProfileChatData, companyProfileFinalizeCompanyProfileChatErrors, companyProfileFinalizeCompanyProfileChatResponses, companyProfileReadCompanyProfileMeData, companyProfileReadCompanyProfileMeResponses, companyProfileSendProfileChatMessageData, companyProfileSendProfileChatMessageErrors, companyProfileSendProfileChatMessageResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
 
 export type Options<TData extends TDataShape = TDataShape, ThrowOnError extends boolean = boolean, TResponse = unknown> = Options2<TData, ThrowOnError, TResponse> & {
     /**
@@ -478,15 +478,16 @@ export class BidFitService {
     /**
      * Analyze Bid Fit
      *
-     * Full pipeline: build hardliners from the current user's company
-     * profile's structured fields, then check each of the profile's own
-     * descriptive sections (capabilities, regions, certifications, ...)
-     * against the bid for its best-matching content — the more sections
-     * that find a match, the higher `similarity_score` — and hand the
-     * matched context to the LLM to verify real contradictions and
-     * solutions, then flag red/yellow/green (see
-     * app.agents.bid_fit_scoring). `similarity_score` ranks bids sharing a
-     * flag, it does not decide the flag itself.
+     * Full pipeline: check each of the current user's company profile's
+     * own descriptive sections (capabilities, regions, certifications,
+     * ...) against the bid for its best-matching content — the more
+     * sections that find a match, the higher `similarity_score` — and hand
+     * the matched context plus the whole profile to the LLM to find real
+     * contradictions and solutions (there's no separate pre-extracted
+     * hardliner checklist; it reads hardliners/exclusions and every other
+     * stated constraint straight out of the profile), then flag
+     * red/yellow/green (see app.agents.bid_fit_scoring). `similarity_score`
+     * ranks bids sharing a flag, it does not decide the flag itself.
      */
     public static fitAnalyzeBidFit<ThrowOnError extends boolean = true>(options: Options<bidFitAnalyzeBidFitData, ThrowOnError>) {
         return (options.client ?? client).post<bidFitAnalyzeBidFitResponses, bidFitAnalyzeBidFitErrors, ThrowOnError>({
@@ -525,15 +526,38 @@ export class BidFitService {
      * Analyze Bids
      *
      * Dashboard "Analyze" action: run the full /analyze pipeline (see
-     * analyze_bid_fit) against every bid loaded via POST /bids/load, for
-     * the current user's company profile, then rank best-first the same
-     * way /bid-fit/rank does (flag first, similarity_score breaks ties)
-     * and return the top `top_n`. Runs each bid's analysis concurrently —
-     * every one is a handful of independent LLM/embedding calls, so doing
-     * them sequentially would take minutes even for a handful of bids. A
-     * single bid's analysis failing (e.g. a transient LLM/embedding error)
-     * is logged and that bid is dropped from the results rather than
-     * failing the whole batch.
+     * analyze_bid_fit) against bids for the current user's company
+     * profile, then return a mix of outcomes: up to `per_flag` good
+     * matches (green), warnings (yellow), and hardlined bids (red),
+     * highest similarity within each flag — so the dashboard always shows
+     * examples across the spectrum, not just whichever happen to rank
+     * highest overall.
+     *
+     * `source` picks where those bids come from: "bids" is the `bid` table
+     * (POST /bids/load, from mock_data/bids*.json — a fixed handful of
+     * demo rows, never capped), "contracts" is the `contract` table
+     * (populated directly by the scrape pipeline + scripts/import_contracts.py
+     * — queried here as-is, no file copy step involved), "all" (default)
+     * combines both.
+     *
+     * `limit` caps how many *contracts* get pulled and actually analyzed —
+     * the `limit` most recently found (see `_recent_contracts`), not an
+     * arbitrary DB-order slice. This matters because the contract table
+     * holds every scraped notice (currently in the hundreds) and keeps
+     * growing — analyzing all of it on every dashboard click would mean
+     * hundreds of concurrent LLM/embedding calls per request. Raise it
+     * deliberately, not by leaving it uncapped. GET /bid-fit/contracts
+     * with the same `limit` shows exactly which contracts this will
+     * analyze.
+     *
+     * Runs each item's analysis concurrently, capped at
+     * MAX_ANALYZE_WORKERS — every analysis is a handful of independent
+     * LLM/embedding calls, so one thread per item is fine for a handful of
+     * demo bids but floods the LLM/embedding APIs with hundreds of
+     * simultaneous requests once real scraped contracts are in the mix. A
+     * single item's analysis failing (e.g. a transient LLM/embedding
+     * error) is logged and that item is dropped from the results rather
+     * than failing the whole batch.
      */
     public static fitAnalyzeBids<ThrowOnError extends boolean = true>(options?: Options<bidFitAnalyzeBidsData, ThrowOnError>) {
         return (options?.client ?? client).post<bidFitAnalyzeBidsResponses, bidFitAnalyzeBidsErrors, ThrowOnError>({
@@ -543,39 +567,24 @@ export class BidFitService {
             ...options
         });
     }
-
+    
     /**
      * List Contracts
      *
      * Dashboard "Load contracts" action: the `limit` most recently found
-     * contracts out of the `contract` table — populated directly by the
-     * scrape pipeline + scripts/import_contracts.py, queried here as-is, no
-     * file copy step involved. `total_in_database` is the full row count, so
-     * the UI can show "20 of 614" rather than implying these are all there
-     * are.
+     * contracts (see `_recent_contracts`) out of the `contract` table —
+     * populated directly by the scrape pipeline + scripts/import_contracts.py,
+     * queried here as-is, no file copy step involved. `total_in_database` is
+     * the full row count, so the UI can show "20 of 614" rather than
+     * implying these are all there are. Calling POST /bid-fit/analyze-bids
+     * with the same `limit` analyzes exactly this set (plus the `bid` table
+     * rows, unless source="contracts").
      */
     public static fitListContracts<ThrowOnError extends boolean = true>(options?: Options<bidFitListContractsData, ThrowOnError>) {
         return (options?.client ?? client).get<bidFitListContractsResponses, bidFitListContractsErrors, ThrowOnError>({
             responseType: 'json',
             security: [{ scheme: 'bearer', type: 'http' }],
             url: '/api/v1/bid-fit/contracts',
-            ...options
-        });
-    }
-
-    /**
-     * Extract Hardliners
-     *
-     * Stage 1 alone: build hardliners from the current user's company
-     * profile's own free-text `hardliners`/`exclusions` fields, one per
-     * line (see app.agents.bid_fit.derive_hardliners_from_profile). Pure,
-     * no LLM call, no bid involved.
-     */
-    public static fitExtractHardliners<ThrowOnError extends boolean = true>(options?: Options<bidFitExtractHardlinersData, ThrowOnError>) {
-        return (options?.client ?? client).get<bidFitExtractHardlinersResponses, unknown, ThrowOnError>({
-            responseType: 'json',
-            security: [{ scheme: 'bearer', type: 'http' }],
-            url: '/api/v1/bid-fit/extract-hardliners',
             ...options
         });
     }
@@ -599,7 +608,7 @@ export class BidFitService {
     /**
      * Retrieve
      *
-     * Stage 2 alone: load + chunk a bid (JSON, JSONL, PDF, or any other
+     * Stage 1 alone: load + chunk a bid (JSON, JSONL, PDF, or any other
      * registered loader), then check each of `profile_sections` (e.g. the
      * company's capabilities, regions, certifications, self_description —
      * see app.agents.bid_fit.derive_profile_sections) against the bid's
@@ -624,10 +633,12 @@ export class BidFitService {
     /**
      * Generate Violations Endpoint
      *
-     * Stage 3 alone: given hardliners, retrieved bid context (e.g. from
-     * /bid-fit/retrieve), and optional company context, ask the LLM which
-     * hardliners are ACTUALLY contradicted (not just topically related) and
-     * whether a realistic solution exists.
+     * Stage 2 alone: given the company's whole profile text and retrieved
+     * bid context (e.g. from /bid-fit/retrieve), ask the LLM to find every
+     * genuine contradiction (not just topically related mentions) and
+     * whether a realistic solution exists for each — there's no separate
+     * pre-extracted hardliner list; the LLM reads hardliners/exclusions
+     * and every other stated constraint straight out of `profile_text`.
      */
     public static fitGenerateViolationsEndpoint<ThrowOnError extends boolean = true>(options: Options<bidFitGenerateViolationsEndpointData, ThrowOnError>) {
         return (options.client ?? client).post<bidFitGenerateViolationsEndpointResponses, bidFitGenerateViolationsEndpointErrors, ThrowOnError>({
@@ -645,7 +656,7 @@ export class BidFitService {
     /**
      * Score
      *
-     * Stage 4 alone: turn a violations list + similarity score into the
+     * Stage 3 alone: turn a violations list + similarity score into the
      * red/yellow/green flag. Pure function, no LLM/embedding calls — see
      * app.agents.bid_fit_scoring for the asymmetric weighting rationale.
      */
@@ -703,10 +714,11 @@ export class BidsService {
     /**
      * Load Bids
      *
-     * Populate the `bids` table from mock_data/bids*.json (see
-     * app.seed_bids.load_mock_bids). Idempotent — already-loaded files
-     * (matched by filename) are skipped, so it's safe to call repeatedly,
-     * e.g. from the dashboard's "Load data" button.
+     * Populate the `bids` table from JSON files under mock_data/ (see
+     * app.seed_bids.load_mock_bids). Syncs to disk: new files are inserted,
+     * rows whose source file is gone are removed, so the table matches
+     * mock_data. Safe to call repeatedly from the dashboard's "Load data"
+     * button.
      */
     public static loadBids<ThrowOnError extends boolean = true>(options?: Options<bidsLoadBidsData, ThrowOnError>) {
         return (options?.client ?? client).post<bidsLoadBidsResponses, unknown, ThrowOnError>({

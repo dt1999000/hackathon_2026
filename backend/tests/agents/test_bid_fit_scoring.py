@@ -1,6 +1,7 @@
 from app.agents.bid_fit_scoring import (
     BidFitScore,
     HardlinerViolation,
+    pick_flag_examples,
     rank_bid_fits,
     score_bid_fit,
 )
@@ -95,3 +96,24 @@ def test_rank_bid_fits_never_lets_similarity_beat_a_better_flag() -> None:
     zero_green = _score("green", similarity_score=0.0)
 
     assert rank_bid_fits([perfect_red, zero_green]) == [zero_green, perfect_red]
+
+
+def test_pick_flag_examples_takes_two_of_each_color() -> None:
+    greens = [_score("green", s) for s in (0.9, 0.4, 0.1)]
+    yellows = [_score("yellow", s) for s in (0.8, 0.5, 0.2)]
+    reds = [_score("red", s) for s in (0.7, 0.3, 0.05)]
+
+    picked = pick_flag_examples([*reds, *yellows, *greens], per_flag=2)
+
+    assert [r.flag for r in picked] == ["green", "green", "yellow", "yellow", "red", "red"]
+    assert [r.similarity_score for r in picked] == [0.9, 0.4, 0.8, 0.5, 0.7, 0.3]
+
+
+def test_pick_flag_examples_skips_a_flag_that_has_no_bids() -> None:
+    greens = [_score("green", 0.9), _score("green", 0.2)]
+    reds = [_score("red", 0.5)]
+
+    picked = pick_flag_examples([*greens, *reds], per_flag=2)
+
+    assert [r.flag for r in picked] == ["green", "green", "red"]
+    assert picked[-1].similarity_score == 0.5
