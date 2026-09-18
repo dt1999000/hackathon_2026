@@ -2,7 +2,7 @@
 
 import { type Client, type Options as Options2, type TDataShape, urlSearchParamsBodySerializer } from './client';
 import { client } from './client.gen';
-import type { chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
+import type { bidFitAnalyzeBidFitData, bidFitAnalyzeBidFitErrors, bidFitAnalyzeBidFitResponses, bidFitAnalyzeBidsData, bidFitAnalyzeBidsErrors, bidFitAnalyzeBidsResponses, bidFitExtractHardlinersData, bidFitExtractHardlinersResponses, bidFitGenerateViolationsEndpointData, bidFitGenerateViolationsEndpointErrors, bidFitGenerateViolationsEndpointResponses, bidFitProfileSectionsData, bidFitProfileSectionsResponses, bidFitRankData, bidFitRankErrors, bidFitRankResponses, bidFitRetrieveData, bidFitRetrieveErrors, bidFitRetrieveResponses, bidFitScoreData, bidFitScoreErrors, bidFitScoreResponses, bidFitScreenBidData, bidFitScreenBidErrors, bidFitScreenBidResponses, bidsListBidsData, bidsListBidsResponses, bidsLoadBidsData, bidsLoadBidsResponses, chatSendMessageData, chatSendMessageErrors, chatSendMessageResponses, companyProfileCreateCompanyProfileMeData, companyProfileCreateCompanyProfileMeErrors, companyProfileCreateCompanyProfileMeResponses, companyProfileDeleteCompanyProfileMeData, companyProfileDeleteCompanyProfileMeResponses, companyProfileFinalizeCompanyProfileChatData, companyProfileFinalizeCompanyProfileChatErrors, companyProfileFinalizeCompanyProfileChatResponses, companyProfileReadCompanyProfileMeData, companyProfileReadCompanyProfileMeResponses, companyProfileSendProfileChatMessageData, companyProfileSendProfileChatMessageErrors, companyProfileSendProfileChatMessageResponses, itemsCreateItemData, itemsCreateItemErrors, itemsCreateItemResponses, itemsDeleteItemData, itemsDeleteItemErrors, itemsDeleteItemResponses, itemsReadItemData, itemsReadItemErrors, itemsReadItemResponses, itemsReadItemsData, itemsReadItemsErrors, itemsReadItemsResponses, itemsUpdateItemData, itemsUpdateItemErrors, itemsUpdateItemResponses, loginLoginAccessTokenData, loginLoginAccessTokenErrors, loginLoginAccessTokenResponses, loginRecoverPasswordData, loginRecoverPasswordErrors, loginRecoverPasswordHtmlContentData, loginRecoverPasswordHtmlContentErrors, loginRecoverPasswordHtmlContentResponses, loginRecoverPasswordResponses, loginResetPasswordData, loginResetPasswordErrors, loginResetPasswordResponses, loginTestTokenData, loginTestTokenResponses, privateCreateUserData, privateCreateUserErrors, privateCreateUserResponses, toolsChunkTextData, toolsChunkTextErrors, toolsChunkTextResponses, toolsCompleteData, toolsCompleteErrors, toolsCompleteResponses, toolsCrawlWebsiteData, toolsCrawlWebsiteErrors, toolsCrawlWebsiteResponses, toolsExtractData, toolsExtractErrors, toolsExtractResponses, toolsGenerateData, toolsGenerateErrors, toolsGenerateResponses, toolsIngestSourceData, toolsIngestSourceErrors, toolsIngestSourceResponses, toolsLoadSourceData, toolsLoadSourceErrors, toolsLoadSourceResponses, toolsScrapeWebsiteData, toolsScrapeWebsiteErrors, toolsScrapeWebsiteResponses, toolsSearchData, toolsSearchErrors, toolsSearchResponses, usersCreateUserData, usersCreateUserErrors, usersCreateUserResponses, usersDeleteUserData, usersDeleteUserErrors, usersDeleteUserMeData, usersDeleteUserMeResponses, usersDeleteUserResponses, usersReadUserByIdData, usersReadUserByIdErrors, usersReadUserByIdResponses, usersReadUserMeData, usersReadUserMeResponses, usersReadUsersData, usersReadUsersErrors, usersReadUsersResponses, usersRegisterUserData, usersRegisterUserErrors, usersRegisterUserResponses, usersUpdatePasswordMeData, usersUpdatePasswordMeErrors, usersUpdatePasswordMeResponses, usersUpdateUserData, usersUpdateUserErrors, usersUpdateUserMeData, usersUpdateUserMeErrors, usersUpdateUserMeResponses, usersUpdateUserResponses, utilsHealthCheckData, utilsHealthCheckResponses, utilsTestEmailData, utilsTestEmailErrors, utilsTestEmailResponses } from './types.gen';
 
 export type Options<TData extends TDataShape = TDataShape, ThrowOnError extends boolean = boolean, TResponse = unknown> = Options2<TData, ThrowOnError, TResponse> & {
     /**
@@ -384,6 +384,321 @@ export class ChatService {
     }
 }
 
+export class CompanyProfileService {
+    /**
+     * Delete Company Profile Me
+     *
+     * Delete the current user's company profile, so POST /me can be used
+     * to set it again (POST 409s while a profile already exists).
+     */
+    public static profileDeleteCompanyProfileMe<ThrowOnError extends boolean = true>(options?: Options<companyProfileDeleteCompanyProfileMeData, ThrowOnError>) {
+        return (options?.client ?? client).delete<companyProfileDeleteCompanyProfileMeResponses, unknown, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/me',
+            ...options
+        });
+    }
+    
+    /**
+     * Read Company Profile Me
+     *
+     * Get the current user's company profile.
+     */
+    public static profileReadCompanyProfileMe<ThrowOnError extends boolean = true>(options?: Options<companyProfileReadCompanyProfileMeData, ThrowOnError>) {
+        return (options?.client ?? client).get<companyProfileReadCompanyProfileMeResponses, unknown, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/me',
+            ...options
+        });
+    }
+    
+    /**
+     * Create Company Profile Me
+     *
+     * Create the current user's company profile.
+     */
+    public static profileCreateCompanyProfileMe<ThrowOnError extends boolean = true>(options: Options<companyProfileCreateCompanyProfileMeData, ThrowOnError>) {
+        return (options.client ?? client).post<companyProfileCreateCompanyProfileMeResponses, companyProfileCreateCompanyProfileMeErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/me',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Send Profile Chat Message
+     *
+     * Send a message to the company-profile intake assistant — Aria
+     * interviewing the user to build their CompanyProfile conversationally
+     * instead of through the onboarding form (see
+     * app.services.company_profile_chat).
+     */
+    public static profileSendProfileChatMessage<ThrowOnError extends boolean = true>(options: Options<companyProfileSendProfileChatMessageData, ThrowOnError>) {
+        return (options.client ?? client).post<companyProfileSendProfileChatMessageResponses, companyProfileSendProfileChatMessageErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/chat/message',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Finalize Company Profile Chat
+     *
+     * Extract a company profile from the intake conversation and save it —
+     * creates it if the user has none yet, updates it if they're revising
+     * an existing one (see crud.upsert_company_profile).
+     */
+    public static profileFinalizeCompanyProfileChat<ThrowOnError extends boolean = true>(options: Options<companyProfileFinalizeCompanyProfileChatData, ThrowOnError>) {
+        return (options.client ?? client).post<companyProfileFinalizeCompanyProfileChatResponses, companyProfileFinalizeCompanyProfileChatErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/company-profile/chat/finalize',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+}
+
+export class BidFitService {
+    /**
+     * Analyze Bid Fit
+     *
+     * Full pipeline: build hardliners from the current user's company
+     * profile's structured fields, then check each of the profile's own
+     * descriptive sections (capabilities, regions, certifications, ...)
+     * against the bid for its best-matching content — the more sections
+     * that find a match, the higher `similarity_score` — and hand the
+     * matched context to the LLM to verify real contradictions and
+     * solutions, then flag red/yellow/green (see
+     * app.agents.bid_fit_scoring). `similarity_score` ranks bids sharing a
+     * flag, it does not decide the flag itself.
+     */
+    public static fitAnalyzeBidFit<ThrowOnError extends boolean = true>(options: Options<bidFitAnalyzeBidFitData, ThrowOnError>) {
+        return (options.client ?? client).post<bidFitAnalyzeBidFitResponses, bidFitAnalyzeBidFitErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/analyze',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Screen Bid
+     *
+     * Same pipeline as /analyze, but for hardliners you already have (no
+     * stored company profile needed) — e.g. testing directly against
+     * mock_data/agent_input.jsonl via bid_loader="jsonl".
+     */
+    public static fitScreenBid<ThrowOnError extends boolean = true>(options: Options<bidFitScreenBidData, ThrowOnError>) {
+        return (options.client ?? client).post<bidFitScreenBidResponses, bidFitScreenBidErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/screen',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Analyze Bids
+     *
+     * Dashboard "Analyze" action: run the full /analyze pipeline (see
+     * analyze_bid_fit) against every bid loaded via POST /bids/load, for
+     * the current user's company profile, then rank best-first the same
+     * way /bid-fit/rank does (flag first, similarity_score breaks ties)
+     * and return the top `top_n`. Runs each bid's analysis concurrently —
+     * every one is a handful of independent LLM/embedding calls, so doing
+     * them sequentially would take minutes even for a handful of bids. A
+     * single bid's analysis failing (e.g. a transient LLM/embedding error)
+     * is logged and that bid is dropped from the results rather than
+     * failing the whole batch.
+     */
+    public static fitAnalyzeBids<ThrowOnError extends boolean = true>(options?: Options<bidFitAnalyzeBidsData, ThrowOnError>) {
+        return (options?.client ?? client).post<bidFitAnalyzeBidsResponses, bidFitAnalyzeBidsErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/analyze-bids',
+            ...options
+        });
+    }
+    
+    /**
+     * Extract Hardliners
+     *
+     * Stage 1 alone: build hardliners from the current user's company
+     * profile's own free-text `hardliners`/`exclusions` fields, one per
+     * line (see app.agents.bid_fit.derive_hardliners_from_profile). Pure,
+     * no LLM call, no bid involved.
+     */
+    public static fitExtractHardliners<ThrowOnError extends boolean = true>(options?: Options<bidFitExtractHardlinersData, ThrowOnError>) {
+        return (options?.client ?? client).get<bidFitExtractHardlinersResponses, unknown, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/extract-hardliners',
+            ...options
+        });
+    }
+    
+    /**
+     * Profile Sections
+     *
+     * What /bid-fit/retrieve (and /analyze internally) would match against
+     * a bid: the current user's company profile broken into independent
+     * descriptive sections. No LLM/embedding call.
+     */
+    public static fitProfileSections<ThrowOnError extends boolean = true>(options?: Options<bidFitProfileSectionsData, ThrowOnError>) {
+        return (options?.client ?? client).get<bidFitProfileSectionsResponses, unknown, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/profile-sections',
+            ...options
+        });
+    }
+    
+    /**
+     * Retrieve
+     *
+     * Stage 2 alone: load + chunk a bid (JSON, JSONL, PDF, or any other
+     * registered loader), then check each of `profile_sections` (e.g. the
+     * company's capabilities, regions, certifications, self_description —
+     * see app.agents.bid_fit.derive_profile_sections) against the bid's
+     * chunks for its single best match. similarity_score = the fraction of
+     * sections that found a match above `match_threshold` — the more
+     * matches found, the higher the score. No LLM call — this is
+     * retrieval/ranking only, not a fit judgment.
+     */
+    public static fitRetrieve<ThrowOnError extends boolean = true>(options: Options<bidFitRetrieveData, ThrowOnError>) {
+        return (options.client ?? client).post<bidFitRetrieveResponses, bidFitRetrieveErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/retrieve',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Generate Violations Endpoint
+     *
+     * Stage 3 alone: given hardliners, retrieved bid context (e.g. from
+     * /bid-fit/retrieve), and optional company context, ask the LLM which
+     * hardliners are ACTUALLY contradicted (not just topically related) and
+     * whether a realistic solution exists.
+     */
+    public static fitGenerateViolationsEndpoint<ThrowOnError extends boolean = true>(options: Options<bidFitGenerateViolationsEndpointData, ThrowOnError>) {
+        return (options.client ?? client).post<bidFitGenerateViolationsEndpointResponses, bidFitGenerateViolationsEndpointErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/generate-violations',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Score
+     *
+     * Stage 4 alone: turn a violations list + similarity score into the
+     * red/yellow/green flag. Pure function, no LLM/embedding calls — see
+     * app.agents.bid_fit_scoring for the asymmetric weighting rationale.
+     */
+    public static fitScore<ThrowOnError extends boolean = true>(options: Options<bidFitScoreData, ThrowOnError>) {
+        return (options.client ?? client).post<bidFitScoreResponses, bidFitScoreErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/score',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Rank
+     *
+     * Rank multiple already-scored bids best-first: flag first (green beats
+     * yellow beats red, regardless of similarity_score on either side),
+     * then similarity_score (higher first) breaks ties within the same
+     * flag. Pure function, no LLM/embedding calls.
+     */
+    public static fitRank<ThrowOnError extends boolean = true>(options: Options<bidFitRankData, ThrowOnError>) {
+        return (options.client ?? client).post<bidFitRankResponses, bidFitRankErrors, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bid-fit/rank',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+}
+
+export class BidsService {
+    /**
+     * List Bids
+     *
+     * List the seeded bids (shared pool, not owner-scoped — every user's
+     * dashboard analyzes the same bids against their own company profile).
+     */
+    public static listBids<ThrowOnError extends boolean = true>(options?: Options<bidsListBidsData, ThrowOnError>) {
+        return (options?.client ?? client).get<bidsListBidsResponses, unknown, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bids/',
+            ...options
+        });
+    }
+    
+    /**
+     * Load Bids
+     *
+     * Populate the `bids` table from mock_data/bids*.json (see
+     * app.seed_bids.load_mock_bids). Idempotent — already-loaded files
+     * (matched by filename) are skipped, so it's safe to call repeatedly,
+     * e.g. from the dashboard's "Load data" button.
+     */
+    public static loadBids<ThrowOnError extends boolean = true>(options?: Options<bidsLoadBidsData, ThrowOnError>) {
+        return (options?.client ?? client).post<bidsLoadBidsResponses, unknown, ThrowOnError>({
+            responseType: 'json',
+            security: [{ scheme: 'bearer', type: 'http' }],
+            url: '/api/v1/bids/load',
+            ...options
+        });
+    }
+}
+
 export class PrivateService {
     /**
      * Create User
@@ -394,6 +709,162 @@ export class PrivateService {
         return (options.client ?? client).post<privateCreateUserResponses, privateCreateUserErrors, ThrowOnError>({
             responseType: 'json',
             url: '/api/v1/private/users/',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+}
+
+export class ToolsService {
+    /**
+     * Load Source
+     *
+     * Dev-only endpoint to try out a RAG loader directly.
+     */
+    public static loadSource<ThrowOnError extends boolean = true>(options: Options<toolsLoadSourceData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsLoadSourceResponses, toolsLoadSourceErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/load',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Chunk Text
+     *
+     * Dev-only endpoint to try out a RAG chunker directly.
+     */
+    public static chunkText<ThrowOnError extends boolean = true>(options: Options<toolsChunkTextData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsChunkTextResponses, toolsChunkTextErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/chunk',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Ingest Source
+     *
+     * Dev-only endpoint: load a source and chunk its content in one call.
+     */
+    public static ingestSource<ThrowOnError extends boolean = true>(options: Options<toolsIngestSourceData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsIngestSourceResponses, toolsIngestSourceErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/ingest',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Complete
+     *
+     * Dev-only endpoint to try out the local LLM client directly.
+     */
+    public static complete<ThrowOnError extends boolean = true>(options: Options<toolsCompleteData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsCompleteResponses, toolsCompleteErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/llm/complete',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Generate
+     *
+     * Dev-only endpoint to compare generation with vs. without retrieved
+     * context from a RAG source.
+     */
+    public static generate<ThrowOnError extends boolean = true>(options: Options<toolsGenerateData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsGenerateResponses, toolsGenerateErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/rag/generate',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Crawl Website
+     *
+     * Dev-only endpoint to try out the Firecrawl crawl tool directly.
+     */
+    public static crawlWebsite<ThrowOnError extends boolean = true>(options: Options<toolsCrawlWebsiteData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsCrawlWebsiteResponses, toolsCrawlWebsiteErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/crawl',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Scrape Website
+     *
+     * Dev-only endpoint to try out the Firecrawl scrape tool directly.
+     */
+    public static scrapeWebsite<ThrowOnError extends boolean = true>(options: Options<toolsScrapeWebsiteData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsScrapeWebsiteResponses, toolsScrapeWebsiteErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/scrape',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Search
+     *
+     * Dev-only endpoint to try out the Firecrawl search tool directly.
+     */
+    public static search<ThrowOnError extends boolean = true>(options: Options<toolsSearchData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsSearchResponses, toolsSearchErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/search',
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...options.headers
+            }
+        });
+    }
+    
+    /**
+     * Extract
+     *
+     * Dev-only endpoint to try out the Firecrawl structured-extraction tool directly.
+     */
+    public static extract<ThrowOnError extends boolean = true>(options: Options<toolsExtractData, ThrowOnError>) {
+        return (options.client ?? client).post<toolsExtractResponses, toolsExtractErrors, ThrowOnError>({
+            responseType: 'json',
+            url: '/api/v1/tools/firecrawl/extract',
             ...options,
             headers: {
                 'Content-Type': 'application/json',

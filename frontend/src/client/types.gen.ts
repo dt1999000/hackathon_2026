@@ -5,6 +5,261 @@ export type ClientOptions = {
 };
 
 /**
+ * AnalyzeBidsResponse
+ */
+export type AnalyzeBidsResponse = {
+    /**
+     * Results
+     */
+    results: Array<BidMatchResult>;
+};
+
+/**
+ * BidFitRequest
+ */
+export type BidFitRequest = {
+    /**
+     * Bid Source
+     */
+    bid_source?: string | null;
+    /**
+     * Bid Content
+     */
+    bid_content?: string | null;
+    /**
+     * Bid Loader
+     */
+    bid_loader: string;
+    /**
+     * Bid Chunker
+     */
+    bid_chunker?: string;
+    /**
+     * Top K
+     */
+    top_k?: number;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local' | 'google';
+    /**
+     * Embedding Model
+     */
+    embedding_model?: string | null;
+    /**
+     * Match Threshold
+     */
+    match_threshold?: number;
+    /**
+     * Record Index
+     */
+    record_index?: number;
+    /**
+     * Record Id
+     */
+    record_id?: string | null;
+};
+
+/**
+ * BidFitResponse
+ */
+export type BidFitResponse = {
+    /**
+     * Hardliners
+     */
+    hardliners: Array<string>;
+    /**
+     * Violations
+     */
+    violations: Array<HardlinerViolation>;
+    /**
+     * Flag
+     */
+    flag: string;
+    /**
+     * Similarity Score
+     */
+    similarity_score: number;
+    /**
+     * Hard Blockers
+     */
+    hard_blockers: Array<string>;
+    /**
+     * Soft Issues
+     */
+    soft_issues: Array<string>;
+};
+
+/**
+ * BidFitScore
+ *
+ * Final verdict for one bid against one company profile.
+ *
+ * `flag` is the go/no-go signal and is decided purely from the hardliner
+ * violations — it never blends in similarity, so a topically "similar"
+ * bid can never talk its way past an unresolved dealbreaker:
+ *
+ * - red: at least one violated hardliner has no realistic solution —
+ * not worth pursuing.
+ * - yellow: every violation has a realistic solution — workable, but
+ * flag the mitigations needed.
+ * - green: no hardliner is violated at all.
+ *
+ * `similarity_score` (0-1 cosine similarity between the company's
+ * profile/hardliners and the retrieved bid context) is reported
+ * separately, purely to rank bids that share the same flag — it's not a
+ * fit signal on its own.
+ */
+export type BidFitScore = {
+    /**
+     * Flag
+     */
+    flag: string;
+    /**
+     * Similarity Score
+     */
+    similarity_score: number;
+    /**
+     * Hard Blockers
+     */
+    hard_blockers: Array<string>;
+    /**
+     * Soft Issues
+     */
+    soft_issues: Array<string>;
+};
+
+/**
+ * BidMatchResult
+ */
+export type BidMatchResult = {
+    /**
+     * Bid Id
+     */
+    bid_id: string;
+    /**
+     * Title
+     */
+    title?: string | null;
+    /**
+     * Notice Identifier
+     */
+    notice_identifier?: string | null;
+    /**
+     * Hardliners
+     */
+    hardliners: Array<string>;
+    /**
+     * Violations
+     */
+    violations: Array<HardlinerViolation>;
+    /**
+     * Flag
+     */
+    flag: string;
+    /**
+     * Similarity Score
+     */
+    similarity_score: number;
+    /**
+     * Hard Blockers
+     */
+    hard_blockers: Array<string>;
+    /**
+     * Soft Issues
+     */
+    soft_issues: Array<string>;
+};
+
+/**
+ * BidPublic
+ */
+export type BidPublic = {
+    /**
+     * Source File
+     */
+    source_file: string;
+    /**
+     * Title
+     */
+    title?: string | null;
+    /**
+     * Notice Identifier
+     */
+    notice_identifier?: string | null;
+    /**
+     * Place Of Performance
+     */
+    place_of_performance?: string | null;
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Created At
+     */
+    created_at?: string | null;
+};
+
+/**
+ * BidScreenRequest
+ */
+export type BidScreenRequest = {
+    /**
+     * Bid Source
+     */
+    bid_source?: string | null;
+    /**
+     * Bid Content
+     */
+    bid_content?: string | null;
+    /**
+     * Hardliners
+     */
+    hardliners: Array<string>;
+    /**
+     * Bid Loader
+     */
+    bid_loader: string;
+    /**
+     * Bid Chunker
+     */
+    bid_chunker?: string;
+    /**
+     * Top K
+     */
+    top_k?: number;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local' | 'google';
+    /**
+     * Embedding Model
+     */
+    embedding_model?: string | null;
+    /**
+     * Company Context
+     */
+    company_context?: string;
+    /**
+     * Profile Sections
+     */
+    profile_sections?: Array<string> | null;
+    /**
+     * Match Threshold
+     */
+    match_threshold?: number;
+    /**
+     * Record Index
+     */
+    record_index?: number;
+    /**
+     * Record Id
+     */
+    record_id?: string | null;
+};
+
+/**
  * Body_login-login_access_token
  */
 export type Body_login_login_access_token = {
@@ -59,7 +314,11 @@ export type ChatRequest = {
     /**
      * Provider
      */
-    provider?: 'claude' | 'local';
+    provider?: 'claude' | 'local' | 'google';
+    /**
+     * Language
+     */
+    language?: 'en' | 'de';
 };
 
 /**
@@ -73,6 +332,290 @@ export type ChatResponse = {
 };
 
 /**
+ * ChunkRequest
+ */
+export type ChunkRequest = {
+    /**
+     * Text
+     */
+    text: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
+};
+
+/**
+ * CompanyProfileCreate
+ */
+export type CompanyProfileCreate = {
+    /**
+     * Company Name
+     */
+    company_name: string;
+    /**
+     * Base Location
+     */
+    base_location?: string | null;
+    /**
+     * Founded Year
+     */
+    founded_year?: number | null;
+    /**
+     * Employee Count
+     */
+    employee_count?: number | null;
+    /**
+     * Annual Revenue Eur
+     */
+    annual_revenue_eur?: number | null;
+    /**
+     * Geographic Reach
+     */
+    geographic_reach?: string | null;
+    /**
+     * Contract Size
+     */
+    contract_size?: string | null;
+    /**
+     * Capabilities
+     */
+    capabilities?: string | null;
+    /**
+     * Exclusions
+     */
+    exclusions?: string | null;
+    /**
+     * Certifications
+     */
+    certifications?: string | null;
+    /**
+     * Contractor Role
+     */
+    contractor_role?: string | null;
+    /**
+     * Capacity
+     */
+    capacity?: string | null;
+    /**
+     * Reference Projects
+     */
+    reference_projects?: string | null;
+    /**
+     * Hardliners
+     */
+    hardliners?: string | null;
+    /**
+     * Self Description
+     */
+    self_description?: string | null;
+};
+
+/**
+ * CompanyProfilePublic
+ */
+export type CompanyProfilePublic = {
+    /**
+     * Company Name
+     */
+    company_name: string;
+    /**
+     * Base Location
+     */
+    base_location?: string | null;
+    /**
+     * Founded Year
+     */
+    founded_year?: number | null;
+    /**
+     * Employee Count
+     */
+    employee_count?: number | null;
+    /**
+     * Annual Revenue Eur
+     */
+    annual_revenue_eur?: number | null;
+    /**
+     * Geographic Reach
+     */
+    geographic_reach?: string | null;
+    /**
+     * Contract Size
+     */
+    contract_size?: string | null;
+    /**
+     * Capabilities
+     */
+    capabilities?: string | null;
+    /**
+     * Exclusions
+     */
+    exclusions?: string | null;
+    /**
+     * Certifications
+     */
+    certifications?: string | null;
+    /**
+     * Contractor Role
+     */
+    contractor_role?: string | null;
+    /**
+     * Capacity
+     */
+    capacity?: string | null;
+    /**
+     * Reference Projects
+     */
+    reference_projects?: string | null;
+    /**
+     * Hardliners
+     */
+    hardliners?: string | null;
+    /**
+     * Self Description
+     */
+    self_description?: string | null;
+    /**
+     * Id
+     */
+    id: string;
+    /**
+     * Owner Id
+     */
+    owner_id: string;
+    /**
+     * Created At
+     */
+    created_at?: string | null;
+};
+
+/**
+ * CompleteRequest
+ */
+export type CompleteRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<{
+        [key: string]: string;
+    }>;
+};
+
+/**
+ * CrawlWebsiteRequest
+ */
+export type CrawlWebsiteRequest = {
+    /**
+     * Url
+     */
+    url: string;
+};
+
+/**
+ * ExtractHardlinersResponse
+ */
+export type ExtractHardlinersResponse = {
+    /**
+     * Hardliners
+     */
+    hardliners: Array<string>;
+};
+
+/**
+ * ExtractRequest
+ */
+export type ExtractRequest = {
+    /**
+     * Url
+     */
+    url: string;
+    /**
+     * Json Schema
+     */
+    json_schema: {
+        [key: string]: unknown;
+    };
+    /**
+     * Prompt
+     */
+    prompt?: string | null;
+};
+
+/**
+ * GenerateRequest
+ */
+export type GenerateRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+    /**
+     * Query
+     */
+    query: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
+    /**
+     * Top K
+     */
+    top_k?: number;
+    /**
+     * Use Retrieval
+     */
+    use_retrieval?: boolean;
+    /**
+     * Retrieval Method
+     */
+    retrieval_method?: string;
+    /**
+     * Embedding Model
+     */
+    embedding_model?: 'qwen3-embedding:0.6b' | 'nomic-embed-text' | 'bge-m3' | 'jina-embeddings-v3' | 'gemini-embedding-2-preview' | null;
+};
+
+/**
+ * GenerateViolationsRequest
+ */
+export type GenerateViolationsRequest = {
+    /**
+     * Hardliners
+     */
+    hardliners: Array<string>;
+    /**
+     * Context Chunks
+     */
+    context_chunks: Array<string>;
+    /**
+     * Profile Text
+     */
+    profile_text?: string;
+    /**
+     * Bid Source
+     */
+    bid_source?: string;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local' | 'google';
+};
+
+/**
+ * GenerateViolationsResponse
+ */
+export type GenerateViolationsResponse = {
+    /**
+     * Violations
+     */
+    violations: Array<HardlinerViolation>;
+};
+
+/**
  * HTTPValidationError
  */
 export type HTTPValidationError = {
@@ -80,6 +623,58 @@ export type HTTPValidationError = {
      * Detail
      */
     detail?: Array<ValidationError>;
+};
+
+/**
+ * HardlinerViolation
+ *
+ * One hardliner checked against the bid, with the LLM's verdict.
+ */
+export type HardlinerViolation = {
+    /**
+     * Hardliner
+     */
+    hardliner: string;
+    /**
+     * Violated
+     */
+    violated: boolean;
+    /**
+     * Reason
+     *
+     * Why the bid does or doesn't satisfy this hardliner, grounded in the retrieved bid context.
+     */
+    reason: string;
+    /**
+     * Solution
+     *
+     * A concrete way to resolve the violation, if one realistically exists (e.g. subcontracting a missing capability). Omit if no viable solution exists.
+     */
+    solution?: string | null;
+    /**
+     * Solution Is Realistic
+     *
+     * False whenever `solution` is None, and also False if a proposed solution is impractical, too costly, or otherwise shouldn't count (e.g. 'get certified in two weeks' for a six-month certification process, or anything that would still break a non-negotiable hardliner).
+     */
+    solution_is_realistic?: boolean;
+};
+
+/**
+ * IngestRequest
+ */
+export type IngestRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+    /**
+     * Chunker
+     */
+    chunker?: string;
 };
 
 /**
@@ -151,6 +746,20 @@ export type ItemsPublic = {
 };
 
 /**
+ * LoadRequest
+ */
+export type LoadRequest = {
+    /**
+     * Source
+     */
+    source: string;
+    /**
+     * Loader
+     */
+    loader: string;
+};
+
+/**
  * Message
  */
 export type Message = {
@@ -194,6 +803,160 @@ export type PrivateUserCreate = {
      * Is Verified
      */
     is_verified?: boolean;
+};
+
+/**
+ * ProfileChatRequest
+ */
+export type ProfileChatRequest = {
+    /**
+     * Messages
+     */
+    messages: Array<ChatMessage>;
+    /**
+     * Provider
+     */
+    provider?: 'claude' | 'local' | 'google';
+};
+
+/**
+ * ProfileChatResponse
+ */
+export type ProfileChatResponse = {
+    /**
+     * Content
+     */
+    content: string;
+};
+
+/**
+ * ProfileSectionsResponse
+ */
+export type ProfileSectionsResponse = {
+    /**
+     * Profile Sections
+     */
+    profile_sections: Array<string>;
+};
+
+/**
+ * RankBidFitsRequest
+ */
+export type RankBidFitsRequest = {
+    /**
+     * Results
+     */
+    results: Array<BidFitScore>;
+};
+
+/**
+ * RankBidFitsResponse
+ */
+export type RankBidFitsResponse = {
+    /**
+     * Ranked
+     */
+    ranked: Array<BidFitScore>;
+};
+
+/**
+ * RetrieveBidContextRequest
+ */
+export type RetrieveBidContextRequest = {
+    /**
+     * Bid Source
+     */
+    bid_source?: string | null;
+    /**
+     * Bid Content
+     */
+    bid_content?: string | null;
+    /**
+     * Profile Sections
+     */
+    profile_sections: Array<string>;
+    /**
+     * Bid Loader
+     */
+    bid_loader: string;
+    /**
+     * Bid Chunker
+     */
+    bid_chunker?: string;
+    /**
+     * Top K
+     */
+    top_k?: number;
+    /**
+     * Match Threshold
+     */
+    match_threshold?: number;
+    /**
+     * Embedding Model
+     */
+    embedding_model?: string | null;
+    /**
+     * Record Index
+     */
+    record_index?: number;
+    /**
+     * Record Id
+     */
+    record_id?: string | null;
+};
+
+/**
+ * RetrieveBidContextResponse
+ */
+export type RetrieveBidContextResponse = {
+    /**
+     * Bid Metadata
+     */
+    bid_metadata: {
+        [key: string]: unknown;
+    };
+    /**
+     * Context Chunks
+     */
+    context_chunks: Array<string>;
+    /**
+     * Similarity Score
+     */
+    similarity_score: number;
+};
+
+/**
+ * ScoreBidFitRequest
+ */
+export type ScoreBidFitRequest = {
+    /**
+     * Violations
+     */
+    violations: Array<HardlinerViolation>;
+    /**
+     * Similarity Score
+     */
+    similarity_score?: number;
+};
+
+/**
+ * ScrapeWebsiteRequest
+ */
+export type ScrapeWebsiteRequest = {
+    /**
+     * Url
+     */
+    url: string;
+};
+
+/**
+ * SearchRequest
+ */
+export type SearchRequest = {
+    /**
+     * Query
+     */
+    query: string;
 };
 
 /**
@@ -984,6 +1747,363 @@ export type chatSendMessageResponses = {
 
 export type chatSendMessageResponse = chatSendMessageResponses[keyof chatSendMessageResponses];
 
+export type companyProfileDeleteCompanyProfileMeData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/me';
+};
+
+export type companyProfileDeleteCompanyProfileMeResponses = {
+    /**
+     * Successful Response
+     */
+    200: Message;
+};
+
+export type companyProfileDeleteCompanyProfileMeResponse = companyProfileDeleteCompanyProfileMeResponses[keyof companyProfileDeleteCompanyProfileMeResponses];
+
+export type companyProfileReadCompanyProfileMeData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/me';
+};
+
+export type companyProfileReadCompanyProfileMeResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyProfilePublic;
+};
+
+export type companyProfileReadCompanyProfileMeResponse = companyProfileReadCompanyProfileMeResponses[keyof companyProfileReadCompanyProfileMeResponses];
+
+export type companyProfileCreateCompanyProfileMeData = {
+    body: CompanyProfileCreate;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/me';
+};
+
+export type companyProfileCreateCompanyProfileMeErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileCreateCompanyProfileMeError = companyProfileCreateCompanyProfileMeErrors[keyof companyProfileCreateCompanyProfileMeErrors];
+
+export type companyProfileCreateCompanyProfileMeResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyProfilePublic;
+};
+
+export type companyProfileCreateCompanyProfileMeResponse = companyProfileCreateCompanyProfileMeResponses[keyof companyProfileCreateCompanyProfileMeResponses];
+
+export type companyProfileSendProfileChatMessageData = {
+    body: ProfileChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/chat/message';
+};
+
+export type companyProfileSendProfileChatMessageErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileSendProfileChatMessageError = companyProfileSendProfileChatMessageErrors[keyof companyProfileSendProfileChatMessageErrors];
+
+export type companyProfileSendProfileChatMessageResponses = {
+    /**
+     * Successful Response
+     */
+    200: ProfileChatResponse;
+};
+
+export type companyProfileSendProfileChatMessageResponse = companyProfileSendProfileChatMessageResponses[keyof companyProfileSendProfileChatMessageResponses];
+
+export type companyProfileFinalizeCompanyProfileChatData = {
+    body: ProfileChatRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/company-profile/chat/finalize';
+};
+
+export type companyProfileFinalizeCompanyProfileChatErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type companyProfileFinalizeCompanyProfileChatError = companyProfileFinalizeCompanyProfileChatErrors[keyof companyProfileFinalizeCompanyProfileChatErrors];
+
+export type companyProfileFinalizeCompanyProfileChatResponses = {
+    /**
+     * Successful Response
+     */
+    200: CompanyProfilePublic;
+};
+
+export type companyProfileFinalizeCompanyProfileChatResponse = companyProfileFinalizeCompanyProfileChatResponses[keyof companyProfileFinalizeCompanyProfileChatResponses];
+
+export type bidFitAnalyzeBidFitData = {
+    body: BidFitRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/analyze';
+};
+
+export type bidFitAnalyzeBidFitErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitAnalyzeBidFitError = bidFitAnalyzeBidFitErrors[keyof bidFitAnalyzeBidFitErrors];
+
+export type bidFitAnalyzeBidFitResponses = {
+    /**
+     * Successful Response
+     */
+    200: BidFitResponse;
+};
+
+export type bidFitAnalyzeBidFitResponse = bidFitAnalyzeBidFitResponses[keyof bidFitAnalyzeBidFitResponses];
+
+export type bidFitScreenBidData = {
+    body: BidScreenRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/screen';
+};
+
+export type bidFitScreenBidErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitScreenBidError = bidFitScreenBidErrors[keyof bidFitScreenBidErrors];
+
+export type bidFitScreenBidResponses = {
+    /**
+     * Successful Response
+     */
+    200: BidFitResponse;
+};
+
+export type bidFitScreenBidResponse = bidFitScreenBidResponses[keyof bidFitScreenBidResponses];
+
+export type bidFitAnalyzeBidsData = {
+    body?: never;
+    path?: never;
+    query?: {
+        /**
+         * Provider
+         */
+        provider?: 'claude' | 'local' | 'google';
+        /**
+         * Top N
+         */
+        top_n?: number;
+    };
+    url: '/api/v1/bid-fit/analyze-bids';
+};
+
+export type bidFitAnalyzeBidsErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitAnalyzeBidsError = bidFitAnalyzeBidsErrors[keyof bidFitAnalyzeBidsErrors];
+
+export type bidFitAnalyzeBidsResponses = {
+    /**
+     * Successful Response
+     */
+    200: AnalyzeBidsResponse;
+};
+
+export type bidFitAnalyzeBidsResponse = bidFitAnalyzeBidsResponses[keyof bidFitAnalyzeBidsResponses];
+
+export type bidFitExtractHardlinersData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/extract-hardliners';
+};
+
+export type bidFitExtractHardlinersResponses = {
+    /**
+     * Successful Response
+     */
+    200: ExtractHardlinersResponse;
+};
+
+export type bidFitExtractHardlinersResponse = bidFitExtractHardlinersResponses[keyof bidFitExtractHardlinersResponses];
+
+export type bidFitProfileSectionsData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/profile-sections';
+};
+
+export type bidFitProfileSectionsResponses = {
+    /**
+     * Successful Response
+     */
+    200: ProfileSectionsResponse;
+};
+
+export type bidFitProfileSectionsResponse = bidFitProfileSectionsResponses[keyof bidFitProfileSectionsResponses];
+
+export type bidFitRetrieveData = {
+    body: RetrieveBidContextRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/retrieve';
+};
+
+export type bidFitRetrieveErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitRetrieveError = bidFitRetrieveErrors[keyof bidFitRetrieveErrors];
+
+export type bidFitRetrieveResponses = {
+    /**
+     * Successful Response
+     */
+    200: RetrieveBidContextResponse;
+};
+
+export type bidFitRetrieveResponse = bidFitRetrieveResponses[keyof bidFitRetrieveResponses];
+
+export type bidFitGenerateViolationsEndpointData = {
+    body: GenerateViolationsRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/generate-violations';
+};
+
+export type bidFitGenerateViolationsEndpointErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitGenerateViolationsEndpointError = bidFitGenerateViolationsEndpointErrors[keyof bidFitGenerateViolationsEndpointErrors];
+
+export type bidFitGenerateViolationsEndpointResponses = {
+    /**
+     * Successful Response
+     */
+    200: GenerateViolationsResponse;
+};
+
+export type bidFitGenerateViolationsEndpointResponse = bidFitGenerateViolationsEndpointResponses[keyof bidFitGenerateViolationsEndpointResponses];
+
+export type bidFitScoreData = {
+    body: ScoreBidFitRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/score';
+};
+
+export type bidFitScoreErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitScoreError = bidFitScoreErrors[keyof bidFitScoreErrors];
+
+export type bidFitScoreResponses = {
+    /**
+     * Successful Response
+     */
+    200: BidFitScore;
+};
+
+export type bidFitScoreResponse = bidFitScoreResponses[keyof bidFitScoreResponses];
+
+export type bidFitRankData = {
+    body: RankBidFitsRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bid-fit/rank';
+};
+
+export type bidFitRankErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type bidFitRankError = bidFitRankErrors[keyof bidFitRankErrors];
+
+export type bidFitRankResponses = {
+    /**
+     * Successful Response
+     */
+    200: RankBidFitsResponse;
+};
+
+export type bidFitRankResponse = bidFitRankResponses[keyof bidFitRankResponses];
+
+export type bidsListBidsData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bids/';
+};
+
+export type bidsListBidsResponses = {
+    /**
+     * Response Bids-List Bids
+     *
+     * Successful Response
+     */
+    200: Array<BidPublic>;
+};
+
+export type bidsListBidsResponse = bidsListBidsResponses[keyof bidsListBidsResponses];
+
+export type bidsLoadBidsData = {
+    body?: never;
+    path?: never;
+    query?: never;
+    url: '/api/v1/bids/load';
+};
+
+export type bidsLoadBidsResponses = {
+    /**
+     * Successful Response
+     */
+    200: Message;
+};
+
+export type bidsLoadBidsResponse = bidsLoadBidsResponses[keyof bidsLoadBidsResponses];
+
 export type privateCreateUserData = {
     body: PrivateUserCreate;
     path?: never;
@@ -1008,3 +2128,264 @@ export type privateCreateUserResponses = {
 };
 
 export type privateCreateUserResponse = privateCreateUserResponses[keyof privateCreateUserResponses];
+
+export type toolsLoadSourceData = {
+    body: LoadRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/load';
+};
+
+export type toolsLoadSourceErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsLoadSourceError = toolsLoadSourceErrors[keyof toolsLoadSourceErrors];
+
+export type toolsLoadSourceResponses = {
+    /**
+     * Response Tools-Load Source
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsLoadSourceResponse = toolsLoadSourceResponses[keyof toolsLoadSourceResponses];
+
+export type toolsChunkTextData = {
+    body: ChunkRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/chunk';
+};
+
+export type toolsChunkTextErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsChunkTextError = toolsChunkTextErrors[keyof toolsChunkTextErrors];
+
+export type toolsChunkTextResponses = {
+    /**
+     * Response Tools-Chunk Text
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsChunkTextResponse = toolsChunkTextResponses[keyof toolsChunkTextResponses];
+
+export type toolsIngestSourceData = {
+    body: IngestRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/ingest';
+};
+
+export type toolsIngestSourceErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsIngestSourceError = toolsIngestSourceErrors[keyof toolsIngestSourceErrors];
+
+export type toolsIngestSourceResponses = {
+    /**
+     * Response Tools-Ingest Source
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsIngestSourceResponse = toolsIngestSourceResponses[keyof toolsIngestSourceResponses];
+
+export type toolsCompleteData = {
+    body: CompleteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/llm/complete';
+};
+
+export type toolsCompleteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsCompleteError = toolsCompleteErrors[keyof toolsCompleteErrors];
+
+export type toolsCompleteResponses = {
+    /**
+     * Response Tools-Complete
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: string;
+    };
+};
+
+export type toolsCompleteResponse = toolsCompleteResponses[keyof toolsCompleteResponses];
+
+export type toolsGenerateData = {
+    body: GenerateRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/rag/generate';
+};
+
+export type toolsGenerateErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsGenerateError = toolsGenerateErrors[keyof toolsGenerateErrors];
+
+export type toolsGenerateResponses = {
+    /**
+     * Response Tools-Generate
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsGenerateResponse = toolsGenerateResponses[keyof toolsGenerateResponses];
+
+export type toolsCrawlWebsiteData = {
+    body: CrawlWebsiteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/crawl';
+};
+
+export type toolsCrawlWebsiteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsCrawlWebsiteError = toolsCrawlWebsiteErrors[keyof toolsCrawlWebsiteErrors];
+
+export type toolsCrawlWebsiteResponses = {
+    /**
+     * Response Tools-Crawl Website
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsCrawlWebsiteResponse = toolsCrawlWebsiteResponses[keyof toolsCrawlWebsiteResponses];
+
+export type toolsScrapeWebsiteData = {
+    body: ScrapeWebsiteRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/scrape';
+};
+
+export type toolsScrapeWebsiteErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsScrapeWebsiteError = toolsScrapeWebsiteErrors[keyof toolsScrapeWebsiteErrors];
+
+export type toolsScrapeWebsiteResponses = {
+    /**
+     * Response Tools-Scrape Website
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsScrapeWebsiteResponse = toolsScrapeWebsiteResponses[keyof toolsScrapeWebsiteResponses];
+
+export type toolsSearchData = {
+    body: SearchRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/search';
+};
+
+export type toolsSearchErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsSearchError = toolsSearchErrors[keyof toolsSearchErrors];
+
+export type toolsSearchResponses = {
+    /**
+     * Response Tools-Search
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsSearchResponse = toolsSearchResponses[keyof toolsSearchResponses];
+
+export type toolsExtractData = {
+    body: ExtractRequest;
+    path?: never;
+    query?: never;
+    url: '/api/v1/tools/firecrawl/extract';
+};
+
+export type toolsExtractErrors = {
+    /**
+     * Validation Error
+     */
+    422: HTTPValidationError;
+};
+
+export type toolsExtractError = toolsExtractErrors[keyof toolsExtractErrors];
+
+export type toolsExtractResponses = {
+    /**
+     * Response Tools-Extract
+     *
+     * Successful Response
+     */
+    200: {
+        [key: string]: unknown;
+    };
+};
+
+export type toolsExtractResponse = toolsExtractResponses[keyof toolsExtractResponses];

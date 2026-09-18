@@ -6,7 +6,7 @@ Usage:
         [--loader json|tabular|github|youtube_video|youtube_channel|pdf] \
         [--chunker default|text|docx|mdx|web|csv|json|xml] \
         [--retrieval lexical|embedding] \
-        [--embedding-model MODEL] \
+        [--embedding-model qwen3-embedding:0.6b|nomic-embed-text|bge-m3|jina-embeddings-v3] \
         [--top-k N]
 
 Example:
@@ -18,11 +18,17 @@ Example:
     uv run python scripts/rag_generation_demo.py \
         scripts/mock_data/company.json "Who is the CEO?" \
         --loader json --chunker json --embedding-model nomic-embed-text
+
+    # Use a multilingual embedding model for non-English content:
+    uv run python scripts/rag_generation_demo.py \
+        scripts/mock_data/company.json "Wer ist der CEO?" \
+        --loader json --chunker json --embedding-model bge-m3
 """
 
 import argparse
+from typing import get_args
 
-from app.services.embeddings import EmbeddingClient
+from app.services.embeddings import EmbeddingClient, EmbeddingModel
 from app.services.llm import LocalLLMClient
 from app.tools.rag.chunking.base import BaseChunker
 from app.tools.rag.chunking.default import DefaultChunker
@@ -71,7 +77,12 @@ def main() -> None:
     parser.add_argument("--loader", choices=sorted(LOADERS), default="github")
     parser.add_argument("--chunker", choices=sorted(CHUNKERS), default="default")
     parser.add_argument("--retrieval", choices=["embedding", "lexical"], default="embedding")
-    parser.add_argument("--embedding-model", default=None, help="e.g. nomic-embed-text to compare vs. the default")
+    parser.add_argument(
+        "--embedding-model",
+        choices=get_args(EmbeddingModel),
+        default=None,
+        help="Defaults to LLM_EMBEDDING_MODEL. bge-m3/jina-embeddings-v3 are multilingual.",
+    )
     parser.add_argument("--top-k", type=int, default=3)
     args = parser.parse_args()
 

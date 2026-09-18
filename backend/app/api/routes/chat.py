@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from app.api.deps import get_current_user
 from app.services.chat import chat_completion
 from app.services.chat_models import ChatProvider
+from app.services.language import OutputLanguage
 
 router = APIRouter(
     prefix="/chat", tags=["chat"], dependencies=[Depends(get_current_user)]
@@ -18,6 +19,7 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     messages: list[ChatMessage]
     provider: ChatProvider = "claude"
+    language: OutputLanguage = "de"
 
 
 class ChatResponse(BaseModel):
@@ -32,5 +34,6 @@ def send_message(request: ChatRequest) -> ChatResponse:
     content = chat_completion(
         messages=[m.model_dump() for m in request.messages],
         provider=request.provider,
+        language=request.language,
     )
     return ChatResponse(content=content)

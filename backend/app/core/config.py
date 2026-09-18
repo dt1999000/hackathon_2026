@@ -31,15 +31,20 @@ class Settings(BaseSettings):
     DATABASE_URL: PostgresDsn
 
     # Chat/RAG LLM providers. Ollama is a separate, shared server on this
-    # machine, not a service in this project's own compose files — and
-    # this project has its own Docker network (see compose.yml's "name:"
-    # pin), so it's reached via the host's published port rather than a
-    # container hostname.
-    LLM_LOCAL_BASE_URL: str = "http://host.docker.internal:11434"
+    # machine, not a service in this project's own compose files. Local
+    # processes talk to the published port on localhost; Compose overrides
+    # this to host.docker.internal so containers can reach the same server.
+    LLM_LOCAL_BASE_URL: str = "http://127.0.0.1:11434"
     LLM_LOCAL_MODEL: str = "qwen3:4b"
-    LLM_EMBEDDING_MODEL: str = "qwen3-embedding:0.6b"
+    # Local Ollama encoder. Set to gemini-embedding-2-preview to use Google
+    # instead (requires GOOGLE_API_KEY).
+    LLM_EMBEDDING_MODEL: str = "bge-m3"
     LLM_CLAUDE_MODEL: str = "claude-sonnet-5"
+    ANTHROPIC_API_KEY: str | None = None
     ANTHROPIC_WORKSPACE_ID: str | None = None
+    LLM_GEMINI_MODEL: str = "gemini-3.6-flash"
+    # langchain-google-genai reads GOOGLE_API_KEY from the process
+    # environment (or Compose), not from this Settings class.
 
     @field_validator("DATABASE_URL", mode="before")
     @classmethod

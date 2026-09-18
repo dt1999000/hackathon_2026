@@ -1,9 +1,9 @@
 import { createFileRoute, Outlet, redirect } from "@tanstack/react-router"
 import { PanelRightOpen } from "lucide-react"
 import { useEffect, useState } from "react"
-
 import { AssistantPanel } from "@/components/Assistant/AssistantPanel"
 import { Footer } from "@/components/Common/Footer"
+import { CompanyProfileIndicator } from "@/components/CompanyProfile/CompanyProfileCard"
 import AppSidebar from "@/components/Sidebar/AppSidebar"
 import { Button } from "@/components/ui/button"
 import {
@@ -43,7 +43,9 @@ function Layout() {
           <div className="flex min-w-0 flex-1 flex-col">
             <header className="sticky top-0 z-10 flex h-16 shrink-0 items-center gap-2 border-b bg-background px-4">
               <SidebarTrigger className="-ml-1 text-muted-foreground" />
-              <div className="flex-1" />
+              <div className="min-w-0 flex-1">
+                <CompanyProfileIndicator />
+              </div>
               {!assistantOpen && (
                 <Button
                   variant="ghost"

@@ -16,7 +16,8 @@ import {
 import useCustomToast from "@/hooks/useCustomToast"
 import { handleError } from "@/utils"
 
-type Provider = "claude" | "local"
+type Provider = "claude" | "local" | "google"
+type Language = "en" | "de"
 
 function ProviderSelect({
   value,
@@ -33,6 +34,27 @@ function ProviderSelect({
       <SelectContent>
         <SelectItem value="claude">Claude</SelectItem>
         <SelectItem value="local">Local (Ollama)</SelectItem>
+        <SelectItem value="google">Google (Gemini)</SelectItem>
+      </SelectContent>
+    </Select>
+  )
+}
+
+function LanguageSelect({
+  value,
+  onChange,
+}: {
+  value: Language
+  onChange: (value: Language) => void
+}) {
+  return (
+    <Select value={value} onValueChange={(v) => onChange(v as Language)}>
+      <SelectTrigger className="h-8 w-24 text-xs">
+        <SelectValue />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectItem value="en">English</SelectItem>
+        <SelectItem value="de">Deutsch</SelectItem>
       </SelectContent>
     </Select>
   )
@@ -40,6 +62,7 @@ function ProviderSelect({
 
 export function AssistantPanel({ onClose }: { onClose: () => void }) {
   const [provider, setProvider] = useState<Provider>("claude")
+  const [language, setLanguage] = useState<Language>("de")
   const [input, setInput] = useState("")
   const [messages, setMessages] = useState<ChatMessage[]>([])
   const { showErrorToast } = useCustomToast()
@@ -47,7 +70,7 @@ export function AssistantPanel({ onClose }: { onClose: () => void }) {
   const mutation = useMutation({
     mutationFn: (nextMessages: ChatMessage[]) =>
       ChatService.sendMessage({
-        body: { messages: nextMessages, provider },
+        body: { messages: nextMessages, provider, language },
       }),
     onSuccess: (response) => {
       setMessages((prev) => [
@@ -73,6 +96,7 @@ export function AssistantPanel({ onClose }: { onClose: () => void }) {
       <div className="flex h-16 shrink-0 items-center justify-between gap-2 border-b px-4">
         <span className="font-medium">Aria</span>
         <div className="flex items-center gap-2">
+          <LanguageSelect value={language} onChange={setLanguage} />
           <ProviderSelect value={provider} onChange={setProvider} />
           <Button
             variant="ghost"

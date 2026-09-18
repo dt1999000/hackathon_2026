@@ -1,6 +1,7 @@
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 
 from app.services.chat_models import ChatProvider, get_chat_model
+from app.services.language import LANGUAGE_NAMES, OutputLanguage
 
 ARIA_SYSTEM_PROMPT = """
 You are Aria, a general-purpose AI assistant. You silently detect which of the
@@ -55,10 +56,23 @@ def _to_lc_message(role: str, content: str) -> BaseMessage:
     return HumanMessage(content=content)
 
 
-def chat_completion(messages: list[dict[str, str]], provider: ChatProvider) -> str:
-    history: list[BaseMessage] = [SystemMessage(content=ARIA_SYSTEM_PROMPT)]
+def chat_completion(
+    messages: list[dict[str, str]],
+    provider: ChatProvider,
+    language: OutputLanguage = "de",
+    system_prompt: str = ARIA_SYSTEM_PROMPT,
+) -> str:
+    full_system_prompt = (
+        f"{system_prompt}\n\nRespond in {LANGUAGE_NAMES[language]}, "
+        "regardless of the language the user writes in, unless the task is "
+        "TRANSLATION and the user asks for a different target language."
+    )
+    history: list[BaseMessage] = [SystemMessage(content=full_system_prompt)]
     history.extend(_to_lc_message(m["role"], m["content"]) for m in messages)
 
     llm = get_chat_model(provider)
     response = llm.invoke(history)
-    return str(response.content)
+    # .content is a plain string for Claude/Ollama, but Gemini can return a
+    # list of content blocks (text + thinking-signature metadata); .text()
+    # normalizes both to the actual text instead of str()-ing a list.
+    return response.text()

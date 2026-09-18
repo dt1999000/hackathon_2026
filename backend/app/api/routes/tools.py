@@ -3,61 +3,33 @@ from typing import Any, cast
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from app.services.embeddings import EmbeddingClient
+from app.services.embeddings import EmbeddingClient, EmbeddingModel
 from app.services.llm import LocalLLMClient
 from app.tools.firecrawl_search.firecrawl_extract import FirecrawlExtractTool
 from app.tools.firecrawl_search.firecrawl_scrape import FirecrawlScrapeWebsiteTool
 from app.tools.firecrawl_search.firecrawl_search import FirecrawlSearchTool
 from app.tools.firecrawl_search.firecrawl_website import FirecrawlCrawlWebsiteTool
-from app.tools.rag.chunking.base import BaseChunker
-from app.tools.rag.chunking.default import DefaultChunker
-from app.tools.rag.chunking.structured import CsvChunker, JsonChunker, XmlChunker
-from app.tools.rag.chunking.text import DocxChunker, MdxChunker, TextChunker
-from app.tools.rag.chunking.web import WebsiteChunker
-from app.tools.rag.loader.base import BaseLoader, SourceContent
-from app.tools.rag.loader.github import GithubLoader
-from app.tools.rag.loader.json import JSONLoader
-from app.tools.rag.loader.pdf import PDFLoader
-from app.tools.rag.loader.tabular import TabularLoader
-from app.tools.rag.loader.youtube_channel import YoutubeChannelLoader
-from app.tools.rag.loader.youtube_video import YoutubeVideoLoader
+from app.tools.rag.loader.base import SourceContent
+from app.tools.rag.registry import BaseChunker, BaseLoader
+from app.tools.rag.registry import get_chunker as _registry_get_chunker
+from app.tools.rag.registry import get_loader as _registry_get_loader
 from app.tools.rag.retrieval import retrieve_top_chunks, retrieve_top_chunks_embedding
 
 router = APIRouter(tags=["tools"], prefix="/tools")
 
-LOADERS: dict[str, type[BaseLoader]] = {
-    "json": JSONLoader,
-    "tabular": TabularLoader,
-    "github": GithubLoader,
-    "youtube_video": YoutubeVideoLoader,
-    "youtube_channel": YoutubeChannelLoader,
-    "pdf": PDFLoader,
-}
-
-CHUNKERS: dict[str, type[BaseChunker]] = {
-    "default": DefaultChunker,
-    "text": TextChunker,
-    "docx": DocxChunker,
-    "mdx": MdxChunker,
-    "web": WebsiteChunker,
-    "csv": CsvChunker,
-    "json": JsonChunker,
-    "xml": XmlChunker,
-}
-
 
 def _get_loader(name: str) -> BaseLoader:
-    loader_cls = LOADERS.get(name)
-    if loader_cls is None:
-        raise HTTPException(status_code=422, detail=f"Unknown loader '{name}'. Options: {list(LOADERS)}")
-    return loader_cls()
+    try:
+        return _registry_get_loader(name)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 def _get_chunker(name: str) -> BaseChunker:
-    chunker_cls = CHUNKERS.get(name)
-    if chunker_cls is None:
-        raise HTTPException(status_code=422, detail=f"Unknown chunker '{name}'. Options: {list(CHUNKERS)}")
-    return chunker_cls()
+    try:
+        return _registry_get_chunker(name)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 class LoadRequest(BaseModel):
@@ -88,7 +60,7 @@ class GenerateRequest(BaseModel):
     top_k: int = 3
     use_retrieval: bool = True
     retrieval_method: str = "embedding"  # "embedding" or "lexical"
-    embedding_model: str | None = None  # override to compare models, e.g. "nomic-embed-text"
+    embedding_model: EmbeddingModel | None = None  # override the default embedding model
 
 
 class CrawlWebsiteRequest(BaseModel):
