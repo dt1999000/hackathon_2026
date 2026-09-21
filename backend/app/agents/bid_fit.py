@@ -33,6 +33,7 @@ from app.agents.bid_fit_scoring import BidFitScore, HardlinerViolation, score_bi
 from app.models import CompanyProfileBase
 from app.services.chat_models import ChatProvider, get_chat_model
 from app.services.embeddings import EmbeddingClient
+from app.services.language import OutputLanguage, output_language_instruction
 from app.tools.rag.loader.base import SourceContent
 from app.tools.rag.loader.json import flatten_json_to_text, load_json_data
 from app.tools.rag.registry import get_chunker, get_loader
@@ -75,7 +76,9 @@ progress). The profile may itself describe a conditional workaround \
 partner") — use that directly if it applies rather than treating the \
 violation as unsolvable. Leave the solution unset whenever it would be \
 impractical, too slow, too costly, or would still leave the constraint \
-broken — never invent a solution just to have one."""
+broken — never invent a solution just to have one.
+
+{language_instruction}"""
 
 
 # (label, attribute) for every free-text topic field on CompanyProfileBase,
@@ -221,6 +224,7 @@ class BidFitState(TypedDict, total=False):
     context_chunks: list[str]
     similarity_score: float
     violations: list[HardlinerViolation]
+    language: OutputLanguage
     result: BidFitScore
 
 
@@ -572,6 +576,7 @@ def generate_violations(
     profile_text: str,
     context_chunks: list[str],
     bid_source: str,
+    language: OutputLanguage = "de",
 ) -> list[HardlinerViolation]:
     """LLM call: given the company's whole profile (in its own words)
     and the bid's most relevant (top-k retrieved) content, find every
@@ -587,6 +592,7 @@ def generate_violations(
         profile_text=profile_text or "(no company profile provided)",
         bid_source=bid_source,
         context_block=context_block,
+        language_instruction=output_language_instruction(language),
     )
     analysis = _structured_output(llm, FitAnalysis).invoke(prompt)
     assert isinstance(analysis, FitAnalysis)
@@ -632,6 +638,7 @@ def _screen_nodes(llm: BaseChatModel, embedding_client: EmbeddingClient) -> dict
             profile_text=state.get("profile_text", ""),
             context_chunks=state["context_chunks"],
             bid_source=state.get("bid_source") or "(inline bid content)",
+            language=state.get("language", "de"),
         )
         # No separate a-priori hardliner list anymore (see
         # generate_violations) — this just reports back whatever
@@ -692,6 +699,7 @@ def run_bid_fit_analysis(
     match_threshold: float = DEFAULT_SECTION_MATCH_THRESHOLD,
     record_index: int = 0,
     record_id: str | None = None,
+    language: OutputLanguage = "de",
 ) -> BidFitState:
     """Run the bid-fit pipeline against `company_profile` as a whole —
     there's no separate hardliner-extraction step; `generate_violations`
@@ -717,6 +725,7 @@ def run_bid_fit_analysis(
         "top_k": top_k,
         "match_threshold": match_threshold,
         "loader_kwargs": {"record_index": record_index, "record_id": record_id},
+        "language": language,
     }
     final_state = graph.invoke(initial_state)
     return final_state  # type: ignore[return-value]
@@ -736,6 +745,7 @@ def run_bid_screen(
     match_threshold: float = DEFAULT_SECTION_MATCH_THRESHOLD,
     record_index: int = 0,
     record_id: str | None = None,
+    language: OutputLanguage = "de",
 ) -> BidFitState:
     """Screen a bid against a hardliner list given directly by the caller
     (no stored CompanyProfile). There's no separate hardliner-checking
@@ -769,6 +779,7 @@ def run_bid_screen(
         "top_k": top_k,
         "match_threshold": match_threshold,
         "loader_kwargs": {"record_index": record_index, "record_id": record_id},
+        "language": language,
     }
     final_state = graph.invoke(initial_state)
     return final_state  # type: ignore[return-value]

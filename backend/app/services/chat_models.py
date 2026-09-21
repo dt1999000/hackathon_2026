@@ -24,10 +24,13 @@ def get_chat_model(provider: ChatProvider) -> BaseChatModel:
             if settings.ANTHROPIC_WORKSPACE_ID
             else None
         )
-        return ChatAnthropic(  # type: ignore[call-arg]
-            model=settings.LLM_CLAUDE_MODEL,
-            default_headers=default_headers,
-        )
+        kwargs: dict[str, object] = {
+            "model": settings.LLM_CLAUDE_MODEL,
+            "default_headers": default_headers,
+        }
+        if settings.ANTHROPIC_API_KEY:
+            kwargs["api_key"] = settings.ANTHROPIC_API_KEY
+        return ChatAnthropic(**kwargs)  # type: ignore[arg-type]
     if provider == "google":
         return ChatGoogleGenerativeAI(model=settings.LLM_GEMINI_MODEL)
     return ChatOllama(model=settings.LLM_LOCAL_MODEL, base_url=settings.LLM_LOCAL_BASE_URL)

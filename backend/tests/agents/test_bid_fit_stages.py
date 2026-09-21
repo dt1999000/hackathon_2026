@@ -40,9 +40,17 @@ class _FakeChatModel:
 
     def __init__(self, response: object) -> None:
         self._response = response
+        self.prompts: list[str] = []
 
     def with_structured_output(self, schema: type, **kwargs: object) -> _FakeStructuredLLM:
-        return _FakeStructuredLLM(self._response)
+        parent = self
+
+        class _RecordingStructuredLLM(_FakeStructuredLLM):
+            def invoke(self, prompt: str) -> object:
+                parent.prompts.append(prompt)
+                return super().invoke(prompt)
+
+        return _RecordingStructuredLLM(self._response)
 
 
 def test_retrieve_bid_context_counts_a_matched_section(tmp_path) -> None:
@@ -258,3 +266,34 @@ def test_generate_violations_returns_llm_output_unmodified() -> None:
         bid_source="test",
     )
     assert violations == expected.violations
+
+
+def test_generate_violations_asks_for_german_by_default() -> None:
+    expected = FitAnalysis(violations=[])
+    llm = _FakeChatModel(expected)
+
+    generate_violations(
+        llm=llm,
+        profile_text="Hardliners: Keine Brücken",
+        context_chunks=["Los umfasst Brückenbau."],
+        bid_source="test",
+    )
+
+    assert llm.prompts
+    assert "German (Deutsch)" in llm.prompts[0]
+
+
+def test_generate_violations_can_request_english() -> None:
+    expected = FitAnalysis(violations=[])
+    llm = _FakeChatModel(expected)
+
+    generate_violations(
+        llm=llm,
+        profile_text="Hardliners: No bridges",
+        context_chunks=["This lot includes bridge construction."],
+        bid_source="test",
+        language="en",
+    )
+
+    assert "English" in llm.prompts[0]
+    assert "German (Deutsch)" not in llm.prompts[0]

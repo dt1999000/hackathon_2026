@@ -28,7 +28,7 @@ class ChatMessage(BaseModel):
 
 class ProfileChatRequest(BaseModel):
     messages: list[ChatMessage]
-    provider: ChatProvider = "google"
+    provider: ChatProvider = "claude"
 
 
 class ProfileChatResponse(BaseModel):
