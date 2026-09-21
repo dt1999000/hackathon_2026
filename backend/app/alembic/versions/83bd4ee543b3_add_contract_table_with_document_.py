@@ -1,7 +1,7 @@
 """add contract table with document contents and duplicate tracking
 
 Revision ID: 83bd4ee543b3
-Revises: 1b78c53532bc
+Revises: 760a95845d2f
 Create Date: 2026-09-18 02:55:46.432121
 
 """
@@ -12,7 +12,7 @@ import sqlmodel.sql.sqltypes
 
 # revision identifiers, used by Alembic.
 revision = '83bd4ee543b3'
-down_revision = '1b78c53532bc'
+down_revision = '760a95845d2f'
 branch_labels = None
 depends_on = None
 

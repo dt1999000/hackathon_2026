@@ -48,13 +48,18 @@ export function BidsAnalysisPanel() {
 
   const analyzeMutation = useMutation({
     // timeout: 0 is axios for "no timeout" — the full pipeline runs every
-    // seeded bid's retrieval + reranking + LLM verification concurrently,
-    // but each one is still several LLM/embedding calls, and external API
+    // bid's retrieval + reranking + LLM verification concurrently, but
+    // each one is still several LLM/embedding calls, and external API
     // latency (rate limits, "high demand" slowdowns) can vary a lot, so a
     // fixed client-side cutoff just produces a spurious timeout instead of
     // letting the pipeline finish.
     mutationFn: async () =>
-      (await BidFitService.fitAnalyzeBids({ timeout: 0 })).data,
+      (
+        await BidFitService.fitAnalyzeBids({
+          query: { source: "bids" },
+          timeout: 0,
+        })
+      ).data,
     onError: handleError.bind(showErrorToast),
   })
 
@@ -130,7 +135,9 @@ export function BidsAnalysisPanel() {
       {results.length > 0 && (
         <div className="flex flex-col gap-8">
           {RESULT_SECTIONS.map((section) => {
-            const group = results.filter((result) => result.flag === section.flag)
+            const group = results.filter(
+              (result) => result.flag === section.flag,
+            )
             if (group.length === 0) {
               return null
             }
